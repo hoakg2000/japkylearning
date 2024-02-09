@@ -11,7 +11,7 @@ const LearningScreen = ({ letterType }) => {
     useEffect(() => {
         getRandomQuestion();
     }, [])
-    const key = "k";
+    const key = letterType;
     const [text, setText] = useState(""); // State to hold the text
     const [resultVisible, setResultVisible] = useState(false);
     const [result, setResult] = useState([])
@@ -144,7 +144,7 @@ const LearningScreen = ({ letterType }) => {
                                 return (
                                     <View style={[styles.letter, containerStyle]} key={"col" + colIndex}>
                                         <View key={"col" + colIndex + "jp"} style={styles.firstRow}>
-                                            <Text >{result[key]}</Text>
+                                            <Text >{result.h}</Text>
                                             <Text >{result.k}</Text>
                                         </View>
                                         <View key={"col" + colIndex + "en"} style={styles.centeredTextContainer}>
