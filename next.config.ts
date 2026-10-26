@@ -19,7 +19,8 @@ const csp = (frameAncestors: string) =>
     "base-uri 'self'",
     "form-action 'self'",
     `frame-ancestors ${frameAncestors}`,
-    ...(isDev ? [] : ['upgrade-insecure-requests']),
+    // Only on HTTPS deployments; local `next start` runs on http://localhost.
+    ...(process.env.NEXT_PUBLIC_SITE_URL?.startsWith('https://') ? ['upgrade-insecure-requests'] : []),
   ].join('; ');
 
 const common = [
@@ -34,6 +35,8 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   poweredByHeader: false,
+  // PGlite loads its WASM via import.meta.url; it must stay a plain Node dependency.
+  serverExternalPackages: ['@electric-sql/pglite'],
   experimental: { globalNotFound: true },
   turbopack: {
     rules: {
