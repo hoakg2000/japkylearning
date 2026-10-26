@@ -12,7 +12,7 @@
 | Scaffold Next.js 16 + TS strict + ESLint + Tailwind v4 + shadcn/ui; pin version các mục **[verify]** | `npm run build` pass |
 | next-intl `/vi` `/en`, route group `(public)` / `(app)` / `embed` | Trang public build ra static |
 | Design tokens, light/dark, Full/Minimal bằng script trước paint | Reload không nháy giao diện |
-| CSP 2 tầng + security headers | Kiểm tra header bằng curl cho cả 3 tầng |
+| CSP tĩnh + security headers (ADR 0013) | Kiểm tra header bằng curl cho trang thường và `/embed` |
 | Sound sprite + nút mute | |
 | CI (lint, typecheck, vitest, build) | Pipeline xanh |
 

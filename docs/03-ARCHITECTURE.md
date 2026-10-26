@@ -52,7 +52,7 @@ Version theo research ngày 2026-10-26. Mục **[verify]** phải chạy `npm vi
 │  ├─ app/
 │  │  ├─ [locale]/
 │  │  │  ├─ (public)/               # landing, kana, learn, kanji, words, packs, songs, about – SSG, KHÔNG đọc cookie/session
-│  │  │  └─ (app)/                  # home (Today), review, tests, speak, chat, me, admin – dynamic, nonce CSP
+│  │  │  └─ (app)/                  # home (Today), review, tests, speak, chat, me, admin – PPR + dynamic data
 │  │  ├─ embed/                     # root layout riêng, không app shell, không next-intl proxy
 │  │  │  └─ kanji/[char]/
 │  │  └─ api/
@@ -69,7 +69,7 @@ Version theo research ngày 2026-10-26. Mục **[verify]** phải chạy `npm vi
 │  │  ├─ streak/                    # pure function tính streak
 │  │  └─ content/                   # loader + zod schemas
 │  ├─ messages/{vi,en}.json
-│  └─ proxy.ts                      # locale routing; nonce CSP + kiểm tra cookie lạc quan chỉ cho (app)
+│  └─ proxy.ts                      # next-intl locale routing + kiểm tra cookie lạc quan cho (app)
 └─ docs/
 ```
 
@@ -145,14 +145,14 @@ export type AiMode = 'tutor' | 'quiz-gen' | 'grading' | 'adaptive';
 
 Chi tiết ở [05-AI-SPEECH](./05-AI-SPEECH.md).
 
-## 8. CSP 2 tầng
+## 8. CSP
 
-Xem [ADR 0007](./adr/0007-two-tier-csp.md).
+Xem [ADR 0013](./adr/0013-static-csp-cache-components.md) (thay ADR 0007): giữ `cacheComponents`, **một CSP tĩnh** trong `next.config.ts` cho mọi trang, không nonce.
 
 | Tầng | Route | CSP |
 |------|-------|-----|
 | Public tĩnh | `(public)/*` | Header tĩnh trong `next.config`: `script-src 'self' 'unsafe-inline'`, `object-src 'none'`, `base-uri 'none'`, `form-action 'self'`, `frame-ancestors 'none'`. Riêng `/songs/*` thêm `script-src https://www.youtube.com` và `frame-src https://www.youtube-nocookie.com` |
-| App động | `(app)/*` | Nonce CSP từ `proxy.ts` (`script-src 'nonce-…' 'strict-dynamic'`) |
+| App | `(app)/*` | Cùng CSP tĩnh; bù bằng ESLint `react/no-danger`, không render HTML từ AI |
 | Embed | `embed/*` | CSP tĩnh + `frame-ancestors *` |
 
 Điều kiện cho tầng public: không render nội dung người dùng hoặc AI; không có `dangerouslySetInnerHTML` ngoài JSON-LD đã escape `<`.

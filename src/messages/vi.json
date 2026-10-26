@@ -1,0 +1,7 @@
+{
+  "Meta": { "title": "Japky – Học tiếng Nhật mỗi ngày", "description": "Học tiếng Nhật từ bảng chữ cái tới JLPT N5: kana, kanji có âm Hán-Việt, từ vựng có ví dụ, flashcard thông minh và streak mỗi ngày." },
+  "Nav": { "label": "Điều hướng chính", "today": "Hôm nay", "learn": "Học", "review": "Ôn", "me": "Tôi", "skip": "Chuyển tới nội dung" },
+  "Settings": { "theme": "Sáng / tối", "uiMode": "Chế độ giao diện", "full": "Đầy đủ", "minimal": "Tối giản", "sound": "Âm thanh", "language": "Ngôn ngữ" },
+  "Home": { "title": "Học tiếng Nhật mỗi ngày", "subtitle": "Từ bảng chữ cái tới JLPT N5. Có âm Hán-Việt, ví dụ và ôn tập đúng lúc.", "start": "Bắt đầu học", "comingSoon": "Đang xây dựng" },
+  "NotFound": { "title": "Không tìm thấy trang", "back": "Về trang chủ" }
+}

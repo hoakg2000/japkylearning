@@ -112,7 +112,7 @@ Một sprite < 60 KB, cùng 1 giọng ngũ cung, chuẩn hóa −16 LUFS, âm l�
 /[locale]/songs, /songs/[slug] Bài hát
 /[locale]/about, /about/credits, /privacy, /terms
 
-(app – dynamic, nonce CSP, noindex)
+(app – PPR + dữ liệu động, noindex)
 /[locale]/home                 Today
 /[locale]/review               Ôn SRS
 /[locale]/tests                Kiểm tra, mock, test AI

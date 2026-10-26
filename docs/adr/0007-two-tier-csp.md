@@ -1,6 +1,6 @@
 # ADR 0007 – CSP 2 tầng
 
-- **Trạng thái:** Accepted (2026-10-26)
+- **Trạng thái:** Superseded by [ADR 0013](./0013-static-csp-cache-components.md) (2026-10-26) – nonce không tương thích với Cache Components/PPR
 
 ## Bối cảnh
 Docs Next.js: "To use a nonce, your page must be dynamically rendered." Áp nonce CSP cho mọi trang sẽ làm mất SSG/CDN cache của các trang SEO (kanji, từ, bài học).

@@ -30,10 +30,10 @@
 
 ## 3. Security
 
-- **CSP 2 tầng** ([ADR 0007](./adr/0007-two-tier-csp.md)):
+- **CSP tĩnh** ([ADR 0013](./adr/0013-static-csp-cache-components.md), thay ADR 0007):
   - `(public)`: CSP tĩnh trong `next.config`, `frame-ancestors 'none'`; `/songs/*` cho phép thêm YouTube (`script-src`, `frame-src`).
   - Webhook từ song engine (v2): chữ ký HMAC + timestamp, từ chối request cũ.
-  - `(app)`: nonce CSP qua `proxy.ts`.
+  - `(app)`: cùng CSP tĩnh (Cache Components/PPR không dùng được nonce); ESLint `react/no-danger`; Trusted Types report-only.
   - `/embed/*`: CSP tĩnh + `frame-ancestors *`.
 - Header khác: `X-Content-Type-Options: nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, HSTS, `Permissions-Policy: camera=(), microphone=()` (route `/speak` mở `microphone=(self)`).
 - **Auth & phân quyền:** `proxy.ts` chỉ kiểm cookie lạc quan để redirect. **Mọi Server Action / Route Handler tự kiểm session + quyền.** Admin: quyền cấp tay trong DB, bắt buộc 2FA, ghi `audit_log`.

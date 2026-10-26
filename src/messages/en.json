@@ -1,0 +1,7 @@
+{
+  "Meta": { "title": "Japky – Learn Japanese every day", "description": "Learn Japanese from the alphabet to JLPT N5: kana, kanji with Sino-Vietnamese readings, vocabulary with examples, smart flashcards and daily streaks." },
+  "Nav": { "label": "Main navigation", "today": "Today", "learn": "Learn", "review": "Review", "me": "Me", "skip": "Skip to content" },
+  "Settings": { "theme": "Light / dark", "uiMode": "Interface mode", "full": "Full", "minimal": "Minimal", "sound": "Sound", "language": "Language" },
+  "Home": { "title": "Learn Japanese every day", "subtitle": "From the alphabet to JLPT N5. With Sino-Vietnamese readings, examples and reviews at the right time.", "start": "Start learning", "comingSoon": "Under construction" },
+  "NotFound": { "title": "Page not found", "back": "Back to home" }
+}

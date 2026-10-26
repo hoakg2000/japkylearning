@@ -30,12 +30,13 @@ Website học tiếng Nhật song ngữ **Tiếng Việt / English**, xây bằn
 - [0004 – AI provider abstraction, mock-first](./adr/0004-ai-provider-abstraction.md) *(superseded by 0010)*
 - [0005 – FSRS cho spaced repetition](./adr/0005-fsrs-srs.md)
 - [0006 – Chính sách nội dung bài hát](./adr/0006-song-content-policy.md) *(superseded by 0012)*
-- [0007 – CSP 2 tầng](./adr/0007-two-tier-csp.md)
+- [0007 – CSP 2 tầng](./adr/0007-two-tier-csp.md) *(superseded by 0013)*
 - [0008 – Nội dung chỉ nằm trong git](./adr/0008-git-only-content.md)
 - [0009 – Khách là anonymous user](./adr/0009-anonymous-guest-users.md)
 - [0010 – Chiến lược AI provider](./adr/0010-ai-provider-strategy.md)
 - [0011 – Tuân thủ PDPL](./adr/0011-pdpl-compliance.md)
 - [0012 – Nguồn bài hát và song engine](./adr/0012-song-source-and-engine.md)
+- [0013 – Cache Components + CSP tĩnh + next-intl root-params](./adr/0013-static-csp-cache-components.md)
 
 ## Glossary
 
