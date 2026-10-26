@@ -4,7 +4,7 @@
 
 1 developer, **~24.5 tuần**, trong đó **~9 tuần (≈38%) là viết và review nội dung**. Public beta khoảng **tuần 13**. Mỗi phase kết thúc bằng bản chạy được, có test, có preview deploy. Ước lượng chỉ mang tính tương đối.
 
-## P0 – Nền tảng (1.5 tuần)
+## P0 – Nền tảng (1.5 tuần) – ✅ xong (commit 044488d)
 
 | Task | Acceptance criteria |
 |------|---------------------|
@@ -16,7 +16,7 @@
 | Sound sprite + nút mute | |
 | CI (lint, typecheck, vitest, build) | Pipeline xanh |
 
-## P1 – Kana + first-run (2 tuần)
+## P1 – Kana + first-run (2 tuần) – ✅ xong, trừ audio pre-generate và Turnstile ([backlog](../backlog.md) B1, B2)
 
 | Task | Acceptance criteria |
 |------|---------------------|
@@ -26,7 +26,7 @@
 | First-run quiz + onboarding + Today v0 + bottom nav | [F0](./02-FEATURES.md#f0-first-run-onboarding--màn-hình-today) |
 | Streak (pure function + freeze tuần) | [F2](./02-FEATURES.md#f2-daily-check-in--streak), property-based test |
 
-## P2 – N5 core (5 tuần: dev 3 + nội dung 2)
+## P2 – N5 core (5 tuần: dev 3 + nội dung 2) – ✅ xong, chờ người review nội dung ([backlog](../backlog.md) B6)
 
 | Task | Acceptance criteria |
 |------|---------------------|

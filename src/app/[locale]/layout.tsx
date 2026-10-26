@@ -30,6 +30,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function RootLayout({ children }: LayoutProps<'/[locale]'>) {
   const locale = await rootLocale();
   const t = await getTranslations('Nav');
+  const tf = await getTranslations('Footer');
   return (
     <html lang={locale} className={`${ui.variable} ${jp.variable}`} suppressHydrationWarning>
       <head>
@@ -53,9 +54,12 @@ export default async function RootLayout({ children }: LayoutProps<'/[locale]'>)
                 <SettingsToggles />
               </div>
             </header>
-            <main id="main" className="mx-auto max-w-5xl px-4 pb-24 pt-6 md:pb-10">
+            <main id="main" className="mx-auto max-w-5xl px-4 pt-6">
               {children}
             </main>
+            <footer className="mx-auto max-w-5xl px-4 pb-24 pt-6 text-xs text-muted md:pb-8">
+              {tf('data')} · <Link href="/about/credits" className="underline">{tf('credits')}</Link> · <Link href="/privacy" className="underline">{tf('privacy')}</Link>
+            </footer>
             <MainNav variant="bottom" />
           </Providers>
         </NextIntlClientProvider>

@@ -5,6 +5,7 @@ import { useState, useTransition } from 'react';
 import { setConsent, updateSettings } from '@/app/[locale]/me/actions';
 import { useRouter } from '@/i18n/navigation';
 import { authClient } from '@/lib/auth/client';
+import { writeDisplayPrefs } from '@/lib/display-prefs';
 
 type Settings = { dailyGoalXp: 10 | 20 | 50; furiganaMode: 'always' | 'unlearned' | 'never'; showRomaji: boolean; showHanViet: boolean };
 const box = 'space-y-3 rounded-card border border-line bg-surface p-4';
@@ -16,6 +17,7 @@ export function SettingsForm({ initial }: { initial: Settings }) {
   const [pending, start] = useTransition();
   const save = (next: Settings) => {
     setS(next);
+    writeDisplayPrefs({ furigana: next.furiganaMode, romaji: next.showRomaji, hanViet: next.showHanViet });
     setSaved(false);
     start(async () => {
       await updateSettings(next);

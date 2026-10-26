@@ -11,6 +11,7 @@ Items that could not be finished while implementing the roadmap phases. Each has
 | B3 | Production database and deploy | P0–P2 | No Neon project / Vercel project connected | Embedded PGlite in `.data/pglite` (auto-migrated) | `DATABASE_URL` (Neon ap-southeast-1), Vercel project pinned to `sin1`, `npm run db:migrate` in the deploy pipeline, real `BETTER_AUTH_SECRET` |
 | B4 | Email verification, password reset, reminder emails | P1 | Needs an email provider (Resend) and a verified sending domain | Sign-up works without email verification; no password reset yet | Resend API key + domain; wire Better Auth `sendVerificationEmail` / `sendResetPassword` |
 | B5 | Legal review of the privacy page and consent flow (PDPL 91/2025) | P1 | Needs a lawyer | Draft page at `/privacy`, per-purpose consents stored in `consents`, export + delete in `/me` | Legal review before public launch (ADR 0011) |
+| B6 | Human review of Hán-Việt (103 kanji) and Vietnamese meanings/examples (164 words, lessons 1–10) | P2 | P2 acceptance needs a native reviewer; content was authored by the agent and cross-checked against KANJIDIC2/Unihan (0 mismatches) but not reviewed by a person | Content ships with `hanVietReviewed: false` / `meaningsViReviewed: false` | Reviewer edits `content/source/n5/*.ts`, sets the flags to `true` in the ingest, runs `npm run ingest:n5` |
 
 ## Follow-ups (no blocker, scheduled later)
 
@@ -20,3 +21,8 @@ Items that could not be finished while implementing the roadmap phases. Each has
 | F2 | Purge job for anonymous users inactive > 30 days (Vercel Cron) | P3/P4 |
 | F3 | Timezone change limited to once per day (`timezone_changed_on` column exists, no UI to change timezone yet) | P2+ |
 | F4 | Mnemonic images for kana | P1 (nice to have) |
+| F5 | Furigana mode "only kanji not learned yet" (setting exists; display treats it as "always" because public pages are static and do not know the user's learned kanji) | P2+ |
+| F6 | Production/reading SRS directions unlock when a card is mature (`isMature` exists in `src/lib/srs.ts`, not wired yet) | P3 |
+| F7 | Kana missed in quizzes become SRS cards (item type `kana` supported by the schema) | P3 |
+| F8 | Timed JLPT N5 mock exam | P7 (roadmap) |
+| F9 | `row` layout of WordCard is implemented but not used on a page yet (word lists) | P5 |

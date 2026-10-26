@@ -171,14 +171,20 @@
     "task": {
       "kana": "Luyện kana",
       "review": "Ôn {count} thẻ",
-      "lesson": "Bài học tiếp theo",
-      "weak": "Ôn điểm yếu"
+      "lesson": "Bài {n}",
+      "weak": "Ôn {skill}"
     },
     "reason": {
       "kana": "Nắm chắc bảng chữ trước khi vào bài",
       "due": "Thẻ đến hạn ôn",
       "next": "Bài mới trong lộ trình",
       "weak": "Phần bạn hay sai gần đây"
+    },
+    "skill": {
+      "vocab": "từ vựng",
+      "kanji": "kanji",
+      "grammar": "ngữ pháp",
+      "listening": "nghe"
     }
   },
   "Auth": {
@@ -281,5 +287,146 @@
       "h": "Quyền của bạn",
       "p": "Tải toàn bộ dữ liệu, rút lại đồng ý, xóa tài khoản bất kỳ lúc nào trong trang Tôi."
     }
+  },
+  "Footer": {
+    "data": "Dữ liệu từ điển: JMdict, KANJIDIC2 (EDRDG), KanjiVG – CC BY-SA",
+    "credits": "Nguồn dữ liệu",
+    "privacy": "Quyền riêng tư"
+  },
+  "Display": {
+    "label": "Hiển thị",
+    "furigana": "Furigana",
+    "romaji": "Romaji",
+    "hanViet": "Hán-Việt"
+  },
+  "Word": {
+    "example": "Ví dụ",
+    "strokes": "Thứ tự nét",
+    "details": "Xem chi tiết",
+    "inLesson": "Học trong bài",
+    "pageTitle": "{surface} ({reading}) – {meaning}",
+    "attribution": "Nghĩa tiếng Anh và cách đọc từ JMdict (EDRDG, CC BY-SA 4.0); furigana từ JmdictFurigana. Ví dụ và nghĩa tiếng Việt do Japky biên soạn (CC BY-SA 4.0).",
+    "pos": {
+      "n": "danh từ",
+      "v1": "động từ nhóm 2",
+      "v5": "động từ nhóm 1",
+      "vs": "động từ する",
+      "vk": "động từ 来る",
+      "adj-i": "tính từ い",
+      "adj-na": "tính từ な",
+      "adj-no": "danh từ (+の)",
+      "adv": "phó từ",
+      "exp": "cụm từ",
+      "num": "số từ",
+      "pn": "đại từ",
+      "int": "thán từ",
+      "prt": "trợ từ",
+      "vt": "tha động từ",
+      "vi": "tự động từ",
+      "n-adv": "danh từ chỉ thời gian",
+      "ctr": "trợ số từ",
+      "suf": "hậu tố",
+      "pref": "tiền tố"
+    }
+  },
+  "Path": {
+    "title": "Lộ trình N5",
+    "description": "10 bài đầu tiên: từ vựng, kanji, ngữ pháp, hội thoại và bài kiểm tra.",
+    "counts": "{words} từ · {kanji} kanji · {grammar} mẫu ngữ pháp",
+    "done": "Đã xong",
+    "inProgress": "Đang học",
+    "more": "Bài 11–30 đang được biên soạn."
+  },
+  "Lesson": {
+    "lesson": "Bài {n}",
+    "path": "Lộ trình N5",
+    "practice": "Luyện tập & kiểm tra",
+    "vocab": "Từ vựng ({count})",
+    "kanji": "Kanji ({count})",
+    "grammar": "Ngữ pháp",
+    "dialogue": "Hội thoại",
+    "nav": "Bài trước, bài sau"
+  },
+  "Practice": {
+    "title": "Luyện bài {n}",
+    "steps": "Các bước",
+    "step": {
+      "study": "Học thẻ",
+      "practice": "Luyện",
+      "test": "Kiểm tra"
+    },
+    "studyHint": "Thẻ {n}/{total}: bấm để lật",
+    "flip": "Lật thẻ",
+    "skipStudy": "Bỏ qua, luyện luôn",
+    "next": "Tiếp",
+    "toTest": "Sang bài kiểm tra",
+    "progress": "Tiến độ",
+    "prompt": {
+      "meaning": "Từ này nghĩa là gì?",
+      "reading": "Đọc chữ này thế nào?",
+      "listening": "Bạn nghe thấy từ nào?",
+      "cloze": "Chọn phần còn thiếu"
+    },
+    "replay": "Nghe lại",
+    "testHint": "Câu {n}/{total}",
+    "saving": "Đang chấm điểm…",
+    "saveError": "Không lưu được kết quả.",
+    "result": "Đúng {correct}/{total} câu",
+    "passed": "Hoàn thành bài! Đã thêm {cards} thẻ vào ôn tập.",
+    "failed": "Cần đạt 60% để hoàn thành bài. Ôn lại rồi thử lại nhé.",
+    "backToLesson": "Về bài học",
+    "toReview": "Ôn tập ngay",
+    "retry": "Làm lại"
+  },
+  "Review": {
+    "title": "Ôn tập",
+    "progress": "Tiến độ ôn tập",
+    "reveal": "Hiện đáp án",
+    "tapToReveal": "Bấm (hoặc phím cách) để xem đáp án",
+    "kind": {
+      "word": "Từ vựng",
+      "listening": "Nghe",
+      "grammar": "Ngữ pháp"
+    },
+    "rating": {
+      "again": "Quên",
+      "hard": "Khó",
+      "good": "Nhớ",
+      "easy": "Dễ"
+    },
+    "done": "Xong {count} thẻ!",
+    "toToday": "Về Hôm nay",
+    "saveError": "Một số kết quả chưa lưu được.",
+    "empty": "Không có thẻ nào cần ôn.",
+    "emptyHint": "Hoàn thành bài học để có thẻ mới.",
+    "toLessons": "Đến bài học"
+  },
+  "Kanji": {
+    "title": "Kanji N5 – âm Hán-Việt, cách đọc, thứ tự nét",
+    "description": "103 chữ Hán cơ bản cho JLPT N5, có âm Hán-Việt, âm On/Kun và từ ví dụ.",
+    "lessonGroup": "Bài {n}: {title}",
+    "laterGroup": "Học ở các bài sau",
+    "pageTitle": "Kanji {char} – {hv} – {meaning}",
+    "pageDescription": "Chữ {char}: nghĩa {meaning}; âm On {on}; âm Kun {kun}; thứ tự nét và từ vựng ví dụ.",
+    "on": "Âm On",
+    "kun": "Âm Kun",
+    "strokesLabel": "Số nét",
+    "lesson": "Bài học",
+    "words": "Từ vựng có chữ này",
+    "attribution": "Dữ liệu kanji: KANJIDIC2 (EDRDG, CC BY-SA 4.0), thứ tự nét: KanjiVG (Ulrich Apel, CC BY-SA 3.0). Âm Hán-Việt: Japky, đối chiếu Unihan."
+  },
+  "Tests": {
+    "title": "Kiểm tra",
+    "description": "Làm lại bài kiểm tra cuối bài để củng cố. Điểm cao nhất được lưu lại.",
+    "kana": "Kiểm tra kana",
+    "kanaDesc": "Đạt 90% để bỏ qua phần bảng chữ cái",
+    "lesson": "Kiểm tra bài {n}",
+    "mockSoon": "Thi thử JLPT N5 có hẹn giờ sẽ có ở giai đoạn sau."
+  },
+  "Credits": {
+    "title": "Nguồn dữ liệu",
+    "intro": "Japky sử dụng các bộ dữ liệu mở sau đây. Xin cảm ơn các tác giả.",
+    "content": "Nội dung bài học, câu ví dụ, nghĩa tiếng Việt và âm Hán-Việt do Japky biên soạn và phát hành theo giấy phép CC BY-SA 4.0.",
+    "versions": "Phiên bản: JMdict {jmdict} · JmdictFurigana {furigana}"
   }
 }

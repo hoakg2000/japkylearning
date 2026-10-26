@@ -171,14 +171,20 @@
     "task": {
       "kana": "Practise kana",
       "review": "Review {count} cards",
-      "lesson": "Next lesson",
-      "weak": "Work on weak spots"
+      "lesson": "Lesson {n}",
+      "weak": "Practise {skill}"
     },
     "reason": {
       "kana": "Master the scripts before the lessons",
       "due": "Cards due for review",
       "next": "Next lesson in your path",
       "weak": "What you missed recently"
+    },
+    "skill": {
+      "vocab": "vocabulary",
+      "kanji": "kanji",
+      "grammar": "grammar",
+      "listening": "listening"
     }
   },
   "Auth": {
@@ -281,5 +287,146 @@
       "h": "Your rights",
       "p": "Download all your data, withdraw consent or delete your account at any time on the Me page."
     }
+  },
+  "Footer": {
+    "data": "Dictionary data: JMdict, KANJIDIC2 (EDRDG), KanjiVG – CC BY-SA",
+    "credits": "Credits",
+    "privacy": "Privacy"
+  },
+  "Display": {
+    "label": "Display",
+    "furigana": "Furigana",
+    "romaji": "Romaji",
+    "hanViet": "Sino-Vietnamese"
+  },
+  "Word": {
+    "example": "Example",
+    "strokes": "Stroke order",
+    "details": "Details",
+    "inLesson": "Taught in",
+    "pageTitle": "{surface} ({reading}) – {meaning}",
+    "attribution": "English meanings and readings from JMdict (EDRDG, CC BY-SA 4.0); furigana from JmdictFurigana. Examples and Vietnamese meanings written by Japky (CC BY-SA 4.0).",
+    "pos": {
+      "n": "noun",
+      "v1": "ichidan verb",
+      "v5": "godan verb",
+      "vs": "する verb",
+      "vk": "来る verb",
+      "adj-i": "い-adjective",
+      "adj-na": "な-adjective",
+      "adj-no": "noun (+の)",
+      "adv": "adverb",
+      "exp": "expression",
+      "num": "numeral",
+      "pn": "pronoun",
+      "int": "interjection",
+      "prt": "particle",
+      "vt": "transitive",
+      "vi": "intransitive",
+      "n-adv": "adverbial noun",
+      "ctr": "counter",
+      "suf": "suffix",
+      "pref": "prefix"
+    }
+  },
+  "Path": {
+    "title": "N5 path",
+    "description": "The first 10 lessons: vocabulary, kanji, grammar, dialogues and tests.",
+    "counts": "{words} words · {kanji} kanji · {grammar} grammar points",
+    "done": "Done",
+    "inProgress": "In progress",
+    "more": "Lessons 11–30 are being written."
+  },
+  "Lesson": {
+    "lesson": "Lesson {n}",
+    "path": "N5 path",
+    "practice": "Practice & test",
+    "vocab": "Vocabulary ({count})",
+    "kanji": "Kanji ({count})",
+    "grammar": "Grammar",
+    "dialogue": "Dialogue",
+    "nav": "Previous and next lesson"
+  },
+  "Practice": {
+    "title": "Practice lesson {n}",
+    "steps": "Steps",
+    "step": {
+      "study": "Study",
+      "practice": "Practice",
+      "test": "Test"
+    },
+    "studyHint": "Card {n}/{total}: tap to flip",
+    "flip": "Flip card",
+    "skipStudy": "Skip to practice",
+    "next": "Next",
+    "toTest": "Go to the test",
+    "progress": "Progress",
+    "prompt": {
+      "meaning": "What does this word mean?",
+      "reading": "How is this read?",
+      "listening": "Which word do you hear?",
+      "cloze": "Fill in the gap"
+    },
+    "replay": "Play again",
+    "testHint": "Question {n}/{total}",
+    "saving": "Grading…",
+    "saveError": "Could not save the result.",
+    "result": "{correct}/{total} correct",
+    "passed": "Lesson complete! {cards} cards added to your reviews.",
+    "failed": "You need 60% to complete the lesson. Review and try again.",
+    "backToLesson": "Back to the lesson",
+    "toReview": "Review now",
+    "retry": "Try again"
+  },
+  "Review": {
+    "title": "Review",
+    "progress": "Review progress",
+    "reveal": "Show answer",
+    "tapToReveal": "Tap (or press space) to see the answer",
+    "kind": {
+      "word": "Vocabulary",
+      "listening": "Listening",
+      "grammar": "Grammar"
+    },
+    "rating": {
+      "again": "Again",
+      "hard": "Hard",
+      "good": "Good",
+      "easy": "Easy"
+    },
+    "done": "{count, plural, one {# card} other {# cards}} done!",
+    "toToday": "Go to Today",
+    "saveError": "Some results could not be saved.",
+    "empty": "Nothing to review right now.",
+    "emptyHint": "Finish a lesson to get new cards.",
+    "toLessons": "Go to lessons"
+  },
+  "Kanji": {
+    "title": "N5 kanji – readings, meanings, stroke order",
+    "description": "103 basic kanji for JLPT N5 with Sino-Vietnamese readings, On/Kun readings and example words.",
+    "lessonGroup": "Lesson {n}: {title}",
+    "laterGroup": "Taught in later lessons",
+    "pageTitle": "Kanji {char} – {meaning}",
+    "pageDescription": "Kanji {char}: means {meaning}; On {on}; Kun {kun}; stroke order and example words.",
+    "on": "On reading",
+    "kun": "Kun reading",
+    "strokesLabel": "Strokes",
+    "lesson": "Lesson",
+    "words": "Words with this kanji",
+    "attribution": "Kanji data: KANJIDIC2 (EDRDG, CC BY-SA 4.0); stroke order: KanjiVG (Ulrich Apel, CC BY-SA 3.0). Sino-Vietnamese readings: Japky, checked against Unihan."
+  },
+  "Tests": {
+    "title": "Tests",
+    "description": "Retake end-of-lesson tests to consolidate. Your best score is kept.",
+    "kana": "Kana test",
+    "kanaDesc": "Score 90% to test out of the alphabets",
+    "lesson": "Lesson {n} test",
+    "mockSoon": "Timed JLPT N5 mock exams come in a later phase."
+  },
+  "Credits": {
+    "title": "Credits",
+    "intro": "Japky uses the following open datasets. Thank you to their authors.",
+    "content": "Lessons, example sentences, Vietnamese meanings and Sino-Vietnamese readings are written by Japky and released under CC BY-SA 4.0.",
+    "versions": "Versions: JMdict {jmdict} · JmdictFurigana {furigana}"
   }
 }

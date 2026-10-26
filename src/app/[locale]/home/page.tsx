@@ -57,7 +57,7 @@ async function TodayContent() {
 
       {main ? (
         <Link href={main.href} className="flex min-h-16 items-center justify-between rounded-card bg-brand px-5 text-lg font-medium text-brand-ink">
-          <span>{t('continue')} · {t(`task.${main.kind}`, { count: main.count ?? 0 })}</span>
+          <span>{t('continue')} · {t(`task.${main.kind}`, { count: main.count ?? 0, n: main.label ?? '', skill: main.kind === 'weak' && main.label ? t(`skill.${main.label}`) : '' })}</span>
           <span aria-hidden>→</span>
         </Link>
       ) : (
@@ -72,7 +72,7 @@ async function TodayContent() {
           {rest.slice(0, 3).map((task) => (
             <li key={task.id}>
               <Link href={task.href} className="block rounded-card border border-line bg-surface p-4 hover:border-brand">
-                <p className="font-medium">{t(`task.${task.kind}`, { count: task.count ?? 0 })}</p>
+                <p className="font-medium">{t(`task.${task.kind}`, { count: task.count ?? 0, n: task.label ?? '', skill: task.kind === 'weak' && task.label ? t(`skill.${task.label}`) : '' })}</p>
                 <p className="text-sm text-muted">{t(`reason.${task.reason}`)}</p>
               </Link>
             </li>

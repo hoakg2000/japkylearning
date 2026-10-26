@@ -26,7 +26,7 @@ Version theo research ngày 2026-10-26. Mục **[verify]** phải chạy `npm vi
 | Object storage | Cloudflare R2 (custom domain) | Audio pre-generate, URL bất biến theo hash |
 | Validation | **Zod** | Mọi biên |
 | SRS | **ts-fsrs 5.x** | |
-| Tiếng Nhật | JMdict + **JmdictFurigana** (readings), `kuroshiro` + kuromoji (chỉ câu ví dụ, lúc ingest), `wanakana` (client) | [ADR 0003](./adr/0003-precompute-furigana-romaji.md) |
+| Tiếng Nhật | JMdict + **JmdictFurigana** (readings), markup furigana viết tay cho câu (`src/lib/japanese/markup.ts`), `wanakana` (romaji, gõ kana) | [ADR 0003](./adr/0003-precompute-furigana-romaji.md) |
 | Stroke order | **KanjiVG** SVG, animate `stroke-dashoffset` | |
 | AI | `AiProvider`: `mock` + `openai-compatible` + `gateway` | [ADR 0010](./adr/0010-ai-provider-strategy.md) |
 | Bài hát | **LRCLIB** API (lyrics + timeline), **YouTube IFrame Player API** (phát), YouTube Data API v3 (metadata, v2) | [ADR 0012](./adr/0012-song-source-and-engine.md) |
@@ -117,7 +117,7 @@ Xem [ADR 0012](./adr/0012-song-source-and-engine.md).
 ## 5. Tiếng Nhật: readings, furigana, romaji
 
 - **Readings + furigana cho từ:** JMdict (reading chuẩn) + **JmdictFurigana** (phân đoạn ruby cho từng kanji, xử lý cả jukujikun như 今日, 大人).
-- **Câu ví dụ:** kuroshiro + kuromoji lúc ingest (Node, CI, không có secret) → `segments` + `romaji`. Người biên tập sửa được trong `content/`.
+- **Câu ví dụ:** viết tay trong `content/source/` bằng markup `{漢字|かんじ}` → ingest (`scripts/ingest/build-n5.ts`) sinh `segments` + `romaji`. Người biên tập sửa trực tiếp file nguồn.
 - **Romaji từ:** wanakana chuyển từ reading.
 - **Hán-Việt của từ:** chỉ ghép cho đoạn đọc on'yomi; từ có jukujikun gắn cờ, không ghép tự động.
 - **Không có** route phân tích runtime. AI tutor tự xuất markup furigana (`{漢字|かんじ}`), validate zod, render bằng parser của app.

@@ -1,0 +1,1886 @@
+[
+ {
+  "id": "n5-wa-desu",
+  "pattern": "N1 は N2 です",
+  "meaning": {
+   "vi": "N1 là N2",
+   "en": "N1 is N2"
+  },
+  "explanation": {
+   "vi": "は (đọc là \"wa\") đánh dấu chủ đề của câu. です đặt cuối câu, làm câu lịch sự. Cấu trúc dùng để nói ai/cái gì là gì.",
+   "en": "は (read \"wa\") marks the topic. です ends the sentence politely. Use it to say what someone or something is."
+  },
+  "examples": [
+   {
+    "ja": "私はミンです。",
+    "segments": [
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "はミンです。"
+     }
+    ],
+    "romaji": "watashi wa min desu.",
+    "translation": {
+     "vi": "Tôi là Minh.",
+     "en": "I am Minh."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "ランさんは会社員です。",
+    "segments": [
+     {
+      "surface": "ランさんは"
+     },
+     {
+      "surface": "会社員",
+      "reading": "かいしゃいん"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "ran san wa kaishain desu.",
+    "translation": {
+     "vi": "Chị Lan là nhân viên công ty.",
+     "en": "Lan is a company employee."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "私は学生です。",
+    "blank": "は",
+    "translation": {
+     "vi": "Tôi là sinh viên.",
+     "en": "I am a student."
+    }
+   },
+   {
+    "ja": "田中さんは先生です。",
+    "blank": "です",
+    "translation": {
+     "vi": "Anh Tanaka là giáo viên.",
+     "en": "Mr Tanaka is a teacher."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-ja-arimasen",
+  "pattern": "N1 は N2 じゃありません",
+  "meaning": {
+   "vi": "N1 không phải là N2",
+   "en": "N1 is not N2"
+  },
+  "explanation": {
+   "vi": "じゃありません là dạng phủ định lịch sự của です. Trong văn viết trang trọng dùng ではありません.",
+   "en": "じゃありません is the polite negative of です. In formal writing use ではありません."
+  },
+  "examples": [
+   {
+    "ja": "私は先生じゃありません。",
+    "segments": [
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "先生",
+      "reading": "せんせい"
+     },
+     {
+      "surface": "じゃありません。"
+     }
+    ],
+    "romaji": "watashi wa sensei ja arimasen.",
+    "translation": {
+     "vi": "Tôi không phải giáo viên.",
+     "en": "I am not a teacher."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "ミンさんは日本人じゃありません。",
+    "segments": [
+     {
+      "surface": "ミンさんは"
+     },
+     {
+      "surface": "日本人",
+      "reading": "にほんじん"
+     },
+     {
+      "surface": "じゃありません。"
+     }
+    ],
+    "romaji": "min san wa nihonjin ja arimasen.",
+    "translation": {
+     "vi": "Anh Minh không phải người Nhật.",
+     "en": "Minh is not Japanese."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "私は医者じゃありません。",
+    "blank": "じゃありません",
+    "translation": {
+     "vi": "Tôi không phải bác sĩ.",
+     "en": "I am not a doctor."
+    }
+   },
+   {
+    "ja": "アンさんはエンジニアじゃありません。",
+    "blank": "じゃありません",
+    "translation": {
+     "vi": "An không phải kỹ sư.",
+     "en": "An is not an engineer."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-ka",
+  "pattern": "〜か",
+  "meaning": {
+   "vi": "câu hỏi (có phải… không?)",
+   "en": "question marker"
+  },
+  "explanation": {
+   "vi": "Thêm か vào cuối câu để biến thành câu hỏi. Trả lời bằng はい (vâng) hoặc いいえ (không). Không cần dấu \"?\" trong tiếng Nhật trang trọng.",
+   "en": "Add か at the end to make a question. Answer with はい (yes) or いいえ (no). A question mark is not needed in formal Japanese."
+  },
+  "examples": [
+   {
+    "ja": "あなたは学生ですか。",
+    "segments": [
+     {
+      "surface": "あなたは"
+     },
+     {
+      "surface": "学生",
+      "reading": "がくせい"
+     },
+     {
+      "surface": "ですか。"
+     }
+    ],
+    "romaji": "anata wa gakusei desuka.",
+    "translation": {
+     "vi": "Bạn là sinh viên phải không?",
+     "en": "Are you a student?"
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "はい、学生です。",
+    "segments": [
+     {
+      "surface": "はい、"
+     },
+     {
+      "surface": "学生",
+      "reading": "がくせい"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "hai,gakusei desu.",
+    "translation": {
+     "vi": "Vâng, tôi là sinh viên.",
+     "en": "Yes, I am a student."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "ランさんは先生ですか。",
+    "blank": "か",
+    "translation": {
+     "vi": "Chị Lan là giáo viên phải không?",
+     "en": "Is Lan a teacher?"
+    }
+   },
+   {
+    "ja": "田中さんは日本人ですか。",
+    "blank": "か",
+    "translation": {
+     "vi": "Anh Tanaka là người Nhật phải không?",
+     "en": "Is Mr Tanaka Japanese?"
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-kore-sore-are",
+  "pattern": "これ / それ / あれ は N です",
+  "meaning": {
+   "vi": "cái này / cái đó / cái kia là N",
+   "en": "this / that / that over there is N"
+  },
+  "explanation": {
+   "vi": "これ chỉ vật gần người nói, それ gần người nghe, あれ xa cả hai. Khi đứng trước danh từ thì dùng この / その / あの.",
+   "en": "これ is near the speaker, それ near the listener, あれ far from both. Before a noun use この / その / あの."
+  },
+  "examples": [
+   {
+    "ja": "これは時計です。",
+    "segments": [
+     {
+      "surface": "これは"
+     },
+     {
+      "surface": "時計",
+      "reading": "とけい"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "kore wa tokei desu.",
+    "translation": {
+     "vi": "Đây là đồng hồ.",
+     "en": "This is a watch."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "あの人は先生です。",
+    "segments": [
+     {
+      "surface": "あの"
+     },
+     {
+      "surface": "人",
+      "reading": "ひと"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "先生",
+      "reading": "せんせい"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "ano hito wa sensei desu.",
+    "translation": {
+     "vi": "Người kia là giáo viên.",
+     "en": "That person is a teacher."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "それは辞書です。",
+    "blank": "それ",
+    "translation": {
+     "vi": "Đó là từ điển.",
+     "en": "That is a dictionary."
+    }
+   },
+   {
+    "ja": "この本は私のです。",
+    "blank": "この",
+    "translation": {
+     "vi": "Quyển sách này là của tôi.",
+     "en": "This book is mine."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-no",
+  "pattern": "N1 の N2",
+  "meaning": {
+   "vi": "N2 của N1; N2 về N1",
+   "en": "N1’s N2; N2 about N1"
+  },
+  "explanation": {
+   "vi": "の nối hai danh từ: chỉ sở hữu (của ai), nội dung (sách về gì) hoặc xuất xứ. Thứ tự ngược với tiếng Việt: \"私の本\" = \"sách của tôi\".",
+   "en": "の links two nouns: possession, topic or origin. The order is owner first: 私の本 = \"my book\"."
+  },
+  "examples": [
+   {
+    "ja": "これは私の傘です。",
+    "segments": [
+     {
+      "surface": "これは"
+     },
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "傘",
+      "reading": "かさ"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "kore wa watashi no kasa desu.",
+    "translation": {
+     "vi": "Đây là ô của tôi.",
+     "en": "This is my umbrella."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "それは日本語の新聞です。",
+    "segments": [
+     {
+      "surface": "それは"
+     },
+     {
+      "surface": "日本語",
+      "reading": "にほんご"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "新聞",
+      "reading": "しんぶん"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "sore wa nihongo no shinbun desu.",
+    "translation": {
+     "vi": "Đó là báo tiếng Nhật.",
+     "en": "That is a Japanese newspaper."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "田中さんの車です。",
+    "blank": "の",
+    "translation": {
+     "vi": "Là xe của anh Tanaka.",
+     "en": "It is Mr Tanaka’s car."
+    }
+   },
+   {
+    "ja": "これは誰の鞄ですか。",
+    "blank": "の",
+    "translation": {
+     "vi": "Đây là túi của ai?",
+     "en": "Whose bag is this?"
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-koko-soko-asoko",
+  "pattern": "ここ / そこ / あそこ は N です",
+  "meaning": {
+   "vi": "chỗ này / chỗ đó / chỗ kia là N",
+   "en": "here / there / over there is N"
+  },
+  "explanation": {
+   "vi": "Giống これ/それ/あれ nhưng dùng cho địa điểm: ここ gần người nói, そこ gần người nghe, あそこ xa cả hai.",
+   "en": "Like これ/それ/あれ but for places: ここ near the speaker, そこ near the listener, あそこ far from both."
+  },
+  "examples": [
+   {
+    "ja": "ここは教室です。",
+    "segments": [
+     {
+      "surface": "ここは"
+     },
+     {
+      "surface": "教室",
+      "reading": "きょうしつ"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "koko wa kyoushitsu desu.",
+    "translation": {
+     "vi": "Đây là phòng học.",
+     "en": "This is the classroom."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "あそこは病院です。",
+    "segments": [
+     {
+      "surface": "あそこは"
+     },
+     {
+      "surface": "病院",
+      "reading": "びょういん"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "asoko wa byouin desu.",
+    "translation": {
+     "vi": "Đằng kia là bệnh viện.",
+     "en": "Over there is the hospital."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "ここは会社です。",
+    "blank": "ここ",
+    "translation": {
+     "vi": "Đây là công ty.",
+     "en": "This is the company."
+    }
+   },
+   {
+    "ja": "あそこはデパートです。",
+    "blank": "あそこ",
+    "translation": {
+     "vi": "Đằng kia là trung tâm thương mại.",
+     "en": "Over there is a department store."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-doko",
+  "pattern": "N は どこ ですか",
+  "meaning": {
+   "vi": "N ở đâu?",
+   "en": "Where is N?"
+  },
+  "explanation": {
+   "vi": "Hỏi vị trí của nơi chốn, đồ vật hay người. Trả lời: N は ここ/そこ/あそこ です, hoặc nói tên địa điểm.",
+   "en": "Asks where a place, thing or person is. Answer with N は ここ/そこ/あそこ です or a place name."
+  },
+  "examples": [
+   {
+    "ja": "トイレはどこですか。",
+    "segments": [
+     {
+      "surface": "トイレはどこですか。"
+     }
+    ],
+    "romaji": "toire wa doko desuka.",
+    "translation": {
+     "vi": "Nhà vệ sinh ở đâu?",
+     "en": "Where is the toilet?"
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "銀行はあそこです。",
+    "segments": [
+     {
+      "surface": "銀行",
+      "reading": "ぎんこう"
+     },
+     {
+      "surface": "はあそこです。"
+     }
+    ],
+    "romaji": "ginkou wa asoko desu.",
+    "translation": {
+     "vi": "Ngân hàng ở đằng kia.",
+     "en": "The bank is over there."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "駅はどこですか。",
+    "blank": "どこ",
+    "translation": {
+     "vi": "Nhà ga ở đâu?",
+     "en": "Where is the station?"
+    }
+   },
+   {
+    "ja": "食堂はどこですか。",
+    "blank": "どこ",
+    "translation": {
+     "vi": "Nhà ăn ở đâu?",
+     "en": "Where is the cafeteria?"
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-ji-fun",
+  "pattern": "〜時〜分",
+  "meaning": {
+   "vi": "… giờ … phút",
+   "en": "… o’clock … minutes"
+  },
+  "explanation": {
+   "vi": "Số + 時 (じ) là giờ, số + 分 (ふん/ぷん) là phút. Chú ý cách đọc đặc biệt: 4時 よじ, 7時 しちじ, 9時 くじ; 1分 いっぷん, 3分 さんぷん, 10分 じゅっぷん. \"Rưỡi\" là 半 (はん).",
+   "en": "Number + 時 (じ) gives the hour, number + 分 (ふん/ぷん) the minutes. Watch the special readings: 4時 よじ, 7時 しちじ, 9時 くじ; 1分 いっぷん, 3分 さんぷん, 10分 じゅっぷん. \"Half past\" is 半 (はん)."
+  },
+  "examples": [
+   {
+    "ja": "今午前七時です。",
+    "segments": [
+     {
+      "surface": "今",
+      "reading": "いま"
+     },
+     {
+      "surface": "午前",
+      "reading": "ごぜん"
+     },
+     {
+      "surface": "七時",
+      "reading": "しちじ"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "ima gozen shichiji desu.",
+    "translation": {
+     "vi": "Bây giờ là bảy giờ sáng.",
+     "en": "It is 7 a.m. now."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "九時半です。",
+    "segments": [
+     {
+      "surface": "九時",
+      "reading": "くじ"
+     },
+     {
+      "surface": "半",
+      "reading": "はん"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "kuji han desu.",
+    "translation": {
+     "vi": "Chín giờ rưỡi.",
+     "en": "It is half past nine."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "今四時です。",
+    "blank": "四時",
+    "translation": {
+     "vi": "Bây giờ là bốn giờ.",
+     "en": "It is four o’clock now."
+    }
+   },
+   {
+    "ja": "六時半です。",
+    "blank": "半",
+    "translation": {
+     "vi": "Sáu giờ rưỡi.",
+     "en": "It is half past six."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-kara-made",
+  "pattern": "N1 から N2 まで",
+  "meaning": {
+   "vi": "từ N1 đến N2",
+   "en": "from N1 to N2"
+  },
+  "explanation": {
+   "vi": "から chỉ điểm bắt đầu, まで chỉ điểm kết thúc (thời gian hoặc nơi chốn). Có thể dùng riêng từng trợ từ.",
+   "en": "から marks the start and まで the end, of time or place. Each can also be used alone."
+  },
+  "examples": [
+   {
+    "ja": "銀行は九時から三時までです。",
+    "segments": [
+     {
+      "surface": "銀行",
+      "reading": "ぎんこう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "九時",
+      "reading": "くじ"
+     },
+     {
+      "surface": "から"
+     },
+     {
+      "surface": "三時",
+      "reading": "さんじ"
+     },
+     {
+      "surface": "までです。"
+     }
+    ],
+    "romaji": "ginkou wa kuji kara sanji made desu.",
+    "translation": {
+     "vi": "Ngân hàng mở cửa từ chín giờ đến ba giờ.",
+     "en": "The bank is open from nine to three."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "昼休みは十二時からです。",
+    "segments": [
+     {
+      "surface": "昼休",
+      "reading": "ひるやす"
+     },
+     {
+      "surface": "みは"
+     },
+     {
+      "surface": "十二時",
+      "reading": "じゅうにじ"
+     },
+     {
+      "surface": "からです。"
+     }
+    ],
+    "romaji": "hiruyasumi wa juuniji kara desu.",
+    "translation": {
+     "vi": "Giờ nghỉ trưa bắt đầu từ mười hai giờ.",
+     "en": "The lunch break starts at twelve."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "会社は八時からです。",
+    "blank": "から",
+    "translation": {
+     "vi": "Công ty bắt đầu từ tám giờ.",
+     "en": "The company starts at eight."
+    }
+   },
+   {
+    "ja": "店は十時までです。",
+    "blank": "まで",
+    "translation": {
+     "vi": "Cửa hàng mở đến mười giờ.",
+     "en": "The shop is open until ten."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-masu",
+  "pattern": "V-ます / V-ません",
+  "meaning": {
+   "vi": "làm / không làm (lịch sự, hiện tại – tương lai)",
+   "en": "do / do not (polite, present–future)"
+  },
+  "explanation": {
+   "vi": "Thể ます là cách nói lịch sự của động từ, dùng cho thói quen và việc sẽ làm. Phủ định: đổi ます thành ません. Ví dụ: 食べる → 食べます → 食べません.",
+   "en": "The ます form is the polite verb form for habits and future actions. Negative: change ます to ません. 食べる → 食べます → 食べません."
+  },
+  "examples": [
+   {
+    "ja": "毎日日本語を勉強します。",
+    "segments": [
+     {
+      "surface": "毎日",
+      "reading": "まいにち"
+     },
+     {
+      "surface": "日本語",
+      "reading": "にほんご"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "勉強",
+      "reading": "べんきょう"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "mainichi nihongo o benkyou shimasu.",
+    "translation": {
+     "vi": "Hằng ngày tôi học tiếng Nhật.",
+     "en": "I study Japanese every day."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "私は朝ご飯を食べません。",
+    "segments": [
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "朝",
+      "reading": "あさ"
+     },
+     {
+      "surface": "ご"
+     },
+     {
+      "surface": "飯",
+      "reading": "はん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "食",
+      "reading": "た"
+     },
+     {
+      "surface": "べません。"
+     }
+    ],
+    "romaji": "watashi wa asagohan o tabemasen.",
+    "translation": {
+     "vi": "Tôi không ăn sáng.",
+     "en": "I do not eat breakfast."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "水を飲みます。",
+    "blank": "ます",
+    "translation": {
+     "vi": "Tôi uống nước.",
+     "en": "I drink water."
+    }
+   },
+   {
+    "ja": "テレビを見ません。",
+    "blank": "ません",
+    "translation": {
+     "vi": "Tôi không xem ti vi.",
+     "en": "I do not watch TV."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-mashita",
+  "pattern": "V-ました / V-ませんでした",
+  "meaning": {
+   "vi": "đã làm / đã không làm",
+   "en": "did / did not"
+  },
+  "explanation": {
+   "vi": "Quá khứ lịch sự: ます → ました, ません → ませんでした. Thường đi với từ chỉ thời gian quá khứ như 昨日 (hôm qua).",
+   "en": "Polite past: ます → ました, ません → ませんでした. Often used with past time words like 昨日 (yesterday)."
+  },
+  "examples": [
+   {
+    "ja": "昨日本を読みました。",
+    "segments": [
+     {
+      "surface": "昨日",
+      "reading": "きのう"
+     },
+     {
+      "surface": "本",
+      "reading": "ほん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "読",
+      "reading": "よ"
+     },
+     {
+      "surface": "みました。"
+     }
+    ],
+    "romaji": "kinou hon o yomimashita.",
+    "translation": {
+     "vi": "Hôm qua tôi đã đọc sách.",
+     "en": "I read a book yesterday."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "昨日勉強しませんでした。",
+    "segments": [
+     {
+      "surface": "昨日",
+      "reading": "きのう"
+     },
+     {
+      "surface": "勉強",
+      "reading": "べんきょう"
+     },
+     {
+      "surface": "しませんでした。"
+     }
+    ],
+    "romaji": "kinou benkyou shimasen deshita.",
+    "translation": {
+     "vi": "Hôm qua tôi đã không học.",
+     "en": "I did not study yesterday."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "昨日テレビを見ました。",
+    "blank": "ました",
+    "translation": {
+     "vi": "Hôm qua tôi đã xem ti vi.",
+     "en": "I watched TV yesterday."
+    }
+   },
+   {
+    "ja": "朝ご飯を食べませんでした。",
+    "blank": "ませんでした",
+    "translation": {
+     "vi": "Tôi đã không ăn sáng.",
+     "en": "I did not eat breakfast."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-wo",
+  "pattern": "N を V",
+  "meaning": {
+   "vi": "làm gì với N (tân ngữ)",
+   "en": "object marker"
+  },
+  "explanation": {
+   "vi": "を (đọc là \"o\") đánh dấu tân ngữ – vật chịu tác động của động từ: ăn cái gì, uống cái gì, đọc cái gì.",
+   "en": "を (read \"o\") marks the direct object: what you eat, drink, read and so on."
+  },
+  "examples": [
+   {
+    "ja": "コーヒーを飲みます。",
+    "segments": [
+     {
+      "surface": "コーヒーを"
+     },
+     {
+      "surface": "飲",
+      "reading": "の"
+     },
+     {
+      "surface": "みます。"
+     }
+    ],
+    "romaji": "koohii o nomimasu.",
+    "translation": {
+     "vi": "Tôi uống cà phê.",
+     "en": "I drink coffee."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "手紙を書きました。",
+    "segments": [
+     {
+      "surface": "手紙",
+      "reading": "てがみ"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "書",
+      "reading": "か"
+     },
+     {
+      "surface": "きました。"
+     }
+    ],
+    "romaji": "tegami o kakimashita.",
+    "translation": {
+     "vi": "Tôi đã viết thư.",
+     "en": "I wrote a letter."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "パンを食べます。",
+    "blank": "を",
+    "translation": {
+     "vi": "Tôi ăn bánh mì.",
+     "en": "I eat bread."
+    }
+   },
+   {
+    "ja": "新聞を読みます。",
+    "blank": "を",
+    "translation": {
+     "vi": "Tôi đọc báo.",
+     "en": "I read the newspaper."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-e-ikimasu",
+  "pattern": "Nơi chốn へ 行きます / 来ます / 帰ります",
+  "meaning": {
+   "vi": "đi / đến / về nơi nào",
+   "en": "go / come / return to a place"
+  },
+  "explanation": {
+   "vi": "へ (đọc là \"e\") chỉ hướng di chuyển. Dùng với 3 động từ di chuyển 行きます (đi), 来ます (đến), 帰ります (về nhà, về nước). Có thể thay へ bằng に.",
+   "en": "へ (read \"e\") marks the direction of movement with 行きます (go), 来ます (come) and 帰ります (return home). に can also be used."
+  },
+  "examples": [
+   {
+    "ja": "明日銀行へ行きます。",
+    "segments": [
+     {
+      "surface": "明日",
+      "reading": "あした"
+     },
+     {
+      "surface": "銀行",
+      "reading": "ぎんこう"
+     },
+     {
+      "surface": "へ"
+     },
+     {
+      "surface": "行",
+      "reading": "い"
+     },
+     {
+      "surface": "きます。"
+     }
+    ],
+    "romaji": "ashita ginkou e ikimasu.",
+    "translation": {
+     "vi": "Ngày mai tôi đi ngân hàng.",
+     "en": "I will go to the bank tomorrow."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "何時に家へ帰りますか。",
+    "segments": [
+     {
+      "surface": "何時",
+      "reading": "なんじ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "家",
+      "reading": "いえ"
+     },
+     {
+      "surface": "へ"
+     },
+     {
+      "surface": "帰",
+      "reading": "かえ"
+     },
+     {
+      "surface": "りますか。"
+     }
+    ],
+    "romaji": "nanji ni ie e kaerimasuka.",
+    "translation": {
+     "vi": "Mấy giờ bạn về nhà?",
+     "en": "What time do you go home?"
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "会社へ行きます。",
+    "blank": "へ",
+    "translation": {
+     "vi": "Tôi đi đến công ty.",
+     "en": "I go to the company."
+    }
+   },
+   {
+    "ja": "来週国へ帰ります。",
+    "blank": "帰ります",
+    "translation": {
+     "vi": "Tuần sau tôi về nước.",
+     "en": "I will return to my country next week."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-de-transport",
+  "pattern": "Phương tiện で 行きます",
+  "meaning": {
+   "vi": "đi bằng phương tiện gì",
+   "en": "go by a means of transport"
+  },
+  "explanation": {
+   "vi": "で chỉ phương tiện, cách thức. Đi bộ không dùng で mà nói 歩いて 行きます. Đi cùng ai dùng と: 友達と 行きます.",
+   "en": "で marks the means of transport. For walking say 歩いて 行きます. \"With someone\" uses と: 友達と 行きます."
+  },
+  "examples": [
+   {
+    "ja": "バスで学校へ行きます。",
+    "segments": [
+     {
+      "surface": "バスで"
+     },
+     {
+      "surface": "学校",
+      "reading": "がっこう"
+     },
+     {
+      "surface": "へ"
+     },
+     {
+      "surface": "行",
+      "reading": "い"
+     },
+     {
+      "surface": "きます。"
+     }
+    ],
+    "romaji": "basu de gakkou e ikimasu.",
+    "translation": {
+     "vi": "Tôi đi học bằng xe buýt.",
+     "en": "I go to school by bus."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "友達と電車で来ました。",
+    "segments": [
+     {
+      "surface": "友達",
+      "reading": "ともだち"
+     },
+     {
+      "surface": "と"
+     },
+     {
+      "surface": "電車",
+      "reading": "でんしゃ"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "来",
+      "reading": "き"
+     },
+     {
+      "surface": "ました。"
+     }
+    ],
+    "romaji": "tomodachi to densha de kimashita.",
+    "translation": {
+     "vi": "Tôi đã đến bằng tàu điện cùng bạn.",
+     "en": "I came by train with a friend."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "電車で行きます。",
+    "blank": "で",
+    "translation": {
+     "vi": "Tôi đi bằng tàu điện.",
+     "en": "I go by train."
+    }
+   },
+   {
+    "ja": "家族と来ました。",
+    "blank": "と",
+    "translation": {
+     "vi": "Tôi đã đến cùng gia đình.",
+     "en": "I came with my family."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-arimasu-imasu",
+  "pattern": "N が あります / います",
+  "meaning": {
+   "vi": "có N",
+   "en": "there is N"
+  },
+  "explanation": {
+   "vi": "あります dùng cho đồ vật, cây cối (không tự cử động). います dùng cho người, động vật. が đánh dấu chủ ngữ là thứ \"có\".",
+   "en": "あります is for things and plants (not moving by themselves); います for people and animals. が marks what exists."
+  },
+  "examples": [
+   {
+    "ja": "部屋にテレビがあります。",
+    "segments": [
+     {
+      "surface": "部屋",
+      "reading": "へや"
+     },
+     {
+      "surface": "にテレビがあります。"
+     }
+    ],
+    "romaji": "heya ni terebi ga arimasu.",
+    "translation": {
+     "vi": "Trong phòng có ti vi.",
+     "en": "There is a TV in the room."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "部屋に猫がいます。",
+    "segments": [
+     {
+      "surface": "部屋",
+      "reading": "へや"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "猫",
+      "reading": "ねこ"
+     },
+     {
+      "surface": "がいます。"
+     }
+    ],
+    "romaji": "heya ni neko ga imasu.",
+    "translation": {
+     "vi": "Trong phòng có con mèo.",
+     "en": "There is a cat in the room."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "公園に子供がいます。",
+    "blank": "います",
+    "translation": {
+     "vi": "Ở công viên có trẻ con.",
+     "en": "There are children in the park."
+    }
+   },
+   {
+    "ja": "机の上に時計があります。",
+    "blank": "あります",
+    "translation": {
+     "vi": "Trên bàn có đồng hồ.",
+     "en": "There is a clock on the desk."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-ni-location",
+  "pattern": "Nơi chốn に N が あります",
+  "meaning": {
+   "vi": "ở nơi … có N",
+   "en": "at a place there is N"
+  },
+  "explanation": {
+   "vi": "に chỉ vị trí tồn tại. Vị trí cụ thể: N1 の 上 / 下 / 中 / 前 / 後ろ に … Ví dụ: 机の上に (trên bàn).",
+   "en": "に marks where something exists. For exact positions use N1 の 上 / 下 / 中 / 前 / 後ろ に, e.g. 机の上に (on the desk)."
+  },
+  "examples": [
+   {
+    "ja": "駅の前に本屋があります。",
+    "segments": [
+     {
+      "surface": "駅",
+      "reading": "えき"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "前",
+      "reading": "まえ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "本屋",
+      "reading": "ほんや"
+     },
+     {
+      "surface": "があります。"
+     }
+    ],
+    "romaji": "eki no mae ni hon'ya ga arimasu.",
+    "translation": {
+     "vi": "Trước ga có hiệu sách.",
+     "en": "There is a bookstore in front of the station."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "木の下に犬がいます。",
+    "segments": [
+     {
+      "surface": "木",
+      "reading": "き"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "下",
+      "reading": "した"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "犬",
+      "reading": "いぬ"
+     },
+     {
+      "surface": "がいます。"
+     }
+    ],
+    "romaji": "ki no shita ni inu ga imasu.",
+    "translation": {
+     "vi": "Dưới gốc cây có con chó.",
+     "en": "There is a dog under the tree."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "鞄の中に本があります。",
+    "blank": "に",
+    "translation": {
+     "vi": "Trong túi có sách.",
+     "en": "There is a book in the bag."
+    }
+   },
+   {
+    "ja": "家の外に車があります。",
+    "blank": "が",
+    "translation": {
+     "vi": "Bên ngoài nhà có xe hơi.",
+     "en": "There is a car outside the house."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-de-place",
+  "pattern": "Nơi chốn で V",
+  "meaning": {
+   "vi": "làm V ở nơi chốn",
+   "en": "do V at a place"
+  },
+  "explanation": {
+   "vi": "で chỉ nơi diễn ra hành động (ăn ở đâu, học ở đâu). Khác với に chỉ nơi tồn tại (có ở đâu).",
+   "en": "で marks where an action happens (eat at, study at). Compare に, which marks where something exists."
+  },
+  "examples": [
+   {
+    "ja": "図書館で本を読みます。",
+    "segments": [
+     {
+      "surface": "図書館",
+      "reading": "としょかん"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "本",
+      "reading": "ほん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "読",
+      "reading": "よ"
+     },
+     {
+      "surface": "みます。"
+     }
+    ],
+    "romaji": "toshokan de hon o yomimasu.",
+    "translation": {
+     "vi": "Tôi đọc sách ở thư viện.",
+     "en": "I read books at the library."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "会社で昼ご飯を食べます。",
+    "segments": [
+     {
+      "surface": "会社",
+      "reading": "かいしゃ"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "昼",
+      "reading": "ひる"
+     },
+     {
+      "surface": "ご"
+     },
+     {
+      "surface": "飯",
+      "reading": "はん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "食",
+      "reading": "た"
+     },
+     {
+      "surface": "べます。"
+     }
+    ],
+    "romaji": "kaisha de hirugohan o tabemasu.",
+    "translation": {
+     "vi": "Tôi ăn trưa ở công ty.",
+     "en": "I eat lunch at the office."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "公園で写真を撮ります。",
+    "blank": "で",
+    "translation": {
+     "vi": "Tôi chụp ảnh ở công viên.",
+     "en": "I take photos in the park."
+    }
+   },
+   {
+    "ja": "喫茶店で話します。",
+    "blank": "で",
+    "translation": {
+     "vi": "Chúng tôi nói chuyện ở quán cà phê.",
+     "en": "We talk at a café."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-masenka-mashou",
+  "pattern": "V-ませんか / V-ましょう",
+  "meaning": {
+   "vi": "… không? (rủ) / … nhé! (đề nghị cùng làm)",
+   "en": "won’t you …? / let’s …"
+  },
+  "explanation": {
+   "vi": "V-ませんか là lời mời lịch sự, tôn trọng ý người nghe. V-ましょう là đề nghị cùng làm, cũng dùng để nhận lời mời: ええ、行きましょう.",
+   "en": "V-ませんか is a polite invitation that leaves the choice to the listener. V-ましょう suggests doing something together and also accepts an invitation: ええ、行きましょう."
+  },
+  "examples": [
+   {
+    "ja": "一緒に昼ご飯を食べませんか。",
+    "segments": [
+     {
+      "surface": "一緒",
+      "reading": "いっしょ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "昼",
+      "reading": "ひる"
+     },
+     {
+      "surface": "ご"
+     },
+     {
+      "surface": "飯",
+      "reading": "はん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "食",
+      "reading": "た"
+     },
+     {
+      "surface": "べませんか。"
+     }
+    ],
+    "romaji": "isshoni hirugohan o tabemasenka.",
+    "translation": {
+     "vi": "Ăn trưa cùng nhau không?",
+     "en": "Would you like to have lunch together?"
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "ええ、食べましょう。",
+    "segments": [
+     {
+      "surface": "ええ、"
+     },
+     {
+      "surface": "食",
+      "reading": "た"
+     },
+     {
+      "surface": "べましょう。"
+     }
+    ],
+    "romaji": "ee,tabemashou.",
+    "translation": {
+     "vi": "Ừ, ăn nhé.",
+     "en": "Sure, let’s eat."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "映画を見ませんか。",
+    "blank": "ませんか",
+    "translation": {
+     "vi": "Đi xem phim không?",
+     "en": "Would you like to see a film?"
+    }
+   },
+   {
+    "ja": "ちょっと休みましょう。",
+    "blank": "ましょう",
+    "translation": {
+     "vi": "Nghỉ một chút nhé.",
+     "en": "Let’s take a short break."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-i-adj",
+  "pattern": "A-い です / A-くない です / A-かった です",
+  "meaning": {
+   "vi": "tính từ đuôi い: khẳng định, phủ định, quá khứ",
+   "en": "い-adjectives: affirmative, negative, past"
+  },
+  "explanation": {
+   "vi": "Tính từ đuôi い đứng trước danh từ giữ nguyên: 高い車. Phủ định: bỏ い thêm くない (高くない). Quá khứ: bỏ い thêm かった (高かった). Ngoại lệ: いい → よくない, よかった.",
+   "en": "い-adjectives go straight before nouns: 高い車. Negative: drop い, add くない (高くない). Past: drop い, add かった (高かった). Exception: いい → よくない, よかった."
+  },
+  "examples": [
+   {
+    "ja": "この店は高くないです。",
+    "segments": [
+     {
+      "surface": "この"
+     },
+     {
+      "surface": "店",
+      "reading": "みせ"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "高",
+      "reading": "たか"
+     },
+     {
+      "surface": "くないです。"
+     }
+    ],
+    "romaji": "kono mise wa takakunai desu.",
+    "translation": {
+     "vi": "Cửa hàng này không đắt.",
+     "en": "This shop is not expensive."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "旅行は楽しかったです。",
+    "segments": [
+     {
+      "surface": "旅行",
+      "reading": "りょこう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "楽",
+      "reading": "たの"
+     },
+     {
+      "surface": "しかったです。"
+     }
+    ],
+    "romaji": "ryokou wa tanoshikatta desu.",
+    "translation": {
+     "vi": "Chuyến du lịch đã rất vui.",
+     "en": "The trip was fun."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "今日は暑くないです。",
+    "blank": "くない",
+    "translation": {
+     "vi": "Hôm nay không nóng.",
+     "en": "It is not hot today."
+    }
+   },
+   {
+    "ja": "テストは難しかったです。",
+    "blank": "かった",
+    "translation": {
+     "vi": "Bài kiểm tra đã khó.",
+     "en": "The test was difficult."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-totemo-amari",
+  "pattern": "とても A / あまり A-くない",
+  "meaning": {
+   "vi": "rất A / không A lắm",
+   "en": "very A / not very A"
+  },
+  "explanation": {
+   "vi": "とても đi với câu khẳng định (rất). あまり luôn đi với câu phủ định (không … lắm).",
+   "en": "とても goes with affirmative sentences (very). あまり always goes with negatives (not very)."
+  },
+  "examples": [
+   {
+    "ja": "この料理はとても美味しいです。",
+    "segments": [
+     {
+      "surface": "この"
+     },
+     {
+      "surface": "料理",
+      "reading": "りょうり"
+     },
+     {
+      "surface": "はとても"
+     },
+     {
+      "surface": "美味",
+      "reading": "おい"
+     },
+     {
+      "surface": "しいです。"
+     }
+    ],
+    "romaji": "kono ryouri wa totemo oishii desu.",
+    "translation": {
+     "vi": "Món này rất ngon.",
+     "en": "This dish is very tasty."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "日本語はあまり難しくないです。",
+    "segments": [
+     {
+      "surface": "日本語",
+      "reading": "にほんご"
+     },
+     {
+      "surface": "はあまり"
+     },
+     {
+      "surface": "難",
+      "reading": "むずか"
+     },
+     {
+      "surface": "しくないです。"
+     }
+    ],
+    "romaji": "nihongo wa amari muzukashikunai desu.",
+    "translation": {
+     "vi": "Tiếng Nhật không khó lắm.",
+     "en": "Japanese is not very difficult."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "とても寒いです。",
+    "blank": "とても",
+    "translation": {
+     "vi": "Rất lạnh.",
+     "en": "It is very cold."
+    }
+   },
+   {
+    "ja": "あまり高くないです。",
+    "blank": "あまり",
+    "translation": {
+     "vi": "Không đắt lắm.",
+     "en": "It is not very expensive."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-na-adj",
+  "pattern": "A な です / じゃありません / でした",
+  "meaning": {
+   "vi": "tính từ đuôi な: khẳng định, phủ định, quá khứ",
+   "en": "な-adjectives: affirmative, negative, past"
+  },
+  "explanation": {
+   "vi": "Tính từ đuôi な chia giống danh từ: 静かです, 静かじゃありません, 静かでした, 静かじゃありませんでした. Chú ý: 綺麗 (きれい) và 有名 là tính từ な dù kết thúc bằng âm い.",
+   "en": "な-adjectives conjugate like nouns: 静かです, 静かじゃありません, 静かでした, 静かじゃありませんでした. Note 綺麗 (きれい) and 有名 are な-adjectives even if they end in an い sound."
+  },
+  "examples": [
+   {
+    "ja": "この部屋は静かじゃありません。",
+    "segments": [
+     {
+      "surface": "この"
+     },
+     {
+      "surface": "部屋",
+      "reading": "へや"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "静",
+      "reading": "しず"
+     },
+     {
+      "surface": "かじゃありません。"
+     }
+    ],
+    "romaji": "kono heya wa shizuka ja arimasen.",
+    "translation": {
+     "vi": "Phòng này không yên tĩnh.",
+     "en": "This room is not quiet."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "昨日は暇でした。",
+    "segments": [
+     {
+      "surface": "昨日",
+      "reading": "きのう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "暇",
+      "reading": "ひま"
+     },
+     {
+      "surface": "でした。"
+     }
+    ],
+    "romaji": "kinou wa hima deshita.",
+    "translation": {
+     "vi": "Hôm qua tôi rảnh.",
+     "en": "I was free yesterday."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "公園は静かでした。",
+    "blank": "でした",
+    "translation": {
+     "vi": "Công viên đã rất yên tĩnh.",
+     "en": "The park was quiet."
+    }
+   },
+   {
+    "ja": "日本語は簡単じゃありません。",
+    "blank": "じゃありません",
+    "translation": {
+     "vi": "Tiếng Nhật không đơn giản.",
+     "en": "Japanese is not easy."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-na-noun",
+  "pattern": "A な + N",
+  "meaning": {
+   "vi": "tính từ な bổ nghĩa cho danh từ",
+   "en": "な-adjective before a noun"
+  },
+  "explanation": {
+   "vi": "Khi đứng trước danh từ, tính từ đuôi な cần thêm な: 静かな町 (thị trấn yên tĩnh). Tính từ đuôi い thì không: 大きい町.",
+   "en": "Before a noun, a な-adjective takes な: 静かな町 (a quiet town). い-adjectives do not: 大きい町."
+  },
+  "examples": [
+   {
+    "ja": "京都は綺麗な町です。",
+    "segments": [
+     {
+      "surface": "京都",
+      "reading": "きょうと"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "綺麗",
+      "reading": "きれい"
+     },
+     {
+      "surface": "な"
+     },
+     {
+      "surface": "町",
+      "reading": "まち"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "kyouto wa kirei na machi desu.",
+    "translation": {
+     "vi": "Kyoto là thành phố đẹp.",
+     "en": "Kyoto is a beautiful city."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "有名な山に登りました。",
+    "segments": [
+     {
+      "surface": "有名",
+      "reading": "ゆうめい"
+     },
+     {
+      "surface": "な"
+     },
+     {
+      "surface": "山",
+      "reading": "やま"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "登",
+      "reading": "のぼ"
+     },
+     {
+      "surface": "りました。"
+     }
+    ],
+    "romaji": "yuumei na yama ni noborimashita.",
+    "translation": {
+     "vi": "Tôi đã leo một ngọn núi nổi tiếng.",
+     "en": "I climbed a famous mountain."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "親切な人です。",
+    "blank": "な",
+    "translation": {
+     "vi": "Là người tốt bụng.",
+     "en": "They are a kind person."
+    }
+   },
+   {
+    "ja": "便利な町です。",
+    "blank": "な",
+    "translation": {
+     "vi": "Là thị trấn tiện lợi.",
+     "en": "It is a convenient town."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ }
+]

@@ -136,3 +136,9 @@ rt {
     animation: none;
   }
 }
+
+/* Display preferences set on <html> by public/ui-mode.js (F13 toggles, no layout shift for furigana). */
+[data-romaji="off"] .romaji,
+[data-hanviet="off"] .hanviet {
+  display: none;
+}

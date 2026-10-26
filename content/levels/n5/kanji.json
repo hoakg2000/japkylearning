@@ -1,0 +1,2421 @@
+[
+ {
+  "char": "一",
+  "on": [
+   "イチ",
+   "イツ"
+  ],
+  "kun": [
+   "ひと-",
+   "ひと.つ"
+  ],
+  "hanViet": [
+   "NHẤT"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "một",
+   "en": "one; one radical (no.1)"
+  },
+  "strokeCount": 1,
+  "jlpt": "n5",
+  "lessonId": "n5-04",
+  "sectors": []
+ },
+ {
+  "char": "二",
+  "on": [
+   "ニ",
+   "ジ"
+  ],
+  "kun": [
+   "ふた",
+   "ふた.つ",
+   "ふたたび"
+  ],
+  "hanViet": [
+   "NHỊ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "hai",
+   "en": "two; two radical (no. 7)"
+  },
+  "strokeCount": 2,
+  "jlpt": "n5",
+  "lessonId": "n5-04",
+  "sectors": []
+ },
+ {
+  "char": "三",
+  "on": [
+   "サン",
+   "ゾウ"
+  ],
+  "kun": [
+   "み",
+   "み.つ",
+   "みっ.つ"
+  ],
+  "hanViet": [
+   "TAM"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "ba",
+   "en": "three"
+  },
+  "strokeCount": 3,
+  "jlpt": "n5",
+  "lessonId": "n5-04",
+  "sectors": []
+ },
+ {
+  "char": "四",
+  "on": [
+   "シ"
+  ],
+  "kun": [
+   "よ",
+   "よ.つ",
+   "よっ.つ",
+   "よん"
+  ],
+  "hanViet": [
+   "TỨ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "bốn",
+   "en": "four"
+  },
+  "strokeCount": 5,
+  "jlpt": "n5",
+  "lessonId": "n5-04",
+  "sectors": []
+ },
+ {
+  "char": "五",
+  "on": [
+   "ゴ"
+  ],
+  "kun": [
+   "いつ",
+   "いつ.つ"
+  ],
+  "hanViet": [
+   "NGŨ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "năm (số 5)",
+   "en": "five"
+  },
+  "strokeCount": 4,
+  "jlpt": "n5",
+  "lessonId": "n5-04",
+  "sectors": []
+ },
+ {
+  "char": "六",
+  "on": [
+   "ロク",
+   "リク"
+  ],
+  "kun": [
+   "む",
+   "む.つ",
+   "むっ.つ",
+   "むい"
+  ],
+  "hanViet": [
+   "LỤC"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "sáu",
+   "en": "six"
+  },
+  "strokeCount": 4,
+  "jlpt": "n5",
+  "lessonId": "n5-04",
+  "sectors": []
+ },
+ {
+  "char": "七",
+  "on": [
+   "シチ"
+  ],
+  "kun": [
+   "なな",
+   "なな.つ",
+   "なの"
+  ],
+  "hanViet": [
+   "THẤT"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "bảy",
+   "en": "seven"
+  },
+  "strokeCount": 2,
+  "jlpt": "n5",
+  "lessonId": "n5-04",
+  "sectors": []
+ },
+ {
+  "char": "八",
+  "on": [
+   "ハチ",
+   "ハツ"
+  ],
+  "kun": [
+   "や",
+   "や.つ",
+   "やっ.つ",
+   "よう"
+  ],
+  "hanViet": [
+   "BÁT"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "tám",
+   "en": "eight; eight radical (no. 12)"
+  },
+  "strokeCount": 2,
+  "jlpt": "n5",
+  "lessonId": "n5-04",
+  "sectors": []
+ },
+ {
+  "char": "九",
+  "on": [
+   "キュウ",
+   "ク"
+  ],
+  "kun": [
+   "ここの",
+   "ここの.つ"
+  ],
+  "hanViet": [
+   "CỬU"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "chín",
+   "en": "nine"
+  },
+  "strokeCount": 2,
+  "jlpt": "n5",
+  "lessonId": "n5-04",
+  "sectors": []
+ },
+ {
+  "char": "十",
+  "on": [
+   "ジュウ",
+   "ジッ",
+   "ジュッ"
+  ],
+  "kun": [
+   "とお",
+   "と",
+   "そ"
+  ],
+  "hanViet": [
+   "THẬP"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "mười",
+   "en": "ten"
+  },
+  "strokeCount": 2,
+  "jlpt": "n5",
+  "lessonId": "n5-04",
+  "sectors": []
+ },
+ {
+  "char": "百",
+  "on": [
+   "ヒャク",
+   "ビャク"
+  ],
+  "kun": [
+   "もも"
+  ],
+  "hanViet": [
+   "BÁCH"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "trăm",
+   "en": "hundred"
+  },
+  "strokeCount": 6,
+  "jlpt": "n5",
+  "lessonId": "n5-04",
+  "sectors": []
+ },
+ {
+  "char": "千",
+  "on": [
+   "セン"
+  ],
+  "kun": [
+   "ち"
+  ],
+  "hanViet": [
+   "THIÊN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "nghìn",
+   "en": "thousand"
+  },
+  "strokeCount": 3,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "万",
+  "on": [
+   "マン",
+   "バン"
+  ],
+  "kun": [
+   "よろず"
+  ],
+  "hanViet": [
+   "VẠN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "vạn, mười nghìn",
+   "en": "ten thousand; 10,000"
+  },
+  "strokeCount": 3,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "円",
+  "on": [
+   "エン"
+  ],
+  "kun": [
+   "まる.い",
+   "まる",
+   "まど",
+   "まど.か",
+   "まろ.やか"
+  ],
+  "hanViet": [
+   "VIÊN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "yên (tiền Nhật); tròn",
+   "en": "circle; yen; round"
+  },
+  "strokeCount": 4,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "日",
+  "on": [
+   "ニチ",
+   "ジツ"
+  ],
+  "kun": [
+   "ひ",
+   "-び",
+   "-か"
+  ],
+  "hanViet": [
+   "NHẬT"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "mặt trời; ngày",
+   "en": "day; sun; Japan"
+  },
+  "strokeCount": 4,
+  "jlpt": "n5",
+  "lessonId": "n5-01",
+  "sectors": []
+ },
+ {
+  "char": "月",
+  "on": [
+   "ゲツ",
+   "ガツ"
+  ],
+  "kun": [
+   "つき"
+  ],
+  "hanViet": [
+   "NGUYỆT"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "mặt trăng; tháng",
+   "en": "month; moon"
+  },
+  "strokeCount": 4,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "火",
+  "on": [
+   "カ"
+  ],
+  "kun": [
+   "ひ",
+   "-び",
+   "ほ-"
+  ],
+  "hanViet": [
+   "HỎA"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "lửa",
+   "en": "fire"
+  },
+  "strokeCount": 4,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "水",
+  "on": [
+   "スイ"
+  ],
+  "kun": [
+   "みず",
+   "みず-"
+  ],
+  "hanViet": [
+   "THỦY"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "nước",
+   "en": "water"
+  },
+  "strokeCount": 4,
+  "jlpt": "n5",
+  "lessonId": "n5-05",
+  "sectors": []
+ },
+ {
+  "char": "木",
+  "on": [
+   "ボク",
+   "モク"
+  ],
+  "kun": [
+   "き",
+   "こ-"
+  ],
+  "hanViet": [
+   "MỘC"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "cây, gỗ",
+   "en": "tree; wood"
+  },
+  "strokeCount": 4,
+  "jlpt": "n5",
+  "lessonId": "n5-07",
+  "sectors": []
+ },
+ {
+  "char": "金",
+  "on": [
+   "キン",
+   "コン",
+   "ゴン"
+  ],
+  "kun": [
+   "かね",
+   "かな-",
+   "-がね"
+  ],
+  "hanViet": [
+   "KIM"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "vàng; tiền",
+   "en": "gold"
+  },
+  "strokeCount": 8,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "土",
+  "on": [
+   "ド",
+   "ト"
+  ],
+  "kun": [
+   "つち"
+  ],
+  "hanViet": [
+   "THỔ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "đất",
+   "en": "soil; earth; ground"
+  },
+  "strokeCount": 3,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "年",
+  "on": [
+   "ネン"
+  ],
+  "kun": [
+   "とし"
+  ],
+  "hanViet": [
+   "NIÊN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "năm (thời gian)",
+   "en": "year; counter for years"
+  },
+  "strokeCount": 6,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "時",
+  "on": [
+   "ジ"
+  ],
+  "kun": [
+   "とき",
+   "-どき"
+  ],
+  "hanViet": [
+   "THỜI"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "giờ, thời gian",
+   "en": "time; hour"
+  },
+  "strokeCount": 10,
+  "jlpt": "n5",
+  "lessonId": "n5-04",
+  "sectors": []
+ },
+ {
+  "char": "分",
+  "on": [
+   "ブン",
+   "フン",
+   "ブ"
+  ],
+  "kun": [
+   "わ.ける",
+   "わ.け",
+   "わ.かれる",
+   "わ.かる",
+   "わ.かつ"
+  ],
+  "hanViet": [
+   "PHÂN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "phút; chia",
+   "en": "part; minute of time; segment"
+  },
+  "strokeCount": 4,
+  "jlpt": "n5",
+  "lessonId": "n5-04",
+  "sectors": []
+ },
+ {
+  "char": "半",
+  "on": [
+   "ハン"
+  ],
+  "kun": [
+   "なか.ば"
+  ],
+  "hanViet": [
+   "BÁN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "một nửa",
+   "en": "half; middle; odd number"
+  },
+  "strokeCount": 5,
+  "jlpt": "n5",
+  "lessonId": "n5-04",
+  "sectors": []
+ },
+ {
+  "char": "午",
+  "on": [
+   "ゴ"
+  ],
+  "kun": [
+   "うま"
+  ],
+  "hanViet": [
+   "NGỌ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "buổi trưa",
+   "en": "noon; sign of the horse; 11AM-1PM"
+  },
+  "strokeCount": 4,
+  "jlpt": "n5",
+  "lessonId": "n5-04",
+  "sectors": []
+ },
+ {
+  "char": "前",
+  "on": [
+   "ゼン"
+  ],
+  "kun": [
+   "まえ",
+   "-まえ"
+  ],
+  "hanViet": [
+   "TIỀN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "phía trước; trước",
+   "en": "in front; before"
+  },
+  "strokeCount": 9,
+  "jlpt": "n5",
+  "lessonId": "n5-07",
+  "sectors": []
+ },
+ {
+  "char": "後",
+  "on": [
+   "ゴ",
+   "コウ"
+  ],
+  "kun": [
+   "のち",
+   "うし.ろ",
+   "うしろ",
+   "あと",
+   "おく.れる"
+  ],
+  "hanViet": [
+   "HẬU"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "phía sau; sau",
+   "en": "behind; back; later"
+  },
+  "strokeCount": 9,
+  "jlpt": "n5",
+  "lessonId": "n5-04",
+  "sectors": []
+ },
+ {
+  "char": "今",
+  "on": [
+   "コン",
+   "キン"
+  ],
+  "kun": [
+   "いま"
+  ],
+  "hanViet": [
+   "KIM"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "bây giờ",
+   "en": "now"
+  },
+  "strokeCount": 4,
+  "jlpt": "n5",
+  "lessonId": "n5-04",
+  "sectors": []
+ },
+ {
+  "char": "毎",
+  "on": [
+   "マイ"
+  ],
+  "kun": [
+   "ごと",
+   "-ごと.に"
+  ],
+  "hanViet": [
+   "MỖI"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "mỗi",
+   "en": "every"
+  },
+  "strokeCount": 6,
+  "jlpt": "n5",
+  "lessonId": "n5-05",
+  "sectors": []
+ },
+ {
+  "char": "週",
+  "on": [
+   "シュウ"
+  ],
+  "kun": [],
+  "hanViet": [
+   "CHU"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "tuần",
+   "en": "week"
+  },
+  "strokeCount": 11,
+  "jlpt": "n5",
+  "lessonId": "n5-06",
+  "sectors": []
+ },
+ {
+  "char": "間",
+  "on": [
+   "カン",
+   "ケン"
+  ],
+  "kun": [
+   "あいだ",
+   "ま",
+   "あい"
+  ],
+  "hanViet": [
+   "GIAN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "khoảng, giữa",
+   "en": "interval; space"
+  },
+  "strokeCount": 12,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "人",
+  "on": [
+   "ジン",
+   "ニン"
+  ],
+  "kun": [
+   "ひと",
+   "-り",
+   "-と"
+  ],
+  "hanViet": [
+   "NHÂN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "người",
+   "en": "person"
+  },
+  "strokeCount": 2,
+  "jlpt": "n5",
+  "lessonId": "n5-01",
+  "sectors": []
+ },
+ {
+  "char": "男",
+  "on": [
+   "ダン",
+   "ナン"
+  ],
+  "kun": [
+   "おとこ",
+   "お"
+  ],
+  "hanViet": [
+   "NAM"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "nam, đàn ông",
+   "en": "male"
+  },
+  "strokeCount": 7,
+  "jlpt": "n5",
+  "lessonId": "n5-07",
+  "sectors": []
+ },
+ {
+  "char": "女",
+  "on": [
+   "ジョ",
+   "ニョ",
+   "ニョウ"
+  ],
+  "kun": [
+   "おんな",
+   "め"
+  ],
+  "hanViet": [
+   "NỮ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "nữ, phụ nữ",
+   "en": "woman; female"
+  },
+  "strokeCount": 3,
+  "jlpt": "n5",
+  "lessonId": "n5-07",
+  "sectors": []
+ },
+ {
+  "char": "子",
+  "on": [
+   "シ",
+   "ス",
+   "ツ"
+  ],
+  "kun": [
+   "こ",
+   "-こ",
+   "ね"
+  ],
+  "hanViet": [
+   "TỬ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "con, trẻ con",
+   "en": "child; sign of the rat; 11PM-1AM"
+  },
+  "strokeCount": 3,
+  "jlpt": "n5",
+  "lessonId": "n5-07",
+  "sectors": []
+ },
+ {
+  "char": "父",
+  "on": [
+   "フ"
+  ],
+  "kun": [
+   "ちち"
+  ],
+  "hanViet": [
+   "PHỤ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "cha",
+   "en": "father"
+  },
+  "strokeCount": 4,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "母",
+  "on": [
+   "ボ"
+  ],
+  "kun": [
+   "はは",
+   "も"
+  ],
+  "hanViet": [
+   "MẪU"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "mẹ",
+   "en": "mother"
+  },
+  "strokeCount": 5,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "友",
+  "on": [
+   "ユウ"
+  ],
+  "kun": [
+   "とも"
+  ],
+  "hanViet": [
+   "HỮU"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "bạn",
+   "en": "friend"
+  },
+  "strokeCount": 4,
+  "jlpt": "n5",
+  "lessonId": "n5-01",
+  "sectors": []
+ },
+ {
+  "char": "先",
+  "on": [
+   "セン"
+  ],
+  "kun": [
+   "さき",
+   "ま.ず"
+  ],
+  "hanViet": [
+   "TIÊN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "trước, đầu tiên",
+   "en": "before; ahead; previous"
+  },
+  "strokeCount": 6,
+  "jlpt": "n5",
+  "lessonId": "n5-01",
+  "sectors": []
+ },
+ {
+  "char": "生",
+  "on": [
+   "セイ",
+   "ショウ"
+  ],
+  "kun": [
+   "い.きる",
+   "い.かす",
+   "い.ける",
+   "う.まれる",
+   "うま.れる",
+   "う.まれ",
+   "うまれ",
+   "う.む",
+   "お.う",
+   "は.える",
+   "は.やす",
+   "き",
+   "なま",
+   "なま-",
+   "な.る",
+   "な.す",
+   "む.す",
+   "-う"
+  ],
+  "hanViet": [
+   "SINH"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "sống, sinh ra",
+   "en": "life; genuine; birth"
+  },
+  "strokeCount": 5,
+  "jlpt": "n5",
+  "lessonId": "n5-01",
+  "sectors": []
+ },
+ {
+  "char": "学",
+  "on": [
+   "ガク"
+  ],
+  "kun": [
+   "まな.ぶ"
+  ],
+  "hanViet": [
+   "HỌC"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "học",
+   "en": "study; learning; science"
+  },
+  "strokeCount": 8,
+  "jlpt": "n5",
+  "lessonId": "n5-01",
+  "sectors": []
+ },
+ {
+  "char": "校",
+  "on": [
+   "コウ",
+   "キョウ"
+  ],
+  "kun": [],
+  "hanViet": [
+   "HIỆU"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "trường học",
+   "en": "exam; school; printing"
+  },
+  "strokeCount": 10,
+  "jlpt": "n5",
+  "lessonId": "n5-06",
+  "sectors": []
+ },
+ {
+  "char": "名",
+  "on": [
+   "メイ",
+   "ミョウ"
+  ],
+  "kun": [
+   "な",
+   "-な"
+  ],
+  "hanViet": [
+   "DANH"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "tên",
+   "en": "name; noted; distinguished"
+  },
+  "strokeCount": 6,
+  "jlpt": "n5",
+  "lessonId": "n5-01",
+  "sectors": []
+ },
+ {
+  "char": "語",
+  "on": [
+   "ゴ"
+  ],
+  "kun": [
+   "かた.る",
+   "かた.らう"
+  ],
+  "hanViet": [
+   "NGỮ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "ngôn ngữ, từ",
+   "en": "word; speech; language"
+  },
+  "strokeCount": 14,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "本",
+  "on": [
+   "ホン"
+  ],
+  "kun": [
+   "もと"
+  ],
+  "hanViet": [
+   "BẢN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "sách; gốc",
+   "en": "book; present; main"
+  },
+  "strokeCount": 5,
+  "jlpt": "n5",
+  "lessonId": "n5-01",
+  "sectors": []
+ },
+ {
+  "char": "書",
+  "on": [
+   "ショ"
+  ],
+  "kun": [
+   "か.く",
+   "-が.き",
+   "-がき"
+  ],
+  "hanViet": [
+   "THƯ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "viết; sách",
+   "en": "write"
+  },
+  "strokeCount": 10,
+  "jlpt": "n5",
+  "lessonId": "n5-02",
+  "sectors": []
+ },
+ {
+  "char": "読",
+  "on": [
+   "ドク",
+   "トク",
+   "トウ"
+  ],
+  "kun": [
+   "よ.む",
+   "-よ.み"
+  ],
+  "hanViet": [
+   "ĐỘC"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "đọc",
+   "en": "read"
+  },
+  "strokeCount": 14,
+  "jlpt": "n5",
+  "lessonId": "n5-05",
+  "sectors": []
+ },
+ {
+  "char": "聞",
+  "on": [
+   "ブン",
+   "モン"
+  ],
+  "kun": [
+   "き.く",
+   "き.こえる"
+  ],
+  "hanViet": [
+   "VĂN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "nghe; hỏi",
+   "en": "hear; ask; listen"
+  },
+  "strokeCount": 14,
+  "jlpt": "n5",
+  "lessonId": "n5-02",
+  "sectors": []
+ },
+ {
+  "char": "見",
+  "on": [
+   "ケン"
+  ],
+  "kun": [
+   "み.る",
+   "み.える",
+   "み.せる"
+  ],
+  "hanViet": [
+   "KIẾN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "nhìn, xem",
+   "en": "see; hopes; chances"
+  },
+  "strokeCount": 7,
+  "jlpt": "n5",
+  "lessonId": "n5-05",
+  "sectors": []
+ },
+ {
+  "char": "言",
+  "on": [
+   "ゲン",
+   "ゴン"
+  ],
+  "kun": [
+   "い.う",
+   "こと"
+  ],
+  "hanViet": [
+   "NGÔN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "nói",
+   "en": "say; word"
+  },
+  "strokeCount": 7,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "話",
+  "on": [
+   "ワ"
+  ],
+  "kun": [
+   "はな.す",
+   "はなし"
+  ],
+  "hanViet": [
+   "THOẠI"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "nói chuyện",
+   "en": "tale; talk"
+  },
+  "strokeCount": 13,
+  "jlpt": "n5",
+  "lessonId": "n5-08",
+  "sectors": []
+ },
+ {
+  "char": "食",
+  "on": [
+   "ショク",
+   "ジキ"
+  ],
+  "kun": [
+   "く.う",
+   "く.らう",
+   "た.べる",
+   "は.む"
+  ],
+  "hanViet": [
+   "THỰC"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "ăn",
+   "en": "eat; food"
+  },
+  "strokeCount": 9,
+  "jlpt": "n5",
+  "lessonId": "n5-05",
+  "sectors": []
+ },
+ {
+  "char": "飲",
+  "on": [
+   "イン",
+   "オン"
+  ],
+  "kun": [
+   "の.む",
+   "-の.み"
+  ],
+  "hanViet": [
+   "ẨM"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "uống",
+   "en": "drink; smoke; take"
+  },
+  "strokeCount": 12,
+  "jlpt": "n5",
+  "lessonId": "n5-05",
+  "sectors": []
+ },
+ {
+  "char": "買",
+  "on": [
+   "バイ"
+  ],
+  "kun": [
+   "か.う"
+  ],
+  "hanViet": [
+   "MÃI"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "mua",
+   "en": "buy"
+  },
+  "strokeCount": 12,
+  "jlpt": "n5",
+  "lessonId": "n5-05",
+  "sectors": []
+ },
+ {
+  "char": "行",
+  "on": [
+   "コウ",
+   "ギョウ",
+   "アン"
+  ],
+  "kun": [
+   "い.く",
+   "ゆ.く",
+   "-ゆ.き",
+   "-ゆき",
+   "-い.き",
+   "-いき",
+   "おこな.う",
+   "おこ.なう"
+  ],
+  "hanViet": [
+   "HÀNH"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "đi",
+   "en": "going; journey; carry out"
+  },
+  "strokeCount": 6,
+  "jlpt": "n5",
+  "lessonId": "n5-06",
+  "sectors": []
+ },
+ {
+  "char": "来",
+  "on": [
+   "ライ",
+   "タイ"
+  ],
+  "kun": [
+   "く.る",
+   "きた.る",
+   "きた.す",
+   "き.たす",
+   "き.たる",
+   "き",
+   "こ"
+  ],
+  "hanViet": [
+   "LAI"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "đến",
+   "en": "come; due; next"
+  },
+  "strokeCount": 7,
+  "jlpt": "n5",
+  "lessonId": "n5-06",
+  "sectors": []
+ },
+ {
+  "char": "出",
+  "on": [
+   "シュツ",
+   "スイ"
+  ],
+  "kun": [
+   "で.る",
+   "-で",
+   "だ.す",
+   "-だ.す",
+   "い.でる",
+   "い.だす"
+  ],
+  "hanViet": [
+   "XUẤT"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "ra",
+   "en": "exit; leave; go out"
+  },
+  "strokeCount": 5,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "入",
+  "on": [
+   "ニュウ",
+   "ジュ"
+  ],
+  "kun": [
+   "い.る",
+   "-い.る",
+   "-い.り",
+   "い.れる",
+   "-い.れ",
+   "はい.る"
+  ],
+  "hanViet": [
+   "NHẬP"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "vào",
+   "en": "enter; insert"
+  },
+  "strokeCount": 2,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "休",
+  "on": [
+   "キュウ"
+  ],
+  "kun": [
+   "やす.む",
+   "やす.まる",
+   "やす.める"
+  ],
+  "hanViet": [
+   "HƯU"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "nghỉ",
+   "en": "rest; day off; retire"
+  },
+  "strokeCount": 6,
+  "jlpt": "n5",
+  "lessonId": "n5-08",
+  "sectors": []
+ },
+ {
+  "char": "立",
+  "on": [
+   "リツ",
+   "リュウ",
+   "リットル"
+  ],
+  "kun": [
+   "た.つ",
+   "-た.つ",
+   "た.ち-",
+   "た.てる",
+   "-た.てる",
+   "た.て-",
+   "たて-",
+   "-た.て",
+   "-だ.て",
+   "-だ.てる"
+  ],
+  "hanViet": [
+   "LẬP"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "đứng",
+   "en": "stand up; rise; set up"
+  },
+  "strokeCount": 5,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "会",
+  "on": [
+   "カイ",
+   "エ"
+  ],
+  "kun": [
+   "あ.う",
+   "あ.わせる",
+   "あつ.まる"
+  ],
+  "hanViet": [
+   "HỘI"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "gặp; hội",
+   "en": "meeting; meet; party"
+  },
+  "strokeCount": 6,
+  "jlpt": "n5",
+  "lessonId": "n5-03",
+  "sectors": []
+ },
+ {
+  "char": "社",
+  "on": [
+   "シャ"
+  ],
+  "kun": [
+   "やしろ"
+  ],
+  "hanViet": [
+   "XÃ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "công ty; xã hội",
+   "en": "company; firm; office"
+  },
+  "strokeCount": 7,
+  "jlpt": "n5",
+  "lessonId": "n5-03",
+  "sectors": []
+ },
+ {
+  "char": "店",
+  "on": [
+   "テン"
+  ],
+  "kun": [
+   "みせ",
+   "たな"
+  ],
+  "hanViet": [
+   "ĐIẾM"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "cửa hàng",
+   "en": "store; shop"
+  },
+  "strokeCount": 8,
+  "jlpt": "n5",
+  "lessonId": "n5-03",
+  "sectors": []
+ },
+ {
+  "char": "駅",
+  "on": [
+   "エキ"
+  ],
+  "kun": [],
+  "hanViet": [
+   "DỊCH"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "nhà ga",
+   "en": "station"
+  },
+  "strokeCount": 14,
+  "jlpt": "n5",
+  "lessonId": "n5-03",
+  "sectors": []
+ },
+ {
+  "char": "電",
+  "on": [
+   "デン"
+  ],
+  "kun": [],
+  "hanViet": [
+   "ĐIỆN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "điện",
+   "en": "electricity"
+  },
+  "strokeCount": 13,
+  "jlpt": "n5",
+  "lessonId": "n5-06",
+  "sectors": []
+ },
+ {
+  "char": "車",
+  "on": [
+   "シャ"
+  ],
+  "kun": [
+   "くるま"
+  ],
+  "hanViet": [
+   "XA"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "xe",
+   "en": "car"
+  },
+  "strokeCount": 7,
+  "jlpt": "n5",
+  "lessonId": "n5-02",
+  "sectors": []
+ },
+ {
+  "char": "道",
+  "on": [
+   "ドウ",
+   "トウ"
+  ],
+  "kun": [
+   "みち",
+   "いう"
+  ],
+  "hanViet": [
+   "ĐẠO"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "đường; đạo",
+   "en": "road-way; street; district"
+  },
+  "strokeCount": 12,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "国",
+  "on": [
+   "コク"
+  ],
+  "kun": [
+   "くに"
+  ],
+  "hanViet": [
+   "QUỐC"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "nước, quốc gia",
+   "en": "country"
+  },
+  "strokeCount": 8,
+  "jlpt": "n5",
+  "lessonId": "n5-03",
+  "sectors": []
+ },
+ {
+  "char": "外",
+  "on": [
+   "ガイ",
+   "ゲ"
+  ],
+  "kun": [
+   "そと",
+   "ほか",
+   "はず.す",
+   "はず.れる",
+   "と-"
+  ],
+  "hanViet": [
+   "NGOẠI"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "bên ngoài",
+   "en": "outside"
+  },
+  "strokeCount": 5,
+  "jlpt": "n5",
+  "lessonId": "n5-07",
+  "sectors": []
+ },
+ {
+  "char": "上",
+  "on": [
+   "ジョウ",
+   "ショウ",
+   "シャン"
+  ],
+  "kun": [
+   "うえ",
+   "-うえ",
+   "うわ-",
+   "かみ",
+   "あ.げる",
+   "-あ.げる",
+   "あ.がる",
+   "-あ.がる",
+   "あ.がり",
+   "-あ.がり",
+   "のぼ.る",
+   "のぼ.り",
+   "のぼ.せる",
+   "のぼ.す",
+   "たてまつ.る"
+  ],
+  "hanViet": [
+   "THƯỢNG"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "trên",
+   "en": "above; up"
+  },
+  "strokeCount": 3,
+  "jlpt": "n5",
+  "lessonId": "n5-07",
+  "sectors": []
+ },
+ {
+  "char": "下",
+  "on": [
+   "カ",
+   "ゲ"
+  ],
+  "kun": [
+   "した",
+   "しも",
+   "もと",
+   "さ.げる",
+   "さ.がる",
+   "くだ.る",
+   "くだ.り",
+   "くだ.す",
+   "-くだ.す",
+   "くだ.さる",
+   "お.ろす",
+   "お.りる"
+  ],
+  "hanViet": [
+   "HẠ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "dưới",
+   "en": "below; down; descend"
+  },
+  "strokeCount": 3,
+  "jlpt": "n5",
+  "lessonId": "n5-07",
+  "sectors": []
+ },
+ {
+  "char": "中",
+  "on": [
+   "チュウ"
+  ],
+  "kun": [
+   "なか",
+   "うち",
+   "あた.る"
+  ],
+  "hanViet": [
+   "TRUNG"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "giữa, trong",
+   "en": "in; inside; middle"
+  },
+  "strokeCount": 4,
+  "jlpt": "n5",
+  "lessonId": "n5-07",
+  "sectors": []
+ },
+ {
+  "char": "右",
+  "on": [
+   "ウ",
+   "ユウ"
+  ],
+  "kun": [
+   "みぎ"
+  ],
+  "hanViet": [
+   "HỮU"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "bên phải",
+   "en": "right"
+  },
+  "strokeCount": 5,
+  "jlpt": "n5",
+  "lessonId": "n5-07",
+  "sectors": []
+ },
+ {
+  "char": "左",
+  "on": [
+   "サ",
+   "シャ"
+  ],
+  "kun": [
+   "ひだり"
+  ],
+  "hanViet": [
+   "TẢ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "bên trái",
+   "en": "left"
+  },
+  "strokeCount": 5,
+  "jlpt": "n5",
+  "lessonId": "n5-07",
+  "sectors": []
+ },
+ {
+  "char": "東",
+  "on": [
+   "トウ"
+  ],
+  "kun": [
+   "ひがし"
+  ],
+  "hanViet": [
+   "ĐÔNG"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "phía đông",
+   "en": "east"
+  },
+  "strokeCount": 8,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "西",
+  "on": [
+   "セイ",
+   "サイ",
+   "ス"
+  ],
+  "kun": [
+   "にし"
+  ],
+  "hanViet": [
+   "TÂY"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "phía tây",
+   "en": "west; Spain"
+  },
+  "strokeCount": 6,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "南",
+  "on": [
+   "ナン",
+   "ナ"
+  ],
+  "kun": [
+   "みなみ"
+  ],
+  "hanViet": [
+   "NAM"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "phía nam",
+   "en": "south"
+  },
+  "strokeCount": 9,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "北",
+  "on": [
+   "ホク"
+  ],
+  "kun": [
+   "きた"
+  ],
+  "hanViet": [
+   "BẮC"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "phía bắc",
+   "en": "north"
+  },
+  "strokeCount": 5,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "大",
+  "on": [
+   "ダイ",
+   "タイ"
+  ],
+  "kun": [
+   "おお-",
+   "おお.きい",
+   "-おお.いに"
+  ],
+  "hanViet": [
+   "ĐẠI"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "lớn",
+   "en": "large; big"
+  },
+  "strokeCount": 3,
+  "jlpt": "n5",
+  "lessonId": "n5-01",
+  "sectors": []
+ },
+ {
+  "char": "小",
+  "on": [
+   "ショウ"
+  ],
+  "kun": [
+   "ちい.さい",
+   "こ-",
+   "お-",
+   "さ-"
+  ],
+  "hanViet": [
+   "TIỂU"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "nhỏ",
+   "en": "little; small"
+  },
+  "strokeCount": 3,
+  "jlpt": "n5",
+  "lessonId": "n5-09",
+  "sectors": []
+ },
+ {
+  "char": "高",
+  "on": [
+   "コウ"
+  ],
+  "kun": [
+   "たか.い",
+   "たか",
+   "-だか",
+   "たか.まる",
+   "たか.める"
+  ],
+  "hanViet": [
+   "CAO"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "cao; đắt",
+   "en": "tall; high; expensive"
+  },
+  "strokeCount": 10,
+  "jlpt": "n5",
+  "lessonId": "n5-09",
+  "sectors": []
+ },
+ {
+  "char": "安",
+  "on": [
+   "アン"
+  ],
+  "kun": [
+   "やす.い",
+   "やす.まる",
+   "やす",
+   "やす.らか"
+  ],
+  "hanViet": [
+   "AN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "yên ổn; rẻ",
+   "en": "relax; cheap; low"
+  },
+  "strokeCount": 6,
+  "jlpt": "n5",
+  "lessonId": "n5-09",
+  "sectors": []
+ },
+ {
+  "char": "新",
+  "on": [
+   "シン"
+  ],
+  "kun": [
+   "あたら.しい",
+   "あら.た",
+   "あら-",
+   "にい-"
+  ],
+  "hanViet": [
+   "TÂN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "mới",
+   "en": "new"
+  },
+  "strokeCount": 13,
+  "jlpt": "n5",
+  "lessonId": "n5-02",
+  "sectors": []
+ },
+ {
+  "char": "古",
+  "on": [
+   "コ"
+  ],
+  "kun": [
+   "ふる.い",
+   "ふる-",
+   "-ふる.す"
+  ],
+  "hanViet": [
+   "CỔ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "cũ",
+   "en": "old"
+  },
+  "strokeCount": 5,
+  "jlpt": "n5",
+  "lessonId": "n5-09",
+  "sectors": []
+ },
+ {
+  "char": "長",
+  "on": [
+   "チョウ"
+  ],
+  "kun": [
+   "なが.い",
+   "おさ"
+  ],
+  "hanViet": [
+   "TRƯỜNG",
+   "TRƯỞNG"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "dài; người đứng đầu",
+   "en": "long; leader; superior"
+  },
+  "strokeCount": 8,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "多",
+  "on": [
+   "タ"
+  ],
+  "kun": [
+   "おお.い",
+   "まさ.に",
+   "まさ.る"
+  ],
+  "hanViet": [
+   "ĐA"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "nhiều",
+   "en": "many; frequent; much"
+  },
+  "strokeCount": 6,
+  "jlpt": "n5",
+  "lessonId": "n5-09",
+  "sectors": []
+ },
+ {
+  "char": "少",
+  "on": [
+   "ショウ"
+  ],
+  "kun": [
+   "すく.ない",
+   "すこ.し"
+  ],
+  "hanViet": [
+   "THIỂU"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "ít",
+   "en": "few; little"
+  },
+  "strokeCount": 4,
+  "jlpt": "n5",
+  "lessonId": "n5-09",
+  "sectors": []
+ },
+ {
+  "char": "白",
+  "on": [
+   "ハク",
+   "ビャク"
+  ],
+  "kun": [
+   "しろ",
+   "しら-",
+   "しろ.い"
+  ],
+  "hanViet": [
+   "BẠCH"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "trắng",
+   "en": "white"
+  },
+  "strokeCount": 5,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "何",
+  "on": [
+   "カ"
+  ],
+  "kun": [
+   "なに",
+   "なん",
+   "なに-",
+   "なん-"
+  ],
+  "hanViet": [
+   "HÀ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "cái gì",
+   "en": "what"
+  },
+  "strokeCount": 7,
+  "jlpt": "n5",
+  "lessonId": "n5-02",
+  "sectors": []
+ },
+ {
+  "char": "気",
+  "on": [
+   "キ",
+   "ケ"
+  ],
+  "kun": [
+   "いき",
+   "き"
+  ],
+  "hanViet": [
+   "KHÍ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "khí; tinh thần",
+   "en": "spirit; mind; air"
+  },
+  "strokeCount": 6,
+  "jlpt": "n5",
+  "lessonId": "n5-10",
+  "sectors": []
+ },
+ {
+  "char": "天",
+  "on": [
+   "テン"
+  ],
+  "kun": [
+   "あまつ",
+   "あめ",
+   "あま-"
+  ],
+  "hanViet": [
+   "THIÊN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "trời",
+   "en": "heavens; sky; imperial"
+  },
+  "strokeCount": 4,
+  "jlpt": "n5",
+  "lessonId": "n5-10",
+  "sectors": []
+ },
+ {
+  "char": "空",
+  "on": [
+   "クウ"
+  ],
+  "kun": [
+   "そら",
+   "あ.く",
+   "あ.き",
+   "あ.ける",
+   "から",
+   "す.く",
+   "す.かす",
+   "むな.しい"
+  ],
+  "hanViet": [
+   "KHÔNG"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "bầu trời; trống",
+   "en": "empty; sky; void"
+  },
+  "strokeCount": 8,
+  "jlpt": "n5",
+  "lessonId": "n5-10",
+  "sectors": []
+ },
+ {
+  "char": "雨",
+  "on": [
+   "ウ"
+  ],
+  "kun": [
+   "あめ",
+   "あま-",
+   "-さめ"
+  ],
+  "hanViet": [
+   "VŨ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "mưa",
+   "en": "rain"
+  },
+  "strokeCount": 8,
+  "jlpt": "n5",
+  "lessonId": "n5-10",
+  "sectors": []
+ },
+ {
+  "char": "山",
+  "on": [
+   "サン",
+   "セン"
+  ],
+  "kun": [
+   "やま"
+  ],
+  "hanViet": [
+   "SƠN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "núi",
+   "en": "mountain"
+  },
+  "strokeCount": 3,
+  "jlpt": "n5",
+  "lessonId": "n5-10",
+  "sectors": []
+ },
+ {
+  "char": "川",
+  "on": [
+   "セン"
+  ],
+  "kun": [
+   "かわ"
+  ],
+  "hanViet": [
+   "XUYÊN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "sông",
+   "en": "stream; river; river or three-stroke river radical (no. 47)"
+  },
+  "strokeCount": 3,
+  "jlpt": "n5",
+  "lessonId": "n5-10",
+  "sectors": []
+ },
+ {
+  "char": "花",
+  "on": [
+   "カ",
+   "ケ"
+  ],
+  "kun": [
+   "はな"
+  ],
+  "hanViet": [
+   "HOA"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "hoa",
+   "en": "flower"
+  },
+  "strokeCount": 7,
+  "jlpt": "n5",
+  "lessonId": "n5-10",
+  "sectors": []
+ },
+ {
+  "char": "魚",
+  "on": [
+   "ギョ"
+  ],
+  "kun": [
+   "うお",
+   "さかな",
+   "-ざかな"
+  ],
+  "hanViet": [
+   "NGƯ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "cá",
+   "en": "fish"
+  },
+  "strokeCount": 11,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "口",
+  "on": [
+   "コウ",
+   "ク"
+  ],
+  "kun": [
+   "くち"
+  ],
+  "hanViet": [
+   "KHẨU"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "miệng",
+   "en": "mouth"
+  },
+  "strokeCount": 3,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "目",
+  "on": [
+   "モク",
+   "ボク"
+  ],
+  "kun": [
+   "め",
+   "-め",
+   "ま-"
+  ],
+  "hanViet": [
+   "MỤC"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "mắt",
+   "en": "eye; class; look"
+  },
+  "strokeCount": 5,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "耳",
+  "on": [
+   "ジ"
+  ],
+  "kun": [
+   "みみ"
+  ],
+  "hanViet": [
+   "NHĨ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "tai",
+   "en": "ear"
+  },
+  "strokeCount": 6,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "手",
+  "on": [
+   "シュ",
+   "ズ"
+  ],
+  "kun": [
+   "て",
+   "て-",
+   "-て",
+   "た-"
+  ],
+  "hanViet": [
+   "THỦ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "tay",
+   "en": "hand"
+  },
+  "strokeCount": 4,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ },
+ {
+  "char": "足",
+  "on": [
+   "ソク"
+  ],
+  "kun": [
+   "あし",
+   "た.りる",
+   "た.る",
+   "た.す"
+  ],
+  "hanViet": [
+   "TÚC"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "chân; đủ",
+   "en": "leg; foot; be sufficient"
+  },
+  "strokeCount": 7,
+  "jlpt": "n5",
+  "lessonId": null,
+  "sectors": []
+ }
+]

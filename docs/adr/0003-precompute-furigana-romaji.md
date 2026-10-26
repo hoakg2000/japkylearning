@@ -7,7 +7,7 @@ Cần chuyển kanji → kana/romaji bằng thư viện open-source. kuromoji (d
 
 ## Quyết định
 - **Từ vựng:** reading lấy từ **JMdict**, phân đoạn ruby từ **JmdictFurigana**, romaji bằng **wanakana**.
-- **Câu ví dụ:** **kuroshiro + kuroshiro-analyzer-kuromoji** trong script ingest (Node, CI, không secret) sinh `segments` + `romaji`.
+- **Câu ví dụ, ngữ pháp, hội thoại:** viết tay bằng markup furigana `{漢字|かんじ}`, cách từ bằng dấu cách (`src/lib/japanese/markup.ts`); script ingest sinh `segments` + `romaji` (trợ từ は/へ/を đọc đúng wa/e/o). *Cập nhật P2: không cần kuroshiro – markup chính xác hơn và không thêm dependency. kuroshiro/lindera chỉ cần nếu sau này ingest câu từ nguồn ngoài (Tatoeba).*
 - Kết quả lưu trong `content/`, người biên tập sửa được. Render `<ruby>` ở server → SEO tốt, không tốn JS client.
 - **Không có route phân tích runtime.** Text động từ AI dùng markup furigana do model xuất, validate bằng zod.
 - **wanakana** ở client cho kana ↔ romaji khi gõ.

@@ -37,7 +37,7 @@ Chưa có dataset mở kanji Nhật → Hán-Việt, nên tự build:
 scripts/ingest/
   fetch-sources.ts      # tải JMdict-simplified, JmdictFurigana, KANJIDIC2, KanjiVG, Unihan, Kanjium, Tatoeba vào thư mục riêng ngoài src/
   build-kanji.ts        # KANJIDIC2 + Hán-Việt + KanjiVG + JLPT + phân bài
-  build-words.ts        # list N5 → JMdict (reading, nghĩa en) → JmdictFurigana (segments) → wanakana (romaji) → ví dụ Tatoeba (kuroshiro cho segments)
+  build-n5.ts           # content/source/n5 (bài, từ, ví dụ viết tay) → JMdict (id, nghĩa en) → JmdictFurigana (segments) → Hán-Việt (on'yomi) → content/levels/n5/*.json
   build-audio.ts        # pre-generate audio fish.audio → R2 → ghi audioUrl
   build-songs.ts        # LRCLIB → parse LRC → segments/romaji → AI lyrics-keywords + lyrics-translate → content/songs/*.json
   validate-content.ts   # zod, tombstone, keyword khớp vị trí lyrics – chạy trong CI
