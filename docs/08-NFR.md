@@ -31,7 +31,8 @@
 ## 3. Security
 
 - **CSP 2 tầng** ([ADR 0007](./adr/0007-two-tier-csp.md)):
-  - `(public)`: CSP tĩnh trong `next.config`, `frame-ancestors 'none'`.
+  - `(public)`: CSP tĩnh trong `next.config`, `frame-ancestors 'none'`; `/songs/*` cho phép thêm YouTube (`script-src`, `frame-src`).
+  - Webhook từ song engine (v2): chữ ký HMAC + timestamp, từ chối request cũ.
   - `(app)`: nonce CSP qua `proxy.ts`.
   - `/embed/*`: CSP tĩnh + `frame-ancestors *`.
 - Header khác: `X-Content-Type-Options: nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, HSTS, `Permissions-Policy: camera=(), microphone=()` (route `/speak` mở `microphone=(self)`).
@@ -55,7 +56,7 @@ Luật Bảo vệ dữ liệu cá nhân, hiệu lực 01/01/2026, thay Nghị đ
 - **Consent theo từng mục đích** (bảng `consents`): tài khoản, analytics, xử lý AI, xử lý giọng nói, email nhắc học. Không dùng ô tick sẵn; im lặng không phải là đồng ý; rút lại được bất cứ lúc nào.
 - **Tuổi:** chỉ **16+** được tạo tài khoản và dùng AI/STT. Hỏi năm sinh khi đăng ký. Dưới 16 → chỉ học nội dung tĩnh dạng khách.
 - **Chuyển dữ liệu ra nước ngoài:** hosting tại Singapore đã là chuyển dữ liệu xuyên biên giới → chuẩn bị **hồ sơ đánh giá tác động chuyển dữ liệu** theo luật.
-- **Danh sách bên xử lý** (công bố trong privacy policy): Vercel, Neon, Cloudflare (R2, Turnstile), PostHog, Resend, Sentry, Google (Web Speech STT), LLM provider đang bật (OpenAI / Google / Anthropic / MotAPI / GitHub), fish.audio.
+- **Danh sách bên xử lý** (công bố trong privacy policy): Vercel, Neon, Cloudflare (R2, Turnstile), PostHog, Resend, Sentry, Google (Web Speech STT, YouTube), LLM provider đang bật (OpenAI / Google / Anthropic / MotAPI / GitHub), fish.audio, nhà cung cấp GPU của song engine (v2). LRCLIB chỉ nhận tên bài/ca sĩ, không nhận dữ liệu người dùng.
 - **Tối thiểu hóa:** không gửi PII cho LLM; không gửi gì ngoài nội dung học cho MotAPI; không lưu audio giọng nói.
 - **Quyền chủ thể dữ liệu:** xuất dữ liệu, xóa tài khoản trong `/me`.
 - **Privacy policy** nêu rõ việc Web Speech gửi audio tới Google.
@@ -65,7 +66,8 @@ Luật Bảo vệ dữ liệu cá nhân, hiệu lực 01/01/2026, thay Nghị đ
 | Loại | Công cụ | Phạm vi |
 |------|---------|---------|
 | Unit | Vitest (+ fast-check) | FSRS wrapper, streak (property-based, DST), mora split/diff, furigana markup parser, adaptive scoring, AI registry + kill-switch, quota |
-| Content | `validate-content.ts` | Schema, ví dụ bắt buộc, ≤ 18 từ/bài, tombstone, license + `rightsProof` bài hát |
+| Content | `validate-content.ts` | Schema, ví dụ bắt buộc, ≤ 18 từ/bài, tombstone, keyword bài hát khớp `charStart/charEnd` |
+| Unit (bài hát) | Vitest | Parse LRC / Enhanced LRC, tìm dòng theo thời gian, nhận diện nhạc từ metadata, lọc keyword AI bịa |
 | Component | Vitest + Testing Library | WordCard layout × density, QuizOption |
 | E2E | Playwright | First-run quiz → onboarding → bài 1 → đăng ký giữ tiến độ; SRS; đổi locale/theme/mode; embed chạy trên domain khác, trang thường không nhúng được |
 | A11y | `@axe-core/playwright` | Trang chính, 2 locale, Full + Minimal |
@@ -109,6 +111,7 @@ PostHog cookieless, tắt autocapture & session replay, chỉ gửi khi có cons
 | AI (model nhỏ, có quota) | $5–15 | $50–150 | Model lớn + quota cao |
 | STT | $0 (Web Speech) | $0 (Azure ~$170 nếu bật) | Phút ghi âm |
 | Resend / PostHog / Sentry | $0 | $0–90 | Số email, số event |
+| Song engine GPU (v2) | – | $20–150 | Số bài mới cần tách vocal + ASR (~1–3 phút GPU/bài); bài đã xử lý dùng chung nên chi phí giảm dần |
 | **Tổng** | **~$45–90** | **~$200–450** | |
 
 - Beta riêng tư có thể chạy free tier. **Trước launch công khai:** Vercel Pro, fish.audio commercial, Neon trả phí.

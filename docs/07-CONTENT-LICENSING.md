@@ -39,7 +39,8 @@ scripts/ingest/
   build-kanji.ts        # KANJIDIC2 + Hán-Việt + KanjiVG + JLPT + phân bài
   build-words.ts        # list N5 → JMdict (reading, nghĩa en) → JmdictFurigana (segments) → wanakana (romaji) → ví dụ Tatoeba (kuroshiro cho segments)
   build-audio.ts        # pre-generate audio fish.audio → R2 → ghi audioUrl
-  validate-content.ts   # zod, tombstone, license bài hát – chạy trong CI
+  build-songs.ts        # LRCLIB → parse LRC → segments/romaji → AI lyrics-keywords + lyrics-translate → content/songs/*.json
+  validate-content.ts   # zod, tombstone, keyword khớp vị trí lyrics – chạy trong CI
 ```
 
 - Không commit file nguồn lớn; chỉ commit output đã lọc trong `content/`.
@@ -49,28 +50,21 @@ scripts/ingest/
 
 ## 4. Bài hát
 
-Xem [ADR 0006](./adr/0006-song-content-policy.md).
+Xem [ADR 0012](./adr/0012-song-source-and-engine.md) (thay [ADR 0006](./adr/0006-song-content-policy.md)).
 
-**Quy tắc public domain ở Nhật**
-- Thời hạn bảo hộ chuyển sang 70 năm sau khi tác giả mất từ 30/12/2018, **không hồi tố**. → Tác phẩm của tác giả **mất năm 1967 trở về trước** đã là public domain.
-- Áp dụng **riêng cho người viết lời và người viết nhạc**: cả hai phải thỏa.
-- Tác phẩm khuyết danh (nhiều 唱歌) tính từ năm công bố.
-- **Bản phối và bản thu âm là quyền riêng.** Phải tự thu hoặc có license cho bản thu.
-- Cẩn thận với bản lời sửa đổi sau này.
+**Quyết định của chủ dự án:** v1 **tạm chưa xử lý bản quyền** lyrics/bài hát, để ưu tiên trải nghiệm học với nhạc thật.
 
-**Danh sách khởi đầu** (kiểm năm mất trước khi phát hành, ghi vào `rightsProof`):
+| Nguồn | Dùng cho | Ghi chú |
+|-------|----------|---------|
+| [LRCLIB](https://lrclib.net) API | Lyrics + timeline (LRC) | Miễn phí, không key, dữ liệu do cộng đồng đóng góp; gửi `User-Agent` nhận diện app; cache kết quả, không gọi dồn dập |
+| YouTube IFrame Player API | Phát nhạc | Player chính thức, `youtube-nocookie.com` |
+| YouTube Data API v3 (v2) | Metadata video | Cần API key, quota 10.000 đơn vị/ngày mặc định |
 
-| Bài | Lời | Nhạc | Trạng thái |
-|-----|-----|------|------------|
-| さくらさくら | Dân ca | Dân ca | PD |
-| かごめかごめ | Dân ca | Dân ca | PD |
-| 春が来た | 高野辰之 (mất 1947) | 岡野貞一 (mất 1941) | PD |
-| 七つの子 | 野口雨情 (mất 1945, đã kiểm) | 本居長世 (mất 1945, **cần kiểm**) | PD nếu đúng |
-| 赤とんぼ | 三木露風 (mất 1964, **cần kiểm**) | 山田耕筰 (mất 1965, **cần kiểm**) | PD nếu đúng |
-
-**Không dùng:** ぞうさん, かえるのうた (còn bản quyền).
-
-**Bản thu:** chủ dự án tự thu hoặc đặt thu, có hợp đồng chuyển quyền; lưu ở R2.
+**Rủi ro đã biết (ghi lại để xử lý ở giai đoạn thương mại):**
+- Lyrics có bản quyền; ở Nhật, hiển thị lyrics online thường cần license (JASRAC/NexTone). LRCLIB không cấp quyền này.
+- YouTube API Policies: không che/overlay player, không ẩn video chỉ để phát audio, player ≥ 200×200; privacy policy phải dẫn chính sách của Google; nhúng YouTube đặt cookie khi phát → cần nêu trong consent.
+- **v2 engine tải audio từ YouTube để phân tích** → vi phạm YouTube Terms of Service (cấm tải nội dung ngoài cách YouTube cho phép). Cần quyết định lại trước khi build v2 (ví dụ: chỉ phân tích audio người dùng tự tải lên, hoặc làm việc với nhà cung cấp lyrics có license như Musixmatch / LyricFind).
+- Giảm thiểu tạm thời: chỉ hiển thị lyrics cho người dùng đăng nhập ở v2; có cơ chế gỡ bài theo yêu cầu (takedown) ngay từ v1.
 
 ## 5. Âm thanh, font, hình ảnh, voice
 

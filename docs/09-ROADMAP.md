@@ -70,7 +70,7 @@
 
 | Task | Acceptance criteria |
 |------|---------------------|
-| Songs: audio tự host + LRC theo dòng + highlight + điền lỗ, 3 bài PD đã kiểm `rightsProof` | [F11](./02-FEATURES.md#f11-học-qua-bài-hát) |
+| Songs v1: `build-songs.ts` (LRCLIB → LRC → furigana → AI `lyrics-keywords` + `lyrics-translate`), player YouTube + highlight dòng/từ + keyword + điền lỗ, 20–30 bài | [F11](./02-FEATURES.md#f11-học-qua-bài-hát) |
 | `SttProvider` + `webspeech` + mora scoring, consent Google, chỉ từ đơn | [F10](./02-FEATURES.md#f10-chấm-phát-âm-beta); unit test mora (ゃ, っ, ー) |
 
 ## P7 – Hoàn thiện N5 (4 tuần)
@@ -85,7 +85,13 @@
 ## Sau v1
 
 - N4, nội dung + mock JFT-Basic, rồi N3 → N1 (ISR).
-- Pack ngành còn lại; roleplay AI; word-level lyrics; Azure Pronunciation Assessment.
+- Pack ngành còn lại; roleplay AI; Azure Pronunciation Assessment.
+- **v2 – Song engine** (~5–6 tuần, [ADR 0012](./adr/0012-song-source-and-engine.md)):
+  1. Dán link YouTube → `song_jobs`, YouTube Data API, nhận diện nhạc, tách artist/title (1 tuần).
+  2. Tra LRCLIB nhiều biến thể tên, cache `song_tracks`, thư viện bài của người dùng (1 tuần).
+  3. Worker Python: Demucs + forced alignment (có `plainLyrics`) + ASR word-level (không có lyrics), webhook HMAC (2–3 tuần).
+  4. Báo lỗi lyrics/timing, trang review, đóng góp ngược LRCLIB (1 tuần).
+  - **Trước khi build:** quyết định lại cách lấy audio (YouTube ToS) – xem [07 §4](./07-CONTENT-LICENSING.md#4-bài-hát).
 - Nhắc học qua Zalo, league/quest, oEmbed.
 - Nối universal AI gateway của chủ dự án khi có spec.
 
@@ -95,7 +101,10 @@
 |--------|-----------|
 | Thời gian viết nội dung | Đã dành ~38% roadmap; AI dịch nháp + review; giới hạn 18 từ/bài |
 | Pháp lý PDPL (tuổi, chuyển dữ liệu) | Chặn < 16, consent theo mục đích, luật sư review trước launch |
-| Bản quyền bài hát | Chỉ PD, kiểm năm mất cả lời và nhạc, tự thu âm ([ADR 0006](./adr/0006-song-content-policy.md)) |
+| Bản quyền lyrics (tạm chấp nhận ở v1) | Có cơ chế takedown; xem lại trước giai đoạn thương mại ([07 §4](./07-CONTENT-LICENSING.md#4-bài-hát)) |
+| LRCLIB thiếu bài tiếng Nhật / ngừng hoạt động | v1 lưu kết quả vào `content/` (không phụ thuộc runtime); v2 có engine tự xây |
+| Song engine v2 tải audio YouTube trái ToS | Quyết định lại nguồn audio trước khi build v2 |
+| Chất lượng ASR với giọng hát | Tách vocal trước; ưu tiên forced alignment khi đã có lyrics; nhãn độ tin cậy + người dùng báo lỗi |
 | Chi phí AI/TTS | Mock-first, audio pre-generate, quota, kill-switch |
 | Lạm dụng TTS (deepfake, cost DoS) | Voice allowlist, chỉ text do server tạo |
 | MotAPI là processor chưa kiểm chứng | Không gửi PII; có thể tắt trong admin |

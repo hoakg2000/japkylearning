@@ -29,6 +29,8 @@ Version theo research ngày 2026-10-26. Mục **[verify]** phải chạy `npm vi
 | Tiếng Nhật | JMdict + **JmdictFurigana** (readings), `kuroshiro` + kuromoji (chỉ câu ví dụ, lúc ingest), `wanakana` (client) | [ADR 0003](./adr/0003-precompute-furigana-romaji.md) |
 | Stroke order | **KanjiVG** SVG, animate `stroke-dashoffset` | |
 | AI | `AiProvider`: `mock` + `openai-compatible` + `gateway` | [ADR 0010](./adr/0010-ai-provider-strategy.md) |
+| Bài hát | **LRCLIB** API (lyrics + timeline), **YouTube IFrame Player API** (phát), YouTube Data API v3 (metadata, v2) | [ADR 0012](./adr/0012-song-source-and-engine.md) |
+| Song engine (v2) | Python worker: Demucs, stable-ts / WhisperX, Whisper large-v3 / kotoba-whisper **[verify]** | GPU, tách khỏi Vercel |
 | Test | Vitest, Playwright + `@axe-core/playwright`, Lighthouse CI | |
 
 ## 2. Cấu trúc thư mục
@@ -41,9 +43,10 @@ Version theo research ngày 2026-10-26. Mục **[verify]** phải chạy `npm vi
 │  │  ├─ lessons/01-greetings.json
 │  │  ├─ vocab.json  kanji.json  grammar/*.mdx
 │  ├─ packs/<sector>.json           # kaigo, food-service, it…
-│  ├─ songs/<slug>.{json,lrc}
+│  ├─ songs/<slug>.json             # v1: youtubeId + lyrics từ LRCLIB + keywords (sinh lúc ingest)
 │  └─ tombstones.json               # id đã xóa có chủ đích
-├─ scripts/ingest/                  # JMdict, JmdictFurigana, KANJIDIC2, KanjiVG, Unihan Hán-Việt, audio
+├─ scripts/ingest/                  # JMdict, JmdictFurigana, KANJIDIC2, KanjiVG, Unihan Hán-Việt, audio, songs (LRCLIB + AI keywords)
+├─ services/song-engine/            # v2: worker Python (GPU) – tách vocal, ASR, forced alignment
 ├─ public/                          # sounds/, kanjivg/
 ├─ src/
 │  ├─ app/
@@ -87,7 +90,18 @@ Người dùng / anonymous user ──► Server Action (mutation) / Route Handl
                                          ├─► TtsProvider fish (allowlist, text do server tạo) ──► R2 cache
                                          └─► mora scoring (STT chạy trên trình duyệt)
 Audio nội dung: ingest ──► fish.audio ──► R2 (URL bất biến, ghi vào content JSON)
+Bài hát v1:   ingest ──► LRCLIB (syncedLyrics) ──► kuroshiro + AI lyrics-keywords ──► content/songs/*.json ──► trang SSG + YouTube IFrame
+Bài hát v2:   người dùng dán URL ──► song_jobs ──► YouTube Data API ──► LRCLIB ──(không có)──► song-engine worker ──► song_tracks
 ```
+
+### Song engine (v2)
+
+Xem [ADR 0012](./adr/0012-song-source-and-engine.md).
+
+- **Next.js** nhận URL, tạo `song_jobs`, trả trạng thái (poll hoặc SSE). Các bước nhẹ (metadata, nhận diện nhạc, LRCLIB, AI keyword) chạy trong route/cron của Next.js.
+- **Worker `services/song-engine`** (Python, GPU – Modal / Replicate / máy riêng) chỉ nhận job cần phân tích audio: Demucs tách vocal → stable-ts / WhisperX (Whisper large-v3 hoặc kotoba-whisper) → forced alignment hoặc ASR → Enhanced LRC + confidence. Gọi về Next.js bằng webhook có chữ ký HMAC.
+- Hàng đợi: bảng `song_jobs` trong Postgres (worker lấy job bằng `SELECT … FOR UPDATE SKIP LOCKED`), không thêm queue service mới.
+- Kết quả dùng chung qua `song_tracks` (khóa theo `youtube_id`).
 
 - Nội dung học **tĩnh**, đọc từ `content/` lúc build.
 - Dữ liệu người dùng (tiến độ, SRS, streak) ở Postgres; `item_id` trỏ tới id trong `content/` – xem quy tắc ổn định id ở §6.
@@ -137,7 +151,7 @@ Xem [ADR 0007](./adr/0007-two-tier-csp.md).
 
 | Tầng | Route | CSP |
 |------|-------|-----|
-| Public tĩnh | `(public)/*` | Header tĩnh trong `next.config`: `script-src 'self' 'unsafe-inline'`, `object-src 'none'`, `base-uri 'none'`, `form-action 'self'`, `frame-ancestors 'none'` |
+| Public tĩnh | `(public)/*` | Header tĩnh trong `next.config`: `script-src 'self' 'unsafe-inline'`, `object-src 'none'`, `base-uri 'none'`, `form-action 'self'`, `frame-ancestors 'none'`. Riêng `/songs/*` thêm `script-src https://www.youtube.com` và `frame-src https://www.youtube-nocookie.com` |
 | App động | `(app)/*` | Nonce CSP từ `proxy.ts` (`script-src 'nonce-…' 'strict-dynamic'`) |
 | Embed | `embed/*` | CSP tĩnh + `frame-ancestors *` |
 

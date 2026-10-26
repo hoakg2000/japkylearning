@@ -7,7 +7,7 @@
 ### Yêu cầu của chủ dự án
 - Đổi được giữa nhiều provider: **OpenAI (ChatGPT), Gemini, Claude, MotAPI, GitHub Models** (thay cho GitHub Copilot, xem dưới).
 - Đổi qua **admin dashboard** (runtime) hoặc **env lúc build** (mặc định).
-- Mỗi chế độ (`tutor`, `quiz-gen`, `grading`, `adaptive`) chọn provider/model riêng.
+- Mỗi chế độ (`tutor`, `quiz-gen`, `grading`, `adaptive`, `lyrics-keywords`, `lyrics-translate`, `song-metadata`) chọn provider/model riêng.
 - **Hiện tại dùng mock.** Tương lai nối **universal AI gateway** do chủ dự án tự phát triển (SDK hoặc REST).
 
 ### Adapter ([ADR 0010](./adr/0010-ai-provider-strategy.md))
@@ -73,6 +73,8 @@ Key chỉ nằm trong env (Vercel sensitive env). **Preview deploy không có ke
 | `tutor` | 20 tin/ngày/user, `maxOutputTokens` thấp |
 | `grading` | Theo số câu tự luận trong test |
 | `adaptive` | 1 lần/ngày/user, cache |
+| `lyrics-keywords`, `lyrics-translate` | v1: chỉ chạy lúc ingest. v2: 1 lần cho mỗi bài (kết quả dùng chung trong `song_tracks`) |
+| `song-metadata` | v2: chỉ khi rule tách artist/title không chắc |
 
 Mục tiêu: ≤ **$0.10 / MAU / tháng**. Dùng model nhỏ cho quiz-gen/grading; prompt hệ thống ổn định để tận dụng prompt caching.
 
@@ -83,6 +85,11 @@ Mục tiêu: ≤ **$0.10 / MAU / tháng**. Dùng model nhỏ cho quiz-gen/gradin
 | `grading` | Câu hỏi, đáp án chuẩn, câu trả lời, locale | `{ correct, score, corrections, explanation }` |
 | `adaptive` | Tóm tắt rule-based (không PII) | 1–2 câu nhận xét + bài ôn |
 | `tutor` | Lịch sử chat, cấp độ, chủ đề | Văn bản stream có markup furigana |
+| `lyrics-keywords` | Các dòng lyrics (trong delimiter, là data), cấp mục tiêu, locale | `keywords[]` theo schema `LyricKeyword` ([04](./04-DATA-MODEL.md#2-content-schema)); keyword không khớp vị trí trong dòng bị loại |
+| `lyrics-translate` | Các dòng lyrics, locale đích | Bản dịch từng dòng vi/en |
+| `song-metadata` | Tiêu đề, tên kênh, mô tả video | `{ isMusic, artist, title, confidence }` |
+
+Mock của `lyrics-keywords` = rule-based (tách từ, giữ từ trong danh sách JLPT, xếp theo cấp và tần suất), nên tính năng chạy được cả khi AI tắt.
 
 ## 2. TTS
 

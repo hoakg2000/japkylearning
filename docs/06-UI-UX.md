@@ -118,6 +118,7 @@ Một sprite < 60 KB, cùng 1 giọng ngũ cung, chuẩn hóa −16 LUFS, âm l�
 /[locale]/tests                Kiểm tra, mock, test AI
 /[locale]/speak                Luyện nói (beta)
 /[locale]/chat                 AI tutor (beta)
+/[locale]/my-songs             v2: dán link YouTube, trạng thái xử lý, thư viện bài của tôi
 /[locale]/me                   Hồ sơ, streak, thống kê, cài đặt, consent, xuất/xóa dữ liệu
 /[locale]/admin                AI provider, voice allowlist, kill-switch, review nội dung AI, audit log
 

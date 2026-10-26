@@ -41,6 +41,14 @@ Streak **không lưu sẵn**: tính khi đọc bằng pure function `src/lib/str
 | `chat_threads` / `chat_messages` | `user_id`, `mode`, `title` / `thread_id`, `role`, `content`, `provider`, `tokens_in`, `tokens_out` | |
 | `pronunciation_attempts` | `user_id`, `target_text`, `target_kana`, `recognized_kana`, `score`, `mora_diff` jsonb, `provider` | Không lưu audio |
 
+### Bài hát v2 (song engine)
+| Bảng | Cột chính | Ghi chú |
+|------|-----------|---------|
+| `song_tracks` | `youtube_id` PK, `title`, `artist`, `duration_sec`, `is_music_score`, `lyrics_source` (lrclib/engine-align/engine-asr/manual), `lrclib_id`, `sync_level` (none/line/word), `lines` jsonb, `keywords` jsonb, `translation` jsonb, `confidence`, `status` (ready/needs_review/failed), `reported_count` | Dùng chung cho mọi người dùng |
+| `song_jobs` | `id`, `youtube_id`, `requested_by`, `status` (queued/metadata/lyrics_lookup/engine/postprocess/done/failed), `step_detail`, `error`, `attempts`, `created_at`, `finished_at` | Hàng đợi; worker lấy bằng `FOR UPDATE SKIP LOCKED` |
+| `user_songs` | `user_id`, `youtube_id`, `added_at`, `last_played_at`, `gap_best_accuracy` | Thư viện bài của người dùng |
+| `song_reports` | `user_id`, `youtube_id`, `line_index`, `kind` (wrong_lyrics/wrong_timing/wrong_keyword), `note` | Người dùng báo lỗi |
+
 ### Hệ thống
 | Bảng | Cột chính |
 |------|-----------|
@@ -62,10 +70,6 @@ Validate bằng zod lúc build (`scripts/validate-content.ts`). Phác thảo:
 ```ts
 const Bilingual = z.object({ vi: z.string().min(1), en: z.string().min(1) });
 const Segment = z.object({ surface: z.string(), reading: z.string().optional() }); // reading chỉ có khi surface chứa kanji
-const Rights = z.object({
-  type: z.enum(['public-domain', 'cc-by', 'cc-by-sa', 'licensed', 'own-recording']),
-  source: z.string(), notes: z.string().optional(),
-});
 
 const Kana = z.object({
   char: z.string(), romaji: z.string(), script: z.enum(['hiragana', 'katakana']),
@@ -117,15 +121,34 @@ const Lesson = z.object({
   exercises: z.array(z.unknown()),                  // union loại câu hỏi ở features/tests; ≥ 1 bài nghe
 });
 
+// Dùng chung cho content/songs/*.json (v1) và song_tracks (v2)
+const LyricWord = z.object({ text: z.string(), t: z.number(), end: z.number().optional() }); // giây, chỉ có khi sync_level = 'word'
+const LyricLine = z.object({
+  t: z.number().nullable(),                         // giây; null khi chỉ có plainLyrics
+  text: z.string(), segments: z.array(Segment), romaji: z.string(),
+  words: z.array(LyricWord).optional(),
+  translation: Bilingual.optional(),
+});
+const LyricKeyword = z.object({
+  surface: z.string(), lemma: z.string(), reading: z.string(),
+  lineIndex: z.number().int(), charStart: z.number().int(), charEnd: z.number().int(),
+  wordId: z.string().nullable(),                    // id JMdict nếu map được
+  jlpt: z.enum(['n5', 'n4', 'n3', 'n2', 'n1']).nullable(),
+  pos: z.string(), meaning: Bilingual, reason: z.string(),
+});
+
 const Song = z.object({
-  slug: z.string(), title: z.string(),
-  lyricist: z.object({ name: z.string(), died: z.number().int().nullable() }),
-  composer: z.object({ name: z.string(), died: z.number().int().nullable() }),
-  audioUrl: z.string().url(), lrcFile: z.string(),
-  highlights: z.array(z.object({ wordId: z.string(), lineIndex: z.number().int() })),
-  translation: z.array(Bilingual).optional(),
-  license: Rights,                                  // quyền với lời + nhạc
-  recordingRights: Rights,                          // quyền với bản thu
-  rightsProof: z.string().min(1),                   // link/ghi chú chứng minh (năm mất, hợp đồng thu âm…)
+  slug: z.string(), title: z.string(), artist: z.string(),
+  youtubeId: z.string(), durationSec: z.number(),
+  difficulty: z.enum(['easy', 'medium', 'hard']),
+  lyricsSource: z.object({
+    provider: z.enum(['lrclib', 'engine-align', 'engine-asr', 'manual']),
+    lrclibId: z.number().int().optional(), fetchedAt: z.string(),
+  }),
+  syncLevel: z.enum(['none', 'line', 'word']),
+  offsetMs: z.number().int().default(0),
+  lines: z.array(LyricLine).min(1),
+  keywords: z.array(LyricKeyword),
+  keywordsSource: z.object({ provider: z.string(), model: z.string().optional(), reviewed: z.boolean() }),
 });
 ```

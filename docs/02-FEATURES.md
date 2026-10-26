@@ -20,7 +20,7 @@ Mức ưu tiên: **P0** = public beta, **P1** = v1 sau beta, **P2** = sau v1, **
 | Test dựa trên bài học + test AI | [F5](#f5-flashcard-srs--kiểm-tra), [F6](#f6-test-với-ai-beta) | 2–3 |
 | Voice đọc (thiết bị / fish.audio) | [F9](#f9-voice-tts) | 1, 3 |
 | Học theo chế độ AI | [F7](#f7-ai-learning-mode-adaptive-path) | 1–3 |
-| Học qua bài hát + lyrics + highlight | [F11](#f11-học-qua-bài-hát) | 6 |
+| Học qua bài hát + lyrics + highlight (v1 LRCLIB, v2 engine YouTube, AI trích keyword) | [F11](#f11-học-qua-bài-hát) | 6 (v1), v2 |
 | Thẻ từ vựng đủ phiên âm, ví dụ; component nhiều mode | [F13](#f13-component-từ-vựng-wordcard) | 2 |
 | Thư viện open-source kanji→romaji | [ADR 0003](./adr/0003-precompute-furigana-romaji.md) | 2 |
 | Chatbox AI | [F8](#f8-ai-chat-tutor-beta) | 5 |
@@ -226,17 +226,76 @@ Ví dụ nội dung: kaigo (食事・入浴・排泄, bộ phận cơ thể), nh
 
 ## F11. Học qua bài hát
 
-- **Audio tự host** (không YouTube ở v1). Bản thu tự thực hiện hoặc có license.
-- Lyrics dạng **LRC** (timestamp theo dòng); highlight dòng hiện tại theo `<audio>.currentTime`. Word-level (Enhanced LRC) là P2.
-- **Từ đáng chú ý** tô màu tĩnh (theo cấp JLPT / chưa học). Bấm từ → WordCard popover → thêm vào SRS.
-- Toggle furigana / romaji / bản dịch vi-en.
-- **Chế độ điền lỗ:** ẩn 10/25/50/100% từ; dừng nhạc cuối dòng để người dùng điền.
-- Chỉnh offset ±; lặp 1 dòng; giảm tốc độ.
-- **Bài khởi đầu (public domain, kiểm từng bài trước khi phát hành):** さくらさくら, かごめかごめ (dân ca), 春が来た, 七つの子, 赤とんぼ. **Không dùng** ぞうさん, かえるのうた (còn bản quyền). Xem [ADR 0006](./adr/0006-song-content-policy.md).
+Xem [ADR 0012](./adr/0012-song-source-and-engine.md). Ở v1 tạm chưa xử lý bản quyền theo quyết định của chủ dự án (rủi ro ghi ở [07 §4](./07-CONTENT-LICENSING.md#4-bài-hát)).
+
+### Trải nghiệm học (chung cho v1 và v2)
+- Trình phát **YouTube IFrame API** (`youtube-nocookie.com`). Lyrics hiển thị **bên cạnh / bên dưới** player, không che player.
+- Highlight dòng hiện tại theo `player.getCurrentTime()` (vòng `requestAnimationFrame` khi đang phát, tìm nhị phân theo timestamp). Có timestamp từng từ (Enhanced LRC) thì highlight cả từ.
+- Mỗi dòng có furigana / romaji / bản dịch vi-en (toggle).
+- **Keyword học** (do AI trích ở F11.3) được tô màu theo cấp JLPT. Từ người dùng đã học thì nhạt đi (lọc phía client theo thẻ SRS). Bấm từ → WordCard popover → thêm vào SRS.
+- **Chế độ điền lỗ:** ẩn 10/25/50/100% keyword; dừng nhạc cuối dòng để người dùng gõ hoặc chọn.
+- Chỉnh offset ±; lặp 1 dòng; tốc độ 0.75x (`setPlaybackRate`).
+- Sau bài: tóm tắt keyword đã gặp → "Thêm tất cả vào SRS".
+
+### F11.1 v1 – Nguồn lyrics public: LRCLIB
+- **Nguồn lyrics + timeline:** [LRCLIB](https://lrclib.net) – API public, miễn phí, không cần key, trả `syncedLyrics` (LRC theo dòng) và `plainLyrics`.
+  - `GET /api/get?track_name=&artist_name=&album_name=&duration=` – khớp chính xác (thời lượng sai lệch tối đa ±2 s).
+  - `GET /api/search?q=` hoặc `?track_name=&artist_name=` – tìm kiếm.
+  - Gửi header `User-Agent` nhận diện app (LRCLIB yêu cầu).
+- **Danh sách bài do curator chọn:** mỗi bài trong `content/songs/<slug>.json` khai báo `youtubeId` + tên bài / ca sĩ / thời lượng. Script `build-songs.ts` lúc ingest:
+  1. Gọi LRCLIB lấy `syncedLyrics` (ưu tiên) hoặc `plainLyrics`.
+  2. Parse LRC → `lines[{ t, text }]`; sinh `segments` (furigana) + romaji bằng kuroshiro.
+  3. Gọi AI mode `lyrics-keywords` ([F11.3](#f113-ai-trích-keyword-từ-lyrics-v1--v2)) → `keywords`.
+  4. Ghi kết quả vào `content/songs/<slug>.json`. Người review chỉnh offset, keyword, bản dịch qua PR.
+- Bài chỉ có `plainLyrics` (không timestamp) → hiện lyrics tĩnh, không highlight, đánh dấu chờ engine v2.
+- Không gọi LRCLIB lúc runtime ở v1 → trang bài hát vẫn SSG, không phụ thuộc uptime của LRCLIB.
+- Mục tiêu v1: 20–30 bài J-pop / anime / ballad dễ nghe, phân theo độ khó.
+
+### F11.2 v2 – Song engine: người dùng chọn video YouTube
+Người dùng dán link YouTube → hệ thống tự chuẩn bị bài học. Chạy như job nền, có trạng thái hiển thị cho người dùng.
+
+```
+YouTube URL
+  → [1] Lấy metadata (YouTube Data API v3: videos.list)
+  → [2] Có phải nhạc không?
+  → [3] Tìm lyrics + timeline: cache → LRCLIB get → LRCLIB search
+  → [4] Không có timeline → engine tự xây (tách vocal → ASR → căn timeline)
+  → [5] Furigana/romaji + AI trích keyword
+  → [6] Lưu song_tracks, mở bài học
+```
+
+1. **Metadata:** `snippet.title`, `snippet.channelTitle`, `snippet.categoryId`, `contentDetails.duration`. Chặn video quá dài (> 10 phút) hoặc livestream.
+2. **Nhận diện nhạc** (kết hợp, cho điểm tin cậy):
+   - `categoryId == "10"` (Music).
+   - Kênh dạng "<Artist> - Topic", "VEVO", hoặc tiêu đề có mẫu `Artist - Title`, `「…」`, `MV`, `Official`.
+   - Tách artist / title từ tiêu đề (rule + LLM mode `song-metadata` khi rule không chắc).
+   - Không phải nhạc → báo người dùng, dừng.
+3. **Tìm lyrics:** cache `song_tracks` theo `youtube_id` → LRCLIB `/api/get` (title, artist, duration ±2 s) → `/api/search` với các biến thể tên (kanji / kana / romaji, bỏ "feat.", "(TV size)"…). Có `syncedLyrics` → sang bước 5.
+4. **Engine tự xây** (worker Python có GPU, tách khỏi Next.js):
+   - Lấy audio của video → **tách vocal** (Demucs / htdemucs).
+   - Đã có `plainLyrics` → **forced alignment** lyrics vào audio (stable-ts `align` hoặc CTC aligner) → timestamp theo dòng và theo từ.
+   - Không có lyrics → **ASR tiếng Nhật** có word timestamp (Whisper large-v3 / kotoba-whisper qua WhisperX hoặc stable-ts) → lyrics do máy nghe ra, gắn nhãn "độ tin cậy thấp", người dùng báo sửa được.
+   - Xuất Enhanced LRC + `confidence`.
+   - Tùy chọn: đóng góp ngược kết quả đã được duyệt lên LRCLIB (`POST /api/publish`).
+5. **Xử lý văn bản:** segments + romaji, AI `lyrics-keywords`, AI dịch dòng (mode `lyrics-translate`).
+6. **Lưu & chia sẻ:** `song_tracks` dùng chung cho mọi người dùng (bài đã xử lý thì lần sau có ngay). Người dùng có danh sách bài của mình.
+
+**Giới hạn:** chỉ người dùng đăng nhập; quota job engine/ngày (tốn GPU); kill-switch như AI.
+
+### F11.3 AI trích keyword từ lyrics (v1 + v2)
+- Mode AI `lyrics-keywords` ([05 §1](./05-AI-SPEECH.md#1-ai-provider-abstraction)). Input: các dòng lyrics (đặt trong delimiter, coi là data), cấp mục tiêu (N5…), locale. Output (zod):
+  `keywords[{ surface, lemma, reading, lineIndex, charStart, charEnd, jlpt, pos, meaning{vi,en}, reason }]`.
+- Hậu xử lý: map `lemma` → id JMdict (có thì dùng WordCard đầy đủ; không có thì thẻ tạm từ output AI, gắn nhãn "AI"). Bỏ keyword không tìm thấy trong dòng lyrics tương ứng (chống bịa).
+- Ưu tiên: từ thuộc cấp mục tiêu, từ hay gặp, mẫu ngữ pháp (〜たい, 〜ている…), cách nói đặc trưng trong lời bài hát (君, 僕, 〜ね).
+- **Fallback khi AI tắt / mock:** rule-based – tách từ, giữ từ có trong danh sách JLPT, xếp theo cấp và tần suất.
+- v1 chạy lúc ingest (kết quả review qua PR). v2 chạy trong job engine, lưu vào `song_tracks.keywords`.
+- Cá nhân hóa (lọc từ đã học, theo cấp người dùng) làm phía client, không gọi lại AI.
 
 **Acceptance criteria**
-- [ ] Lệch đồng bộ < 150 ms sau khi chỉnh offset.
-- [ ] Bài thiếu `license` hoặc `rightsProof` → build fail.
+- [ ] v1: ≥ 20 bài có `syncedLyrics`, lệch đồng bộ < 300 ms sau khi chỉnh offset.
+- [ ] Mọi keyword trỏ đúng vị trí trong dòng lyrics (test `charStart/charEnd`).
+- [ ] AI tắt → vẫn có keyword từ rule-based.
+- [ ] v2: link YouTube không phải nhạc bị từ chối; bài có trên LRCLIB xử lý xong < 15 s; bài cần engine có trạng thái tiến độ và thông báo khi xong.
 
 ## F12. Sharing widget (iframe)
 
@@ -293,7 +352,7 @@ Một component, **4 layout × 3 density**. Density là mặt nạ ẩn/hiện t
 | Pitch accent đồ thị | P2 |
 | Luyện viết tay kanji (so nét KanjiVG) | P2 |
 | Roleplay AI | P2 |
-| Word-level lyrics sync (Enhanced LRC) | P2 |
+| Song engine v2 (YouTube → lyrics/timeline tự động) | v2 |
 | Nhắc học qua Zalo | LATER |
 | League, quest, badge | LATER |
 | oEmbed endpoint | LATER |

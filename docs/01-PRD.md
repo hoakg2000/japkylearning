@@ -25,7 +25,8 @@ Một website học tiếng Nhật **trực quan, vui, có AI**, viết cho ngư
 2. **Giải thích ngữ pháp bằng tiếng Việt.**
 3. **Kanji / từ vựng theo ngành nghề**, bắt đầu với kaigo.
 4. **Học thích ứng**: màn hình "Hôm nay" đề xuất việc cần làm dựa trên tiến độ (rule-based), AI bổ sung lời giải thích.
-5. **AI tutor, test AI, chấm phát âm, học qua bài hát, widget nhúng** – làm dạng thin slice có giới hạn, sau public beta.
+5. **Học qua bài hát Nhật thật** (J-pop, anime) với lyrics chạy theo nhạc và keyword do AI chọn theo trình độ; v2 cho người dùng tự chọn bài trên YouTube.
+6. **AI tutor, test AI, chấm phát âm, widget nhúng** – làm dạng thin slice có giới hạn, sau public beta.
 
 Table stakes (bắt buộc để cạnh tranh với Mazii / Migii): kana, kanji, SRS, list theo cấp, audio, toggle furigana, stroke order, streak, mock test, dark mode.
 
@@ -36,13 +37,16 @@ Table stakes (bắt buộc để cạnh tranh với Mazii / Migii): kana, kanji,
 - Showcase: AI test + adaptive qua mock và 1 adapter OpenAI-compatible, chuyển provider trong admin, embed thẻ kanji.
 
 ### Sau beta (trong v1)
-- Pack kaigo, bài N5 11–30, AI chat beta, chấm phát âm beta, bài hát public domain, pack nhà hàng + IT, PWA.
+- Pack kaigo, bài N5 11–30, AI chat beta, chấm phát âm beta, học qua bài hát v1 (lyrics từ LRCLIB + YouTube, AI trích keyword), pack nhà hàng + IT, PWA.
+
+### v2
+- Song engine: người dùng chọn video YouTube → nhận diện nhạc → tìm lyrics + timeline → không có thì engine tự phân tích ([ADR 0012](./adr/0012-song-source-and-engine.md)).
 
 ### Ngoài phạm vi v1
 - N4 → N1 và nội dung JFT-Basic đầy đủ (cấu trúc dữ liệu đã sẵn sàng).
 - App mobile native (PWA là đủ).
 - Thanh toán / gói premium.
-- Lyrics hoặc bản thu có bản quyền thương mại.
+- Xử lý bản quyền lyrics/bài hát (chủ dự án tạm chưa xét ở v1; rủi ro ghi ở [07 §4](./07-CONTENT-LICENSING.md#4-bài-hát)).
 - Người dùng dưới 16 tuổi đăng ký tài khoản.
 
 ## 5. Chính sách người dùng & kinh doanh
