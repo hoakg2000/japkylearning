@@ -1,18 +1,13 @@
 # ADR 0004 – AI provider abstraction, mock-first
 
-- **Trạng thái:** Accepted (2026-10-26)
+- **Trạng thái:** Superseded by [ADR 0010](./0010-ai-provider-strategy.md) (2026-10-26)
 
 ## Bối cảnh
-Chủ dự án muốn đổi được giữa Gemini, ChatGPT, Claude, MotAPI, GitHub Copilot – qua admin dashboard hoặc lúc build. Hiện tại dùng mock; tương lai nối **universal AI gateway** tự phát triển (SDK hoặc REST).
+Chủ dự án muốn đổi được AI provider qua admin dashboard hoặc lúc build, dùng mock trước và nối universal AI gateway tự phát triển sau.
 
-## Quyết định
+## Quyết định (bản gốc)
 - Interface `AiProvider { id, chat() (stream), generateObject() }` trong `src/lib/ai/`.
-- Registry chọn provider **theo mode** (`tutor`, `quiz-gen`, `grading`, `adaptive`): `app_settings` (admin) → env `AI_PROVIDER` → `mock`.
-- Adapter đầu tiên: `mock` (fixtures deterministic) và `gateway` (stub). Adapter `openai-compatible` (ChatGPT, MotAPI), `gemini`, `claude` thêm sau.
-- Feature code chỉ gọi registry, không import SDK provider trực tiếp.
+- Registry chọn provider theo mode: `app_settings` (admin) → env `AI_PROVIDER` → `mock`.
+- Feature code chỉ gọi registry.
 
-## Hệ quả
-- (+) Phát triển và test toàn bộ tính năng AI không tốn tiền, CI ổn định.
-- (+) Nối gateway riêng chỉ là thêm/hoàn thiện 1 adapter.
-- (−) Không tận dụng được tính năng riêng của từng provider ngoài interface chung.
-- GitHub Copilot chưa có API công khai cho bên thứ ba – dự kiến đi qua gateway.
+Interface và registry vẫn giữ. Danh sách adapter và cách xử lý GitHub Copilot, MotAPI được sửa ở [ADR 0010](./0010-ai-provider-strategy.md).

@@ -1,91 +1,104 @@
 # 09 – Roadmap
 
-Mỗi phase kết thúc bằng bản chạy được, có test, deploy preview. Ước lượng tính cho 1 developer full-time, chỉ mang tính tương đối.
+> Cập nhật 2026-10-26 theo [review panel](./REVIEW-2026-10-26.md).
 
-## Phase 0 – Nền tảng (~1 tuần)
+1 developer, **~24 tuần**, trong đó **~9 tuần (≈38%) là viết và review nội dung**. Public beta khoảng **tuần 13**. Mỗi phase kết thúc bằng bản chạy được, có test, có preview deploy. Ước lượng chỉ mang tính tương đối.
 
-| Task | Acceptance criteria |
-|------|---------------------|
-| Xóa app Expo, giữ `src/constants/letter.json` → `content/kana/` | Repo chỉ còn Next.js; dữ liệu 46 kana cũ còn nguyên |
-| Scaffold Next.js 16 + TS strict + ESLint + Tailwind v4 + shadcn/ui | `npm run build` pass |
-| Pin version thư viện (`npm view`) cho các mục **[verify]** | Version ghi vào `package.json` và cập nhật [03](./03-ARCHITECTURE.md) |
-| next-intl `/vi` `/en` + hreflang | Đổi ngôn ngữ giữ nguyên trang |
-| Theme light/dark + mode full/minimal (cookie, không nháy) | Reload không nháy giao diện |
-| Security headers + `proxy.ts` | Kiểm tra header bằng curl |
-| CI GitHub Actions (lint, typecheck, vitest, build) | Pipeline xanh |
-| Bổ sung kana đủ bộ (dakuten, yōon, kana nhỏ, katakana mở rộng) | Schema `Kana` validate pass |
-
-## Phase 1 – MVP học (~3–4 tuần)
+## P0 – Nền tảng (1.5 tuần)
 
 | Task | Acceptance criteria |
 |------|---------------------|
-| Module kana: bảng, audio, stroke order, quiz | [F1](./02-FEATURES.md#f1-bảng-chữ-cái-kana) |
-| Pipeline ingest N5: ~800 từ, ~100 kanji, Hán-Việt review, furigana/romaji | `validate-content` pass; 100% từ có ví dụ |
-| WordCard đủ variant + toggle hiển thị | [F13](./02-FEATURES.md#f13-component-từ-vựng-wordcard) |
-| Trang kanji/từ SSG + SEO | Lighthouse SEO ≥ 95 |
-| Bài học N5 1–10 | [F4](./02-FEATURES.md#f4-bài-học-n5) |
-| DB + Drizzle + Better Auth + guest merge | Đăng nhập không mất tiến độ guest |
-| SRS FSRS + trang ôn tập | [F5](./02-FEATURES.md#f5-flashcard-srs--kiểm-tra) |
-| Check-in & streak | [F2](./02-FEATURES.md#f2-daily-check-in--streak), unit test timezone |
-| TTS browser + fish proxy + cache | [F9](./02-FEATURES.md#f9-voice-tts) |
-| Âm thanh action + mute | [06 §4](./06-UI-UX.md#4-âm-thanh-action) |
+| Xóa app Expo; chuyển `src/constants/letter.json` → `content/kana/` | Repo chỉ còn Next.js; 46 kana cũ còn nguyên |
+| Scaffold Next.js 16 + TS strict + ESLint + Tailwind v4 + shadcn/ui; pin version các mục **[verify]** | `npm run build` pass |
+| next-intl `/vi` `/en`, route group `(public)` / `(app)` / `embed` | Trang public build ra static |
+| Design tokens, light/dark, Full/Minimal bằng script trước paint | Reload không nháy giao diện |
+| CSP 2 tầng + security headers | Kiểm tra header bằng curl cho cả 3 tầng |
+| Sound sprite + nút mute | |
+| CI (lint, typecheck, vitest, build) | Pipeline xanh |
 
-## Phase 2 – Kiểm tra & kanji ngành (~3 tuần)
+## P1 – Kana + first-run (2 tuần)
 
 | Task | Acceptance criteria |
 |------|---------------------|
-| Test theo bài, test tổng hợp, lưu `skill_tags` | Câu hỏi chỉ từ nội dung đã học |
-| Mock JLPT N5 có hẹn giờ | Có 3 phần, chấm điểm theo phần |
-| Pack ngành: kaigo, nhà hàng, chế tạo, IT | Mỗi pack ≥ 50 từ + kanji liên quan |
-| Bài học N5 11–30 | Đủ lộ trình N5 |
+| Bổ sung kana đủ bộ + audio pre-generate lên R2 | Schema `Kana` pass |
+| Module kana: bảng, stroke order, quiz, bài kiểm tra bỏ qua kana | [F1](./02-FEATURES.md#f1-bảng-chữ-cái-kana) |
+| DB + Drizzle + Better Auth (anonymous, 2FA), Turnstile, consent, cổng tuổi 16+ | Đăng ký sau khi học → giữ tiến độ |
+| First-run quiz + onboarding + Today v0 + bottom nav | [F0](./02-FEATURES.md#f0-first-run-onboarding--màn-hình-today) |
+| Streak (pure function + freeze tuần) | [F2](./02-FEATURES.md#f2-daily-check-in--streak), property-based test |
 
-## Phase 3 – AI (mock trước) (~3 tuần)
-
-| Task | Acceptance criteria |
-|------|---------------------|
-| `AiProvider` interface + registry + adapter `mock` + stub `gateway` | Unit test registry chọn đúng provider theo app_settings → env → mock |
-| Admin: chọn provider/model theo mode, test prompt, thống kê | Chỉ admin truy cập được |
-| Quota + rate limit + validate output | Vượt quota → thông báo thân thiện |
-| Test với AI | [F6](./02-FEATURES.md#f6-test-với-ai) |
-| Adaptive path (rule-based + LLM) | [F7](./02-FEATURES.md#f7-ai-learning-mode-adaptive-path) |
-| Chat tutor + roleplay | [F8](./02-FEATURES.md#f8-ai-chat-tutor) |
-| Adapter thật (openai-compatible/gemini/claude) hoặc nối gateway | Khi gateway có spec |
-
-## Phase 4 – Speech & bài hát (~3 tuần)
+## P2 – N5 core (5 tuần: dev 3 + nội dung 2)
 
 | Task | Acceptance criteria |
 |------|---------------------|
-| `SttProvider` + mock + webspeech | Hoạt động trên Chrome/Edge; trình duyệt khác báo không hỗ trợ |
-| Mora split/diff + chấm điểm + UI shadowing | Unit test mora (ゃ, っ, ー) |
-| Azure / fish ASR / Whisper adapter | Chọn 1 sau khi so sánh chi phí/chất lượng |
-| Songs: player YouTube + LRC + highlight dòng/từ | Lệch đồng bộ < 150 ms sau khi chỉnh offset |
-| Từ đáng chú ý → WordCard → SRS; chế độ điền lỗ | [F11](./02-FEATURES.md#f11-học-qua-bài-hát) |
-| 5 bài đồng dao public domain đã kiểm tra license | Trường `license` hợp lệ |
+| Pipeline ingest: JMdict, JmdictFurigana, KANJIDIC2, KanjiVG, Unihan, Tatoeba | `validate-content` pass |
+| WordCard: `inline`, `card` × 3 density, `flashcard` | [F13](./02-FEATURES.md#f13-component-từ-vựng-wordcard) |
+| Trang kanji / từ SSG + SEO + credits | Lighthouse SEO ≥ 95; bật Lighthouse CI |
+| SRS FSRS: thẻ nhận diện từ vựng + thẻ ngữ pháp + thẻ nghe | [F5](./02-FEATURES.md#f5-flashcard-srs--kiểm-tra) |
+| Test cuối bài, lưu `skill_tags`; adaptive rule-based cho Today | [F7](./02-FEATURES.md#f7-ai-learning-mode-adaptive-path) |
+| **Nội dung:** bài N5 1–10 (≤ 18 từ/bài, kanji phân bài, bài nghe), review Hán-Việt ~100 kanji N5, nghĩa tiếng Việt cho từ bài 1–10 | Mọi từ có ví dụ + `meaningsViReviewed` |
 
-## Phase 5 – Sharing & hoàn thiện (~2–3 tuần)
+## P3 – Showcase cho chủ dự án (3 tuần)
 
 | Task | Acceptance criteria |
 |------|---------------------|
-| `/embed/*` widgets + trang lấy embed code | Nhúng chạy trên domain khác; trang thường không nhúng được |
-| oEmbed endpoint + discovery | Dán link vào WordPress ra widget |
-| Share card streak (OG image) | |
-| PWA (manifest, offline deck) | Lighthouse PWA pass |
-| League / quest / badge | |
-| Admin CMS nội dung | Sửa furigana sai không cần sửa file tay |
+| `AiProvider` + registry + `mock` + `openai-compatible` (preset openai, gemini, claude, motapi, github-models) + stub `gateway` | Unit test registry: app_settings → env → mock |
+| Admin: chọn adapter/preset/model theo mode, kill-switch, ngân sách, thống kê, audit log | Chỉ admin có 2FA vào được |
+| Test với AI (beta, 5 lượt/ngày) + nhận xét adaptive bằng LLM | [F6](./02-FEATURES.md#f6-test-với-ai-beta) |
+| Voice allowlist + `/api/tts` khóa chặt | [F9](./02-FEATURES.md#f9-voice-tts) |
+| Embed `/embed/kanji/[char]` + trang lấy mã nhúng | Nhúng chạy trên domain khác; trang thường không nhúng được |
+
+## P4 – Public beta (1.5 tuần) → ~tuần 13
+
+| Task | Acceptance criteria |
+|------|---------------------|
+| Privacy policy, terms, danh sách processor, xuất/xóa dữ liệu | Luật sư review PDPL |
+| PostHog event catalogue | [08 §7](./08-NFR.md#7-analytics) |
+| Axe + Lighthouse cho mọi trang chính | Không lỗi axe nghiêm trọng |
+| Sentry, backup, Vercel Pro, fish.audio commercial (nếu launch công khai) | |
+| 20 beta tester (ưu tiên người học Tokutei Ginou) | Thu feedback, đo D1/D7 |
+
+## P5 – Pack kaigo + bài 11–20 (4 tuần: dev 1.5 + nội dung 2.5)
+
+| Task | Acceptance criteria |
+|------|---------------------|
+| Pack kaigo (≥ 50 từ + kanji liên quan) | Thêm vào SRS bằng 1 nút |
+| Bài N5 11–20 | Như P2 |
+| AI chat beta (chỉ ngữ pháp, 20 tin/ngày, SSE) | [F8](./02-FEATURES.md#f8-ai-chat-tutor-beta) |
+| Email nhắc học (opt-in), share card streak | |
+
+## P6 – Bài hát + luyện nói (3 tuần)
+
+| Task | Acceptance criteria |
+|------|---------------------|
+| Songs: audio tự host + LRC theo dòng + highlight + điền lỗ, 3 bài PD đã kiểm `rightsProof` | [F11](./02-FEATURES.md#f11-học-qua-bài-hát) |
+| `SttProvider` + `webspeech` + mora scoring, consent Google, chỉ từ đơn | [F10](./02-FEATURES.md#f10-chấm-phát-âm-beta); unit test mora (ゃ, っ, ー) |
+
+## P7 – Hoàn thiện N5 (4 tuần)
+
+| Task | Acceptance criteria |
+|------|---------------------|
+| Bài N5 21–30 + mock JLPT N5 | Đủ lộ trình N5 |
+| Pack nhà hàng + IT | |
+| Thêm widget (`word`, `word-of-the-day`), streak embed opt-in | |
+| PWA (manifest, offline deck) | |
 
 ## Sau v1
 
-- N4 (thêm `content/levels/n4/`), rồi N3 → N1.
-- Pack ngành còn lại.
-- Từ điển đầy đủ, graded reader, luyện viết tay.
+- N4, nội dung + mock JFT-Basic, rồi N3 → N1 (ISR).
+- Pack ngành còn lại; roleplay AI; word-level lyrics; Azure Pronunciation Assessment.
+- Nhắc học qua Zalo, league/quest, oEmbed.
+- Nối universal AI gateway của chủ dự án khi có spec.
 
 ## Rủi ro chính
 
 | Rủi ro | Giảm thiểu |
 |--------|-----------|
-| Bản quyền lyrics | Chỉ nội dung public domain/CC/có license ([ADR 0006](./adr/0006-song-content-policy.md)) |
-| Chi phí AI/TTS | Mock-first, cache, quota, pre-generate audio |
-| Chất lượng Hán-Việt / dịch tiếng Việt | Review tay, trạng thái `reviewed` |
-| kuroshiro không còn maintain | Chỉ dùng lúc ingest; phương án lindera-wasm |
-| Share-alike CC BY-SA | Phát hành dataset nội dung theo CC BY-SA |
-| STT trên trình duyệt không đồng đều | Interface provider, fallback server-side |
+| Thời gian viết nội dung | Đã dành ~38% roadmap; AI dịch nháp + review; giới hạn 18 từ/bài |
+| Pháp lý PDPL (tuổi, chuyển dữ liệu) | Chặn < 16, consent theo mục đích, luật sư review trước launch |
+| Bản quyền bài hát | Chỉ PD, kiểm năm mất cả lời và nhạc, tự thu âm ([ADR 0006](./adr/0006-song-content-policy.md)) |
+| Chi phí AI/TTS | Mock-first, audio pre-generate, quota, kill-switch |
+| Lạm dụng TTS (deepfake, cost DoS) | Voice allowlist, chỉ text do server tạo |
+| MotAPI là processor chưa kiểm chứng | Không gửi PII; có thể tắt trong admin |
+| Chất lượng Hán-Việt / tiếng Việt | Review tay, cờ `reviewed` |
+| kuroshiro không còn maintain | Chỉ dùng lúc ingest cho câu ví dụ; phương án lindera-wasm |
+| Thông tin chưa kiểm chứng (năm mất tác giả, license JmdictFurigana, điều khoản fish.audio) | Kiểm trước khi phát hành phần liên quan ([REVIEW §6](./REVIEW-2026-10-26.md#6-còn-mở)) |

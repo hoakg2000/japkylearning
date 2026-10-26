@@ -1,6 +1,8 @@
 # 02 – Đặc tả tính năng
 
-Mức ưu tiên: **P0** = MVP, **P1** = cần cho v1, **P2** = sau v1, **P3** = ý tưởng.
+> Cập nhật 2026-10-26 theo [review panel](./REVIEW-2026-10-26.md).
+
+Mức ưu tiên: **P0** = public beta, **P1** = v1 sau beta, **P2** = sau v1, **P3** = ý tưởng. Tính năng đánh dấu **beta** chạy sau feature flag và có giới hạn.
 
 ## Traceability: yêu cầu gốc → tính năng → phase
 
@@ -8,101 +10,122 @@ Mức ưu tiên: **P0** = MVP, **P1** = cần cho v1, **P2** = sau v1, **P3** = 
 |-------------|-----|-------|
 | Web 2 ngôn ngữ vi/en | [03-ARCHITECTURE §i18n](./03-ARCHITECTURE.md#4-i18n) | 0 |
 | Next.js TypeScript | [03-ARCHITECTURE](./03-ARCHITECTURE.md) | 0 |
+| Giao diện trực quan, tiện ích | [F0](#f0-first-run-onboarding--màn-hình-today), [06-UI-UX](./06-UI-UX.md) | 0–1 |
 | Các bảng chữ cái | [F1](#f1-bảng-chữ-cái-kana) | 1 |
 | Check-in daily, giữ streak | [F2](#f2-daily-check-in--streak) | 1 |
-| Kanji chia nhiều ngành nghề | [F3](#f3-kanji--từ-vựng-theo-jlpt-và-ngành-nghề) | 2 |
-| Giao diện trực quan, tiện ích | [06-UI-UX](./06-UI-UX.md) | 0–5 |
-| Bài học N5 | [F4](#f4-bài-học-n5) | 1–2 |
-| Chế độ kiểm tra, thẻ | [F5](#f5-flashcard-srs--kiểm-tra) | 1–2 |
-| Sharing widget (iframe) | [F12](#f12-sharing-widget-iframe) | 5 |
-| Test dựa trên bài học + test AI | [F5](#f5-flashcard-srs--kiểm-tra), [F6](#f6-test-với-ai) | 2–3 |
-| Voice đọc (device / fish.audio) | [F9](#f9-voice-tts) | 1 |
-| Học theo chế độ AI | [F7](#f7-ai-learning-mode-adaptive-path) | 3 |
-| Học qua bài hát + lyrics + highlight | [F11](#f11-học-qua-bài-hát) | 4 |
-| Thẻ từ vựng đủ phiên âm, ví dụ | [F13](#f13-component-từ-vựng-wordcard) | 1 |
-| Component từ có nhiều mode | [F13](#f13-component-từ-vựng-wordcard) | 1 |
-| Thư viện open-source kanji→romaji | [ADR 0003](./adr/0003-precompute-furigana-romaji.md) | 1 |
-| Chatbox AI | [F8](#f8-ai-chat-tutor) | 3 |
-| Speech-to-text chấm phát âm | [F10](#f10-chấm-phát-âm-speech-to-text) | 4 |
-| Extendable, SEO, tối ưu, bảo mật | [08-NFR](./08-NFR.md) | 0–5 |
+| Kanji chia nhiều ngành nghề | [F3](#f3-kanji--từ-vựng-theo-jlpt-và-ngành-nghề) | 2, 5 |
+| Bài học N5 | [F4](#f4-bài-học-n5) | 2, 5, 7 |
+| Chế độ kiểm tra, thẻ | [F5](#f5-flashcard-srs--kiểm-tra) | 2 |
+| Sharing widget (iframe) | [F12](#f12-sharing-widget-iframe) | 3 |
+| Test dựa trên bài học + test AI | [F5](#f5-flashcard-srs--kiểm-tra), [F6](#f6-test-với-ai-beta) | 2–3 |
+| Voice đọc (thiết bị / fish.audio) | [F9](#f9-voice-tts) | 1, 3 |
+| Học theo chế độ AI | [F7](#f7-ai-learning-mode-adaptive-path) | 1–3 |
+| Học qua bài hát + lyrics + highlight | [F11](#f11-học-qua-bài-hát) | 6 |
+| Thẻ từ vựng đủ phiên âm, ví dụ; component nhiều mode | [F13](#f13-component-từ-vựng-wordcard) | 2 |
+| Thư viện open-source kanji→romaji | [ADR 0003](./adr/0003-precompute-furigana-romaji.md) | 2 |
+| Chatbox AI | [F8](#f8-ai-chat-tutor-beta) | 5 |
+| Speech-to-text chấm phát âm | [F10](#f10-chấm-phát-âm-beta) | 6 |
+| Extendable, SEO, tối ưu, bảo mật | [08-NFR](./08-NFR.md) | 0–7 |
 | Giao diện sáng, 2 mode Full/Minimal | [06-UI-UX](./06-UI-UX.md) | 0 |
-| Âm thanh cho action | [06-UI-UX §Âm thanh](./06-UI-UX.md#4-âm-thanh-action) | 1 |
-| AI provider đổi được (Gemini/ChatGPT/Claude/MotAPI/Copilot), mock trước, gateway sau | [05-AI-SPEECH](./05-AI-SPEECH.md), [ADR 0004](./adr/0004-ai-provider-abstraction.md) | 3 |
+| Âm thanh cho action | [06-UI-UX §Âm thanh](./06-UI-UX.md#5-âm-thanh-action) | 0–1 |
+| AI provider đổi được (OpenAI, Gemini, Claude, MotAPI, GitHub Models thay Copilot), mock trước, gateway sau | [05-AI-SPEECH](./05-AI-SPEECH.md), [ADR 0010](./adr/0010-ai-provider-strategy.md) | 3 |
 
 ---
 
-## F1. Bảng chữ cái (Kana)
+## F0. First-run, onboarding & màn hình Today
 
-**Mô tả.** Hiragana và Katakana đầy đủ: 46 âm cơ bản, dakuten/handakuten (が, ぱ), yōon (きゃ), kana nhỏ (っ, ゃ), âm dài (ー), và katakana mở rộng (ファ, ティ, ヴ) ở P1.
+**First-run (không cần đăng ký)**
+- Landing có quiz 5 câu hiragana chạy ngay. Kết quả kiêm **placement thô**: chưa biết gì / đã biết kana / đã học một phần N5.
+- Sau quiz hỏi 3 câu: đã biết gì, mục tiêu (JLPT / Tokutei Ginou theo ngành / IT), daily goal.
+- Người dùng là **anonymous user** ([ADR 0009](./adr/0009-anonymous-guest-users.md)). Chỉ khi bấm "Lưu tiến độ" mới hiện đăng ký, cổng tuổi 16+ và consent.
+- Người đã biết kana / một phần N5: làm **placement test** ngắn (~3 phút) để bỏ qua kana hoặc mở khóa bài.
 
-**Chức năng**
-- Bảng tương tác dạng lưới gojūon. Bấm vào ô → phát âm + hiện stroke order (KanjiVG có cả kana).
-- Chế độ học: thẻ từng chữ, mnemonic hình ảnh (P1).
-- Quiz: chọn romaji đúng (1 đáp án + 4 nhiễu, xáo trộn – port logic từ `src/screens/LearningScreen.js`), nghe → chọn kana, gõ romaji → tự chuyển kana (wanakana), quiz ngược (romaji → kana).
-- Chọn hàng muốn luyện (あ行, か行…), tracking độ chính xác từng chữ, chữ hay sai được hỏi nhiều hơn (đưa vào SRS).
+**Màn hình Today (`/[locale]/home`)**
+- 1 nút chính lớn "Tiếp tục" + tối đa 3 thẻ: ôn tập đến hạn, bài tiếp theo, 1 mục thêm (kanji hôm nay / bài hát).
+- Streak là chip nhỏ góc trên, không phải tiêu điểm.
+- Hết thẻ ôn → hiện trạng thái hoàn thành (không phải trang trống).
+- Danh sách việc lấy từ adaptive rule-based ([F7](#f7-ai-learning-mode-adaptive-path)).
+
+**Điều hướng mobile:** bottom nav 4 tab: **Hôm nay / Học / Ôn / Tôi**. Bài hát, Chat, Luyện nói nằm trong "Học".
 
 **Acceptance criteria**
-- [ ] Có đủ ≥ 104 mục hiragana và ≥ 104 mục katakana (cơ bản + biến âm + yōon).
-- [ ] Mỗi mục có romaji Hepburn, audio (TTS), stroke order.
+- [ ] Khách làm xong quiz đầu tiên không cần nhập gì.
+- [ ] Đăng ký sau khi đã học → tiến độ giữ nguyên.
+- [ ] Người dùng chọn "đã biết kana" + qua placement → không bị bắt học lại kana.
+
+## F1. Bảng chữ cái (Kana)
+
+**Mô tả.** Hiragana và Katakana đầy đủ: 46 âm cơ bản, dakuten/handakuten (が, ぱ), yōon (きゃ), kana nhỏ (っ, ゃ), âm dài (ー), katakana mở rộng (ファ, ティ, ヴ) ở P1.
+
+**Chức năng**
+- Bảng tương tác dạng lưới gojūon. Bấm ô → phát âm + stroke order (KanjiVG có cả kana).
+- Mnemonic hình ảnh (P1).
+- Quiz: chọn romaji đúng (1 đáp án + 4 nhiễu, xáo trộn – port logic từ `src/screens/LearningScreen.js` của app Expo cũ), nghe → chọn kana, gõ romaji → tự chuyển kana (wanakana), quiz ngược.
+- Chọn hàng muốn luyện; tracking độ chính xác từng chữ; chữ hay sai đưa vào SRS.
+- Có **bài kiểm tra bỏ qua kana**.
+
+**Acceptance criteria**
+- [ ] ≥ 104 mục hiragana và ≥ 104 mục katakana.
+- [ ] Mỗi mục có romaji Hepburn, audio pre-generate, stroke order.
 - [ ] Quiz không bao giờ có 2 đáp án trùng nhau.
 - [ ] Dùng được hoàn toàn bằng bàn phím.
 
 ## F2. Daily check-in & streak
 
-**Mô tả.** Một "ngày học" được tính khi người dùng đạt **daily goal** (ví dụ 20 XP) hoặc bấm check-in sau khi hoàn thành ≥ 1 hoạt động.
+**Mô tả.** Một "ngày học" được tính khi đạt **daily goal** (XP) hoặc check-in sau ≥ 1 hoạt động.
 
 **Chức năng**
-- Streak hiện tại, streak dài nhất, lịch heatmap.
-- **Streak freeze**: tối đa 2 freeze, kiếm bằng XP; tự dùng khi lỡ 1 ngày.
-- Daily goal tùy chọn (casual 10 / regular 20 / serious 50 XP).
-- Nhắc học: web push notification (P2), email (P3).
-- Share card ảnh streak (OG image động) (P1).
-- Hiệu ứng + âm thanh khi giữ streak.
+- Streak hiện tại, dài nhất, lịch heatmap.
+- **Streak freeze:** tự tặng **1 freeze mỗi tuần** (giữ tối đa 2); tự dùng khi lỡ 1 ngày.
+- **Mục tiêu tuần** (ví dụ 4/7 ngày) là lựa chọn thay cho streak hằng ngày.
+- Daily goal: casual 10 / regular 20 / serious 50 XP.
+- Ăn mừng mốc 3 / 7 / 30 ngày (hiệu ứng + âm thanh).
+- Nhắc học: email (Resend, opt-in) ở P1; web push P2; Zalo LATER.
+- Share card ảnh streak (OG image on-demand) P1.
+- **Không dark pattern:** không bán phục hồi streak, không thông báo gây cảm giác tội lỗi.
 
 **Quy tắc**
-- Lưu timezone IANA của người dùng. "Ngày học" = ngày địa phương, rollover lúc **04:00** sáng.
-- Bảng `study_days(user_id, local_date)` có unique constraint → idempotent.
-- Chỉ cho đổi timezone 1 lần/ngày để chống gian lận.
-- Guest: lưu localStorage; đăng nhập thì merge (lấy hợp các ngày).
+- Lưu timezone IANA. "Ngày học" = ngày địa phương, rollover **04:00**. `local_date` tính trên server.
+- `study_days(user_id, local_date)` unique; ghi bằng upsert `xp = xp + excluded.xp` (an toàn khi nhiều sự kiện cùng lúc).
+- Streak là **pure function** `(study_days, freezes, timezone, now) → streak`, tính khi đọc. Freeze áp dụng lười khi phát hiện khoảng trống.
+- Chỉ cho đổi timezone 1 lần/ngày.
 
 **Acceptance criteria**
-- [ ] Học lúc 23:59 và 00:01 giờ địa phương → 2 ngày khác nhau; học lúc 02:00 → vẫn tính ngày hôm trước.
+- [ ] 23:59 và 00:01 giờ địa phương → 2 ngày khác nhau; 02:00 → vẫn tính ngày hôm trước.
 - [ ] Lỡ 1 ngày khi còn freeze → streak giữ nguyên, freeze giảm 1.
-- [ ] Unit test cho các trường hợp DST và đổi timezone.
+- [ ] Người dùng ngừng học → streak hiển thị 0 ngay (không còn giá trị cũ).
+- [ ] Unit test (có property-based) cho DST và đổi timezone.
 
 ## F3. Kanji & từ vựng theo JLPT và ngành nghề
 
-**Mô tả.** Kanji và từ vựng được nhóm thành **pack**. Có 2 loại pack: theo cấp JLPT và theo ngành nghề.
+**Mô tả.** Kanji và từ vựng nhóm thành **pack**: theo cấp JLPT và theo ngành nghề.
 
-**Pack ngành nghề** (16 lĩnh vực Tokutei Ginou + bổ sung):
+**Pack ngành nghề**
 
 | Nhóm | Pack | Ưu tiên |
 |------|------|---------|
-| Tokutei Ginou | Kaigo (介護) – điều dưỡng | P1 |
+| Tokutei Ginou | **Kaigo (介護) – điều dưỡng** | P1 (pack ngành đầu tiên) |
 | | Food service (外食) – nhà hàng | P1 |
-| | Chế tạo sản phẩm công nghiệp – nhà máy | P1 |
-| | Xây dựng | P2 |
-| | Nông nghiệp | P2 |
-| | Chế biến thực phẩm | P2 |
-| | Lưu trú – khách sạn | P2 |
-| | Sửa chữa ô tô, vận tải ô tô | P2 |
+| | Chế tạo sản phẩm công nghiệp – nhà máy | P2 |
+| | Xây dựng, nông nghiệp, chế biến thực phẩm, khách sạn, ô tô | P2 |
 | | Vệ sinh tòa nhà, đóng tàu, hàng không, ngư nghiệp, đường sắt, lâm nghiệp, gỗ | P3 |
 | Bổ sung | IT / kỹ sư | P1 |
-| | Văn phòng / keigo / email | P2 |
-| | Đời sống (ủy ban, ngân hàng, biển báo) | P2 |
+| | Văn phòng / keigo / email, đời sống | P2 |
 
 Ví dụ nội dung: kaigo (食事・入浴・排泄, bộ phận cơ thể), nhà máy (安全, 危険, 禁止, 検査, 5S), nhà hàng (注文, 会計, dị ứng), IT (設計, 実装, 障害, 仕様).
 
-**Mỗi kanji có:** chữ, on'yomi, kun'yomi, **Hán-Việt**, nghĩa vi/en, bộ thủ, số nét, stroke order animation, cấp JLPT, các ngành liên quan, từ ví dụ (dùng WordCard), luyện viết (P2).
+**Mỗi kanji có:** chữ, on'yomi, kun'yomi, **Hán-Việt**, nghĩa vi/en, bộ thủ, số nét, stroke order, cấp JLPT, ngành liên quan, từ ví dụ (WordCard), luyện viết (P2).
 
 **Acceptance criteria**
 - [ ] 100% kanji N5 có Hán-Việt đã review tay.
 - [ ] Trang `/[locale]/kanji/[char]` là trang tĩnh, có metadata SEO.
-- [ ] Mỗi pack có thể thêm toàn bộ vào SRS bằng 1 nút.
+- [ ] Mỗi pack thêm toàn bộ vào SRS bằng 1 nút.
 
 ## F4. Bài học N5
 
-**Lộ trình đề xuất (~30 bài, mỗi bài 10–15 phút):**
+**Nhịp bài:** 6–8 bước (5–7 từ mới mỗi nhóm, nhận diện, ngữ pháp, luyện, mini test), **15–18 từ/bài**. Khoảng **600 từ** nằm trong 30 bài; phần còn lại của danh sách N5 là deck SRS tùy chọn. Kanji được **phân vào từng bài** (theo tần suất và bộ thủ đã học), ~3–4 kanji/bài.
+
+**Lộ trình đề xuất (~30 bài):**
 
 | Bài | Chủ đề | Ngữ pháp chính |
 |-----|--------|----------------|
@@ -111,150 +134,169 @@ Ví dụ nội dung: kaigo (食事・入浴・排泄, bộ phận cơ thể), nh
 | 2 | Đồ vật | これ/それ/あれ, の |
 | 3 | Địa điểm | ここ/そこ/あそこ, どこ |
 | 4 | Số đếm, thời gian | 〜時〜分, から〜まで |
-| 5 | Di chuyển | 行きます/来ます, へ, で (phương tiện) |
-| 6 | Hành động hằng ngày | を, で (nơi chốn), ませんか |
-| 7–8 | Tính từ い / な | Chia tính từ, とても/あまり |
-| 9 | Sở thích, khả năng | が好き, が分かる |
-| 10 | Tồn tại | あります/います, に |
-| 11–15 | Số lượng, so sánh, quá khứ | 〜つ, より, 〜ました |
+| 5 | Hành động hằng ngày | 〜ます / ません / **ました** / ませんでした, を |
+| 6 | Di chuyển | 行きます/来ます, へ, で (phương tiện) |
+| 7 | Tồn tại | あります/います, に |
+| 8 | Nơi hành động, rủ rê | で (nơi chốn), ませんか, ましょう |
+| 9–10 | Tính từ い / な | Chia tính từ (cả quá khứ), とても/あまり |
+| 11 | Sở thích, khả năng | が好き, が分かる |
+| 12–15 | Số lượng, so sánh | 〜つ, trợ số từ, より, 一番 |
 | 16–20 | Thể て | 〜てください, 〜ています, 〜てもいい |
 | 21–25 | Thể ない, từ điển | 〜ないでください, 〜ことができる |
 | 26–30 | Thể た, ôn tập | 〜たことがある, tổng ôn |
 
-**Mỗi bài gồm:** mục tiêu, từ vựng (WordCard), ngữ pháp (giải thích vi/en + ví dụ), hội thoại mẫu (audio), bài tập (chọn, sắp xếp câu, điền, nghe), mini test cuối bài. Hoàn thành bài → mở khóa bài tiếp + đưa từ vào SRS.
+**Mỗi bài gồm:** mục tiêu, từ vựng (WordCard), ngữ pháp (giải thích tiếng Việt trước; tiếng Anh sau), hội thoại mẫu có audio, bài tập (chọn, sắp xếp câu, điền, **nghe**), mini test. Tự lưu khi thoát, tiếp tục giữa bài. Hoàn thành bài → mở khóa bài tiếp + đưa từ và mẫu ngữ pháp vào SRS.
 
-**Cấu trúc mở rộng:** `content/levels/{n5,n4,...}/lessons/NN-slug.json` – thêm N4 chỉ là thêm thư mục.
+**Mở rộng:** `content/levels/{n5,n4,...}/lessons/NN-slug.json`. Nội dung JFT-Basic là một level riêng trong tương lai.
 
 **Acceptance criteria**
-- [ ] Bài học là nội dung tĩnh (SSG), có trang SEO riêng cho phần ngữ pháp.
-- [ ] Tiến độ bài học lưu theo user (DB) hoặc guest (localStorage).
+- [ ] Bài học là nội dung tĩnh (SSG); phần ngữ pháp có trang SEO riêng.
+- [ ] Mỗi bài ≤ 18 từ mới, có ≥ 1 bài tập nghe.
 
 ## F5. Flashcard (SRS) & kiểm tra
 
 **Flashcard**
-- Thuật toán **FSRS** (`ts-fsrs`). Đánh giá 4 mức: Again / Hard / Good / Easy.
-- Kiểu thẻ: lật (front/back), chọn đáp án, gõ đáp án (wanakana chuyển kana), nghe → chọn, cloze trong câu ví dụ.
-- Chiều thẻ: Nhật → nghĩa, nghĩa → Nhật, kanji → cách đọc.
-- Hàng đợi ôn hằng ngày, giới hạn thẻ mới/ngày, phát hiện "leech" (thẻ sai nhiều lần).
-- Tạo deck tùy chỉnh (P2), import/export CSV/Anki (P3).
+- **FSRS** (`ts-fsrs`). 4 mức: Again / Hard / Good / Easy.
+- Kiểu thẻ: lật, chọn đáp án, gõ đáp án (wanakana), nghe → chọn, cloze.
+- **Thẻ ngữ pháp:** câu cloze có mẫu ngữ pháp cần điền (kiểu Bunpro).
+- **Thẻ nghe:** phát audio pre-generate → chọn nghĩa / chọn câu.
+- Ban đầu mỗi item chỉ có **1 thẻ nhận diện**; chiều "nghĩa → Nhật" và "kanji → cách đọc" mở khi thẻ đã mature.
+- Giới hạn thẻ mới/ngày, phát hiện leech. Deck tùy chỉnh P2, import/export P3.
 
 **Kiểm tra**
-- Test cuối bài (10–15 câu từ bài đó).
-- Test tổng hợp nhiều bài đã học.
-- **Mock JLPT N5** có hẹn giờ: 文字・語彙, 文法・読解, 聴解 (P2).
-- Kết quả: điểm theo skill tag (vocab, kanji, grammar, listening), xem lại câu sai + giải thích.
+- Test cuối bài (10–15 câu), test tổng hợp, **mock JLPT N5** có hẹn giờ (P1), mock JFT-Basic (P2).
+- Kết quả theo skill tag (vocab, kanji, grammar, listening), xem lại câu sai + giải thích.
 
 **Acceptance criteria**
-- [ ] Câu hỏi test chỉ lấy từ nội dung người dùng đã học (trừ mock JLPT).
-- [ ] Mỗi câu trả lời lưu `skill_tags` để F7 dùng.
-- [ ] Unit test cho wrapper FSRS (lịch ôn tăng dần khi chọn Good liên tiếp).
+- [ ] Câu hỏi test chỉ lấy từ nội dung đã học (trừ mock).
+- [ ] Mỗi câu trả lời lưu `skill_tags` cho F7.
+- [ ] Unit test cho wrapper FSRS.
 
-## F6. Test với AI
+## F6. Test với AI (beta)
 
-- AI **sinh câu hỏi mới** chỉ từ vocab/grammar người dùng đã mở khóa (danh sách item được truyền vào prompt; output validate bằng zod).
-- AI **chấm câu tự luận** (dịch câu, đặt câu), trả lời: đúng/sai, sửa lỗi, giải thích bằng ngôn ngữ giao diện.
-- Câu hỏi sinh ra được lưu (`ai_generated_items`), review được ở admin, tái dùng cho người khác → giảm chi phí.
-- Giai đoạn đầu chạy bằng **mock provider** (trả fixtures cố định).
+- AI sinh câu hỏi chỉ từ vocab/grammar người dùng đã mở khóa; output validate zod.
+- AI chấm câu tự luận (dịch, đặt câu): đúng/sai, sửa lỗi, giải thích theo ngôn ngữ giao diện.
+- Câu hỏi sinh ra lưu ở `ai_generated_items`; **chỉ câu đã `approved` mới được dùng lại cho người khác**.
+- Giới hạn: chỉ người dùng đăng nhập (16+), **5 lượt sinh/ngày**.
+- Chạy qua `mock` trước, sau đó adapter `openai-compatible` ([05](./05-AI-SPEECH.md)).
 
 **Acceptance criteria**
-- [ ] Output không hợp lệ schema → retry 1 lần, rồi fallback sang câu hỏi tĩnh.
-- [ ] Có quota theo user/ngày.
+- [ ] Output sai schema → retry 1 lần → fallback câu hỏi tĩnh.
+- [ ] Kill-switch tắt AI → tính năng ẩn đi, phần còn lại của app vẫn chạy.
 
 ## F7. AI learning mode (adaptive path)
 
-**Mục tiêu:** sau mỗi phiên, hệ thống đề xuất "Hôm nay nên học gì" + lý do.
+**Mục tiêu:** đề xuất "Hôm nay nên học gì" + lý do. Đây là nguồn dữ liệu của màn hình Today ([F0](#f0-first-run-onboarding--màn-hình-today)).
 
-**Thuật toán (2 tầng):**
-1. **Rule-based (luôn chạy, rẻ, có thể kiểm thử):**
+1. **Rule-based (P0, luôn chạy):**
    - Thẻ SRS đến hạn > ngưỡng → ưu tiên ôn.
-   - Skill tag có tỉ lệ sai cao trong 7 ngày → đề xuất bài ôn kỹ năng đó.
+   - Skill tag sai nhiều trong 7 ngày → bài ôn kỹ năng đó.
    - Bài kế tiếp chưa học → học mới.
    - Đầu ra: danh sách hoạt động có điểm ưu tiên.
-2. **LLM (tùy chọn):** nhận tóm tắt tiến độ (không gửi dữ liệu cá nhân thừa) → viết lời nhận xét, giải thích, tạo bài ôn cá nhân hóa.
+2. **LLM (beta):** nhận tóm tắt tiến độ (không gửi PII) → 1–2 câu nhận xét, bài ôn cá nhân hóa.
 
 **Acceptance criteria**
-- [ ] Tắt AI → tầng rule-based vẫn đưa ra đề xuất.
+- [ ] Tắt AI → rule-based vẫn đưa ra đề xuất.
 - [ ] Unit test cho bộ chấm điểm ưu tiên.
 
-## F8. AI chat tutor
+## F8. AI chat tutor (beta)
 
-- Chatbox streaming, giữ lịch sử theo thread.
-- Chế độ: hỏi đáp ngữ pháp, dịch & giải thích, **roleplay** (konbini, phỏng vấn xin việc, nhà máy, nhà hàng, kaigo).
-- Tin nhắn AI có thể bấm vào từ → mở WordCard, phát âm (TTS).
-- System prompt giới hạn chủ đề học tiếng Nhật; nói tiếng Việt/Anh theo locale.
-- Quota tin nhắn/ngày; rate limit.
-- Chạy với mock provider trước (trả lời mẫu stream từng chữ).
+- Chatbox streaming (Route Handler SSE), lịch sử theo thread.
+- Beta: **chỉ hỏi đáp ngữ pháp / dịch & giải thích**, **20 tin/ngày**, người dùng đăng nhập 16+. Roleplay (konbini, phỏng vấn, nhà máy, kaigo) làm sau.
+- Từ tiếng Nhật trong câu trả lời render bằng `WordCard inline` (AI xuất markup furigana, validate bằng zod).
+- Audio câu trả lời dùng voice thiết bị (không gọi fish.audio).
+- System prompt giới hạn chủ đề; trả lời theo locale.
 
 ## F9. Voice (TTS)
 
-- **Mặc định:** Web Speech API `speechSynthesis` với voice `ja-JP` của thiết bị. Không có voice ja-JP → hiện thông báo + gợi ý bật cloud voice.
-- **Cloud voice:** nếu user/admin cấu hình `voiceId` (fish.audio `reference_id`) → client gọi `/api/tts` → server proxy tới fish.audio (key không bao giờ lộ ra client).
-- Cache audio theo `sha256(text + voiceId + model)` (object storage hoặc DB `audio_cache`) → mỗi câu chỉ tốn tiền 1 lần.
-- Điều khiển: tốc độ (0.5x–1.25x), lặp lại.
-- Chi tiết: [05-AI-SPEECH](./05-AI-SPEECH.md#2-tts).
+- **Nội dung học:** audio **pre-generate** lúc ingest (fish.audio, voice đã có giấy đồng ý), lưu R2, URL bất biến. Không tốn chi phí runtime.
+- **Text động** (câu AI, câu người dùng): mặc định `speechSynthesis` `ja-JP` của thiết bị; không có voice → thông báo.
+- **Cloud voice theo `voiceId`:** người dùng chọn voice trong **allowlist do admin quản lý**. `/api/tts` chỉ cho người dùng đăng nhập, chỉ đọc **text do server tạo** (id nội dung hoặc id tin nhắn AI), có quota, có cache.
+- Tốc độ 0.5x–1.25x, lặp lại.
+- Chi tiết: [05-AI-SPEECH §2](./05-AI-SPEECH.md#2-tts).
 
-## F10. Chấm phát âm (speech-to-text)
+## F10. Chấm phát âm (beta)
 
-- Chế độ **shadowing**: nghe câu mẫu → ghi âm → chấm.
-- Pipeline: audio → STT → chuyển hiragana → tách mora → so sánh Levenshtein theo mora với câu mẫu → điểm 0–100 + highlight mora sai.
-- Provider STT có interface riêng; bắt đầu bằng `mock` và `webspeech` (Chrome/Edge/Safari), sau đó Azure Pronunciation Assessment (hỗ trợ ja-JP) / fish.audio ASR / Whisper.
-- Xin quyền micro rõ ràng; không lưu audio mặc định (chỉ lưu điểm).
-- Chi tiết: [05-AI-SPEECH](./05-AI-SPEECH.md#3-stt--chấm-phát-âm).
+- Chế độ shadowing: nghe → ghi âm → chấm.
+- Beta: **Web Speech API** (Chrome/Edge/Safari), **chỉ chấm từ đơn**, người dùng đăng nhập 16+. Trước lần ghi âm đầu tiên hiện thông báo: **audio được gửi tới Google** để nhận dạng; cần consent.
+- Pipeline: STT → hiragana → tách mora → Levenshtein theo mora → điểm 0–100 + highlight mora sai.
+- Chỉ lưu điểm, không lưu audio.
+- Provider khác (Azure Pronunciation Assessment, fish ASR, Whisper) qua interface `SttProvider` ở P2.
+- Chi tiết: [05-AI-SPEECH §3](./05-AI-SPEECH.md#3-stt--chấm-phát-âm).
 
 ## F11. Học qua bài hát
 
-- Trình phát YouTube (IFrame API, `youtube-nocookie.com`) + lyrics dạng **LRC / Enhanced LRC** (timestamp từng từ).
-- Highlight dòng hiện tại và từng từ theo `player.getCurrentTime()` (vòng `requestAnimationFrame` khi đang phát).
-- **Từ đáng chú ý** được đánh dấu màu (theo JLPT level / từ chưa học). Bấm từ → WordCard popover → thêm vào SRS.
-- Hiển thị furigana / romaji / bản dịch vi-en theo toggle.
-- **Chế độ điền lỗ** (kiểu Lyricstraining): ẩn 10/25/50/100% từ, người dùng gõ hoặc chọn khi bài hát dừng.
-- Chỉnh offset đồng bộ ±; lặp 1 dòng; giảm tốc độ.
-- Nội dung: **chỉ bài có quyền sử dụng** (đồng dao public domain, bài Creative Commons, nội dung có license). Xem [ADR 0006](./adr/0006-song-content-policy.md).
+- **Audio tự host** (không YouTube ở v1). Bản thu tự thực hiện hoặc có license.
+- Lyrics dạng **LRC** (timestamp theo dòng); highlight dòng hiện tại theo `<audio>.currentTime`. Word-level (Enhanced LRC) là P2.
+- **Từ đáng chú ý** tô màu tĩnh (theo cấp JLPT / chưa học). Bấm từ → WordCard popover → thêm vào SRS.
+- Toggle furigana / romaji / bản dịch vi-en.
+- **Chế độ điền lỗ:** ẩn 10/25/50/100% từ; dừng nhạc cuối dòng để người dùng điền.
+- Chỉnh offset ±; lặp 1 dòng; giảm tốc độ.
+- **Bài khởi đầu (public domain, kiểm từng bài trước khi phát hành):** さくらさくら, かごめかごめ (dân ca), 春が来た, 七つの子, 赤とんぼ. **Không dùng** ぞうさん, かえるのうた (còn bản quyền). Xem [ADR 0006](./adr/0006-song-content-policy.md).
+
+**Acceptance criteria**
+- [ ] Lệch đồng bộ < 150 ms sau khi chỉnh offset.
+- [ ] Bài thiếu `license` hoặc `rightsProof` → build fail.
 
 ## F12. Sharing widget (iframe)
 
 **Nhúng Japky vào web khác**
-- Route `/embed/[type]/[id]`: `word-of-the-day`, `kanji/[char]`, `word/[id]`, `streak/[userPublicId]`, `kana-quiz`.
-- Không dùng cookie đăng nhập, chỉ đọc dữ liệu công khai, CSP `frame-ancestors *`.
-- Trang "Get embed code": chọn widget, theme, ngôn ngữ, kích thước → copy `<iframe>`.
-- Endpoint **oEmbed** `/api/oembed` + thẻ discovery → dán link vào WordPress/Notion tự thành widget.
-- Tự co chiều cao bằng `postMessage` (có kiểm tra origin).
+- v1: `/embed/kanji/[char]` (tĩnh, SSG). Sau đó: `word/[id]`, `word-of-the-day`.
+- `/embed/streak/[publicId]`: **opt-in, mặc định tắt**, id ngẫu nhiên đổi được.
+- Không cookie, chỉ dữ liệu công khai, layout riêng không có app shell, CSP `frame-ancestors *` chỉ cho `/embed/*`.
+- Trang "Lấy mã nhúng": chọn widget, theme, ngôn ngữ → copy `<iframe>`.
+- `postMessage` chỉ gửi chiều cao, không lắng nghe message.
+- oEmbed: LATER.
 
 **Nhúng nội dung web khác vào Japky**
-- Component `<SafeEmbed>`: chỉ cho domain trong allowlist (YouTube, Spotify…), `sandbox`, `referrerpolicy`, lazy-load facade.
+- `<SafeEmbed>`: chỉ domain trong allowlist, `sandbox`, `referrerpolicy`, lazy-load facade. Chưa dùng ở v1.
 
 ## F13. Component từ vựng (WordCard)
 
-Một component, nhiều **variant** từ cơ bản đến mở rộng. Tất cả dùng chung kiểu dữ liệu `Word` ([04-DATA-MODEL](./04-DATA-MODEL.md#2-content-schema)).
+Một component, **4 layout × 3 density**. Density là mặt nạ ẩn/hiện trường dữ liệu, không phải 12 thiết kế riêng. Dùng chung kiểu `Word` ([04](./04-DATA-MODEL.md#2-content-schema)).
 
-| Variant | Hiển thị | Dùng ở |
-|---------|----------|--------|
-| `inline` | Từ với `<ruby>` furigana | Trong câu, lyrics, chat |
-| `compact` | Từ + kana + nghĩa 1 dòng | Danh sách từ |
-| `card` | Kanji, furigana, romaji, **Hán-Việt**, loại từ, nghĩa vi/en, pitch accent, nút audio, 1–3 ví dụ (có furigana + dịch) | Bài học |
-| `detail` | `card` + stroke order từng kanji, từ liên quan, ghi chú, nút thêm SRS, link trang từ | Trang từ, popover |
-| `flashcard` | Mặt trước / mặt sau, lật bằng click/space | SRS |
-| `embed` | Bản gọn cho iframe, có link về Japky | Widget |
+| Layout | Dùng ở |
+|--------|--------|
+| `inline` | Trong câu, lyrics, chat (`<ruby>` furigana) |
+| `row` | Danh sách từ |
+| `card` | Bài học, trang từ, popover, widget (`context="embed"`) |
+| `flashcard` | SRS (mặt trước / sau) |
 
-**Toggle hiển thị** (lưu trong user settings): furigana, romaji, Hán-Việt, nghĩa. Ví dụ: người học nâng cao tắt romaji.
+| Density | Trường hiển thị |
+|---------|-----------------|
+| `basic` | Từ, furigana, nghĩa |
+| `standard` | + romaji, **Hán-Việt**, loại từ, nút audio, 1 ví dụ |
+| `extended` | + pitch accent, 2–3 ví dụ, stroke order từng kanji, từ liên quan, ghi chú, nút SRS |
 
-**Ràng buộc dữ liệu:** mỗi `Word` bắt buộc có `reading`, `romaji`, nghĩa vi + en, và **≥ 1 ví dụ** có bản dịch. Script build content fail nếu thiếu.
+**Phase 2 làm:** `inline`, `card` (3 density), `flashcard`. `row` sau.
+
+**Toggle hiển thị** (lưu trong settings):
+- Furigana 3 trạng thái: luôn hiện / chỉ kanji chưa học / ẩn.
+- Romaji bật cho tới khi xong kana, sau đó hỏi 1 lần "Ẩn romaji?".
+- Hán-Việt mặc định bật với locale vi, tắt với en.
+- Bật/tắt không làm nhảy layout (giữ chỗ ruby, đổi `visibility`).
+
+**Ràng buộc dữ liệu:** mỗi `Word` bắt buộc có `reading`, `romaji`, nghĩa vi + en, **≥ 1 ví dụ** có bản dịch. Build fail nếu thiếu.
 
 **Acceptance criteria**
-- [ ] Storybook-like trang `/dev/word-card` hiện mọi variant (chỉ môi trường dev).
-- [ ] Mọi variant render được trên server (không cần JS để thấy nội dung) trừ phần tương tác.
-- [ ] Contrast và kích thước chữ đạt WCAG AA; furigana đọc được trên mobile.
+- [ ] Trang `/dev/word-card` (chỉ môi trường dev) hiện mọi tổ hợp layout × density.
+- [ ] Mọi layout render được trên server, trừ phần tương tác.
+- [ ] Đạt WCAG AA; furigana ≥ 11px trên mobile.
 
-## F14. Backlog (P2/P3)
+## F14. Backlog
 
 | Tính năng | Ưu tiên |
 |-----------|---------|
-| Từ điển tra nhanh (JMdict) + tra bằng viết tay | P2 |
-| Chế độ đọc truyện/tin dễ (graded reader), tap-to-define | P2 |
-| League tuần, quest, badge, XP | P2 |
-| PWA offline cho deck đã tải | P2 |
-| Admin CMS nội dung (sửa bài, sửa furigana sai) | P2 |
+| Mock JFT-Basic | P2 |
+| Từ điển tra nhanh (JMdict) + tra viết tay | P2 |
+| Graded reader, tap-to-define | P2 |
 | Pitch accent đồ thị | P2 |
-| Luyện viết tay kanji (so nét với KanjiVG) | P2 |
+| Luyện viết tay kanji (so nét KanjiVG) | P2 |
+| Roleplay AI | P2 |
+| Word-level lyrics sync (Enhanced LRC) | P2 |
+| Nhắc học qua Zalo | LATER |
+| League, quest, badge | LATER |
+| oEmbed endpoint | LATER |
 | Friend streak, lớp học cho giáo viên | P3 |
-| Video có phụ đề song ngữ | P3 |
+
+**Đã bỏ:** Admin CMS nội dung – sửa nội dung qua PR vào `content/` ([ADR 0008](./adr/0008-git-only-content.md)).

@@ -1,118 +1,143 @@
 # 05 – AI & Speech
 
+> Cập nhật 2026-10-26 theo [review panel](./REVIEW-2026-10-26.md).
+
 ## 1. AI provider abstraction
 
-### Yêu cầu
-- Đổi được giữa **Gemini, ChatGPT (OpenAI), Claude, MotAPI, GitHub Copilot**.
+### Yêu cầu của chủ dự án
+- Đổi được giữa nhiều provider: **OpenAI (ChatGPT), Gemini, Claude, MotAPI, GitHub Models** (thay cho GitHub Copilot, xem dưới).
 - Đổi qua **admin dashboard** (runtime) hoặc **env lúc build** (mặc định).
 - Mỗi chế độ (`tutor`, `quiz-gen`, `grading`, `adaptive`) chọn provider/model riêng.
 - **Hiện tại dùng mock.** Tương lai nối **universal AI gateway** do chủ dự án tự phát triển (SDK hoặc REST).
 
-### Thiết kế
+### Adapter ([ADR 0010](./adr/0010-ai-provider-strategy.md))
 
 ```
 src/lib/ai/
-  types.ts          # AiProvider, ChatInput, ObjectInput, AiMode
-  registry.ts       # getProvider(mode): app_settings → env → 'mock'
+  types.ts
+  registry.ts                 # getProvider(mode): app_settings → env → 'mock'
   adapters/
-    mock.ts         # P0: fixtures deterministic, stream giả từng token, dùng cho dev/test/CI
-    gateway.ts      # P0 stub: gọi REST gateway tự làm (GATEWAY_URL, GATEWAY_API_KEY) – hoàn thiện khi gateway có spec
-    openai-compatible.ts  # P2: phủ ChatGPT, MotAPI (https://motapis.com/v1), endpoint OpenAI-compatible khác
-    gemini.ts       # P2
-    claude.ts       # P2
-  prompts/          # system prompt theo mode, có version
-  guard.ts          # quota, rate limit, sanitize, validate output
+    mock.ts                   # fixtures deterministic, stream giả; dùng cho dev, test, CI, preview
+    openai-compatible.ts      # 1 adapter, nhiều preset (bảng dưới)
+    gateway.ts                # stub; hoàn thiện khi gateway có spec (nếu gateway nói chuẩn OpenAI thì chỉ là 1 preset)
+  prompts/                    # system prompt theo mode, có version
+  guard.ts                    # quota, kill-switch, validate output
 ```
 
-- **GitHub Copilot**: không có API công khai chính thức cho bên thứ ba dùng làm LLM backend. Đề xuất đi qua gateway tự làm (gateway quyết định cách nối). Ghi chú để xác minh khi làm.
-- Nếu gateway của chủ dự án nói chuẩn OpenAI-compatible thì `gateway` có thể chỉ là cấu hình của `openai-compatible`. Chốt khi gateway có spec.
-- Tham chiếu code đã có: `C:\project\secretary\server\src\llm\motapi.client.ts` (env `LLM_BASE_URL`, `LLM_API_KEY`, `LLM_MODEL`), SSE helper `C:\project\secretary\server\src\llm\sse.ts`.
+| Preset | Base URL | Env key | Ghi chú |
+|--------|----------|---------|---------|
+| `openai` | `https://api.openai.com/v1` | `OPENAI_API_KEY` | |
+| `gemini` | `https://generativelanguage.googleapis.com/v1beta/openai/` | `GEMINI_API_KEY` | Endpoint OpenAI-compatible chính thức |
+| `claude` | endpoint OpenAI-compatible của Anthropic, hoặc qua gateway | `ANTHROPIC_API_KEY` | Thêm adapter riêng chỉ khi cần tính năng riêng |
+| `motapi` | `https://motapis.com/v1` | `MOTAPI_API_KEY` | **Processor chưa kiểm chứng: không gửi PII**, chỉ gửi nội dung học đã ẩn danh |
+| `github-models` | `https://models.github.ai/inference` | `GITHUB_MODELS_TOKEN` (PAT `models:read`) | Thay cho Copilot. Free tier dành cho prototype → dùng cho dev |
+
+- **Vì sao bỏ GitHub Copilot:** Copilot không có API được phép cho ứng dụng bên thứ ba. Các proxy dùng token Copilot là reverse-engineer, có rủi ro vi phạm ToS/AUP và bị khóa tài khoản. GitHub Models là lựa chọn hợp lệ, cùng hệ sinh thái.
+- Tham chiếu code: `C:\project\secretary\server\src\llm\motapi.client.ts`, SSE helper `C:\project\secretary\server\src\llm\sse.ts`.
 
 ### Env
 
 ```
-AI_PROVIDER=mock                 # mock | gateway | openai-compatible | gemini | claude
+AI_PROVIDER=mock                 # mock | openai-compatible | gateway
+AI_PRESET=                       # openai | gemini | claude | motapi | github-models
 AI_MODEL=
-GATEWAY_URL=  GATEWAY_API_KEY=
-LLM_BASE_URL= LLM_API_KEY=       # openai-compatible (OpenAI, MotAPI…)
-GEMINI_API_KEY=
-ANTHROPIC_API_KEY=
-AI_DAILY_TOKEN_QUOTA=50000
+OPENAI_API_KEY= GEMINI_API_KEY= ANTHROPIC_API_KEY= MOTAPI_API_KEY= GITHUB_MODELS_TOKEN=
+GATEWAY_URL= GATEWAY_API_KEY=
+AI_DAILY_BUDGET_USD=5
 ```
 
+Key chỉ nằm trong env (Vercel sensitive env). **Preview deploy không có key thật** → luôn chạy `mock`.
+
 ### Admin dashboard (`/[locale]/admin/ai`)
-- Bảng: mode → provider → model → bật/tắt. Lưu vào `app_settings`.
-- Nút "Test" gửi prompt mẫu, hiện latency + output.
-- Thống kê dùng token theo ngày/mode/provider (từ `ai_usage`, `chat_messages`).
-- Review `ai_generated_items` (duyệt/loại câu hỏi AI sinh ra).
-- Chỉ `role = admin`; kiểm tra quyền trong mọi server action.
+- Bảng: mode → adapter → preset → model → bật/tắt. Chỉ chọn trong preset **đã có key trong env**; `app_settings` **không lưu URL hay key** (tránh SSRF và lộ key qua nút "Test").
+- Nút "Test" gửi prompt mẫu cố định, hiện latency + output.
+- **Kill-switch** toàn cục + ngân sách/ngày (`AI_DAILY_BUDGET_USD`): vượt ngân sách → tự chuyển về `mock`/nội dung tĩnh.
+- Thống kê token & chi phí theo ngày/mode/provider (`ai_usage`).
+- Review `ai_generated_items` (duyệt/loại).
+- Quyền admin cấp tay trong DB, **bắt buộc 2FA**, mọi thay đổi ghi `audit_log`.
+- Đặt hạn mức chi tiêu trong console của từng provider.
 
-### An toàn & chi phí
-- Nội dung người dùng, lyrics, văn bản ngoài đặt trong delimiter rõ ràng, coi là **data, không phải lệnh**.
-- AI không có tool ghi. Tool đọc (nếu có) chỉ lấy dữ liệu của chính user, server validate.
+### An toàn
+- Nội dung người dùng, văn bản ngoài đặt trong delimiter, coi là **data, không phải lệnh**.
+- AI không có tool ghi. Tool đọc chỉ lấy dữ liệu của chính user, server validate.
 - Output có cấu trúc → validate zod; sai → retry 1 lần → fallback nội dung tĩnh.
-- Không render HTML từ model; render markdown đã sanitize.
-- Quota token/ngày/user + rate limit theo user và IP (Upstash).
-- Cache: câu hỏi sinh ra lưu theo `input_hash` và tái dùng; prompt hệ thống ổn định để tận dụng prompt caching của provider.
-- Giới hạn `maxOutputTokens` theo mode.
+- Không render HTML từ model. Furigana dùng markup `{漢字|かんじ}` parse bằng code của app.
+- Câu hỏi AI sinh ra chỉ dùng lại cho người khác khi đã `approved`.
+- Chỉ người dùng đăng nhập 16+ đã consent `ai_processing` mới dùng AI.
+- Chat streaming qua **Route Handler (SSE)** với `maxDuration`; Server Action chỉ dùng cho mutation.
 
-### Prompt theo mode (tóm tắt)
+### Quota & chi phí
+| Mode | Giới hạn beta |
+|------|---------------|
+| `quiz-gen` | 5 lượt/ngày/user |
+| `tutor` | 20 tin/ngày/user, `maxOutputTokens` thấp |
+| `grading` | Theo số câu tự luận trong test |
+| `adaptive` | 1 lần/ngày/user, cache |
+
+Mục tiêu: ≤ **$0.10 / MAU / tháng**. Dùng model nhỏ cho quiz-gen/grading; prompt hệ thống ổn định để tận dụng prompt caching.
+
+### Prompt theo mode
 | Mode | Input | Output |
 |------|-------|--------|
-| `quiz-gen` | Danh sách item đã học (id, surface, reading, meaning), loại câu, số câu, locale | JSON câu hỏi theo schema |
-| `grading` | Câu hỏi, đáp án chuẩn, câu trả lời user, locale | `{ correct, score, corrections, explanation }` |
-| `adaptive` | Tóm tắt rule-based (điểm yếu theo skill, thẻ đến hạn, bài kế) | Lời khuyên + bài ôn cá nhân hóa |
-| `tutor` | Lịch sử chat, cấp độ user, scenario roleplay | Văn bản stream; câu tiếng Nhật kèm furigana markup đơn giản |
+| `quiz-gen` | Item đã học (id, surface, reading, meaning), loại câu, số câu, locale | JSON câu hỏi theo schema |
+| `grading` | Câu hỏi, đáp án chuẩn, câu trả lời, locale | `{ correct, score, corrections, explanation }` |
+| `adaptive` | Tóm tắt rule-based (không PII) | 1–2 câu nhận xét + bài ôn |
+| `tutor` | Lịch sử chat, cấp độ, chủ đề | Văn bản stream có markup furigana |
 
 ## 2. TTS
 
 ```
 src/lib/speech/tts/
   types.ts     # TtsProvider { speak(text, opts) }
-  browser.ts   # client: speechSynthesis, voice lang 'ja-JP', rate
+  browser.ts   # client: speechSynthesis 'ja-JP'
   fish.ts      # server-only: proxy fish.audio
+scripts/ingest/build-audio.ts   # pre-generate audio nội dung → R2
 ```
 
-**Luồng chọn voice**
-1. `user_settings.tts_voice_id` (hoặc voice mặc định admin đặt) có giá trị → dùng `fish`.
-2. Không có → `browser`. Không có voice `ja-JP` trên thiết bị → báo cho người dùng.
+**Luồng**
+1. **Nội dung học** (kana, từ, ví dụ, hội thoại, bài hát không tính): file mp3 pre-generate, `audioUrl` trong content. Không gọi API lúc chạy.
+2. **Text động:** mặc định `browser`. Không có voice `ja-JP` → thông báo.
+3. **Cloud voice:** người dùng chọn voice trong bảng `tts_voices` (allowlist). `/api/tts` nhận **id nội dung hoặc id tin nhắn AI**, không nhận text tự do; chỉ người dùng đăng nhập; có quota; kiểm `audio_cache` trước khi gọi.
 
-**fish.audio** (theo `C:\project\secretary\server\src\ai-agent\services\tts\tts.service.ts` và docs fish.audio):
+**fish.audio** (theo `C:\project\secretary\server\src\ai-agent\services\tts\tts.service.ts` + docs fish.audio)
 - `POST https://api.fish.audio/v1/tts`
-- Header: `Authorization: Bearer ${FISH_AUDIO_API_KEY}`, `Content-Type: application/json`, `model: s2.1-pro-free` (model khác: `s1`, `s2-pro`, `s2.1-pro`).
-- Body: `{ text, reference_id: voiceId, format: 'mp3', latency: 'normal' }`, `prosody.speed` cho tốc độ.
-- Trả về stream (chunked) → pipe về client; timeout 60 s.
-- Route `/api/tts`: auth (hoặc guest có rate limit chặt), zod (text ≤ 300 ký tự), kiểm tra `audio_cache` trước khi gọi.
-- **Chi phí:** tính theo byte UTF-8 → tiếng Nhật (3 byte/ký tự) đắt ~3x so với chữ Latin. Bắt buộc cache. Có thể pre-generate audio cho toàn bộ từ vựng N5 lúc build.
+- Header: `Authorization: Bearer ${FISH_AUDIO_API_KEY}`, `Content-Type: application/json`, `model: <model>`.
+- Body: `{ text, reference_id, format: 'mp3', latency: 'normal' }`, `prosody.speed` cho tốc độ. Trả stream, timeout 60 s.
+- **Model:** `s2.1-pro-free` chỉ dùng cho dev/beta riêng tư. Trước launch công khai: **gói commercial** (cho phép dùng thương mại và phân phối file pre-generate), model trả phí.
+- **Voice:** chỉ dùng voice tạo từ người nói đã **ký giấy đồng ý** (`tts_voices.consent_doc_ref`). Không cho người dùng tự nhập `reference_id`.
+- **Chi phí:** tính theo byte UTF-8 → tiếng Nhật đắt ~3x. Pre-generate toàn bộ N5 (~50k ký tự) chỉ tốn 1 lần, ước tính < $20.
 
 ## 3. STT & chấm phát âm
 
 ```
 src/lib/speech/stt/
-  types.ts     # SttProvider { transcribe(audio, { lang: 'ja-JP', referenceText? }) → { text, kana?, confidence?, phonemeScores? } }
-  mock.ts      # P0
-  webspeech.ts # client, Chrome/Edge/Safari
-  azure.ts     # P2: Pronunciation Assessment ja-JP (accuracy, fluency, completeness)
-  fish-asr.ts  # P2: fish.audio ASR (endpoint cần xác minh)
-  whisper.ts   # P2: OpenAI transcribe hoặc qua gateway
+  types.ts     # SttProvider { transcribe(audio, { lang: 'ja-JP', referenceText? }) → { text, kana?, confidence? } }
+  mock.ts
+  webspeech.ts # beta: client, Chrome/Edge/Safari
+  azure.ts     # P2: Pronunciation Assessment ja-JP, region Southeast Asia
+  whisper.ts   # P2: qua openai-compatible hoặc gateway
 src/lib/japanese/mora.ts   # toHiragana, splitMora, moraDiff, score
 ```
 
-**Pipeline chấm điểm (tầng cơ bản, mọi provider):**
-1. Câu mẫu → `target_kana` (đã precompute).
-2. Audio → STT → text → hiragana (wanakana + bảng reading cho kanji; hoặc API analyze).
-3. Tách mora: gộp ゃゅょ với kana trước, っ và ー là 1 mora riêng.
-4. Levenshtein theo mora → danh sách thao tác (đúng / thay / thiếu / thừa).
+**Pipeline (mọi provider)**
+1. Câu/từ mẫu → `target_kana` (precompute).
+2. Audio → STT → text → hiragana (wanakana; kanji trong kết quả map qua reading của từ mẫu).
+3. Tách mora: gộp ゃゅょ với kana trước; っ và ー là 1 mora.
+4. Levenshtein theo mora → thao tác (đúng / thay / thiếu / thừa).
 5. Điểm = `round(100 * (1 - editDistance / targetMoraCount))`, kẹp 0–100.
-6. UI highlight mora sai, cho nghe lại mẫu và bản ghi.
+6. UI highlight mora sai, nghe lại mẫu.
 
-Lưu ý: STT tự sửa phát âm về từ đúng, nên tầng này đo **"có nghe hiểu được không"**, chưa phải chấm âm vị. Tầng cao cấp dùng Azure Pronunciation Assessment để có điểm theo âm vị.
+STT tự sửa phát âm về từ đúng → tầng này đo "nghe hiểu được không", chưa phải chấm âm vị. Chấm âm vị cần Azure (P2).
 
-**Quyền riêng tư:** chỉ ghi âm khi người dùng bấm; không lưu audio trừ khi người dùng bật; header `Permissions-Policy: microphone=(self)`.
+**Quyền riêng tư**
+- Web Speech trên Chrome gửi audio tới **Google** → modal thông báo + consent `speech_processing` trước lần đầu.
+- Chỉ ghi khi người dùng bấm; không lưu audio; `Permissions-Policy: microphone=(self)` chỉ trên route luyện nói.
+- Beta chỉ chấm từ đơn, người dùng 16+.
 
-## 4. Mục cần xác minh ở Phase 0/4
+## 4. Cần xác minh
 
-- Vercel AI SDK major version hiện tại (nếu dùng làm lớp adapter bên trong).
-- Endpoint fish.audio ASR.
-- GitHub Copilot có cách gọi hợp lệ cho bên thứ ba hay chỉ qua gateway.
+- Endpoint OpenAI-compatible của Anthropic và cách gateway tự làm expose API.
+- Endpoint fish.audio ASR (nếu dùng sau).
+- Điều khoản thương mại chính thức của fish.audio.
+- Giới hạn free tier GitHub Models.
 - Hỗ trợ `SpeechRecognition` của Firefox.

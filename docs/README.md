@@ -1,6 +1,8 @@
 # Japky – Tài liệu dự án
 
-Website học tiếng Nhật song ngữ **Tiếng Việt / English**, xây bằng **Next.js (App Router) + TypeScript**. Giai đoạn đầu tập trung **JLPT N5**; N4 → N1 làm sau trên cùng cấu trúc.
+Website học tiếng Nhật song ngữ **Tiếng Việt / English**, xây bằng **Next.js (App Router) + TypeScript**. Giai đoạn đầu tập trung **JLPT N5** (cột mốc trên đường tới JFT-Basic / N4); N4 → N1 làm sau trên cùng cấu trúc.
+
+> Docs đã được sửa theo [review panel ngày 2026-10-26](./REVIEW-2026-10-26.md).
 
 > Repo này trước đây là app Expo React Native (kana quiz). App đó sẽ bị thay thế ở Phase 0 (xem [ADR 0001](./adr/0001-nextjs-fullstack-replace-expo.md)). Dữ liệu `src/constants/letter.json` được giữ làm seed cho module bảng chữ cái.
 
@@ -18,15 +20,21 @@ Website học tiếng Nhật song ngữ **Tiếng Việt / English**, xây bằn
 | 8 | [08-NFR.md](./08-NFR.md) | SEO, performance, security, testing, CI/CD |
 | 9 | [09-ROADMAP.md](./09-ROADMAP.md) | Các phase, task, acceptance criteria |
 | – | [adr/](./adr/) | Architecture Decision Records |
+| – | [REVIEW-2026-10-26.md](./REVIEW-2026-10-26.md) | Kết quả review của 5 sub-agent, fact-check, danh sách quyết định D1–D30 |
 
 ## ADR
 
 - [0001 – Next.js full-stack thay Expo](./adr/0001-nextjs-fullstack-replace-expo.md)
 - [0002 – Drizzle + Neon Postgres + Better Auth](./adr/0002-drizzle-neon-better-auth.md)
 - [0003 – Precompute furigana/romaji lúc ingest](./adr/0003-precompute-furigana-romaji.md)
-- [0004 – AI provider abstraction, mock-first](./adr/0004-ai-provider-abstraction.md)
+- [0004 – AI provider abstraction, mock-first](./adr/0004-ai-provider-abstraction.md) *(superseded by 0010)*
 - [0005 – FSRS cho spaced repetition](./adr/0005-fsrs-srs.md)
 - [0006 – Chính sách nội dung bài hát](./adr/0006-song-content-policy.md)
+- [0007 – CSP 2 tầng](./adr/0007-two-tier-csp.md)
+- [0008 – Nội dung chỉ nằm trong git](./adr/0008-git-only-content.md)
+- [0009 – Khách là anonymous user](./adr/0009-anonymous-guest-users.md)
+- [0010 – Chiến lược AI provider](./adr/0010-ai-provider-strategy.md)
+- [0011 – Tuân thủ PDPL](./adr/0011-pdpl-compliance.md)
 
 ## Glossary
 
@@ -46,3 +54,6 @@ Website học tiếng Nhật song ngữ **Tiếng Việt / English**, xây bằn
 | LRC | Định dạng lyrics có timestamp `[mm:ss.xx]` |
 | Tokutei Ginou (特定技能) | Visa kỹ năng đặc định – 16 lĩnh vực ngành nghề |
 | Streak | Số ngày học liên tục |
+| Jukujikun (熟字訓) | Từ đọc theo cả cụm, không theo từng chữ (今日 = きょう, 大人 = おとな) |
+| JFT-Basic | Bài thi tiếng Nhật cơ bản (A2) dùng cho visa Tokutei Ginou |
+| PDPL | Luật Bảo vệ dữ liệu cá nhân Việt Nam (Luật 91/2025/QH15) |

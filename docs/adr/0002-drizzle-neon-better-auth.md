@@ -9,7 +9,8 @@ Cần lưu tiến độ, SRS, streak, lịch sử AI; muốn tự chủ, không 
 - **Postgres trên Neon** (branch DB cho preview deploy).
 - **Drizzle ORM** (SQL-first, nhẹ, hợp serverless).
 - **Better Auth** (email + Google OAuth, role admin). Auth.js v5 hiện chỉ nhận bản vá bảo mật.
-- Guest dùng localStorage, merge khi đăng nhập.
+- Khách là Better Auth anonymous user ([ADR 0009](./0009-anonymous-guest-users.md)). Bản gốc dùng localStorage + merge, đã bỏ.
+- Neon `ap-southeast-1`, Vercel function region `sin1`; WebSocket `Pool` cho transaction.
 
 ## Hệ quả
 - (+) Kiểm soát schema và dữ liệu; đổi host Postgres dễ.
