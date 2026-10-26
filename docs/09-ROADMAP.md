@@ -2,7 +2,7 @@
 
 > Cập nhật 2026-10-26 theo [review panel](./REVIEW-2026-10-26.md).
 
-1 developer, **~24 tuần**, trong đó **~9 tuần (≈38%) là viết và review nội dung**. Public beta khoảng **tuần 13**. Mỗi phase kết thúc bằng bản chạy được, có test, có preview deploy. Ước lượng chỉ mang tính tương đối.
+1 developer, **~24.5 tuần**, trong đó **~9 tuần (≈38%) là viết và review nội dung**. Public beta khoảng **tuần 13**. Mỗi phase kết thúc bằng bản chạy được, có test, có preview deploy. Ước lượng chỉ mang tính tương đối.
 
 ## P0 – Nền tảng (1.5 tuần)
 
@@ -66,11 +66,10 @@
 | AI chat beta (chỉ ngữ pháp, 20 tin/ngày, SSE) | [F8](./02-FEATURES.md#f8-ai-chat-tutor-beta) |
 | Email nhắc học (opt-in), share card streak | |
 
-## P6 – Bài hát + luyện nói (3 tuần)
+## P6 – Luyện nói (1.5 tuần)
 
 | Task | Acceptance criteria |
 |------|---------------------|
-| Songs v1: `build-songs.ts` (LRCLIB → LRC → furigana → AI `lyrics-keywords` + `lyrics-translate`), player YouTube + highlight dòng/từ + keyword + điền lỗ, 20–30 bài | [F11](./02-FEATURES.md#f11-học-qua-bài-hát) |
 | `SttProvider` + `webspeech` + mora scoring, consent Google, chỉ từ đơn | [F10](./02-FEATURES.md#f10-chấm-phát-âm-beta); unit test mora (ゃ, っ, ー) |
 
 ## P7 – Hoàn thiện N5 (4 tuần)
@@ -81,6 +80,14 @@
 | Pack nhà hàng + IT | |
 | Thêm widget (`word`, `word-of-the-day`), streak embed opt-in | |
 | PWA (manifest, offline deck) | |
+
+## P8 – Học qua video nhạc v1 (2 tuần) – làm sau cùng
+
+Chủ dự án chốt: làm sau khi mọi tính năng khác của v1 đã xong.
+
+| Task | Acceptance criteria |
+|------|---------------------|
+| Songs v1: `build-songs.ts` (LRCLIB → LRC → furigana → AI `lyrics-keywords` + `lyrics-translate`), player YouTube + highlight dòng/từ + keyword + điền lỗ, 20–30 bài | [F11](./02-FEATURES.md#f11-học-qua-bài-hát) |
 
 ## Sau v1
 

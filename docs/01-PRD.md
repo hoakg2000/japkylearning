@@ -37,7 +37,8 @@ Table stakes (bắt buộc để cạnh tranh với Mazii / Migii): kana, kanji,
 - Showcase: AI test + adaptive qua mock và 1 adapter OpenAI-compatible, chuyển provider trong admin, embed thẻ kanji.
 
 ### Sau beta (trong v1)
-- Pack kaigo, bài N5 11–30, AI chat beta, chấm phát âm beta, học qua bài hát v1 (lyrics từ LRCLIB + YouTube, AI trích keyword), pack nhà hàng + IT, PWA.
+- Pack kaigo, bài N5 11–30, AI chat beta, chấm phát âm beta, pack nhà hàng + IT, PWA.
+- **Làm sau cùng:** học qua video nhạc v1 (lyrics từ LRCLIB + YouTube, AI trích keyword).
 
 ### v2
 - Song engine: người dùng chọn video YouTube → nhận diện nhạc → tìm lyrics + timeline → không có thì engine tự phân tích ([ADR 0012](./adr/0012-song-source-and-engine.md)).

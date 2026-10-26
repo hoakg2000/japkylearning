@@ -20,7 +20,7 @@ Mức ưu tiên: **P0** = public beta, **P1** = v1 sau beta, **P2** = sau v1, **
 | Test dựa trên bài học + test AI | [F5](#f5-flashcard-srs--kiểm-tra), [F6](#f6-test-với-ai-beta) | 2–3 |
 | Voice đọc (thiết bị / fish.audio) | [F9](#f9-voice-tts) | 1, 3 |
 | Học theo chế độ AI | [F7](#f7-ai-learning-mode-adaptive-path) | 1–3 |
-| Học qua bài hát + lyrics + highlight (v1 LRCLIB, v2 engine YouTube, AI trích keyword) | [F11](#f11-học-qua-bài-hát) | 6 (v1), v2 |
+| Học qua bài hát + lyrics + highlight (v1 LRCLIB, v2 engine YouTube, AI trích keyword) | [F11](#f11-học-qua-bài-hát) | 8 – sau cùng (v1), v2 |
 | Thẻ từ vựng đủ phiên âm, ví dụ; component nhiều mode | [F13](#f13-component-từ-vựng-wordcard) | 2 |
 | Thư viện open-source kanji→romaji | [ADR 0003](./adr/0003-precompute-furigana-romaji.md) | 2 |
 | Chatbox AI | [F8](#f8-ai-chat-tutor-beta) | 5 |
