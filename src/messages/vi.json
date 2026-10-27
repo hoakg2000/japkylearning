@@ -243,7 +243,10 @@
     "delete": "Xóa tài khoản",
     "deleteConfirm": "Xóa vĩnh viễn toàn bộ dữ liệu?",
     "deleteYes": "Xóa",
-    "cancel": "Hủy"
+    "cancel": "Hủy",
+    "timezone": "Múi giờ học",
+    "timezoneHint": "Ngày học bắt đầu lúc 4 giờ sáng theo múi giờ này. Chỉ đổi được 1 lần mỗi ngày.",
+    "timezoneOnce": "Hôm nay bạn đã đổi múi giờ rồi. Hãy thử lại vào ngày mai."
   },
   "Learn": {
     "title": "Học",

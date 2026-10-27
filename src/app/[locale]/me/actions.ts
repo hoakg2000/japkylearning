@@ -5,8 +5,9 @@ import { z } from 'zod';
 import { getAuth } from '@/lib/auth';
 import { getDb } from '@/lib/db';
 import { ttsVoices, userSettings } from '@/lib/db/schema';
-import { recordConsent } from '@/lib/progress';
-import { eq } from 'drizzle-orm';
+import { ensureSettings, recordConsent, safeTimeZone } from '@/lib/progress';
+import { studyDate } from '@/lib/streak';
+import { and, eq, isNull, ne, or } from 'drizzle-orm';
 
 async function currentUser() {
   const auth = await getAuth();
@@ -57,4 +58,20 @@ export async function setVoice(voiceId: string | null) {
     if (!v || !v.enabled) throw new Error('VOICE_NOT_ALLOWED');
   }
   await db.update(userSettings).set({ ttsVoiceId: id, updatedAt: new Date() }).where(eq(userSettings.userId, user.id));
+}
+
+/** F3: changes the study time zone at most once per study day, so a streak cannot be gamed by hopping zones. */
+export async function setTimezone(raw: string) {
+  const user = await currentUser();
+  const zone = z.string().min(1).max(64).parse(raw);
+  if (safeTimeZone(zone) !== zone) throw new Error('INVALID_TIMEZONE');
+  const settings = await ensureSettings(user.id);
+  const today = studyDate(new Date(), settings.timezone);
+  const db = await getDb();
+  const changed = await db
+    .update(userSettings)
+    .set({ timezone: zone, timezoneChangedOn: today, updatedAt: new Date() })
+    .where(and(eq(userSettings.userId, user.id), or(isNull(userSettings.timezoneChangedOn), ne(userSettings.timezoneChangedOn, today))))
+    .returning({ userId: userSettings.userId });
+  return { ok: changed.length > 0 };
 }

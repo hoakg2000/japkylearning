@@ -59,6 +59,14 @@ test.describe('P0/P1 smoke', () => {
     // F7: missed kana (always picking the first option misses some) are due for review today.
     await page.goto('/vi/review');
     await expect(page.getByText('Kana', { exact: true })).toBeVisible();
+    // F3: the time zone changes once per study day.
+    await page.goto('/vi/me');
+    const zone = page.getByLabel('Múi giờ học');
+    const other = async () => ((await zone.inputValue()) === 'Asia/Tokyo' ? 'Asia/Ho_Chi_Minh' : 'Asia/Tokyo');
+    await zone.selectOption(await other());
+    await expect(page.getByText('Đã lưu')).toBeVisible();
+    await zone.selectOption(await other());
+    await expect(page.getByText('Hôm nay bạn đã đổi múi giờ rồi. Hãy thử lại vào ngày mai.')).toBeVisible();
   });
 
   test('sign-up rejects under-16 and keeps guest progress for 16+', async ({ page }) => {

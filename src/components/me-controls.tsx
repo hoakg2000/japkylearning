@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, useTransition } from 'react';
-import { setConsent, setVoice, updateSettings } from '@/app/[locale]/me/actions';
+import { setConsent, setTimezone, setVoice, updateSettings } from '@/app/[locale]/me/actions';
 import { useRouter } from '@/i18n/navigation';
 import { authClient } from '@/lib/auth/client';
 import { writeDisplayPrefs } from '@/lib/display-prefs';
@@ -139,6 +139,38 @@ export function VoiceSelect({ voices, current }: { voices: { id: string; label: 
           ))}
         </select>
       </label>
+    </section>
+  );
+}
+
+/** shortcut: offers the current zone, Vietnam and Japan only; use Intl.supportedValuesOf when learners live elsewhere. */
+export function TimezoneSelect({ current }: { current: string }) {
+  const t = useTranslations('Me');
+  const [tz, setTz] = useState(current);
+  const [status, setStatus] = useState<'' | 'saved' | 'once'>('');
+  const [pending, start] = useTransition();
+  const zones = [...new Set([current, 'Asia/Ho_Chi_Minh', 'Asia/Tokyo'])];
+  return (
+    <section className={box}>
+      <label className="flex items-center justify-between gap-3 text-sm">
+        {t('timezone')}
+        <select
+          value={tz}
+          disabled={pending}
+          onChange={(e) => {
+            const next = e.target.value;
+            start(async () => {
+              const r = await setTimezone(next);
+              if (r.ok) setTz(next);
+              setStatus(r.ok ? 'saved' : 'once');
+            });
+          }}
+          className="min-h-10 rounded-card border border-line bg-surface px-2"
+        >
+          {zones.map((z) => <option key={z} value={z}>{z}</option>)}
+        </select>
+      </label>
+      <p className="text-xs text-muted" aria-live="polite">{status === 'saved' ? t('saved') : status === 'once' ? t('timezoneOnce') : t('timezoneHint')}</p>
     </section>
   );
 }

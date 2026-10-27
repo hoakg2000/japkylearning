@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { Suspense } from 'react';
-import { AccountActions, ConsentList, SettingsForm, VoiceSelect } from '@/components/me-controls';
+import { AccountActions, ConsentList, SettingsForm, TimezoneSelect, VoiceSelect } from '@/components/me-controls';
 import { StreakCalendar } from '@/components/streak-calendar';
 import { Link } from '@/i18n/navigation';
 import { getSession } from '@/lib/auth/session';
@@ -60,6 +60,7 @@ async function MeContent() {
           showHanViet: settings.showHanViet,
         }}
       />
+      <TimezoneSelect current={settings.timezone} />
       {!anonymous && <VoiceSelect voices={voices} current={settings.ttsVoiceId} />}
       {!anonymous && <ConsentList initial={consents} />}
       <AccountActions />

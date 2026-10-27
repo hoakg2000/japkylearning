@@ -243,7 +243,10 @@
     "delete": "Delete account",
     "deleteConfirm": "Permanently delete all data?",
     "deleteYes": "Delete",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "timezone": "Study time zone",
+    "timezoneHint": "Your study day starts at 4 a.m. in this zone. You can change it once a day.",
+    "timezoneOnce": "You already changed the time zone today. Try again tomorrow."
   },
   "Learn": {
     "title": "Learn",
