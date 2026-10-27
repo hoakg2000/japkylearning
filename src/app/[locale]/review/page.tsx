@@ -5,6 +5,7 @@ import { Suspense } from 'react';
 import { ReviewSession, type ReviewItem } from '@/components/review-session';
 import { Link } from '@/i18n/navigation';
 import { getSession } from '@/lib/auth/session';
+import { hiragana, katakana } from '@/lib/content/kana';
 import { getGrammar, getWord } from '@/lib/content/n5';
 import { dueCards } from '@/lib/learning';
 
@@ -35,6 +36,10 @@ async function ReviewContent() {
       const g = getGrammar(c.itemId);
       // Alternate cloze sentences across reviews.
       return g ? [{ cardId: c.id, kind: 'grammar', grammar: g, clozeIndex: c.reps % g.cloze.length }] : [];
+    }
+    if (c.itemType === 'kana') {
+      const k = [...hiragana, ...katakana].find((x) => x.char === c.itemId);
+      return k ? [{ cardId: c.id, kind: 'kana', kana: k }] : [];
     }
     const w = getWord(c.itemId);
     return w && (c.itemType === 'word' || c.itemType === 'listening') ? [{ cardId: c.id, kind: c.itemType, word: w }] : [];

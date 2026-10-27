@@ -4,6 +4,8 @@ import { z } from 'zod';
 import { requireUser } from '@/lib/auth/session';
 import { getDb } from '@/lib/db';
 import { lessonProgress, testAttempts, userSettings } from '@/lib/db/schema';
+import { hiragana, katakana } from '@/lib/content/kana';
+import { addCards } from '@/lib/learning';
 import { addXp, ensureSettings } from '@/lib/progress';
 import { SKIP_PASS_RATIO } from '@/lib/quiz';
 import { eq } from 'drizzle-orm';
@@ -33,6 +35,10 @@ export async function recordKanaQuiz(raw: z.input<typeof Input>) {
     total: input.total,
     correct: input.correct,
   });
+
+  // F7: missed kana become review cards; only chars that exist in content, duplicates ignored by the unique index.
+  const known = new Set([...hiragana, ...katakana].map((k) => k.char));
+  await addCards(user.id, [...new Set(input.missed)].filter((c) => known.has(c)).map((c) => ({ itemType: 'kana' as const, itemId: c })));
 
   const passedSkip = input.mode === 'skip' && score >= SKIP_PASS_RATIO;
   if (passedSkip) {

@@ -56,6 +56,9 @@ test.describe('P0/P1 smoke', () => {
     await page.goto('/vi/home');
     await expect(page.getByText('Bạn đang học với tư cách khách.')).toBeVisible();
     await expect(page.getByText(/XP/).first()).toBeVisible();
+    // F7: missed kana (always picking the first option misses some) are due for review today.
+    await page.goto('/vi/review');
+    await expect(page.getByText('Kana', { exact: true })).toBeVisible();
   });
 
   test('sign-up rejects under-16 and keeps guest progress for 16+', async ({ page }) => {

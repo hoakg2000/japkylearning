@@ -6,14 +6,15 @@ import { rateCard } from '@/app/[locale]/review/actions';
 import { StreakToast } from '@/components/streak-toast';
 import { Ruby } from '@/components/word/ruby';
 import { Link } from '@/i18n/navigation';
-import type { GrammarPoint, Word } from '@/lib/content/schemas';
+import type { GrammarPoint, Kana, Word } from '@/lib/content/schemas';
 import type { StreakInfo } from '@/lib/progress';
 import { playSound } from '@/lib/sound';
 import { speak } from '@/lib/speech/tts';
 
 export type ReviewItem =
   | { cardId: number; kind: 'word' | 'listening'; word: Word }
-  | { cardId: number; kind: 'grammar'; grammar: GrammarPoint; clozeIndex: number };
+  | { cardId: number; kind: 'grammar'; grammar: GrammarPoint; clozeIndex: number }
+  | { cardId: number; kind: 'kana'; kana: Kana };
 
 const RATINGS = [
   { value: 1, key: 'again', cls: 'border-error text-error' },
@@ -41,7 +42,8 @@ export function ReviewSession({ items, locale }: { items: ReviewItem[]; locale: 
     if (revealed || !item) return;
     setRevealed(true);
     playSound('flip');
-    if (item.kind !== 'grammar') speak(item.word.reading);
+    if (item.kind === 'kana') speak(item.kana.char);
+    else if (item.kind !== 'grammar') speak(item.word.reading);
   };
 
   const rate = (rating: 1 | 2 | 3 | 4) => {
@@ -110,6 +112,7 @@ export function ReviewSession({ items, locale }: { items: ReviewItem[]; locale: 
 }
 
 function Front({ item, revealed }: { item: ReviewItem; revealed: boolean }) {
+  if (item.kind === 'kana') return <span lang="ja" className="text-6xl">{item.kana.char}</span>;
   if (item.kind === 'word') return <Ruby segments={item.word.segments} className="ruby-line text-5xl" />;
   if (item.kind === 'listening') return revealed ? <Ruby segments={item.word.segments} className="ruby-line text-5xl" /> : <span className="text-5xl">🔊</span>;
   if (item.kind !== 'grammar') return null;
@@ -125,6 +128,7 @@ function Front({ item, revealed }: { item: ReviewItem; revealed: boolean }) {
 }
 
 function Back({ item, locale }: { item: ReviewItem; locale: 'vi' | 'en' }) {
+  if (item.kind === 'kana') return <p className="text-2xl">{item.kana.romaji}</p>;
   if (item.kind === 'grammar') {
     const c = item.grammar.cloze[item.clozeIndex];
     return (

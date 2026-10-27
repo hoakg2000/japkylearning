@@ -23,7 +23,7 @@ Items that could not be finished while implementing the roadmap phases. Each has
 | F4 | Mnemonic images for kana | P1 (nice to have) |
 | F5 | Furigana mode "only kanji not learned yet" (setting exists; display treats it as "always" because public pages are static and do not know the user's learned kanji) | P2+ |
 | F6 | Production/reading SRS directions unlock when a card is mature (`isMature` exists in `src/lib/srs.ts`, not wired yet) | P3 |
-| F7 | Kana missed in quizzes become SRS cards (item type `kana` supported by the schema) | P3 |
+| F7 | ~~Kana missed in quizzes become SRS cards~~ – done | P3 |
 | F8 | Timed JLPT N5 mock exam | P7 (roadmap) |
 | F9 | `row` layout of WordCard is implemented but not used on a page yet (word lists) | P5 |
 | F10 | Admin 2FA: the gate requires `twoFactorEnabled`, but no UI yet enables TOTP (Better Auth `twoFactor` plugin). Until it exists nobody can open `/admin` | P3 gap |
