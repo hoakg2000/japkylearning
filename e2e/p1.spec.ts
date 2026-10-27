@@ -22,6 +22,23 @@ test.describe('P0/P1 smoke', () => {
     }
   });
 
+  test('main learning pages have no serious accessibility violations (R3)', async ({ page }) => {
+    // A guest session first, so review and me render their real content.
+    await page.goto('/vi/kana/quiz');
+    await page.getByRole('button', { name: /Bắt đầu/ }).click();
+    for (let i = 0; i < 10; i++) {
+      await page.locator('.grid button').first().click();
+      await page.getByRole('button', { name: 'Tiếp' }).click();
+    }
+    await expect(page.getByText(/ngày liên tiếp/)).toBeVisible({ timeout: 15_000 });
+    for (const path of ['/vi/home', '/vi/kana', '/vi/learn/n5', '/vi/learn/n5/1', '/vi/learn/n5/1/practice', '/vi/kanji', '/vi/kanji/学', '/vi/review', '/vi/tests', '/vi/me', '/en/learn/n5/1']) {
+      await page.goto(path);
+      await page.waitForLoadState('networkidle');
+      const axe = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa']).analyze();
+      expect(axe.violations.filter((v) => v.impact === 'critical' || v.impact === 'serious'), `${path} ${JSON.stringify(axe.violations.map((v) => v.id))}`).toEqual([]);
+    }
+  });
+
   test('first-run quiz → onboarding → kana chart', async ({ page }) => {
     await page.goto('/vi');
     for (let i = 0; i < 5; i++) {

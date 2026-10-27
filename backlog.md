@@ -40,7 +40,7 @@ Owner decision: P4 is parked here. Legal items are deferred until there is an op
 |---|------|-------|
 | R1 | Privacy policy, terms of use, processor list, data export/delete review | Draft exists at `/privacy`; export and delete already in `/me`. Legal review deferred (B5) |
 | R2 | PostHog event catalogue (cookieless, autocapture off) | Event list in `docs/08-NFR.md §7`; needs a PostHog key (external account) |
-| R3 | Full axe + Lighthouse pass on all main pages | Lighthouse CI exists; axe currently only on landing; extend to lesson, kanji, review, me |
+| R3 | Full axe + Lighthouse pass on all main pages | axe e2e now covers home, kana, learn, lesson, practice, kanji, review, tests, me (0 serious/critical). Lighthouse CI still on its existing URLs |
 | R4 | Sentry error tracking | Needs DSN |
 | R5 | Database backup policy | Neon point-in-time restore on paid plan |
 | R6 | Vercel Pro and fish.audio commercial plan (only if opening publicly) | Depends on B1, B3 |
