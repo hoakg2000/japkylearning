@@ -26,3 +26,8 @@ Items that could not be finished while implementing the roadmap phases. Each has
 | F7 | Kana missed in quizzes become SRS cards (item type `kana` supported by the schema) | P3 |
 | F8 | Timed JLPT N5 mock exam | P7 (roadmap) |
 | F9 | `row` layout of WordCard is implemented but not used on a page yet (word lists) | P5 |
+| F10 | Admin 2FA: the gate requires `twoFactorEnabled`, but no UI yet enables TOTP (Better Auth `twoFactor` plugin). Until it exists nobody can open `/admin` | P3 gap |
+| F11 | Admin 404 returns HTTP 200 with the not-found page: `notFound()` runs inside `Suspense` (required by Cache Components). Content is hidden and the page is `noindex` | P3 gap |
+| F12 | Cloud voice works through `/api/tts` and the user setting, but `AudioButton` still uses the device voice; TTS per-user quota and audio caching (R2, B1) are not built | P3 gap |
+| F13 | Daily AI budget (`AI_DAILY_BUDGET_USD`) is documented but not enforced; only the kill-switch and per-user request quotas are enforced | P3 gap |
+| F14 | Gateway adapter is a stub (returns unavailable); the universal gateway spec is needed | after owner spec |

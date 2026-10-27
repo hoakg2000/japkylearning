@@ -6,6 +6,7 @@ import { JsonLd } from '@/components/json-ld';
 import { StrokeOrder } from '@/components/stroke-order';
 import { WordCard } from '@/components/word/word-card';
 import { wordLabels } from '@/components/word/labels';
+import { EmbedCode } from '@/components/embed-code';
 import { Link } from '@/i18n/navigation';
 import { getKanji, getLesson, kanjiList, wordsWithKanji } from '@/lib/content/n5';
 import { getStrokes } from '@/lib/content/strokes';
@@ -78,6 +79,10 @@ export default async function KanjiPage({ params }: PageProps<'/[locale]/kanji/[
           </div>
         </section>
       )}
+      <details className="text-sm">
+        <summary className="cursor-pointer text-brand">{t('embed')}</summary>
+        <div className="mt-2"><EmbedCode char={k.char} /></div>
+      </details>
       <p className="text-xs text-muted">{t('attribution')}</p>
     </article>
   );

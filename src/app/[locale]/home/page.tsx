@@ -3,8 +3,12 @@ import { getTranslations } from 'next-intl/server';
 import { Suspense } from 'react';
 import { Link } from '@/i18n/navigation';
 import { getSession } from '@/lib/auth/session';
+import { adaptiveComment } from '@/lib/ai/adaptive';
 import { getStreak } from '@/lib/progress';
+import { studyDate } from '@/lib/streak';
+import { ensureSettings } from '@/lib/progress';
 import { getTodayPlan } from '@/lib/today';
+import { locale as rootLocale } from 'next/root-params';
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('Today');
@@ -36,6 +40,16 @@ async function TodayContent() {
   }
   const [streak, tasks] = await Promise.all([getStreak(session.user.id), getTodayPlan(session.user.id)]);
   const [main, ...rest] = tasks;
+  const settings = await ensureSettings(session.user.id);
+  const locale = (await rootLocale()) as 'vi' | 'en';
+  const due = tasks.find((x) => x.kind === 'review')?.count ?? 0;
+  const nextLesson = tasks.find((x) => x.kind === 'lesson')?.label ?? null;
+  const comment = await adaptiveComment(
+    session.user.id,
+    studyDate(new Date(), settings.timezone),
+    { due, weakSkill: tasks.find((x) => x.kind === 'weak')?.label ?? null, streak: streak.current, nextLesson: nextLesson ? Number(nextLesson) : null },
+    locale,
+  );
   const goalPct = Math.min(100, Math.round((streak.todayXp / streak.goalXp) * 100));
 
   return (
@@ -54,6 +68,8 @@ async function TodayContent() {
         </div>
         <progress value={goalPct} max={100} className="h-2 w-full accent-success" aria-label={t('goal')} />
       </section>
+
+      {comment && <p className="rounded-card bg-surface-2 p-3 text-sm">{comment}</p>}
 
       {main ? (
         <Link href={main.href} className="flex min-h-16 items-center justify-between rounded-card bg-brand px-5 text-lg font-medium text-brand-ink">

@@ -37,7 +37,7 @@
 | Test cuối bài, lưu `skill_tags`; adaptive rule-based cho Today | [F7](./02-FEATURES.md#f7-ai-learning-mode-adaptive-path) |
 | **Nội dung:** bài N5 1–10 (≤ 18 từ/bài, kanji phân bài, bài nghe), review Hán-Việt ~100 kanji N5, nghĩa tiếng Việt cho từ bài 1–10 | Mọi từ có ví dụ + `meaningsViReviewed` |
 
-## P3 – Showcase cho chủ dự án (3 tuần)
+## P3 – Showcase cho chủ dự án (3 tuần) – ✅ xong với các gap F10–F14 trong [backlog](../backlog.md)
 
 | Task | Acceptance criteria |
 |------|---------------------|

@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, useTransition } from 'react';
-import { setConsent, updateSettings } from '@/app/[locale]/me/actions';
+import { setConsent, setVoice, updateSettings } from '@/app/[locale]/me/actions';
 import { useRouter } from '@/i18n/navigation';
 import { authClient } from '@/lib/auth/client';
 import { writeDisplayPrefs } from '@/lib/display-prefs';
@@ -109,6 +109,36 @@ export function AccountActions() {
           </span>
         )}
       </div>
+    </section>
+  );
+}
+
+/** Cloud voice choice: only enabled allowlist voices are offered. The empty option keeps the device voice. */
+export function VoiceSelect({ voices, current }: { voices: { id: string; label: string }[]; current: string | null }) {
+  const t = useTranslations('Me');
+  const [v, setV] = useState(current ?? '');
+  const [pending, start] = useTransition();
+  if (!voices.length) return null;
+  return (
+    <section className={box}>
+      <label className="flex items-center justify-between gap-3 text-sm">
+        {t('voice')}
+        <select
+          value={v}
+          disabled={pending}
+          onChange={(e) => {
+            const next = e.target.value;
+            setV(next);
+            start(() => setVoice(next || null));
+          }}
+          className="min-h-10 rounded-card border border-line bg-surface px-2"
+        >
+          <option value="">{t('deviceVoice')}</option>
+          {voices.map((x) => (
+            <option key={x.id} value={x.id}>{x.label}</option>
+          ))}
+        </select>
+      </label>
     </section>
   );
 }

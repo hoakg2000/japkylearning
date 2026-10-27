@@ -413,7 +413,8 @@
     "strokesLabel": "Số nét",
     "lesson": "Bài học",
     "words": "Từ vựng có chữ này",
-    "attribution": "Dữ liệu kanji: KANJIDIC2 (EDRDG, CC BY-SA 4.0), thứ tự nét: KanjiVG (Ulrich Apel, CC BY-SA 3.0). Âm Hán-Việt: Japky, đối chiếu Unihan."
+    "attribution": "Dữ liệu kanji: KANJIDIC2 (EDRDG, CC BY-SA 4.0), thứ tự nét: KanjiVG (Ulrich Apel, CC BY-SA 3.0). Âm Hán-Việt: Japky, đối chiếu Unihan.",
+    "embed": "Nhúng vào trang của bạn"
   },
   "Tests": {
     "title": "Kiểm tra",
@@ -428,5 +429,46 @@
     "intro": "Japky sử dụng các bộ dữ liệu mở sau đây. Xin cảm ơn các tác giả.",
     "content": "Nội dung bài học, câu ví dụ, nghĩa tiếng Việt và âm Hán-Việt do Japky biên soạn và phát hành theo giấy phép CC BY-SA 4.0.",
     "versions": "Phiên bản: JMdict {jmdict} · JmdictFurigana {furigana}"
+  },
+  "AiTest": {
+    "title": "Test với AI",
+    "description": "Câu hỏi được tạo từ những từ bạn đã học. Mỗi ngày bạn có 5 bài AI.",
+    "empty": "Chưa có câu hỏi.",
+    "sourceAi": "Câu hỏi do AI tạo",
+    "sourceStatic": "Câu hỏi có sẵn",
+    "reason": {
+      "QUOTA": "hết lượt AI hôm nay",
+      "INVALID": "AI trả lời chưa đúng định dạng",
+      "AI_UNAVAILABLE": "AI đang tạm tắt",
+      "KILL_SWITCH": "AI đang tạm tắt",
+      "ERROR": "AI gặp lỗi",
+      "MOCK": "AI đang ở chế độ thử (mock), dùng câu hỏi có sẵn"
+    },
+    "again": "Làm bài khác",
+    "next": "Tiếp",
+    "progress": "Tiến độ",
+    "signIn": "Đăng nhập để làm bài AI.",
+    "guest": "Tạo tài khoản để làm bài AI.",
+    "notEnough": "Học ít nhất 4 từ để có bài test.",
+    "toLessons": "Đến bài học",
+    "remaining": "Còn {count} lượt AI hôm nay"
+  },
+  "Admin": {
+    "title": "Quản trị",
+    "ai": "AI",
+    "killSwitch": "Tắt toàn bộ AI (kill-switch)",
+    "mode": "Chế độ",
+    "adapter": "Adapter",
+    "preset": "Nhà cung cấp",
+    "model": "Model",
+    "noKey": "chưa có key",
+    "save": "Lưu cấu hình",
+    "saved": "Đã lưu",
+    "voices": "Giọng đọc (fish.audio)",
+    "noVoices": "Chưa có giọng nào. Thêm trong cơ sở dữ liệu (bảng tts_voices).",
+    "usageToday": "Sử dụng AI hôm nay",
+    "requests": "Yêu cầu",
+    "none": "Chưa có",
+    "audit": "Nhật ký thay đổi (30 gần nhất)"
   }
 }

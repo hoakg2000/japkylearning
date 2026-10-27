@@ -19,6 +19,7 @@ export const userSettings = pgTable('user_settings', {
   showRomaji: boolean('show_romaji').notNull().default(true),
   showHanViet: boolean('show_han_viet').notNull().default(true),
   onboardedAt: timestamp('onboarded_at', { withTimezone: true }),
+  ttsVoiceId: text('tts_voice_id'), // must be an enabled tts_voices id (allowlist, checked on write and on read)
   updatedAt: timestamp('updated_at', { withTimezone: true }).defaultNow().notNull(),
 });
 
@@ -148,3 +149,70 @@ export const testAnswers = pgTable(
   },
   (t) => [index('test_answers_attempt_idx').on(t.attemptId)],
 );
+
+/** Runtime config set by admins (docs/04 §Hệ thống). Never holds URLs or keys: only adapter/preset choices. */
+export const appSettings = pgTable('app_settings', {
+  key: text('key').primaryKey(),
+  value: jsonb('value').$type<unknown>().notNull(),
+  updatedBy: text('updated_by'),
+  updatedAt: timestamp('updated_at', { withTimezone: true }).defaultNow().notNull(),
+});
+
+export const aiUsage = pgTable(
+  'ai_usage',
+  {
+    id: serial('id').primaryKey(),
+    userId: userId(),
+    localDate: date('local_date').notNull(),
+    mode: text('mode').notNull(),
+    requests: integer('requests').notNull().default(0),
+    tokensIn: integer('tokens_in').notNull().default(0),
+    tokensOut: integer('tokens_out').notNull().default(0),
+    costUsd: real('cost_usd').notNull().default(0),
+  },
+  (t) => [uniqueIndex('ai_usage_uq').on(t.userId, t.localDate, t.mode)],
+);
+
+export const aiGeneratedItems = pgTable(
+  'ai_generated_items',
+  {
+    id: serial('id').primaryKey(),
+    kind: text('kind').notNull(), // quiz
+    inputHash: text('input_hash').notNull(),
+    payload: jsonb('payload').$type<unknown>().notNull(),
+    provider: text('provider').notNull(),
+    model: text('model').notNull(),
+    status: text('status').notNull().default('pending'), // pending | approved | rejected
+    createdBy: text('created_by'),
+    createdAt: createdAt(),
+  },
+  (t) => [index('ai_generated_hash_idx').on(t.inputHash)],
+);
+
+export const auditLog = pgTable(
+  'audit_log',
+  {
+    id: serial('id').primaryKey(),
+    actorId: text('actor_id').notNull(),
+    action: text('action').notNull(),
+    target: text('target'),
+    before: jsonb('before').$type<unknown>(),
+    after: jsonb('after').$type<unknown>(),
+    at: createdAt(),
+  },
+  (t) => [index('audit_log_at_idx').on(t.at)],
+);
+
+export const ttsVoices = pgTable('tts_voices', {
+  id: text('id').primaryKey(),
+  referenceId: text('reference_id').notNull(), // fish.audio reference_id, server-side only
+  label: text('label').notNull(),
+  consentRef: text('consent_ref').notNull(), // signed release reference (ADR 0011/0012)
+  enabled: boolean('enabled').notNull().default(false),
+});
+
+export const audioCache = pgTable('audio_cache', {
+  hash: text('hash').primaryKey(),
+  bytes: integer('bytes').notNull(),
+  storedAt: createdAt(),
+});

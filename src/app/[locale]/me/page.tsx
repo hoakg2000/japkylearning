@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { Suspense } from 'react';
-import { AccountActions, ConsentList, SettingsForm } from '@/components/me-controls';
+import { AccountActions, ConsentList, SettingsForm, VoiceSelect } from '@/components/me-controls';
 import { StreakCalendar } from '@/components/streak-calendar';
 import { Link } from '@/i18n/navigation';
 import { getSession } from '@/lib/auth/session';
 import { ensureSettings, getConsents, getStreak } from '@/lib/progress';
+import { enabledVoices } from '@/lib/speech/cloud-voice';
 import { studyDate } from '@/lib/streak';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -36,7 +37,7 @@ async function MeContent() {
     );
   }
   const userId = session.user.id;
-  const [settings, streak, consents] = await Promise.all([ensureSettings(userId), getStreak(userId), getConsents(userId)]);
+  const [settings, streak, consents, voices] = await Promise.all([ensureSettings(userId), getStreak(userId), getConsents(userId), enabledVoices()]);
   const anonymous = !!session.user.isAnonymous;
 
   return (
@@ -59,6 +60,7 @@ async function MeContent() {
           showHanViet: settings.showHanViet,
         }}
       />
+      {!anonymous && <VoiceSelect voices={voices} current={settings.ttsVoiceId} />}
       {!anonymous && <ConsentList initial={consents} />}
       <AccountActions />
     </div>

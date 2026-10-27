@@ -413,7 +413,8 @@
     "strokesLabel": "Strokes",
     "lesson": "Lesson",
     "words": "Words with this kanji",
-    "attribution": "Kanji data: KANJIDIC2 (EDRDG, CC BY-SA 4.0); stroke order: KanjiVG (Ulrich Apel, CC BY-SA 3.0). Sino-Vietnamese readings: Japky, checked against Unihan."
+    "attribution": "Kanji data: KANJIDIC2 (EDRDG, CC BY-SA 4.0); stroke order: KanjiVG (Ulrich Apel, CC BY-SA 3.0). Sino-Vietnamese readings: Japky, checked against Unihan.",
+    "embed": "Embed on your site"
   },
   "Tests": {
     "title": "Tests",
@@ -428,5 +429,46 @@
     "intro": "Japky uses the following open datasets. Thank you to their authors.",
     "content": "Lessons, example sentences, Vietnamese meanings and Sino-Vietnamese readings are written by Japky and released under CC BY-SA 4.0.",
     "versions": "Versions: JMdict {jmdict} · JmdictFurigana {furigana}"
+  },
+  "AiTest": {
+    "title": "AI test",
+    "description": "Questions are built from the words you have learned. You get 5 AI tests a day.",
+    "empty": "No questions yet.",
+    "sourceAi": "Questions written by AI",
+    "sourceStatic": "Built-in questions",
+    "reason": {
+      "QUOTA": "no AI tests left today",
+      "INVALID": "AI reply was not in the right format",
+      "AI_UNAVAILABLE": "AI is temporarily off",
+      "KILL_SWITCH": "AI is temporarily off",
+      "ERROR": "AI failed",
+      "MOCK": "AI is in test mode (mock), using built-in questions"
+    },
+    "again": "Another test",
+    "next": "Next",
+    "progress": "Progress",
+    "signIn": "Sign in to take an AI test.",
+    "guest": "Create an account to take AI tests.",
+    "notEnough": "Learn at least 4 words to get a test.",
+    "toLessons": "Go to lessons",
+    "remaining": "{count} AI tests left today"
+  },
+  "Admin": {
+    "title": "Admin",
+    "ai": "AI",
+    "killSwitch": "Turn all AI off (kill switch)",
+    "mode": "Mode",
+    "adapter": "Adapter",
+    "preset": "Provider",
+    "model": "Model",
+    "noKey": "no key set",
+    "save": "Save settings",
+    "saved": "Saved",
+    "voices": "Voices (fish.audio)",
+    "noVoices": "No voices yet. Add them in the database (table tts_voices).",
+    "usageToday": "AI usage today",
+    "requests": "Requests",
+    "none": "None yet",
+    "audit": "Change log (latest 30)"
   }
 }

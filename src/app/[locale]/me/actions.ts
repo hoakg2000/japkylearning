@@ -4,7 +4,7 @@ import { headers } from 'next/headers';
 import { z } from 'zod';
 import { getAuth } from '@/lib/auth';
 import { getDb } from '@/lib/db';
-import { userSettings } from '@/lib/db/schema';
+import { ttsVoices, userSettings } from '@/lib/db/schema';
 import { recordConsent } from '@/lib/progress';
 import { eq } from 'drizzle-orm';
 
@@ -44,4 +44,17 @@ export async function updateSettings(raw: z.input<typeof Settings>) {
   const user = await currentUser();
   const db = await getDb();
   await db.update(userSettings).set({ ...input, updatedAt: new Date() }).where(eq(userSettings.userId, user.id));
+}
+
+/** Chooses a cloud voice. Only enabled voices from the allowlist are accepted; null returns to the device voice. */
+export async function setVoice(voiceId: string | null) {
+  const user = await currentUser();
+  if (user.isAnonymous) throw new Error('UNAUTHORIZED');
+  const db = await getDb();
+  const id = voiceId === null ? null : z.string().min(1).max(40).parse(voiceId);
+  if (id) {
+    const [v] = await db.select().from(ttsVoices).where(eq(ttsVoices.id, id));
+    if (!v || !v.enabled) throw new Error('VOICE_NOT_ALLOWED');
+  }
+  await db.update(userSettings).set({ ttsVoiceId: id, updatedAt: new Date() }).where(eq(userSettings.userId, user.id));
 }
