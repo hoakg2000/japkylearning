@@ -4,7 +4,7 @@ import { words } from '@/lib/content/n5';
 import { OpenAiCompatibleProvider, PRESETS } from './adapters/openai-compatible';
 import { MockProvider } from './adapters/mock';
 import { buildProvider, resolveChoice, envDefault, type AiSettings } from './registry-pure';
-import { DAILY_LIMITS, underLimit } from './limits';
+import { DAILY_LIMITS, dailyBudgetUsd, underLimit } from './limits';
 import { QuizSchema, staticQuestions, validateQuiz, generateQuiz, type GeneratedQuiz } from './quiz-gen';
 import { AiInvalidOutputError, AiUnavailableError, type AiProvider } from './types';
 
@@ -40,6 +40,14 @@ describe('quota', () => {
     expect(underLimit(DAILY_LIMITS['quiz-gen'], 'quiz-gen')).toBe(false);
     expect(DAILY_LIMITS['quiz-gen']).toBe(5);
     expect(DAILY_LIMITS.adaptive).toBe(1);
+  });
+});
+
+describe('daily budget', () => {
+  it('defaults to 5 USD and fails closed on unreadable values', () => {
+    expect(dailyBudgetUsd({})).toBe(5);
+    expect(dailyBudgetUsd({ AI_DAILY_BUDGET_USD: '12.5' })).toBe(12.5);
+    for (const bad of ['', 'abc', '-1', 'Infinity']) expect(dailyBudgetUsd({ AI_DAILY_BUDGET_USD: bad })).toBe(0);
   });
 });
 

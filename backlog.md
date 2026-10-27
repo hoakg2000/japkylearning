@@ -30,7 +30,7 @@ Items that could not be finished while implementing the roadmap phases. Each has
 | F11 | ~~Admin 404 returns HTTP 200~~ – done: `src/proxy.ts` rewrites non-admins to a real 404; `requireAdmin` stays the authority | P3 gap |
 | F15 | Proxy matcher `.*\..*` is a JS string, so `\.` becomes `.` (any char) and next-intl runs only on `/`. Locale-less paths like `/kana` give 404 instead of redirecting. Fixing it runs next-intl on every page (cookies, caching) – decide and test | found during F11 |
 | F12 | Cloud voice works through `/api/tts` and the user setting, but `AudioButton` still uses the device voice; TTS per-user quota and audio caching (R2, B1) are not built | P3 gap |
-| F13 | Daily AI budget (`AI_DAILY_BUDGET_USD`) is documented but not enforced; only the kill-switch and per-user request quotas are enforced | P3 gap |
+| F13 | ~~Daily AI budget not enforced~~ – done: over `AI_DAILY_BUDGET_USD` (default 5, unreadable → 0) paid providers are swapped for the free mock. **Owner:** confirm the number | P3 gap |
 | F14 | Gateway adapter is a stub (returns unavailable); the universal gateway spec is needed | after owner spec |
 
 ## Release (P4 – public beta, moved to backlog by owner)
