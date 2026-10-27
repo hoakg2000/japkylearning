@@ -12,7 +12,7 @@ import { playSound } from '@/lib/sound';
 import { speak } from '@/lib/speech/tts';
 
 export type ReviewItem =
-  | { cardId: number; kind: 'word' | 'listening'; word: Word }
+  | { cardId: number; kind: 'word' | 'listening' | 'production'; word: Word }
   | { cardId: number; kind: 'grammar'; grammar: GrammarPoint; clozeIndex: number }
   | { cardId: number; kind: 'kana'; kana: Kana };
 
@@ -93,7 +93,7 @@ export function ReviewSession({ items, locale }: { items: ReviewItem[]; locale: 
       </div>
       <button type="button" onClick={reveal} className="flex min-h-64 w-full flex-col items-center justify-center gap-3 rounded-card border border-line bg-surface p-6 text-center" aria-label={t('reveal')}>
         <span className="text-xs uppercase tracking-wide text-muted">{t(`kind.${item.kind}`)}</span>
-        <Front item={item} revealed={revealed} />
+        <Front item={item} revealed={revealed} locale={locale} />
         {revealed && <Back item={item} locale={locale} />}
         {!revealed && <span className="mt-4 text-sm text-muted">{t('tapToReveal')}</span>}
       </button>
@@ -111,8 +111,9 @@ export function ReviewSession({ items, locale }: { items: ReviewItem[]; locale: 
   );
 }
 
-function Front({ item, revealed }: { item: ReviewItem; revealed: boolean }) {
+function Front({ item, revealed, locale }: { item: ReviewItem; revealed: boolean; locale: 'vi' | 'en' }) {
   if (item.kind === 'kana') return <span lang="ja" className="text-6xl">{item.kana.char}</span>;
+  if (item.kind === 'production') return revealed ? <Ruby segments={item.word.segments} className="ruby-line text-5xl" /> : <span className="text-3xl">{item.word.meanings[locale]}</span>;
   if (item.kind === 'word') return <Ruby segments={item.word.segments} className="ruby-line text-5xl" />;
   if (item.kind === 'listening') return revealed ? <Ruby segments={item.word.segments} className="ruby-line text-5xl" /> : <span className="text-5xl">🔊</span>;
   if (item.kind !== 'grammar') return null;

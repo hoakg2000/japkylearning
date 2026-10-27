@@ -57,3 +57,7 @@ export const retrievability = (row: CardRow, now = new Date()) => scheduler.get_
 
 /** A card counts as mature once its interval reaches 21 days (then other directions unlock, F5). */
 export const isMature = (row: CardRow) => row.scheduledDays >= 21;
+
+/** Direction a review unlocks: a mature word recognition card adds a production card (meaning → Japanese). */
+export const unlockedDirection = (itemType: string, direction: string, row: CardRow) =>
+  itemType === 'word' && direction === 'recognition' && isMature(row) ? 'production' : null;

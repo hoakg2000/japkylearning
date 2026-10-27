@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { newCard, Rating, retrievability, review } from './srs';
+import { newCard, Rating, retrievability, review, unlockedDirection } from './srs';
 
 const DAY = 86_400_000;
 
@@ -42,5 +42,14 @@ describe('FSRS wrapper', () => {
     const soon = retrievability(row, new Date(row.due.getTime() - DAY));
     const late = retrievability(row, new Date(row.due.getTime() + 30 * DAY));
     expect(soon).toBeGreaterThan(late);
+  });
+
+  it('only a mature word recognition card unlocks production', () => {
+    const young = newCard();
+    const mature = { ...young, scheduledDays: 30 };
+    expect(unlockedDirection('word', 'recognition', young)).toBeNull();
+    expect(unlockedDirection('word', 'recognition', mature)).toBe('production');
+    expect(unlockedDirection('word', 'production', mature)).toBeNull();
+    expect(unlockedDirection('grammar', 'recognition', mature)).toBeNull();
   });
 });

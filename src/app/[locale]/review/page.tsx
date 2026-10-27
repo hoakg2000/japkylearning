@@ -42,7 +42,9 @@ async function ReviewContent() {
       return k ? [{ cardId: c.id, kind: 'kana', kana: k }] : [];
     }
     const w = getWord(c.itemId);
-    return w && (c.itemType === 'word' || c.itemType === 'listening') ? [{ cardId: c.id, kind: c.itemType, word: w }] : [];
+    if (!w) return [];
+    if (c.itemType === 'word' && c.direction === 'production') return [{ cardId: c.id, kind: 'production', word: w }];
+    return c.itemType === 'word' || c.itemType === 'listening' ? [{ cardId: c.id, kind: c.itemType, word: w }] : [];
   });
 
   if (!items.length) {

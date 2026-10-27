@@ -3,7 +3,7 @@ import { and, asc, count, desc, eq, gte, inArray, lte, sql } from 'drizzle-orm';
 import { getDb } from '@/lib/db';
 import { lessonProgress, reviewLogs, srsCards, testAnswers, testAttempts } from '@/lib/db/schema';
 import { getLesson } from '@/lib/content/n5';
-import { newCard, review, type CardRow } from '@/lib/srs';
+import { newCard, review, unlockedDirection, type CardRow } from '@/lib/srs';
 import type { Grade } from 'ts-fsrs';
 
 export type ItemType = 'word' | 'grammar' | 'listening' | 'kana' | 'kanji';
@@ -89,6 +89,8 @@ export async function reviewCard(userId: string, cardId: number, rating: Grade, 
   const { row, state } = review(card as CardRow, rating);
   await db.update(srsCards).set(row).where(eq(srsCards.id, card.id));
   await db.insert(reviewLogs).values({ cardId: card.id, rating, state, elapsedMs: elapsedMs ? Math.min(elapsedMs, 600_000) : null });
+  const direction = unlockedDirection(card.itemType, card.direction, row);
+  if (direction) await db.insert(srsCards).values({ userId, itemType: card.itemType, itemId: card.itemId, direction, ...newCard() }).onConflictDoNothing();
   return row;
 }
 

@@ -22,7 +22,7 @@ Items that could not be finished while implementing the roadmap phases. Each has
 | F3 | Timezone change limited to once per day (`timezone_changed_on` column exists, no UI to change timezone yet) | P2+ |
 | F4 | Mnemonic images for kana | P1 (nice to have) |
 | F5 | Furigana mode "only kanji not learned yet" (setting exists; display treats it as "always" because public pages are static and do not know the user's learned kanji) | P2+ |
-| F6 | Production/reading SRS directions unlock when a card is mature (`isMature` exists in `src/lib/srs.ts`, not wired yet) | P3 |
+| F6 | ~~Production SRS direction unlocks when a word card is mature~~ – done (reading direction not added) | P3 |
 | F7 | ~~Kana missed in quizzes become SRS cards~~ – done | P3 |
 | F8 | Timed JLPT N5 mock exam | P7 (roadmap) |
 | F9 | `row` layout of WordCard is implemented but not used on a page yet (word lists) | P5 |
