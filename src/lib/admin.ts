@@ -11,10 +11,14 @@ import { getSession } from '@/lib/auth/session';
  */
 export async function requireAdmin() {
   const session = await getSession();
-  const u = session?.user as { role?: string; twoFactorEnabled?: boolean | null } | undefined;
-  if (!session || u?.role !== 'admin' || !u.twoFactorEnabled) notFound();
+  if (!session || !isAdmin(session.user)) notFound();
   return session.user;
 }
+
+export const isAdmin = (user: unknown) => {
+  const u = user as { role?: string; twoFactorEnabled?: boolean | null } | undefined;
+  return u?.role === 'admin' && !!u.twoFactorEnabled;
+};
 
 /** Writes one audit row. Called in the same request as every admin change. */
 export async function audit(actorId: string, action: string, target: string | null, before: unknown, after: unknown) {

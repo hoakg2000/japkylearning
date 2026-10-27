@@ -21,11 +21,11 @@ test.describe('P3 showcase', () => {
     expect((await request.get('/api/tts?word=jmdict-1206900&voice=x')).status()).toBe(401);
   });
 
-  test('admin area is hidden from guests (404 content, noindex)', async ({ page }) => {
-    await page.goto('/vi/admin');
-    await expect(page.getByRole('heading', { name: 'Không tìm thấy trang' })).toBeVisible();
+  test('admin area is hidden from guests with HTTP 404 (F11)', async ({ page }) => {
+    const res = await page.goto('/vi/admin');
+    expect(res?.status()).toBe(404);
+    await expect(page.getByRole('heading', { name: '404' })).toBeVisible();
     await expect(page.getByRole('heading', { name: 'Quản trị' })).toBeHidden();
-    await expect(page.locator('meta[name=robots]').first()).toHaveAttribute('content', /noindex/);
   });
 
   test('AI test: a visitor without session sees the sign-in prompt, not questions', async ({ page }) => {
@@ -44,5 +44,7 @@ test.describe('P3 showcase', () => {
     await page.waitForURL(/\/vi\/home/);
     await page.goto('/vi/tests/ai');
     await expect(page.getByText('Học ít nhất 4 từ để có bài test.')).toBeVisible();
+    // A signed-in non-admin gets the same 404 status.
+    expect((await page.goto('/vi/admin'))?.status()).toBe(404);
   });
 });
