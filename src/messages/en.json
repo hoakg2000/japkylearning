@@ -201,13 +201,15 @@
     "consentAnalytics": "Allow anonymous usage analytics",
     "consentEmail": "Send me study reminder emails",
     "wait": "Working…",
+    "code": "Verification code",
     "haveAccount": "Have an account? Sign in",
     "noAccount": "No account? Create one",
     "errors": {
       "signIn": "Wrong email or password.",
       "signUp": "Could not create the account. The email may already be in use.",
       "age": "You must be {min} or older to create an account.",
-      "consent": "Please accept the required consent."
+      "consent": "Please accept the required consent.",
+      "code": "The verification code is wrong."
     }
   },
   "Me": {
@@ -246,7 +248,17 @@
     "cancel": "Cancel",
     "timezone": "Study time zone",
     "timezoneHint": "Your study day starts at 4 a.m. in this zone. You can change it once a day.",
-    "timezoneOnce": "You already changed the time zone today. Try again tomorrow."
+    "timezoneOnce": "You already changed the time zone today. Try again tomorrow.",
+    "twoFactor": "Two-step verification",
+    "twoFactorHint": "Uses an authenticator app (TOTP). Required for admin accounts.",
+    "password": "Current password",
+    "twoFactorEnable": "Turn on two-step verification",
+    "twoFactorSecret": "Enter this key in your authenticator app:",
+    "twoFactorBackup": "Backup codes (shown once, save them):",
+    "twoFactorCode": "6-digit code from the app",
+    "twoFactorVerify": "Confirm",
+    "twoFactorOn": "Two-step verification is on",
+    "twoFactorError": "That did not work. Check the password or code."
   },
   "Learn": {
     "title": "Learn",

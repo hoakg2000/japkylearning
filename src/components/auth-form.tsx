@@ -14,6 +14,7 @@ export function AuthForm({ mode }: { mode: 'sign-in' | 'sign-up' }) {
   const router = useRouter();
   const [error, setError] = useState<string | null>(null);
   const [pending, start] = useTransition();
+  const [needCode, setNeedCode] = useState(false);
 
   // onSubmit (not a form action) so React does not reset the fields when there is an error.
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -24,8 +25,15 @@ export function AuthForm({ mode }: { mode: 'sign-in' | 'sign-up' }) {
     const password = String(form.get('password') ?? '');
     start(async () => {
       if (mode === 'sign-in') {
-        const { error } = await authClient.signIn.email({ email, password });
-        if (error) return setError(t('errors.signIn'));
+        if (needCode) {
+          const { error } = await authClient.twoFactor.verifyTotp({ code: String(form.get('code') ?? '').trim() });
+          if (error) return setError(t('errors.code'));
+        } else {
+          const { data, error } = await authClient.signIn.email({ email, password });
+          if (error) return setError(t('errors.signIn'));
+          // Accounts with 2FA (admins) get a second step before the session is created.
+          if (data && 'twoFactorRedirect' in data && data.twoFactorRedirect) return setNeedCode(true);
+        }
         router.push('/home');
         router.refresh();
         return;
@@ -57,6 +65,12 @@ export function AuthForm({ mode }: { mode: 'sign-in' | 'sign-up' }) {
         {t('password')}
         <input name="password" type="password" required minLength={8} autoComplete={mode === 'sign-up' ? 'new-password' : 'current-password'} className={input} />
       </label>
+      {needCode && (
+        <label className="block text-sm">
+          {t('code')}
+          <input name="code" required inputMode="numeric" autoComplete="one-time-code" pattern="[0-9]{6}" autoFocus className={input} />
+        </label>
+      )}
       {mode === 'sign-up' && (
         <>
           <label className="block text-sm">

@@ -26,9 +26,9 @@ Items that could not be finished while implementing the roadmap phases. Each has
 | F7 | ~~Kana missed in quizzes become SRS cards~~ – done | P3 |
 | F8 | Timed JLPT N5 mock exam | P7 (roadmap) |
 | F9 | `row` layout of WordCard is implemented but not used on a page yet (word lists) | P5 |
-| F10 | Admin 2FA: the gate requires `twoFactorEnabled`, but no UI yet enables TOTP (Better Auth `twoFactor` plugin). Until it exists nobody can open `/admin` | P3 gap |
+| F10 | ~~Admin 2FA enable UI~~ – done: `/me` enables TOTP with the password, shows the key and backup codes once; sign-in asks for the code. Role admin is still granted only by hand in the DB. No QR code (needs a library) and no disable button yet | P3 gap |
 | F11 | ~~Admin 404 returns HTTP 200~~ – done: `src/proxy.ts` rewrites non-admins to a real 404; `requireAdmin` stays the authority | P3 gap |
-| F15 | Proxy matcher `.*..*` is a JS string, so `.` means any char and next-intl runs only on `/`. Locale-less paths like `/kana` give 404 instead of redirecting. Fixing it runs next-intl on every page (cookies, caching) – decide and test | found during F11 |
+| F15 | Proxy matcher `.*\..*` is a JS string, so `\.` becomes `.` (any char) and next-intl runs only on `/`. Locale-less paths like `/kana` give 404 instead of redirecting. Fixing it runs next-intl on every page (cookies, caching) – decide and test | found during F11 |
 | F12 | Cloud voice works through `/api/tts` and the user setting, but `AudioButton` still uses the device voice; TTS per-user quota and audio caching (R2, B1) are not built | P3 gap |
 | F13 | Daily AI budget (`AI_DAILY_BUDGET_USD`) is documented but not enforced; only the kill-switch and per-user request quotas are enforced | P3 gap |
 | F14 | Gateway adapter is a stub (returns unavailable); the universal gateway spec is needed | after owner spec |

@@ -174,3 +174,72 @@ export function TimezoneSelect({ current }: { current: string }) {
     </section>
   );
 }
+
+/** F10: TOTP for admins (the admin gate needs it). Enabling asks for the password again; backup codes are shown once. */
+export function TwoFactorSection({ enabled }: { enabled: boolean }) {
+  const t = useTranslations('Me');
+  const router = useRouter();
+  const [setup, setSetup] = useState<{ secret: string; backupCodes: string[] } | null>(null);
+  const [done, setDone] = useState(enabled);
+  const [error, setError] = useState(false);
+  const [pending, start] = useTransition();
+
+  const enable = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const password = String(new FormData(e.currentTarget).get('password') ?? '');
+    setError(false);
+    start(async () => {
+      const { data, error } = await authClient.twoFactor.enable({ password });
+      if (error || !data || !('totpURI' in data)) return setError(true);
+      setSetup({ secret: new URL(data.totpURI).searchParams.get('secret') ?? '', backupCodes: data.backupCodes });
+    });
+  };
+  const verify = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const code = String(new FormData(e.currentTarget).get('code') ?? '').trim();
+    setError(false);
+    start(async () => {
+      const { error } = await authClient.twoFactor.verifyTotp({ code });
+      if (error) return setError(true);
+      setDone(true);
+      router.refresh();
+    });
+  };
+
+  return (
+    <section className={box}>
+      <h2 className="font-medium">{t('twoFactor')}</h2>
+      {done && !setup ? (
+        <p className="text-sm">✓ {t('twoFactorOn')}</p>
+      ) : !setup ? (
+        <form onSubmit={enable} className="space-y-2">
+          <p className="text-xs text-muted">{t('twoFactorHint')}</p>
+          <label className="block text-sm">
+            {t('password')}
+            <input name="password" type="password" required autoComplete="current-password" className="mt-1 block min-h-10 w-full rounded-card border border-line bg-surface px-2" />
+          </label>
+          <button type="submit" disabled={pending} className="min-h-10 rounded-card border border-line px-3 text-sm">{t('twoFactorEnable')}</button>
+        </form>
+      ) : (
+        <div className="space-y-2 text-sm">
+          <p>{t('twoFactorSecret')}</p>
+          <code className="block break-all rounded-card bg-surface-2 p-2" data-testid="totp-secret">{setup.secret}</code>
+          <p>{t('twoFactorBackup')}</p>
+          <ul className="grid grid-cols-2 gap-1 font-mono text-xs">{setup.backupCodes.map((c) => <li key={c}>{c}</li>)}</ul>
+          {done ? (
+            <p>✓ {t('twoFactorOn')}</p>
+          ) : (
+            <form onSubmit={verify} className="flex items-end gap-2">
+              <label className="block flex-1">
+                {t('twoFactorCode')}
+                <input name="code" required inputMode="numeric" autoComplete="one-time-code" pattern="[0-9]{6}" className="mt-1 block min-h-10 w-full rounded-card border border-line bg-surface px-2" />
+              </label>
+              <button type="submit" disabled={pending} className="min-h-10 rounded-card bg-brand px-3 text-brand-ink">{t('twoFactorVerify')}</button>
+            </form>
+          )}
+        </div>
+      )}
+      {error && <p role="alert" className="text-sm text-error">⚠ {t('twoFactorError')}</p>}
+    </section>
+  );
+}
