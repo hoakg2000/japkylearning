@@ -18,7 +18,7 @@ Items that could not be finished while implementing the roadmap phases. Each has
 | # | Item | Phase |
 |---|------|-------|
 | F1 | Admin area with mandatory 2FA (plugin is enabled, no admin pages yet) | P3 |
-| F2 | Purge job for anonymous users inactive > 30 days (Vercel Cron) | P3/P4 |
+| F2 | Purge job for anonymous users inactive > 30 days – script done (`npm run purge:anonymous`, dry run by default, `-- --apply` deletes); scheduling waits for B3 (Vercel Cron or CI schedule) | P3/P4 |
 | F3 | ~~Timezone change limited to once per day~~ – done in `/me` (offers current zone, Vietnam, Japan) | P2+ |
 | F4 | Mnemonic images for kana | P1 (nice to have) |
 | F5 | Furigana mode "only kanji not learned yet" (setting exists; display treats it as "always" because public pages are static and do not know the user's learned kanji) | P2+ |
