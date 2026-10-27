@@ -71,6 +71,11 @@ test.describe('P2 N5 core', () => {
     await page.goto('/vi/kanji/学');
     await expect(page.getByText('HỌC', { exact: true })).toBeVisible();
     await expect(page.getByRole('img', { name: /Thứ tự nét của 学/ })).toBeVisible();
+    // F9: related words are a row list linking to word pages; no sideways scroll at 360px.
+    await page.setViewportSize({ width: 360, height: 740 });
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+    await page.locator('a[href="/vi/words/jmdict-1206900"]').click();
+    await page.waitForURL(/\/vi\/words\/jmdict-1206900/);
     await page.goto('/en/words/jmdict-1206900');
     await expect(page.getByText('student (esp. a university student)').or(page.getByText('học sinh, sinh viên'))).toBeVisible();
     const sitemap = await page.request.get('/sitemap.xml');

@@ -72,11 +72,15 @@ export default async function KanjiPage({ params }: PageProps<'/[locale]/kanji/[
       {related.length > 0 && (
         <section>
           <h2 className="mb-3 text-xl font-bold">{t('words')}</h2>
-          <div className="grid gap-3 md:grid-cols-2">
+          <ul className="divide-y divide-line rounded-card border border-line bg-surface px-4">
             {related.map((w) => (
-              <WordCard key={w.id} word={w} locale={locale} labels={labels} />
+              <li key={w.id}>
+                <Link href={`/words/${w.id}`} className="block hover:text-brand">
+                  <WordCard word={w} locale={locale} layout="row" labels={labels} />
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
       )}
       <details className="text-sm">

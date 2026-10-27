@@ -25,7 +25,7 @@ Items that could not be finished while implementing the roadmap phases. Each has
 | F6 | ~~Production SRS direction unlocks when a word card is mature~~ – done (reading direction not added) | P3 |
 | F7 | ~~Kana missed in quizzes become SRS cards~~ – done | P3 |
 | F8 | Timed JLPT N5 mock exam | P7 (roadmap) |
-| F9 | `row` layout of WordCard is implemented but not used on a page yet (word lists) | P5 |
+| F9 | ~~`row` layout of WordCard not used~~ – done: related words on kanji pages are a row list linking to word pages | P5 |
 | F10 | ~~Admin 2FA enable UI~~ – done: `/me` enables TOTP with the password, shows the key and backup codes once; sign-in asks for the code. Role admin is still granted only by hand in the DB. No QR code (needs a library) and no disable button yet | P3 gap |
 | F11 | ~~Admin 404 returns HTTP 200~~ – done: `src/proxy.ts` rewrites non-admins to a real 404; `requireAdmin` stays the authority | P3 gap |
 | F15 | Proxy matcher `.*\..*` is a JS string, so `\.` becomes `.` (any char) and next-intl runs only on `/`. Locale-less paths like `/kana` give 404 instead of redirecting. Fixing it runs next-intl on every page (cookies, caching) – decide and test | found during F11 |

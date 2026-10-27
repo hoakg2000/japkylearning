@@ -40,7 +40,7 @@ export function WordCard({
 
   if (layout === 'row') {
     return (
-      <div className="flex items-baseline gap-3 py-2">
+      <div className="flex flex-wrap items-baseline gap-x-3 py-2">
         <Ruby segments={word.segments} className="ruby-line text-lg" />
         {showStandard && <span className="romaji text-sm text-muted">{word.romaji}</span>}
         <span className="text-sm">{meaning}</span>
