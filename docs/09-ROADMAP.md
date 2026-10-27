@@ -47,7 +47,7 @@
 | Voice allowlist + `/api/tts` khóa chặt | [F9](./02-FEATURES.md#f9-voice-tts) |
 | Embed `/embed/kanji/[char]` + trang lấy mã nhúng | Nhúng chạy trên domain khác; trang thường không nhúng được |
 
-## P4 – Public beta (1.5 tuần) → ~tuần 13
+## P4 – Public beta (1.5 tuần) → ~tuần 13 – ⏸ chuyển sang [backlog](../backlog.md) (mục Release, R1–R8)
 
 | Task | Acceptance criteria |
 |------|---------------------|

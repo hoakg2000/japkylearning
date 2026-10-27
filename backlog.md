@@ -10,7 +10,7 @@ Items that could not be finished while implementing the roadmap phases. Each has
 | B2 | Cloudflare Turnstile on anonymous-user creation and sign-up | P1 | Needs site + secret keys; widget script also needs a CSP change (`challenges.cloudflare.com` in `script-src`/`frame-src`) | Better Auth built-in rate limit (30 req/min/IP) | Turnstile keys; enable Better Auth `captcha` plugin + client widget |
 | B3 | Production database and deploy | P0–P2 | No Neon project / Vercel project connected | Embedded PGlite in `.data/pglite` (auto-migrated) | `DATABASE_URL` (Neon ap-southeast-1), Vercel project pinned to `sin1`, `npm run db:migrate` in the deploy pipeline, real `BETTER_AUTH_SECRET` |
 | B4 | Email verification, password reset, reminder emails | P1 | Needs an email provider (Resend) and a verified sending domain | Sign-up works without email verification; no password reset yet | Resend API key + domain; wire Better Auth `sendVerificationEmail` / `sendResetPassword` |
-| B5 | Legal review of the privacy page and consent flow (PDPL 91/2025) | P1 | Needs a lawyer | Draft page at `/privacy`, per-purpose consents stored in `consents`, export + delete in `/me` | Legal review before public launch (ADR 0011) |
+| B5 | Legal review of the privacy page and consent flow (PDPL 91/2025) – **deferred by owner** (project does not need strong legal focus; revisit when an opportunity arises) | P1 | Needs a lawyer | Draft page at `/privacy`, per-purpose consents stored in `consents`, export + delete in `/me` | Legal review before public launch (ADR 0011) |
 | B6 | Human review of Hán-Việt (103 kanji) and Vietnamese meanings/examples (164 words, lessons 1–10) | P2 | P2 acceptance needs a native reviewer; content was authored by the agent and cross-checked against KANJIDIC2/Unihan (0 mismatches) but not reviewed by a person | Content ships with `hanVietReviewed: false` / `meaningsViReviewed: false` | Reviewer edits `content/source/n5/*.ts`, sets the flags to `true` in the ingest, runs `npm run ingest:n5` |
 
 ## Follow-ups (no blocker, scheduled later)
@@ -31,3 +31,18 @@ Items that could not be finished while implementing the roadmap phases. Each has
 | F12 | Cloud voice works through `/api/tts` and the user setting, but `AudioButton` still uses the device voice; TTS per-user quota and audio caching (R2, B1) are not built | P3 gap |
 | F13 | Daily AI budget (`AI_DAILY_BUDGET_USD`) is documented but not enforced; only the kill-switch and per-user request quotas are enforced | P3 gap |
 | F14 | Gateway adapter is a stub (returns unavailable); the universal gateway spec is needed | after owner spec |
+
+## Release (P4 – public beta, moved to backlog by owner)
+
+Owner decision: P4 is parked here. Legal items are deferred until there is an opportunity. Do these when ready to open beta.
+
+| # | Item | Notes |
+|---|------|-------|
+| R1 | Privacy policy, terms of use, processor list, data export/delete review | Draft exists at `/privacy`; export and delete already in `/me`. Legal review deferred (B5) |
+| R2 | PostHog event catalogue (cookieless, autocapture off) | Event list in `docs/08-NFR.md §7`; needs a PostHog key (external account) |
+| R3 | Full axe + Lighthouse pass on all main pages | Lighthouse CI exists; axe currently only on landing; extend to lesson, kanji, review, me |
+| R4 | Sentry error tracking | Needs DSN |
+| R5 | Database backup policy | Neon point-in-time restore on paid plan |
+| R6 | Vercel Pro and fish.audio commercial plan (only if opening publicly) | Depends on B1, B3 |
+| R7 | Recruit 20 beta testers (priority: Tokutei Ginou learners), collect feedback, measure D1/D7 | Owner action |
+| R8 | Close gaps F10 (admin 2FA UI) and F11 (admin HTTP status) before beta | See P3 gaps above |
