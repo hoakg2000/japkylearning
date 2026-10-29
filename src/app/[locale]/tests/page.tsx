@@ -40,7 +40,10 @@ export default async function TestsPage() {
           </li>
         ))}
       </ul>
-      <p className="mt-6 text-sm text-muted">{t('mockSoon')}</p>
+      <Link href="/tests/mock" className="mt-6 block rounded-card border border-brand bg-surface p-4 hover:bg-surface-2">
+        <span className="font-medium">{t('mock')}</span>
+        <span className="block text-sm text-muted">{t('mockDesc')}</span>
+      </Link>
     </>
   );
 }

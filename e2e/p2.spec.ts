@@ -71,6 +71,7 @@ test.describe('P2 N5 core', () => {
     await page.goto('/vi/kanji/学');
     await expect(page.getByText('HỌC', { exact: true })).toBeVisible();
     await expect(page.getByRole('img', { name: /Thứ tự nét của 学/ })).toBeVisible();
+    await expect(page.getByRole('note')).toContainText('chưa được người kiểm duyệt');
     // F9: related words are a row list linking to word pages; no sideways scroll at 360px.
     await page.setViewportSize({ width: 360, height: 740 });
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
@@ -107,5 +108,27 @@ test.describe('P2 N5 core', () => {
 
     await page.goto('/vi/learn/n5');
     await expect(page.getByText('✓ Đã xong').first()).toBeVisible();
+  });
+
+  test('N5 mock exam keeps progress over a refresh and sends missed items to review (F8)', async ({ page }) => {
+    test.setTimeout(120_000);
+    await spySpeech(page);
+    await page.goto('/vi/tests');
+    await page.getByRole('link', { name: /Thi thử JLPT N5/ }).click();
+    await page.getByRole('button', { name: 'Bắt đầu thi thử' }).click();
+    await expect(page.getByRole('timer')).toHaveText(/^(30:00|29:5\d)$/);
+    for (let i = 1; i <= 3; i++) {
+      await expect(page.getByText(`${i}/32`, { exact: true })).toBeVisible();
+      await page.keyboard.press('1');
+    }
+    await expect(page.getByText('4/32', { exact: true })).toBeVisible();
+    await page.reload();
+    await expect(page.getByText('4/32', { exact: true })).toBeVisible();
+    for (let i = 4; i <= 32; i++) {
+      await expect(page.getByText(`${i}/32`, { exact: true })).toBeVisible();
+      await page.keyboard.press('1');
+    }
+    await expect(page.getByText(/Đúng \d+\/32 câu/)).toBeVisible({ timeout: 20_000 });
+    await expect(page.getByText(/Đã thêm \d+ mục sai vào ôn tập/)).toBeVisible();
   });
 });

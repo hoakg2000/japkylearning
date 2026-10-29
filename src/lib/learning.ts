@@ -139,3 +139,21 @@ export async function cardItemIds(userId: string, itemType: ItemType, ids: strin
     .where(and(eq(srsCards.userId, userId), eq(srsCards.itemType, itemType), inArray(srsCards.itemId, ids)));
   return new Set(rows.map((r) => r.itemId));
 }
+
+/** Mock exam (F8): one attempt row with all answers; missed words and grammar become review cards. */
+export async function recordMockExam(userId: string, answers: Answer[]) {
+  const db = await getDb();
+  const correct = answers.filter((a) => a.correct).length;
+  const score = answers.length ? correct / answers.length : 0;
+  const [attempt] = await db
+    .insert(testAttempts)
+    .values({ userId, kind: 'mock', scope: { level: 'n5' }, score, total: answers.length, correct })
+    .returning({ id: testAttempts.id });
+  await db.insert(testAnswers).values(answers.map((a) => ({ attemptId: attempt.id, questionId: a.questionId, answer: a.answer, correct: a.correct, skillTags: a.skillTags })));
+  const missed = answers.filter((a) => !a.correct).map((a) => {
+    const [type, itemId] = a.questionId.split(':', 2);
+    return { itemType: type === 'cloze' ? ('grammar' as const) : ('word' as const), itemId };
+  });
+  const cardsAdded = await addCards(userId, missed);
+  return { score, correct, total: answers.length, cardsAdded };
+}

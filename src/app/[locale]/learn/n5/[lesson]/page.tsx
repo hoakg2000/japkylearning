@@ -6,6 +6,7 @@ import { AudioButton } from '@/components/audio-button';
 import { DisplayToggles } from '@/components/display-toggles';
 import { JsonLd } from '@/components/json-ld';
 import { Ruby } from '@/components/word/ruby';
+import { UnreviewedNote } from '@/components/unreviewed-note';
 import { WordCard } from '@/components/word/word-card';
 import { wordLabels } from '@/components/word/labels';
 import { Link } from '@/i18n/navigation';
@@ -65,6 +66,7 @@ export default async function LessonPage({ params }: PageProps<'/[locale]/learn/
             <li key={i} className="flex gap-2"><span aria-hidden className="text-success">✓</span>{g[locale]}</li>
           ))}
         </ul>
+        <UnreviewedNote show={words.some((w) => !w.meaningsViReviewed) || kanji.some((k) => !k.hanVietReviewed)} />
         <div className="flex flex-wrap items-center justify-between gap-3">
           <DisplayToggles />
           <Link href={`/learn/n5/${lesson.order}/practice`} className="inline-flex min-h-12 items-center rounded-card bg-brand px-6 font-medium text-brand-ink">

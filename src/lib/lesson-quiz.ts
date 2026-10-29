@@ -93,3 +93,16 @@ export function lessonTest(content: { words: Word[]; grammar: GrammarPoint[] }, 
   ];
   return shuffle(qs.slice(0, max), rng);
 }
+
+export const MOCK_MINUTES = 30;
+
+/** Timed N5 mock exam (F8) over all N5 content: 10 vocabulary, 8 kanji reading, 8 grammar, 6 listening. */
+export function mockExam(words: Word[], allGrammar: GrammarPoint[], locale: Locale, rng: Rng): Question[] {
+  const ws = shuffle(words, rng);
+  return [
+    ...ws.slice(0, 10).map((w) => meaningQuestion(w, words, locale, rng)),
+    ...ws.slice(10, 40).filter((w) => hasKanji(w.surface)).slice(0, 8).map((w) => readingQuestion(w, words, rng)!),
+    ...shuffle(allGrammar, rng).slice(0, 8).map((g) => clozeQuestion(g, allGrammar, locale, rng)),
+    ...ws.slice(40, 46).map((w) => listeningQuestion(w, words, rng)),
+  ];
+}

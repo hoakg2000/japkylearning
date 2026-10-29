@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { locale as rootLocale } from 'next/root-params';
 import { JsonLd } from '@/components/json-ld';
 import { StrokeOrder } from '@/components/stroke-order';
+import { UnreviewedNote } from '@/components/unreviewed-note';
 import { WordCard } from '@/components/word/word-card';
 import { wordLabels } from '@/components/word/labels';
 import { EmbedCode } from '@/components/embed-code';
@@ -69,6 +70,7 @@ export default async function KanjiPage({ params }: PageProps<'/[locale]/kanji/[
           </dl>
         </div>
       </header>
+      <UnreviewedNote show={!k.hanVietReviewed} />
       {related.length > 0 && (
         <section>
           <h2 className="mb-3 text-xl font-bold">{t('words')}</h2>

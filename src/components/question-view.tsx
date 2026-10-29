@@ -54,7 +54,7 @@ export function QuestionView({ q, locale, onAnswer, showFeedback = true }: { q: 
           <>
             <p lang="ja" className="text-2xl">
               {q.before}
-              <span className="mx-1 inline-block min-w-12 border-b-2 border-brand">{picked ? q.answer : ' '}</span>
+              <span className="mx-1 inline-block min-w-12 border-b-2 border-brand">{picked ? (showFeedback ? q.answer : picked) :' '}</span>
               {q.after}
             </p>
             <p className="text-sm text-muted">{q.translation}</p>

@@ -439,7 +439,8 @@
     "kana": "Kana test",
     "kanaDesc": "Score 90% to test out of the alphabets",
     "lesson": "Lesson {n} test",
-    "mockSoon": "Timed JLPT N5 mock exams come in a later phase."
+    "mock": "JLPT N5 mock exam",
+    "mockDesc": "32 questions, 30 minutes, all N5 content"
   },
   "Credits": {
     "title": "Credits",
@@ -487,5 +488,22 @@
     "requests": "Requests",
     "none": "None yet",
     "audit": "Change log (latest 30)"
+  },
+  "Content": {
+    "unreviewed": "The Vietnamese meanings and Hán-Việt readings here have not been checked by a person yet. Please tell Japky if something looks wrong."
+  },
+  "Mock": {
+    "title": "N5 mock exam",
+    "intro": "{count} vocabulary, kanji, grammar and listening questions in {minutes} minutes. Missed items are added to your reviews.",
+    "start": "Start the mock exam",
+    "progress": "Exam progress",
+    "timeLeft": "Time left",
+    "result": "{correct}/{total} correct",
+    "cards": "Added {count} missed items to your reviews.",
+    "toReview": "Review now",
+    "toTests": "Back to tests",
+    "saving": "Grading…",
+    "saveError": "Could not send your answers.",
+    "retry": "Send again"
   }
 }

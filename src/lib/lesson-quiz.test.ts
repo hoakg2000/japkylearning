@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { grammarPoints, lessonByOrder, lessonContent, words } from './content/n5';
-import { clozeQuestion, lessonTest, meaningQuestion, readingQuestion } from './lesson-quiz';
+import { clozeQuestion, lessonTest, meaningQuestion, mockExam, readingQuestion } from './lesson-quiz';
+import { seededRng } from './quiz';
 
 let seed = 42;
 const rng = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
@@ -42,5 +43,16 @@ describe('lesson questions', () => {
       for (const g of content.grammar) expect(qs.some((q) => q.id === `cloze:${g.id}`)).toBe(true);
       expect(new Set(qs.map((q) => q.id)).size).toBe(qs.length);
     }
+  });
+});
+
+describe('mock exam', () => {
+  it('has 32 unique questions and is rebuilt identically from the same seed', () => {
+    const a = mockExam(words, grammarPoints, 'vi', seededRng(7));
+    const b = mockExam(words, grammarPoints, 'vi', seededRng(7));
+    expect(a).toHaveLength(32);
+    expect(new Set(a.map((q) => q.id)).size).toBe(32);
+    expect(b.map((q) => q.id)).toEqual(a.map((q) => q.id));
+    expect(b.map((q) => q.options.map((o) => o.id))).toEqual(a.map((q) => q.options.map((o) => o.id)));
   });
 });

@@ -439,7 +439,8 @@
     "kana": "Kiểm tra kana",
     "kanaDesc": "Đạt 90% để bỏ qua phần bảng chữ cái",
     "lesson": "Kiểm tra bài {n}",
-    "mockSoon": "Thi thử JLPT N5 có hẹn giờ sẽ có ở giai đoạn sau."
+    "mock": "Thi thử JLPT N5",
+    "mockDesc": "32 câu, 30 phút, toàn bộ nội dung N5"
   },
   "Credits": {
     "title": "Nguồn dữ liệu",
@@ -487,5 +488,22 @@
     "requests": "Yêu cầu",
     "none": "Chưa có",
     "audit": "Nhật ký thay đổi (30 gần nhất)"
+  },
+  "Content": {
+    "unreviewed": "Nghĩa tiếng Việt và âm Hán-Việt ở đây chưa được người kiểm duyệt. Nếu thấy chỗ sai, hãy báo cho Japky."
+  },
+  "Mock": {
+    "title": "Thi thử N5",
+    "intro": "{count} câu từ vựng, kanji, ngữ pháp và nghe trong {minutes} phút. Câu sai sẽ được thêm vào phần ôn tập.",
+    "start": "Bắt đầu thi thử",
+    "progress": "Tiến độ bài thi",
+    "timeLeft": "Thời gian còn lại",
+    "result": "Đúng {correct}/{total} câu",
+    "cards": "Đã thêm {count} mục sai vào ôn tập.",
+    "toReview": "Ôn tập ngay",
+    "toTests": "Về trang kiểm tra",
+    "saving": "Đang chấm…",
+    "saveError": "Chưa gửi được bài.",
+    "retry": "Gửi lại"
   }
 }

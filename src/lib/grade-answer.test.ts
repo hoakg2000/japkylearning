@@ -18,4 +18,10 @@ describe('gradeAnswer', () => {
     expect(gradeAnswer('n5-01', 'cloze:n5-no', 'の')).toBeNull();
     expect(gradeAnswer('nope', 'meaning:x', 'x')).toBeNull();
   });
+
+  it('grades any N5 item for the mock exam (no lesson)', () => {
+    expect(gradeAnswer(null, `meaning:${word.id}`, word.id)).toEqual({ correct: true, skill: 'vocab' });
+    expect(gradeAnswer(null, 'cloze:n5-no', 'の')?.correct).toBe(true);
+    expect(gradeAnswer(null, 'meaning:unknown', '')).toBeNull();
+  });
 });

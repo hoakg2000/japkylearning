@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { locale as rootLocale } from 'next/root-params';
 import { DisplayToggles } from '@/components/display-toggles';
 import { JsonLd } from '@/components/json-ld';
+import { UnreviewedNote } from '@/components/unreviewed-note';
 import { WordCard } from '@/components/word/word-card';
 import { wordLabels } from '@/components/word/labels';
 import { Link } from '@/i18n/navigation';
@@ -42,6 +43,7 @@ export default async function WordPage({ params }: PageProps<'/[locale]/words/[i
       <JsonLd data={{ '@context': 'https://schema.org', '@type': 'DefinedTerm', name: w.surface, alternateName: [w.reading, w.romaji], description: w.meanings[locale], inDefinedTermSet: 'JLPT N5 vocabulary' }} />
       <h1 className="sr-only">{w.surface}</h1>
       <DisplayToggles />
+      <UnreviewedNote show={!w.meaningsViReviewed} />
       <WordCard word={w} locale={locale} layout="card" density="extended" labels={{ ...labels, details: '' }} />
       {lesson && (
         <p className="text-sm">
