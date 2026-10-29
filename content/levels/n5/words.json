@@ -9188,5 +9188,9936 @@
   "tags": [
    "n5-10"
   ]
+ },
+ {
+  "id": "jmdict-1021180",
+  "surface": "いくら",
+  "reading": "いくら",
+  "romaji": "ikura",
+  "segments": [
+   {
+    "surface": "いくら"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "bao nhiêu (tiền)",
+   "en": "how much; how many"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "このシャツはいくらですか。",
+    "segments": [
+     {
+      "surface": "このシャツはいくらですか。"
+     }
+    ],
+    "romaji": "kono shatsu wa ikura desuka.",
+    "translation": {
+     "vi": "Cái áo sơ mi này bao nhiêu tiền?",
+     "en": "How much is this shirt?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-11"
+  ]
+ },
+ {
+  "id": "jmdict-1175570",
+  "surface": "円",
+  "reading": "えん",
+  "romaji": "en",
+  "segments": [
+   {
+    "surface": "円",
+    "reading": "えん"
+   }
+  ],
+  "hanViet": "VIÊN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "yên (tiền Nhật)",
+   "en": "yen (currency of Japan)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "このパンは百円です。",
+    "segments": [
+     {
+      "surface": "このパンは"
+     },
+     {
+      "surface": "百",
+      "reading": "ひゃく"
+     },
+     {
+      "surface": "円",
+      "reading": "えん"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "kono pan wa hyakuen desu.",
+    "translation": {
+     "vi": "Cái bánh mì này 100 yên.",
+     "en": "This bread is 100 yen."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-11"
+  ]
+ },
+ {
+  "id": "jmdict-1388740",
+  "surface": "千",
+  "reading": "せん",
+  "romaji": "sen",
+  "segments": [
+   {
+    "surface": "千",
+    "reading": "せん"
+   }
+  ],
+  "hanViet": "THIÊN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "num"
+  ],
+  "meanings": {
+   "vi": "nghìn",
+   "en": "thousand; 1,000"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "この本は千五百円です。",
+    "segments": [
+     {
+      "surface": "この"
+     },
+     {
+      "surface": "本",
+      "reading": "ほん"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "千五百",
+      "reading": "せんごひゃく"
+     },
+     {
+      "surface": "円",
+      "reading": "えん"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "kono hon wa sengohyakuen desu.",
+    "translation": {
+     "vi": "Quyển sách này 1.500 yên.",
+     "en": "This book is 1,500 yen."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-11"
+  ]
+ },
+ {
+  "id": "jmdict-1584460",
+  "surface": "万",
+  "reading": "まん",
+  "romaji": "man",
+  "segments": [
+   {
+    "surface": "万",
+    "reading": "まん"
+   }
+  ],
+  "hanViet": "VẠN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "num"
+  ],
+  "meanings": {
+   "vi": "vạn, mười nghìn",
+   "en": "10,000; ten thousand"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "この鞄は一万円です。",
+    "segments": [
+     {
+      "surface": "この"
+     },
+     {
+      "surface": "鞄",
+      "reading": "かばん"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "一万",
+      "reading": "いちまん"
+     },
+     {
+      "surface": "円",
+      "reading": "えん"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "kono kaban wa ichiman'en desu.",
+    "translation": {
+     "vi": "Cái cặp này 10.000 yên.",
+     "en": "This bag is 10,000 yen."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-11"
+  ]
+ },
+ {
+  "id": "jmdict-1001820",
+  "surface": "お金",
+  "reading": "おかね",
+  "romaji": "okane",
+  "segments": [
+   {
+    "surface": "お"
+   },
+   {
+    "surface": "金",
+    "reading": "かね"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "tiền",
+   "en": "money"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "今日はお金がありません。",
+    "segments": [
+     {
+      "surface": "今日",
+      "reading": "きょう"
+     },
+     {
+      "surface": "はお"
+     },
+     {
+      "surface": "金",
+      "reading": "かね"
+     },
+     {
+      "surface": "がありません。"
+     }
+    ],
+    "romaji": "kyou wa okane ga arimasen.",
+    "translation": {
+     "vi": "Hôm nay tôi không có tiền.",
+     "en": "I have no money today."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-11"
+  ]
+ },
+ {
+  "id": "jmdict-1296970",
+  "surface": "財布",
+  "reading": "さいふ",
+  "romaji": "saifu",
+  "segments": [
+   {
+    "surface": "財",
+    "reading": "さい"
+   },
+   {
+    "surface": "布",
+    "reading": "ふ"
+   }
+  ],
+  "hanViet": "TÀI BỐ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "cái ví",
+   "en": "wallet; purse; coin purse"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "財布は鞄の中にあります。",
+    "segments": [
+     {
+      "surface": "財布",
+      "reading": "さいふ"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "鞄",
+      "reading": "かばん"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "中",
+      "reading": "なか"
+     },
+     {
+      "surface": "にあります。"
+     }
+    ],
+    "romaji": "saifu wa kaban no naka ni arimasu.",
+    "translation": {
+     "vi": "Ví ở trong cặp.",
+     "en": "The wallet is in the bag."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-11"
+  ]
+ },
+ {
+  "id": "jmdict-1246700",
+  "surface": "靴",
+  "reading": "くつ",
+  "romaji": "kutsu",
+  "segments": [
+   {
+    "surface": "靴",
+    "reading": "くつ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "giày",
+   "en": "shoe; shoes; boots"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "この靴をください。",
+    "segments": [
+     {
+      "surface": "この"
+     },
+     {
+      "surface": "靴",
+      "reading": "くつ"
+     },
+     {
+      "surface": "をください。"
+     }
+    ],
+    "romaji": "kono kutsu o kudasai.",
+    "translation": {
+     "vi": "Cho tôi đôi giày này.",
+     "en": "I’ll take these shoes, please."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-11"
+  ]
+ },
+ {
+  "id": "jmdict-1061520",
+  "surface": "シャツ",
+  "reading": "シャツ",
+  "romaji": "shatsu",
+  "segments": [
+   {
+    "surface": "シャツ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "áo sơ mi",
+   "en": "shirt"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "白いシャツを二枚買いました。",
+    "segments": [
+     {
+      "surface": "白",
+      "reading": "しろ"
+     },
+     {
+      "surface": "いシャツを"
+     },
+     {
+      "surface": "二枚",
+      "reading": "にまい"
+     },
+     {
+      "surface": "買",
+      "reading": "か"
+     },
+     {
+      "surface": "いました。"
+     }
+    ],
+    "romaji": "shiroi shatsu o nimai kaimashita.",
+    "translation": {
+     "vi": "Tôi đã mua hai cái áo sơ mi trắng.",
+     "en": "I bought two white shirts."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-11"
+  ]
+ },
+ {
+  "id": "jmdict-1160820",
+  "surface": "一つ",
+  "reading": "ひとつ",
+  "romaji": "hitotsu",
+  "segments": [
+   {
+    "surface": "一",
+    "reading": "ひと"
+   },
+   {
+    "surface": "つ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "num"
+  ],
+  "meanings": {
+   "vi": "một cái",
+   "en": "one"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "りんごを一つください。",
+    "segments": [
+     {
+      "surface": "りんごを"
+     },
+     {
+      "surface": "一",
+      "reading": "ひと"
+     },
+     {
+      "surface": "つください。"
+     }
+    ],
+    "romaji": "ringo o hitotsu kudasai.",
+    "translation": {
+     "vi": "Cho tôi một quả táo.",
+     "en": "One apple, please."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-11"
+  ]
+ },
+ {
+  "id": "jmdict-1461160",
+  "surface": "二つ",
+  "reading": "ふたつ",
+  "romaji": "futatsu",
+  "segments": [
+   {
+    "surface": "二",
+    "reading": "ふた"
+   },
+   {
+    "surface": "つ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "num"
+  ],
+  "meanings": {
+   "vi": "hai cái",
+   "en": "two"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "ケーキを二つ買いました。",
+    "segments": [
+     {
+      "surface": "ケーキを"
+     },
+     {
+      "surface": "二",
+      "reading": "ふた"
+     },
+     {
+      "surface": "つ"
+     },
+     {
+      "surface": "買",
+      "reading": "か"
+     },
+     {
+      "surface": "いました。"
+     }
+    ],
+    "romaji": "keeki o futatsu kaimashita.",
+    "translation": {
+     "vi": "Tôi đã mua hai cái bánh ngọt.",
+     "en": "I bought two cakes."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-11"
+  ]
+ },
+ {
+  "id": "jmdict-1299740",
+  "surface": "三つ",
+  "reading": "みっつ",
+  "romaji": "mittsu",
+  "segments": [
+   {
+    "surface": "三",
+    "reading": "みっ"
+   },
+   {
+    "surface": "つ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "num"
+  ],
+  "meanings": {
+   "vi": "ba cái",
+   "en": "three"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "卵が三つあります。",
+    "segments": [
+     {
+      "surface": "卵",
+      "reading": "たまご"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "三",
+      "reading": "みっ"
+     },
+     {
+      "surface": "つあります。"
+     }
+    ],
+    "romaji": "tamago ga mittsu arimasu.",
+    "translation": {
+     "vi": "Có ba quả trứng.",
+     "en": "There are three eggs."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-11"
+  ]
+ },
+ {
+  "id": "jmdict-1524610",
+  "surface": "枚",
+  "reading": "まい",
+  "romaji": "mai",
+  "segments": [
+   {
+    "surface": "枚",
+    "reading": "まい"
+   }
+  ],
+  "hanViet": "MAI",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "ctr"
+  ],
+  "meanings": {
+   "vi": "tờ, cái (đếm vật mỏng, phẳng)",
+   "en": "counter for thin, flat objects (e.g. sheets of paper, plates, coins)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "紙を一枚ください。",
+    "segments": [
+     {
+      "surface": "紙",
+      "reading": "かみ"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "一枚",
+      "reading": "いちまい"
+     },
+     {
+      "surface": "ください。"
+     }
+    ],
+    "romaji": "kami o ichimai kudasai.",
+    "translation": {
+     "vi": "Cho tôi một tờ giấy.",
+     "en": "One sheet of paper, please."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-11"
+  ]
+ },
+ {
+  "id": "jmdict-1385070",
+  "surface": "切手",
+  "reading": "きって",
+  "romaji": "kitte",
+  "segments": [
+   {
+    "surface": "切",
+    "reading": "きっ"
+   },
+   {
+    "surface": "手",
+    "reading": "て"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "tem thư",
+   "en": "stamp (postage)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "郵便局で切手を買います。",
+    "segments": [
+     {
+      "surface": "郵便局",
+      "reading": "ゆうびんきょく"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "切手",
+      "reading": "きって"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "買",
+      "reading": "か"
+     },
+     {
+      "surface": "います。"
+     }
+    ],
+    "romaji": "yuubinkyoku de kitte o kaimasu.",
+    "translation": {
+     "vi": "Tôi mua tem ở bưu điện.",
+     "en": "I buy stamps at the post office."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-11"
+  ]
+ },
+ {
+  "id": "jmdict-1184270",
+  "surface": "下さい",
+  "reading": "ください",
+  "romaji": "kudasai",
+  "segments": [
+   {
+    "surface": "下",
+    "reading": "くだ"
+   },
+   {
+    "surface": "さい"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "exp"
+  ],
+  "meanings": {
+   "vi": "xin cho tôi; xin hãy",
+   "en": "please (give me)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "水をください。",
+    "segments": [
+     {
+      "surface": "水",
+      "reading": "みず"
+     },
+     {
+      "surface": "をください。"
+     }
+    ],
+    "romaji": "mizu o kudasai.",
+    "translation": {
+     "vi": "Cho tôi nước.",
+     "en": "Water, please."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-11"
+  ]
+ },
+ {
+  "id": "jmdict-1000930",
+  "surface": "いらっしゃいませ",
+  "reading": "いらっしゃいませ",
+  "romaji": "irasshaimase",
+  "segments": [
+   {
+    "surface": "いらっしゃいませ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "exp"
+  ],
+  "meanings": {
+   "vi": "kính chào quý khách",
+   "en": "welcome"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "いらっしゃいませ。どうぞ。",
+    "segments": [
+     {
+      "surface": "いらっしゃいませ。どうぞ。"
+     }
+    ],
+    "romaji": "irasshaimase. douzo.",
+    "translation": {
+     "vi": "Kính chào quý khách. Xin mời vào.",
+     "en": "Welcome. Please come in."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-11"
+  ]
+ },
+ {
+  "id": "jmdict-1396130-de",
+  "surface": "全部で",
+  "reading": "ぜんぶで",
+  "romaji": "zenbude",
+  "segments": [
+   {
+    "surface": "全",
+    "reading": "ぜん"
+   },
+   {
+    "surface": "部",
+    "reading": "ぶ"
+   },
+   {
+    "surface": "で"
+   }
+  ],
+  "hanViet": "TOÀN BỘ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adj-no",
+   "adv"
+  ],
+  "meanings": {
+   "vi": "tổng cộng, tất cả",
+   "en": "in total; altogether"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "全部で三千円です。",
+    "segments": [
+     {
+      "surface": "全部",
+      "reading": "ぜんぶ"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "三千",
+      "reading": "さんぜん"
+     },
+     {
+      "surface": "円",
+      "reading": "えん"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "zenbude sanzen'en desu.",
+    "translation": {
+     "vi": "Tổng cộng 3.000 yên.",
+     "en": "That is 3,000 yen altogether."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-11"
+  ]
+ },
+ {
+  "id": "jmdict-1497610",
+  "surface": "父",
+  "reading": "ちち",
+  "romaji": "chichi",
+  "segments": [
+   {
+    "surface": "父",
+    "reading": "ちち"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "bố (của mình)",
+   "en": "father"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "父は医者です。",
+    "segments": [
+     {
+      "surface": "父",
+      "reading": "ちち"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "医者",
+      "reading": "いしゃ"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "chichi wa isha desu.",
+    "translation": {
+     "vi": "Bố tôi là bác sĩ.",
+     "en": "My father is a doctor."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-12"
+  ]
+ },
+ {
+  "id": "jmdict-1514990",
+  "surface": "母",
+  "reading": "はは",
+  "romaji": "haha",
+  "segments": [
+   {
+    "surface": "母",
+    "reading": "はは"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "mẹ (của mình)",
+   "en": "mother"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "母は料理が上手です。",
+    "segments": [
+     {
+      "surface": "母",
+      "reading": "はは"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "料理",
+      "reading": "りょうり"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "上手",
+      "reading": "じょうず"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "haha wa ryouri ga jouzu desu.",
+    "translation": {
+     "vi": "Mẹ tôi nấu ăn giỏi.",
+     "en": "My mother is good at cooking."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-12"
+  ]
+ },
+ {
+  "id": "jmdict-1002590",
+  "surface": "お父さん",
+  "reading": "おとうさん",
+  "romaji": "otousan",
+  "segments": [
+   {
+    "surface": "お"
+   },
+   {
+    "surface": "父",
+    "reading": "とう"
+   },
+   {
+    "surface": "さん"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "bố (của người khác); bố ơi",
+   "en": "father; dad; papa"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "お父さんはお元気ですか。",
+    "segments": [
+     {
+      "surface": "お"
+     },
+     {
+      "surface": "父",
+      "reading": "とう"
+     },
+     {
+      "surface": "さんはお"
+     },
+     {
+      "surface": "元気",
+      "reading": "げんき"
+     },
+     {
+      "surface": "ですか。"
+     }
+    ],
+    "romaji": "otousan wa ogenki desuka.",
+    "translation": {
+     "vi": "Bố bạn có khỏe không?",
+     "en": "Is your father well?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-12"
+  ]
+ },
+ {
+  "id": "jmdict-1002650",
+  "surface": "お母さん",
+  "reading": "おかあさん",
+  "romaji": "okaasan",
+  "segments": [
+   {
+    "surface": "お"
+   },
+   {
+    "surface": "母",
+    "reading": "かあ"
+   },
+   {
+    "surface": "さん"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "mẹ (của người khác); mẹ ơi",
+   "en": "mother; mom; mum"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "田中さんのお母さんは先生です。",
+    "segments": [
+     {
+      "surface": "田中",
+      "reading": "たなか"
+     },
+     {
+      "surface": "さんのお"
+     },
+     {
+      "surface": "母",
+      "reading": "かあ"
+     },
+     {
+      "surface": "さんは"
+     },
+     {
+      "surface": "先生",
+      "reading": "せんせい"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "tanakasan no okaasan wa sensei desu.",
+    "translation": {
+     "vi": "Mẹ của anh Tanaka là giáo viên.",
+     "en": "Mr Tanaka’s mother is a teacher."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-12"
+  ]
+ },
+ {
+  "id": "jmdict-1249900",
+  "surface": "兄",
+  "reading": "あに",
+  "romaji": "ani",
+  "segments": [
+   {
+    "surface": "兄",
+    "reading": "あに"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "anh trai (của mình)",
+   "en": "older brother; elder brother"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "兄は東京にいます。",
+    "segments": [
+     {
+      "surface": "兄",
+      "reading": "あに"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "東京",
+      "reading": "とうきょう"
+     },
+     {
+      "surface": "にいます。"
+     }
+    ],
+    "romaji": "ani wa toukyou ni imasu.",
+    "translation": {
+     "vi": "Anh trai tôi ở Tokyo.",
+     "en": "My older brother is in Tokyo."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-12"
+  ]
+ },
+ {
+  "id": "jmdict-1307630",
+  "surface": "姉",
+  "reading": "あね",
+  "romaji": "ane",
+  "segments": [
+   {
+    "surface": "姉",
+    "reading": "あね"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "chị gái (của mình)",
+   "en": "older sister; elder sister"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "姉は銀行員です。",
+    "segments": [
+     {
+      "surface": "姉",
+      "reading": "あね"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "銀行員",
+      "reading": "ぎんこういん"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "ane wa ginkouin desu.",
+    "translation": {
+     "vi": "Chị gái tôi là nhân viên ngân hàng.",
+     "en": "My older sister is a bank clerk."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-12"
+  ]
+ },
+ {
+  "id": "jmdict-1581930",
+  "surface": "弟",
+  "reading": "おとうと",
+  "romaji": "otouto",
+  "segments": [
+   {
+    "surface": "弟",
+    "reading": "おとうと"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "em trai",
+   "en": "younger brother; little brother; kid brother"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "弟は高校生です。",
+    "segments": [
+     {
+      "surface": "弟",
+      "reading": "おとうと"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "高校生",
+      "reading": "こうこうせい"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "otouto wa koukousei desu.",
+    "translation": {
+     "vi": "Em trai tôi là học sinh cấp ba.",
+     "en": "My younger brother is a high school student."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-12"
+  ]
+ },
+ {
+  "id": "jmdict-1524590",
+  "surface": "妹",
+  "reading": "いもうと",
+  "romaji": "imouto",
+  "segments": [
+   {
+    "surface": "妹",
+    "reading": "いもうと"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "em gái",
+   "en": "younger sister"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "妹は十歳です。",
+    "segments": [
+     {
+      "surface": "妹",
+      "reading": "いもうと"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "十歳",
+      "reading": "じゅっさい"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "imouto wa jussai desu.",
+    "translation": {
+     "vi": "Em gái tôi mười tuổi.",
+     "en": "My younger sister is ten years old."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-12"
+  ]
+ },
+ {
+  "id": "jmdict-1001830",
+  "surface": "お兄さん",
+  "reading": "おにいさん",
+  "romaji": "oniisan",
+  "segments": [
+   {
+    "surface": "お"
+   },
+   {
+    "surface": "兄",
+    "reading": "にい"
+   },
+   {
+    "surface": "さん"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "anh trai (của người khác)",
+   "en": "older brother; elder brother"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "お兄さんは何歳ですか。",
+    "segments": [
+     {
+      "surface": "お"
+     },
+     {
+      "surface": "兄",
+      "reading": "にい"
+     },
+     {
+      "surface": "さんは"
+     },
+     {
+      "surface": "何",
+      "reading": "なん"
+     },
+     {
+      "surface": "歳",
+      "reading": "さい"
+     },
+     {
+      "surface": "ですか。"
+     }
+    ],
+    "romaji": "oniisan wa nansai desuka.",
+    "translation": {
+     "vi": "Anh trai bạn bao nhiêu tuổi?",
+     "en": "How old is your older brother?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-12"
+  ]
+ },
+ {
+  "id": "jmdict-1001990",
+  "surface": "お姉さん",
+  "reading": "おねえさん",
+  "romaji": "oneesan",
+  "segments": [
+   {
+    "surface": "お"
+   },
+   {
+    "surface": "姉",
+    "reading": "ねえ"
+   },
+   {
+    "surface": "さん"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "chị gái (của người khác)",
+   "en": "older sister; elder sister"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "お姉さんはとても親切ですね。",
+    "segments": [
+     {
+      "surface": "お"
+     },
+     {
+      "surface": "姉",
+      "reading": "ねえ"
+     },
+     {
+      "surface": "さんはとても"
+     },
+     {
+      "surface": "親切",
+      "reading": "しんせつ"
+     },
+     {
+      "surface": "ですね。"
+     }
+    ],
+    "romaji": "oneesan wa totemo shinsetsu desu ne.",
+    "translation": {
+     "vi": "Chị gái bạn tử tế quá nhỉ.",
+     "en": "Your older sister is very kind."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-12"
+  ]
+ },
+ {
+  "id": "jmdict-1602710",
+  "surface": "両親",
+  "reading": "りょうしん",
+  "romaji": "ryoushin",
+  "segments": [
+   {
+    "surface": "両",
+    "reading": "りょう"
+   },
+   {
+    "surface": "親",
+    "reading": "しん"
+   }
+  ],
+  "hanViet": "LẠNG THÂN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "bố mẹ",
+   "en": "parents; both parents"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "両親はベトナムにいます。",
+    "segments": [
+     {
+      "surface": "両親",
+      "reading": "りょうしん"
+     },
+     {
+      "surface": "はベトナムにいます。"
+     }
+    ],
+    "romaji": "ryoushin wa betonamu ni imasu.",
+    "translation": {
+     "vi": "Bố mẹ tôi ở Việt Nam.",
+     "en": "My parents are in Vietnam."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-12"
+  ]
+ },
+ {
+  "id": "jmdict-1249960",
+  "surface": "兄弟",
+  "reading": "きょうだい",
+  "romaji": "kyoudai",
+  "segments": [
+   {
+    "surface": "兄",
+    "reading": "きょう"
+   },
+   {
+    "surface": "弟",
+    "reading": "だい"
+   }
+  ],
+  "hanViet": "HUYNH ĐỆ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "anh chị em",
+   "en": "brothers and sisters; siblings"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "兄弟がいますか。",
+    "segments": [
+     {
+      "surface": "兄弟",
+      "reading": "きょうだい"
+     },
+     {
+      "surface": "がいますか。"
+     }
+    ],
+    "romaji": "kyoudai ga imasu ka.",
+    "translation": {
+     "vi": "Bạn có anh chị em không?",
+     "en": "Do you have any brothers or sisters?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-12"
+  ]
+ },
+ {
+  "id": "jmdict-1002320",
+  "surface": "おじいさん",
+  "reading": "おじいさん",
+  "romaji": "ojiisan",
+  "segments": [
+   {
+    "surface": "おじいさん"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "ông; ông cụ",
+   "en": "grandfather"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "おじいさんは毎朝散歩します。",
+    "segments": [
+     {
+      "surface": "おじいさんは"
+     },
+     {
+      "surface": "毎朝",
+      "reading": "まいあさ"
+     },
+     {
+      "surface": "散歩",
+      "reading": "さんぽ"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "ojiisan wa maiasa sanpo shimasu.",
+    "translation": {
+     "vi": "Ông tôi đi dạo mỗi sáng.",
+     "en": "Grandpa takes a walk every morning."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-12"
+  ]
+ },
+ {
+  "id": "jmdict-1002330",
+  "surface": "おばあさん",
+  "reading": "おばあさん",
+  "romaji": "obaasan",
+  "segments": [
+   {
+    "surface": "おばあさん"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "bà; bà cụ",
+   "en": "grandmother"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "おばあさんの家は田舎にあります。",
+    "segments": [
+     {
+      "surface": "おばあさんの"
+     },
+     {
+      "surface": "家",
+      "reading": "いえ"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "田舎",
+      "reading": "いなか"
+     },
+     {
+      "surface": "にあります。"
+     }
+    ],
+    "romaji": "obaasan no ie wa inaka ni arimasu.",
+    "translation": {
+     "vi": "Nhà của bà ở quê.",
+     "en": "Grandma’s house is in the countryside."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-12"
+  ]
+ },
+ {
+  "id": "jmdict-1179330",
+  "surface": "奥さん",
+  "reading": "おくさん",
+  "romaji": "okusan",
+  "segments": [
+   {
+    "surface": "奥",
+    "reading": "おく"
+   },
+   {
+    "surface": "さん"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "vợ (của người khác)",
+   "en": "wife; your wife; his wife"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "奥さんは日本人ですか。",
+    "segments": [
+     {
+      "surface": "奥",
+      "reading": "おく"
+     },
+     {
+      "surface": "さんは"
+     },
+     {
+      "surface": "日本人",
+      "reading": "にほんじん"
+     },
+     {
+      "surface": "ですか。"
+     }
+    ],
+    "romaji": "okusan wa nihonjin desuka.",
+    "translation": {
+     "vi": "Vợ anh là người Nhật à?",
+     "en": "Is your wife Japanese?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-12"
+  ]
+ },
+ {
+  "id": "jmdict-1582670",
+  "surface": "二人",
+  "reading": "ふたり",
+  "romaji": "futari",
+  "segments": [
+   {
+    "surface": "二人",
+    "reading": "ふたり"
+   }
+  ],
+  "jukujikun": true,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "hai người",
+   "en": "two persons; two people; pair"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "子供が二人います。",
+    "segments": [
+     {
+      "surface": "子供",
+      "reading": "こども"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "二人",
+      "reading": "ふたり"
+     },
+     {
+      "surface": "います。"
+     }
+    ],
+    "romaji": "kodomo ga futari imasu.",
+    "translation": {
+     "vi": "Tôi có hai đứa con.",
+     "en": "I have two children."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-12"
+  ]
+ },
+ {
+  "id": "jmdict-1189100",
+  "surface": "何人",
+  "reading": "なんにん",
+  "romaji": "nannin",
+  "segments": [
+   {
+    "surface": "何",
+    "reading": "なん"
+   },
+   {
+    "surface": "人",
+    "reading": "にん"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "mấy người",
+   "en": "how many people; a number of people"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "教室に学生が何人いますか。",
+    "segments": [
+     {
+      "surface": "教室",
+      "reading": "きょうしつ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "学生",
+      "reading": "がくせい"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "何人",
+      "reading": "なんにん"
+     },
+     {
+      "surface": "いますか。"
+     }
+    ],
+    "romaji": "kyoushitsu ni gakusei ga nannin imasuka.",
+    "translation": {
+     "vi": "Trong lớp có mấy học sinh?",
+     "en": "How many students are in the classroom?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-12"
+  ]
+ },
+ {
+  "id": "jmdict-1255890",
+  "surface": "月曜日",
+  "reading": "げつようび",
+  "romaji": "getsuyoubi",
+  "segments": [
+   {
+    "surface": "月",
+    "reading": "げつ"
+   },
+   {
+    "surface": "曜",
+    "reading": "よう"
+   },
+   {
+    "surface": "日",
+    "reading": "び"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adv"
+  ],
+  "meanings": {
+   "vi": "thứ Hai",
+   "en": "Monday"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "月曜日は忙しいです。",
+    "segments": [
+     {
+      "surface": "月曜日",
+      "reading": "げつようび"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "忙",
+      "reading": "いそが"
+     },
+     {
+      "surface": "しいです。"
+     }
+    ],
+    "romaji": "getsuyoubi wa isogashii desu.",
+    "translation": {
+     "vi": "Thứ Hai tôi bận.",
+     "en": "I am busy on Mondays."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-13"
+  ]
+ },
+ {
+  "id": "jmdict-1194290",
+  "surface": "火曜日",
+  "reading": "かようび",
+  "romaji": "kayoubi",
+  "segments": [
+   {
+    "surface": "火",
+    "reading": "か"
+   },
+   {
+    "surface": "曜",
+    "reading": "よう"
+   },
+   {
+    "surface": "日",
+    "reading": "び"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adv"
+  ],
+  "meanings": {
+   "vi": "thứ Ba",
+   "en": "Tuesday"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "火曜日に日本語の授業があります。",
+    "segments": [
+     {
+      "surface": "火曜日",
+      "reading": "かようび"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "日本語",
+      "reading": "にほんご"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "授業",
+      "reading": "じゅぎょう"
+     },
+     {
+      "surface": "があります。"
+     }
+    ],
+    "romaji": "kayoubi ni nihongo no jugyou ga arimasu.",
+    "translation": {
+     "vi": "Thứ Ba có giờ học tiếng Nhật.",
+     "en": "There is a Japanese class on Tuesday."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-13"
+  ]
+ },
+ {
+  "id": "jmdict-1372190",
+  "surface": "水曜日",
+  "reading": "すいようび",
+  "romaji": "suiyoubi",
+  "segments": [
+   {
+    "surface": "水",
+    "reading": "すい"
+   },
+   {
+    "surface": "曜",
+    "reading": "よう"
+   },
+   {
+    "surface": "日",
+    "reading": "び"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adv"
+  ],
+  "meanings": {
+   "vi": "thứ Tư",
+   "en": "Wednesday"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "水曜日は休みです。",
+    "segments": [
+     {
+      "surface": "水曜日",
+      "reading": "すいようび"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "休",
+      "reading": "やす"
+     },
+     {
+      "surface": "みです。"
+     }
+    ],
+    "romaji": "suiyoubi wa yasumi desu.",
+    "translation": {
+     "vi": "Thứ Tư là ngày nghỉ.",
+     "en": "Wednesday is a day off."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-13"
+  ]
+ },
+ {
+  "id": "jmdict-1534890",
+  "surface": "木曜日",
+  "reading": "もくようび",
+  "romaji": "mokuyoubi",
+  "segments": [
+   {
+    "surface": "木",
+    "reading": "もく"
+   },
+   {
+    "surface": "曜",
+    "reading": "よう"
+   },
+   {
+    "surface": "日",
+    "reading": "び"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adv"
+  ],
+  "meanings": {
+   "vi": "thứ Năm",
+   "en": "Thursday"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "木曜日に図書館へ行きます。",
+    "segments": [
+     {
+      "surface": "木曜日",
+      "reading": "もくようび"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "図書館",
+      "reading": "としょかん"
+     },
+     {
+      "surface": "へ"
+     },
+     {
+      "surface": "行",
+      "reading": "い"
+     },
+     {
+      "surface": "きます。"
+     }
+    ],
+    "romaji": "mokuyoubi ni toshokan e ikimasu.",
+    "translation": {
+     "vi": "Thứ Năm tôi đi thư viện.",
+     "en": "I go to the library on Thursday."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-13"
+  ]
+ },
+ {
+  "id": "jmdict-1243320",
+  "surface": "金曜日",
+  "reading": "きんようび",
+  "romaji": "kin'youbi",
+  "segments": [
+   {
+    "surface": "金",
+    "reading": "きん"
+   },
+   {
+    "surface": "曜",
+    "reading": "よう"
+   },
+   {
+    "surface": "日",
+    "reading": "び"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adv"
+  ],
+  "meanings": {
+   "vi": "thứ Sáu",
+   "en": "Friday"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "金曜日の夜は暇です。",
+    "segments": [
+     {
+      "surface": "金曜日",
+      "reading": "きんようび"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "夜",
+      "reading": "よる"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "暇",
+      "reading": "ひま"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "kin'youbi no yoru wa hima desu.",
+    "translation": {
+     "vi": "Tối thứ Sáu tôi rảnh.",
+     "en": "I am free on Friday evening."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-13"
+  ]
+ },
+ {
+  "id": "jmdict-1445590",
+  "surface": "土曜日",
+  "reading": "どようび",
+  "romaji": "doyoubi",
+  "segments": [
+   {
+    "surface": "土",
+    "reading": "ど"
+   },
+   {
+    "surface": "曜",
+    "reading": "よう"
+   },
+   {
+    "surface": "日",
+    "reading": "び"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adv"
+  ],
+  "meanings": {
+   "vi": "thứ Bảy",
+   "en": "Saturday"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "土曜日に友達と会いました。",
+    "segments": [
+     {
+      "surface": "土曜日",
+      "reading": "どようび"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "友達",
+      "reading": "ともだち"
+     },
+     {
+      "surface": "と"
+     },
+     {
+      "surface": "会",
+      "reading": "あ"
+     },
+     {
+      "surface": "いました。"
+     }
+    ],
+    "romaji": "doyoubi ni tomodachi to aimashita.",
+    "translation": {
+     "vi": "Thứ Bảy tôi đã gặp bạn.",
+     "en": "I met a friend on Saturday."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-13"
+  ]
+ },
+ {
+  "id": "jmdict-1464900",
+  "surface": "日曜日",
+  "reading": "にちようび",
+  "romaji": "nichiyoubi",
+  "segments": [
+   {
+    "surface": "日",
+    "reading": "にち"
+   },
+   {
+    "surface": "曜",
+    "reading": "よう"
+   },
+   {
+    "surface": "日",
+    "reading": "び"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adv"
+  ],
+  "meanings": {
+   "vi": "Chủ nhật",
+   "en": "Sunday"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "日曜日は家で休みます。",
+    "segments": [
+     {
+      "surface": "日曜日",
+      "reading": "にちようび"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "家",
+      "reading": "いえ"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "休",
+      "reading": "やす"
+     },
+     {
+      "surface": "みます。"
+     }
+    ],
+    "romaji": "nichiyoubi wa ie de yasumimasu.",
+    "translation": {
+     "vi": "Chủ nhật tôi nghỉ ở nhà.",
+     "en": "On Sundays I rest at home."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-13"
+  ]
+ },
+ {
+  "id": "japky-nan'youbi",
+  "surface": "何曜日",
+  "reading": "なんようび",
+  "romaji": "nan'youbi",
+  "segments": [
+   {
+    "surface": "何",
+    "reading": "なん"
+   },
+   {
+    "surface": "曜",
+    "reading": "よう"
+   },
+   {
+    "surface": "日",
+    "reading": "び"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [],
+  "meanings": {
+   "vi": "thứ mấy",
+   "en": "what day of the week"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "今日は何曜日ですか。",
+    "segments": [
+     {
+      "surface": "今日",
+      "reading": "きょう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "何曜日",
+      "reading": "なんようび"
+     },
+     {
+      "surface": "ですか。"
+     }
+    ],
+    "romaji": "kyou wa nan'youbi desuka.",
+    "translation": {
+     "vi": "Hôm nay là thứ mấy?",
+     "en": "What day of the week is it today?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-13"
+  ]
+ },
+ {
+  "id": "japky-nangatsu",
+  "surface": "何月",
+  "reading": "なんがつ",
+  "romaji": "nangatsu",
+  "segments": [
+   {
+    "surface": "何",
+    "reading": "なん"
+   },
+   {
+    "surface": "月",
+    "reading": "がつ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [],
+  "meanings": {
+   "vi": "tháng mấy",
+   "en": "what month"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "誕生日は何月ですか。",
+    "segments": [
+     {
+      "surface": "誕生日",
+      "reading": "たんじょうび"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "何月",
+      "reading": "なんがつ"
+     },
+     {
+      "surface": "ですか。"
+     }
+    ],
+    "romaji": "tanjoubi wa nangatsu desuka.",
+    "translation": {
+     "vi": "Sinh nhật bạn là tháng mấy?",
+     "en": "What month is your birthday?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-13"
+  ]
+ },
+ {
+  "id": "jmdict-1289100",
+  "surface": "今月",
+  "reading": "こんげつ",
+  "romaji": "kongetsu",
+  "segments": [
+   {
+    "surface": "今",
+    "reading": "こん"
+   },
+   {
+    "surface": "月",
+    "reading": "げつ"
+   }
+  ],
+  "hanViet": "KIM NGUYỆT",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adv"
+  ],
+  "meanings": {
+   "vi": "tháng này",
+   "en": "this month"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "今月はとても忙しいです。",
+    "segments": [
+     {
+      "surface": "今月",
+      "reading": "こんげつ"
+     },
+     {
+      "surface": "はとても"
+     },
+     {
+      "surface": "忙",
+      "reading": "いそが"
+     },
+     {
+      "surface": "しいです。"
+     }
+    ],
+    "romaji": "kongetsu wa totemo isogashii desu.",
+    "translation": {
+     "vi": "Tháng này tôi rất bận.",
+     "en": "I am very busy this month."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-13"
+  ]
+ },
+ {
+  "id": "jmdict-1547900",
+  "surface": "来月",
+  "reading": "らいげつ",
+  "romaji": "raigetsu",
+  "segments": [
+   {
+    "surface": "来",
+    "reading": "らい"
+   },
+   {
+    "surface": "月",
+    "reading": "げつ"
+   }
+  ],
+  "hanViet": "LAI NGUYỆT",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adv"
+  ],
+  "meanings": {
+   "vi": "tháng sau",
+   "en": "next month"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "来月日本へ行きます。",
+    "segments": [
+     {
+      "surface": "来月",
+      "reading": "らいげつ"
+     },
+     {
+      "surface": "日本",
+      "reading": "にほん"
+     },
+     {
+      "surface": "へ"
+     },
+     {
+      "surface": "行",
+      "reading": "い"
+     },
+     {
+      "surface": "きます。"
+     }
+    ],
+    "romaji": "raigetsu nihon e ikimasu.",
+    "translation": {
+     "vi": "Tháng sau tôi đi Nhật.",
+     "en": "I am going to Japan next month."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-13"
+  ]
+ },
+ {
+  "id": "jmdict-1387500",
+  "surface": "先月",
+  "reading": "せんげつ",
+  "romaji": "sengetsu",
+  "segments": [
+   {
+    "surface": "先",
+    "reading": "せん"
+   },
+   {
+    "surface": "月",
+    "reading": "げつ"
+   }
+  ],
+  "hanViet": "TIÊN NGUYỆT",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adv"
+  ],
+  "meanings": {
+   "vi": "tháng trước",
+   "en": "last month"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "先月新しい車を買いました。",
+    "segments": [
+     {
+      "surface": "先月",
+      "reading": "せんげつ"
+     },
+     {
+      "surface": "新",
+      "reading": "あたら"
+     },
+     {
+      "surface": "しい"
+     },
+     {
+      "surface": "車",
+      "reading": "くるま"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "買",
+      "reading": "か"
+     },
+     {
+      "surface": "いました。"
+     }
+    ],
+    "romaji": "sengetsu atarashii kuruma o kaimashita.",
+    "translation": {
+     "vi": "Tháng trước tôi đã mua xe mới.",
+     "en": "I bought a new car last month."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-13"
+  ]
+ },
+ {
+  "id": "jmdict-1579130",
+  "surface": "今年",
+  "reading": "ことし",
+  "romaji": "kotoshi",
+  "segments": [
+   {
+    "surface": "今年",
+    "reading": "ことし"
+   }
+  ],
+  "jukujikun": true,
+  "pos": [
+   "n",
+   "adv"
+  ],
+  "meanings": {
+   "vi": "năm nay",
+   "en": "this year"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "今年は雨が多いです。",
+    "segments": [
+     {
+      "surface": "今年",
+      "reading": "ことし"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "雨",
+      "reading": "あめ"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "多",
+      "reading": "おお"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "kotoshi wa ame ga ooi desu.",
+    "translation": {
+     "vi": "Năm nay mưa nhiều.",
+     "en": "There is a lot of rain this year."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-13"
+  ]
+ },
+ {
+  "id": "jmdict-1231690",
+  "surface": "去年",
+  "reading": "きょねん",
+  "romaji": "kyonen",
+  "segments": [
+   {
+    "surface": "去",
+    "reading": "きょ"
+   },
+   {
+    "surface": "年",
+    "reading": "ねん"
+   }
+  ],
+  "hanViet": "KHỨ NIÊN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adv"
+  ],
+  "meanings": {
+   "vi": "năm ngoái",
+   "en": "last year"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "去年大学に入りました。",
+    "segments": [
+     {
+      "surface": "去年",
+      "reading": "きょねん"
+     },
+     {
+      "surface": "大学",
+      "reading": "だいがく"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "入",
+      "reading": "はい"
+     },
+     {
+      "surface": "りました。"
+     }
+    ],
+    "romaji": "kyonen daigaku ni hairimashita.",
+    "translation": {
+     "vi": "Năm ngoái tôi đã vào đại học.",
+     "en": "I entered university last year."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-13"
+  ]
+ },
+ {
+  "id": "jmdict-1548220",
+  "surface": "来年",
+  "reading": "らいねん",
+  "romaji": "rainen",
+  "segments": [
+   {
+    "surface": "来",
+    "reading": "らい"
+   },
+   {
+    "surface": "年",
+    "reading": "ねん"
+   }
+  ],
+  "hanViet": "LAI NIÊN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adv"
+  ],
+  "meanings": {
+   "vi": "năm sau",
+   "en": "next year"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "来年結婚します。",
+    "segments": [
+     {
+      "surface": "来年",
+      "reading": "らいねん"
+     },
+     {
+      "surface": "結婚",
+      "reading": "けっこん"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "rainen kekkon shimasu.",
+    "translation": {
+     "vi": "Năm sau tôi sẽ kết hôn.",
+     "en": "I am getting married next year."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-13"
+  ]
+ },
+ {
+  "id": "jmdict-1419110",
+  "surface": "誕生日",
+  "reading": "たんじょうび",
+  "romaji": "tanjoubi",
+  "segments": [
+   {
+    "surface": "誕",
+    "reading": "たん"
+   },
+   {
+    "surface": "生",
+    "reading": "じょう"
+   },
+   {
+    "surface": "日",
+    "reading": "び"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "sinh nhật",
+   "en": "birthday"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "誕生日おめでとうございます。",
+    "segments": [
+     {
+      "surface": "誕生日",
+      "reading": "たんじょうび"
+     },
+     {
+      "surface": "おめでとうございます。"
+     }
+    ],
+    "romaji": "tanjoubi omedetou gozaimasu.",
+    "translation": {
+     "vi": "Chúc mừng sinh nhật.",
+     "en": "Happy birthday."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-13"
+  ]
+ },
+ {
+  "id": "jmdict-1227500",
+  "surface": "休み",
+  "reading": "やすみ",
+  "romaji": "yasumi",
+  "segments": [
+   {
+    "surface": "休",
+    "reading": "やす"
+   },
+   {
+    "surface": "み"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "ngày nghỉ; kỳ nghỉ",
+   "en": "rest; recess; respite"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "明日は休みです。",
+    "segments": [
+     {
+      "surface": "明日",
+      "reading": "あした"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "休",
+      "reading": "やす"
+     },
+     {
+      "surface": "みです。"
+     }
+    ],
+    "romaji": "ashita wa yasumi desu.",
+    "translation": {
+     "vi": "Ngày mai là ngày nghỉ.",
+     "en": "Tomorrow is a day off."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-13"
+  ]
+ },
+ {
+  "id": "jmdict-1447440",
+  "surface": "東",
+  "reading": "ひがし",
+  "romaji": "higashi",
+  "segments": [
+   {
+    "surface": "東",
+    "reading": "ひがし"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "phía đông",
+   "en": "east"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "駅の東に公園があります。",
+    "segments": [
+     {
+      "surface": "駅",
+      "reading": "えき"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "東",
+      "reading": "ひがし"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "公園",
+      "reading": "こうえん"
+     },
+     {
+      "surface": "があります。"
+     }
+    ],
+    "romaji": "eki no higashi ni kouen ga arimasu.",
+    "translation": {
+     "vi": "Phía đông nhà ga có công viên.",
+     "en": "There is a park to the east of the station."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-14"
+  ]
+ },
+ {
+  "id": "jmdict-1380840",
+  "surface": "西",
+  "reading": "にし",
+  "romaji": "nishi",
+  "segments": [
+   {
+    "surface": "西",
+    "reading": "にし"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "phía tây",
+   "en": "west"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "西の空が赤いです。",
+    "segments": [
+     {
+      "surface": "西",
+      "reading": "にし"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "空",
+      "reading": "そら"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "赤",
+      "reading": "あか"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "nishi no sora ga akai desu.",
+    "translation": {
+     "vi": "Bầu trời phía tây màu đỏ.",
+     "en": "The western sky is red."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-14"
+  ]
+ },
+ {
+  "id": "jmdict-1459870",
+  "surface": "南",
+  "reading": "みなみ",
+  "romaji": "minami",
+  "segments": [
+   {
+    "surface": "南",
+    "reading": "みなみ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "phía nam",
+   "en": "south"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "私の国の南は暑いです。",
+    "segments": [
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "国",
+      "reading": "くに"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "南",
+      "reading": "みなみ"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "暑",
+      "reading": "あつ"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "watashi no kuni no minami wa atsui desu.",
+    "translation": {
+     "vi": "Miền nam nước tôi nóng.",
+     "en": "The south of my country is hot."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-14"
+  ]
+ },
+ {
+  "id": "jmdict-1520670",
+  "surface": "北",
+  "reading": "きた",
+  "romaji": "kita",
+  "segments": [
+   {
+    "surface": "北",
+    "reading": "きた"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "phía bắc",
+   "en": "north"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "北の町は冬が寒いです。",
+    "segments": [
+     {
+      "surface": "北",
+      "reading": "きた"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "町",
+      "reading": "まち"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "冬",
+      "reading": "ふゆ"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "寒",
+      "reading": "さむ"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "kita no machi wa fuyu ga samui desu.",
+    "translation": {
+     "vi": "Thị trấn phía bắc mùa đông lạnh.",
+     "en": "Winters are cold in the northern towns."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-14"
+  ]
+ },
+ {
+  "id": "jmdict-1454080",
+  "surface": "道",
+  "reading": "みち",
+  "romaji": "michi",
+  "segments": [
+   {
+    "surface": "道",
+    "reading": "みち"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "con đường",
+   "en": "road; path; street"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "この道は広いです。",
+    "segments": [
+     {
+      "surface": "この"
+     },
+     {
+      "surface": "道",
+      "reading": "みち"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "広",
+      "reading": "ひろ"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "kono michi wa hiroi desu.",
+    "translation": {
+     "vi": "Con đường này rộng.",
+     "en": "This road is wide."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-14"
+  ]
+ },
+ {
+  "id": "jmdict-1206110",
+  "surface": "角",
+  "reading": "かど",
+  "romaji": "kado",
+  "segments": [
+   {
+    "surface": "角",
+    "reading": "かど"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "góc (đường, phố)",
+   "en": "corner; edge"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "角に銀行があります。",
+    "segments": [
+     {
+      "surface": "角",
+      "reading": "かど"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "銀行",
+      "reading": "ぎんこう"
+     },
+     {
+      "surface": "があります。"
+     }
+    ],
+    "romaji": "kado ni ginkou ga arimasu.",
+    "translation": {
+     "vi": "Ở góc đường có ngân hàng.",
+     "en": "There is a bank on the corner."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-14"
+  ]
+ },
+ {
+  "id": "jmdict-1359240",
+  "surface": "信号",
+  "reading": "しんごう",
+  "romaji": "shingou",
+  "segments": [
+   {
+    "surface": "信",
+    "reading": "しん"
+   },
+   {
+    "surface": "号",
+    "reading": "ごう"
+   }
+  ],
+  "hanViet": "TÍN HIỆU",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "đèn giao thông",
+   "en": "signal; signalling; signaling"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "次の信号を右へ曲がります。",
+    "segments": [
+     {
+      "surface": "次",
+      "reading": "つぎ"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "信号",
+      "reading": "しんごう"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "右",
+      "reading": "みぎ"
+     },
+     {
+      "surface": "へ"
+     },
+     {
+      "surface": "曲",
+      "reading": "ま"
+     },
+     {
+      "surface": "がります。"
+     }
+    ],
+    "romaji": "tsugi no shingou o migi e magarimasu.",
+    "translation": {
+     "vi": "Đến đèn giao thông tiếp theo thì rẽ phải.",
+     "en": "Turn right at the next traffic light."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-14"
+  ]
+ },
+ {
+  "id": "jmdict-1237410",
+  "surface": "橋",
+  "reading": "はし",
+  "romaji": "hashi",
+  "segments": [
+   {
+    "surface": "橋",
+    "reading": "はし"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "cây cầu",
+   "en": "bridge"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "川に古い橋があります。",
+    "segments": [
+     {
+      "surface": "川",
+      "reading": "かわ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "古",
+      "reading": "ふる"
+     },
+     {
+      "surface": "い"
+     },
+     {
+      "surface": "橋",
+      "reading": "はし"
+     },
+     {
+      "surface": "があります。"
+     }
+    ],
+    "romaji": "kawa ni furui hashi ga arimasu.",
+    "translation": {
+     "vi": "Trên sông có cây cầu cũ.",
+     "en": "There is an old bridge over the river."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-14"
+  ]
+ },
+ {
+  "id": "jmdict-1421290",
+  "surface": "地図",
+  "reading": "ちず",
+  "romaji": "chizu",
+  "segments": [
+   {
+    "surface": "地",
+    "reading": "ち"
+   },
+   {
+    "surface": "図",
+    "reading": "ず"
+   }
+  ],
+  "hanViet": "ĐỊA ĐỒ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "bản đồ",
+   "en": "map; atlas; chart"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "地図を見ませんか。",
+    "segments": [
+     {
+      "surface": "地図",
+      "reading": "ちず"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "見",
+      "reading": "み"
+     },
+     {
+      "surface": "ませんか。"
+     }
+    ],
+    "romaji": "chizu o mimasen ka.",
+    "translation": {
+     "vi": "Mình xem bản đồ không?",
+     "en": "Shall we look at the map?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-14"
+  ]
+ },
+ {
+  "id": "jmdict-1580600",
+  "surface": "まっすぐ",
+  "reading": "まっすぐ",
+  "romaji": "massugu",
+  "segments": [
+   {
+    "surface": "まっすぐ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-na",
+   "adv",
+   "n"
+  ],
+  "meanings": {
+   "vi": "thẳng",
+   "en": "straight (ahead); direct; upright"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "この道をまっすぐ行きます。",
+    "segments": [
+     {
+      "surface": "この"
+     },
+     {
+      "surface": "道",
+      "reading": "みち"
+     },
+     {
+      "surface": "をまっすぐ"
+     },
+     {
+      "surface": "行",
+      "reading": "い"
+     },
+     {
+      "surface": "きます。"
+     }
+    ],
+    "romaji": "kono michi o massugu ikimasu.",
+    "translation": {
+     "vi": "Đi thẳng con đường này.",
+     "en": "Go straight along this road."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-14"
+  ]
+ },
+ {
+  "id": "jmdict-1239730",
+  "surface": "曲がる",
+  "reading": "まがる",
+  "romaji": "magaru",
+  "segments": [
+   {
+    "surface": "曲",
+    "reading": "ま"
+   },
+   {
+    "surface": "がる"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v5r",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "rẽ, quẹo",
+   "en": "to bend; to curve; to warp"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "二つ目の角を左へ曲がります。",
+    "segments": [
+     {
+      "surface": "二",
+      "reading": "ふた"
+     },
+     {
+      "surface": "つ"
+     },
+     {
+      "surface": "目",
+      "reading": "め"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "角",
+      "reading": "かど"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "左",
+      "reading": "ひだり"
+     },
+     {
+      "surface": "へ"
+     },
+     {
+      "surface": "曲",
+      "reading": "ま"
+     },
+     {
+      "surface": "がります。"
+     }
+    ],
+    "romaji": "futatsu me no kado o hidari e magarimasu.",
+    "translation": {
+     "vi": "Rẽ trái ở góc thứ hai.",
+     "en": "Turn left at the second corner."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-14"
+  ]
+ },
+ {
+  "id": "jmdict-1444680",
+  "surface": "渡る",
+  "reading": "わたる",
+  "romaji": "wataru",
+  "segments": [
+   {
+    "surface": "渡",
+    "reading": "わた"
+   },
+   {
+    "surface": "る"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v5r",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "đi qua, băng qua",
+   "en": "to cross over; to go across"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "橋を渡ります。",
+    "segments": [
+     {
+      "surface": "橋",
+      "reading": "はし"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "渡",
+      "reading": "わた"
+     },
+     {
+      "surface": "ります。"
+     }
+    ],
+    "romaji": "hashi o watarimasu.",
+    "translation": {
+     "vi": "Đi qua cầu.",
+     "en": "Cross the bridge."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-14"
+  ]
+ },
+ {
+  "id": "jmdict-1236900",
+  "surface": "教える",
+  "reading": "おしえる",
+  "romaji": "oshieru",
+  "segments": [
+   {
+    "surface": "教",
+    "reading": "おし"
+   },
+   {
+    "surface": "える"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v1",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "dạy; chỉ cho",
+   "en": "to teach; to instruct"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "先生は英語を教えます。",
+    "segments": [
+     {
+      "surface": "先生",
+      "reading": "せんせい"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "英語",
+      "reading": "えいご"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "教",
+      "reading": "おし"
+     },
+     {
+      "surface": "えます。"
+     }
+    ],
+    "romaji": "sensei wa eigo o oshiemasu.",
+    "translation": {
+     "vi": "Thầy giáo dạy tiếng Anh.",
+     "en": "The teacher teaches English."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-14"
+  ]
+ },
+ {
+  "id": "jmdict-1242160",
+  "surface": "近く",
+  "reading": "ちかく",
+  "romaji": "chikaku",
+  "segments": [
+   {
+    "surface": "近",
+    "reading": "ちか"
+   },
+   {
+    "surface": "く"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adj-no",
+   "adv"
+  ],
+  "meanings": {
+   "vi": "gần đây, chỗ gần",
+   "en": "near; neighbourhood; neighborhood"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "駅の近くに店が多いです。",
+    "segments": [
+     {
+      "surface": "駅",
+      "reading": "えき"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "近",
+      "reading": "ちか"
+     },
+     {
+      "surface": "くに"
+     },
+     {
+      "surface": "店",
+      "reading": "みせ"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "多",
+      "reading": "おお"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "eki no chikaku ni mise ga ooi desu.",
+    "translation": {
+     "vi": "Gần nhà ga có nhiều cửa hàng.",
+     "en": "There are many shops near the station."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-14"
+  ]
+ },
+ {
+  "id": "jmdict-1555830",
+  "surface": "隣",
+  "reading": "となり",
+  "romaji": "tonari",
+  "segments": [
+   {
+    "surface": "隣",
+    "reading": "となり"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-no",
+   "n"
+  ],
+  "meanings": {
+   "vi": "bên cạnh",
+   "en": "next (to); adjoining; adjacent"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "銀行の隣は本屋です。",
+    "segments": [
+     {
+      "surface": "銀行",
+      "reading": "ぎんこう"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "隣",
+      "reading": "となり"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "本屋",
+      "reading": "ほんや"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "ginkou no tonari wa hon'ya desu.",
+    "translation": {
+     "vi": "Bên cạnh ngân hàng là hiệu sách.",
+     "en": "Next to the bank is a bookshop."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-14"
+  ]
+ },
+ {
+  "id": "jmdict-1410590",
+  "surface": "待つ",
+  "reading": "まつ",
+  "romaji": "matsu",
+  "segments": [
+   {
+    "surface": "待",
+    "reading": "ま"
+   },
+   {
+    "surface": "つ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v5t",
+   "vt",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "đợi, chờ",
+   "en": "to wait"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "駅で友達を待ちます。",
+    "segments": [
+     {
+      "surface": "駅",
+      "reading": "えき"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "友達",
+      "reading": "ともだち"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "待",
+      "reading": "ま"
+     },
+     {
+      "surface": "ちます。"
+     }
+    ],
+    "romaji": "eki de tomodachi o machimasu.",
+    "translation": {
+     "vi": "Tôi đợi bạn ở nhà ga.",
+     "en": "I wait for my friend at the station."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-14"
+  ]
+ },
+ {
+  "id": "jmdict-1338240",
+  "surface": "出る",
+  "reading": "でる",
+  "romaji": "deru",
+  "segments": [
+   {
+    "surface": "出",
+    "reading": "で"
+   },
+   {
+    "surface": "る"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v1",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "ra, ra khỏi",
+   "en": "to leave; to exit; to go out"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "七時に家を出ます。",
+    "segments": [
+     {
+      "surface": "七時",
+      "reading": "しちじ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "家",
+      "reading": "いえ"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "出",
+      "reading": "で"
+     },
+     {
+      "surface": "ます。"
+     }
+    ],
+    "romaji": "shichiji ni ie o demasu.",
+    "translation": {
+     "vi": "Tôi ra khỏi nhà lúc 7 giờ.",
+     "en": "I leave home at seven."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-15"
+  ]
+ },
+ {
+  "id": "jmdict-1465590",
+  "surface": "入る",
+  "reading": "はいる",
+  "romaji": "hairu",
+  "segments": [
+   {
+    "surface": "入",
+    "reading": "はい"
+   },
+   {
+    "surface": "る"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v5r",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "vào",
+   "en": "to enter; to come in; to go in"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "部屋に入ります。",
+    "segments": [
+     {
+      "surface": "部屋",
+      "reading": "へや"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "入",
+      "reading": "はい"
+     },
+     {
+      "surface": "ります。"
+     }
+    ],
+    "romaji": "heya ni hairimasu.",
+    "translation": {
+     "vi": "Tôi vào phòng.",
+     "en": "I go into the room."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-15"
+  ]
+ },
+ {
+  "id": "jmdict-1597040",
+  "surface": "立つ",
+  "reading": "たつ",
+  "romaji": "tatsu",
+  "segments": [
+   {
+    "surface": "立",
+    "reading": "た"
+   },
+   {
+    "surface": "つ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v5t",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "đứng",
+   "en": "to stand (up); to rise; to get to one's feet"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "駅の前に男の人が立っています。",
+    "segments": [
+     {
+      "surface": "駅",
+      "reading": "えき"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "前",
+      "reading": "まえ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "男",
+      "reading": "おとこ"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "人",
+      "reading": "ひと"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "立",
+      "reading": "た"
+     },
+     {
+      "surface": "っています。"
+     }
+    ],
+    "romaji": "eki no mae ni otokonohito ga tatte imasu.",
+    "translation": {
+     "vi": "Có người đàn ông đang đứng trước nhà ga.",
+     "en": "A man is standing in front of the station."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-15"
+  ]
+ },
+ {
+  "id": "jmdict-1291800",
+  "surface": "座る",
+  "reading": "すわる",
+  "romaji": "suwaru",
+  "segments": [
+   {
+    "surface": "座",
+    "reading": "すわ"
+   },
+   {
+    "surface": "る"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v5r",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "ngồi",
+   "en": "to sit (down); to have a seat; to be seated"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "椅子に座ります。",
+    "segments": [
+     {
+      "surface": "椅子",
+      "reading": "いす"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "座",
+      "reading": "すわ"
+     },
+     {
+      "surface": "ります。"
+     }
+    ],
+    "romaji": "isu ni suwarimasu.",
+    "translation": {
+     "vi": "Tôi ngồi xuống ghế.",
+     "en": "I sit on the chair."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-15"
+  ]
+ },
+ {
+  "id": "jmdict-1334040",
+  "surface": "住む",
+  "reading": "すむ",
+  "romaji": "sumu",
+  "segments": [
+   {
+    "surface": "住",
+    "reading": "す"
+   },
+   {
+    "surface": "む"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v5m",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "sống, cư trú",
+   "en": "to live (of humans); to reside; to inhabit"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "兄は大阪に住んでいます。",
+    "segments": [
+     {
+      "surface": "兄",
+      "reading": "あに"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "大阪",
+      "reading": "おおさか"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "住",
+      "reading": "す"
+     },
+     {
+      "surface": "んでいます。"
+     }
+    ],
+    "romaji": "ani wa oosaka ni sunde imasu.",
+    "translation": {
+     "vi": "Anh trai tôi sống ở Osaka.",
+     "en": "My older brother lives in Osaka."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-15"
+  ]
+ },
+ {
+  "id": "jmdict-1420470",
+  "surface": "知る",
+  "reading": "しる",
+  "romaji": "shiru",
+  "segments": [
+   {
+    "surface": "知",
+    "reading": "し"
+   },
+   {
+    "surface": "る"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v5r",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "biết",
+   "en": "to know; to be aware (of); to be conscious (of)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "私はあの人を知っています。",
+    "segments": [
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "はあの"
+     },
+     {
+      "surface": "人",
+      "reading": "ひと"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "知",
+      "reading": "し"
+     },
+     {
+      "surface": "っています。"
+     }
+    ],
+    "romaji": "watashi wa ano hito o shitte imasu.",
+    "translation": {
+     "vi": "Tôi biết người đó.",
+     "en": "I know that person."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-15"
+  ]
+ },
+ {
+  "id": "jmdict-1423000",
+  "surface": "着る",
+  "reading": "きる",
+  "romaji": "kiru",
+  "segments": [
+   {
+    "surface": "着",
+    "reading": "き"
+   },
+   {
+    "surface": "る"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v1",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "mặc (áo)",
+   "en": "to wear (from the shoulders down); to put on"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "今日は新しいシャツを着ます。",
+    "segments": [
+     {
+      "surface": "今日",
+      "reading": "きょう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "新",
+      "reading": "あたら"
+     },
+     {
+      "surface": "しいシャツを"
+     },
+     {
+      "surface": "着",
+      "reading": "き"
+     },
+     {
+      "surface": "ます。"
+     }
+    ],
+    "romaji": "kyou wa atarashii shatsu o kimasu.",
+    "translation": {
+     "vi": "Hôm nay tôi mặc áo sơ mi mới.",
+     "en": "Today I will wear a new shirt."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-15"
+  ]
+ },
+ {
+  "id": "jmdict-1315720",
+  "surface": "持つ",
+  "reading": "もつ",
+  "romaji": "motsu",
+  "segments": [
+   {
+    "surface": "持",
+    "reading": "も"
+   },
+   {
+    "surface": "つ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v5t",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "cầm, mang; có",
+   "en": "to hold (in one's hand); to take; to carry"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "傘を持っていますか。",
+    "segments": [
+     {
+      "surface": "傘",
+      "reading": "かさ"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "持",
+      "reading": "も"
+     },
+     {
+      "surface": "っていますか。"
+     }
+    ],
+    "romaji": "kasa o motte imasuka.",
+    "translation": {
+     "vi": "Bạn có mang ô không?",
+     "en": "Do you have an umbrella with you?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-15"
+  ]
+ },
+ {
+  "id": "jmdict-1305990",
+  "surface": "使う",
+  "reading": "つかう",
+  "romaji": "tsukau",
+  "segments": [
+   {
+    "surface": "使",
+    "reading": "つか"
+   },
+   {
+    "surface": "う"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v5u",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "dùng, sử dụng",
+   "en": "to use (a tool, method, etc.); to make use of; to put to use"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "このパソコンを使います。",
+    "segments": [
+     {
+      "surface": "このパソコンを"
+     },
+     {
+      "surface": "使",
+      "reading": "つか"
+     },
+     {
+      "surface": "います。"
+     }
+    ],
+    "romaji": "kono pasokon o tsukaimasu.",
+    "translation": {
+     "vi": "Tôi dùng cái máy tính này.",
+     "en": "I use this computer."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-15"
+  ]
+ },
+ {
+  "id": "jmdict-1597890",
+  "surface": "作る",
+  "reading": "つくる",
+  "romaji": "tsukuru",
+  "segments": [
+   {
+    "surface": "作",
+    "reading": "つく"
+   },
+   {
+    "surface": "る"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v5r",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "làm, chế tạo; nấu",
+   "en": "to make; to produce; to manufacture"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "母が晩ご飯を作ります。",
+    "segments": [
+     {
+      "surface": "母",
+      "reading": "はは"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "晩",
+      "reading": "ばん"
+     },
+     {
+      "surface": "ご"
+     },
+     {
+      "surface": "飯",
+      "reading": "はん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "作",
+      "reading": "つく"
+     },
+     {
+      "surface": "ります。"
+     }
+    ],
+    "romaji": "haha ga bangohan o tsukurimasu.",
+    "translation": {
+     "vi": "Mẹ nấu bữa tối.",
+     "en": "My mother makes dinner."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-15"
+  ]
+ },
+ {
+  "id": "jmdict-1202450",
+  "surface": "開ける",
+  "reading": "あける",
+  "romaji": "akeru",
+  "segments": [
+   {
+    "surface": "開",
+    "reading": "あ"
+   },
+   {
+    "surface": "ける"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v1",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "mở",
+   "en": "to open (a door, etc.); to unwrap (e.g. parcel, package); to unlock"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "窓を開けます。",
+    "segments": [
+     {
+      "surface": "窓",
+      "reading": "まど"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "開",
+      "reading": "あ"
+     },
+     {
+      "surface": "けます。"
+     }
+    ],
+    "romaji": "mado o akemasu.",
+    "translation": {
+     "vi": "Tôi mở cửa sổ.",
+     "en": "I open the window."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-15"
+  ]
+ },
+ {
+  "id": "jmdict-1508590",
+  "surface": "閉める",
+  "reading": "しめる",
+  "romaji": "shimeru",
+  "segments": [
+   {
+    "surface": "閉",
+    "reading": "し"
+   },
+   {
+    "surface": "める"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v1",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "đóng",
+   "en": "to close; to shut"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "ドアを閉めます。",
+    "segments": [
+     {
+      "surface": "ドアを"
+     },
+     {
+      "surface": "閉",
+      "reading": "し"
+     },
+     {
+      "surface": "めます。"
+     }
+    ],
+    "romaji": "doa o shimemasu.",
+    "translation": {
+     "vi": "Tôi đóng cửa.",
+     "en": "I close the door."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-15"
+  ]
+ },
+ {
+  "id": "jmdict-1282790",
+  "surface": "降る",
+  "reading": "ふる",
+  "romaji": "furu",
+  "segments": [
+   {
+    "surface": "降",
+    "reading": "ふ"
+   },
+   {
+    "surface": "る"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v5r",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "rơi (mưa, tuyết)",
+   "en": "to fall (of rain, snow, ash, etc.); to come down"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "雨が降っています。",
+    "segments": [
+     {
+      "surface": "雨",
+      "reading": "あめ"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "降",
+      "reading": "ふ"
+     },
+     {
+      "surface": "っています。"
+     }
+    ],
+    "romaji": "ame ga futte imasu.",
+    "translation": {
+     "vi": "Trời đang mưa.",
+     "en": "It is raining."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-15"
+  ]
+ },
+ {
+  "id": "jmdict-1390930",
+  "surface": "洗う",
+  "reading": "あらう",
+  "romaji": "arau",
+  "segments": [
+   {
+    "surface": "洗",
+    "reading": "あら"
+   },
+   {
+    "surface": "う"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v5u",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "rửa, giặt",
+   "en": "to wash; to cleanse; to rinse"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "手を洗います。",
+    "segments": [
+     {
+      "surface": "手",
+      "reading": "て"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "洗",
+      "reading": "あら"
+     },
+     {
+      "surface": "います。"
+     }
+    ],
+    "romaji": "te o araimasu.",
+    "translation": {
+     "vi": "Tôi rửa tay.",
+     "en": "I wash my hands."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-15"
+  ]
+ },
+ {
+  "id": "jmdict-1399790-suru",
+  "surface": "掃除する",
+  "reading": "そうじする",
+  "romaji": "soujisuru",
+  "segments": [
+   {
+    "surface": "掃",
+    "reading": "そう"
+   },
+   {
+    "surface": "除",
+    "reading": "じ"
+   },
+   {
+    "surface": "する"
+   }
+  ],
+  "hanViet": "TẢO TRỪ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "vs"
+  ],
+  "meanings": {
+   "vi": "dọn dẹp, quét dọn",
+   "en": "cleaning; sweeping; dusting"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "日曜日に部屋を掃除します。",
+    "segments": [
+     {
+      "surface": "日曜日",
+      "reading": "にちようび"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "部屋",
+      "reading": "へや"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "掃除",
+      "reading": "そうじ"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "nichiyoubi ni heya o souji shimasu.",
+    "translation": {
+     "vi": "Chủ nhật tôi dọn phòng.",
+     "en": "I clean my room on Sunday."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-15"
+  ]
+ },
+ {
+  "id": "jmdict-1577670",
+  "surface": "眼鏡",
+  "reading": "めがね",
+  "romaji": "megane",
+  "segments": [
+   {
+    "surface": "眼鏡",
+    "reading": "めがね"
+   }
+  ],
+  "jukujikun": true,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "kính (đeo mắt)",
+   "en": "glasses; eyeglasses; spectacles"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "父は眼鏡をかけています。",
+    "segments": [
+     {
+      "surface": "父",
+      "reading": "ちち"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "眼鏡",
+      "reading": "めがね"
+     },
+     {
+      "surface": "をかけています。"
+     }
+    ],
+    "romaji": "chichi wa megane o kakete imasu.",
+    "translation": {
+     "vi": "Bố tôi đeo kính.",
+     "en": "My father wears glasses."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-15"
+  ]
+ },
+ {
+  "id": "jmdict-1519170",
+  "surface": "帽子",
+  "reading": "ぼうし",
+  "romaji": "boushi",
+  "segments": [
+   {
+    "surface": "帽",
+    "reading": "ぼう"
+   },
+   {
+    "surface": "子",
+    "reading": "し"
+   }
+  ],
+  "hanViet": "MẠO TỬ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "mũ",
+   "en": "hat; cap"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "弟は赤い帽子をかぶっています。",
+    "segments": [
+     {
+      "surface": "弟",
+      "reading": "おとうと"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "赤",
+      "reading": "あか"
+     },
+     {
+      "surface": "い"
+     },
+     {
+      "surface": "帽子",
+      "reading": "ぼうし"
+     },
+     {
+      "surface": "をかぶっています。"
+     }
+    ],
+    "romaji": "otouto wa akai boushi o kabutte imasu.",
+    "translation": {
+     "vi": "Em trai tôi đang đội mũ đỏ.",
+     "en": "My younger brother is wearing a red cap."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-15"
+  ]
+ },
+ {
+  "id": "jmdict-1578010",
+  "surface": "魚",
+  "reading": "さかな",
+  "romaji": "sakana",
+  "segments": [
+   {
+    "surface": "魚",
+    "reading": "さかな"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "cá",
+   "en": "fish"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "私は魚が好きです。",
+    "segments": [
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "魚",
+      "reading": "さかな"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "好",
+      "reading": "す"
+     },
+     {
+      "surface": "きです。"
+     }
+    ],
+    "romaji": "watashi wa sakana ga suki desu.",
+    "translation": {
+     "vi": "Tôi thích cá.",
+     "en": "I like fish."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-16"
+  ]
+ },
+ {
+  "id": "jmdict-1463520",
+  "surface": "肉",
+  "reading": "にく",
+  "romaji": "niku",
+  "segments": [
+   {
+    "surface": "肉",
+    "reading": "にく"
+   }
+  ],
+  "hanViet": "NHỤC",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "thịt",
+   "en": "flesh"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "スーパーで肉を買いました。",
+    "segments": [
+     {
+      "surface": "スーパーで"
+     },
+     {
+      "surface": "肉",
+      "reading": "にく"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "買",
+      "reading": "か"
+     },
+     {
+      "surface": "いました。"
+     }
+    ],
+    "romaji": "suupaa de niku o kaimashita.",
+    "translation": {
+     "vi": "Tôi đã mua thịt ở siêu thị.",
+     "en": "I bought meat at the supermarket."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-16"
+  ]
+ },
+ {
+  "id": "jmdict-1537370",
+  "surface": "野菜",
+  "reading": "やさい",
+  "romaji": "yasai",
+  "segments": [
+   {
+    "surface": "野",
+    "reading": "や"
+   },
+   {
+    "surface": "菜",
+    "reading": "さい"
+   }
+  ],
+  "hanViet": "DÃ THÁI",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "rau",
+   "en": "vegetable"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "毎日野菜を食べます。",
+    "segments": [
+     {
+      "surface": "毎日",
+      "reading": "まいにち"
+     },
+     {
+      "surface": "野菜",
+      "reading": "やさい"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "食",
+      "reading": "た"
+     },
+     {
+      "surface": "べます。"
+     }
+    ],
+    "romaji": "mainichi yasai o tabemasu.",
+    "translation": {
+     "vi": "Ngày nào tôi cũng ăn rau.",
+     "en": "I eat vegetables every day."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-16"
+  ]
+ },
+ {
+  "id": "jmdict-1193060",
+  "surface": "果物",
+  "reading": "くだもの",
+  "romaji": "kudamono",
+  "segments": [
+   {
+    "surface": "果物",
+    "reading": "くだもの"
+   }
+  ],
+  "jukujikun": true,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "hoa quả, trái cây",
+   "en": "fruit"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "ベトナムの果物は美味しいです。",
+    "segments": [
+     {
+      "surface": "ベトナムの"
+     },
+     {
+      "surface": "果物",
+      "reading": "くだもの"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "美味",
+      "reading": "おい"
+     },
+     {
+      "surface": "しいです。"
+     }
+    ],
+    "romaji": "betonamu no kudamono wa oishii desu.",
+    "translation": {
+     "vi": "Hoa quả Việt Nam ngon.",
+     "en": "Vietnamese fruit is delicious."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-16"
+  ]
+ },
+ {
+  "id": "jmdict-1549140",
+  "surface": "卵",
+  "reading": "たまご",
+  "romaji": "tamago",
+  "segments": [
+   {
+    "surface": "卵",
+    "reading": "たまご"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "trứng",
+   "en": "eggs; egg; spawn"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "朝ご飯に卵を食べました。",
+    "segments": [
+     {
+      "surface": "朝",
+      "reading": "あさ"
+     },
+     {
+      "surface": "ご"
+     },
+     {
+      "surface": "飯",
+      "reading": "はん"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "卵",
+      "reading": "たまご"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "食",
+      "reading": "た"
+     },
+     {
+      "surface": "べました。"
+     }
+    ],
+    "romaji": "asagohan ni tamago o tabemashita.",
+    "translation": {
+     "vi": "Bữa sáng tôi đã ăn trứng.",
+     "en": "I had eggs for breakfast."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-16"
+  ]
+ },
+ {
+  "id": "jmdict-1231590",
+  "surface": "牛乳",
+  "reading": "ぎゅうにゅう",
+  "romaji": "gyuunyuu",
+  "segments": [
+   {
+    "surface": "牛",
+    "reading": "ぎゅう"
+   },
+   {
+    "surface": "乳",
+    "reading": "にゅう"
+   }
+  ],
+  "hanViet": "NGƯU NHŨ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "sữa bò",
+   "en": "(cow's) milk"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "冷蔵庫に牛乳があります。",
+    "segments": [
+     {
+      "surface": "冷蔵庫",
+      "reading": "れいぞうこ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "牛乳",
+      "reading": "ぎゅうにゅう"
+     },
+     {
+      "surface": "があります。"
+     }
+    ],
+    "romaji": "reizouko ni gyuunyuu ga arimasu.",
+    "translation": {
+     "vi": "Trong tủ lạnh có sữa.",
+     "en": "There is milk in the fridge."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-16"
+  ]
+ },
+ {
+  "id": "jmdict-1002430",
+  "surface": "お茶",
+  "reading": "おちゃ",
+  "romaji": "ocha",
+  "segments": [
+   {
+    "surface": "お"
+   },
+   {
+    "surface": "茶",
+    "reading": "ちゃ"
+   }
+  ],
+  "hanViet": "TRÀ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "trà",
+   "en": "tea (esp. green or barley)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "お茶を一杯どうぞ。",
+    "segments": [
+     {
+      "surface": "お"
+     },
+     {
+      "surface": "茶",
+      "reading": "ちゃ"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "一杯",
+      "reading": "いっぱい"
+     },
+     {
+      "surface": "どうぞ。"
+     }
+    ],
+    "romaji": "ocha o ippai douzo.",
+    "translation": {
+     "vi": "Mời anh một chén trà.",
+     "en": "Please have a cup of tea."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-16"
+  ]
+ },
+ {
+  "id": "jmdict-1103090",
+  "surface": "パン",
+  "reading": "パン",
+  "romaji": "pan",
+  "segments": [
+   {
+    "surface": "パン"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "bánh mì",
+   "en": "bread; (sweet) pastry"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "朝はいつもパンです。",
+    "segments": [
+     {
+      "surface": "朝",
+      "reading": "あさ"
+     },
+     {
+      "surface": "はいつもパンです。"
+     }
+    ],
+    "romaji": "asa wa itsumo pan desu.",
+    "translation": {
+     "vi": "Buổi sáng tôi luôn ăn bánh mì.",
+     "en": "I always have bread in the morning."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-16"
+  ]
+ },
+ {
+  "id": "jmdict-1270590",
+  "surface": "ご飯",
+  "reading": "ごはん",
+  "romaji": "gohan",
+  "segments": [
+   {
+    "surface": "ご"
+   },
+   {
+    "surface": "飯",
+    "reading": "はん"
+   }
+  ],
+  "hanViet": "PHẠN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "cơm; bữa ăn",
+   "en": "cooked rice"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "ご飯を食べましょう。",
+    "segments": [
+     {
+      "surface": "ご"
+     },
+     {
+      "surface": "飯",
+      "reading": "はん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "食",
+      "reading": "た"
+     },
+     {
+      "surface": "べましょう。"
+     }
+    ],
+    "romaji": "gohan o tabemashou.",
+    "translation": {
+     "vi": "Mình ăn cơm thôi.",
+     "en": "Let’s eat."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-16"
+  ]
+ },
+ {
+  "id": "jmdict-1001710",
+  "surface": "お菓子",
+  "reading": "おかし",
+  "romaji": "okashi",
+  "segments": [
+   {
+    "surface": "お"
+   },
+   {
+    "surface": "菓",
+    "reading": "か"
+   },
+   {
+    "surface": "子",
+    "reading": "し"
+   }
+  ],
+  "hanViet": "QUẢ TỬ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "bánh kẹo",
+   "en": "confections; sweets; candy"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "子供はお菓子が好きです。",
+    "segments": [
+     {
+      "surface": "子供",
+      "reading": "こども"
+     },
+     {
+      "surface": "はお"
+     },
+     {
+      "surface": "菓子",
+      "reading": "かし"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "好",
+      "reading": "す"
+     },
+     {
+      "surface": "きです。"
+     }
+    ],
+    "romaji": "kodomo wa okashi ga suki desu.",
+    "translation": {
+     "vi": "Trẻ con thích bánh kẹo.",
+     "en": "Children like sweets."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-16"
+  ]
+ },
+ {
+  "id": "jmdict-1554310",
+  "surface": "料理",
+  "reading": "りょうり",
+  "romaji": "ryouri",
+  "segments": [
+   {
+    "surface": "料",
+    "reading": "りょう"
+   },
+   {
+    "surface": "理",
+    "reading": "り"
+   }
+  ],
+  "hanViet": "LIỆU LÝ",
+  "hanVietSource": "manual",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "món ăn; nấu ăn",
+   "en": "cooking; cookery; cuisine"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "日本の料理は綺麗です。",
+    "segments": [
+     {
+      "surface": "日本",
+      "reading": "にほん"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "料理",
+      "reading": "りょうり"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "綺麗",
+      "reading": "きれい"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "nihon no ryouri wa kirei desu.",
+    "translation": {
+     "vi": "Món ăn Nhật đẹp mắt.",
+     "en": "Japanese food looks beautiful."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-16"
+  ]
+ },
+ {
+  "id": "jmdict-1213400",
+  "surface": "甘い",
+  "reading": "あまい",
+  "romaji": "amai",
+  "segments": [
+   {
+    "surface": "甘",
+    "reading": "あま"
+   },
+   {
+    "surface": "い"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "ngọt",
+   "en": "sweet-tasting; sweet; sugary"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "このケーキはとても甘いです。",
+    "segments": [
+     {
+      "surface": "このケーキはとても"
+     },
+     {
+      "surface": "甘",
+      "reading": "あま"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "kono keeki wa totemo amai desu.",
+    "translation": {
+     "vi": "Cái bánh này rất ngọt.",
+     "en": "This cake is very sweet."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-16"
+  ]
+ },
+ {
+  "id": "jmdict-1365850",
+  "surface": "辛い",
+  "reading": "からい",
+  "romaji": "karai",
+  "segments": [
+   {
+    "surface": "辛",
+    "reading": "から"
+   },
+   {
+    "surface": "い"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "cay",
+   "en": "spicy; hot"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "このスープは少し辛いです。",
+    "segments": [
+     {
+      "surface": "このスープは"
+     },
+     {
+      "surface": "少",
+      "reading": "すこ"
+     },
+     {
+      "surface": "し"
+     },
+     {
+      "surface": "辛",
+      "reading": "から"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "kono suupu wa sukoshi karai desu.",
+    "translation": {
+     "vi": "Món súp này hơi cay.",
+     "en": "This soup is a little spicy."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-16"
+  ]
+ },
+ {
+  "id": "jmdict-1547330",
+  "surface": "欲しい",
+  "reading": "ほしい",
+  "romaji": "hoshii",
+  "segments": [
+   {
+    "surface": "欲",
+    "reading": "ほ"
+   },
+   {
+    "surface": "しい"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "muốn có",
+   "en": "wanting (to have); desiring; wishing for"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "新しい靴が欲しいです。",
+    "segments": [
+     {
+      "surface": "新",
+      "reading": "あたら"
+     },
+     {
+      "surface": "しい"
+     },
+     {
+      "surface": "靴",
+      "reading": "くつ"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "欲",
+      "reading": "ほ"
+     },
+     {
+      "surface": "しいです。"
+     }
+    ],
+    "romaji": "atarashii kutsu ga hoshii desu.",
+    "translation": {
+     "vi": "Tôi muốn có đôi giày mới.",
+     "en": "I want new shoes."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-16"
+  ]
+ },
+ {
+  "id": "jmdict-1555480",
+  "surface": "りんご",
+  "reading": "りんご",
+  "romaji": "ringo",
+  "segments": [
+   {
+    "surface": "りんご"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "quả táo",
+   "en": "apple (fruit)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "りんごを三つ買いました。",
+    "segments": [
+     {
+      "surface": "りんごを"
+     },
+     {
+      "surface": "三",
+      "reading": "みっ"
+     },
+     {
+      "surface": "つ"
+     },
+     {
+      "surface": "買",
+      "reading": "か"
+     },
+     {
+      "surface": "いました。"
+     }
+    ],
+    "romaji": "ringo o mittsu kaimashita.",
+    "translation": {
+     "vi": "Tôi đã mua ba quả táo.",
+     "en": "I bought three apples."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-16"
+  ]
+ },
+ {
+  "id": "jmdict-1513060",
+  "surface": "弁当",
+  "reading": "べんとう",
+  "romaji": "bentou",
+  "segments": [
+   {
+    "surface": "弁",
+    "reading": "べん"
+   },
+   {
+    "surface": "当",
+    "reading": "とう"
+   }
+  ],
+  "hanViet": "BIỆN ĐƯƠNG",
+  "hanVietSource": "manual",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "cơm hộp",
+   "en": "bento; Japanese box lunch"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "毎日会社に弁当を持って行きます。",
+    "segments": [
+     {
+      "surface": "毎日",
+      "reading": "まいにち"
+     },
+     {
+      "surface": "会社",
+      "reading": "かいしゃ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "弁当",
+      "reading": "べんとう"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "持",
+      "reading": "も"
+     },
+     {
+      "surface": "って"
+     },
+     {
+      "surface": "行",
+      "reading": "い"
+     },
+     {
+      "surface": "きます。"
+     }
+    ],
+    "romaji": "mainichi kaisha ni bentou o motte ikimasu.",
+    "translation": {
+     "vi": "Ngày nào tôi cũng mang cơm hộp đến công ty.",
+     "en": "I take a packed lunch to work every day."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-16"
+  ]
+ },
+ {
+  "id": "jmdict-1409140",
+  "surface": "体",
+  "reading": "からだ",
+  "romaji": "karada",
+  "segments": [
+   {
+    "surface": "体",
+    "reading": "からだ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "cơ thể",
+   "en": "body"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "体に気をつけてください。",
+    "segments": [
+     {
+      "surface": "体",
+      "reading": "からだ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "気",
+      "reading": "き"
+     },
+     {
+      "surface": "をつけてください。"
+     }
+    ],
+    "romaji": "karada ni ki o tsukete kudasai.",
+    "translation": {
+     "vi": "Hãy giữ gìn sức khỏe nhé.",
+     "en": "Please take care of yourself."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-17"
+  ]
+ },
+ {
+  "id": "jmdict-1582310",
+  "surface": "頭",
+  "reading": "あたま",
+  "romaji": "atama",
+  "segments": [
+   {
+    "surface": "頭",
+    "reading": "あたま"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "đầu",
+   "en": "head"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "今朝から頭が痛いです。",
+    "segments": [
+     {
+      "surface": "今朝",
+      "reading": "けさ"
+     },
+     {
+      "surface": "から"
+     },
+     {
+      "surface": "頭",
+      "reading": "あたま"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "痛",
+      "reading": "いた"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "kesa kara atama ga itai desu.",
+    "translation": {
+     "vi": "Từ sáng nay tôi bị đau đầu.",
+     "en": "I have had a headache since this morning."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-17"
+  ]
+ },
+ {
+  "id": "jmdict-1217730",
+  "surface": "顔",
+  "reading": "かお",
+  "romaji": "kao",
+  "segments": [
+   {
+    "surface": "顔",
+    "reading": "かお"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "mặt, khuôn mặt",
+   "en": "face; visage; looks"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "朝、顔を洗います。",
+    "segments": [
+     {
+      "surface": "朝",
+      "reading": "あさ"
+     },
+     {
+      "surface": "、"
+     },
+     {
+      "surface": "顔",
+      "reading": "かお"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "洗",
+      "reading": "あら"
+     },
+     {
+      "surface": "います。"
+     }
+    ],
+    "romaji": "asa,kao o araimasu.",
+    "translation": {
+     "vi": "Buổi sáng tôi rửa mặt.",
+     "en": "I wash my face in the morning."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-17"
+  ]
+ },
+ {
+  "id": "jmdict-1604890",
+  "surface": "目",
+  "reading": "め",
+  "romaji": "me",
+  "segments": [
+   {
+    "surface": "目",
+    "reading": "め"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "mắt",
+   "en": "eye; eyeball"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "妹は目が大きいです。",
+    "segments": [
+     {
+      "surface": "妹",
+      "reading": "いもうと"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "目",
+      "reading": "め"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "大",
+      "reading": "おお"
+     },
+     {
+      "surface": "きいです。"
+     }
+    ],
+    "romaji": "imouto wa me ga ookii desu.",
+    "translation": {
+     "vi": "Em gái tôi có đôi mắt to.",
+     "en": "My younger sister has big eyes."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-17"
+  ]
+ },
+ {
+  "id": "jmdict-1317170",
+  "surface": "耳",
+  "reading": "みみ",
+  "romaji": "mimi",
+  "segments": [
+   {
+    "surface": "耳",
+    "reading": "みみ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "tai",
+   "en": "ear"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "兎は耳が長いです。",
+    "segments": [
+     {
+      "surface": "兎",
+      "reading": "うさぎ"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "耳",
+      "reading": "みみ"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "長",
+      "reading": "なが"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "usagi wa mimi ga nagai desu.",
+    "translation": {
+     "vi": "Thỏ có tai dài.",
+     "en": "Rabbits have long ears."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-17"
+  ]
+ },
+ {
+  "id": "jmdict-1486720",
+  "surface": "鼻",
+  "reading": "はな",
+  "romaji": "hana",
+  "segments": [
+   {
+    "surface": "鼻",
+    "reading": "はな"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "mũi",
+   "en": "nose"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "象の鼻はとても長いです。",
+    "segments": [
+     {
+      "surface": "象",
+      "reading": "ぞう"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "鼻",
+      "reading": "はな"
+     },
+     {
+      "surface": "はとても"
+     },
+     {
+      "surface": "長",
+      "reading": "なが"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "zou no hana wa totemo nagai desu.",
+    "translation": {
+     "vi": "Vòi của con voi rất dài.",
+     "en": "An elephant’s trunk is very long."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-17"
+  ]
+ },
+ {
+  "id": "jmdict-1275640",
+  "surface": "口",
+  "reading": "くち",
+  "romaji": "kuchi",
+  "segments": [
+   {
+    "surface": "口",
+    "reading": "くち"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "miệng",
+   "en": "mouth"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "口を大きく開けてください。",
+    "segments": [
+     {
+      "surface": "口",
+      "reading": "くち"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "大",
+      "reading": "おお"
+     },
+     {
+      "surface": "きく"
+     },
+     {
+      "surface": "開",
+      "reading": "あ"
+     },
+     {
+      "surface": "けてください。"
+     }
+    ],
+    "romaji": "kuchi o ookiku akete kudasai.",
+    "translation": {
+     "vi": "Hãy há miệng to ra.",
+     "en": "Please open your mouth wide."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-17"
+  ]
+ },
+ {
+  "id": "jmdict-1327190",
+  "surface": "手",
+  "reading": "て",
+  "romaji": "te",
+  "segments": [
+   {
+    "surface": "手",
+    "reading": "て"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "tay",
+   "en": "hand; arm"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "食事の前に手を洗います。",
+    "segments": [
+     {
+      "surface": "食事",
+      "reading": "しょくじ"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "前",
+      "reading": "まえ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "手",
+      "reading": "て"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "洗",
+      "reading": "あら"
+     },
+     {
+      "surface": "います。"
+     }
+    ],
+    "romaji": "shokuji no mae ni te o araimasu.",
+    "translation": {
+     "vi": "Tôi rửa tay trước khi ăn.",
+     "en": "I wash my hands before meals."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-17"
+  ]
+ },
+ {
+  "id": "jmdict-1404630",
+  "surface": "足",
+  "reading": "あし",
+  "romaji": "ashi",
+  "segments": [
+   {
+    "surface": "足",
+    "reading": "あし"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "chân",
+   "en": "foot; paw; arm (of an octopus, squid, etc.)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "足が少し痛いです。",
+    "segments": [
+     {
+      "surface": "足",
+      "reading": "あし"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "少",
+      "reading": "すこ"
+     },
+     {
+      "surface": "し"
+     },
+     {
+      "surface": "痛",
+      "reading": "いた"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "ashi ga sukoshi itai desu.",
+    "translation": {
+     "vi": "Chân tôi hơi đau.",
+     "en": "My feet hurt a little."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-17"
+  ]
+ },
+ {
+  "id": "jmdict-1313000",
+  "surface": "歯",
+  "reading": "は",
+  "romaji": "ha",
+  "segments": [
+   {
+    "surface": "歯",
+    "reading": "は"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "răng",
+   "en": "tooth; teeth"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "寝る前に歯を磨きます。",
+    "segments": [
+     {
+      "surface": "寝",
+      "reading": "ね"
+     },
+     {
+      "surface": "る"
+     },
+     {
+      "surface": "前",
+      "reading": "まえ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "歯",
+      "reading": "は"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "磨",
+      "reading": "みが"
+     },
+     {
+      "surface": "きます。"
+     }
+    ],
+    "romaji": "neru mae ni wa o migakimasu.",
+    "translation": {
+     "vi": "Tôi đánh răng trước khi ngủ.",
+     "en": "I brush my teeth before going to bed."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-17"
+  ]
+ },
+ {
+  "id": "jmdict-1002610",
+  "surface": "お腹",
+  "reading": "おなか",
+  "romaji": "onaka",
+  "segments": [
+   {
+    "surface": "お"
+   },
+   {
+    "surface": "腹",
+    "reading": "なか"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "bụng",
+   "en": "belly; abdomen; stomach"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "お腹が痛いです。",
+    "segments": [
+     {
+      "surface": "お"
+     },
+     {
+      "surface": "腹",
+      "reading": "なか"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "痛",
+      "reading": "いた"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "onaka ga itai desu.",
+    "translation": {
+     "vi": "Tôi bị đau bụng.",
+     "en": "I have a stomach ache."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-17"
+  ]
+ },
+ {
+  "id": "jmdict-1432680",
+  "surface": "痛い",
+  "reading": "いたい",
+  "romaji": "itai",
+  "segments": [
+   {
+    "surface": "痛",
+    "reading": "いた"
+   },
+   {
+    "surface": "い"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "đau",
+   "en": "painful; sore"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "どこが痛いですか。",
+    "segments": [
+     {
+      "surface": "どこが"
+     },
+     {
+      "surface": "痛",
+      "reading": "いた"
+     },
+     {
+      "surface": "いですか。"
+     }
+    ],
+    "romaji": "doko ga itai desuka.",
+    "translation": {
+     "vi": "Bạn đau ở đâu?",
+     "en": "Where does it hurt?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-17"
+  ]
+ },
+ {
+  "id": "jmdict-1490230",
+  "surface": "病気",
+  "reading": "びょうき",
+  "romaji": "byouki",
+  "segments": [
+   {
+    "surface": "病",
+    "reading": "びょう"
+   },
+   {
+    "surface": "気",
+    "reading": "き"
+   }
+  ],
+  "hanViet": "BỆNH KHÍ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "bệnh, ốm",
+   "en": "illness (usu. excluding minor ailments, e.g. common cold); disease; sickness"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "祖母は病気で入院しています。",
+    "segments": [
+     {
+      "surface": "祖母",
+      "reading": "そぼ"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "病気",
+      "reading": "びょうき"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "入院",
+      "reading": "にゅういん"
+     },
+     {
+      "surface": "しています。"
+     }
+    ],
+    "romaji": "sobo wa byouki de nyuuin shite imasu.",
+    "translation": {
+     "vi": "Bà tôi bị ốm và đang nằm viện.",
+     "en": "My grandmother is ill and in hospital."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-17"
+  ]
+ },
+ {
+  "id": "jmdict-1538160",
+  "surface": "薬",
+  "reading": "くすり",
+  "romaji": "kusuri",
+  "segments": [
+   {
+    "surface": "薬",
+    "reading": "くすり"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "thuốc",
+   "en": "medicine; pharmaceuticals; (legal) drugs"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "一日三回この薬を飲みます。",
+    "segments": [
+     {
+      "surface": "一日",
+      "reading": "いちにち"
+     },
+     {
+      "surface": "三回",
+      "reading": "さんかい"
+     },
+     {
+      "surface": "この"
+     },
+     {
+      "surface": "薬",
+      "reading": "くすり"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "飲",
+      "reading": "の"
+     },
+     {
+      "surface": "みます。"
+     }
+    ],
+    "romaji": "ichinichi sankai kono kusuri o nomimasu.",
+    "translation": {
+     "vi": "Uống thuốc này mỗi ngày ba lần.",
+     "en": "Take this medicine three times a day."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-17"
+  ]
+ },
+ {
+  "id": "jmdict-1583720",
+  "surface": "風邪",
+  "reading": "かぜ",
+  "romaji": "kaze",
+  "segments": [
+   {
+    "surface": "風邪",
+    "reading": "かぜ"
+   }
+  ],
+  "jukujikun": true,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "cảm lạnh",
+   "en": "(common) cold; influenza; flu"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "風邪をひきました。",
+    "segments": [
+     {
+      "surface": "風邪",
+      "reading": "かぜ"
+     },
+     {
+      "surface": "をひきました。"
+     }
+    ],
+    "romaji": "kaze o hikimashita.",
+    "translation": {
+     "vi": "Tôi bị cảm rồi.",
+     "en": "I caught a cold."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-17"
+  ]
+ },
+ {
+  "id": "jmdict-1597150",
+  "surface": "たばこ",
+  "reading": "たばこ",
+  "romaji": "tabako",
+  "segments": [
+   {
+    "surface": "たばこ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "thuốc lá",
+   "en": "tobacco; cigarette; cigar"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "父はたばこをやめました。",
+    "segments": [
+     {
+      "surface": "父",
+      "reading": "ちち"
+     },
+     {
+      "surface": "はたばこをやめました。"
+     }
+    ],
+    "romaji": "chichi wa tabako o yamemashita.",
+    "translation": {
+     "vi": "Bố tôi đã bỏ thuốc lá.",
+     "en": "My father quit smoking."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-17"
+  ]
+ },
+ {
+  "id": "jmdict-1228260",
+  "surface": "吸う",
+  "reading": "すう",
+  "romaji": "suu",
+  "segments": [
+   {
+    "surface": "吸",
+    "reading": "す"
+   },
+   {
+    "surface": "う"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v5u",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "hút (thuốc); hít",
+   "en": "to breathe in; to inhale; to smoke (a cigarette, etc.)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "外で深く息を吸います。",
+    "segments": [
+     {
+      "surface": "外",
+      "reading": "そと"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "深",
+      "reading": "ふか"
+     },
+     {
+      "surface": "く"
+     },
+     {
+      "surface": "息",
+      "reading": "いき"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "吸",
+      "reading": "す"
+     },
+     {
+      "surface": "います。"
+     }
+    ],
+    "romaji": "soto de fukaku iki o suimasu.",
+    "translation": {
+     "vi": "Tôi hít một hơi thật sâu ở bên ngoài.",
+     "en": "I take a deep breath outside."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-17"
+  ]
+ },
+ {
+  "id": "jmdict-1264540",
+  "surface": "言葉",
+  "reading": "ことば",
+  "romaji": "kotoba",
+  "segments": [
+   {
+    "surface": "言",
+    "reading": "こと"
+   },
+   {
+    "surface": "葉",
+    "reading": "ば"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "từ ngữ; ngôn ngữ",
+   "en": "language; dialect"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "この言葉の意味が分かりません。",
+    "segments": [
+     {
+      "surface": "この"
+     },
+     {
+      "surface": "言葉",
+      "reading": "ことば"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "意味",
+      "reading": "いみ"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "分",
+      "reading": "わ"
+     },
+     {
+      "surface": "かりません。"
+     }
+    ],
+    "romaji": "kono kotoba no imi ga wakarimasen.",
+    "translation": {
+     "vi": "Tôi không hiểu nghĩa của từ này.",
+     "en": "I don’t understand the meaning of this word."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-18"
+  ]
+ },
+ {
+  "id": "jmdict-1464530",
+  "surface": "日本語",
+  "reading": "にほんご",
+  "romaji": "nihongo",
+  "segments": [
+   {
+    "surface": "日本",
+    "reading": "にほん"
+   },
+   {
+    "surface": "語",
+    "reading": "ご"
+   }
+  ],
+  "hanViet": "NHẬT BẢN NGỮ",
+  "hanVietSource": "manual",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "tiếng Nhật",
+   "en": "Japanese (language)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "毎日日本語を勉強します。",
+    "segments": [
+     {
+      "surface": "毎日",
+      "reading": "まいにち"
+     },
+     {
+      "surface": "日本語",
+      "reading": "にほんご"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "勉強",
+      "reading": "べんきょう"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "mainichi nihongo o benkyou shimasu.",
+    "translation": {
+     "vi": "Ngày nào tôi cũng học tiếng Nhật.",
+     "en": "I study Japanese every day."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-18"
+  ]
+ },
+ {
+  "id": "jmdict-1174420",
+  "surface": "英語",
+  "reading": "えいご",
+  "romaji": "eigo",
+  "segments": [
+   {
+    "surface": "英",
+    "reading": "えい"
+   },
+   {
+    "surface": "語",
+    "reading": "ご"
+   }
+  ],
+  "hanViet": "ANH NGỮ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "tiếng Anh",
+   "en": "English (language)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "兄は英語の先生です。",
+    "segments": [
+     {
+      "surface": "兄",
+      "reading": "あに"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "英語",
+      "reading": "えいご"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "先生",
+      "reading": "せんせい"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "ani wa eigo no sensei desu.",
+    "translation": {
+     "vi": "Anh trai tôi là giáo viên tiếng Anh.",
+     "en": "My older brother is an English teacher."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-18"
+  ]
+ },
+ {
+  "id": "jmdict-1203620",
+  "surface": "外国",
+  "reading": "がいこく",
+  "romaji": "gaikoku",
+  "segments": [
+   {
+    "surface": "外",
+    "reading": "がい"
+   },
+   {
+    "surface": "国",
+    "reading": "こく"
+   }
+  ],
+  "hanViet": "NGOẠI QUỐC",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adj-no"
+  ],
+  "meanings": {
+   "vi": "nước ngoài",
+   "en": "foreign country"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "いつか外国で働きたいです。",
+    "segments": [
+     {
+      "surface": "いつか"
+     },
+     {
+      "surface": "外国",
+      "reading": "がいこく"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "働",
+      "reading": "はたら"
+     },
+     {
+      "surface": "きたいです。"
+     }
+    ],
+    "romaji": "itsuka gaikoku de hatarakitai desu.",
+    "translation": {
+     "vi": "Một ngày nào đó tôi muốn làm việc ở nước ngoài.",
+     "en": "Someday I want to work abroad."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-18"
+  ]
+ },
+ {
+  "id": "jmdict-1587040",
+  "surface": "言う",
+  "reading": "いう",
+  "romaji": "iu",
+  "segments": [
+   {
+    "surface": "言",
+    "reading": "い"
+   },
+   {
+    "surface": "う"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v5u",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "nói",
+   "en": "to say; to utter; to declare"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "「ありがとう」はベトナム語で何と言いますか。",
+    "segments": [
+     {
+      "surface": "「ありがとう」はベトナム"
+     },
+     {
+      "surface": "語",
+      "reading": "ご"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "何",
+      "reading": "なん"
+     },
+     {
+      "surface": "と"
+     },
+     {
+      "surface": "言",
+      "reading": "い"
+     },
+     {
+      "surface": "いますか。"
+     }
+    ],
+    "romaji": "‘arigatou’ wa betonamugo de nan to iimasuka.",
+    "translation": {
+     "vi": "“ありがとう” tiếng Việt nói thế nào?",
+     "en": "How do you say “ありがとう” in Vietnamese?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-18"
+  ]
+ },
+ {
+  "id": "jmdict-1213170",
+  "surface": "漢字",
+  "reading": "かんじ",
+  "romaji": "kanji",
+  "segments": [
+   {
+    "surface": "漢",
+    "reading": "かん"
+   },
+   {
+    "surface": "字",
+    "reading": "じ"
+   }
+  ],
+  "hanViet": "HÁN TỰ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "chữ Hán",
+   "en": "kanji; Chinese character"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "漢字は難しいですが、面白いです。",
+    "segments": [
+     {
+      "surface": "漢字",
+      "reading": "かんじ"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "難",
+      "reading": "むずか"
+     },
+     {
+      "surface": "しいですが、"
+     },
+     {
+      "surface": "面白",
+      "reading": "おもしろ"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "kanji wa muzukashii desu ga,omoshiroi desu.",
+    "translation": {
+     "vi": "Chữ Hán khó nhưng thú vị.",
+     "en": "Kanji are difficult but interesting."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-18"
+  ]
+ },
+ {
+  "id": "jmdict-1507090",
+  "surface": "平仮名",
+  "reading": "ひらがな",
+  "romaji": "hiragana",
+  "segments": [
+   {
+    "surface": "平",
+    "reading": "ひら"
+   },
+   {
+    "surface": "仮",
+    "reading": "が"
+   },
+   {
+    "surface": "名",
+    "reading": "な"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "chữ Hiragana",
+   "en": "hiragana; cursive Japanese syllabary used primarily for native Japanese words (esp. function words, inflections, etc.)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "名前を平仮名で書いてください。",
+    "segments": [
+     {
+      "surface": "名前",
+      "reading": "なまえ"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "平仮名",
+      "reading": "ひらがな"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "書",
+      "reading": "か"
+     },
+     {
+      "surface": "いてください。"
+     }
+    ],
+    "romaji": "namae o hiragana de kaite kudasai.",
+    "translation": {
+     "vi": "Hãy viết tên bằng chữ Hiragana.",
+     "en": "Please write your name in hiragana."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-18"
+  ]
+ },
+ {
+  "id": "jmdict-1511600",
+  "surface": "片仮名",
+  "reading": "かたかな",
+  "romaji": "katakana",
+  "segments": [
+   {
+    "surface": "片",
+    "reading": "かた"
+   },
+   {
+    "surface": "仮",
+    "reading": "か"
+   },
+   {
+    "surface": "名",
+    "reading": "な"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "chữ Katakana",
+   "en": "katakana; angular Japanese syllabary used primarily for loanwords"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "「コーヒー」は片仮名で書きます。",
+    "segments": [
+     {
+      "surface": "「コーヒー」は"
+     },
+     {
+      "surface": "片仮名",
+      "reading": "かたかな"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "書",
+      "reading": "か"
+     },
+     {
+      "surface": "きます。"
+     }
+    ],
+    "romaji": "‘koohii’ wa katakana de kakimasu.",
+    "translation": {
+     "vi": "“コーヒー” được viết bằng chữ Katakana.",
+     "en": "“コーヒー” is written in katakana."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-18"
+  ]
+ },
+ {
+  "id": "jmdict-1156800",
+  "surface": "意味",
+  "reading": "いみ",
+  "romaji": "imi",
+  "segments": [
+   {
+    "surface": "意",
+    "reading": "い"
+   },
+   {
+    "surface": "味",
+    "reading": "み"
+   }
+  ],
+  "hanViet": "Ý VỊ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "ý nghĩa",
+   "en": "meaning; significance; sense"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "この漢字はどういう意味ですか。",
+    "segments": [
+     {
+      "surface": "この"
+     },
+     {
+      "surface": "漢字",
+      "reading": "かんじ"
+     },
+     {
+      "surface": "はどういう"
+     },
+     {
+      "surface": "意味",
+      "reading": "いみ"
+     },
+     {
+      "surface": "ですか。"
+     }
+    ],
+    "romaji": "kono kanji wa douiu imi desuka.",
+    "translation": {
+     "vi": "Chữ Hán này có nghĩa là gì?",
+     "en": "What does this kanji mean?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-18"
+  ]
+ },
+ {
+  "id": "jmdict-1337270",
+  "surface": "宿題",
+  "reading": "しゅくだい",
+  "romaji": "shukudai",
+  "segments": [
+   {
+    "surface": "宿",
+    "reading": "しゅく"
+   },
+   {
+    "surface": "題",
+    "reading": "だい"
+   }
+  ],
+  "hanViet": "TÚC ĐỀ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "bài tập về nhà",
+   "en": "homework; assignment"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "今日は宿題がたくさんあります。",
+    "segments": [
+     {
+      "surface": "今日",
+      "reading": "きょう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "宿題",
+      "reading": "しゅくだい"
+     },
+     {
+      "surface": "がたくさんあります。"
+     }
+    ],
+    "romaji": "kyou wa shukudai ga takusan arimasu.",
+    "translation": {
+     "vi": "Hôm nay có nhiều bài tập về nhà.",
+     "en": "I have a lot of homework today."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-18"
+  ]
+ },
+ {
+  "id": "jmdict-1320760",
+  "surface": "質問",
+  "reading": "しつもん",
+  "romaji": "shitsumon",
+  "segments": [
+   {
+    "surface": "質",
+    "reading": "しつ"
+   },
+   {
+    "surface": "問",
+    "reading": "もん"
+   }
+  ],
+  "hanViet": "CHẤT VẤN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt",
+   "vi",
+   "adj-no"
+  ],
+  "meanings": {
+   "vi": "câu hỏi",
+   "en": "question; inquiry; enquiry"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "先生、質問があります。",
+    "segments": [
+     {
+      "surface": "先生",
+      "reading": "せんせい"
+     },
+     {
+      "surface": "、"
+     },
+     {
+      "surface": "質問",
+      "reading": "しつもん"
+     },
+     {
+      "surface": "があります。"
+     }
+    ],
+    "romaji": "sensei,shitsumon ga arimasu.",
+    "translation": {
+     "vi": "Thưa thầy, em có câu hỏi.",
+     "en": "Excuse me, I have a question."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-18"
+  ]
+ },
+ {
+  "id": "jmdict-1449540",
+  "surface": "答える",
+  "reading": "こたえる",
+  "romaji": "kotaeru",
+  "segments": [
+   {
+    "surface": "答",
+    "reading": "こた"
+   },
+   {
+    "surface": "える"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v1",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "trả lời",
+   "en": "to answer; to reply"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "日本語で答えてください。",
+    "segments": [
+     {
+      "surface": "日本語",
+      "reading": "にほんご"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "答",
+      "reading": "こた"
+     },
+     {
+      "surface": "えてください。"
+     }
+    ],
+    "romaji": "nihongo de kotaete kudasai.",
+    "translation": {
+     "vi": "Hãy trả lời bằng tiếng Nhật.",
+     "en": "Please answer in Japanese."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-18"
+  ]
+ },
+ {
+  "id": "jmdict-1559160-suru",
+  "surface": "練習する",
+  "reading": "れんしゅうする",
+  "romaji": "renshuusuru",
+  "segments": [
+   {
+    "surface": "練",
+    "reading": "れん"
+   },
+   {
+    "surface": "習",
+    "reading": "しゅう"
+   },
+   {
+    "surface": "する"
+   }
+  ],
+  "hanViet": "LUYỆN TẬP",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "vs"
+  ],
+  "meanings": {
+   "vi": "luyện tập",
+   "en": "practice; training; drill"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "毎晩発音を練習します。",
+    "segments": [
+     {
+      "surface": "毎晩",
+      "reading": "まいばん"
+     },
+     {
+      "surface": "発音",
+      "reading": "はつおん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "練習",
+      "reading": "れんしゅう"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "maiban hatsuon o renshuu shimasu.",
+    "translation": {
+     "vi": "Tối nào tôi cũng luyện phát âm.",
+     "en": "I practise pronunciation every night."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-18"
+  ]
+ },
+ {
+  "id": "jmdict-1519210",
+  "surface": "忘れる",
+  "reading": "わすれる",
+  "romaji": "wasureru",
+  "segments": [
+   {
+    "surface": "忘",
+    "reading": "わす"
+   },
+   {
+    "surface": "れる"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v1",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "quên",
+   "en": "to forget; to leave carelessly; to be forgetful of"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "傘を電車に忘れました。",
+    "segments": [
+     {
+      "surface": "傘",
+      "reading": "かさ"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "電車",
+      "reading": "でんしゃ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "忘",
+      "reading": "わす"
+     },
+     {
+      "surface": "れました。"
+     }
+    ],
+    "romaji": "kasa o densha ni wasuremashita.",
+    "translation": {
+     "vi": "Tôi để quên ô trên tàu.",
+     "en": "I left my umbrella on the train."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-18"
+  ]
+ },
+ {
+  "id": "jmdict-1606560",
+  "surface": "分かる",
+  "reading": "わかる",
+  "romaji": "wakaru",
+  "segments": [
+   {
+    "surface": "分",
+    "reading": "わ"
+   },
+   {
+    "surface": "かる"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v5r",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "hiểu, biết",
+   "en": "to understand; to comprehend; to grasp"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "少し分かります。",
+    "segments": [
+     {
+      "surface": "少",
+      "reading": "すこ"
+     },
+     {
+      "surface": "し"
+     },
+     {
+      "surface": "分",
+      "reading": "わ"
+     },
+     {
+      "surface": "かります。"
+     }
+    ],
+    "romaji": "sukoshi wakarimasu.",
+    "translation": {
+     "vi": "Tôi hiểu một chút.",
+     "en": "I understand a little."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-18"
+  ]
+ },
+ {
+  "id": "jmdict-1340450",
+  "surface": "出来る",
+  "reading": "できる",
+  "romaji": "dekiru",
+  "segments": [
+   {
+    "surface": "出",
+    "reading": "で"
+   },
+   {
+    "surface": "来",
+    "reading": "き"
+   },
+   {
+    "surface": "る"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v1",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "có thể, làm được",
+   "en": "to be able to do; to be possible; to be permitted (to do)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "兄は料理が出来ます。",
+    "segments": [
+     {
+      "surface": "兄",
+      "reading": "あに"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "料理",
+      "reading": "りょうり"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "出来",
+      "reading": "でき"
+     },
+     {
+      "surface": "ます。"
+     }
+    ],
+    "romaji": "ani wa ryouri ga dekimasu.",
+    "translation": {
+     "vi": "Anh trai tôi biết nấu ăn.",
+     "en": "My older brother can cook."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-18"
+  ]
+ },
+ {
+  "id": "jmdict-1353320",
+  "surface": "上手",
+  "reading": "じょうず",
+  "romaji": "jouzu",
+  "segments": [
+   {
+    "surface": "上手",
+    "reading": "じょうず"
+   }
+  ],
+  "jukujikun": true,
+  "pos": [
+   "adj-na",
+   "n"
+  ],
+  "meanings": {
+   "vi": "giỏi",
+   "en": "skillful; skilled; proficient"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "ミンさんは日本語が上手ですね。",
+    "segments": [
+     {
+      "surface": "ミンさんは"
+     },
+     {
+      "surface": "日本語",
+      "reading": "にほんご"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "上手",
+      "reading": "じょうず"
+     },
+     {
+      "surface": "ですね。"
+     }
+    ],
+    "romaji": "min san wa nihongo ga jouzu desu ne.",
+    "translation": {
+     "vi": "Minh giỏi tiếng Nhật nhỉ.",
+     "en": "Minh is good at Japanese, isn’t he?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-18"
+  ]
+ },
+ {
+  "id": "jmdict-1185200",
+  "surface": "下手",
+  "reading": "へた",
+  "romaji": "heta",
+  "segments": [
+   {
+    "surface": "下手",
+    "reading": "へた"
+   }
+  ],
+  "jukujikun": true,
+  "pos": [
+   "adj-na",
+   "n"
+  ],
+  "meanings": {
+   "vi": "kém, dở",
+   "en": "unskillful; poor; awkward"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "私は歌が下手です。",
+    "segments": [
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "歌",
+      "reading": "うた"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "下手",
+      "reading": "へた"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "watashi wa uta ga heta desu.",
+    "translation": {
+     "vi": "Tôi hát dở.",
+     "en": "I am bad at singing."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-18"
+  ]
+ },
+ {
+  "id": "jmdict-1429750",
+  "surface": "長い",
+  "reading": "ながい",
+  "romaji": "nagai",
+  "segments": [
+   {
+    "surface": "長",
+    "reading": "なが"
+   },
+   {
+    "surface": "い"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "dài",
+   "en": "long (distance, length)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "姉の髪は長いです。",
+    "segments": [
+     {
+      "surface": "姉",
+      "reading": "あね"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "髪",
+      "reading": "かみ"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "長",
+      "reading": "なが"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "ane no kami wa nagai desu.",
+    "translation": {
+     "vi": "Tóc chị gái tôi dài.",
+     "en": "My older sister’s hair is long."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-19"
+  ]
+ },
+ {
+  "id": "jmdict-1418620",
+  "surface": "短い",
+  "reading": "みじかい",
+  "romaji": "mijikai",
+  "segments": [
+   {
+    "surface": "短",
+    "reading": "みじか"
+   },
+   {
+    "surface": "い"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "ngắn",
+   "en": "short"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "冬は昼が短いです。",
+    "segments": [
+     {
+      "surface": "冬",
+      "reading": "ふゆ"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "昼",
+      "reading": "ひる"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "短",
+      "reading": "みじか"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "fuyu wa hiru ga mijikai desu.",
+    "translation": {
+     "vi": "Mùa đông ban ngày ngắn.",
+     "en": "The days are short in winter."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-19"
+  ]
+ },
+ {
+  "id": "jmdict-1474910",
+  "surface": "白い",
+  "reading": "しろい",
+  "romaji": "shiroi",
+  "segments": [
+   {
+    "surface": "白",
+    "reading": "しろ"
+   },
+   {
+    "surface": "い"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "trắng",
+   "en": "white"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "白い猫が庭にいます。",
+    "segments": [
+     {
+      "surface": "白",
+      "reading": "しろ"
+     },
+     {
+      "surface": "い"
+     },
+     {
+      "surface": "猫",
+      "reading": "ねこ"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "庭",
+      "reading": "にわ"
+     },
+     {
+      "surface": "にいます。"
+     }
+    ],
+    "romaji": "shiroi neko ga niwa ni imasu.",
+    "translation": {
+     "vi": "Có con mèo trắng trong vườn.",
+     "en": "There is a white cat in the garden."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-19"
+  ]
+ },
+ {
+  "id": "jmdict-1287420",
+  "surface": "黒い",
+  "reading": "くろい",
+  "romaji": "kuroi",
+  "segments": [
+   {
+    "surface": "黒",
+    "reading": "くろ"
+   },
+   {
+    "surface": "い"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "đen",
+   "en": "black"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "黒い鞄は誰のですか。",
+    "segments": [
+     {
+      "surface": "黒",
+      "reading": "くろ"
+     },
+     {
+      "surface": "い"
+     },
+     {
+      "surface": "鞄",
+      "reading": "かばん"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "誰",
+      "reading": "だれ"
+     },
+     {
+      "surface": "のですか。"
+     }
+    ],
+    "romaji": "kuroi kaban wa dare no desuka.",
+    "translation": {
+     "vi": "Cái cặp đen là của ai?",
+     "en": "Whose is the black bag?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-19"
+  ]
+ },
+ {
+  "id": "jmdict-1383240",
+  "surface": "赤い",
+  "reading": "あかい",
+  "romaji": "akai",
+  "segments": [
+   {
+    "surface": "赤",
+    "reading": "あか"
+   },
+   {
+    "surface": "い"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "đỏ",
+   "en": "red; crimson; scarlet"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "赤い花が好きです。",
+    "segments": [
+     {
+      "surface": "赤",
+      "reading": "あか"
+     },
+     {
+      "surface": "い"
+     },
+     {
+      "surface": "花",
+      "reading": "はな"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "好",
+      "reading": "す"
+     },
+     {
+      "surface": "きです。"
+     }
+    ],
+    "romaji": "akai hana ga suki desu.",
+    "translation": {
+     "vi": "Tôi thích hoa màu đỏ.",
+     "en": "I like red flowers."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-19"
+  ]
+ },
+ {
+  "id": "jmdict-1381390",
+  "surface": "青い",
+  "reading": "あおい",
+  "romaji": "aoi",
+  "segments": [
+   {
+    "surface": "青",
+    "reading": "あお"
+   },
+   {
+    "surface": "い"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "xanh (da trời, nước biển)",
+   "en": "blue; azure"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "今日は空が青いですね。",
+    "segments": [
+     {
+      "surface": "今日",
+      "reading": "きょう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "空",
+      "reading": "そら"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "青",
+      "reading": "あお"
+     },
+     {
+      "surface": "いですね。"
+     }
+    ],
+    "romaji": "kyou wa sora ga aoi desu ne.",
+    "translation": {
+     "vi": "Hôm nay trời xanh nhỉ.",
+     "en": "The sky is blue today."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-19"
+  ]
+ },
+ {
+  "id": "jmdict-1335750",
+  "surface": "重い",
+  "reading": "おもい",
+  "romaji": "omoi",
+  "segments": [
+   {
+    "surface": "重",
+    "reading": "おも"
+   },
+   {
+    "surface": "い"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "nặng",
+   "en": "heavy; weighty"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "この箱は重いです。",
+    "segments": [
+     {
+      "surface": "この"
+     },
+     {
+      "surface": "箱",
+      "reading": "はこ"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "重",
+      "reading": "おも"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "kono hako wa omoi desu.",
+    "translation": {
+     "vi": "Cái hộp này nặng.",
+     "en": "This box is heavy."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-19"
+  ]
+ },
+ {
+  "id": "jmdict-1252560",
+  "surface": "軽い",
+  "reading": "かるい",
+  "romaji": "karui",
+  "segments": [
+   {
+    "surface": "軽",
+    "reading": "かる"
+   },
+   {
+    "surface": "い"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "nhẹ",
+   "en": "light (i.e. not heavy); feeling light (i.e. offering little resistance, moving easily)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "このパソコンはとても軽いです。",
+    "segments": [
+     {
+      "surface": "このパソコンはとても"
+     },
+     {
+      "surface": "軽",
+      "reading": "かる"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "kono pasokon wa totemo karui desu.",
+    "translation": {
+     "vi": "Cái máy tính này rất nhẹ.",
+     "en": "This computer is very light."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-19"
+  ]
+ },
+ {
+  "id": "jmdict-1404975",
+  "surface": "速い",
+  "reading": "はやい",
+  "romaji": "hayai",
+  "segments": [
+   {
+    "surface": "速",
+    "reading": "はや"
+   },
+   {
+    "surface": "い"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "nhanh",
+   "en": "fast; quick; rapid"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "新幹線は速いです。",
+    "segments": [
+     {
+      "surface": "新幹線",
+      "reading": "しんかんせん"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "速",
+      "reading": "はや"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "shinkansen wa hayai desu.",
+    "translation": {
+     "vi": "Tàu Shinkansen chạy nhanh.",
+     "en": "The Shinkansen is fast."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-19"
+  ]
+ },
+ {
+  "id": "jmdict-1421970",
+  "surface": "遅い",
+  "reading": "おそい",
+  "romaji": "osoi",
+  "segments": [
+   {
+    "surface": "遅",
+    "reading": "おそ"
+   },
+   {
+    "surface": "い"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "chậm; muộn",
+   "en": "slow"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "このバスは遅いですね。",
+    "segments": [
+     {
+      "surface": "このバスは"
+     },
+     {
+      "surface": "遅",
+      "reading": "おそ"
+     },
+     {
+      "surface": "いですね。"
+     }
+    ],
+    "romaji": "kono basu wa osoi desu ne.",
+    "translation": {
+     "vi": "Xe buýt này chậm nhỉ.",
+     "en": "This bus is slow, isn’t it?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-19"
+  ]
+ },
+ {
+  "id": "jmdict-1278410",
+  "surface": "広い",
+  "reading": "ひろい",
+  "romaji": "hiroi",
+  "segments": [
+   {
+    "surface": "広",
+    "reading": "ひろ"
+   },
+   {
+    "surface": "い"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "rộng",
+   "en": "spacious; vast; wide"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "新しい部屋は広いです。",
+    "segments": [
+     {
+      "surface": "新",
+      "reading": "あたら"
+     },
+     {
+      "surface": "しい"
+     },
+     {
+      "surface": "部屋",
+      "reading": "へや"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "広",
+      "reading": "ひろ"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "atarashii heya wa hiroi desu.",
+    "translation": {
+     "vi": "Căn phòng mới rộng.",
+     "en": "The new room is spacious."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-19"
+  ]
+ },
+ {
+  "id": "jmdict-1237680",
+  "surface": "狭い",
+  "reading": "せまい",
+  "romaji": "semai",
+  "segments": [
+   {
+    "surface": "狭",
+    "reading": "せま"
+   },
+   {
+    "surface": "い"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "chật, hẹp",
+   "en": "narrow; confined; small"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "私の部屋は狭いです。",
+    "segments": [
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "部屋",
+      "reading": "へや"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "狭",
+      "reading": "せま"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "watashi no heya wa semai desu.",
+    "translation": {
+     "vi": "Phòng tôi chật.",
+     "en": "My room is small."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-19"
+  ]
+ },
+ {
+  "id": "jmdict-1236070",
+  "surface": "強い",
+  "reading": "つよい",
+  "romaji": "tsuyoi",
+  "segments": [
+   {
+    "surface": "強",
+    "reading": "つよ"
+   },
+   {
+    "surface": "い"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "mạnh",
+   "en": "strong; potent; competent"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "今日は風が強いです。",
+    "segments": [
+     {
+      "surface": "今日",
+      "reading": "きょう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "風",
+      "reading": "かぜ"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "強",
+      "reading": "つよ"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "kyou wa kaze ga tsuyoi desu.",
+    "translation": {
+     "vi": "Hôm nay gió mạnh.",
+     "en": "The wind is strong today."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-19"
+  ]
+ },
+ {
+  "id": "jmdict-1177800",
+  "surface": "遠い",
+  "reading": "とおい",
+  "romaji": "tooi",
+  "segments": [
+   {
+    "surface": "遠",
+    "reading": "とお"
+   },
+   {
+    "surface": "い"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "xa",
+   "en": "far; distant; far away"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "学校は家から遠いです。",
+    "segments": [
+     {
+      "surface": "学校",
+      "reading": "がっこう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "家",
+      "reading": "いえ"
+     },
+     {
+      "surface": "から"
+     },
+     {
+      "surface": "遠",
+      "reading": "とお"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "gakkou wa ie kara tooi desu.",
+    "translation": {
+     "vi": "Trường học xa nhà.",
+     "en": "The school is far from my house."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-19"
+  ]
+ },
+ {
+  "id": "jmdict-1165970",
+  "surface": "一番",
+  "reading": "いちばん",
+  "romaji": "ichiban",
+  "segments": [
+   {
+    "surface": "一",
+    "reading": "いち"
+   },
+   {
+    "surface": "番",
+    "reading": "ばん"
+   }
+  ],
+  "hanViet": "NHẤT PHIÊN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adj-no"
+  ],
+  "meanings": {
+   "vi": "nhất; số một",
+   "en": "number one; first; first place"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "家族で父が一番背が高いです。",
+    "segments": [
+     {
+      "surface": "家族",
+      "reading": "かぞく"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "父",
+      "reading": "ちち"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "一番",
+      "reading": "いちばん"
+     },
+     {
+      "surface": "背",
+      "reading": "せ"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "高",
+      "reading": "たか"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "kazoku de chichi ga ichiban se ga takai desu.",
+    "translation": {
+     "vi": "Trong nhà bố tôi cao nhất.",
+     "en": "My father is the tallest in my family."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-19"
+  ]
+ },
+ {
+  "id": "jmdict-1189360",
+  "surface": "どちら",
+  "reading": "どちら",
+  "romaji": "dochira",
+  "segments": [
+   {
+    "surface": "どちら"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "pn"
+  ],
+  "meanings": {
+   "vi": "cái nào (trong hai cái); phía nào",
+   "en": "which way; which direction; where"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "紅茶とコーヒーとどちらがいいですか。",
+    "segments": [
+     {
+      "surface": "紅茶",
+      "reading": "こうちゃ"
+     },
+     {
+      "surface": "とコーヒーとどちらがいいですか。"
+     }
+    ],
+    "romaji": "koucha to koohii to dochira ga ii desuka.",
+    "translation": {
+     "vi": "Trà đen và cà phê, bạn muốn cái nào?",
+     "en": "Which would you like, tea or coffee?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-19"
+  ]
+ },
+ {
+  "id": "jmdict-1516930",
+  "surface": "方",
+  "reading": "ほう",
+  "romaji": "hou",
+  "segments": [
+   {
+    "surface": "方",
+    "reading": "ほう"
+   }
+  ],
+  "hanViet": "PHƯƠNG",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "phía, bên (dùng khi so sánh)",
+   "en": "direction; way; side"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "こちらの方が安いです。",
+    "segments": [
+     {
+      "surface": "こちらの"
+     },
+     {
+      "surface": "方",
+      "reading": "ほう"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "安",
+      "reading": "やす"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "kochira no hou ga yasui desu.",
+    "translation": {
+     "vi": "Cái bên này rẻ hơn.",
+     "en": "This one is cheaper."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-19"
+  ]
+ },
+ {
+  "id": "jmdict-1315920",
+  "surface": "時間",
+  "reading": "じかん",
+  "romaji": "jikan",
+  "segments": [
+   {
+    "surface": "時",
+    "reading": "じ"
+   },
+   {
+    "surface": "間",
+    "reading": "かん"
+   }
+  ],
+  "hanViet": "THỜI GIAN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "thời gian; tiếng (đồng hồ)",
+   "en": "time"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "今日は時間がありません。",
+    "segments": [
+     {
+      "surface": "今日",
+      "reading": "きょう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "時間",
+      "reading": "じかん"
+     },
+     {
+      "surface": "がありません。"
+     }
+    ],
+    "romaji": "kyou wa jikan ga arimasen.",
+    "translation": {
+     "vi": "Hôm nay tôi không có thời gian.",
+     "en": "I have no time today."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-20"
+  ]
+ },
+ {
+  "id": "jmdict-1315840",
+  "surface": "時",
+  "reading": "とき",
+  "romaji": "toki",
+  "segments": [
+   {
+    "surface": "時",
+    "reading": "とき"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "khi, lúc",
+   "en": "time; hour; moment"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "子供の時、犬がいました。",
+    "segments": [
+     {
+      "surface": "子供",
+      "reading": "こども"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "時",
+      "reading": "とき"
+     },
+     {
+      "surface": "、"
+     },
+     {
+      "surface": "犬",
+      "reading": "いぬ"
+     },
+     {
+      "surface": "がいました。"
+     }
+    ],
+    "romaji": "kodomo no toki,inu ga imashita.",
+    "translation": {
+     "vi": "Hồi nhỏ tôi có nuôi chó.",
+     "en": "I had a dog when I was a child."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-20"
+  ]
+ },
+ {
+  "id": "jmdict-1466940",
+  "surface": "どうして",
+  "reading": "どうして",
+  "romaji": "doushite",
+  "segments": [
+   {
+    "surface": "どうして"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adv"
+  ],
+  "meanings": {
+   "vi": "tại sao",
+   "en": "how; in what way; by what means"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "どうして日本語を勉強しますか。",
+    "segments": [
+     {
+      "surface": "どうして"
+     },
+     {
+      "surface": "日本語",
+      "reading": "にほんご"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "勉強",
+      "reading": "べんきょう"
+     },
+     {
+      "surface": "しますか。"
+     }
+    ],
+    "romaji": "doushite nihongo o benkyou shimasu ka.",
+    "translation": {
+     "vi": "Tại sao bạn học tiếng Nhật?",
+     "en": "Why do you study Japanese?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-20"
+  ]
+ },
+ {
+  "id": "jmdict-1483740",
+  "surface": "疲れる",
+  "reading": "つかれる",
+  "romaji": "tsukareru",
+  "segments": [
+   {
+    "surface": "疲",
+    "reading": "つか"
+   },
+   {
+    "surface": "れる"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v1",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "mệt",
+   "en": "to get tired; to tire; to get fatigued"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "今日はとても疲れました。",
+    "segments": [
+     {
+      "surface": "今日",
+      "reading": "きょう"
+     },
+     {
+      "surface": "はとても"
+     },
+     {
+      "surface": "疲",
+      "reading": "つか"
+     },
+     {
+      "surface": "れました。"
+     }
+    ],
+    "romaji": "kyou wa totemo tsukaremashita.",
+    "translation": {
+     "vi": "Hôm nay tôi mệt quá.",
+     "en": "I am very tired today."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-20"
+  ]
+ },
+ {
+  "id": "jmdict-1529330",
+  "surface": "眠い",
+  "reading": "ねむい",
+  "romaji": "nemui",
+  "segments": [
+   {
+    "surface": "眠",
+    "reading": "ねむ"
+   },
+   {
+    "surface": "い"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "buồn ngủ",
+   "en": "sleepy; drowsy; somnolent"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "昨日遅く寝ました。今とても眠いです。",
+    "segments": [
+     {
+      "surface": "昨日",
+      "reading": "きのう"
+     },
+     {
+      "surface": "遅",
+      "reading": "おそ"
+     },
+     {
+      "surface": "く"
+     },
+     {
+      "surface": "寝",
+      "reading": "ね"
+     },
+     {
+      "surface": "ました。"
+     },
+     {
+      "surface": "今",
+      "reading": "いま"
+     },
+     {
+      "surface": "とても"
+     },
+     {
+      "surface": "眠",
+      "reading": "ねむ"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "kinou osoku nemashita. ima totemo nemui desu.",
+    "translation": {
+     "vi": "Hôm qua tôi ngủ muộn. Bây giờ buồn ngủ quá.",
+     "en": "I went to bed late yesterday. I’m very sleepy now."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-20"
+  ]
+ },
+ {
+  "id": "jmdict-1341000",
+  "surface": "春",
+  "reading": "はる",
+  "romaji": "haru",
+  "segments": [
+   {
+    "surface": "春",
+    "reading": "はる"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adv"
+  ],
+  "meanings": {
+   "vi": "mùa xuân",
+   "en": "spring; springtime"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "春は暖かいです。",
+    "segments": [
+     {
+      "surface": "春",
+      "reading": "はる"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "暖",
+      "reading": "あたた"
+     },
+     {
+      "surface": "かいです。"
+     }
+    ],
+    "romaji": "haru wa atatakai desu.",
+    "translation": {
+     "vi": "Mùa xuân ấm áp.",
+     "en": "Spring is warm."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-20"
+  ]
+ },
+ {
+  "id": "jmdict-1191320",
+  "surface": "夏",
+  "reading": "なつ",
+  "romaji": "natsu",
+  "segments": [
+   {
+    "surface": "夏",
+    "reading": "なつ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adv"
+  ],
+  "meanings": {
+   "vi": "mùa hè",
+   "en": "summer"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "日本の夏は暑いです。",
+    "segments": [
+     {
+      "surface": "日本",
+      "reading": "にほん"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "夏",
+      "reading": "なつ"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "暑",
+      "reading": "あつ"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "nihon no natsu wa atsui desu.",
+    "translation": {
+     "vi": "Mùa hè ở Nhật nóng.",
+     "en": "Summer in Japan is hot."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-20"
+  ]
+ },
+ {
+  "id": "jmdict-1332650",
+  "surface": "秋",
+  "reading": "あき",
+  "romaji": "aki",
+  "segments": [
+   {
+    "surface": "秋",
+    "reading": "あき"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adv"
+  ],
+  "meanings": {
+   "vi": "mùa thu",
+   "en": "autumn; fall"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "秋は果物が美味しいです。",
+    "segments": [
+     {
+      "surface": "秋",
+      "reading": "あき"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "果物",
+      "reading": "くだもの"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "美味",
+      "reading": "おい"
+     },
+     {
+      "surface": "しいです。"
+     }
+    ],
+    "romaji": "aki wa kudamono ga oishii desu.",
+    "translation": {
+     "vi": "Mùa thu hoa quả ngon.",
+     "en": "Fruit is delicious in autumn."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-20"
+  ]
+ },
+ {
+  "id": "jmdict-1446070",
+  "surface": "冬",
+  "reading": "ふゆ",
+  "romaji": "fuyu",
+  "segments": [
+   {
+    "surface": "冬",
+    "reading": "ふゆ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adv"
+  ],
+  "meanings": {
+   "vi": "mùa đông",
+   "en": "winter"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "北海道の冬はとても寒いです。",
+    "segments": [
+     {
+      "surface": "北海道",
+      "reading": "ほっかいどう"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "冬",
+      "reading": "ふゆ"
+     },
+     {
+      "surface": "はとても"
+     },
+     {
+      "surface": "寒",
+      "reading": "さむ"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "hokkaidou no fuyu wa totemo samui desu.",
+    "translation": {
+     "vi": "Mùa đông ở Hokkaido rất lạnh.",
+     "en": "Winter in Hokkaido is very cold."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-20"
+  ]
+ },
+ {
+  "id": "jmdict-1191420",
+  "surface": "夏休み",
+  "reading": "なつやすみ",
+  "romaji": "natsuyasumi",
+  "segments": [
+   {
+    "surface": "夏",
+    "reading": "なつ"
+   },
+   {
+    "surface": "休",
+    "reading": "やす"
+   },
+   {
+    "surface": "み"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "kỳ nghỉ hè",
+   "en": "summer vacation; summer holiday"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "夏休みに国へ帰ります。",
+    "segments": [
+     {
+      "surface": "夏休",
+      "reading": "なつやす"
+     },
+     {
+      "surface": "みに"
+     },
+     {
+      "surface": "国",
+      "reading": "くに"
+     },
+     {
+      "surface": "へ"
+     },
+     {
+      "surface": "帰",
+      "reading": "かえ"
+     },
+     {
+      "surface": "ります。"
+     }
+    ],
+    "romaji": "natsuyasumi ni kuni e kaerimasu.",
+    "translation": {
+     "vi": "Kỳ nghỉ hè tôi sẽ về nước.",
+     "en": "I am going back to my country for the summer holidays."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-20"
+  ]
+ },
+ {
+  "id": "jmdict-1553170",
+  "surface": "旅行",
+  "reading": "りょこう",
+  "romaji": "ryokou",
+  "segments": [
+   {
+    "surface": "旅",
+    "reading": "りょ"
+   },
+   {
+    "surface": "行",
+    "reading": "こう"
+   }
+  ],
+  "hanViet": "LỮ HÀNH",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "du lịch, chuyến đi",
+   "en": "travel; trip; journey"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "来月家族と旅行します。",
+    "segments": [
+     {
+      "surface": "来月",
+      "reading": "らいげつ"
+     },
+     {
+      "surface": "家族",
+      "reading": "かぞく"
+     },
+     {
+      "surface": "と"
+     },
+     {
+      "surface": "旅行",
+      "reading": "りょこう"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "raigetsu kazoku to ryokou shimasu.",
+    "translation": {
+     "vi": "Tháng sau tôi đi du lịch với gia đình.",
+     "en": "I am going on a trip with my family next month."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-20"
+  ]
+ },
+ {
+  "id": "jmdict-1201190",
+  "surface": "海",
+  "reading": "うみ",
+  "romaji": "umi",
+  "segments": [
+   {
+    "surface": "海",
+    "reading": "うみ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "biển",
+   "en": "sea; ocean; waters"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "週末に海へ行きました。",
+    "segments": [
+     {
+      "surface": "週末",
+      "reading": "しゅうまつ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "海",
+      "reading": "うみ"
+     },
+     {
+      "surface": "へ"
+     },
+     {
+      "surface": "行",
+      "reading": "い"
+     },
+     {
+      "surface": "きました。"
+     }
+    ],
+    "romaji": "shuumatsu ni umi e ikimashita.",
+    "translation": {
+     "vi": "Cuối tuần tôi đã đi biển.",
+     "en": "I went to the beach at the weekend."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-20"
+  ]
+ },
+ {
+  "id": "jmdict-1174340",
+  "surface": "泳ぐ",
+  "reading": "およぐ",
+  "romaji": "oyogu",
+  "segments": [
+   {
+    "surface": "泳",
+    "reading": "およ"
+   },
+   {
+    "surface": "ぐ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v5g",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "bơi",
+   "en": "to swim"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "弟は泳ぐことができます。",
+    "segments": [
+     {
+      "surface": "弟",
+      "reading": "おとうと"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "泳",
+      "reading": "およ"
+     },
+     {
+      "surface": "ぐことができます。"
+     }
+    ],
+    "romaji": "otouto wa oyogu koto ga dekimasu.",
+    "translation": {
+     "vi": "Em trai tôi biết bơi.",
+     "en": "My younger brother can swim."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-20"
+  ]
+ },
+ {
+  "id": "jmdict-1324300",
+  "surface": "若い",
+  "reading": "わかい",
+  "romaji": "wakai",
+  "segments": [
+   {
+    "surface": "若",
+    "reading": "わか"
+   },
+   {
+    "surface": "い"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "trẻ",
+   "en": "young; youthful"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "先生はまだ若いです。",
+    "segments": [
+     {
+      "surface": "先生",
+      "reading": "せんせい"
+     },
+     {
+      "surface": "はまだ"
+     },
+     {
+      "surface": "若",
+      "reading": "わか"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "sensei wa mada wakai desu.",
+    "translation": {
+     "vi": "Thầy giáo còn trẻ.",
+     "en": "The teacher is still young."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-20"
+  ]
+ },
+ {
+  "id": "jmdict-1207240",
+  "surface": "楽しい",
+  "reading": "たのしい",
+  "romaji": "tanoshii",
+  "segments": [
+   {
+    "surface": "楽",
+    "reading": "たの"
+   },
+   {
+    "surface": "しい"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "vui",
+   "en": "enjoyable; fun; pleasant"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "旅行は楽しかったです。",
+    "segments": [
+     {
+      "surface": "旅行",
+      "reading": "りょこう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "楽",
+      "reading": "たの"
+     },
+     {
+      "surface": "しかったです。"
+     }
+    ],
+    "romaji": "ryokou wa tanoshikatta desu.",
+    "translation": {
+     "vi": "Chuyến du lịch đã rất vui.",
+     "en": "The trip was fun."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-20"
+  ]
+ },
+ {
+  "id": "jmdict-1542160",
+  "surface": "遊ぶ",
+  "reading": "あそぶ",
+  "romaji": "asobu",
+  "segments": [
+   {
+    "surface": "遊",
+    "reading": "あそ"
+   },
+   {
+    "surface": "ぶ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v5b",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "chơi",
+   "en": "to play (games, sports); to enjoy oneself; to have a good time"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "日曜日に友達と遊びます。",
+    "segments": [
+     {
+      "surface": "日曜日",
+      "reading": "にちようび"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "友達",
+      "reading": "ともだち"
+     },
+     {
+      "surface": "と"
+     },
+     {
+      "surface": "遊",
+      "reading": "あそ"
+     },
+     {
+      "surface": "びます。"
+     }
+    ],
+    "romaji": "nichiyoubi ni tomodachi to asobimasu.",
+    "translation": {
+     "vi": "Chủ nhật tôi đi chơi với bạn.",
+     "en": "I hang out with friends on Sunday."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": "n5",
+  "tags": [
+   "n5-20"
+  ]
  }
 ]

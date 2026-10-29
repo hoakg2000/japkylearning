@@ -11,7 +11,7 @@ Items that could not be finished while implementing the roadmap phases. Each has
 | B3 | Production database and deploy | P0–P2 | No Neon project / Vercel project connected | Embedded PGlite in `.data/pglite` (auto-migrated) | `DATABASE_URL` (Neon ap-southeast-1), Vercel project pinned to `sin1`, `npm run db:migrate` in the deploy pipeline, real `BETTER_AUTH_SECRET` |
 | B4 | Email verification, password reset, reminder emails | P1 | Needs an email provider (Resend) and a verified sending domain | Sign-up works without email verification; no password reset yet | Resend API key + domain; wire Better Auth `sendVerificationEmail` / `sendResetPassword` |
 | B5 | Legal review of the privacy page and consent flow (PDPL 91/2025) – **deferred by owner** (project does not need strong legal focus; revisit when an opportunity arises) | P1 | Needs a lawyer | Draft page at `/privacy`, per-purpose consents stored in `consents`, export + delete in `/me` | Legal review before public launch (ADR 0011) |
-| B6 | Human review of Hán-Việt (103 kanji) and Vietnamese meanings/examples (164 words, lessons 1–10) | P2 | P2 acceptance needs a native reviewer; content was authored by the agent and cross-checked against KANJIDIC2/Unihan (0 mismatches) but not reviewed by a person | Content ships with `hanVietReviewed: false` / `meaningsViReviewed: false` | Reviewer edits `content/source/n5/*.ts`, sets the flags to `true` in the ingest, runs `npm run ingest:n5` |
+| B6 | Human review of Hán-Việt (103 kanji) and Vietnamese meanings/examples (331 words, 42 grammar points, lessons 1–20; 料理, 弁当, 日本語 Hán-Việt set by hand) | P2 | P2 acceptance needs a native reviewer; content was authored by the agent and cross-checked against KANJIDIC2/Unihan (0 mismatches) but not reviewed by a person | Content ships with `hanVietReviewed: false` / `meaningsViReviewed: false` | Reviewer edits `content/source/n5/*.ts`, sets the flags to `true` in the ingest, runs `npm run ingest:n5` |
 
 ## Follow-ups (no blocker, scheduled later)
 
@@ -24,7 +24,7 @@ Items that could not be finished while implementing the roadmap phases. Each has
 | F5 | Furigana mode "only kanji not learned yet" (setting exists; display treats it as "always" because public pages are static and do not know the user's learned kanji) | P2+ |
 | F6 | ~~Production SRS direction unlocks when a word card is mature~~ – done (reading direction not added) | P3 |
 | F7 | ~~Kana missed in quizzes become SRS cards~~ – done | P3 |
-| F8 | Timed JLPT N5 mock exam | P7 (roadmap) |
+| F8 | ~~Timed JLPT N5 mock exam~~ – done: `/tests/mock`, 32 questions, 30 min; timer is client-side only (server does not check elapsed time) | P7 (roadmap) |
 | F9 | ~~`row` layout of WordCard not used~~ – done: related words on kanji pages are a row list linking to word pages | P5 |
 | F10 | ~~Admin 2FA enable UI~~ – done: `/me` enables TOTP with the password, shows the key and backup codes once; sign-in asks for the code. Role admin is still granted only by hand in the DB. No QR code (needs a library) and no disable button yet | P3 gap |
 | F11 | ~~Admin 404 returns HTTP 200~~ – done: `src/proxy.ts` rewrites non-admins to a real 404; `requireAdmin` stays the authority | P3 gap |

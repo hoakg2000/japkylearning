@@ -1882,5 +1882,1922 @@
    }
   ],
   "jlpt": "n5"
+ },
+ {
+  "id": "n5-ikura",
+  "pattern": "N は いくら ですか",
+  "meaning": {
+   "vi": "N giá bao nhiêu?",
+   "en": "How much is N?"
+  },
+  "explanation": {
+   "vi": "Dùng いくら để hỏi giá. Trả lời bằng số + 円: 五百円です. Số lớn: 千 (せん) = 1.000, 一万 (いちまん) = 10.000. Chú ý biến âm: 三百 (さんびゃく), 六百 (ろっぴゃく), 三千 (さんぜん), 八千 (はっせん).",
+   "en": "Use いくら to ask a price. Answer with number + 円: 五百円です. Big numbers: 千 (せん) = 1,000, 一万 (いちまん) = 10,000. Note the sound changes: 三百 (さんびゃく), 六百 (ろっぴゃく), 三千 (さんぜん), 八千 (はっせん)."
+  },
+  "examples": [
+   {
+    "ja": "この傘はいくらですか。",
+    "segments": [
+     {
+      "surface": "この"
+     },
+     {
+      "surface": "傘",
+      "reading": "かさ"
+     },
+     {
+      "surface": "はいくらですか。"
+     }
+    ],
+    "romaji": "kono kasa wa ikura desuka.",
+    "translation": {
+     "vi": "Cái ô này bao nhiêu tiền?",
+     "en": "How much is this umbrella?"
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "それは二万円です。",
+    "segments": [
+     {
+      "surface": "それは"
+     },
+     {
+      "surface": "二万",
+      "reading": "にまん"
+     },
+     {
+      "surface": "円",
+      "reading": "えん"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "sore wa niman'en desu.",
+    "translation": {
+     "vi": "Cái đó 20.000 yên.",
+     "en": "That one is 20,000 yen."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "この時計はいくらですか。",
+    "blank": "いくら",
+    "translation": {
+     "vi": "Chiếc đồng hồ này bao nhiêu tiền?",
+     "en": "How much is this watch?"
+    }
+   },
+   {
+    "ja": "切手は百円です。",
+    "blank": "円",
+    "translation": {
+     "vi": "Con tem giá 100 yên.",
+     "en": "The stamp is 100 yen."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-wo-kudasai",
+  "pattern": "N を (số lượng) ください",
+  "meaning": {
+   "vi": "cho tôi N",
+   "en": "N, please (asking for things)"
+  },
+  "explanation": {
+   "vi": "Dùng khi mua hàng hoặc gọi món. Số lượng đứng sau を, trước ください, không cần trợ từ: りんごを三つください. Từ đếm: ～つ (đồ vật nói chung, đến 10), ～枚 (vật mỏng, phẳng như giấy, áo, tem), ～本 (vật dài như bút, chai).",
+   "en": "Use it when shopping or ordering. The quantity goes after を and before ください, with no particle: りんごを三つください. Counters: ～つ (things in general, up to 10), ～枚 (thin flat things: paper, shirts, stamps), ～本 (long things: pens, bottles)."
+  },
+  "examples": [
+   {
+    "ja": "コーヒーを二つください。",
+    "segments": [
+     {
+      "surface": "コーヒーを"
+     },
+     {
+      "surface": "二",
+      "reading": "ふた"
+     },
+     {
+      "surface": "つください。"
+     }
+    ],
+    "romaji": "koohii o futatsu kudasai.",
+    "translation": {
+     "vi": "Cho tôi hai cốc cà phê.",
+     "en": "Two coffees, please."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "鉛筆を三本ください。",
+    "segments": [
+     {
+      "surface": "鉛筆",
+      "reading": "えんぴつ"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "三本",
+      "reading": "さんぼん"
+     },
+     {
+      "surface": "ください。"
+     }
+    ],
+    "romaji": "enpitsu o sanbon kudasai.",
+    "translation": {
+     "vi": "Cho tôi ba cái bút chì.",
+     "en": "Three pencils, please."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "このシャツを一枚ください。",
+    "blank": "ください",
+    "translation": {
+     "vi": "Cho tôi một cái áo sơ mi này.",
+     "en": "One of these shirts, please."
+    }
+   },
+   {
+    "ja": "りんごを四つください。",
+    "blank": "を",
+    "translation": {
+     "vi": "Cho tôi bốn quả táo.",
+     "en": "Four apples, please."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-family-terms",
+  "pattern": "父・母 (gia đình mình) / お父さん・お母さん (gia đình người khác)",
+  "meaning": {
+   "vi": "cách gọi gia đình mình và gia đình người khác",
+   "en": "words for your own family vs someone else’s"
+  },
+  "explanation": {
+   "vi": "Khi nói với người ngoài về gia đình mình, dùng từ khiêm tốn: 父, 母, 兄, 姉. Khi nói về gia đình người khác (hoặc gọi người thân trong nhà), dùng từ kính trọng: お父さん, お母さん, お兄さん, お姉さん. 弟 và 妹 dùng cho gia đình mình; với người khác thêm さん: 弟さん, 妹さん.",
+   "en": "When talking to outsiders about your own family, use the humble words: 父, 母, 兄, 姉. For someone else’s family (or when calling your own relatives), use the polite words: お父さん, お母さん, お兄さん, お姉さん. 弟 and 妹 are for your own family; add さん for others: 弟さん, 妹さん."
+  },
+  "examples": [
+   {
+    "ja": "私の父は会社員です。",
+    "segments": [
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "父",
+      "reading": "ちち"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "会社員",
+      "reading": "かいしゃいん"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "watashi no chichi wa kaishain desu.",
+    "translation": {
+     "vi": "Bố tôi là nhân viên công ty.",
+     "en": "My father is an office worker."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "山田さんのお父さんはエンジニアです。",
+    "segments": [
+     {
+      "surface": "山田",
+      "reading": "やまだ"
+     },
+     {
+      "surface": "さんのお"
+     },
+     {
+      "surface": "父",
+      "reading": "とう"
+     },
+     {
+      "surface": "さんはエンジニアです。"
+     }
+    ],
+    "romaji": "yamadasan no otousan wa enjinia desu.",
+    "translation": {
+     "vi": "Bố của anh Yamada là kỹ sư.",
+     "en": "Mr Yamada’s father is an engineer."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "私の母は看護師です。",
+    "blank": "母",
+    "translation": {
+     "vi": "Mẹ tôi là y tá.",
+     "en": "My mother is a nurse."
+    }
+   },
+   {
+    "ja": "リンさんのお姉さんは学生ですか。",
+    "blank": "お姉さん",
+    "translation": {
+     "vi": "Chị gái của Linh là sinh viên à?",
+     "en": "Is Linh’s older sister a student?"
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-nin-counter",
+  "pattern": "一人 (ひとり)・二人 (ふたり)・三人 (さんにん)… / 何人",
+  "meaning": {
+   "vi": "đếm người",
+   "en": "counting people"
+  },
+  "explanation": {
+   "vi": "Đếm người bằng ～人. Hai số đầu đọc đặc biệt: 一人 (ひとり), 二人 (ふたり); từ ba trở đi là số + にん: 三人 (さんにん), 四人 (よにん). Hỏi bằng 何人. Hỏi số người trong gia đình: 何人家族ですか — 四人家族です.",
+   "en": "Count people with ～人. The first two are special: 一人 (ひとり), 二人 (ふたり); from three on it is number + にん: 三人 (さんにん), 四人 (よにん). Ask with 何人. To ask about family size: 何人家族ですか — 四人家族です."
+  },
+  "examples": [
+   {
+    "ja": "何人家族ですか。",
+    "segments": [
+     {
+      "surface": "何人",
+      "reading": "なんにん"
+     },
+     {
+      "surface": "家族",
+      "reading": "かぞく"
+     },
+     {
+      "surface": "ですか。"
+     }
+    ],
+    "romaji": "nannin kazoku desuka.",
+    "translation": {
+     "vi": "Nhà bạn có mấy người?",
+     "en": "How many people are in your family?"
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "五人家族です。両親と兄と妹と私です。",
+    "segments": [
+     {
+      "surface": "五人",
+      "reading": "ごにん"
+     },
+     {
+      "surface": "家族",
+      "reading": "かぞく"
+     },
+     {
+      "surface": "です。"
+     },
+     {
+      "surface": "両親",
+      "reading": "りょうしん"
+     },
+     {
+      "surface": "と"
+     },
+     {
+      "surface": "兄",
+      "reading": "あに"
+     },
+     {
+      "surface": "と"
+     },
+     {
+      "surface": "妹",
+      "reading": "いもうと"
+     },
+     {
+      "surface": "と"
+     },
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "gonin kazoku desu. ryoushin to ani to imouto to watashi desu.",
+    "translation": {
+     "vi": "Nhà tôi có năm người: bố mẹ, anh trai, em gái và tôi.",
+     "en": "There are five of us: my parents, my older brother, my younger sister and me."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "妹が二人います。",
+    "blank": "二人",
+    "translation": {
+     "vi": "Tôi có hai em gái.",
+     "en": "I have two younger sisters."
+    }
+   },
+   {
+    "ja": "会議室に何人いますか。",
+    "blank": "何人",
+    "translation": {
+     "vi": "Trong phòng họp có mấy người?",
+     "en": "How many people are in the meeting room?"
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-date",
+  "pattern": "～月～日～曜日",
+  "meaning": {
+   "vi": "nói ngày tháng",
+   "en": "saying dates"
+  },
+  "explanation": {
+   "vi": "Tháng: số + 月 (がつ): 一月, 四月 (しがつ), 七月 (しちがつ), 九月 (くがつ). Ngày: số + 日 (にち), nhưng ngày 1–10, 14, 20, 24 đọc đặc biệt: 一日 (ついたち), 二日 (ふつか), 三日 (みっか), 四日 (よっか), 五日 (いつか), 八日 (ようか), 十日 (とおか), 二十日 (はつか). Thứ tự: năm → tháng → ngày → thứ. Hỏi: 何月何日ですか.",
+   "en": "Months: number + 月 (がつ): 一月, 四月 (しがつ), 七月 (しちがつ), 九月 (くがつ). Days: number + 日 (にち), but days 1–10, 14, 20 and 24 are special: 一日 (ついたち), 二日 (ふつか), 三日 (みっか), 四日 (よっか), 五日 (いつか), 八日 (ようか), 十日 (とおか), 二十日 (はつか). Order: year → month → day → weekday. Ask: 何月何日ですか."
+  },
+  "examples": [
+   {
+    "ja": "今日は五月三日土曜日です。",
+    "segments": [
+     {
+      "surface": "今日",
+      "reading": "きょう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "五月",
+      "reading": "ごがつ"
+     },
+     {
+      "surface": "三日",
+      "reading": "みっか"
+     },
+     {
+      "surface": "土曜日",
+      "reading": "どようび"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "kyou wa gogatsu mikka doyoubi desu.",
+    "translation": {
+     "vi": "Hôm nay là thứ Bảy, ngày 3 tháng 5.",
+     "en": "Today is Saturday, May 3."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "私の誕生日は九月二十日です。",
+    "segments": [
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "誕生日",
+      "reading": "たんじょうび"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "九月",
+      "reading": "くがつ"
+     },
+     {
+      "surface": "二十日",
+      "reading": "はつか"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "watashi no tanjoubi wa kugatsu hatsuka desu.",
+    "translation": {
+     "vi": "Sinh nhật tôi là ngày 20 tháng 9.",
+     "en": "My birthday is September 20."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "明日は何月何日ですか。",
+    "blank": "何日",
+    "translation": {
+     "vi": "Ngày mai là ngày bao nhiêu tháng mấy?",
+     "en": "What is the date tomorrow?"
+    }
+   },
+   {
+    "ja": "四月一日は月曜日です。",
+    "blank": "月曜日",
+    "translation": {
+     "vi": "Ngày 1 tháng 4 là thứ Hai.",
+     "en": "April 1 is a Monday."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-ni-time",
+  "pattern": "(thời điểm) に V",
+  "meaning": {
+   "vi": "làm V vào lúc (thời điểm)",
+   "en": "do V at/on/in (a point in time)"
+  },
+  "explanation": {
+   "vi": "Trợ từ に đánh dấu thời điểm cụ thể: giờ, thứ, ngày, tháng, năm: 七時に, 日曜日に, 三月に. Không dùng に với từ chỉ thời gian tương đối: 今日, 明日, 昨日, 毎日, 今月, 来年… (thứ trong tuần thì dùng に hay không đều được).",
+   "en": "The particle に marks a specific point in time: hours, weekdays, dates, months, years: 七時に, 日曜日に, 三月に. Do not use に with relative time words: 今日, 明日, 昨日, 毎日, 今月, 来年… (with weekdays に is optional)."
+  },
+  "examples": [
+   {
+    "ja": "八月に国へ帰ります。",
+    "segments": [
+     {
+      "surface": "八月",
+      "reading": "はちがつ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "国",
+      "reading": "くに"
+     },
+     {
+      "surface": "へ"
+     },
+     {
+      "surface": "帰",
+      "reading": "かえ"
+     },
+     {
+      "surface": "ります。"
+     }
+    ],
+    "romaji": "hachigatsu ni kuni e kaerimasu.",
+    "translation": {
+     "vi": "Tháng 8 tôi về nước.",
+     "en": "I am going back to my country in August."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "毎朝六時に起きます。",
+    "segments": [
+     {
+      "surface": "毎朝",
+      "reading": "まいあさ"
+     },
+     {
+      "surface": "六時",
+      "reading": "ろくじ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "起",
+      "reading": "お"
+     },
+     {
+      "surface": "きます。"
+     }
+    ],
+    "romaji": "maiasa rokuji ni okimasu.",
+    "translation": {
+     "vi": "Mỗi sáng tôi dậy lúc 6 giờ.",
+     "en": "I get up at six every morning."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "金曜日に映画を見ます。",
+    "blank": "に",
+    "translation": {
+     "vi": "Thứ Sáu tôi xem phim.",
+     "en": "I will watch a movie on Friday."
+    }
+   },
+   {
+    "ja": "来年日本で働きます。",
+    "blank": "来年",
+    "translation": {
+     "vi": "Năm sau tôi sẽ làm việc ở Nhật.",
+     "en": "Next year I will work in Japan."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-te-kudasai",
+  "pattern": "V て ください",
+  "meaning": {
+   "vi": "hãy làm V (nhờ, yêu cầu lịch sự)",
+   "en": "please do V (polite request)"
+  },
+  "explanation": {
+   "vi": "Thể て + ください để nhờ hoặc chỉ dẫn lịch sự. Cách tạo thể て: động từ nhóm 1 đuôi う・つ・る → って (待つ → 待って), む・ぶ・ぬ → んで (読む → 読んで), く → いて (書く → 書いて; ngoại lệ 行く → 行って), ぐ → いで, す → して. Nhóm 2: bỏ る thêm て (教える → 教えて). Nhóm 3: する → して, 来る → 来て.",
+   "en": "The て-form + ください makes a polite request or instruction. Making the て-form: group 1 verbs ending in う・つ・る → って (待つ → 待って), む・ぶ・ぬ → んで (読む → 読んで), く → いて (書く → 書いて; but 行く → 行って), ぐ → いで, す → して. Group 2: drop る, add て (教える → 教えて). Group 3: する → して, 来る → 来て."
+  },
+  "examples": [
+   {
+    "ja": "ちょっと待ってください。",
+    "segments": [
+     {
+      "surface": "ちょっと"
+     },
+     {
+      "surface": "待",
+      "reading": "ま"
+     },
+     {
+      "surface": "ってください。"
+     }
+    ],
+    "romaji": "chotto matte kudasai.",
+    "translation": {
+     "vi": "Xin đợi một chút.",
+     "en": "Please wait a moment."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "駅への道を教えてください。",
+    "segments": [
+     {
+      "surface": "駅",
+      "reading": "えき"
+     },
+     {
+      "surface": "への"
+     },
+     {
+      "surface": "道",
+      "reading": "みち"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "教",
+      "reading": "おし"
+     },
+     {
+      "surface": "えてください。"
+     }
+    ],
+    "romaji": "eki e no michi o oshiete kudasai.",
+    "translation": {
+     "vi": "Xin chỉ cho tôi đường đến nhà ga.",
+     "en": "Please tell me the way to the station."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "次の角を右へ曲がってください。",
+    "blank": "ください",
+    "translation": {
+     "vi": "Hãy rẽ phải ở góc tiếp theo.",
+     "en": "Please turn right at the next corner."
+    }
+   },
+   {
+    "ja": "ここに名前を書いてください。",
+    "blank": "書いて",
+    "translation": {
+     "vi": "Xin hãy viết tên vào đây.",
+     "en": "Please write your name here."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-wo-movement",
+  "pattern": "(nơi chốn) を V (di chuyển)",
+  "meaning": {
+   "vi": "đi qua/dọc theo nơi chốn",
+   "en": "move through/along/across a place"
+  },
+  "explanation": {
+   "vi": "Với động từ di chuyển (渡る, 曲がる, 歩く, 通る…), を đánh dấu nơi mà ta đi qua hoặc đi dọc theo: 橋を渡る (qua cầu), 角を曲がる (rẽ ở góc), 道を歩く (đi bộ trên đường). Hướng rẽ dùng へ hoặc に: 右へ曲がる.",
+   "en": "With movement verbs (渡る, 曲がる, 歩く, 通る…), を marks the place you pass through or along: 橋を渡る (cross the bridge), 角を曲がる (turn at the corner), 道を歩く (walk along the road). The direction takes へ or に: 右へ曲がる."
+  },
+  "examples": [
+   {
+    "ja": "この道をまっすぐ行ってください。",
+    "segments": [
+     {
+      "surface": "この"
+     },
+     {
+      "surface": "道",
+      "reading": "みち"
+     },
+     {
+      "surface": "をまっすぐ"
+     },
+     {
+      "surface": "行",
+      "reading": "い"
+     },
+     {
+      "surface": "ってください。"
+     }
+    ],
+    "romaji": "kono michi o massugu itte kudasai.",
+    "translation": {
+     "vi": "Hãy đi thẳng con đường này.",
+     "en": "Please go straight along this road."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "公園を歩きました。",
+    "segments": [
+     {
+      "surface": "公園",
+      "reading": "こうえん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "歩",
+      "reading": "ある"
+     },
+     {
+      "surface": "きました。"
+     }
+    ],
+    "romaji": "kouen o arukimashita.",
+    "translation": {
+     "vi": "Tôi đã đi bộ trong công viên.",
+     "en": "I walked through the park."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "信号を渡ってください。",
+    "blank": "を",
+    "translation": {
+     "vi": "Hãy băng qua chỗ đèn giao thông.",
+     "en": "Please cross at the traffic light."
+    }
+   },
+   {
+    "ja": "あの角を左へ曲がります。",
+    "blank": "曲がります",
+    "translation": {
+     "vi": "Rẽ trái ở góc kia.",
+     "en": "Turn left at that corner."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-te-imasu-progress",
+  "pattern": "V て います",
+  "meaning": {
+   "vi": "đang làm V",
+   "en": "be doing V (action in progress)"
+  },
+  "explanation": {
+   "vi": "Thể て + います diễn tả hành động đang diễn ra vào lúc nói: 今、本を読んでいます. Phủ định: ～ていません. Hỏi: 何をしていますか (Bạn đang làm gì?). Văn nói hay rút gọn thành ～てます.",
+   "en": "The て-form + います describes an action happening right now: 今、本を読んでいます. Negative: ～ていません. Question: 何をしていますか (What are you doing?). In casual speech it often shortens to ～てます."
+  },
+  "examples": [
+   {
+    "ja": "今、母は料理を作っています。",
+    "segments": [
+     {
+      "surface": "今",
+      "reading": "いま"
+     },
+     {
+      "surface": "、"
+     },
+     {
+      "surface": "母",
+      "reading": "はは"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "料理",
+      "reading": "りょうり"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "作",
+      "reading": "つく"
+     },
+     {
+      "surface": "っています。"
+     }
+    ],
+    "romaji": "ima,haha wa ryouri o tsukutte imasu.",
+    "translation": {
+     "vi": "Bây giờ mẹ tôi đang nấu ăn.",
+     "en": "My mother is cooking right now."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "子供たちは公園で遊んでいます。",
+    "segments": [
+     {
+      "surface": "子供",
+      "reading": "こども"
+     },
+     {
+      "surface": "たちは"
+     },
+     {
+      "surface": "公園",
+      "reading": "こうえん"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "遊",
+      "reading": "あそ"
+     },
+     {
+      "surface": "んでいます。"
+     }
+    ],
+    "romaji": "kodomo tachi wa kouen de asonde imasu.",
+    "translation": {
+     "vi": "Bọn trẻ đang chơi ở công viên.",
+     "en": "The children are playing in the park."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "今何をしていますか。",
+    "blank": "しています",
+    "translation": {
+     "vi": "Bây giờ bạn đang làm gì?",
+     "en": "What are you doing now?"
+    }
+   },
+   {
+    "ja": "雨が降っています。",
+    "blank": "降って",
+    "translation": {
+     "vi": "Trời đang mưa.",
+     "en": "It is raining."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-te-imasu-state",
+  "pattern": "V て います (trạng thái)",
+  "meaning": {
+   "vi": "trạng thái kéo dài, kết quả của hành động",
+   "en": "an ongoing state or the result of an action"
+  },
+  "explanation": {
+   "vi": "Với một số động từ, ～ています diễn tả trạng thái kéo dài chứ không phải hành động đang xảy ra: 住んでいます (đang sống ở), 結婚しています (đã kết hôn), 知っています (biết), 持っています (có), 着ています (đang mặc), 働いています (làm việc ở). Chú ý phủ định của 知っています là 知りません.",
+   "en": "With some verbs, ～ています describes a continuing state rather than an action in progress: 住んでいます (live in), 結婚しています (be married), 知っています (know), 持っています (have), 着ています (be wearing), 働いています (work at). Note the negative of 知っています is 知りません."
+  },
+  "examples": [
+   {
+    "ja": "姉は結婚しています。",
+    "segments": [
+     {
+      "surface": "姉",
+      "reading": "あね"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "結婚",
+      "reading": "けっこん"
+     },
+     {
+      "surface": "しています。"
+     }
+    ],
+    "romaji": "ane wa kekkon shite imasu.",
+    "translation": {
+     "vi": "Chị gái tôi đã lập gia đình.",
+     "en": "My older sister is married."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "山田さんの電話番号を知っていますか。—いいえ、知りません。",
+    "segments": [
+     {
+      "surface": "山田",
+      "reading": "やまだ"
+     },
+     {
+      "surface": "さんの"
+     },
+     {
+      "surface": "電話番号",
+      "reading": "でんわばんごう"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "知",
+      "reading": "し"
+     },
+     {
+      "surface": "っていますか。—いいえ、"
+     },
+     {
+      "surface": "知",
+      "reading": "し"
+     },
+     {
+      "surface": "りません。"
+     }
+    ],
+    "romaji": "yamadasan no denwabangou o shitte imasuka. — iie,shirimasen.",
+    "translation": {
+     "vi": "Bạn có biết số điện thoại của anh Yamada không? — Không, tôi không biết.",
+     "en": "Do you know Mr Yamada’s phone number? — No, I don’t."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "私は東京に住んでいます。",
+    "blank": "住んで",
+    "translation": {
+     "vi": "Tôi sống ở Tokyo.",
+     "en": "I live in Tokyo."
+    }
+   },
+   {
+    "ja": "リンさんは白いシャツを着ています。",
+    "blank": "着て",
+    "translation": {
+     "vi": "Linh đang mặc áo sơ mi trắng.",
+     "en": "Linh is wearing a white shirt."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-tai",
+  "pattern": "V (bỏ ます) たい です",
+  "meaning": {
+   "vi": "muốn làm V",
+   "en": "want to do V"
+  },
+  "explanation": {
+   "vi": "Bỏ ます của động từ rồi thêm たいです: 食べます → 食べたいです, 行きます → 行きたいです. ～たい chia như tính từ đuôi い: phủ định ～たくないです, quá khứ ～たかったです. Tân ngữ có thể dùng を hoặc が: 水が飲みたいです. Chỉ dùng cho mong muốn của bản thân (hoặc hỏi người nghe), không dùng để nói thẳng mong muốn của người thứ ba.",
+   "en": "Drop ます and add たいです: 食べます → 食べたいです, 行きます → 行きたいです. ～たい conjugates like an い-adjective: negative ～たくないです, past ～たかったです. The object can take を or が: 水が飲みたいです. Use it for your own wishes (or to ask the listener), not to state a third person’s wishes directly."
+  },
+  "examples": [
+   {
+    "ja": "日本で寿司を食べたいです。",
+    "segments": [
+     {
+      "surface": "日本",
+      "reading": "にほん"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "寿司",
+      "reading": "すし"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "食",
+      "reading": "た"
+     },
+     {
+      "surface": "べたいです。"
+     }
+    ],
+    "romaji": "nihon de sushi o tabetai desu.",
+    "translation": {
+     "vi": "Tôi muốn ăn sushi ở Nhật.",
+     "en": "I want to eat sushi in Japan."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "今日はどこも行きたくないです。",
+    "segments": [
+     {
+      "surface": "今日",
+      "reading": "きょう"
+     },
+     {
+      "surface": "はどこも"
+     },
+     {
+      "surface": "行",
+      "reading": "い"
+     },
+     {
+      "surface": "きたくないです。"
+     }
+    ],
+    "romaji": "kyou wa doko mo ikitakunai desu.",
+    "translation": {
+     "vi": "Hôm nay tôi không muốn đi đâu cả.",
+     "en": "I don’t want to go anywhere today."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "冷たい水が飲みたいです。",
+    "blank": "飲みたい",
+    "translation": {
+     "vi": "Tôi muốn uống nước lạnh.",
+     "en": "I want to drink cold water."
+    }
+   },
+   {
+    "ja": "週末何をしたいですか。",
+    "blank": "したい",
+    "translation": {
+     "vi": "Cuối tuần bạn muốn làm gì?",
+     "en": "What do you want to do this weekend?"
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-ga-hoshii",
+  "pattern": "N が ほしい です",
+  "meaning": {
+   "vi": "muốn có N",
+   "en": "want (to have) N"
+  },
+  "explanation": {
+   "vi": "ほしい là tính từ đuôi い nghĩa là “muốn có”. Vật muốn có đi với が: カメラがほしいです. Phủ định: ほしくないです. Phân biệt: ほしい dùng với danh từ (muốn có vật), ～たい dùng với động từ (muốn làm).",
+   "en": "ほしい is an い-adjective meaning “want (to have)”. The thing you want takes が: カメラがほしいです. Negative: ほしくないです. Compare: ほしい goes with nouns (want a thing), ～たい with verbs (want to do)."
+  },
+  "examples": [
+   {
+    "ja": "誕生日に何が欲しいですか。",
+    "segments": [
+     {
+      "surface": "誕生日",
+      "reading": "たんじょうび"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "何",
+      "reading": "なに"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "欲",
+      "reading": "ほ"
+     },
+     {
+      "surface": "しいですか。"
+     }
+    ],
+    "romaji": "tanjoubi ni nani ga hoshii desuka.",
+    "translation": {
+     "vi": "Sinh nhật bạn muốn có gì?",
+     "en": "What do you want for your birthday?"
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "大きい冷蔵庫が欲しいです。",
+    "segments": [
+     {
+      "surface": "大",
+      "reading": "おお"
+     },
+     {
+      "surface": "きい"
+     },
+     {
+      "surface": "冷蔵庫",
+      "reading": "れいぞうこ"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "欲",
+      "reading": "ほ"
+     },
+     {
+      "surface": "しいです。"
+     }
+    ],
+    "romaji": "ookii reizouko ga hoshii desu.",
+    "translation": {
+     "vi": "Tôi muốn có cái tủ lạnh to.",
+     "en": "I want a big fridge."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "新しい自転車が欲しいです。",
+    "blank": "が",
+    "translation": {
+     "vi": "Tôi muốn có xe đạp mới.",
+     "en": "I want a new bicycle."
+    }
+   },
+   {
+    "ja": "お金はあまり欲しくないです。",
+    "blank": "欲しくない",
+    "translation": {
+     "vi": "Tôi không muốn có nhiều tiền lắm.",
+     "en": "I don’t really want money."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-temo-ii",
+  "pattern": "V て も いい です (か)",
+  "meaning": {
+   "vi": "được phép làm V; (tôi) làm V được không?",
+   "en": "may do V; may I do V?"
+  },
+  "explanation": {
+   "vi": "Thể て + もいいです diễn tả sự cho phép. Thêm か để xin phép: 窓を開けてもいいですか. Trả lời đồng ý: ええ、いいですよ / どうぞ. Từ chối nhẹ nhàng: すみません、ちょっと…",
+   "en": "The て-form + もいいです gives permission. Add か to ask for permission: 窓を開けてもいいですか. To say yes: ええ、いいですよ / どうぞ. To refuse softly: すみません、ちょっと…"
+  },
+  "examples": [
+   {
+    "ja": "ここで写真を撮ってもいいですか。",
+    "segments": [
+     {
+      "surface": "ここで"
+     },
+     {
+      "surface": "写真",
+      "reading": "しゃしん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "撮",
+      "reading": "と"
+     },
+     {
+      "surface": "ってもいいですか。"
+     }
+    ],
+    "romaji": "koko de shashin o tottemo ii desuka.",
+    "translation": {
+     "vi": "Tôi chụp ảnh ở đây được không?",
+     "en": "May I take photos here?"
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "少し休んでもいいですよ。",
+    "segments": [
+     {
+      "surface": "少",
+      "reading": "すこ"
+     },
+     {
+      "surface": "し"
+     },
+     {
+      "surface": "休",
+      "reading": "やす"
+     },
+     {
+      "surface": "んでもいいですよ。"
+     }
+    ],
+    "romaji": "sukoshi yasundemo ii desu yo.",
+    "translation": {
+     "vi": "Bạn nghỉ một chút cũng được đấy.",
+     "en": "You can rest for a bit."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "この鉛筆を使ってもいいですか。",
+    "blank": "も",
+    "translation": {
+     "vi": "Tôi dùng cái bút chì này được không?",
+     "en": "May I use this pencil?"
+    }
+   },
+   {
+    "ja": "窓を開けてもいいですか。—ええ、どうぞ。",
+    "blank": "いい",
+    "translation": {
+     "vi": "Tôi mở cửa sổ được không? — Vâng, xin mời.",
+     "en": "May I open the window? — Yes, go ahead."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-tewa-ikemasen",
+  "pattern": "V て は いけません",
+  "meaning": {
+   "vi": "không được làm V",
+   "en": "must not do V"
+  },
+  "explanation": {
+   "vi": "Thể て + はいけません diễn tả sự cấm đoán, thường dùng cho quy định, biển báo hoặc khi người trên nói với người dưới. Khi trả lời câu xin phép, thường nói mềm hơn: すみません、ちょっと… hoặc いいえ、いけません.",
+   "en": "The て-form + はいけません forbids something. It is used for rules, signs, or by someone in authority. When answering a request for permission, a softer reply is common: すみません、ちょっと… or いいえ、いけません."
+  },
+  "examples": [
+   {
+    "ja": "病院でたばこを吸ってはいけません。",
+    "segments": [
+     {
+      "surface": "病院",
+      "reading": "びょういん"
+     },
+     {
+      "surface": "でたばこを"
+     },
+     {
+      "surface": "吸",
+      "reading": "す"
+     },
+     {
+      "surface": "ってはいけません。"
+     }
+    ],
+    "romaji": "byouin de tabako o sutteha ikemasen.",
+    "translation": {
+     "vi": "Không được hút thuốc trong bệnh viện.",
+     "en": "You must not smoke in the hospital."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "図書館で話してはいけません。",
+    "segments": [
+     {
+      "surface": "図書館",
+      "reading": "としょかん"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "話",
+      "reading": "はな"
+     },
+     {
+      "surface": "してはいけません。"
+     }
+    ],
+    "romaji": "toshokan de hanashiteha ikemasen.",
+    "translation": {
+     "vi": "Không được nói chuyện trong thư viện.",
+     "en": "You must not talk in the library."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "美術館の絵に手で触ってはいけません。",
+    "blank": "いけません",
+    "translation": {
+     "vi": "Không được dùng tay chạm vào tranh trong bảo tàng mỹ thuật.",
+     "en": "You must not touch the paintings in the museum."
+    }
+   },
+   {
+    "ja": "ここに車を止めてはいけません。",
+    "blank": "は",
+    "translation": {
+     "vi": "Không được đỗ xe ở đây.",
+     "en": "You must not park your car here."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-naide-kudasai",
+  "pattern": "V ない で ください",
+  "meaning": {
+   "vi": "xin đừng làm V",
+   "en": "please don’t do V"
+  },
+  "explanation": {
+   "vi": "Thể ない + でください để nhờ người khác đừng làm gì. Cách tạo thể ない: nhóm 1 đổi âm cuối sang hàng あ + ない (書く → 書かない, 待つ → 待たない; đuôi う → わない: 言う → 言わない), nhóm 2 bỏ る + ない (忘れる → 忘れない), nhóm 3: する → しない, 来る → 来ない.",
+   "en": "The ない-form + でください asks someone not to do something. Making the ない-form: group 1 changes the last sound to the あ row + ない (書く → 書かない, 待つ → 待たない; う becomes わ: 言う → 言わない), group 2 drops る + ない (忘れる → 忘れない), group 3: する → しない, 来る → 来ない."
+  },
+  "examples": [
+   {
+    "ja": "宿題を忘れないでください。",
+    "segments": [
+     {
+      "surface": "宿題",
+      "reading": "しゅくだい"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "忘",
+      "reading": "わす"
+     },
+     {
+      "surface": "れないでください。"
+     }
+    ],
+    "romaji": "shukudai o wasurenaide kudasai.",
+    "translation": {
+     "vi": "Đừng quên bài tập về nhà nhé.",
+     "en": "Please don’t forget your homework."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "教室で英語を話さないでください。",
+    "segments": [
+     {
+      "surface": "教室",
+      "reading": "きょうしつ"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "英語",
+      "reading": "えいご"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "話",
+      "reading": "はな"
+     },
+     {
+      "surface": "さないでください。"
+     }
+    ],
+    "romaji": "kyoushitsu de eigo o hanasanaide kudasai.",
+    "translation": {
+     "vi": "Trong lớp xin đừng nói tiếng Anh.",
+     "en": "Please don’t speak English in the classroom."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "このことは誰にも言わないでください。",
+    "blank": "言わないで",
+    "translation": {
+     "vi": "Xin đừng nói chuyện này với ai.",
+     "en": "Please don’t tell anyone about this."
+    }
+   },
+   {
+    "ja": "心配しないでください。",
+    "blank": "ください",
+    "translation": {
+     "vi": "Xin đừng lo lắng.",
+     "en": "Please don’t worry."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-koto-ga-dekiru",
+  "pattern": "V (từ điển) こと が できます / N が できます",
+  "meaning": {
+   "vi": "có thể làm V; biết làm V",
+   "en": "can do V; be able to do V"
+  },
+  "explanation": {
+   "vi": "Động từ thể từ điển + ことができます diễn tả khả năng hoặc khả năng cho phép: 漢字を読むことができます. Với danh từ, dùng thẳng N ができます: 日本語ができます. Phủ định: ～ことができません.",
+   "en": "Dictionary-form verb + ことができます expresses ability or possibility: 漢字を読むことができます. With a noun, just say N ができます: 日本語ができます. Negative: ～ことができません."
+  },
+  "examples": [
+   {
+    "ja": "私は漢字を百書くことができます。",
+    "segments": [
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "漢字",
+      "reading": "かんじ"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "百",
+      "reading": "ひゃく"
+     },
+     {
+      "surface": "書",
+      "reading": "か"
+     },
+     {
+      "surface": "くことができます。"
+     }
+    ],
+    "romaji": "watashi wa kanji o hyaku kaku koto ga dekimasu.",
+    "translation": {
+     "vi": "Tôi có thể viết được một trăm chữ Hán.",
+     "en": "I can write a hundred kanji."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "この部屋で食事をすることができません。",
+    "segments": [
+     {
+      "surface": "この"
+     },
+     {
+      "surface": "部屋",
+      "reading": "へや"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "食事",
+      "reading": "しょくじ"
+     },
+     {
+      "surface": "をすることができません。"
+     }
+    ],
+    "romaji": "kono heya de shokuji o suru koto ga dekimasen.",
+    "translation": {
+     "vi": "Không thể ăn uống trong phòng này.",
+     "en": "You cannot eat in this room."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "妹はピアノを弾くことができます。",
+    "blank": "こと",
+    "translation": {
+     "vi": "Em gái tôi biết chơi piano.",
+     "en": "My younger sister can play the piano."
+    }
+   },
+   {
+    "ja": "ランさんは英語ができます。",
+    "blank": "できます",
+    "translation": {
+     "vi": "Lan biết tiếng Anh.",
+     "en": "Lan can speak English."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-yori-hou-ga",
+  "pattern": "A は B より ～ / A と B と どちら が ～ か — A の ほう が ～",
+  "meaning": {
+   "vi": "A ～ hơn B; giữa A và B cái nào ～ hơn?",
+   "en": "A is more ～ than B; which is more ～, A or B?"
+  },
+  "explanation": {
+   "vi": "So sánh hai thứ: A は B より + tính từ (A hơn B). Hỏi: A と B と どちらが + tính từ + ですか. Trả lời: A のほうが + tính từ + です (A hơn). Nếu ngang nhau: どちらも + tính từ + です. Tính từ trong tiếng Nhật không đổi hình thức khi so sánh.",
+   "en": "To compare two things: A は B より + adjective (A is more ～ than B). Ask: A と B と どちらが + adjective + ですか. Answer: A のほうが + adjective + です (A is more ～). If equal: どちらも + adjective + です. Japanese adjectives do not change form for comparisons."
+  },
+  "examples": [
+   {
+    "ja": "東京は大阪より大きいです。",
+    "segments": [
+     {
+      "surface": "東京",
+      "reading": "とうきょう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "大阪",
+      "reading": "おおさか"
+     },
+     {
+      "surface": "より"
+     },
+     {
+      "surface": "大",
+      "reading": "おお"
+     },
+     {
+      "surface": "きいです。"
+     }
+    ],
+    "romaji": "toukyou wa oosaka yori ookii desu.",
+    "translation": {
+     "vi": "Tokyo lớn hơn Osaka.",
+     "en": "Tokyo is bigger than Osaka."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "電車とバスとどちらが速いですか。—電車の方が速いです。",
+    "segments": [
+     {
+      "surface": "電車",
+      "reading": "でんしゃ"
+     },
+     {
+      "surface": "とバスとどちらが"
+     },
+     {
+      "surface": "速",
+      "reading": "はや"
+     },
+     {
+      "surface": "いですか。—"
+     },
+     {
+      "surface": "電車",
+      "reading": "でんしゃ"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "方",
+      "reading": "ほう"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "速",
+      "reading": "はや"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "densha to basu to dochira ga hayai desuka. — densha no hou ga hayai desu.",
+    "translation": {
+     "vi": "Tàu điện và xe buýt, cái nào nhanh hơn? — Tàu điện nhanh hơn.",
+     "en": "Which is faster, the train or the bus? — The train is faster."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "兄は父より背が高いです。",
+    "blank": "より",
+    "translation": {
+     "vi": "Anh trai tôi cao hơn bố tôi.",
+     "en": "My older brother is taller than my father."
+    }
+   },
+   {
+    "ja": "夏と冬とどちらが好きですか。",
+    "blank": "どちら",
+    "translation": {
+     "vi": "Bạn thích mùa hè hay mùa đông hơn?",
+     "en": "Which do you like better, summer or winter?"
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-ichiban",
+  "pattern": "N の 中 で ～ が いちばん ～",
+  "meaning": {
+   "vi": "trong nhóm N, ～ là ～ nhất",
+   "en": "among N, ～ is the most ～"
+  },
+  "explanation": {
+   "vi": "So sánh nhất trong một nhóm từ ba thứ trở lên: (nhóm) の中で X がいちばん + tính từ + です. Hỏi: (nhóm) の中で 何/どこ/誰/いつ が いちばん + tính từ + ですか. Với nhóm nhỏ như gia đình, lớp học có thể dùng で: 家族で.",
+   "en": "For the most in a group of three or more: (group) の中で X がいちばん + adjective + です. Ask: (group) の中で 何/どこ/誰/いつ が いちばん + adjective + ですか. With groups like a family or class, で alone also works: 家族で."
+  },
+  "examples": [
+   {
+    "ja": "果物の中で何が一番好きですか。",
+    "segments": [
+     {
+      "surface": "果物",
+      "reading": "くだもの"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "中",
+      "reading": "なか"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "何",
+      "reading": "なに"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "一番",
+      "reading": "いちばん"
+     },
+     {
+      "surface": "好",
+      "reading": "す"
+     },
+     {
+      "surface": "きですか。"
+     }
+    ],
+    "romaji": "kudamono no naka de nani ga ichiban suki desuka.",
+    "translation": {
+     "vi": "Trong các loại hoa quả, bạn thích loại nào nhất?",
+     "en": "Which fruit do you like best?"
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "日本で一番高い山は富士山です。",
+    "segments": [
+     {
+      "surface": "日本",
+      "reading": "にほん"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "一番",
+      "reading": "いちばん"
+     },
+     {
+      "surface": "高",
+      "reading": "たか"
+     },
+     {
+      "surface": "い"
+     },
+     {
+      "surface": "山",
+      "reading": "やま"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "富士山",
+      "reading": "ふじさん"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "nihon de ichiban takai yama wa fujisan desu.",
+    "translation": {
+     "vi": "Ngọn núi cao nhất Nhật Bản là núi Phú Sĩ.",
+     "en": "The highest mountain in Japan is Mt Fuji."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "クラスの中で誰が一番若いですか。",
+    "blank": "中",
+    "translation": {
+     "vi": "Trong lớp ai trẻ nhất?",
+     "en": "Who is the youngest in the class?"
+    }
+   },
+   {
+    "ja": "一年で八月が一番暑いです。",
+    "blank": "一番",
+    "translation": {
+     "vi": "Trong năm tháng 8 nóng nhất.",
+     "en": "August is the hottest month of the year."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-kara-reason",
+  "pattern": "(câu) から、(câu)",
+  "meaning": {
+   "vi": "vì ～ nên ～",
+   "en": "because ～, ～"
+  },
+  "explanation": {
+   "vi": "から đứng sau vế chỉ lý do: 時間がありませんから、タクシーで行きます. Có thể dùng thể lịch sự (～ますから, ～ですから) hoặc thể thường. Trả lời câu hỏi どうして bằng ～からです: どうして休みましたか — 風邪をひきましたから. Đừng nhầm với から chỉ điểm bắt đầu (từ…).",
+   "en": "から comes after the clause giving the reason: 時間がありませんから、タクシーで行きます. It works with polite (～ますから, ～ですから) or plain forms. Answer a どうして question with ～からです: どうして休みましたか — 風邪をひきましたから. Do not confuse it with から meaning “from”."
+  },
+  "examples": [
+   {
+    "ja": "雨が降っていますから、家にいます。",
+    "segments": [
+     {
+      "surface": "雨",
+      "reading": "あめ"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "降",
+      "reading": "ふ"
+     },
+     {
+      "surface": "っていますから、"
+     },
+     {
+      "surface": "家",
+      "reading": "いえ"
+     },
+     {
+      "surface": "にいます。"
+     }
+    ],
+    "romaji": "ame ga futte imasu kara,ie ni imasu.",
+    "translation": {
+     "vi": "Vì trời đang mưa nên tôi ở nhà.",
+     "en": "It is raining, so I am staying home."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "どうして昨日休みましたか。—頭が痛かったですから。",
+    "segments": [
+     {
+      "surface": "どうして"
+     },
+     {
+      "surface": "昨日",
+      "reading": "きのう"
+     },
+     {
+      "surface": "休",
+      "reading": "やす"
+     },
+     {
+      "surface": "みましたか。—"
+     },
+     {
+      "surface": "頭",
+      "reading": "あたま"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "痛",
+      "reading": "いた"
+     },
+     {
+      "surface": "かったですから。"
+     }
+    ],
+    "romaji": "doushite kinou yasumimashita ka. — atama ga itakatta desu kara.",
+    "translation": {
+     "vi": "Tại sao hôm qua bạn nghỉ? — Vì tôi bị đau đầu.",
+     "en": "Why were you absent yesterday? — Because I had a headache."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "眠いですから、もう寝ます。",
+    "blank": "から",
+    "translation": {
+     "vi": "Vì buồn ngủ nên tôi đi ngủ đây.",
+     "en": "I’m sleepy, so I’m going to bed."
+    }
+   },
+   {
+    "ja": "明日は休みですから、海へ行きましょう。",
+    "blank": "です",
+    "translation": {
+     "vi": "Vì mai là ngày nghỉ nên mình đi biển đi.",
+     "en": "Tomorrow is a day off, so let’s go to the beach."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-toki",
+  "pattern": "V (từ điển/ない)・A い・A な・N の + とき、～",
+  "meaning": {
+   "vi": "khi ～, lúc ～",
+   "en": "when ～"
+  },
+  "explanation": {
+   "vi": "とき (時) nối với vế trước để nói thời điểm: động từ thể từ điển hoặc thể ない + とき (寝るとき), tính từ い + とき (若いとき), tính từ な + な + とき (暇なとき), danh từ + の + とき (子供のとき). Vế sau là sự việc xảy ra vào lúc đó.",
+   "en": "とき (時) attaches to the clause before it to say “when”: dictionary or ない-form verb + とき (寝るとき), い-adjective + とき (若いとき), な-adjective + な + とき (暇なとき), noun + の + とき (子供のとき). The second clause says what happens at that time."
+  },
+  "examples": [
+   {
+    "ja": "暇な時、本を読みます。",
+    "segments": [
+     {
+      "surface": "暇",
+      "reading": "ひま"
+     },
+     {
+      "surface": "な"
+     },
+     {
+      "surface": "時",
+      "reading": "とき"
+     },
+     {
+      "surface": "、"
+     },
+     {
+      "surface": "本",
+      "reading": "ほん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "読",
+      "reading": "よ"
+     },
+     {
+      "surface": "みます。"
+     }
+    ],
+    "romaji": "hima na toki,hon o yomimasu.",
+    "translation": {
+     "vi": "Khi rảnh tôi đọc sách.",
+     "en": "When I am free, I read books."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "道を渡る時、車に気をつけてください。",
+    "segments": [
+     {
+      "surface": "道",
+      "reading": "みち"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "渡",
+      "reading": "わた"
+     },
+     {
+      "surface": "る"
+     },
+     {
+      "surface": "時",
+      "reading": "とき"
+     },
+     {
+      "surface": "、"
+     },
+     {
+      "surface": "車",
+      "reading": "くるま"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "気",
+      "reading": "き"
+     },
+     {
+      "surface": "をつけてください。"
+     }
+    ],
+    "romaji": "michi o wataru toki,kuruma ni ki o tsukete kudasai.",
+    "translation": {
+     "vi": "Khi qua đường hãy chú ý xe cộ.",
+     "en": "Watch out for cars when you cross the road."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "若い時、よく旅行しました。",
+    "blank": "時",
+    "translation": {
+     "vi": "Hồi trẻ tôi hay đi du lịch.",
+     "en": "When I was young, I often travelled."
+    }
+   },
+   {
+    "ja": "夏休みの時、海で泳ぎました。",
+    "blank": "の",
+    "translation": {
+     "vi": "Hồi nghỉ hè tôi đã bơi ở biển.",
+     "en": "During the summer holidays I swam in the sea."
+    }
+   }
+  ],
+  "jlpt": "n5"
  }
 ]

@@ -62,7 +62,7 @@
 | Task | Acceptance criteria |
 |------|---------------------|
 | Pack kaigo (≥ 50 từ + kanji liên quan) | Thêm vào SRS bằng 1 nút |
-| Bài N5 11–20 | Như P2 |
+| Bài N5 11–20 – ✅ xong (chưa review, [backlog](../backlog.md) B6) | Như P2 |
 | AI chat beta (chỉ ngữ pháp, 20 tin/ngày, SSE) | [F8](./02-FEATURES.md#f8-ai-chat-tutor-beta) |
 | Email nhắc học (opt-in), share card streak | |
 
