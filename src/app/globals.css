@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+/* Design tokens: docs/06-UI-UX.md §2. Dark values follow the "dark" class set by next-themes. */
+:root {
+  --brand: #3b4cca;
+  --brand-ink: #ffffff;
+  --vermilion: #e8452c;
+  --bg: #fffbf5;
+  --surface: #ffffff;
+  --surface-2: #f4efe6;
+  --ink: #1f2430;
+  --muted: #5b6474;
+  --line: #e6dfd3;
+  --success: #2e9e5b;
+  --error: #c8283c;
+  --warning: #f2a900;
+  --info: #2f80ed;
+  --n5: #2e9e5b;
+  --n4: #0f9d9a;
+  --n3: #2f80ed;
+  --n2: #7c4dff;
+  --n1: #c2185b;
+  --radius: 16px;
+  --space: 1.25;
+}
+
+.dark {
+  --brand: #8b96f0;
+  --brand-ink: #0f172a;
+  --vermilion: #ff7a5c;
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --surface-2: #273449;
+  --ink: #e5e7eb;
+  --muted: #94a3b8;
+  --line: #334155;
+  --success: #4ade80;
+  --error: #f87171;
+  --warning: #fbbf24;
+  --info: #60a5fa;
+}
+
+/* Minimal mode: denser, flatter (06-UI-UX §4). */
+[data-ui="minimal"] {
+  --radius: 8px;
+  --space: 0.85;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant minimal (&:where([data-ui="minimal"], [data-ui="minimal"] *));
+
+@theme inline {
+  --color-brand: var(--brand);
+  --color-brand-ink: var(--brand-ink);
+  --color-vermilion: var(--vermilion);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-success: var(--success);
+  --color-error: var(--error);
+  --color-warning: var(--warning);
+  --color-info: var(--info);
+  --color-n5: var(--n5);
+  --color-n4: var(--n4);
+  --color-n3: var(--n3);
+  --color-n2: var(--n2);
+  --color-n1: var(--n1);
+  --radius-card: var(--radius);
+  --font-sans: var(--font-ui), system-ui, sans-serif;
+  --font-jp: var(--font-jp), "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+  --ease-out-soft: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+html {
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+/* Japanese text: JP font first to avoid Chinese glyph fallback (06-UI-UX §3). */
+:lang(ja) {
+  font-family: var(--font-jp);
+}
+
+ruby {
+  ruby-position: over;
+}
+rt {
+  font-size: max(0.5em, 11px);
+  color: var(--muted);
+}
+/* Toggle furigana without reflow: keep the space, hide the text. */
+[data-furigana="off"] rt {
+  visibility: hidden;
+}
+.ruby-line {
+  line-height: 2;
+}
+
+:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Stroke order animation (KanjiVG paths use pathLength=1). */
+.stroke-draw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: stroke-draw 0.55s var(--ease-out-soft, ease-out) forwards;
+}
+@keyframes stroke-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .stroke-draw {
+    stroke-dashoffset: 0;
+    animation: none;
+  }
+}
+
+/* Display preferences set on <html> by public/ui-mode.js (F13 toggles, no layout shift for furigana). */
+[data-romaji="off"] .romaji,
+[data-hanviet="off"] .hanviet {
+  display: none;
+}

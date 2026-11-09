@@ -1,0 +1,933 @@
+[
+ {
+  "char": "ア",
+  "romaji": "a",
+  "script": "katakana",
+  "group": "basic",
+  "row": "a"
+ },
+ {
+  "char": "イ",
+  "romaji": "i",
+  "script": "katakana",
+  "group": "basic",
+  "row": "a"
+ },
+ {
+  "char": "ウ",
+  "romaji": "u",
+  "script": "katakana",
+  "group": "basic",
+  "row": "a"
+ },
+ {
+  "char": "エ",
+  "romaji": "e",
+  "script": "katakana",
+  "group": "basic",
+  "row": "a"
+ },
+ {
+  "char": "オ",
+  "romaji": "o",
+  "script": "katakana",
+  "group": "basic",
+  "row": "a"
+ },
+ {
+  "char": "カ",
+  "romaji": "ka",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ka"
+ },
+ {
+  "char": "キ",
+  "romaji": "ki",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ka"
+ },
+ {
+  "char": "ク",
+  "romaji": "ku",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ka"
+ },
+ {
+  "char": "ケ",
+  "romaji": "ke",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ka"
+ },
+ {
+  "char": "コ",
+  "romaji": "ko",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ka"
+ },
+ {
+  "char": "サ",
+  "romaji": "sa",
+  "script": "katakana",
+  "group": "basic",
+  "row": "sa"
+ },
+ {
+  "char": "シ",
+  "romaji": "shi",
+  "script": "katakana",
+  "group": "basic",
+  "row": "sa"
+ },
+ {
+  "char": "ス",
+  "romaji": "su",
+  "script": "katakana",
+  "group": "basic",
+  "row": "sa"
+ },
+ {
+  "char": "セ",
+  "romaji": "se",
+  "script": "katakana",
+  "group": "basic",
+  "row": "sa"
+ },
+ {
+  "char": "ソ",
+  "romaji": "so",
+  "script": "katakana",
+  "group": "basic",
+  "row": "sa"
+ },
+ {
+  "char": "タ",
+  "romaji": "ta",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ta"
+ },
+ {
+  "char": "チ",
+  "romaji": "chi",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ta"
+ },
+ {
+  "char": "ツ",
+  "romaji": "tsu",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ta"
+ },
+ {
+  "char": "テ",
+  "romaji": "te",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ta"
+ },
+ {
+  "char": "ト",
+  "romaji": "to",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ta"
+ },
+ {
+  "char": "ナ",
+  "romaji": "na",
+  "script": "katakana",
+  "group": "basic",
+  "row": "na"
+ },
+ {
+  "char": "ニ",
+  "romaji": "ni",
+  "script": "katakana",
+  "group": "basic",
+  "row": "na"
+ },
+ {
+  "char": "ヌ",
+  "romaji": "nu",
+  "script": "katakana",
+  "group": "basic",
+  "row": "na"
+ },
+ {
+  "char": "ネ",
+  "romaji": "ne",
+  "script": "katakana",
+  "group": "basic",
+  "row": "na"
+ },
+ {
+  "char": "ノ",
+  "romaji": "no",
+  "script": "katakana",
+  "group": "basic",
+  "row": "na"
+ },
+ {
+  "char": "ハ",
+  "romaji": "ha",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ha"
+ },
+ {
+  "char": "ヒ",
+  "romaji": "hi",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ha"
+ },
+ {
+  "char": "フ",
+  "romaji": "fu",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ha"
+ },
+ {
+  "char": "ヘ",
+  "romaji": "he",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ha"
+ },
+ {
+  "char": "ホ",
+  "romaji": "ho",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ha"
+ },
+ {
+  "char": "マ",
+  "romaji": "ma",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ma"
+ },
+ {
+  "char": "ミ",
+  "romaji": "mi",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ma"
+ },
+ {
+  "char": "ム",
+  "romaji": "mu",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ma"
+ },
+ {
+  "char": "メ",
+  "romaji": "me",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ma"
+ },
+ {
+  "char": "モ",
+  "romaji": "mo",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ma"
+ },
+ {
+  "char": "ヤ",
+  "romaji": "ya",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ya"
+ },
+ {
+  "char": "ユ",
+  "romaji": "yu",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ya"
+ },
+ {
+  "char": "ヨ",
+  "romaji": "yo",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ya"
+ },
+ {
+  "char": "ラ",
+  "romaji": "ra",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ra"
+ },
+ {
+  "char": "リ",
+  "romaji": "ri",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ra"
+ },
+ {
+  "char": "ル",
+  "romaji": "ru",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ra"
+ },
+ {
+  "char": "レ",
+  "romaji": "re",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ra"
+ },
+ {
+  "char": "ロ",
+  "romaji": "ro",
+  "script": "katakana",
+  "group": "basic",
+  "row": "ra"
+ },
+ {
+  "char": "ワ",
+  "romaji": "wa",
+  "script": "katakana",
+  "group": "basic",
+  "row": "wa"
+ },
+ {
+  "char": "ヲ",
+  "romaji": "wo",
+  "script": "katakana",
+  "group": "basic",
+  "row": "wa"
+ },
+ {
+  "char": "ン",
+  "romaji": "n",
+  "script": "katakana",
+  "group": "basic",
+  "row": "wa"
+ },
+ {
+  "char": "ガ",
+  "romaji": "ga",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "ga"
+ },
+ {
+  "char": "ギ",
+  "romaji": "gi",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "ga"
+ },
+ {
+  "char": "グ",
+  "romaji": "gu",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "ga"
+ },
+ {
+  "char": "ゲ",
+  "romaji": "ge",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "ga"
+ },
+ {
+  "char": "ゴ",
+  "romaji": "go",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "ga"
+ },
+ {
+  "char": "ザ",
+  "romaji": "za",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "za"
+ },
+ {
+  "char": "ジ",
+  "romaji": "ji",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "za"
+ },
+ {
+  "char": "ズ",
+  "romaji": "zu",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "za"
+ },
+ {
+  "char": "ゼ",
+  "romaji": "ze",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "za"
+ },
+ {
+  "char": "ゾ",
+  "romaji": "zo",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "za"
+ },
+ {
+  "char": "ダ",
+  "romaji": "da",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "da"
+ },
+ {
+  "char": "ヂ",
+  "romaji": "ji",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "da"
+ },
+ {
+  "char": "ヅ",
+  "romaji": "zu",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "da"
+ },
+ {
+  "char": "デ",
+  "romaji": "de",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "da"
+ },
+ {
+  "char": "ド",
+  "romaji": "do",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "da"
+ },
+ {
+  "char": "バ",
+  "romaji": "ba",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "ba"
+ },
+ {
+  "char": "ビ",
+  "romaji": "bi",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "ba"
+ },
+ {
+  "char": "ブ",
+  "romaji": "bu",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "ba"
+ },
+ {
+  "char": "ベ",
+  "romaji": "be",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "ba"
+ },
+ {
+  "char": "ボ",
+  "romaji": "bo",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "ba"
+ },
+ {
+  "char": "パ",
+  "romaji": "pa",
+  "script": "katakana",
+  "group": "handakuten",
+  "row": "pa"
+ },
+ {
+  "char": "ピ",
+  "romaji": "pi",
+  "script": "katakana",
+  "group": "handakuten",
+  "row": "pa"
+ },
+ {
+  "char": "プ",
+  "romaji": "pu",
+  "script": "katakana",
+  "group": "handakuten",
+  "row": "pa"
+ },
+ {
+  "char": "ペ",
+  "romaji": "pe",
+  "script": "katakana",
+  "group": "handakuten",
+  "row": "pa"
+ },
+ {
+  "char": "ポ",
+  "romaji": "po",
+  "script": "katakana",
+  "group": "handakuten",
+  "row": "pa"
+ },
+ {
+  "char": "キャ",
+  "romaji": "kya",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "kya"
+ },
+ {
+  "char": "キュ",
+  "romaji": "kyu",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "kya"
+ },
+ {
+  "char": "キョ",
+  "romaji": "kyo",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "kya"
+ },
+ {
+  "char": "シャ",
+  "romaji": "sha",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "sha"
+ },
+ {
+  "char": "シュ",
+  "romaji": "shu",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "sha"
+ },
+ {
+  "char": "ショ",
+  "romaji": "sho",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "sha"
+ },
+ {
+  "char": "チャ",
+  "romaji": "cha",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "cha"
+ },
+ {
+  "char": "チュ",
+  "romaji": "chu",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "cha"
+ },
+ {
+  "char": "チョ",
+  "romaji": "cho",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "cha"
+ },
+ {
+  "char": "ニャ",
+  "romaji": "nya",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "nya"
+ },
+ {
+  "char": "ニュ",
+  "romaji": "nyu",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "nya"
+ },
+ {
+  "char": "ニョ",
+  "romaji": "nyo",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "nya"
+ },
+ {
+  "char": "ヒャ",
+  "romaji": "hya",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "hya"
+ },
+ {
+  "char": "ヒュ",
+  "romaji": "hyu",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "hya"
+ },
+ {
+  "char": "ヒョ",
+  "romaji": "hyo",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "hya"
+ },
+ {
+  "char": "ミャ",
+  "romaji": "mya",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "mya"
+ },
+ {
+  "char": "ミュ",
+  "romaji": "myu",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "mya"
+ },
+ {
+  "char": "ミョ",
+  "romaji": "myo",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "mya"
+ },
+ {
+  "char": "リャ",
+  "romaji": "rya",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "rya"
+ },
+ {
+  "char": "リュ",
+  "romaji": "ryu",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "rya"
+ },
+ {
+  "char": "リョ",
+  "romaji": "ryo",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "rya"
+ },
+ {
+  "char": "ギャ",
+  "romaji": "gya",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "gya"
+ },
+ {
+  "char": "ギュ",
+  "romaji": "gyu",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "gya"
+ },
+ {
+  "char": "ギョ",
+  "romaji": "gyo",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "gya"
+ },
+ {
+  "char": "ジャ",
+  "romaji": "ja",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "ja"
+ },
+ {
+  "char": "ジュ",
+  "romaji": "ju",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "ja"
+ },
+ {
+  "char": "ジョ",
+  "romaji": "jo",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "ja"
+ },
+ {
+  "char": "ビャ",
+  "romaji": "bya",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "bya"
+ },
+ {
+  "char": "ビュ",
+  "romaji": "byu",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "bya"
+ },
+ {
+  "char": "ビョ",
+  "romaji": "byo",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "bya"
+ },
+ {
+  "char": "ピャ",
+  "romaji": "pya",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "pya"
+ },
+ {
+  "char": "ピュ",
+  "romaji": "pyu",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "pya"
+ },
+ {
+  "char": "ピョ",
+  "romaji": "pyo",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "pya"
+ },
+ {
+  "char": "ッ",
+  "romaji": "(double consonant)",
+  "script": "katakana",
+  "group": "small",
+  "row": "small"
+ },
+ {
+  "char": "ャ",
+  "romaji": "ya",
+  "script": "katakana",
+  "group": "small",
+  "row": "small"
+ },
+ {
+  "char": "ュ",
+  "romaji": "yu",
+  "script": "katakana",
+  "group": "small",
+  "row": "small"
+ },
+ {
+  "char": "ョ",
+  "romaji": "yo",
+  "script": "katakana",
+  "group": "small",
+  "row": "small"
+ },
+ {
+  "char": "ァ",
+  "romaji": "a",
+  "script": "katakana",
+  "group": "small",
+  "row": "small"
+ },
+ {
+  "char": "ィ",
+  "romaji": "i",
+  "script": "katakana",
+  "group": "small",
+  "row": "small"
+ },
+ {
+  "char": "ゥ",
+  "romaji": "u",
+  "script": "katakana",
+  "group": "small",
+  "row": "small"
+ },
+ {
+  "char": "ェ",
+  "romaji": "e",
+  "script": "katakana",
+  "group": "small",
+  "row": "small"
+ },
+ {
+  "char": "ォ",
+  "romaji": "o",
+  "script": "katakana",
+  "group": "small",
+  "row": "small"
+ },
+ {
+  "char": "ー",
+  "romaji": "-",
+  "script": "katakana",
+  "group": "extended",
+  "row": "extended"
+ },
+ {
+  "char": "ファ",
+  "romaji": "fua",
+  "script": "katakana",
+  "group": "extended",
+  "row": "extended"
+ },
+ {
+  "char": "フィ",
+  "romaji": "fyi",
+  "script": "katakana",
+  "group": "extended",
+  "row": "extended"
+ },
+ {
+  "char": "フェ",
+  "romaji": "fye",
+  "script": "katakana",
+  "group": "extended",
+  "row": "extended"
+ },
+ {
+  "char": "フォ",
+  "romaji": "fuo",
+  "script": "katakana",
+  "group": "extended",
+  "row": "extended"
+ },
+ {
+  "char": "ティ",
+  "romaji": "tei",
+  "script": "katakana",
+  "group": "extended",
+  "row": "extended"
+ },
+ {
+  "char": "ディ",
+  "romaji": "dei",
+  "script": "katakana",
+  "group": "extended",
+  "row": "extended"
+ },
+ {
+  "char": "トゥ",
+  "romaji": "tou",
+  "script": "katakana",
+  "group": "extended",
+  "row": "extended"
+ },
+ {
+  "char": "ドゥ",
+  "romaji": "dou",
+  "script": "katakana",
+  "group": "extended",
+  "row": "extended"
+ },
+ {
+  "char": "ウィ",
+  "romaji": "ui",
+  "script": "katakana",
+  "group": "extended",
+  "row": "extended"
+ },
+ {
+  "char": "ウェ",
+  "romaji": "ue",
+  "script": "katakana",
+  "group": "extended",
+  "row": "extended"
+ },
+ {
+  "char": "ウォ",
+  "romaji": "uo",
+  "script": "katakana",
+  "group": "extended",
+  "row": "extended"
+ },
+ {
+  "char": "シェ",
+  "romaji": "she",
+  "script": "katakana",
+  "group": "extended",
+  "row": "extended"
+ },
+ {
+  "char": "ジェ",
+  "romaji": "je",
+  "script": "katakana",
+  "group": "extended",
+  "row": "extended"
+ },
+ {
+  "char": "チェ",
+  "romaji": "che",
+  "script": "katakana",
+  "group": "extended",
+  "row": "extended"
+ },
+ {
+  "char": "ヴァ",
+  "romaji": "vua",
+  "script": "katakana",
+  "group": "extended",
+  "row": "extended"
+ },
+ {
+  "char": "ヴィ",
+  "romaji": "vyi",
+  "script": "katakana",
+  "group": "extended",
+  "row": "extended"
+ },
+ {
+  "char": "ヴ",
+  "romaji": "vu",
+  "script": "katakana",
+  "group": "extended",
+  "row": "extended"
+ },
+ {
+  "char": "ヴェ",
+  "romaji": "vye",
+  "script": "katakana",
+  "group": "extended",
+  "row": "extended"
+ },
+ {
+  "char": "ヴォ",
+  "romaji": "vuo",
+  "script": "katakana",
+  "group": "extended",
+  "row": "extended"
+ }
+]

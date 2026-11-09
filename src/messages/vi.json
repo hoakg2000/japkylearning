@@ -1,0 +1,509 @@
+{
+  "Meta": {
+    "title": "Japky – Học tiếng Nhật mỗi ngày",
+    "description": "Học tiếng Nhật từ bảng chữ cái tới JLPT N5: kana, kanji có âm Hán-Việt, từ vựng có ví dụ, flashcard thông minh và streak mỗi ngày."
+  },
+  "Nav": {
+    "label": "Điều hướng chính",
+    "today": "Hôm nay",
+    "learn": "Học",
+    "review": "Ôn",
+    "me": "Tôi",
+    "skip": "Chuyển tới nội dung"
+  },
+  "Settings": {
+    "theme": "Sáng / tối",
+    "uiMode": "Chế độ giao diện",
+    "full": "Đầy đủ",
+    "minimal": "Tối giản",
+    "sound": "Âm thanh",
+    "language": "Ngôn ngữ"
+  },
+  "Home": {
+    "title": "Học tiếng Nhật mỗi ngày",
+    "subtitle": "Từ bảng chữ cái tới JLPT N5. Có âm Hán-Việt, ví dụ và ôn tập đúng lúc.",
+    "start": "Bắt đầu học",
+    "comingSoon": "Đang xây dựng",
+    "continue": "Tôi đã có tiến độ",
+    "tryNow": "Thử ngay 5 câu",
+    "features": {
+      "f1": "Hiragana, Katakana có âm thanh và thứ tự nét",
+      "f2": "Kanji N5 kèm âm Hán-Việt",
+      "f3": "Từ vựng đủ furigana, romaji, ví dụ",
+      "f4": "Ôn tập thông minh (FSRS) và streak mỗi ngày"
+    }
+  },
+  "NotFound": {
+    "title": "Không tìm thấy trang",
+    "back": "Về trang chủ"
+  },
+  "Audio": {
+    "play": "Nghe",
+    "noVoice": "Thiết bị chưa có giọng đọc tiếng Nhật"
+  },
+  "Strokes": {
+    "label": "Thứ tự nét của {char}, {count} nét",
+    "count": "{count} nét",
+    "replay": "Xem lại",
+    "missing": "Chưa có dữ liệu nét viết"
+  },
+  "Kana": {
+    "title": "Bảng chữ cái Hiragana & Katakana",
+    "description": "Bấm vào chữ để nghe phát âm và xem thứ tự nét.",
+    "script": "Bảng chữ",
+    "hiragana": "Hiragana",
+    "katakana": "Katakana",
+    "practice": "Luyện tập",
+    "skipTest": "Kiểm tra để bỏ qua",
+    "pick": "Chọn một chữ để nghe và xem cách viết.",
+    "group": {
+      "basic": "Âm cơ bản",
+      "dakuten": "Âm đục (dakuten)",
+      "handakuten": "Âm bán đục (handakuten)",
+      "yoon": "Âm ghép (yōon)",
+      "small": "Kana nhỏ",
+      "extended": "Katakana mở rộng"
+    }
+  },
+  "KanaQuiz": {
+    "title": "Luyện kana",
+    "script": "Bảng chữ",
+    "hiragana": "Hiragana",
+    "katakana": "Katakana",
+    "groups": "Nhóm âm",
+    "mode": "Kiểu câu hỏi",
+    "length": "Số câu",
+    "group": {
+      "basic": "Cơ bản",
+      "voiced": "Âm đục",
+      "yoon": "Âm ghép"
+    },
+    "modes": {
+      "choose": "Chữ → romaji",
+      "reverse": "Romaji → chữ",
+      "listen": "Nghe → chữ",
+      "type": "Gõ romaji",
+      "mixed": "Trộn"
+    },
+    "start": "Bắt đầu ({count} chữ)",
+    "progress": "Tiến độ",
+    "replay": "Nghe lại",
+    "typeLabel": "Gõ romaji",
+    "prompt": {
+      "choose": "Chữ này đọc là gì?",
+      "reverse": "Chọn chữ đúng",
+      "listen": "Bạn nghe thấy chữ nào?",
+      "type": "Gõ cách đọc"
+    },
+    "check": "Kiểm tra",
+    "next": "Tiếp",
+    "correct": "Đúng",
+    "wrong": "Chưa đúng",
+    "result": "Đúng {correct}/{total} câu",
+    "missed": "Cần ôn:",
+    "again": "Làm lại",
+    "toToday": "Về Hôm nay",
+    "saving": "Đang lưu tiến độ…",
+    "saveError": "Không lưu được tiến độ. Kết quả vẫn hiển thị ở đây.",
+    "skipPassed": "Bạn đã qua bài kiểm tra! Phần kana được đánh dấu là đã biết.",
+    "skipFailed": "Cần đạt {pass}% để bỏ qua. Hãy luyện thêm nhé."
+  },
+  "Streak": {
+    "days": "{count, plural, other {# ngày liên tiếp}}",
+    "milestone": "Cột mốc {count} ngày!",
+    "todayXp": "Hôm nay {xp}/{goal} XP",
+    "freezes": "{count} lượt giữ streak",
+    "title": "Streak",
+    "calendar": "Lịch học 12 tuần",
+    "calendarHint": "Xanh: đạt mục tiêu · Vàng: có học nhưng chưa đủ"
+  },
+  "FirstRun": {
+    "question": "Câu {n}/{total}",
+    "prompt": "Chữ này đọc là gì?",
+    "noSignup": "Không cần đăng ký"
+  },
+  "Onboarding": {
+    "title": "Cho Japky biết về bạn",
+    "firstRun": "Bạn đúng {score}/5 câu ở bài thử.",
+    "submit": "Bắt đầu học",
+    "saving": "Đang lưu…",
+    "error": "Không lưu được. Thử lại nhé.",
+    "known": {
+      "q": "Bạn đã biết gì?",
+      "none": "Chưa biết gì",
+      "kana": "Đã biết Hiragana/Katakana",
+      "some-n5": "Đã học một phần N5"
+    },
+    "goal": {
+      "q": "Mục tiêu của bạn?",
+      "jlpt": "Thi JLPT (N5 → N4)",
+      "tokutei": "Đi làm Tokutei Ginou / thực tập sinh (JFT-Basic, N4)",
+      "it": "Làm IT với khách Nhật"
+    },
+    "sector": {
+      "q": "Ngành nghề",
+      "kaigo": "Điều dưỡng (kaigo)",
+      "food-service": "Nhà hàng",
+      "manufacturing": "Nhà máy, chế tạo",
+      "construction": "Xây dựng",
+      "agriculture": "Nông nghiệp",
+      "other": "Ngành khác"
+    },
+    "daily": {
+      "10": "Nhẹ nhàng",
+      "20": "Đều đặn",
+      "50": "Nghiêm túc",
+      "q": "Mỗi ngày học bao nhiêu?"
+    }
+  },
+  "Today": {
+    "title": "Hôm nay",
+    "welcome": "Chào bạn! Làm thử 5 câu để bắt đầu.",
+    "startFirstRun": "Bắt đầu",
+    "greeting": "Hôm nay học gì nhé?",
+    "goal": "Mục tiêu hôm nay",
+    "continue": "Tiếp tục",
+    "freezes": "{count} lượt giữ streak",
+    "allDone": "Xong việc hôm nay!",
+    "allDoneHint": "Quay lại ngày mai để giữ streak.",
+    "saveProgress": "Bạn đang học với tư cách khách.",
+    "signUp": "Lưu tiến độ",
+    "task": {
+      "kana": "Luyện kana",
+      "review": "Ôn {count} thẻ",
+      "lesson": "Bài {n}",
+      "weak": "Ôn {skill}"
+    },
+    "reason": {
+      "kana": "Nắm chắc bảng chữ trước khi vào bài",
+      "due": "Thẻ đến hạn ôn",
+      "next": "Bài mới trong lộ trình",
+      "weak": "Phần bạn hay sai gần đây"
+    },
+    "skill": {
+      "vocab": "từ vựng",
+      "kanji": "kanji",
+      "grammar": "ngữ pháp",
+      "listening": "nghe"
+    }
+  },
+  "Auth": {
+    "signIn": "Đăng nhập",
+    "signUp": "Tạo tài khoản",
+    "name": "Tên hiển thị",
+    "email": "Email",
+    "password": "Mật khẩu (ít nhất 8 ký tự)",
+    "birthYear": "Năm sinh",
+    "ageHint": "Japky dành cho người từ {min} tuổi.",
+    "consents": "Đồng ý xử lý dữ liệu",
+    "consentAccount": "Tôi đồng ý tạo tài khoản và lưu tiến độ học (bắt buộc).",
+    "privacy": "Chính sách",
+    "consentAnalytics": "Cho phép thống kê sử dụng ẩn danh",
+    "consentEmail": "Nhận email nhắc học",
+    "wait": "Đang xử lý…",
+    "code": "Mã xác thực",
+    "haveAccount": "Đã có tài khoản? Đăng nhập",
+    "noAccount": "Chưa có tài khoản? Tạo mới",
+    "errors": {
+      "signIn": "Email hoặc mật khẩu không đúng.",
+      "signUp": "Không tạo được tài khoản. Email có thể đã được dùng.",
+      "age": "Bạn cần từ {min} tuổi trở lên để tạo tài khoản.",
+      "consent": "Cần đồng ý điều khoản bắt buộc.",
+      "code": "Mã xác thực không đúng."
+    }
+  },
+  "Me": {
+    "title": "Tôi",
+    "signIn": "Đăng nhập",
+    "signUp": "Tạo tài khoản",
+    "guest": "Khách (chưa có tài khoản)",
+    "saveProgress": "Lưu tiến độ",
+    "streak": "Streak {current} ngày (dài nhất {longest})",
+    "freezes": "{count} lượt giữ streak",
+    "settings": "Cài đặt học",
+    "dailyGoal": "Mục tiêu mỗi ngày",
+    "furigana": "Furigana",
+    "furiganaMode": {
+      "always": "Luôn hiện",
+      "unlearned": "Chỉ chữ chưa học",
+      "never": "Ẩn"
+    },
+    "romaji": "Hiện romaji",
+    "hanViet": "Hiện âm Hán-Việt",
+    "saving": "Đang lưu…",
+    "saved": "Đã lưu",
+    "consents": "Quyền riêng tư",
+    "purpose": {
+      "analytics": "Thống kê sử dụng ẩn danh",
+      "email_reminders": "Email nhắc học",
+      "ai_processing": "Xử lý bằng AI (khi tính năng AI mở)",
+      "speech_processing": "Nhận dạng giọng nói (gửi tới Google)"
+    },
+    "data": "Dữ liệu của tôi",
+    "export": "Tải dữ liệu (JSON)",
+    "signOut": "Đăng xuất",
+    "delete": "Xóa tài khoản",
+    "deleteConfirm": "Xóa vĩnh viễn toàn bộ dữ liệu?",
+    "deleteYes": "Xóa",
+    "cancel": "Hủy",
+    "timezone": "Múi giờ học",
+    "timezoneHint": "Ngày học bắt đầu lúc 4 giờ sáng theo múi giờ này. Chỉ đổi được 1 lần mỗi ngày.",
+    "timezoneOnce": "Hôm nay bạn đã đổi múi giờ rồi. Hãy thử lại vào ngày mai.",
+    "twoFactor": "Xác thực 2 bước",
+    "twoFactorHint": "Dùng ứng dụng xác thực (TOTP). Bắt buộc với tài khoản quản trị.",
+    "password": "Mật khẩu hiện tại",
+    "twoFactorEnable": "Bật xác thực 2 bước",
+    "twoFactorSecret": "Nhập khóa này vào ứng dụng xác thực:",
+    "twoFactorBackup": "Mã dự phòng (chỉ hiện một lần, hãy lưu lại):",
+    "twoFactorCode": "Mã 6 số từ ứng dụng",
+    "twoFactorVerify": "Xác nhận",
+    "twoFactorOn": "Đã bật xác thực 2 bước",
+    "twoFactorError": "Không thành công. Kiểm tra mật khẩu hoặc mã."
+  },
+  "Learn": {
+    "title": "Học",
+    "kana": {
+      "title": "Bảng chữ cái",
+      "desc": "Hiragana & Katakana"
+    },
+    "n5": {
+      "title": "Lộ trình N5",
+      "desc": "Bài học từ vựng, ngữ pháp, kanji"
+    },
+    "kanji": {
+      "title": "Kanji N5",
+      "desc": "Có âm Hán-Việt và thứ tự nét"
+    }
+  },
+  "Privacy": {
+    "title": "Quyền riêng tư",
+    "draft": "Bản nháp – sẽ được luật sư rà soát theo Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15 trước khi ra mắt chính thức.",
+    "collect": {
+      "h": "Dữ liệu thu thập",
+      "p": "Email, tên hiển thị, năm sinh (kiểm tra 16+), múi giờ, tiến độ học, kết quả bài tập. Không lưu ghi âm giọng nói."
+    },
+    "purposes": {
+      "h": "Mục đích",
+      "p": "Lưu tiến độ, tính streak, gợi ý bài học. Mỗi mục đích khác (thống kê, email, AI, giọng nói) cần bạn đồng ý riêng và có thể rút lại trong trang Tôi."
+    },
+    "processors": {
+      "h": "Bên xử lý",
+      "p": "Vercel (hosting), Neon (cơ sở dữ liệu), Cloudflare (lưu trữ). Khi bật: nhà cung cấp AI, Google (nhận dạng giọng nói của trình duyệt), PostHog (thống kê), Resend (email)."
+    },
+    "transfer": {
+      "h": "Chuyển dữ liệu ra nước ngoài",
+      "p": "Máy chủ đặt tại Singapore. Dữ liệu được chuyển và xử lý ngoài Việt Nam theo hồ sơ đánh giá tác động."
+    },
+    "age": {
+      "h": "Độ tuổi",
+      "p": "Chỉ người từ 16 tuổi được tạo tài khoản. Người dưới 16 tuổi vẫn có thể học nội dung công khai."
+    },
+    "rights": {
+      "h": "Quyền của bạn",
+      "p": "Tải toàn bộ dữ liệu, rút lại đồng ý, xóa tài khoản bất kỳ lúc nào trong trang Tôi."
+    }
+  },
+  "Footer": {
+    "data": "Dữ liệu từ điển: JMdict, KANJIDIC2 (EDRDG), KanjiVG – CC BY-SA",
+    "credits": "Nguồn dữ liệu",
+    "privacy": "Quyền riêng tư"
+  },
+  "Display": {
+    "label": "Hiển thị",
+    "furigana": "Furigana",
+    "romaji": "Romaji",
+    "hanViet": "Hán-Việt"
+  },
+  "Word": {
+    "example": "Ví dụ",
+    "strokes": "Thứ tự nét",
+    "details": "Xem chi tiết",
+    "inLesson": "Học trong bài",
+    "pageTitle": "{surface} ({reading}) – {meaning}",
+    "attribution": "Nghĩa tiếng Anh và cách đọc từ JMdict (EDRDG, CC BY-SA 4.0); furigana từ JmdictFurigana. Ví dụ và nghĩa tiếng Việt do Japky biên soạn (CC BY-SA 4.0).",
+    "pos": {
+      "n": "danh từ",
+      "v1": "động từ nhóm 2",
+      "v5": "động từ nhóm 1",
+      "vs": "động từ する",
+      "vk": "động từ 来る",
+      "adj-i": "tính từ い",
+      "adj-na": "tính từ な",
+      "adj-no": "danh từ (+の)",
+      "adv": "phó từ",
+      "exp": "cụm từ",
+      "num": "số từ",
+      "pn": "đại từ",
+      "int": "thán từ",
+      "prt": "trợ từ",
+      "vt": "tha động từ",
+      "vi": "tự động từ",
+      "n-adv": "danh từ chỉ thời gian",
+      "ctr": "trợ số từ",
+      "suf": "hậu tố",
+      "pref": "tiền tố"
+    }
+  },
+  "Path": {
+    "title": "Lộ trình N5",
+    "description": "10 bài đầu tiên: từ vựng, kanji, ngữ pháp, hội thoại và bài kiểm tra.",
+    "counts": "{words} từ · {kanji} kanji · {grammar} mẫu ngữ pháp",
+    "done": "Đã xong",
+    "inProgress": "Đang học",
+    "more": "Bài 11–30 đang được biên soạn."
+  },
+  "Lesson": {
+    "lesson": "Bài {n}",
+    "path": "Lộ trình N5",
+    "practice": "Luyện tập & kiểm tra",
+    "vocab": "Từ vựng ({count})",
+    "kanji": "Kanji ({count})",
+    "grammar": "Ngữ pháp",
+    "dialogue": "Hội thoại",
+    "nav": "Bài trước, bài sau"
+  },
+  "Practice": {
+    "title": "Luyện bài {n}",
+    "steps": "Các bước",
+    "step": {
+      "study": "Học thẻ",
+      "practice": "Luyện",
+      "test": "Kiểm tra"
+    },
+    "studyHint": "Thẻ {n}/{total}: bấm để lật",
+    "flip": "Lật thẻ",
+    "skipStudy": "Bỏ qua, luyện luôn",
+    "next": "Tiếp",
+    "toTest": "Sang bài kiểm tra",
+    "progress": "Tiến độ",
+    "prompt": {
+      "meaning": "Từ này nghĩa là gì?",
+      "reading": "Đọc chữ này thế nào?",
+      "listening": "Bạn nghe thấy từ nào?",
+      "cloze": "Chọn phần còn thiếu"
+    },
+    "replay": "Nghe lại",
+    "testHint": "Câu {n}/{total}",
+    "saving": "Đang chấm điểm…",
+    "saveError": "Không lưu được kết quả.",
+    "result": "Đúng {correct}/{total} câu",
+    "passed": "Hoàn thành bài! Đã thêm {cards} thẻ vào ôn tập.",
+    "failed": "Cần đạt 60% để hoàn thành bài. Ôn lại rồi thử lại nhé.",
+    "backToLesson": "Về bài học",
+    "toReview": "Ôn tập ngay",
+    "retry": "Làm lại"
+  },
+  "Review": {
+    "title": "Ôn tập",
+    "progress": "Tiến độ ôn tập",
+    "reveal": "Hiện đáp án",
+    "tapToReveal": "Bấm (hoặc phím cách) để xem đáp án",
+    "kind": {
+      "word": "Từ vựng",
+      "listening": "Nghe",
+      "grammar": "Ngữ pháp",
+      "kana": "Kana",
+      "production": "Nhớ từ"
+    },
+    "rating": {
+      "again": "Quên",
+      "hard": "Khó",
+      "good": "Nhớ",
+      "easy": "Dễ"
+    },
+    "done": "Xong {count} thẻ!",
+    "toToday": "Về Hôm nay",
+    "saveError": "Một số kết quả chưa lưu được.",
+    "empty": "Không có thẻ nào cần ôn.",
+    "emptyHint": "Hoàn thành bài học để có thẻ mới.",
+    "toLessons": "Đến bài học"
+  },
+  "Kanji": {
+    "title": "Kanji N5 – âm Hán-Việt, cách đọc, thứ tự nét",
+    "description": "103 chữ Hán cơ bản cho JLPT N5, có âm Hán-Việt, âm On/Kun và từ ví dụ.",
+    "lessonGroup": "Bài {n}: {title}",
+    "laterGroup": "Học ở các bài sau",
+    "pageTitle": "Kanji {char} – {hv} – {meaning}",
+    "pageDescription": "Chữ {char}: nghĩa {meaning}; âm On {on}; âm Kun {kun}; thứ tự nét và từ vựng ví dụ.",
+    "on": "Âm On",
+    "kun": "Âm Kun",
+    "strokesLabel": "Số nét",
+    "lesson": "Bài học",
+    "words": "Từ vựng có chữ này",
+    "attribution": "Dữ liệu kanji: KANJIDIC2 (EDRDG, CC BY-SA 4.0), thứ tự nét: KanjiVG (Ulrich Apel, CC BY-SA 3.0). Âm Hán-Việt: Japky, đối chiếu Unihan.",
+    "embed": "Nhúng vào trang của bạn"
+  },
+  "Tests": {
+    "title": "Kiểm tra",
+    "description": "Làm lại bài kiểm tra cuối bài để củng cố. Điểm cao nhất được lưu lại.",
+    "kana": "Kiểm tra kana",
+    "kanaDesc": "Đạt 90% để bỏ qua phần bảng chữ cái",
+    "lesson": "Kiểm tra bài {n}",
+    "mock": "Thi thử JLPT N5",
+    "mockDesc": "32 câu, 30 phút, toàn bộ nội dung N5"
+  },
+  "Credits": {
+    "title": "Nguồn dữ liệu",
+    "intro": "Japky sử dụng các bộ dữ liệu mở sau đây. Xin cảm ơn các tác giả.",
+    "content": "Nội dung bài học, câu ví dụ, nghĩa tiếng Việt và âm Hán-Việt do Japky biên soạn và phát hành theo giấy phép CC BY-SA 4.0.",
+    "versions": "Phiên bản: JMdict {jmdict} · JmdictFurigana {furigana}"
+  },
+  "AiTest": {
+    "title": "Test với AI",
+    "description": "Câu hỏi được tạo từ những từ bạn đã học. Mỗi ngày bạn có 5 bài AI.",
+    "empty": "Chưa có câu hỏi.",
+    "sourceAi": "Câu hỏi do AI tạo",
+    "sourceStatic": "Câu hỏi có sẵn",
+    "reason": {
+      "QUOTA": "hết lượt AI hôm nay",
+      "INVALID": "AI trả lời chưa đúng định dạng",
+      "AI_UNAVAILABLE": "AI đang tạm tắt",
+      "KILL_SWITCH": "AI đang tạm tắt",
+      "ERROR": "AI gặp lỗi",
+      "MOCK": "AI đang ở chế độ thử (mock), dùng câu hỏi có sẵn"
+    },
+    "again": "Làm bài khác",
+    "next": "Tiếp",
+    "progress": "Tiến độ",
+    "signIn": "Đăng nhập để làm bài AI.",
+    "guest": "Tạo tài khoản để làm bài AI.",
+    "notEnough": "Học ít nhất 4 từ để có bài test.",
+    "toLessons": "Đến bài học",
+    "remaining": "Còn {count} lượt AI hôm nay"
+  },
+  "Admin": {
+    "title": "Quản trị",
+    "ai": "AI",
+    "killSwitch": "Tắt toàn bộ AI (kill-switch)",
+    "mode": "Chế độ",
+    "adapter": "Adapter",
+    "preset": "Nhà cung cấp",
+    "model": "Model",
+    "noKey": "chưa có key",
+    "save": "Lưu cấu hình",
+    "saved": "Đã lưu",
+    "voices": "Giọng đọc (fish.audio)",
+    "noVoices": "Chưa có giọng nào. Thêm trong cơ sở dữ liệu (bảng tts_voices).",
+    "usageToday": "Sử dụng AI hôm nay",
+    "requests": "Yêu cầu",
+    "none": "Chưa có",
+    "audit": "Nhật ký thay đổi (30 gần nhất)"
+  },
+  "Content": {
+    "unreviewed": "Nghĩa tiếng Việt và âm Hán-Việt ở đây chưa được người kiểm duyệt. Nếu thấy chỗ sai, hãy báo cho Japky."
+  },
+  "Mock": {
+    "title": "Thi thử N5",
+    "intro": "{count} câu từ vựng, kanji, ngữ pháp và nghe trong {minutes} phút. Câu sai sẽ được thêm vào phần ôn tập.",
+    "start": "Bắt đầu thi thử",
+    "progress": "Tiến độ bài thi",
+    "timeLeft": "Thời gian còn lại",
+    "result": "Đúng {correct}/{total} câu",
+    "cards": "Đã thêm {count} mục sai vào ôn tập.",
+    "toReview": "Ôn tập ngay",
+    "toTests": "Về trang kiểm tra",
+    "saving": "Đang chấm…",
+    "saveError": "Chưa gửi được bài.",
+    "retry": "Gửi lại"
+  }
+}

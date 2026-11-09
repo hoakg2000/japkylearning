@@ -1,0 +1,509 @@
+{
+  "Meta": {
+    "title": "Japky – Learn Japanese every day",
+    "description": "Learn Japanese from the alphabet to JLPT N5: kana, kanji with Sino-Vietnamese readings, vocabulary with examples, smart flashcards and daily streaks."
+  },
+  "Nav": {
+    "label": "Main navigation",
+    "today": "Today",
+    "learn": "Learn",
+    "review": "Review",
+    "me": "Me",
+    "skip": "Skip to content"
+  },
+  "Settings": {
+    "theme": "Light / dark",
+    "uiMode": "Interface mode",
+    "full": "Full",
+    "minimal": "Minimal",
+    "sound": "Sound",
+    "language": "Language"
+  },
+  "Home": {
+    "title": "Learn Japanese every day",
+    "subtitle": "From the alphabet to JLPT N5. With Sino-Vietnamese readings, examples and reviews at the right time.",
+    "start": "Start learning",
+    "comingSoon": "Under construction",
+    "continue": "I have progress",
+    "tryNow": "Try 5 questions now",
+    "features": {
+      "f1": "Hiragana & Katakana with audio and stroke order",
+      "f2": "N5 kanji with Sino-Vietnamese readings",
+      "f3": "Vocabulary with furigana, romaji and examples",
+      "f4": "Smart reviews (FSRS) and daily streaks"
+    }
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "back": "Back to home"
+  },
+  "Audio": {
+    "play": "Listen",
+    "noVoice": "No Japanese voice on this device"
+  },
+  "Strokes": {
+    "label": "Stroke order of {char}, {count} strokes",
+    "count": "{count, plural, one {# stroke} other {# strokes}}",
+    "replay": "Replay",
+    "missing": "No stroke data yet"
+  },
+  "Kana": {
+    "title": "Hiragana & Katakana chart",
+    "description": "Tap a character to hear it and see its stroke order.",
+    "script": "Script",
+    "hiragana": "Hiragana",
+    "katakana": "Katakana",
+    "practice": "Practice",
+    "skipTest": "Test out",
+    "pick": "Pick a character to hear it and see how to write it.",
+    "group": {
+      "basic": "Basic sounds",
+      "dakuten": "Voiced (dakuten)",
+      "handakuten": "Semi-voiced (handakuten)",
+      "yoon": "Combined (yōon)",
+      "small": "Small kana",
+      "extended": "Extended katakana"
+    }
+  },
+  "KanaQuiz": {
+    "title": "Kana practice",
+    "script": "Script",
+    "hiragana": "Hiragana",
+    "katakana": "Katakana",
+    "groups": "Sound groups",
+    "mode": "Question type",
+    "length": "Questions",
+    "group": {
+      "basic": "Basic",
+      "voiced": "Voiced",
+      "yoon": "Combined"
+    },
+    "modes": {
+      "choose": "Kana → romaji",
+      "reverse": "Romaji → kana",
+      "listen": "Listen → kana",
+      "type": "Type romaji",
+      "mixed": "Mixed"
+    },
+    "start": "Start ({count} kana)",
+    "progress": "Progress",
+    "replay": "Play again",
+    "typeLabel": "Type the romaji",
+    "prompt": {
+      "choose": "How is this read?",
+      "reverse": "Pick the right kana",
+      "listen": "Which kana do you hear?",
+      "type": "Type the reading"
+    },
+    "check": "Check",
+    "next": "Next",
+    "correct": "Correct",
+    "wrong": "Not quite",
+    "result": "{correct}/{total} correct",
+    "missed": "To review:",
+    "again": "Try again",
+    "toToday": "Go to Today",
+    "saving": "Saving progress…",
+    "saveError": "Could not save progress. Your result is still shown here.",
+    "skipPassed": "You passed! Kana is marked as known.",
+    "skipFailed": "You need {pass}% to test out. Keep practising."
+  },
+  "Streak": {
+    "days": "{count, plural, one {# day streak} other {# day streak}}",
+    "milestone": "{count}-day milestone!",
+    "todayXp": "Today {xp}/{goal} XP",
+    "freezes": "{count, plural, one {# streak freeze} other {# streak freezes}}",
+    "title": "Streak",
+    "calendar": "12-week study calendar",
+    "calendarHint": "Green: goal met · Yellow: studied, goal not met"
+  },
+  "FirstRun": {
+    "question": "Question {n}/{total}",
+    "prompt": "How is this read?",
+    "noSignup": "No sign-up needed"
+  },
+  "Onboarding": {
+    "title": "Tell Japky about you",
+    "firstRun": "You got {score}/5 in the try-out.",
+    "submit": "Start learning",
+    "saving": "Saving…",
+    "error": "Could not save. Please try again.",
+    "known": {
+      "q": "What do you already know?",
+      "none": "Nothing yet",
+      "kana": "Hiragana/Katakana",
+      "some-n5": "Part of N5"
+    },
+    "goal": {
+      "q": "What is your goal?",
+      "jlpt": "Pass the JLPT (N5 → N4)",
+      "tokutei": "Work in Japan – Tokutei Ginou / trainee (JFT-Basic, N4)",
+      "it": "IT work with Japanese clients"
+    },
+    "sector": {
+      "q": "Field",
+      "kaigo": "Nursing care (kaigo)",
+      "food-service": "Restaurants",
+      "manufacturing": "Factory / manufacturing",
+      "construction": "Construction",
+      "agriculture": "Agriculture",
+      "other": "Other"
+    },
+    "daily": {
+      "10": "Casual",
+      "20": "Regular",
+      "50": "Serious",
+      "q": "How much per day?"
+    }
+  },
+  "Today": {
+    "title": "Today",
+    "welcome": "Welcome! Try 5 questions to start.",
+    "startFirstRun": "Start",
+    "greeting": "What shall we learn today?",
+    "goal": "Today’s goal",
+    "continue": "Continue",
+    "freezes": "{count, plural, one {# streak freeze} other {# streak freezes}}",
+    "allDone": "All done for today!",
+    "allDoneHint": "Come back tomorrow to keep your streak.",
+    "saveProgress": "You are learning as a guest.",
+    "signUp": "Save your progress",
+    "task": {
+      "kana": "Practise kana",
+      "review": "Review {count} cards",
+      "lesson": "Lesson {n}",
+      "weak": "Practise {skill}"
+    },
+    "reason": {
+      "kana": "Master the scripts before the lessons",
+      "due": "Cards due for review",
+      "next": "Next lesson in your path",
+      "weak": "What you missed recently"
+    },
+    "skill": {
+      "vocab": "vocabulary",
+      "kanji": "kanji",
+      "grammar": "grammar",
+      "listening": "listening"
+    }
+  },
+  "Auth": {
+    "signIn": "Sign in",
+    "signUp": "Create account",
+    "name": "Display name",
+    "email": "Email",
+    "password": "Password (8+ characters)",
+    "birthYear": "Year of birth",
+    "ageHint": "Japky is for people aged {min} and over.",
+    "consents": "Data processing consent",
+    "consentAccount": "I agree to create an account and store my learning progress (required).",
+    "privacy": "Policy",
+    "consentAnalytics": "Allow anonymous usage analytics",
+    "consentEmail": "Send me study reminder emails",
+    "wait": "Working…",
+    "code": "Verification code",
+    "haveAccount": "Have an account? Sign in",
+    "noAccount": "No account? Create one",
+    "errors": {
+      "signIn": "Wrong email or password.",
+      "signUp": "Could not create the account. The email may already be in use.",
+      "age": "You must be {min} or older to create an account.",
+      "consent": "Please accept the required consent.",
+      "code": "The verification code is wrong."
+    }
+  },
+  "Me": {
+    "title": "Me",
+    "signIn": "Sign in",
+    "signUp": "Create account",
+    "guest": "Guest (no account yet)",
+    "saveProgress": "Save progress",
+    "streak": "{current}-day streak (best {longest})",
+    "freezes": "{count, plural, one {# streak freeze} other {# streak freezes}}",
+    "settings": "Study settings",
+    "dailyGoal": "Daily goal",
+    "furigana": "Furigana",
+    "furiganaMode": {
+      "always": "Always",
+      "unlearned": "Unlearned kanji only",
+      "never": "Hidden"
+    },
+    "romaji": "Show romaji",
+    "hanViet": "Show Sino-Vietnamese",
+    "saving": "Saving…",
+    "saved": "Saved",
+    "consents": "Privacy",
+    "purpose": {
+      "analytics": "Anonymous usage analytics",
+      "email_reminders": "Reminder emails",
+      "ai_processing": "AI processing (when AI features open)",
+      "speech_processing": "Speech recognition (sent to Google)"
+    },
+    "data": "My data",
+    "export": "Download data (JSON)",
+    "signOut": "Sign out",
+    "delete": "Delete account",
+    "deleteConfirm": "Permanently delete all data?",
+    "deleteYes": "Delete",
+    "cancel": "Cancel",
+    "timezone": "Study time zone",
+    "timezoneHint": "Your study day starts at 4 a.m. in this zone. You can change it once a day.",
+    "timezoneOnce": "You already changed the time zone today. Try again tomorrow.",
+    "twoFactor": "Two-step verification",
+    "twoFactorHint": "Uses an authenticator app (TOTP). Required for admin accounts.",
+    "password": "Current password",
+    "twoFactorEnable": "Turn on two-step verification",
+    "twoFactorSecret": "Enter this key in your authenticator app:",
+    "twoFactorBackup": "Backup codes (shown once, save them):",
+    "twoFactorCode": "6-digit code from the app",
+    "twoFactorVerify": "Confirm",
+    "twoFactorOn": "Two-step verification is on",
+    "twoFactorError": "That did not work. Check the password or code."
+  },
+  "Learn": {
+    "title": "Learn",
+    "kana": {
+      "title": "Alphabets",
+      "desc": "Hiragana & Katakana"
+    },
+    "n5": {
+      "title": "N5 path",
+      "desc": "Vocabulary, grammar and kanji lessons"
+    },
+    "kanji": {
+      "title": "N5 kanji",
+      "desc": "With Sino-Vietnamese readings and stroke order"
+    }
+  },
+  "Privacy": {
+    "title": "Privacy",
+    "draft": "Draft – to be reviewed by a lawyer under Vietnam’s Personal Data Protection Law 91/2025/QH15 before public launch.",
+    "collect": {
+      "h": "What we collect",
+      "p": "Email, display name, year of birth (16+ check), time zone, learning progress and exercise results. No voice recordings are stored."
+    },
+    "purposes": {
+      "h": "Purposes",
+      "p": "Saving progress, streaks and lesson suggestions. Every other purpose (analytics, email, AI, speech) needs separate consent you can withdraw on the Me page."
+    },
+    "processors": {
+      "h": "Processors",
+      "p": "Vercel (hosting), Neon (database), Cloudflare (storage). When enabled: AI providers, Google (browser speech recognition), PostHog (analytics), Resend (email)."
+    },
+    "transfer": {
+      "h": "Cross-border transfer",
+      "p": "Servers are in Singapore. Data is transferred and processed outside Vietnam under a transfer impact assessment."
+    },
+    "age": {
+      "h": "Age",
+      "p": "Only people aged 16+ can create an account. Younger learners can still use the public content."
+    },
+    "rights": {
+      "h": "Your rights",
+      "p": "Download all your data, withdraw consent or delete your account at any time on the Me page."
+    }
+  },
+  "Footer": {
+    "data": "Dictionary data: JMdict, KANJIDIC2 (EDRDG), KanjiVG – CC BY-SA",
+    "credits": "Credits",
+    "privacy": "Privacy"
+  },
+  "Display": {
+    "label": "Display",
+    "furigana": "Furigana",
+    "romaji": "Romaji",
+    "hanViet": "Sino-Vietnamese"
+  },
+  "Word": {
+    "example": "Example",
+    "strokes": "Stroke order",
+    "details": "Details",
+    "inLesson": "Taught in",
+    "pageTitle": "{surface} ({reading}) – {meaning}",
+    "attribution": "English meanings and readings from JMdict (EDRDG, CC BY-SA 4.0); furigana from JmdictFurigana. Examples and Vietnamese meanings written by Japky (CC BY-SA 4.0).",
+    "pos": {
+      "n": "noun",
+      "v1": "ichidan verb",
+      "v5": "godan verb",
+      "vs": "する verb",
+      "vk": "来る verb",
+      "adj-i": "い-adjective",
+      "adj-na": "な-adjective",
+      "adj-no": "noun (+の)",
+      "adv": "adverb",
+      "exp": "expression",
+      "num": "numeral",
+      "pn": "pronoun",
+      "int": "interjection",
+      "prt": "particle",
+      "vt": "transitive",
+      "vi": "intransitive",
+      "n-adv": "adverbial noun",
+      "ctr": "counter",
+      "suf": "suffix",
+      "pref": "prefix"
+    }
+  },
+  "Path": {
+    "title": "N5 path",
+    "description": "The first 10 lessons: vocabulary, kanji, grammar, dialogues and tests.",
+    "counts": "{words} words · {kanji} kanji · {grammar} grammar points",
+    "done": "Done",
+    "inProgress": "In progress",
+    "more": "Lessons 11–30 are being written."
+  },
+  "Lesson": {
+    "lesson": "Lesson {n}",
+    "path": "N5 path",
+    "practice": "Practice & test",
+    "vocab": "Vocabulary ({count})",
+    "kanji": "Kanji ({count})",
+    "grammar": "Grammar",
+    "dialogue": "Dialogue",
+    "nav": "Previous and next lesson"
+  },
+  "Practice": {
+    "title": "Practice lesson {n}",
+    "steps": "Steps",
+    "step": {
+      "study": "Study",
+      "practice": "Practice",
+      "test": "Test"
+    },
+    "studyHint": "Card {n}/{total}: tap to flip",
+    "flip": "Flip card",
+    "skipStudy": "Skip to practice",
+    "next": "Next",
+    "toTest": "Go to the test",
+    "progress": "Progress",
+    "prompt": {
+      "meaning": "What does this word mean?",
+      "reading": "How is this read?",
+      "listening": "Which word do you hear?",
+      "cloze": "Fill in the gap"
+    },
+    "replay": "Play again",
+    "testHint": "Question {n}/{total}",
+    "saving": "Grading…",
+    "saveError": "Could not save the result.",
+    "result": "{correct}/{total} correct",
+    "passed": "Lesson complete! {cards} cards added to your reviews.",
+    "failed": "You need 60% to complete the lesson. Review and try again.",
+    "backToLesson": "Back to the lesson",
+    "toReview": "Review now",
+    "retry": "Try again"
+  },
+  "Review": {
+    "title": "Review",
+    "progress": "Review progress",
+    "reveal": "Show answer",
+    "tapToReveal": "Tap (or press space) to see the answer",
+    "kind": {
+      "word": "Vocabulary",
+      "listening": "Listening",
+      "grammar": "Grammar",
+      "kana": "Kana",
+      "production": "Recall"
+    },
+    "rating": {
+      "again": "Again",
+      "hard": "Hard",
+      "good": "Good",
+      "easy": "Easy"
+    },
+    "done": "{count, plural, one {# card} other {# cards}} done!",
+    "toToday": "Go to Today",
+    "saveError": "Some results could not be saved.",
+    "empty": "Nothing to review right now.",
+    "emptyHint": "Finish a lesson to get new cards.",
+    "toLessons": "Go to lessons"
+  },
+  "Kanji": {
+    "title": "N5 kanji – readings, meanings, stroke order",
+    "description": "103 basic kanji for JLPT N5 with Sino-Vietnamese readings, On/Kun readings and example words.",
+    "lessonGroup": "Lesson {n}: {title}",
+    "laterGroup": "Taught in later lessons",
+    "pageTitle": "Kanji {char} – {meaning}",
+    "pageDescription": "Kanji {char}: means {meaning}; On {on}; Kun {kun}; stroke order and example words.",
+    "on": "On reading",
+    "kun": "Kun reading",
+    "strokesLabel": "Strokes",
+    "lesson": "Lesson",
+    "words": "Words with this kanji",
+    "attribution": "Kanji data: KANJIDIC2 (EDRDG, CC BY-SA 4.0); stroke order: KanjiVG (Ulrich Apel, CC BY-SA 3.0). Sino-Vietnamese readings: Japky, checked against Unihan.",
+    "embed": "Embed on your site"
+  },
+  "Tests": {
+    "title": "Tests",
+    "description": "Retake end-of-lesson tests to consolidate. Your best score is kept.",
+    "kana": "Kana test",
+    "kanaDesc": "Score 90% to test out of the alphabets",
+    "lesson": "Lesson {n} test",
+    "mock": "JLPT N5 mock exam",
+    "mockDesc": "32 questions, 30 minutes, all N5 content"
+  },
+  "Credits": {
+    "title": "Credits",
+    "intro": "Japky uses the following open datasets. Thank you to their authors.",
+    "content": "Lessons, example sentences, Vietnamese meanings and Sino-Vietnamese readings are written by Japky and released under CC BY-SA 4.0.",
+    "versions": "Versions: JMdict {jmdict} · JmdictFurigana {furigana}"
+  },
+  "AiTest": {
+    "title": "AI test",
+    "description": "Questions are built from the words you have learned. You get 5 AI tests a day.",
+    "empty": "No questions yet.",
+    "sourceAi": "Questions written by AI",
+    "sourceStatic": "Built-in questions",
+    "reason": {
+      "QUOTA": "no AI tests left today",
+      "INVALID": "AI reply was not in the right format",
+      "AI_UNAVAILABLE": "AI is temporarily off",
+      "KILL_SWITCH": "AI is temporarily off",
+      "ERROR": "AI failed",
+      "MOCK": "AI is in test mode (mock), using built-in questions"
+    },
+    "again": "Another test",
+    "next": "Next",
+    "progress": "Progress",
+    "signIn": "Sign in to take an AI test.",
+    "guest": "Create an account to take AI tests.",
+    "notEnough": "Learn at least 4 words to get a test.",
+    "toLessons": "Go to lessons",
+    "remaining": "{count} AI tests left today"
+  },
+  "Admin": {
+    "title": "Admin",
+    "ai": "AI",
+    "killSwitch": "Turn all AI off (kill switch)",
+    "mode": "Mode",
+    "adapter": "Adapter",
+    "preset": "Provider",
+    "model": "Model",
+    "noKey": "no key set",
+    "save": "Save settings",
+    "saved": "Saved",
+    "voices": "Voices (fish.audio)",
+    "noVoices": "No voices yet. Add them in the database (table tts_voices).",
+    "usageToday": "AI usage today",
+    "requests": "Requests",
+    "none": "None yet",
+    "audit": "Change log (latest 30)"
+  },
+  "Content": {
+    "unreviewed": "The Vietnamese meanings and Hán-Việt readings here have not been checked by a person yet. Please tell Japky if something looks wrong."
+  },
+  "Mock": {
+    "title": "N5 mock exam",
+    "intro": "{count} vocabulary, kanji, grammar and listening questions in {minutes} minutes. Missed items are added to your reviews.",
+    "start": "Start the mock exam",
+    "progress": "Exam progress",
+    "timeLeft": "Time left",
+    "result": "{correct}/{total} correct",
+    "cards": "Added {count} missed items to your reviews.",
+    "toReview": "Review now",
+    "toTests": "Back to tests",
+    "saving": "Grading…",
+    "saveError": "Could not send your answers.",
+    "retry": "Send again"
+  }
+}
