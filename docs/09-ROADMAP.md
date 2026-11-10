@@ -72,14 +72,14 @@
 |------|---------------------|
 | `SttProvider` + `webspeech` + mora scoring, consent Google, chỉ từ đơn – ✅ `src/lib/japanese/mora.ts`, `src/lib/speech/stt/`, `/speak/[lesson]` | [F10](./02-FEATURES.md#f10-chấm-phát-âm-beta); unit test mora (ゃ, っ, ー) |
 
-## P7 – Hoàn thiện N5 (4 tuần)
+## P7 – Hoàn thiện N5 (4 tuần) – ✅ xong (quyết định: [p7-decisions](./discussions/p7-decisions/summary.md); gap trong [backlog](../backlog.md) B6, F22–F24)
 
 | Task | Acceptance criteria |
 |------|---------------------|
-| Bài N5 21–30 + mock JLPT N5 | Đủ lộ trình N5 |
-| Pack nhà hàng + IT | |
-| Thêm widget (`word`, `word-of-the-day`), streak embed opt-in | |
-| PWA (manifest, offline deck) | |
+| Bài N5 21–30 + mock JLPT N5 – ✅ 30 bài, 477 từ, 62 điểm ngữ pháp (chưa review, B6); mock N5 đã có từ F8 | Đủ lộ trình N5 |
+| Pack nhà hàng + IT – ✅ `/packs/restaurant` (42 từ), `/packs/it` (41 từ), chưa review | |
+| Thêm widget (`word`, `word-of-the-day`), streak embed opt-in – ✅ `/embed/word/[id]`, `/embed/word-of-the-day`, `/embed/streak/[publicId]` (tắt mặc định), trang `/embed-code` | |
+| PWA (manifest, offline deck) – ✅ manifest + service worker đọc offline các trang đã mở; ôn tập offline: F22 | |
 
 ## P8 – Học qua video nhạc v1 (2 tuần) – làm sau cùng
 
