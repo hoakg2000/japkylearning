@@ -57,14 +57,14 @@
 | Sentry, backup, Vercel Pro, fish.audio commercial (nếu launch công khai) | |
 | 20 beta tester (ưu tiên người học Tokutei Ginou) | Thu feedback, đo D1/D7 |
 
-## P5 – Pack kaigo + bài 11–20 (4 tuần: dev 1.5 + nội dung 2.5)
+## P5 – Pack kaigo + bài 11–20 (4 tuần: dev 1.5 + nội dung 2.5) – ✅ xong (quyết định: [p5-decisions](./discussions/p5-decisions/summary.md); gap trong [backlog](../backlog.md) B4, B6, F16–F18)
 
 | Task | Acceptance criteria |
 |------|---------------------|
-| Pack kaigo (≥ 50 từ + kanji liên quan) | Thêm vào SRS bằng 1 nút |
+| Pack kaigo (≥ 50 từ + kanji liên quan) – ✅ 55 từ, 24 kanji, `/packs/kaigo` (chưa review, B6) | Thêm vào SRS bằng 1 nút |
 | Bài N5 11–20 – ✅ xong (chưa review, [backlog](../backlog.md) B6) | Như P2 |
-| AI chat beta (chỉ ngữ pháp, 20 tin/ngày, SSE) | [F8](./02-FEATURES.md#f8-ai-chat-tutor-beta) |
-| Email nhắc học (opt-in), share card streak | |
+| AI chat beta (chỉ ngữ pháp, 20 tin/ngày, SSE) – ✅ `/chat` + `POST /api/chat` SSE, tắt mặc định (bật trong /admin), lịch sử thread chỉ trong tab (F16, F17) | [F8](./02-FEATURES.md#f8-ai-chat-tutor-beta) |
+| Email nhắc học (opt-in), share card streak – ✅ giờ nhắc trong /me, `npm run send:reminders` (console transport, gửi thật chờ B4); ảnh streak tạo trên trình duyệt (link công khai: F18) | |
 
 ## P6 – Luyện nói (1.5 tuần)
 
