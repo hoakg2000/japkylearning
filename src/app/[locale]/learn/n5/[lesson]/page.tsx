@@ -69,9 +69,14 @@ export default async function LessonPage({ params }: PageProps<'/[locale]/learn/
         <UnreviewedNote show={words.some((w) => !w.meaningsViReviewed) || kanji.some((k) => !k.hanVietReviewed)} />
         <div className="flex flex-wrap items-center justify-between gap-3">
           <DisplayToggles />
+<div className="flex flex-wrap gap-2">
+          <Link href={`/speak/${lesson.order}`} className="inline-flex min-h-12 items-center rounded-card border border-line px-6 font-medium hover:border-brand">
+            🎤 {t('speak')}
+          </Link>
           <Link href={`/learn/n5/${lesson.order}/practice`} className="inline-flex min-h-12 items-center rounded-card bg-brand px-6 font-medium text-brand-ink">
             {t('practice')}
           </Link>
+          </div>
         </div>
       </header>
 

@@ -130,7 +130,7 @@ export const testAttempts = pgTable(
   {
     id: serial('id').primaryKey(),
     userId: userId(),
-    kind: text('kind').notNull(), // kana | lesson | placement | mixed
+    kind: text('kind').notNull(), // kana | lesson | placement | mixed | mock | speaking
     scope: jsonb('scope').$type<Record<string, unknown>>(),
     score: real('score').notNull(),
     total: integer('total').notNull(),

@@ -373,7 +373,8 @@
     "kanji": "Kanji ({count})",
     "grammar": "Ngữ pháp",
     "dialogue": "Hội thoại",
-    "nav": "Bài trước, bài sau"
+    "nav": "Bài trước, bài sau",
+    "speak": "Luyện nói"
   },
   "Practice": {
     "title": "Luyện bài {n}",
@@ -562,6 +563,38 @@
       "AI_UNAVAILABLE": "AI đang tạm nghỉ. Hãy thử lại sau.",
       "NOT_FOUND": "Tính năng này chưa mở.",
       "ERROR": "Có lỗi xảy ra, hãy thử lại."
+    }
+  },
+  "Speak": {
+    "title": "Luyện nói",
+    "intro": "Nghe mẫu, bấm ghi âm rồi đọc từng từ. Điểm cho biết máy nghe rõ đến đâu (chưa phải chấm âm vị). Chỉ lưu điểm, không lưu âm thanh.",
+    "listen": "Nghe",
+    "record": "Đọc",
+    "listening": "Đang nghe…",
+    "score": "Điểm: {score}/100",
+    "heard": "Máy nghe được: {heard}",
+    "heardAs": "nghe thành {heard}",
+    "missing": "thiếu",
+    "extra": "thừa",
+    "moraLabel": "Từng mora: xanh là đúng, đỏ là sai hoặc thiếu",
+    "unmapped": "Máy nghe được “{heard}”, chưa phải từ cần đọc. Thử lại nhé (không tính điểm).",
+    "unsupported": "Trình duyệt này chưa hỗ trợ nhận dạng giọng nói. Hãy dùng Chrome, Edge hoặc Safari. Bạn vẫn có thể nghe mẫu và tự đánh giá.",
+    "selfOk": "Tôi đọc đúng",
+    "selfRetry": "Đọc lại",
+    "selfOkMsg": "Tốt lắm! (tự đánh giá, không lưu điểm)",
+    "selfRetryMsg": "Nghe mẫu thêm lần nữa rồi đọc lại nhé.",
+    "signIn": "Đăng nhập (16 tuổi trở lên) để ghi âm và chấm điểm. Bạn vẫn có thể nghe mẫu.",
+    "signInLink": "Đăng nhập",
+    "age": "Chấm phát âm dành cho người từ 16 tuổi. Bạn vẫn có thể nghe mẫu.",
+    "consentTitle": "Trước khi ghi âm",
+    "consentText": "Khi bạn bấm Đọc, trình duyệt gửi âm thanh tới dịch vụ nhận dạng giọng nói (Google với Chrome) để chuyển thành chữ. Japky không lưu âm thanh, chỉ lưu điểm. Bạn có thể rút lại đồng ý trong trang Tôi.",
+    "consentAgree": "Đồng ý và ghi âm",
+    "consentDecline": "Không, chỉ nghe",
+    "errors": {
+      "no-speech": "Chưa nghe thấy gì. Bấm Đọc và nói gần micro hơn nhé.",
+      "not-allowed": "Chưa có quyền dùng micro. Hãy cho phép micro trong trình duyệt.",
+      "network": "Mất kết nối tới dịch vụ nhận dạng. Thử lại sau.",
+      "error": "Không nhận dạng được. Thử lại nhé."
     }
   }
 }

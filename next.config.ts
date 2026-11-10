@@ -46,10 +46,19 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: '/((?!embed/).*)',
+        // Speaking practice is the only route allowed to use the microphone (F10); it gets its own rule below.
+        source: '/((?!embed/|vi/speak/|en/speak/).*)',
         headers: [...common, { key: 'Content-Security-Policy', value: csp("'none'") }, { key: 'X-Frame-Options', value: 'DENY' }],
       },
       { source: '/embed/:path*', headers: [...common, { key: 'Content-Security-Policy', value: csp('*') }] },
+      {
+        source: '/:locale(vi|en)/speak/:path*',
+        headers: [
+          ...common.map((h) => (h.key === 'Permissions-Policy' ? { ...h, value: 'camera=(), microphone=(self), geolocation=()' } : h)),
+          { key: 'Content-Security-Policy', value: csp("'none'") },
+          { key: 'X-Frame-Options', value: 'DENY' },
+        ],
+      },
     ];
   },
 };

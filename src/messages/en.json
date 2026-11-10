@@ -373,7 +373,8 @@
     "kanji": "Kanji ({count})",
     "grammar": "Grammar",
     "dialogue": "Dialogue",
-    "nav": "Previous and next lesson"
+    "nav": "Previous and next lesson",
+    "speak": "Speaking"
   },
   "Practice": {
     "title": "Practice lesson {n}",
@@ -562,6 +563,38 @@
       "AI_UNAVAILABLE": "AI is taking a break. Please try again later.",
       "NOT_FOUND": "This feature is not open yet.",
       "ERROR": "Something went wrong. Please try again."
+    }
+  },
+  "Speak": {
+    "title": "Speaking practice",
+    "intro": "Listen, press record and say each word. The score shows how clearly the recogniser understood you (not a phoneme check). Only the score is saved, never the audio.",
+    "listen": "Listen",
+    "record": "Say it",
+    "listening": "Listening…",
+    "score": "Score: {score}/100",
+    "heard": "Heard: {heard}",
+    "heardAs": "heard as {heard}",
+    "missing": "missing",
+    "extra": "extra",
+    "moraLabel": "Each mora: green is right, red is wrong or missing",
+    "unmapped": "Heard “{heard}”, which is not the target word. Try again (not scored).",
+    "unsupported": "This browser does not support speech recognition. Use Chrome, Edge or Safari. You can still listen and check yourself.",
+    "selfOk": "I said it right",
+    "selfRetry": "Try again",
+    "selfOkMsg": "Well done! (self-check, no score saved)",
+    "selfRetryMsg": "Listen once more, then try again.",
+    "signIn": "Sign in (16 or older) to record and get a score. You can still listen.",
+    "signInLink": "Sign in",
+    "age": "Pronunciation scoring is for people aged 16 or older. You can still listen.",
+    "consentTitle": "Before you record",
+    "consentText": "When you press Say it, your browser sends the audio to a speech recognition service (Google in Chrome) to turn it into text. Japky never stores the audio, only the score. You can withdraw consent on the Me page.",
+    "consentAgree": "Agree and record",
+    "consentDecline": "No, just listen",
+    "errors": {
+      "no-speech": "Nothing heard. Press Say it and speak closer to the microphone.",
+      "not-allowed": "No microphone permission. Allow the microphone in your browser.",
+      "network": "Lost connection to the recognition service. Try again later.",
+      "error": "Could not recognise that. Try again."
     }
   }
 }
