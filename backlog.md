@@ -45,6 +45,7 @@ Items that could not be finished while implementing the roadmap phases. Each has
 | F26 | Word-level highlight (Enhanced LRC): none of the 22 LRCLIB entries has word sync, so only line highlight ships | P8 later |
 | F27 | Song takedown contact: set `NEXT_PUBLIC_CONTACT_EMAIL` (owner) — until then song pages say the contact address is coming. Removal = add the slug to `content/songs/removed.json` and rebuild. Privacy page should also link Google’s privacy policy for the YouTube player (docs/07 §4) | P8 / owner |
 | F28 | Rule-based lyric furigana misses some readings (names, ateji): 1 of 22 songs (Flamingo, 5.1%) is above the 5% unread-kanji flag and shows a note; lyrics, furigana and timing are community data, unreviewed. Lyrics copyright remains the owner-accepted v1 risk (docs/07 §4) | P8 |
+| F29 | AI cost is now priced per model (`PRICES` in `src/lib/ai/adapters/openai-compatible.ts`, USD per 1M input/output tokens) so the F13 budget can trigger. The numbers are estimates; a model without a price (e.g. `motapi` `default`) counts at the high `UNKNOWN_PRICE`. When the provider reports no usage, upper bounds are counted. **Owner:** confirm the prices for the models actually used, or set `AI_PRICE_IN_PER_M` / `AI_PRICE_OUT_PER_M` | review 2026-11-10 |
 
 ## Release (P4 – public beta, moved to backlog by owner)
 

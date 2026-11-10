@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useEffect, useRef, useState } from 'react';
-import { answerParts, MAX_CHARS } from '@/lib/ai/tutor';
+import { answerParts, MAX_CHARS, MAX_TURNS } from '@/lib/ai/answer';
 import { loadThreads, newThread, saveThreads, type ChatStore, type ChatThread } from '@/lib/chat-history';
 
 /** Assistant text with furigana markup rendered as ruby; plain text otherwise (no HTML from the model). */
@@ -68,11 +68,13 @@ export function ChatTutor({ locale }: { locale: 'vi' | 'en' }) {
     setError(null);
     setBusy(true);
     abort.current = new AbortController();
+    let answer = '';
     try {
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ locale, messages: turns }),
+        // The server uses only the last MAX_TURNS and rejects long arrays, so a long thread must not send everything.
+        body: JSON.stringify({ locale, messages: turns.slice(-MAX_TURNS) }),
         signal: abort.current.signal,
       });
       if (!res.ok || !res.body) {
@@ -81,7 +83,6 @@ export function ChatTutor({ locale }: { locale: 'vi' | 'en' }) {
       }
       const reader = res.body.pipeThrough(new TextDecoderStream()).getReader();
       let buffer = '';
-      let answer = '';
       for (;;) {
         const { value, done } = await reader.read();
         if (done) break;
@@ -103,9 +104,11 @@ export function ChatTutor({ locale }: { locale: 'vi' | 'en' }) {
       }
     } catch (e) {
       const code = e instanceof Error ? e.message : 'ERROR';
-      if (code !== 'AbortError' && !(e instanceof DOMException)) setError(code);
-      // Drop the unfinished answer; the server refunded the request.
-      setTurns(id, (th) => ({ ...th, turns }));
+      const aborted = code === 'AbortError' || e instanceof DOMException;
+      if (!aborted) setError(code);
+      // Stopped by the learner: keep the text already shown (the server counted it). Otherwise drop the unfinished answer.
+      const kept = aborted && answer.trim() ? [...turns, { role: 'assistant' as const, content: answer }] : turns;
+      setTurns(id, (th) => ({ ...th, turns: kept }));
     } finally {
       setBusy(false);
       abort.current = null;

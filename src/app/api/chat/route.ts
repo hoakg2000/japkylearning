@@ -2,7 +2,7 @@ import { getSession } from '@/lib/auth/session';
 import { isOldEnough } from '@/lib/auth/age';
 import { DAILY_LIMITS, recordCost, refund, reserve } from '@/lib/ai/guard';
 import { getAiSettings, providerFor } from '@/lib/ai/registry';
-import { buildMessages, ChatRequest } from '@/lib/ai/tutor';
+import { buildMessages, ChatRequest, settleChat } from '@/lib/ai/tutor';
 import type { AiUsage } from '@/lib/ai/types';
 import { getDb } from '@/lib/db';
 import { aiUsage } from '@/lib/db/schema';
@@ -17,7 +17,7 @@ const fail = (code: string, status: number) => Response.json({ error: code }, { 
 
 /**
  * Chat tutor beta (F8), Server-Sent Events. Every check runs before the stream opens; the request is
- * reserved against the daily quota and refunded if the answer does not finish (error or abort).
+ * reserved against the daily quota and refunded only if no answer text reached the learner (settleChat).
  */
 export async function POST(req: Request) {
   const settings = await getAiSettings();
@@ -63,24 +63,27 @@ export async function POST(req: Request) {
   const stream = new ReadableStream<Uint8Array>({
     async start(controller) {
       const send = (event: string, data: unknown) => controller.enqueue(encoder.encode(sse(event, data)));
-      let finished = false;
+      const messages = buildMessages(body);
+      let usage: AiUsage | undefined;
+      let outChars = 0;
       try {
         send('meta', { demo: provider.id === 'mock', remaining });
-        const it = provider.streamText({ mode: 'tutor', messages: buildMessages(body), maxOutputTokens: 500, signal: req.signal });
+        const it = provider.streamText({ mode: 'tutor', messages, maxOutputTokens: 500, signal: req.signal });
         let step = await it.next();
         while (!step.done) {
           send('delta', { t: step.value });
+          outChars += step.value.length;
           step = await it.next();
         }
-        if (req.signal.aborted) throw new Error('ABORTED');
-        const usage: AiUsage = step.value;
-        await recordCost(user.id, today, 'tutor', usage.tokensIn, usage.tokensOut, usage.costUsd);
-        finished = true;
+        usage = step.value;
         send('done', {});
       } catch {
         if (!req.signal.aborted) send('error', { error: 'AI_UNAVAILABLE' });
       } finally {
-        if (!finished) await refund(user.id, today, 'tutor');
+        const inChars = messages.reduce((n, m) => n + m.content.length, 0);
+        const settled = settleChat(usage, { inChars, outChars }, provider.model, provider.id === 'mock');
+        if (settled.usage) await recordCost(user.id, today, 'tutor', settled.usage.tokensIn, settled.usage.tokensOut, settled.usage.costUsd);
+        if (settled.refund) await refund(user.id, today, 'tutor');
         try {
           controller.close();
         } catch {

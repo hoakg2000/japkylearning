@@ -11,6 +11,29 @@ export const PRESETS = {
 } as const;
 export type Preset = keyof typeof PRESETS;
 
+/**
+ * USD per 1M tokens [input, output] for the preset models. Estimates, owner to confirm (backlog F29).
+ * `AI_PRICE_IN_PER_M` / `AI_PRICE_OUT_PER_M` override them. A model without a price counts as
+ * expensive (UNKNOWN_PRICE), never free, so the F13 daily budget still stops it (fail closed).
+ */
+export const PRICES: Record<string, readonly [number, number]> = {
+  'gpt-4o-mini': [0.15, 0.6],
+  'openai/gpt-4o-mini': [0.15, 0.6],
+  'gemini-2.5-flash': [0.3, 2.5],
+  'claude-haiku-5-5': [1, 5],
+};
+export const UNKNOWN_PRICE = [15, 75] as const;
+
+const price = (v: string | undefined) => (v?.trim() && Number.isFinite(Number(v)) && Number(v) >= 0 ? Number(v) : undefined);
+
+export function costUsd(model: string, tokensIn: number, tokensOut: number, env: NodeJS.ProcessEnv = process.env): number {
+  const [pin, pout] = PRICES[model] ?? UNKNOWN_PRICE;
+  return (tokensIn * (price(env.AI_PRICE_IN_PER_M) ?? pin) + tokensOut * (price(env.AI_PRICE_OUT_PER_M) ?? pout)) / 1e6;
+}
+
+/** Without usage from the provider, count upper bounds (1 token per char in, the full output budget) rather than 0. */
+const charsOf = (messages: TextInput['messages']) => messages.reduce((n, m) => n + m.content.length, 0);
+
 type ChatResponse = { choices: { message: { content: string } }[]; usage?: { prompt_tokens: number; completion_tokens: number } };
 
 /** Minimal OpenAI-compatible chat client (Chat Completions). No SDK: fewer dependencies. */
@@ -51,14 +74,9 @@ export class OpenAiCompatibleProvider implements AiProvider {
     const data = (await res.json()) as ChatResponse;
     const content = data.choices?.[0]?.message?.content;
     if (!content) throw new AiInvalidOutputError('EMPTY');
-    return {
-      value: content,
-      provider: this.id,
-      model: this.model,
-      tokensIn: data.usage?.prompt_tokens ?? 0,
-      tokensOut: data.usage?.completion_tokens ?? 0,
-      costUsd: 0, // filled from the price table by the registry
-    };
+    const tokensIn = data.usage?.prompt_tokens ?? charsOf(messages);
+    const tokensOut = data.usage?.completion_tokens ?? maxOutputTokens;
+    return { value: content, provider: this.id, model: this.model, tokensIn, tokensOut, costUsd: costUsd(this.model, tokensIn, tokensOut, this.env) };
   }
 
   async *streamText(input: TextInput & { signal?: AbortSignal }): AsyncGenerator<string, AiUsage> {
@@ -76,7 +94,8 @@ export class OpenAiCompatibleProvider implements AiProvider {
       signal: input.signal ? AbortSignal.any([input.signal, AbortSignal.timeout(60_000)]) : AbortSignal.timeout(60_000),
     });
     if (!res.ok || !res.body) throw new AiUnavailableError(`HTTP_${res.status}`);
-    const usage: AiUsage = { tokensIn: 0, tokensOut: 0, costUsd: 0 };
+    const usage: AiUsage = { tokensIn: charsOf(input.messages), tokensOut: input.maxOutputTokens ?? 500, costUsd: 0 };
+    const priced = () => ({ ...usage, costUsd: costUsd(this.model, usage.tokensIn, usage.tokensOut, this.env) });
     let buffer = '';
     const decoder = new TextDecoder();
     for await (const bytes of res.body as unknown as AsyncIterable<Uint8Array>) {
@@ -84,13 +103,13 @@ export class OpenAiCompatibleProvider implements AiProvider {
       const { events, rest } = splitSse(buffer);
       buffer = rest;
       for (const data of events) {
-        if (data === '[DONE]') return usage;
+        if (data === '[DONE]') return priced();
         const chunk = parseChunk(data);
         if (chunk.usage) Object.assign(usage, chunk.usage);
         if (chunk.text) yield chunk.text;
       }
     }
-    return usage;
+    return priced();
   }
 
   generateText(input: TextInput): Promise<AiResult<string>> {
