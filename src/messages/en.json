@@ -266,7 +266,11 @@
     "shareDownload": "Download image",
     "shareDays": "{n}-day study streak",
     "shareLongest": "Longest: {n} days",
-    "shareAlt": "Streak image, {n} days"
+    "shareAlt": "Streak image, {n} days",
+    "streakEmbed": "Public streak widget",
+    "streakEmbedNote": "When on, anyone with the link can see your streak count (no name or email). Turning it off or making a new link stops the old link.",
+    "streakEmbedCode": "Streak widget embed code",
+    "streakEmbedRotate": "Make a new link"
   },
   "Learn": {
     "title": "Learn",
@@ -596,5 +600,26 @@
       "network": "Lost connection to the recognition service. Try again later.",
       "error": "Could not recognise that. Try again."
     }
+  },
+  "EmbedCode": {
+    "title": "Get embed code",
+    "intro": "Embed a Japky widget in your blog or website. Widgets use no cookies and show public data only.",
+    "widget": "Widget",
+    "wordOfDay": "Word of the day",
+    "word": "One word",
+    "kanji": "One kanji",
+    "streak": "My streak",
+    "kanjiChar": "Kanji",
+    "wordId": "Word id (from the word page address, e.g. jmdict-1206900)",
+    "theme": "Theme",
+    "themeAuto": "Match device",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "language": "Language",
+    "streakHint": "Want to embed your streak? Turn on “Public streak widget” on the Me page.",
+    "preview": "Widget preview",
+    "code": "Embed code",
+    "copy": "Copy code",
+    "copied": "Copied ✓"
   }
 }

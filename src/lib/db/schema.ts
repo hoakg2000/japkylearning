@@ -23,6 +23,8 @@ export const userSettings = pgTable('user_settings', {
   // Email reminder (F2, opt-in): local hour 0-23, null = off. Sent at most once per study day.
   reminderHour: integer('reminder_hour'),
   lastRemindedOn: date('last_reminded_on'),
+  // Opt-in public streak widget (F12): random 128-bit id, null = off; rotating it breaks old links.
+  streakPublicId: text('streak_public_id').unique(),
   updatedAt: timestamp('updated_at', { withTimezone: true }).defaultNow().notNull(),
 });
 

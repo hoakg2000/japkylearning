@@ -1,5 +1,6 @@
 'use server';
 
+import { randomBytes } from 'node:crypto';
 import { headers } from 'next/headers';
 import { z } from 'zod';
 import { getAuth } from '@/lib/auth';
@@ -85,4 +86,15 @@ export async function setReminderHour(raw: number | null) {
   const db = await getDb();
   await db.update(userSettings).set({ reminderHour: hour, updatedAt: new Date() }).where(eq(userSettings.userId, user.id));
   await recordConsent(user.id, 'email_reminders', hour !== null);
+}
+
+/** F12 streak widget (opt-in, P7 decision G5): on issues a new random id, off clears it; old links stop working. */
+export async function setStreakEmbed(on: boolean) {
+  const user = await currentUser();
+  if (user.isAnonymous) throw new Error('UNAUTHORIZED');
+  const id = z.boolean().parse(on) ? randomBytes(16).toString('base64url') : null;
+  await ensureSettings(user.id);
+  const db = await getDb();
+  await db.update(userSettings).set({ streakPublicId: id, updatedAt: new Date() }).where(eq(userSettings.userId, user.id));
+  return id;
 }

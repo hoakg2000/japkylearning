@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { Suspense } from 'react';
-import { AccountActions, ConsentList, ReminderSelect, SettingsForm, TimezoneSelect, TwoFactorSection, VoiceSelect } from '@/components/me-controls';
+import { AccountActions, ConsentList, ReminderSelect, SettingsForm, StreakEmbedToggle, TimezoneSelect, TwoFactorSection, VoiceSelect } from '@/components/me-controls';
 import { ShareStreak } from '@/components/share-streak';
 import { StreakCalendar } from '@/components/streak-calendar';
 import { Link } from '@/i18n/navigation';
@@ -65,6 +65,7 @@ async function MeContent() {
       <TimezoneSelect current={settings.timezone} />
       {!anonymous && <VoiceSelect voices={voices} current={settings.ttsVoiceId} />}
       {!anonymous && <ReminderSelect current={settings.reminderHour} />}
+      {!anonymous && <StreakEmbedToggle current={settings.streakPublicId} />}
       {!anonymous && <ConsentList initial={consents} />}
       {!anonymous && <TwoFactorSection enabled={!!session.user.twoFactorEnabled} />}
       <AccountActions />

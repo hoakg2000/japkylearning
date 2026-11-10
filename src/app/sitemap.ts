@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/tests',
     '/privacy',
     '/about/credits',
+    '/embed-code',
     ...lessons.map((l) => `/learn/n5/${l.order}`),
     '/packs',
     ...packs.map((p) => `/packs/${p.id}`),

@@ -266,7 +266,11 @@
     "shareDownload": "Tải ảnh",
     "shareDays": "{n} ngày học liên tiếp",
     "shareLongest": "Dài nhất: {n} ngày",
-    "shareAlt": "Ảnh streak {n} ngày"
+    "shareAlt": "Ảnh streak {n} ngày",
+    "streakEmbed": "Widget streak công khai",
+    "streakEmbedNote": "Khi bật, ai có đường link đều xem được số ngày streak của bạn (không có tên hay email). Tắt hoặc đổi link thì link cũ ngừng hoạt động.",
+    "streakEmbedCode": "Mã nhúng widget streak",
+    "streakEmbedRotate": "Đổi link mới"
   },
   "Learn": {
     "title": "Học",
@@ -596,5 +600,26 @@
       "network": "Mất kết nối tới dịch vụ nhận dạng. Thử lại sau.",
       "error": "Không nhận dạng được. Thử lại nhé."
     }
+  },
+  "EmbedCode": {
+    "title": "Lấy mã nhúng",
+    "intro": "Nhúng widget Japky vào blog hay trang web của bạn. Widget không dùng cookie và chỉ hiển thị dữ liệu công khai.",
+    "widget": "Widget",
+    "wordOfDay": "Từ vựng hôm nay",
+    "word": "Một từ vựng",
+    "kanji": "Một chữ kanji",
+    "streak": "Streak của tôi",
+    "kanjiChar": "Chữ kanji",
+    "wordId": "Mã từ (trong địa chỉ trang từ, ví dụ jmdict-1206900)",
+    "theme": "Giao diện",
+    "themeAuto": "Theo thiết bị",
+    "themeLight": "Sáng",
+    "themeDark": "Tối",
+    "language": "Ngôn ngữ",
+    "streakHint": "Muốn nhúng streak? Bật “Widget streak công khai” trong trang Tôi.",
+    "preview": "Xem trước widget",
+    "code": "Mã nhúng",
+    "copy": "Sao chép mã",
+    "copied": "Đã sao chép ✓"
   }
 }

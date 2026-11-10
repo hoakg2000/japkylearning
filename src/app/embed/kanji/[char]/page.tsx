@@ -18,8 +18,8 @@ export default async function KanjiEmbed({ params }: { params: Promise<{ char: s
       {strokes ? <StrokeSvg strokes={strokes} size={120} label={`${k.char}`} /> : <span className="size-[120px]" />}
       <figcaption className="space-y-1">
         <p lang="ja" className="text-4xl">{k.char}</p>
-        <p className="hanviet font-bold tracking-wide">{k.hanViet.join(' · ')}</p>
-        <p className="text-sm">{k.meanings.vi}</p>
+        <p className="l-vi hanviet font-bold tracking-wide">{k.hanViet.join(' · ')}</p>
+        <p className="text-sm"><span className="l-vi">{k.meanings.vi}</span><span className="l-en">{k.meanings.en}</span></p>
         <p className="text-xs text-muted" lang="ja">{k.on.join('、')} · {k.kun.join('、')}</p>
       </figcaption>
     </figure>

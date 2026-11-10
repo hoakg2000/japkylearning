@@ -40,6 +40,12 @@
   --info: #60a5fa;
 }
 
+/* Embeds render both languages; the ?lang= script on <html> picks one (F12). */
+:root[lang="vi"] .l-en,
+:root[lang="en"] .l-vi {
+  display: none;
+}
+
 /* Minimal mode: denser, flatter (06-UI-UX §4). */
 [data-ui="minimal"] {
   --radius: 8px;

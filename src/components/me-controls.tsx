@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, useTransition } from 'react';
-import { setConsent, setReminderHour, setTimezone, setVoice, updateSettings } from '@/app/[locale]/me/actions';
+import { setConsent, setReminderHour, setStreakEmbed, setTimezone, setVoice, updateSettings } from '@/app/[locale]/me/actions';
 import { useRouter } from '@/i18n/navigation';
 import { authClient } from '@/lib/auth/client';
 import { writeDisplayPrefs } from '@/lib/display-prefs';
@@ -274,6 +274,39 @@ export function ReminderSelect({ current }: { current: number | null }) {
         </select>
       </label>
       <p className="text-xs text-muted" aria-live="polite">{saved ? t('saved') : t('reminderHint')}</p>
+    </section>
+  );
+}
+
+/** Opt-in public streak widget (F12): off by default; turning it on or rotating creates a new random link. */
+export function StreakEmbedToggle({ current }: { current: string | null }) {
+  const t = useTranslations('Me');
+  const [id, setId] = useState(current);
+  const [pending, start] = useTransition();
+  const run = (on: boolean) => start(async () => setId(await setStreakEmbed(on)));
+  const origin = typeof window === 'undefined' ? '' : window.location.origin;
+  const url = id ? `${origin}/embed/streak/${id}` : '';
+  return (
+    <section className={box}>
+      <label className="flex items-center justify-between gap-3 text-sm">
+        {t('streakEmbed')}
+        <input type="checkbox" checked={!!id} disabled={pending} onChange={(e) => run(e.target.checked)} />
+      </label>
+      <p className="text-xs text-muted">{t('streakEmbedNote')}</p>
+      {id && (
+        <div className="space-y-2">
+          <textarea
+            readOnly
+            rows={3}
+            aria-label={t('streakEmbedCode')}
+            value={`<iframe src="${url}" width="360" height="120" style="border:0" loading="lazy" title="Japky streak"></iframe>`}
+            className="w-full rounded-card border border-line bg-surface p-2 font-mono text-xs"
+          />
+          <button type="button" disabled={pending} onClick={() => run(true)} className="min-h-10 rounded-card border border-line px-3 text-sm">
+            {t('streakEmbedRotate')}
+          </button>
+        </div>
+      )}
     </section>
   );
 }

@@ -51,6 +51,8 @@ const nextConfig: NextConfig = {
         headers: [...common, { key: 'Content-Security-Policy', value: csp("'none'") }, { key: 'X-Frame-Options', value: 'DENY' }],
       },
       { source: '/embed/:path*', headers: [...common, { key: 'Content-Security-Policy', value: csp('*') }] },
+      // Public streak widget reads live data: never cached by browsers or CDNs (F12).
+      { source: '/embed/streak/:path*', headers: [{ key: 'Cache-Control', value: 'no-store' }] },
       {
         source: '/:locale(vi|en)/speak/:path*',
         headers: [
