@@ -621,5 +621,8 @@
     "code": "Embed code",
     "copy": "Copy code",
     "copied": "Copied ✓"
+  },
+  "Offline": {
+    "notice": "You are offline: lessons, words and kanji you opened before still work. Reviews and saving progress need a connection."
   }
 }

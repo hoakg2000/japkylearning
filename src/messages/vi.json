@@ -621,5 +621,8 @@
     "code": "Mã nhúng",
     "copy": "Sao chép mã",
     "copied": "Đã sao chép ✓"
+  },
+  "Offline": {
+    "notice": "Bạn đang offline: vẫn xem được các bài, từ và kanji đã mở trước đó. Ôn tập và lưu tiến độ cần có mạng."
   }
 }

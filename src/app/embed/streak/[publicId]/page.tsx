@@ -1,5 +1,6 @@
 import { eq } from 'drizzle-orm';
 import { notFound } from 'next/navigation';
+import { connection } from 'next/server';
 import { Suspense } from 'react';
 import { getDb } from '@/lib/db';
 import { userSettings } from '@/lib/db/schema';
@@ -16,6 +17,7 @@ export default function StreakEmbed({ params }: { params: Promise<{ publicId: st
 }
 
 async function StreakCard({ params }: { params: Promise<{ publicId: string }> }) {
+  await connection(); // live data, read per request (streak depends on today's date)
   const { publicId } = await params;
   if (!/^[A-Za-z0-9_-]{22}$/.test(publicId)) notFound();
   const db = await getDb();

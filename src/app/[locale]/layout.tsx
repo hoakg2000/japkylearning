@@ -5,6 +5,7 @@ import { Be_Vietnam_Pro, Noto_Sans_JP } from 'next/font/google';
 import { locale as rootLocale } from 'next/root-params';
 import { MainNav } from '@/components/nav';
 import { Providers } from '@/components/providers';
+import { Pwa } from '@/components/pwa';
 import { SettingsToggles } from '@/components/settings-toggles';
 import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
@@ -55,6 +56,7 @@ export default async function RootLayout({ children }: LayoutProps<'/[locale]'>)
               </div>
             </header>
             <main id="main" className="mx-auto max-w-5xl px-4 pt-6">
+              <Pwa />
               {children}
             </main>
             <footer className="mx-auto max-w-5xl px-4 pb-24 pt-6 text-xs text-muted md:pb-8">
