@@ -81,13 +81,13 @@
 | Thêm widget (`word`, `word-of-the-day`), streak embed opt-in – ✅ `/embed/word/[id]`, `/embed/word-of-the-day`, `/embed/streak/[publicId]` (tắt mặc định), trang `/embed-code` | |
 | PWA (manifest, offline deck) – ✅ manifest + service worker đọc offline các trang đã mở; ôn tập offline: F22 | |
 
-## P8 – Học qua video nhạc v1 (2 tuần) – làm sau cùng
+## P8 – Học qua video nhạc v1 (2 tuần) – làm sau cùng – ✅ xong (quyết định: [p8-decisions](./discussions/p8-decisions/summary.md); gap trong [backlog](../backlog.md) F25–F28)
 
 Chủ dự án chốt: làm sau khi mọi tính năng khác của v1 đã xong.
 
 | Task | Acceptance criteria |
 |------|---------------------|
-| Songs v1: `build-songs.ts` (LRCLIB → LRC → furigana → AI `lyrics-keywords` + `lyrics-translate`), player YouTube + highlight dòng/từ + keyword + điền lỗ, 20–30 bài | [F11](./02-FEATURES.md#f11-học-qua-bài-hát) |
+| Songs v1: `build-songs.ts` (LRCLIB → LRC → furigana → AI `lyrics-keywords` + `lyrics-translate`), player YouTube + highlight dòng/từ + keyword + điền lỗ, 20–30 bài – ✅ 22 bài (`npm run build:songs`), furigana + keyword theo luật (AI mock), highlight dòng, chưa có bản dịch dòng (F25) và highlight từng từ (F26) | [F11](./02-FEATURES.md#f11-học-qua-bài-hát) |
 
 ## Sau v1
 

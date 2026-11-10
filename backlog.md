@@ -41,6 +41,10 @@ Items that could not be finished while implementing the roadmap phases. Each has
 | F22 | Offline SRS review (P7 decision G6 option b): ratings queued in IndexedDB and synced later. Today the service worker only serves visited public pages offline; review needs the network. Bump `VERSION` in `public/sw.js` whenever caching rules change | P7 later |
 | F23 | Pages that call `notFound()` after the static shell has streamed (`/speak/999`, unknown `/embed/streak/<id>`, `/chat` while off) show the not-found content but answer HTTP 200. Fix needs `dynamicParams`/proxy rewrites per route, like `/admin` (F11) | P6/P7 |
 | F24 | JLPT N5 mock: add a listening section (needs recorded or pre-generated audio, B1) | P7 later |
+| F25 | Song line translations (vi/en) and AI keywords: the `lyrics-translate` / `lyrics-keywords` modes exist but the environment has no AI key, so songs ship with rule-based keywords and no line translations (P8 decision H4). **Owner:** set `AI_PROVIDER`/`AI_PRESET`/key, run `npm run build:songs`, review the output in a PR | P8 / after AI key |
+| F26 | Word-level highlight (Enhanced LRC): none of the 22 LRCLIB entries has word sync, so only line highlight ships | P8 later |
+| F27 | Song takedown contact: set `NEXT_PUBLIC_CONTACT_EMAIL` (owner) — until then song pages say the contact address is coming. Removal = add the slug to `content/songs/removed.json` and rebuild. Privacy page should also link Google’s privacy policy for the YouTube player (docs/07 §4) | P8 / owner |
+| F28 | Rule-based lyric furigana misses some readings (names, ateji): 1 of 22 songs (Flamingo, 5.1%) is above the 5% unread-kanji flag and shows a note; lyrics, furigana and timing are community data, unreviewed. Lyrics copyright remains the owner-accepted v1 risk (docs/07 §4) | P8 |
 
 ## Release (P4 – public beta, moved to backlog by owner)
 
