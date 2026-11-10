@@ -35,6 +35,9 @@ Items that could not be finished while implementing the roadmap phases. Each has
 | F16 | AI chat tutor (F8) is off by default (P5 decision D5). **Owner:** turn it on in /admin when a real provider is configured for mode `tutor`; with the mock, learners see a "demo" banner. The `/chat` page answers 404 content while off, but its HTTP status may be 200 (notFound inside a Suspense boundary); the API returns a real 404 | P5 |
 | F17 | Chat thread history lives only in the browser tab (sessionStorage) – a logged deviation from F8 "lịch sử theo thread" (P5 decision D4). Move to server tables (`src/lib/chat-history.ts` is the single swap point; export/delete must then include them) if learners ask for history across devices | P5 |
 | F18 | Streak share card is a canvas PNG the learner downloads; no public share URL (P5 decision D7). A `next/og` route needs a public, rotatable id and a privacy decision | P5 |
+| F19 | More STT engines: Azure Pronunciation Assessment (phoneme-level scoring, needs an Azure key and region) and Whisper via openai-compatible/gateway. Add each as one `SttProvider` in `src/lib/speech/stt/` (P6 decision E6: no stub files until then) | P6 / after owner keys |
+| F20 | Speaking score is computed in the browser and sent by the client (audio never reaches Japky), so a learner could post any score for their own progress; XP is capped at 2 per word per day. Acceptable for a beta; server-side scoring comes with Azure/Whisper (F19) | P6 |
+| F21 | Speaking practice over the learner’s own SRS words (`/speak` without a lesson, P6 decision E1 option b) and sentence-level scoring | P6 later |
 
 ## Release (P4 – public beta, moved to backlog by owner)
 

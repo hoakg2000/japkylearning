@@ -66,11 +66,11 @@
 | AI chat beta (chỉ ngữ pháp, 20 tin/ngày, SSE) – ✅ `/chat` + `POST /api/chat` SSE, tắt mặc định (bật trong /admin), lịch sử thread chỉ trong tab (F16, F17) | [F8](./02-FEATURES.md#f8-ai-chat-tutor-beta) |
 | Email nhắc học (opt-in), share card streak – ✅ giờ nhắc trong /me, `npm run send:reminders` (console transport, gửi thật chờ B4); ảnh streak tạo trên trình duyệt (link công khai: F18) | |
 
-## P6 – Luyện nói (1.5 tuần)
+## P6 – Luyện nói (1.5 tuần) – ✅ xong (quyết định: [p6-decisions](./discussions/p6-decisions/summary.md); gap trong [backlog](../backlog.md) F19–F21)
 
 | Task | Acceptance criteria |
 |------|---------------------|
-| `SttProvider` + `webspeech` + mora scoring, consent Google, chỉ từ đơn | [F10](./02-FEATURES.md#f10-chấm-phát-âm-beta); unit test mora (ゃ, っ, ー) |
+| `SttProvider` + `webspeech` + mora scoring, consent Google, chỉ từ đơn – ✅ `src/lib/japanese/mora.ts`, `src/lib/speech/stt/`, `/speak/[lesson]` | [F10](./02-FEATURES.md#f10-chấm-phát-âm-beta); unit test mora (ゃ, っ, ー) |
 
 ## P7 – Hoàn thiện N5 (4 tuần)
 
