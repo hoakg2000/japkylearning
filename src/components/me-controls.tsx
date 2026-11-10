@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, useTransition } from 'react';
-import { setConsent, setTimezone, setVoice, updateSettings } from '@/app/[locale]/me/actions';
+import { setConsent, setReminderHour, setTimezone, setVoice, updateSettings } from '@/app/[locale]/me/actions';
 import { useRouter } from '@/i18n/navigation';
 import { authClient } from '@/lib/auth/client';
 import { writeDisplayPrefs } from '@/lib/display-prefs';
@@ -240,6 +240,40 @@ export function TwoFactorSection({ enabled }: { enabled: boolean }) {
         </div>
       )}
       {error && <p role="alert" className="text-sm text-error">⚠ {t('twoFactorError')}</p>}
+    </section>
+  );
+}
+
+/** Opt-in reminder email at a chosen local hour (F2). Off by default; turning it on records the consent. */
+export function ReminderSelect({ current }: { current: number | null }) {
+  const t = useTranslations('Me');
+  const [hour, setHour] = useState(current);
+  const [saved, setSaved] = useState(false);
+  const [pending, start] = useTransition();
+  return (
+    <section className={box}>
+      <label className="flex items-center justify-between gap-3 text-sm">
+        {t('reminder')}
+        <select
+          value={hour ?? ''}
+          disabled={pending}
+          onChange={(e) => {
+            const next = e.target.value === '' ? null : Number(e.target.value);
+            start(async () => {
+              await setReminderHour(next);
+              setHour(next);
+              setSaved(true);
+            });
+          }}
+          className="min-h-10 rounded-card border border-line bg-surface px-2"
+        >
+          <option value="">{t('reminderOff')}</option>
+          {Array.from({ length: 17 }, (_, i) => i + 6).map((h) => (
+            <option key={h} value={h}>{`${String(h).padStart(2, '0')}:00`}</option>
+          ))}
+        </select>
+      </label>
+      <p className="text-xs text-muted" aria-live="polite">{saved ? t('saved') : t('reminderHint')}</p>
     </section>
   );
 }

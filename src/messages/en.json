@@ -258,7 +258,10 @@
     "twoFactorCode": "6-digit code from the app",
     "twoFactorVerify": "Confirm",
     "twoFactorOn": "Two-step verification is on",
-    "twoFactorError": "That did not work. Check the password or code."
+    "twoFactorError": "That did not work. Check the password or code.",
+    "reminder": "Reminder email",
+    "reminderOff": "Off",
+    "reminderHint": "At most one email a day at the hour you choose, only if today's goal is not met yet. Every email has an unsubscribe link."
   },
   "Learn": {
     "title": "Learn",

@@ -20,6 +20,9 @@ export const userSettings = pgTable('user_settings', {
   showHanViet: boolean('show_han_viet').notNull().default(true),
   onboardedAt: timestamp('onboarded_at', { withTimezone: true }),
   ttsVoiceId: text('tts_voice_id'), // must be an enabled tts_voices id (allowlist, checked on write and on read)
+  // Email reminder (F2, opt-in): local hour 0-23, null = off. Sent at most once per study day.
+  reminderHour: integer('reminder_hour'),
+  lastRemindedOn: date('last_reminded_on'),
   updatedAt: timestamp('updated_at', { withTimezone: true }).defaultNow().notNull(),
 });
 

@@ -75,3 +75,14 @@ export async function setTimezone(raw: string) {
     .returning({ userId: userSettings.userId });
   return { ok: changed.length > 0 };
 }
+
+/** F2 email reminder (opt-in, P5 decision D6): an hour turns it on with consent; null turns it off and withdraws consent. */
+export async function setReminderHour(raw: number | null) {
+  const user = await currentUser();
+  if (user.isAnonymous || !user.email) throw new Error('UNAUTHORIZED');
+  const hour = raw === null ? null : z.number().int().min(0).max(23).parse(raw);
+  await ensureSettings(user.id);
+  const db = await getDb();
+  await db.update(userSettings).set({ reminderHour: hour, updatedAt: new Date() }).where(eq(userSettings.userId, user.id));
+  await recordConsent(user.id, 'email_reminders', hour !== null);
+}

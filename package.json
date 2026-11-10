@@ -19,6 +19,7 @@
     "ingest:n5": "tsx scripts/ingest/build-n5.ts",
     "validate:content": "tsx scripts/validate-content.ts",
     "purge:anonymous": "tsx scripts/purge-anonymous.ts",
+    "send:reminders": "tsx scripts/send-reminders.ts",
     "lhci": "lhci autorun --config=lighthouserc.cjs"
   },
   "dependencies": {
