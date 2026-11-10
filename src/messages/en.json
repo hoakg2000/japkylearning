@@ -647,7 +647,7 @@
     "translation": "Translation",
     "cloze": "Fill in",
     "lyrics": "Lyrics",
-    "seek": "Play from this line",
+    "seek": "Play from {time}",
     "blank": "Hidden word, tap to show",
     "addOne": "Add to review",
     "details": "Details",

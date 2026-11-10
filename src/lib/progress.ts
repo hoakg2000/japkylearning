@@ -38,7 +38,9 @@ export async function addXp(userId: string, source: string, amount: number, refI
   const db = await getDb();
   const settings = await ensureSettings(userId);
   const today = studyDate(new Date(), settings.timezone);
-  await db.insert(xpEvents).values({ userId, source, amount, refId });
+  // A unique index may reject a repeat (speaking XP once per word per day): then nothing is added.
+  const added = await db.insert(xpEvents).values({ userId, source, amount, refId }).onConflictDoNothing().returning({ id: xpEvents.id });
+  if (!added.length) return getStreak(userId);
   await db
     .insert(studyDays)
     .values({ userId, localDate: today, xp: amount, goalMet: amount >= settings.dailyGoalXp })

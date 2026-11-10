@@ -1,0 +1,3 @@
+-- Drop duplicate speaking XP rows left by the old select-then-insert race, keeping the first.
+DELETE FROM "xp_events" a USING "xp_events" b WHERE a."source" = 'speaking' AND b."source" = 'speaking' AND a."user_id" = b."user_id" AND a."ref_id" = b."ref_id" AND a."id" > b."id";--> statement-breakpoint
+CREATE UNIQUE INDEX "xp_events_speaking_uq" ON "xp_events" USING btree ("user_id","ref_id") WHERE "xp_events"."source" = 'speaking';

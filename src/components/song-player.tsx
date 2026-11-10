@@ -35,6 +35,7 @@ function loadYouTube(): Promise<YTNamespace> {
 }
 
 const CLOZE = [0, 10, 25, 50, 100] as const;
+const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
 
 export function SongPlayer({ youtubeId, title, lines, keywords, words, locale }: { youtubeId: string; title: string; lines: PlayerLine[]; keywords: PlayerKeyword[]; words: Record<string, KeywordWord>; locale: 'vi' | 'en' }) {
   const t = useTranslations('Songs');
@@ -84,7 +85,11 @@ export function SongPlayer({ youtubeId, title, lines, keywords, words, locale }:
         const idx = lineAt(lines, time);
         setCurrent((c) => (c === idx ? c : idx));
         const end = (i: number) => lines[i + 1]?.t ?? Infinity;
-        if (lp !== null && time >= end(lp) - 0.05) p.seekTo(lines[lp].t - off, true);
+        if (lp !== null && time >= end(lp) - 0.05) {
+          p.seekTo(lines[lp].t - off, true);
+          pausedFor.current = -1; // the looped line pauses again for its blanks
+        }
+        if (idx !== pausedFor.current) pausedFor.current = -1; // left the paused line: it may pause again when replayed
         // Cloze: pause at the end of a line that still has hidden keywords.
         const blanks = idx >= 0 && (byLine.get(idx) ?? []).some(({ k, i }) => hiddenAt(cz, k.line, k.start) && !rv.has(i));
         if (cz > 0 && blanks && pausedFor.current !== idx && time >= end(idx) - 0.2) {
@@ -121,7 +126,13 @@ export function SongPlayer({ youtubeId, title, lines, keywords, words, locale }:
     }
   }
 
-  const seekLine = useCallback((i: number) => player.current?.seekTo(Math.max(0, lines[i].t - offset), true), [lines, offset]);
+  const seekLine = useCallback(
+    (i: number) => {
+      pausedFor.current = -1;
+      player.current?.seekTo(Math.max(0, lines[i].t - offset), true);
+    },
+    [lines, offset],
+  );
 
   async function add(ids: string[]) {
     try {
@@ -187,8 +198,8 @@ export function SongPlayer({ youtubeId, title, lines, keywords, words, locale }:
         {lines.map((line, li) => (
           <li key={li} id={`lyric-${li}`} aria-current={li === current ? 'true' : undefined} className="rounded px-2 py-1 aria-[current=true]:bg-brand/10">
             <div className="flex items-start gap-2">
-              <button type="button" onClick={() => seekLine(li)} className="mt-1 shrink-0 text-xs text-muted tabular-nums hover:text-brand" aria-label={t('seek')}>
-                {Math.floor(line.t / 60)}:{String(Math.floor(line.t % 60)).padStart(2, '0')}
+              <button type="button" onClick={() => seekLine(li)} className="mt-1 shrink-0 text-xs text-muted tabular-nums hover:text-brand" aria-label={t('seek', { time: mmss(line.t) })}>
+                {mmss(line.t)}
               </button>
               <p lang="ja" className="ruby-line text-lg leading-loose">
                 {linePieces(line.segments, (byLine.get(li) ?? []).map(({ k }) => k)).map((p, pi) => {

@@ -269,7 +269,8 @@ async function main() {
         if (item) packKanji.set(k.char, item);
       }
     }
-    for (const c of pack.kanji) if (!manualHanViet.has(c) && !pack.newKanji.some((k) => k.char === c)) errors.push(`pack ${pack.id}: kanji ${c} needs a newKanji entry`);
+    // A non-N5 kanji may be declared in this pack's newKanji or in an earlier pack's (packKanji accumulates them).
+    for (const c of pack.kanji) if (!manualHanViet.has(c) && !packKanji.has(c) && !pack.newKanji.some((k) => k.char === c)) errors.push(`pack ${pack.id}: kanji ${c} needs a newKanji entry`);
     const out = { id: pack.id, order: pack.order, title: pack.title, description: pack.description, wordIds: [...new Set(wordIds)], kanji: pack.kanji };
     const parsed = Pack.safeParse(out);
     if (!parsed.success) errors.push(`pack ${pack.id}: ${parsed.error.message}`);

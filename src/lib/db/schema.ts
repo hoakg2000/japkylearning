@@ -1,5 +1,6 @@
 // App tables (docs/04-DATA-MODEL.md). Auth tables come from Better Auth in ./auth-schema.ts.
 import { boolean, date, index, integer, jsonb, pgTable, primaryKey, real, serial, text, timestamp, uniqueIndex } from 'drizzle-orm/pg-core';
+import { sql } from 'drizzle-orm';
 import { user } from './auth-schema';
 
 export * from './auth-schema';
@@ -70,7 +71,11 @@ export const xpEvents = pgTable(
     refId: text('ref_id'),
     at: createdAt(),
   },
-  (t) => [index('xp_events_user_idx').on(t.userId, t.at)],
+  (t) => [
+    index('xp_events_user_idx').on(t.userId, t.at),
+    // Speaking XP once per word per study day (refId = word:date); a race cannot award it twice.
+    uniqueIndex('xp_events_speaking_uq').on(t.userId, t.refId).where(sql`${t.source} = 'speaking'`),
+  ],
 );
 
 export const lessonProgress = pgTable(

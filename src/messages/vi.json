@@ -647,7 +647,7 @@
     "translation": "Bản dịch",
     "cloze": "Điền lỗ",
     "lyrics": "Lời bài hát",
-    "seek": "Phát từ dòng này",
+    "seek": "Phát từ {time}",
     "blank": "Từ bị ẩn, bấm để xem",
     "addOne": "Thêm vào ôn tập",
     "details": "Xem chi tiết",

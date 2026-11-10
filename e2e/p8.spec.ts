@@ -11,6 +11,17 @@ test.describe('P8 songs v1', () => {
     expect(await page.locator('main li a').count()).toBeGreaterThanOrEqual(20);
   });
 
+  test('a song link loads the song page as a full document, so its YouTube CSP applies', async ({ page }) => {
+    await page.route(/youtube|ytimg/, (route) => route.abort());
+    await page.goto('/vi/songs');
+    await page.evaluate(() => Object.assign(window, { __spa: true }));
+    const doc = page.waitForResponse((r) => r.request().resourceType() === 'document' && /\/vi\/songs\/[^/]+$/.test(r.url()));
+    await page.locator('main li a').first().click();
+    expect((await doc).headers()['content-security-policy']).toContain('frame-src https://www.youtube-nocookie.com');
+    await expect(page.getByRole('list', { name: 'Lời bài hát' })).toBeVisible();
+    expect(await page.evaluate(() => (window as { __spa?: boolean }).__spa)).toBeUndefined();
+  });
+
   test('only song pages may load YouTube, with a single CSP header', async ({ request }) => {
     const song = await request.get(SONG);
     const csp = song.headersArray().filter((h) => h.name.toLowerCase() === 'content-security-policy');
@@ -39,7 +50,7 @@ test.describe('P8 songs v1', () => {
     await page.goto(SONG);
     const lyrics = page.getByRole('list', { name: 'Lời bài hát' });
     await expect(lyrics.locator('ruby').first()).toBeVisible();
-    const keyword = lyrics.locator('button[aria-label*=":"]').first();
+    const keyword = lyrics.locator('p button[aria-label*=":"]').first();
     await keyword.click();
     await page.getByRole('button', { name: 'Thêm vào ôn tập' }).click();
     await expect(page.getByRole('status').filter({ hasText: /thẻ|ôn tập/ })).toBeVisible();

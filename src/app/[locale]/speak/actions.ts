@@ -53,6 +53,7 @@ export async function recordSpeaking(raw: z.input<typeof Input>) {
   const ref = `${input.wordId}:${studyDate(new Date(), settings.timezone)}`;
   const [already] = await db.select({ id: xpEvents.id }).from(xpEvents).where(and(eq(xpEvents.userId, s.user.id), eq(xpEvents.source, 'speaking'), eq(xpEvents.refId, ref)));
   if (already) return { xp: 0 };
+  // The unique index xp_events_speaking_uq stops a concurrent duplicate inside addXp.
   await addXp(s.user.id, 'speaking', SPEAK_XP, ref);
   return { xp: SPEAK_XP };
 }
