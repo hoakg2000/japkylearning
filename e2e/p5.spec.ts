@@ -1,4 +1,5 @@
 import AxeBuilder from '@axe-core/playwright';
+import { createHmac } from 'node:crypto';
 import { expect, test } from '@playwright/test';
 
 const serious = async (page: import('@playwright/test').Page) => {
@@ -40,5 +41,17 @@ test.describe('P5 packs, chat, reminders', () => {
 
   test('reminder unsubscribe rejects an unsigned link', async ({ request }) => {
     expect((await request.get('/api/reminders/unsubscribe?u=someone&t=bad')).status()).toBe(400);
+  });
+
+  test('reminder unsubscribe: GET only asks (link scanners), POST turns it off (RFC 8058 one-click)', async ({ request }) => {
+    // Same secret as the e2e server (playwright.config.ts).
+    const t = createHmac('sha256', 'e2e-secret-e2e-secret-e2e-secret-32').update('unsubscribe:someone').digest('base64url');
+    const url = `/api/reminders/unsubscribe?u=someone&t=${t}`;
+    const get = await request.get(url);
+    expect(get.status()).toBe(200);
+    expect(await get.text()).toContain('<form method="post">');
+    expect((await request.post(url)).status()).toBe(200);
+    expect(await (await request.post(url, { form: { 'List-Unsubscribe': 'One-Click' } })).text()).toContain('Email reminders are off');
+    expect((await request.post('/api/reminders/unsubscribe?u=someone&t=bad')).status()).toBe(400);
   });
 });
