@@ -13,8 +13,12 @@ test.describe('P6 speaking practice', () => {
 
   test('lesson links to speaking; a guest can listen but is asked to sign in before recording', async ({ page }) => {
     await page.goto('/vi/learn/n5/1');
+    await page.evaluate(() => Object.assign(window, { __spa: true }));
     await page.getByRole('link', { name: /Luyện nói/ }).click();
     await expect(page).toHaveURL(/\/vi\/speak\/1$/);
+    // Full document load, so the /speak Permissions-Policy applies (client navigation would keep microphone=()).
+    expect(await page.evaluate(() => (window as { __spa?: boolean }).__spa)).toBeUndefined();
+    expect(await page.evaluate(() => (document as Document & { featurePolicy?: { allowsFeature(f: string): boolean } }).featurePolicy?.allowsFeature('microphone'))).toBe(true);
     await expect(page.getByRole('button', { name: /Nghe/ }).first()).toBeVisible();
     await expect(page.getByRole('button', { name: /Đọc$/ })).toHaveCount(0);
     await expect(page.getByText(/Đăng nhập \(16 tuổi trở lên\)|chưa hỗ trợ nhận dạng/)).toBeVisible();

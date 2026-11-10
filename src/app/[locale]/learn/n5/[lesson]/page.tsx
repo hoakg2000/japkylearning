@@ -70,9 +70,10 @@ export default async function LessonPage({ params }: PageProps<'/[locale]/learn/
         <div className="flex flex-wrap items-center justify-between gap-3">
           <DisplayToggles />
 <div className="flex flex-wrap gap-2">
-          <Link href={`/speak/${lesson.order}`} className="inline-flex min-h-12 items-center rounded-card border border-line px-6 font-medium hover:border-brand">
+          {/* Plain <a>: /speak has its own Permissions-Policy (microphone), applied only on a full document load. */}
+          <a href={`/${locale}/speak/${lesson.order}`} className="inline-flex min-h-12 items-center rounded-card border border-line px-6 font-medium hover:border-brand">
             🎤 {t('speak')}
-          </Link>
+          </a>
           <Link href={`/learn/n5/${lesson.order}/practice`} className="inline-flex min-h-12 items-center rounded-card bg-brand px-6 font-medium text-brand-ink">
             {t('practice')}
           </Link>
