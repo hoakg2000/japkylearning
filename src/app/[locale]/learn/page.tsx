@@ -13,11 +13,13 @@ export default async function LearnPage() {
     { href: '/kana', key: 'kana', icon: 'あ' },
     { href: '/learn/n5', key: 'n5', icon: '📘' },
     { href: '/kanji', key: 'kanji', icon: '日' },
+    { href: '/packs', key: 'packs', icon: '介' },
+    { href: '/songs', key: 'songs', icon: '♪' },
   ] as const;
   return (
     <>
       <h1 className="mb-6 text-2xl font-bold">{t('title')}</h1>
-      <ul className="grid gap-3 sm:grid-cols-3">
+      <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((i) => (
           <li key={i.href}>
             <Link href={i.href} className="flex h-full flex-col gap-1 rounded-card border border-line bg-surface p-5 hover:border-brand">

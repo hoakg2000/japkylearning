@@ -6,6 +6,9 @@ export const DAILY_LIMITS: Record<AiMode, number> = {
   adaptive: 1,
   tutor: 20,
   grading: 20,
+  // Song modes run only at ingest (scripts/build-songs.ts), never per learner.
+  'lyrics-keywords': 0,
+  'lyrics-translate': 0,
 };
 
 export function underLimit(used: number, mode: AiMode): boolean {

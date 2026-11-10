@@ -17,6 +17,7 @@
     "fetch:strokes": "tsx scripts/fetch-strokes.ts",
     "ingest:fetch": "tsx scripts/ingest/fetch-sources.ts",
     "ingest:n5": "tsx scripts/ingest/build-n5.ts",
+    "build:songs": "tsx scripts/build-songs.ts",
     "validate:content": "tsx scripts/validate-content.ts",
     "purge:anonymous": "tsx scripts/purge-anonymous.ts",
     "send:reminders": "tsx scripts/send-reminders.ts",

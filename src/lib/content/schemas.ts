@@ -92,6 +92,22 @@ export const Pack = z.object({
 });
 
 export type Pack = z.infer<typeof Pack>;
+
+/** Song lesson (F11 v1), built by scripts/build-songs.ts from LRCLIB synced lyrics. Keyword offsets are code points. */
+export const Song = z.object({
+  slug: z.string().regex(/^[a-z0-9-]+$/),
+  title: z.string().min(1),
+  artist: z.string().min(1),
+  youtubeId: z.string().regex(/^[A-Za-z0-9_-]{11}$/),
+  channel: z.string().min(1),
+  lrclibId: z.number().int(),
+  lines: z.array(z.object({ t: z.number().min(0), text: z.string().min(1), segments: z.array(Segment).min(1), translation: Bilingual.optional() })).min(1),
+  keywords: z.array(z.object({ line: z.number().int().min(0), start: z.number().int().min(0), end: z.number().int().min(1), wordId: z.string().min(1) })),
+  keywordSource: z.enum(['rules', 'ai']),
+  unreadKanji: z.number().min(0).max(1),
+});
+
+export type Song = z.infer<typeof Song>;
 export type Kana = z.infer<typeof Kana>;
 export type Strokes = z.infer<typeof Strokes>;
 export type Segment = z.infer<typeof Segment>;

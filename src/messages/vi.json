@@ -289,6 +289,10 @@
     "packs": {
       "title": "Từ vựng theo ngành",
       "desc": "Kaigo và các ngành Tokutei Ginou"
+    },
+    "songs": {
+      "title": "Học qua bài hát",
+      "desc": "J-pop, anime: lời có furigana và từ khóa"
     }
   },
   "Privacy": {
@@ -624,5 +628,38 @@
   },
   "Offline": {
     "notice": "Bạn đang offline: vẫn xem được các bài, từ và kanji đã mở trước đó. Ôn tập và lưu tiến độ cần có mạng."
+  },
+  "Songs": {
+    "title": "Học qua bài hát",
+    "description": "Nghe nhạc Nhật, xem lời có furigana, bấm từ khóa để xem nghĩa và thêm vào ôn tập.",
+    "stats": "{keywords} từ khóa · {n5}% là từ N5",
+    "pageDescription": "Học tiếng Nhật qua bài {title} của {artist}: lời có furigana, từ khóa N5, chế độ điền lỗ.",
+    "play": "Phát “{title}”",
+    "youtubeNotice": "Video phát qua YouTube (youtube-nocookie.com). Khi bấm phát, YouTube có thể lưu dữ liệu trên trình duyệt theo chính sách quyền riêng tư của Google.",
+    "youtubeError": "Không tải được trình phát YouTube. Kiểm tra mạng hoặc trình chặn quảng cáo.",
+    "controls": "Điều khiển",
+    "earlier": "Lời sớm hơn 0,25 giây",
+    "later": "Lời muộn hơn 0,25 giây",
+    "offset": "Lệch {s}s",
+    "slow": "Chậm 0.75x",
+    "loop": "Lặp dòng",
+    "furigana": "Furigana",
+    "translation": "Bản dịch",
+    "cloze": "Điền lỗ",
+    "lyrics": "Lời bài hát",
+    "seek": "Phát từ dòng này",
+    "blank": "Từ bị ẩn, bấm để xem",
+    "addOne": "Thêm vào ôn tập",
+    "details": "Xem chi tiết",
+    "addAll": "Thêm cả {n} từ khóa vào ôn tập",
+    "added": "Đã thêm {n} thẻ vào ôn tập.",
+    "alreadyAdded": "Các từ này đã có trong ôn tập.",
+    "error": "Chưa thêm được, hãy thử lại.",
+    "furiganaGaps": "Một số kanji trong bài chưa có furigana (đọc đặc biệt hoặc tên riêng).",
+    "noTranslation": "Bài này chưa có bản dịch từng dòng; nghĩa có ở từng từ khóa.",
+    "credits": "Video: kênh chính thức {channel} trên YouTube. Lời và mốc thời gian: cộng đồng",
+    "takedown": "Bạn là chủ sở hữu và muốn gỡ bài này?",
+    "takedownLink": "Gửi yêu cầu gỡ",
+    "takedownPending": "Liên hệ quản trị Japky (địa chỉ liên hệ đang được cập nhật)."
   }
 }

@@ -6,10 +6,12 @@ const isDev = process.env.NODE_ENV === 'development';
 // One static CSP for every page (docs/adr/0013-static-csp-cache-components.md).
 // shortcut: script-src allows 'unsafe-inline' (no nonce, PPR shell cannot carry one);
 // upgrade if (app) routes ever render raw HTML or when SRI covers inline scripts.
-const csp = (frameAncestors: string) =>
+// `youtube`: song pages only (F11, P8 decision H5) may load the YouTube IFrame API and the nocookie player.
+const csp = (frameAncestors: string, youtube = false) =>
   [
     "default-src 'self'",
-    `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ''}`,
+    `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ''}${youtube ? ' https://www.youtube.com https://s.ytimg.com' : ''}`,
+    ...(youtube ? ['frame-src https://www.youtube-nocookie.com https://www.youtube.com'] : []),
     "style-src 'self' 'unsafe-inline'",
     "img-src 'self' blob: data:",
     "font-src 'self'",
@@ -47,10 +49,14 @@ const nextConfig: NextConfig = {
     return [
       {
         // Speaking practice is the only route allowed to use the microphone (F10); it gets its own rule below.
-        source: '/((?!embed/|vi/speak/|en/speak/).*)',
+        source: '/((?!embed/|vi/speak/|en/speak/|vi/songs/|en/songs/).*)',
         headers: [...common, { key: 'Content-Security-Policy', value: csp("'none'") }, { key: 'X-Frame-Options', value: 'DENY' }],
       },
       { source: '/embed/:path*', headers: [...common, { key: 'Content-Security-Policy', value: csp('*') }] },
+      {
+        source: '/:locale(vi|en)/songs/:slug',
+        headers: [...common, { key: 'Content-Security-Policy', value: csp("'none'", true) }, { key: 'X-Frame-Options', value: 'DENY' }],
+      },
       // Public streak widget reads live data: never cached by browsers or CDNs (F12).
       { source: '/embed/streak/:path*', headers: [{ key: 'Cache-Control', value: 'no-store' }] },
       {

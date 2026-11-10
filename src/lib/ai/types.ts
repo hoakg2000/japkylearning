@@ -1,7 +1,7 @@
 import type { z } from 'zod';
 
 // Modes from docs/05-AI-SPEECH.md §1. Each mode can point at its own adapter/model.
-export const AI_MODES = ['quiz-gen', 'adaptive', 'tutor', 'grading'] as const;
+export const AI_MODES = ['quiz-gen', 'adaptive', 'tutor', 'grading', 'lyrics-keywords', 'lyrics-translate'] as const;
 export type AiMode = (typeof AI_MODES)[number];
 
 export type ChatMessage = { role: 'system' | 'user' | 'assistant'; content: string };

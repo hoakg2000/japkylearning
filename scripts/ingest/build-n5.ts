@@ -6,8 +6,8 @@ import { n5Kanji } from '../../content/source/n5/kanji';
 import type { KanjiSource, LessonSource, PackSource, Sentence, WordSource } from '../../content/source/types';
 import { GrammarPoint, Kanji, Lesson, Pack, Word, type Segment } from '../../src/lib/content/schemas';
 import { assertMarkup, parseMarkup } from '../../src/lib/japanese/markup';
+import { loadFurigana, loadJmdict, readdirMatch, SRC, type JmWord } from './datasets';
 
-const SRC = '.data/sources';
 const OUT = 'content/levels/n5';
 const PACK_SRC = 'content/source/packs';
 const PACK_OUT = 'content/packs';
@@ -15,14 +15,7 @@ const warnings: string[] = [];
 const errors: string[] = [];
 
 // ---------- datasets ----------
-type JmWord = {
-  id: string;
-  kanji: { text: string }[];
-  kana: { text: string }[];
-  sense: { partOfSpeech: string[]; gloss: { text: string }[] }[];
-};
-const jmdictFile = readdirMatch(/^jmdict-eng-common-.*\.json$/);
-const jmdict: JmWord[] = JSON.parse(readFileSync(jmdictFile, 'utf8')).words;
+const jmdict: JmWord[] = loadJmdict();
 const jmIndex = new Map<string, JmWord>();
 for (const w of jmdict) {
   for (const r of w.kana) {
@@ -31,11 +24,7 @@ for (const w of jmdict) {
   }
 }
 
-type FuriPart = { ruby: string; rt?: string };
-const furiIndex = new Map<string, FuriPart[]>();
-for (const f of JSON.parse(readFileSync(`${SRC}/JmdictFurigana.json`, 'utf8').replace(/^﻿/, '')) as { text: string; reading: string; furigana: FuriPart[] }[]) {
-  furiIndex.set(`${f.text}|${f.reading}`, f.furigana);
-}
+const furiIndex = loadFurigana();
 
 type KdChar = {
   literal: string;
@@ -57,11 +46,6 @@ for (const line of readFileSync(`${SRC}/Unihan_Variants.txt`, 'utf8').split('\n'
   if (m) oldVariant.set(String.fromCodePoint(parseInt(m[1], 16)), String.fromCodePoint(parseInt(m[2], 16)));
 }
 
-function readdirMatch(re: RegExp) {
-  const f = readdirSync(SRC).find((n) => re.test(n));
-  if (!f) throw new Error(`missing dataset ${re} in ${SRC}; run npm run ingest:fetch`);
-  return `${SRC}/${f}`;
-}
 
 const readings = (c: KdChar | undefined, type: string) =>
   c?.readingMeaning?.groups.flatMap((g) => g.readings.filter((r) => r.type === type).map((r) => r.value)) ?? [];

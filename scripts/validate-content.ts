@@ -3,7 +3,7 @@
 import { execFileSync } from 'node:child_process';
 import { existsSync, readFileSync } from 'node:fs';
 import { z } from 'zod';
-import { GrammarPoint, Kana, Kanji, Lesson, Pack, Word } from '../src/lib/content/schemas';
+import { GrammarPoint, Kana, Kanji, Lesson, Pack, Song, Word } from '../src/lib/content/schemas';
 
 const errors: string[] = [];
 const read = (f: string) => JSON.parse(readFileSync(f, 'utf8'));
@@ -26,6 +26,7 @@ const lessons = check('content/levels/n5/lessons.json', Lesson);
 const packWords = check('content/packs/words.json', Word);
 const packKanji = check('content/packs/kanji.json', Kanji);
 const packs = check('content/packs/packs.json', Pack);
+const songs = check('content/songs/songs.json', Song);
 
 const wordIds = new Set(words.map((w) => w.id));
 const allWordIds = new Set([...wordIds, ...packWords.map((w) => w.id)]);
@@ -42,6 +43,16 @@ for (const l of lessons) {
 for (const p of packs) {
   for (const id of p.wordIds) if (!allWordIds.has(id)) errors.push(`pack ${p.id}: unknown word ${id}`);
   for (const c of p.kanji) if (!allKanjiChars.has(c)) errors.push(`pack ${p.id}: unknown kanji ${c}`);
+}
+// Songs (F11): keywords must point inside their line and at a known word; removed slugs must be gone.
+const removedSongs: string[] = read('content/songs/removed.json');
+for (const song of songs) {
+  if (removedSongs.includes(song.slug)) errors.push(`song ${song.slug} is listed in removed.json`);
+  for (const k of song.keywords) {
+    const line = song.lines[k.line];
+    if (!line || k.end > [...line.text].length || k.start >= k.end) errors.push(`song ${song.slug}: keyword out of line ${k.line}`);
+    if (!allWordIds.has(k.wordId)) errors.push(`song ${song.slug}: unknown word ${k.wordId}`);
+  }
 }
 for (const g of grammar) for (const c of g.cloze) if (!c.ja.includes(c.blank)) errors.push(`${g.id}: blank "${c.blank}" not in "${c.ja}"`);
 for (const k of [...kanji, ...packKanji]) if (!existsSync(`public/strokes/${k.char.codePointAt(0)!.toString(16).padStart(5, '0')}.json`)) errors.push(`kanji ${k.char}: no stroke data (npm run fetch:strokes kanji)`);
@@ -66,4 +77,4 @@ if (errors.length) {
   console.error(`Content invalid (${errors.length}):\n  ${errors.join('\n  ')}`);
   process.exit(1);
 }
-console.log(`Content OK: ${words.length} words, ${kanji.length} kanji, ${grammar.length} grammar, ${lessons.length} lessons, ${packs.length} packs (+${packWords.length} words, +${packKanji.length} kanji)`);
+console.log(`Content OK: ${words.length} words, ${kanji.length} kanji, ${grammar.length} grammar, ${lessons.length} lessons, ${packs.length} packs (+${packWords.length} words, +${packKanji.length} kanji), ${songs.length} songs`);

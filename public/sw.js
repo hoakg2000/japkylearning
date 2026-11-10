@@ -4,7 +4,7 @@
 // Bump VERSION when the caching rules change; old caches are deleted on activate.
 var VERSION = 'japky-v1';
 var OFFLINE = '/offline.html';
-var PUBLIC_PAGE = /^\/(vi|en)(\/(learn|kana|kanji|words|packs|speak|tests|about|privacy|embed-code)(\/.*)?)?\/?$/;
+var PUBLIC_PAGE = /^\/(vi|en)(\/(learn|kana|kanji|words|packs|speak|songs|tests|about|privacy|embed-code)(\/.*)?)?\/?$/;
 var STATIC_ASSET = /^\/(_next\/static|strokes|pwa-icon)\/|^\/(ui-mode|embed-boot)\.js$/;
 
 self.addEventListener('install', function (event) {

@@ -289,6 +289,10 @@
     "packs": {
       "title": "Vocabulary by sector",
       "desc": "Kaigo and other Tokutei Ginou sectors"
+    },
+    "songs": {
+      "title": "Learn with songs",
+      "desc": "J-pop and anime: lyrics with furigana and keywords"
     }
   },
   "Privacy": {
@@ -624,5 +628,38 @@
   },
   "Offline": {
     "notice": "You are offline: lessons, words and kanji you opened before still work. Reviews and saving progress need a connection."
+  },
+  "Songs": {
+    "title": "Learn with songs",
+    "description": "Listen to Japanese songs, read lyrics with furigana, tap keywords for meanings and add them to review.",
+    "stats": "{keywords} keywords · {n5}% are N5 words",
+    "pageDescription": "Learn Japanese with {title} by {artist}: lyrics with furigana, N5 keywords and fill-in-the-blank mode.",
+    "play": "Play “{title}”",
+    "youtubeNotice": "The video plays through YouTube (youtube-nocookie.com). Once you press play, YouTube may store data in your browser under Google’s privacy policy.",
+    "youtubeError": "Could not load the YouTube player. Check your connection or ad blocker.",
+    "controls": "Controls",
+    "earlier": "Lyrics 0.25 s earlier",
+    "later": "Lyrics 0.25 s later",
+    "offset": "Offset {s}s",
+    "slow": "Slow 0.75x",
+    "loop": "Loop line",
+    "furigana": "Furigana",
+    "translation": "Translation",
+    "cloze": "Fill in",
+    "lyrics": "Lyrics",
+    "seek": "Play from this line",
+    "blank": "Hidden word, tap to show",
+    "addOne": "Add to review",
+    "details": "Details",
+    "addAll": "Add all {n} keywords to review",
+    "added": "Added {n} cards to review.",
+    "alreadyAdded": "These words are already in review.",
+    "error": "Could not add them. Please try again.",
+    "furiganaGaps": "Some kanji in this song have no furigana yet (special readings or names).",
+    "noTranslation": "No line-by-line translation yet; each keyword shows its meaning.",
+    "credits": "Video: official {channel} channel on YouTube. Lyrics and timing: community via",
+    "takedown": "Are you the rights holder and want this song removed?",
+    "takedownLink": "Request removal",
+    "takedownPending": "Contact the Japky team (contact address coming soon)."
   }
 }
