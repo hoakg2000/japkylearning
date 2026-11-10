@@ -87,7 +87,8 @@
   "jlpt": null,
   "lessonId": null,
   "sectors": [
-   "kaigo"
+   "kaigo",
+   "it"
   ]
  },
  {
@@ -258,7 +259,8 @@
   "jlpt": null,
   "lessonId": null,
   "sectors": [
-   "kaigo"
+   "kaigo",
+   "restaurant"
   ]
  },
  {
@@ -553,6 +555,888 @@
   "lessonId": null,
   "sectors": [
    "kaigo"
+  ]
+ },
+ {
+  "char": "注",
+  "on": [
+   "チュウ"
+  ],
+  "kun": [
+   "そそ.ぐ",
+   "さ.す",
+   "つ.ぐ"
+  ],
+  "hanViet": [
+   "CHÚ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "rót; chú ý",
+   "en": "pour; irrigate; shed (tears)"
+  },
+  "strokeCount": 8,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "restaurant"
+  ]
+ },
+ {
+  "char": "文",
+  "on": [
+   "ブン",
+   "モン"
+  ],
+  "kun": [
+   "ふみ",
+   "あや"
+  ],
+  "hanViet": [
+   "VĂN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "văn, câu chữ",
+   "en": "sentence; literature; style"
+  },
+  "strokeCount": 4,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "restaurant"
+  ]
+ },
+ {
+  "char": "計",
+  "on": [
+   "ケイ"
+  ],
+  "kun": [
+   "はか.る",
+   "はか.らう"
+  ],
+  "hanViet": [
+   "KẾ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "tính toán; kế hoạch",
+   "en": "plot; plan; scheme"
+  },
+  "strokeCount": 9,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "restaurant",
+   "it"
+  ]
+ },
+ {
+  "char": "予",
+  "on": [
+   "ヨ",
+   "シャ"
+  ],
+  "kun": [
+   "あらかじ.め"
+  ],
+  "hanViet": [
+   "DỰ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "trước",
+   "en": "beforehand; previous; myself"
+  },
+  "strokeCount": 4,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "restaurant"
+  ]
+ },
+ {
+  "char": "約",
+  "on": [
+   "ヤク"
+  ],
+  "kun": [
+   "つづ.まる",
+   "つづ.める",
+   "つづま.やか"
+  ],
+  "hanViet": [
+   "ƯỚC"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "hẹn; khoảng",
+   "en": "promise; approximately; shrink"
+  },
+  "strokeCount": 9,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "restaurant"
+  ]
+ },
+ {
+  "char": "席",
+  "on": [
+   "セキ"
+  ],
+  "kun": [
+   "むしろ"
+  ],
+  "hanViet": [
+   "TỊCH"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "chỗ ngồi",
+   "en": "seat; mat; occasion"
+  },
+  "strokeCount": 10,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "restaurant"
+  ]
+ },
+ {
+  "char": "客",
+  "on": [
+   "キャク",
+   "カク"
+  ],
+  "kun": [],
+  "hanViet": [
+   "KHÁCH"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "khách",
+   "en": "guest; visitor; customer"
+  },
+  "strokeCount": 9,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "restaurant"
+  ]
+ },
+ {
+  "char": "料",
+  "on": [
+   "リョウ"
+  ],
+  "kun": [],
+  "hanViet": [
+   "LIỆU"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "nguyên liệu; phí",
+   "en": "fee; materials"
+  },
+  "strokeCount": 10,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "restaurant"
+  ]
+ },
+ {
+  "char": "理",
+  "on": [
+   "リ"
+  ],
+  "kun": [
+   "ことわり"
+  ],
+  "hanViet": [
+   "LÝ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "lý lẽ; sắp xếp",
+   "en": "logic; arrangement; reason"
+  },
+  "strokeCount": 11,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "restaurant"
+  ]
+ },
+ {
+  "char": "味",
+  "on": [
+   "ミ"
+  ],
+  "kun": [
+   "あじ",
+   "あじ.わう"
+  ],
+  "hanViet": [
+   "VỊ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "vị",
+   "en": "flavor; taste"
+  },
+  "strokeCount": 8,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "restaurant"
+  ]
+ },
+ {
+  "char": "塩",
+  "on": [
+   "エン"
+  ],
+  "kun": [
+   "しお"
+  ],
+  "hanViet": [
+   "DIÊM"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "muối",
+   "en": "salt"
+  },
+  "strokeCount": 13,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "restaurant"
+  ]
+ },
+ {
+  "char": "油",
+  "on": [
+   "ユ",
+   "ユウ"
+  ],
+  "kun": [
+   "あぶら"
+  ],
+  "hanViet": [
+   "DU"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "dầu",
+   "en": "oil; fat"
+  },
+  "strokeCount": 8,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "restaurant"
+  ]
+ },
+ {
+  "char": "切",
+  "on": [
+   "セツ",
+   "サイ"
+  ],
+  "kun": [
+   "き.る",
+   "-き.る",
+   "き.り",
+   "-き.り",
+   "-ぎ.り",
+   "き.れる",
+   "-き.れる",
+   "き.れ",
+   "-き.れ",
+   "-ぎ.れ"
+  ],
+  "hanViet": [
+   "THIẾT"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "cắt",
+   "en": "cut; cutoff; be sharp"
+  },
+  "strokeCount": 4,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "restaurant"
+  ]
+ },
+ {
+  "char": "焼",
+  "on": [
+   "ショウ"
+  ],
+  "kun": [
+   "や.く",
+   "や.き",
+   "や.き-",
+   "-や.き",
+   "や.ける"
+  ],
+  "hanViet": [
+   "THIÊU"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "nướng, đốt",
+   "en": "bake; burning"
+  },
+  "strokeCount": 12,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "restaurant"
+  ]
+ },
+ {
+  "char": "冷",
+  "on": [
+   "レイ"
+  ],
+  "kun": [
+   "つめ.たい",
+   "ひ.える",
+   "ひ.や",
+   "ひ.ややか",
+   "ひ.やす",
+   "ひ.やかす",
+   "さ.める",
+   "さ.ます"
+  ],
+  "hanViet": [
+   "LÃNH"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "lạnh",
+   "en": "cool; cold (beer, person); chill"
+  },
+  "strokeCount": 7,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "restaurant"
+  ]
+ },
+ {
+  "char": "禁",
+  "on": [
+   "キン"
+  ],
+  "kun": [],
+  "hanViet": [
+   "CẤM"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "cấm",
+   "en": "prohibition; ban; forbid"
+  },
+  "strokeCount": 13,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "restaurant"
+  ]
+ },
+ {
+  "char": "煙",
+  "on": [
+   "エン"
+  ],
+  "kun": [
+   "けむ.る",
+   "けむり",
+   "けむ.い"
+  ],
+  "hanViet": [
+   "YÊN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "khói",
+   "en": "smoke"
+  },
+  "strokeCount": 13,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "restaurant"
+  ]
+ },
+ {
+  "char": "実",
+  "on": [
+   "ジツ",
+   "シツ"
+  ],
+  "kun": [
+   "み",
+   "みの.る",
+   "まこと",
+   "みの",
+   "みち.る"
+  ],
+  "hanViet": [
+   "THỰC"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "thực, quả",
+   "en": "reality; truth; seed"
+  },
+  "strokeCount": 8,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "it"
+  ]
+ },
+ {
+  "char": "装",
+  "on": [
+   "ソウ",
+   "ショウ"
+  ],
+  "kun": [
+   "よそお.う",
+   "よそお.い"
+  ],
+  "hanViet": [
+   "TRANG"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "trang bị; trang phục",
+   "en": "attire; dress; pretend"
+  },
+  "strokeCount": 12,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "it"
+  ]
+ },
+ {
+  "char": "仕",
+  "on": [
+   "シ",
+   "ジ"
+  ],
+  "kun": [
+   "つか.える"
+  ],
+  "hanViet": [
+   "SĨ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "làm việc, phục vụ",
+   "en": "attend; doing; official"
+  },
+  "strokeCount": 5,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "it"
+  ]
+ },
+ {
+  "char": "様",
+  "on": [
+   "ヨウ",
+   "ショウ"
+  ],
+  "kun": [
+   "さま",
+   "さん"
+  ],
+  "hanViet": [
+   "DẠNG"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "dạng, kiểu; ngài",
+   "en": "Esq.; way; manner"
+  },
+  "strokeCount": 14,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "it"
+  ]
+ },
+ {
+  "char": "開",
+  "on": [
+   "カイ"
+  ],
+  "kun": [
+   "ひら.く",
+   "ひら.き",
+   "-びら.き",
+   "ひら.ける",
+   "あ.く",
+   "あ.ける"
+  ],
+  "hanViet": [
+   "KHAI"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "mở",
+   "en": "open; unfold; unseal"
+  },
+  "strokeCount": 12,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "it"
+  ]
+ },
+ {
+  "char": "発",
+  "on": [
+   "ハツ",
+   "ホツ"
+  ],
+  "kun": [
+   "た.つ",
+   "あば.く",
+   "おこ.る",
+   "つか.わす",
+   "はな.つ"
+  ],
+  "hanViet": [
+   "PHÁT"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "phát ra",
+   "en": "departure; discharge; publish"
+  },
+  "strokeCount": 9,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "it"
+  ]
+ },
+ {
+  "char": "修",
+  "on": [
+   "シュウ",
+   "シュ"
+  ],
+  "kun": [
+   "おさ.める",
+   "おさ.まる"
+  ],
+  "hanViet": [
+   "TU"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "sửa, tu",
+   "en": "discipline; conduct oneself well; study"
+  },
+  "strokeCount": 10,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "it"
+  ]
+ },
+ {
+  "char": "正",
+  "on": [
+   "セイ",
+   "ショウ"
+  ],
+  "kun": [
+   "ただ.しい",
+   "ただ.す",
+   "まさ",
+   "まさ.に"
+  ],
+  "hanViet": [
+   "CHÍNH"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "đúng, chính",
+   "en": "correct; justice; righteous"
+  },
+  "strokeCount": 5,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "it"
+  ]
+ },
+ {
+  "char": "確",
+  "on": [
+   "カク",
+   "コウ"
+  ],
+  "kun": [
+   "たし.か",
+   "たし.かめる"
+  ],
+  "hanViet": [
+   "XÁC"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "chắc chắn",
+   "en": "assurance; firm; tight"
+  },
+  "strokeCount": 15,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "it"
+  ]
+ },
+ {
+  "char": "認",
+  "on": [
+   "ニン"
+  ],
+  "kun": [
+   "みと.める",
+   "したた.める"
+  ],
+  "hanViet": [
+   "NHẬN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "nhận biết",
+   "en": "acknowledge; witness; discern"
+  },
+  "strokeCount": 14,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "it"
+  ]
+ },
+ {
+  "char": "報",
+  "on": [
+   "ホウ"
+  ],
+  "kun": [
+   "むく.いる"
+  ],
+  "hanViet": [
+   "BÁO"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "báo",
+   "en": "report; news; reward"
+  },
+  "strokeCount": 12,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "it"
+  ]
+ },
+ {
+  "char": "告",
+  "on": [
+   "コク"
+  ],
+  "kun": [
+   "つ.げる"
+  ],
+  "hanViet": [
+   "CÁO"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "bảo, báo",
+   "en": "revelation; tell; inform"
+  },
+  "strokeCount": 7,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "it"
+  ]
+ },
+ {
+  "char": "連",
+  "on": [
+   "レン"
+  ],
+  "kun": [
+   "つら.なる",
+   "つら.ねる",
+   "つ.れる",
+   "-づ.れ"
+  ],
+  "hanViet": [
+   "LIÊN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "liên kết",
+   "en": "take along; lead; join"
+  },
+  "strokeCount": 10,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "it"
+  ]
+ },
+ {
+  "char": "絡",
+  "on": [
+   "ラク"
+  ],
+  "kun": [
+   "から.む",
+   "から.まる"
+  ],
+  "hanViet": [
+   "LẠC"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "quấn, liên lạc",
+   "en": "entwine; coil around; get caught in"
+  },
+  "strokeCount": 12,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "it"
+  ]
+ },
+ {
+  "char": "画",
+  "on": [
+   "ガ",
+   "カク",
+   "エ",
+   "カイ"
+  ],
+  "kun": [
+   "えが.く",
+   "かく.する",
+   "かぎ.る",
+   "はかりごと",
+   "はか.る"
+  ],
+  "hanViet": [
+   "HỌA"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "bức vẽ; nét",
+   "en": "brush-stroke; picture"
+  },
+  "strokeCount": 8,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "it"
+  ]
+ },
+ {
+  "char": "面",
+  "on": [
+   "メン",
+   "ベン"
+  ],
+  "kun": [
+   "おも",
+   "おもて",
+   "つら"
+  ],
+  "hanViet": [
+   "DIỆN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "mặt",
+   "en": "mask; face; features"
+  },
+  "strokeCount": 9,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "it"
+  ]
+ },
+ {
+  "char": "変",
+  "on": [
+   "ヘン"
+  ],
+  "kun": [
+   "か.わる",
+   "か.わり",
+   "か.える"
+  ],
+  "hanViet": [
+   "BIẾN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "thay đổi",
+   "en": "unusual; change; strange"
+  },
+  "strokeCount": 9,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "it"
+  ]
+ },
+ {
+  "char": "更",
+  "on": [
+   "コウ"
+  ],
+  "kun": [
+   "さら",
+   "さら.に",
+   "ふ.ける",
+   "ふ.かす"
+  ],
+  "hanViet": [
+   "CANH"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "thay, lại",
+   "en": "grow late; night watch; sit up late"
+  },
+  "strokeCount": 7,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "it"
   ]
  }
 ]

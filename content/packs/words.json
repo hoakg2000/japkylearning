@@ -2143,5 +2143,4395 @@
   "tags": [
    "pack:kaigo"
   ]
+ },
+ {
+  "id": "jmdict-1001770",
+  "surface": "お客様",
+  "reading": "おきゃくさま",
+  "romaji": "okyakusama",
+  "segments": [
+   {
+    "surface": "お"
+   },
+   {
+    "surface": "客",
+    "reading": "きゃく"
+   },
+   {
+    "surface": "様",
+    "reading": "さま"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "quý khách",
+   "en": "customer (polite)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "お客様、こちらへどうぞ。",
+    "segments": [
+     {
+      "surface": "お"
+     },
+     {
+      "surface": "客様",
+      "reading": "きゃくさま"
+     },
+     {
+      "surface": "、こちらへどうぞ。"
+     }
+    ],
+    "romaji": "okyakusama,kochira e douzo.",
+    "translation": {
+     "vi": "Mời quý khách đi lối này.",
+     "en": "This way, please, sir/madam."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1440670",
+  "surface": "店員",
+  "reading": "てんいん",
+  "romaji": "ten'in",
+  "segments": [
+   {
+    "surface": "店",
+    "reading": "てん"
+   },
+   {
+    "surface": "員",
+    "reading": "いん"
+   }
+  ],
+  "hanViet": "ĐIẾM VIÊN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "nhân viên cửa hàng",
+   "en": "employee (of a store); shop assistant; clerk"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "店員を呼びます。",
+    "segments": [
+     {
+      "surface": "店員",
+      "reading": "てんいん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "呼",
+      "reading": "よ"
+     },
+     {
+      "surface": "びます。"
+     }
+    ],
+    "romaji": "ten'in o yobimasu.",
+    "translation": {
+     "vi": "Gọi nhân viên.",
+     "en": "I call the staff."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1382250",
+  "surface": "席",
+  "reading": "せき",
+  "romaji": "seki",
+  "segments": [
+   {
+    "surface": "席",
+    "reading": "せき"
+   }
+  ],
+  "hanViet": "TỊCH",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "chỗ ngồi, bàn",
+   "en": "seat"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "お席にご案内します。",
+    "segments": [
+     {
+      "surface": "お"
+     },
+     {
+      "surface": "席",
+      "reading": "せき"
+     },
+     {
+      "surface": "にご"
+     },
+     {
+      "surface": "案内",
+      "reading": "あんない"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "oseki ni goannai shimasu.",
+    "translation": {
+     "vi": "Tôi xin dẫn quý khách tới chỗ ngồi.",
+     "en": "Let me show you to your seat."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1543750",
+  "surface": "予約",
+  "reading": "よやく",
+  "romaji": "yoyaku",
+  "segments": [
+   {
+    "surface": "予",
+    "reading": "よ"
+   },
+   {
+    "surface": "約",
+    "reading": "やく"
+   }
+  ],
+  "hanViet": "DƯ ƯỚC",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "đặt trước",
+   "en": "reservation; appointment; booking"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "ご予約はありますか。",
+    "segments": [
+     {
+      "surface": "ご"
+     },
+     {
+      "surface": "予約",
+      "reading": "よやく"
+     },
+     {
+      "surface": "はありますか。"
+     }
+    ],
+    "romaji": "goyoyaku wa arimasuka.",
+    "translation": {
+     "vi": "Quý khách có đặt trước không ạ?",
+     "en": "Do you have a reservation?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1241490",
+  "surface": "禁煙",
+  "reading": "きんえん",
+  "romaji": "kin'en",
+  "segments": [
+   {
+    "surface": "禁",
+    "reading": "きん"
+   },
+   {
+    "surface": "煙",
+    "reading": "えん"
+   }
+  ],
+  "hanViet": "CẤM YÊN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "cấm hút thuốc",
+   "en": "abstaining from smoking; quitting smoking"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "店内は禁煙です。",
+    "segments": [
+     {
+      "surface": "店内",
+      "reading": "てんない"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "禁煙",
+      "reading": "きんえん"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "tennai wa kin'en desu.",
+    "translation": {
+     "vi": "Trong quán cấm hút thuốc.",
+     "en": "Smoking is not allowed inside."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1440780",
+  "surface": "店内",
+  "reading": "てんない",
+  "romaji": "tennai",
+  "segments": [
+   {
+    "surface": "店",
+    "reading": "てん"
+   },
+   {
+    "surface": "内",
+    "reading": "ない"
+   }
+  ],
+  "hanViet": "ĐIẾM NẠP",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adj-no"
+  ],
+  "meanings": {
+   "vi": "trong quán",
+   "en": "inside of a store (restaurant, café, etc.); store interior; on the premises"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "店内で召し上がりますか。",
+    "segments": [
+     {
+      "surface": "店内",
+      "reading": "てんない"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "召",
+      "reading": "め"
+     },
+     {
+      "surface": "し"
+     },
+     {
+      "surface": "上",
+      "reading": "あ"
+     },
+     {
+      "surface": "がりますか。"
+     }
+    ],
+    "romaji": "tennai de meshiagarimasu ka.",
+    "translation": {
+     "vi": "Quý khách dùng tại quán ạ?",
+     "en": "Will you eat in?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1770030",
+  "surface": "持ち帰り",
+  "reading": "もちかえり",
+  "romaji": "mochikaeri",
+  "segments": [
+   {
+    "surface": "持",
+    "reading": "も"
+   },
+   {
+    "surface": "ち"
+   },
+   {
+    "surface": "帰",
+    "reading": "かえ"
+   },
+   {
+    "surface": "り"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "mang về",
+   "en": "takeout (food); take-out; takeaway"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "お持ち帰りですか。",
+    "segments": [
+     {
+      "surface": "お"
+     },
+     {
+      "surface": "持",
+      "reading": "も"
+     },
+     {
+      "surface": "ち"
+     },
+     {
+      "surface": "帰",
+      "reading": "かえ"
+     },
+     {
+      "surface": "りですか。"
+     }
+    ],
+    "romaji": "omochikaeri desu ka.",
+    "translation": {
+     "vi": "Quý khách mang về ạ?",
+     "en": "Is it to take away?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1133790",
+  "surface": "メニュー",
+  "reading": "メニュー",
+  "romaji": "menyuu",
+  "segments": [
+   {
+    "surface": "メニュー"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "thực đơn",
+   "en": "menu"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "メニューをどうぞ。",
+    "segments": [
+     {
+      "surface": "メニューをどうぞ。"
+     }
+    ],
+    "romaji": "menyuu o douzo.",
+    "translation": {
+     "vi": "Mời quý khách xem thực đơn.",
+     "en": "Here is the menu."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1426650",
+  "surface": "注文",
+  "reading": "ちゅうもん",
+  "romaji": "chuumon",
+  "segments": [
+   {
+    "surface": "注",
+    "reading": "ちゅう"
+   },
+   {
+    "surface": "文",
+    "reading": "もん"
+   }
+  ],
+  "hanViet": "CHÚ VĂN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "gọi món, đặt hàng",
+   "en": "order (for an item)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "ご注文はお決まりですか。",
+    "segments": [
+     {
+      "surface": "ご"
+     },
+     {
+      "surface": "注文",
+      "reading": "ちゅうもん"
+     },
+     {
+      "surface": "はお"
+     },
+     {
+      "surface": "決",
+      "reading": "き"
+     },
+     {
+      "surface": "まりですか。"
+     }
+    ],
+    "romaji": "gochuumon wa okimari desu ka.",
+    "translation": {
+     "vi": "Quý khách đã chọn món chưa ạ?",
+     "en": "Are you ready to order?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1002790",
+  "surface": "かしこまりました",
+  "reading": "かしこまりました",
+  "romaji": "kashikomarimashita",
+  "segments": [
+   {
+    "surface": "かしこまりました"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "exp"
+  ],
+  "meanings": {
+   "vi": "vâng, tôi hiểu rồi (kính ngữ)",
+   "en": "certainly (polite acknowledgement)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "はい、かしこまりました。",
+    "segments": [
+     {
+      "surface": "はい、かしこまりました。"
+     }
+    ],
+    "romaji": "hai,kashikomarimashita.",
+    "translation": {
+     "vi": "Vâng, tôi hiểu rồi ạ.",
+     "en": "Certainly."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1414280",
+  "surface": "大盛り",
+  "reading": "おおもり",
+  "romaji": "oomori",
+  "segments": [
+   {
+    "surface": "大",
+    "reading": "おお"
+   },
+   {
+    "surface": "盛",
+    "reading": "も"
+   },
+   {
+    "surface": "り"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "phần lớn (nhiều hơn)",
+   "en": "large serving"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "ご飯を大盛りにできます。",
+    "segments": [
+     {
+      "surface": "ご"
+     },
+     {
+      "surface": "飯",
+      "reading": "はん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "大盛",
+      "reading": "おおも"
+     },
+     {
+      "surface": "りにできます。"
+     }
+    ],
+    "romaji": "gohan o oomori ni dekimasu.",
+    "translation": {
+     "vi": "Có thể lấy cơm phần lớn.",
+     "en": "Rice can be made a large serving."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1019740",
+  "surface": "アレルギー",
+  "reading": "アレルギー",
+  "romaji": "arerugii",
+  "segments": [
+   {
+    "surface": "アレルギー"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "n-suf"
+  ],
+  "meanings": {
+   "vi": "dị ứng",
+   "en": "allergy"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "卵のアレルギーがありますか。",
+    "segments": [
+     {
+      "surface": "卵",
+      "reading": "たまご"
+     },
+     {
+      "surface": "のアレルギーがありますか。"
+     }
+    ],
+    "romaji": "tamago no arerugii ga arimasu ka.",
+    "translation": {
+     "vi": "Quý khách có dị ứng trứng không?",
+     "en": "Do you have an egg allergy?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1001910",
+  "surface": "おしぼり",
+  "reading": "おしぼり",
+  "romaji": "oshibori",
+  "segments": [
+   {
+    "surface": "おしぼり"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "khăn ướt (lau tay)",
+   "en": "wet hand towel"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "おしぼりをどうぞ。",
+    "segments": [
+     {
+      "surface": "おしぼりをどうぞ。"
+     }
+    ],
+    "romaji": "oshibori o douzo.",
+    "translation": {
+     "vi": "Mời quý khách khăn lau tay.",
+     "en": "Here is a hand towel."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1476410",
+  "surface": "箸",
+  "reading": "はし",
+  "romaji": "hashi",
+  "segments": [
+   {
+    "surface": "箸",
+    "reading": "はし"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "đũa",
+   "en": "chopsticks"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "お箸をお使いください。",
+    "segments": [
+     {
+      "surface": "お"
+     },
+     {
+      "surface": "箸",
+      "reading": "はし"
+     },
+     {
+      "surface": "をお"
+     },
+     {
+      "surface": "使",
+      "reading": "つか"
+     },
+     {
+      "surface": "いください。"
+     }
+    ],
+    "romaji": "ohashi o otsukai kudasai.",
+    "translation": {
+     "vi": "Mời quý khách dùng đũa.",
+     "en": "Please use these chopsticks."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1072590",
+  "surface": "スプーン",
+  "reading": "スプーン",
+  "romaji": "supuun",
+  "segments": [
+   {
+    "surface": "スプーン"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "thìa",
+   "en": "spoon"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "スプーンを一つください。",
+    "segments": [
+     {
+      "surface": "スプーンを"
+     },
+     {
+      "surface": "一",
+      "reading": "ひと"
+     },
+     {
+      "surface": "つください。"
+     }
+    ],
+    "romaji": "supuun o hitotsu kudasai.",
+    "translation": {
+     "vi": "Cho tôi một cái thìa.",
+     "en": "One spoon, please."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1198430",
+  "surface": "会計",
+  "reading": "かいけい",
+  "romaji": "kaikei",
+  "segments": [
+   {
+    "surface": "会",
+    "reading": "かい"
+   },
+   {
+    "surface": "計",
+    "reading": "けい"
+   }
+  ],
+  "hanViet": "HỘI KẾ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adj-no",
+   "vs"
+  ],
+  "meanings": {
+   "vi": "thanh toán, tính tiền",
+   "en": "accounting; finance; account"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "お会計はあちらでお願いします。",
+    "segments": [
+     {
+      "surface": "お"
+     },
+     {
+      "surface": "会計",
+      "reading": "かいけい"
+     },
+     {
+      "surface": "はあちらでお"
+     },
+     {
+      "surface": "願",
+      "reading": "ねが"
+     },
+     {
+      "surface": "いします。"
+     }
+    ],
+    "romaji": "okaikei wa achira de onegaishimasu.",
+    "translation": {
+     "vi": "Xin thanh toán ở đằng kia.",
+     "en": "Please pay over there."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1145130",
+  "surface": "レジ",
+  "reading": "レジ",
+  "romaji": "reji",
+  "segments": [
+   {
+    "surface": "レジ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "quầy thu ngân",
+   "en": "(cash) register"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "レジでお支払いください。",
+    "segments": [
+     {
+      "surface": "レジでお"
+     },
+     {
+      "surface": "支払",
+      "reading": "しはら"
+     },
+     {
+      "surface": "いください。"
+     }
+    ],
+    "romaji": "reji de oshiharai kudasai.",
+    "translation": {
+     "vi": "Xin trả tiền ở quầy thu ngân.",
+     "en": "Please pay at the register."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1554760",
+  "surface": "領収書",
+  "reading": "りょうしゅうしょ",
+  "romaji": "ryoushuusho",
+  "segments": [
+   {
+    "surface": "領",
+    "reading": "りょう"
+   },
+   {
+    "surface": "収",
+    "reading": "しゅう"
+   },
+   {
+    "surface": "書",
+    "reading": "しょ"
+   }
+  ],
+  "hanViet": "LĨNH THÂU THƯ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "hóa đơn, biên lai",
+   "en": "formal receipt (of payment; oft. hand-written)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "領収書をください。",
+    "segments": [
+     {
+      "surface": "領収書",
+      "reading": "りょうしゅうしょ"
+     },
+     {
+      "surface": "をください。"
+     }
+    ],
+    "romaji": "ryoushuusho o kudasai.",
+    "translation": {
+     "vi": "Cho tôi hóa đơn.",
+     "en": "A receipt, please."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1270550",
+  "surface": "お釣り",
+  "reading": "おつり",
+  "romaji": "otsuri",
+  "segments": [
+   {
+    "surface": "お"
+   },
+   {
+    "surface": "釣",
+    "reading": "つ"
+   },
+   {
+    "surface": "り"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "tiền thừa",
+   "en": "change (for a purchase)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "二百円のお釣りです。",
+    "segments": [
+     {
+      "surface": "二百円",
+      "reading": "にひゃくえん"
+     },
+     {
+      "surface": "のお"
+     },
+     {
+      "surface": "釣",
+      "reading": "つ"
+     },
+     {
+      "surface": "りです。"
+     }
+    ],
+    "romaji": "nihyakuen no otsuri desu.",
+    "translation": {
+     "vi": "Tiền thừa của quý khách 200 yên ạ.",
+     "en": "Here is your 200 yen change."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1296670",
+  "surface": "材料",
+  "reading": "ざいりょう",
+  "romaji": "zairyou",
+  "segments": [
+   {
+    "surface": "材",
+    "reading": "ざい"
+   },
+   {
+    "surface": "料",
+    "reading": "りょう"
+   }
+  ],
+  "hanViet": "TÀI LIÊU",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "nguyên liệu",
+   "en": "materials; ingredients"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "材料を準備します。",
+    "segments": [
+     {
+      "surface": "材料",
+      "reading": "ざいりょう"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "準備",
+      "reading": "じゅんび"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "zairyou o junbi shimasu.",
+    "translation": {
+     "vi": "Tôi chuẩn bị nguyên liệu.",
+     "en": "I prepare the ingredients."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1526960",
+  "surface": "味",
+  "reading": "あじ",
+  "romaji": "aji",
+  "segments": [
+   {
+    "surface": "味",
+    "reading": "あじ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "vị",
+   "en": "flavor; flavour; taste"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "味はどうですか。",
+    "segments": [
+     {
+      "surface": "味",
+      "reading": "あじ"
+     },
+     {
+      "surface": "はどうですか。"
+     }
+    ],
+    "romaji": "aji wa dou desu ka.",
+    "translation": {
+     "vi": "Vị thế nào ạ?",
+     "en": "How does it taste?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1576630",
+  "surface": "塩",
+  "reading": "しお",
+  "romaji": "shio",
+  "segments": [
+   {
+    "surface": "塩",
+    "reading": "しお"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "muối",
+   "en": "salt; common salt; table salt"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "塩を少し入れます。",
+    "segments": [
+     {
+      "surface": "塩",
+      "reading": "しお"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "少",
+      "reading": "すこ"
+     },
+     {
+      "surface": "し"
+     },
+     {
+      "surface": "入",
+      "reading": "い"
+     },
+     {
+      "surface": "れます。"
+     }
+    ],
+    "romaji": "shio o sukoshi iremasu.",
+    "translation": {
+     "vi": "Cho một chút muối.",
+     "en": "Add a little salt."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1291600",
+  "surface": "砂糖",
+  "reading": "さとう",
+  "romaji": "satou",
+  "segments": [
+   {
+    "surface": "砂",
+    "reading": "さ"
+   },
+   {
+    "surface": "糖",
+    "reading": "とう"
+   }
+  ],
+  "hanViet": "SA ĐƯỜNG",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "đường",
+   "en": "sugar"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "砂糖は要りません。",
+    "segments": [
+     {
+      "surface": "砂糖",
+      "reading": "さとう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "要",
+      "reading": "い"
+     },
+     {
+      "surface": "りません。"
+     }
+    ],
+    "romaji": "satou wa irimasen.",
+    "translation": {
+     "vi": "Không cần đường.",
+     "en": "No sugar, thanks."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1595020",
+  "surface": "醤油",
+  "reading": "しょうゆ",
+  "romaji": "shouyu",
+  "segments": [
+   {
+    "surface": "醤",
+    "reading": "しょう"
+   },
+   {
+    "surface": "油",
+    "reading": "ゆ"
+   }
+  ],
+  "hanViet": "TƯƠNG DU",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "xì dầu",
+   "en": "soy sauce; soya sauce; shoyu"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "醤油をかけます。",
+    "segments": [
+     {
+      "surface": "醤油",
+      "reading": "しょうゆ"
+     },
+     {
+      "surface": "をかけます。"
+     }
+    ],
+    "romaji": "shouyu o kakemasu.",
+    "translation": {
+     "vi": "Rưới xì dầu.",
+     "en": "Pour soy sauce on it."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1538590",
+  "surface": "油",
+  "reading": "あぶら",
+  "romaji": "abura",
+  "segments": [
+   {
+    "surface": "油",
+    "reading": "あぶら"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "dầu ăn",
+   "en": "oil"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "油が熱いですから気をつけて。",
+    "segments": [
+     {
+      "surface": "油",
+      "reading": "あぶら"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "熱",
+      "reading": "あつ"
+     },
+     {
+      "surface": "いですから"
+     },
+     {
+      "surface": "気",
+      "reading": "き"
+     },
+     {
+      "surface": "をつけて。"
+     }
+    ],
+    "romaji": "abura ga atsui desu kara ki o tsukete.",
+    "translation": {
+     "vi": "Dầu nóng nên cẩn thận.",
+     "en": "The oil is hot, so be careful."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1384830",
+  "surface": "切る",
+  "reading": "きる",
+  "romaji": "kiru",
+  "segments": [
+   {
+    "surface": "切",
+    "reading": "き"
+   },
+   {
+    "surface": "る"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v5r",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "cắt",
+   "en": "to cut; to cut through; to perform (surgery)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "野菜を小さく切ります。",
+    "segments": [
+     {
+      "surface": "野菜",
+      "reading": "やさい"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "小",
+      "reading": "ちい"
+     },
+     {
+      "surface": "さく"
+     },
+     {
+      "surface": "切",
+      "reading": "き"
+     },
+     {
+      "surface": "ります。"
+     }
+    ],
+    "romaji": "yasai o chiisaku kirimasu.",
+    "translation": {
+     "vi": "Cắt nhỏ rau.",
+     "en": "Cut the vegetables small."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1350600",
+  "surface": "焼く",
+  "reading": "やく",
+  "romaji": "yaku",
+  "segments": [
+   {
+    "surface": "焼",
+    "reading": "や"
+   },
+   {
+    "surface": "く"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v5k",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "nướng, rán",
+   "en": "to burn"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "魚を焼きます。",
+    "segments": [
+     {
+      "surface": "魚",
+      "reading": "さかな"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "焼",
+      "reading": "や"
+     },
+     {
+      "surface": "きます。"
+     }
+    ],
+    "romaji": "sakana o yakimasu.",
+    "translation": {
+     "vi": "Nướng cá.",
+     "en": "Grill the fish."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1322540",
+  "surface": "煮る",
+  "reading": "にる",
+  "romaji": "niru",
+  "segments": [
+   {
+    "surface": "煮",
+    "reading": "に"
+   },
+   {
+    "surface": "る"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v1",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "ninh, nấu",
+   "en": "to boil; to simmer; to stew"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "野菜を十分煮ます。",
+    "segments": [
+     {
+      "surface": "野菜",
+      "reading": "やさい"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "十分",
+      "reading": "じゅっぷん"
+     },
+     {
+      "surface": "煮",
+      "reading": "に"
+     },
+     {
+      "surface": "ます。"
+     }
+    ],
+    "romaji": "yasai o juppun nimasu.",
+    "translation": {
+     "vi": "Ninh rau mười phút.",
+     "en": "Simmer the vegetables for ten minutes."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "japky-ageru",
+  "surface": "揚げる",
+  "reading": "あげる",
+  "romaji": "ageru",
+  "segments": [
+   {
+    "surface": "揚",
+    "reading": "あ"
+   },
+   {
+    "surface": "げる"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [],
+  "meanings": {
+   "vi": "chiên ngập dầu",
+   "en": "to deep-fry"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "天ぷらを揚げます。",
+    "segments": [
+     {
+      "surface": "天",
+      "reading": "てん"
+     },
+     {
+      "surface": "ぷらを"
+     },
+     {
+      "surface": "揚",
+      "reading": "あ"
+     },
+     {
+      "surface": "げます。"
+     }
+    ],
+    "romaji": "tenpura o agemasu.",
+    "translation": {
+     "vi": "Chiên tempura.",
+     "en": "Deep-fry the tempura."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1290310",
+  "surface": "混ぜる",
+  "reading": "まぜる",
+  "romaji": "mazeru",
+  "segments": [
+   {
+    "surface": "混",
+    "reading": "ま"
+   },
+   {
+    "surface": "ぜる"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v1",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "trộn",
+   "en": "to mix; to stir; to blend"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "卵と砂糖を混ぜます。",
+    "segments": [
+     {
+      "surface": "卵",
+      "reading": "たまご"
+     },
+     {
+      "surface": "と"
+     },
+     {
+      "surface": "砂糖",
+      "reading": "さとう"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "混",
+      "reading": "ま"
+     },
+     {
+      "surface": "ぜます。"
+     }
+    ],
+    "romaji": "tamago to satou o mazemasu.",
+    "translation": {
+     "vi": "Trộn trứng với đường.",
+     "en": "Mix the eggs and sugar."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1586440",
+  "surface": "温める",
+  "reading": "あたためる",
+  "romaji": "atatameru",
+  "segments": [
+   {
+    "surface": "温",
+    "reading": "あたた"
+   },
+   {
+    "surface": "める"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v1",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "hâm nóng",
+   "en": "to warm (up); to heat (up)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "お弁当を温めますか。",
+    "segments": [
+     {
+      "surface": "お"
+     },
+     {
+      "surface": "弁当",
+      "reading": "べんとう"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "温",
+      "reading": "あたた"
+     },
+     {
+      "surface": "めますか。"
+     }
+    ],
+    "romaji": "obentou o atatamemasu ka.",
+    "translation": {
+     "vi": "Có hâm nóng cơm hộp không ạ?",
+     "en": "Shall I heat up your bento?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1556730",
+  "surface": "冷たい",
+  "reading": "つめたい",
+  "romaji": "tsumetai",
+  "segments": [
+   {
+    "surface": "冷",
+    "reading": "つめ"
+   },
+   {
+    "surface": "たい"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "lạnh (đồ vật, đồ uống)",
+   "en": "cold (to the touch); chilly; icy"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "冷たいお茶をください。",
+    "segments": [
+     {
+      "surface": "冷",
+      "reading": "つめ"
+     },
+     {
+      "surface": "たいお"
+     },
+     {
+      "surface": "茶",
+      "reading": "ちゃ"
+     },
+     {
+      "surface": "をください。"
+     }
+    ],
+    "romaji": "tsumetai ocha o kudasai.",
+    "translation": {
+     "vi": "Cho tôi trà lạnh.",
+     "en": "Cold tea, please."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1467720",
+  "surface": "熱い",
+  "reading": "あつい",
+  "romaji": "atsui",
+  "segments": [
+   {
+    "surface": "熱",
+    "reading": "あつ"
+   },
+   {
+    "surface": "い"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adj-i"
+  ],
+  "meanings": {
+   "vi": "nóng (đồ vật, đồ ăn)",
+   "en": "hot (to the touch)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "熱いので気をつけてください。",
+    "segments": [
+     {
+      "surface": "熱",
+      "reading": "あつ"
+     },
+     {
+      "surface": "いので"
+     },
+     {
+      "surface": "気",
+      "reading": "き"
+     },
+     {
+      "surface": "をつけてください。"
+     }
+    ],
+    "romaji": "atsui node ki o tsukete kudasai.",
+    "translation": {
+     "vi": "Nóng nên quý khách cẩn thận.",
+     "en": "It is hot, so please be careful."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1557110",
+  "surface": "冷蔵庫",
+  "reading": "れいぞうこ",
+  "romaji": "reizouko",
+  "segments": [
+   {
+    "surface": "冷",
+    "reading": "れい"
+   },
+   {
+    "surface": "蔵",
+    "reading": "ぞう"
+   },
+   {
+    "surface": "庫",
+    "reading": "こ"
+   }
+  ],
+  "hanViet": "LÃNH TÀNG KHỐ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "tủ lạnh",
+   "en": "refrigerator; fridge"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "肉を冷蔵庫に入れます。",
+    "segments": [
+     {
+      "surface": "肉",
+      "reading": "にく"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "冷蔵庫",
+      "reading": "れいぞうこ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "入",
+      "reading": "い"
+     },
+     {
+      "surface": "れます。"
+     }
+    ],
+    "romaji": "niku o reizouko ni iremasu.",
+    "translation": {
+     "vi": "Cho thịt vào tủ lạnh.",
+     "en": "Put the meat in the fridge."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1328090",
+  "surface": "手袋",
+  "reading": "てぶくろ",
+  "romaji": "tebukuro",
+  "segments": [
+   {
+    "surface": "手",
+    "reading": "て"
+   },
+   {
+    "surface": "袋",
+    "reading": "ぶくろ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "găng tay",
+   "en": "glove; mitten; mitt"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "手袋をして料理します。",
+    "segments": [
+     {
+      "surface": "手袋",
+      "reading": "てぶくろ"
+     },
+     {
+      "surface": "をして"
+     },
+     {
+      "surface": "料理",
+      "reading": "りょうり"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "tebukuro o shite ryouri shimasu.",
+    "translation": {
+     "vi": "Đeo găng tay khi nấu.",
+     "en": "Wear gloves when cooking."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1378200",
+  "surface": "清潔",
+  "reading": "せいけつ",
+  "romaji": "seiketsu",
+  "segments": [
+   {
+    "surface": "清",
+    "reading": "せい"
+   },
+   {
+    "surface": "潔",
+    "reading": "けつ"
+   }
+  ],
+  "hanViet": "THANH KHIẾT",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "adj-na",
+   "n"
+  ],
+  "meanings": {
+   "vi": "sạch sẽ, vệ sinh",
+   "en": "clean; hygienic; sanitary"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "台所を清潔にします。",
+    "segments": [
+     {
+      "surface": "台所",
+      "reading": "だいどころ"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "清潔",
+      "reading": "せいけつ"
+     },
+     {
+      "surface": "にします。"
+     }
+    ],
+    "romaji": "daidokoro o seiketsu ni shimasu.",
+    "translation": {
+     "vi": "Giữ bếp sạch sẽ.",
+     "en": "Keep the kitchen clean."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1174790",
+  "surface": "衛生",
+  "reading": "えいせい",
+  "romaji": "eisei",
+  "segments": [
+   {
+    "surface": "衛",
+    "reading": "えい"
+   },
+   {
+    "surface": "生",
+    "reading": "せい"
+   }
+  ],
+  "hanViet": "VỆ SINH",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "vệ sinh",
+   "en": "hygiene; sanitation; cleanliness"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "衛生に注意してください。",
+    "segments": [
+     {
+      "surface": "衛生",
+      "reading": "えいせい"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "注意",
+      "reading": "ちゅうい"
+     },
+     {
+      "surface": "してください。"
+     }
+    ],
+    "romaji": "eisei ni chuui shite kudasai.",
+    "translation": {
+     "vi": "Hãy chú ý vệ sinh.",
+     "en": "Please pay attention to hygiene."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1351980",
+  "surface": "賞味期限",
+  "reading": "しょうみきげん",
+  "romaji": "shoumikigen",
+  "segments": [
+   {
+    "surface": "賞",
+    "reading": "しょう"
+   },
+   {
+    "surface": "味",
+    "reading": "み"
+   },
+   {
+    "surface": "期",
+    "reading": "き"
+   },
+   {
+    "surface": "限",
+    "reading": "げん"
+   }
+  ],
+  "hanViet": "THƯỞNG VỊ KỲ HẠN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "hạn sử dụng (ngon nhất)",
+   "en": "best-before date (on food); use-by date; expiry date"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "賞味期限を確認します。",
+    "segments": [
+     {
+      "surface": "賞味期限",
+      "reading": "しょうみきげん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "確認",
+      "reading": "かくにん"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "shoumikigen o kakunin shimasu.",
+    "translation": {
+     "vi": "Kiểm tra hạn sử dụng.",
+     "en": "Check the best-before date."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1511790",
+  "surface": "片付ける",
+  "reading": "かたづける",
+  "romaji": "katazukeru",
+  "segments": [
+   {
+    "surface": "片",
+    "reading": "かた"
+   },
+   {
+    "surface": "付",
+    "reading": "づ"
+   },
+   {
+    "surface": "ける"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v1",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "dọn dẹp",
+   "en": "to put in order; to tidy up; to clean up"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "テーブルを片付けます。",
+    "segments": [
+     {
+      "surface": "テーブルを"
+     },
+     {
+      "surface": "片付",
+      "reading": "かたづ"
+     },
+     {
+      "surface": "けます。"
+     }
+    ],
+    "romaji": "teeburu o katazukemasu.",
+    "translation": {
+     "vi": "Dọn bàn.",
+     "en": "Clear the table."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:restaurant"
+  ]
+ },
+ {
+  "id": "jmdict-1202880",
+  "surface": "開発",
+  "reading": "かいはつ",
+  "romaji": "kaihatsu",
+  "segments": [
+   {
+    "surface": "開",
+    "reading": "かい"
+   },
+   {
+    "surface": "発",
+    "reading": "はつ"
+   }
+  ],
+  "hanViet": "KHAI BÁT",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "phát triển (phần mềm)",
+   "en": "development; cultivation; application"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "新しいアプリを開発しています。",
+    "segments": [
+     {
+      "surface": "新",
+      "reading": "あたら"
+     },
+     {
+      "surface": "しいアプリを"
+     },
+     {
+      "surface": "開発",
+      "reading": "かいはつ"
+     },
+     {
+      "surface": "しています。"
+     }
+    ],
+    "romaji": "atarashii apuri o kaihatsu shite imasu.",
+    "translation": {
+     "vi": "Tôi đang phát triển ứng dụng mới.",
+     "en": "I am developing a new app."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1386020",
+  "surface": "設計",
+  "reading": "せっけい",
+  "romaji": "sekkei",
+  "segments": [
+   {
+    "surface": "設",
+    "reading": "せっ"
+   },
+   {
+    "surface": "計",
+    "reading": "けい"
+   }
+  ],
+  "hanViet": "THIẾT KẾ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "thiết kế",
+   "en": "plan; design; layout"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "来週までに設計を終わらせます。",
+    "segments": [
+     {
+      "surface": "来週",
+      "reading": "らいしゅう"
+     },
+     {
+      "surface": "までに"
+     },
+     {
+      "surface": "設計",
+      "reading": "せっけい"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "終",
+      "reading": "お"
+     },
+     {
+      "surface": "わらせます。"
+     }
+    ],
+    "romaji": "raishuu made ni sekkei o owarasemasu.",
+    "translation": {
+     "vi": "Tôi sẽ xong thiết kế trước tuần sau.",
+     "en": "I will finish the design by next week."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "japky-jissou",
+  "surface": "実装",
+  "reading": "じっそう",
+  "romaji": "jissou",
+  "segments": [
+   {
+    "surface": "実",
+    "reading": "じっ"
+   },
+   {
+    "surface": "装",
+    "reading": "そう"
+   }
+  ],
+  "hanViet": "THỰC TRANG",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [],
+  "meanings": {
+   "vi": "cài đặt, hiện thực (code)",
+   "en": "implementation"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "この機能の実装は明日終わります。",
+    "segments": [
+     {
+      "surface": "この"
+     },
+     {
+      "surface": "機能",
+      "reading": "きのう"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "実装",
+      "reading": "じっそう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "明日",
+      "reading": "あした"
+     },
+     {
+      "surface": "終",
+      "reading": "お"
+     },
+     {
+      "surface": "わります。"
+     }
+    ],
+    "romaji": "kono kinou no jissou wa ashita owarimasu.",
+    "translation": {
+     "vi": "Phần hiện thực chức năng này mai xong.",
+     "en": "Implementation of this feature finishes tomorrow."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1305500",
+  "surface": "仕様",
+  "reading": "しよう",
+  "romaji": "shiyou",
+  "segments": [
+   {
+    "surface": "仕",
+    "reading": "し"
+   },
+   {
+    "surface": "様",
+    "reading": "よう"
+   }
+  ],
+  "hanViet": "SĨ DẠNG",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "đặc tả, quy cách",
+   "en": "way; method; means"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "仕様を確認させてください。",
+    "segments": [
+     {
+      "surface": "仕様",
+      "reading": "しよう"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "確認",
+      "reading": "かくにん"
+     },
+     {
+      "surface": "させてください。"
+     }
+    ],
+    "romaji": "shiyou o kakunin sasete kudasai.",
+    "translation": {
+     "vi": "Cho tôi xác nhận đặc tả.",
+     "en": "Let me check the specification."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "japky-shiyousho",
+  "surface": "仕様書",
+  "reading": "しようしょ",
+  "romaji": "shiyousho",
+  "segments": [
+   {
+    "surface": "仕",
+    "reading": "し"
+   },
+   {
+    "surface": "様",
+    "reading": "よう"
+   },
+   {
+    "surface": "書",
+    "reading": "しょ"
+   }
+  ],
+  "hanViet": "SĨ DẠNG THƯ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [],
+  "meanings": {
+   "vi": "tài liệu đặc tả",
+   "en": "specification document"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "仕様書はどこにありますか。",
+    "segments": [
+     {
+      "surface": "仕様書",
+      "reading": "しようしょ"
+     },
+     {
+      "surface": "はどこにありますか。"
+     }
+    ],
+    "romaji": "shiyousho wa doko ni arimasu ka.",
+    "translation": {
+     "vi": "Tài liệu đặc tả ở đâu?",
+     "en": "Where is the specification document?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1546730",
+  "surface": "要件",
+  "reading": "ようけん",
+  "romaji": "youken",
+  "segments": [
+   {
+    "surface": "要",
+    "reading": "よう"
+   },
+   {
+    "surface": "件",
+    "reading": "けん"
+   }
+  ],
+  "hanViet": "YẾU KIỆN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "yêu cầu",
+   "en": "important matter"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "お客様の要件を聞きます。",
+    "segments": [
+     {
+      "surface": "お"
+     },
+     {
+      "surface": "客様",
+      "reading": "きゃくさま"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "要件",
+      "reading": "ようけん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "聞",
+      "reading": "き"
+     },
+     {
+      "surface": "きます。"
+     }
+    ],
+    "romaji": "okyakusama no youken o kikimasu.",
+    "translation": {
+     "vi": "Nghe yêu cầu của khách hàng.",
+     "en": "I hear the customer’s requirements."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1221130",
+  "surface": "機能",
+  "reading": "きのう",
+  "romaji": "kinou",
+  "segments": [
+   {
+    "surface": "機",
+    "reading": "き"
+   },
+   {
+    "surface": "能",
+    "reading": "のう"
+   }
+  ],
+  "hanViet": "KY NĂNG",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "chức năng",
+   "en": "function; facility; faculty"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "新しい機能を追加します。",
+    "segments": [
+     {
+      "surface": "新",
+      "reading": "あたら"
+     },
+     {
+      "surface": "しい"
+     },
+     {
+      "surface": "機能",
+      "reading": "きのう"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "追加",
+      "reading": "ついか"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "atarashii kinou o tsuika shimasu.",
+    "translation": {
+     "vi": "Thêm chức năng mới.",
+     "en": "Add a new feature."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1197610",
+  "surface": "画面",
+  "reading": "がめん",
+  "romaji": "gamen",
+  "segments": [
+   {
+    "surface": "画",
+    "reading": "が"
+   },
+   {
+    "surface": "面",
+    "reading": "めん"
+   }
+  ],
+  "hanViet": "HOẠCH DIỆN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "màn hình",
+   "en": "screen (of a TV, computer, etc.)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "画面が動きません。",
+    "segments": [
+     {
+      "surface": "画面",
+      "reading": "がめん"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "動",
+      "reading": "うご"
+     },
+     {
+      "surface": "きません。"
+     }
+    ],
+    "romaji": "gamen ga ugokimasen.",
+    "translation": {
+     "vi": "Màn hình không phản hồi.",
+     "en": "The screen is not responding."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1117080",
+  "surface": "プログラム",
+  "reading": "プログラム",
+  "romaji": "puroguramu",
+  "segments": [
+   {
+    "surface": "プログラム"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "chương trình",
+   "en": "program (of events, music, etc.); programme"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "プログラムを書きます。",
+    "segments": [
+     {
+      "surface": "プログラムを"
+     },
+     {
+      "surface": "書",
+      "reading": "か"
+     },
+     {
+      "surface": "きます。"
+     }
+    ],
+    "romaji": "puroguramu o kakimasu.",
+    "translation": {
+     "vi": "Viết chương trình.",
+     "en": "I write a program."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1060300",
+  "surface": "システム",
+  "reading": "システム",
+  "romaji": "shisutemu",
+  "segments": [
+   {
+    "surface": "システム"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "hệ thống",
+   "en": "system"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "システムを止めます。",
+    "segments": [
+     {
+      "surface": "システムを"
+     },
+     {
+      "surface": "止",
+      "reading": "と"
+     },
+     {
+      "surface": "めます。"
+     }
+    ],
+    "romaji": "shisutemu o tomemasu.",
+    "translation": {
+     "vi": "Dừng hệ thống.",
+     "en": "Stop the system."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1145760",
+  "surface": "レビュー",
+  "reading": "レビュー",
+  "romaji": "rebyuu",
+  "segments": [
+   {
+    "surface": "レビュー"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "review, xem xét",
+   "en": "review"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "コードのレビューをお願いします。",
+    "segments": [
+     {
+      "surface": "コードのレビューをお"
+     },
+     {
+      "surface": "願",
+      "reading": "ねが"
+     },
+     {
+      "surface": "いします。"
+     }
+    ],
+    "romaji": "koodo no rebyuu o onegaishimasu.",
+    "translation": {
+     "vi": "Nhờ anh review code.",
+     "en": "Please review the code."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1143250",
+  "surface": "リリース",
+  "reading": "リリース",
+  "romaji": "ririisu",
+  "segments": [
+   {
+    "surface": "リリース"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "phát hành",
+   "en": "release (of a film, product, etc.); publication"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "金曜日にリリースします。",
+    "segments": [
+     {
+      "surface": "金曜日",
+      "reading": "きんようび"
+     },
+     {
+      "surface": "にリリースします。"
+     }
+    ],
+    "romaji": "kin'youbi ni ririisu shimasu.",
+    "translation": {
+     "vi": "Thứ sáu phát hành.",
+     "en": "We release on Friday."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1594590",
+  "surface": "締め切り",
+  "reading": "しめきり",
+  "romaji": "shimekiri",
+  "segments": [
+   {
+    "surface": "締",
+    "reading": "し"
+   },
+   {
+    "surface": "め"
+   },
+   {
+    "surface": "切",
+    "reading": "き"
+   },
+   {
+    "surface": "り"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "hạn chót",
+   "en": "deadline; closing; cut-off"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "締め切りはいつですか。",
+    "segments": [
+     {
+      "surface": "締",
+      "reading": "し"
+     },
+     {
+      "surface": "め"
+     },
+     {
+      "surface": "切",
+      "reading": "き"
+     },
+     {
+      "surface": "りはいつですか。"
+     }
+    ],
+    "romaji": "shimekiri wa itsu desu ka.",
+    "translation": {
+     "vi": "Hạn chót là khi nào?",
+     "en": "When is the deadline?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1366140",
+  "surface": "進捗",
+  "reading": "しんちょく",
+  "romaji": "shinchoku",
+  "segments": [
+   {
+    "surface": "進",
+    "reading": "しん"
+   },
+   {
+    "surface": "捗",
+    "reading": "ちょく"
+   }
+  ],
+  "hanViet": "TIẾN DUỆ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "tiến độ",
+   "en": "progress; advance; making (good) progress"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "進捗を報告します。",
+    "segments": [
+     {
+      "surface": "進捗",
+      "reading": "しんちょく"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "報告",
+      "reading": "ほうこく"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "shinchoku o houkoku shimasu.",
+    "translation": {
+     "vi": "Báo cáo tiến độ.",
+     "en": "I report progress."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1418160",
+  "surface": "担当",
+  "reading": "たんとう",
+  "romaji": "tantou",
+  "segments": [
+   {
+    "surface": "担",
+    "reading": "たん"
+   },
+   {
+    "surface": "当",
+    "reading": "とう"
+   }
+  ],
+  "hanViet": "ĐAM ĐANG",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "phụ trách",
+   "en": "being in charge (of an area of responsibility); being responsible (for a work role, etc.)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "この画面は私の担当です。",
+    "segments": [
+     {
+      "surface": "この"
+     },
+     {
+      "surface": "画面",
+      "reading": "がめん"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "担当",
+      "reading": "たんとう"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "kono gamen wa watashi no tantou desu.",
+    "translation": {
+     "vi": "Màn hình này do tôi phụ trách.",
+     "en": "I am in charge of this screen."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "japky-bagu",
+  "surface": "バグ",
+  "reading": "バグ",
+  "romaji": "bagu",
+  "segments": [
+   {
+    "surface": "バグ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [],
+  "meanings": {
+   "vi": "lỗi (bug)",
+   "en": "bug (software)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "バグを見つけました。",
+    "segments": [
+     {
+      "surface": "バグを"
+     },
+     {
+      "surface": "見",
+      "reading": "み"
+     },
+     {
+      "surface": "つけました。"
+     }
+    ],
+    "romaji": "bagu o mitsukemashita.",
+    "translation": {
+     "vi": "Tôi đã tìm thấy lỗi.",
+     "en": "I found a bug."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1030040",
+  "surface": "エラー",
+  "reading": "エラー",
+  "romaji": "eraa",
+  "segments": [
+   {
+    "surface": "エラー"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "lỗi (error)",
+   "en": "error"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "エラーが出ました。",
+    "segments": [
+     {
+      "surface": "エラーが"
+     },
+     {
+      "surface": "出",
+      "reading": "で"
+     },
+     {
+      "surface": "ました。"
+     }
+    ],
+    "romaji": "eraa ga demashita.",
+    "translation": {
+     "vi": "Đã xuất hiện lỗi.",
+     "en": "An error occurred."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1352060",
+  "surface": "障害",
+  "reading": "しょうがい",
+  "romaji": "shougai",
+  "segments": [
+   {
+    "surface": "障",
+    "reading": "しょう"
+   },
+   {
+    "surface": "害",
+    "reading": "がい"
+   }
+  ],
+  "hanViet": "CHƯỚNG HẠI",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "sự cố",
+   "en": "obstacle; impediment; hindrance"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "本番で障害が起きました。",
+    "segments": [
+     {
+      "surface": "本番",
+      "reading": "ほんばん"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "障害",
+      "reading": "しょうがい"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "起",
+      "reading": "お"
+     },
+     {
+      "surface": "きました。"
+     }
+    ],
+    "romaji": "honban de shougai ga okimashita.",
+    "translation": {
+     "vi": "Đã xảy ra sự cố trên môi trường production.",
+     "en": "An incident happened in production."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1261190",
+  "surface": "原因",
+  "reading": "げんいん",
+  "romaji": "gen'in",
+  "segments": [
+   {
+    "surface": "原",
+    "reading": "げん"
+   },
+   {
+    "surface": "因",
+    "reading": "いん"
+   }
+  ],
+  "hanViet": "NGUYÊN NHÂN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "nguyên nhân",
+   "en": "cause; origin; source"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "原因を調べています。",
+    "segments": [
+     {
+      "surface": "原因",
+      "reading": "げんいん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "調",
+      "reading": "しら"
+     },
+     {
+      "surface": "べています。"
+     }
+    ],
+    "romaji": "gen'in o shirabete imasu.",
+    "translation": {
+     "vi": "Tôi đang điều tra nguyên nhân.",
+     "en": "I am looking into the cause."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1332130",
+  "surface": "修正",
+  "reading": "しゅうせい",
+  "romaji": "shuusei",
+  "segments": [
+   {
+    "surface": "修",
+    "reading": "しゅう"
+   },
+   {
+    "surface": "正",
+    "reading": "せい"
+   }
+  ],
+  "hanViet": "TU CHÁNH",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "sửa (lỗi)",
+   "en": "amendment; correction; revision"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "すぐ修正します。",
+    "segments": [
+     {
+      "surface": "すぐ"
+     },
+     {
+      "surface": "修正",
+      "reading": "しゅうせい"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "sugu shuusei shimasu.",
+    "translation": {
+     "vi": "Tôi sẽ sửa ngay.",
+     "en": "I will fix it right away."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1205900",
+  "surface": "確認",
+  "reading": "かくにん",
+  "romaji": "kakunin",
+  "segments": [
+   {
+    "surface": "確",
+    "reading": "かく"
+   },
+   {
+    "surface": "認",
+    "reading": "にん"
+   }
+  ],
+  "hanViet": "XÁC NHẬN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "xác nhận, kiểm tra",
+   "en": "confirmation; verification; validation"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "確認してから連絡します。",
+    "segments": [
+     {
+      "surface": "確認",
+      "reading": "かくにん"
+     },
+     {
+      "surface": "してから"
+     },
+     {
+      "surface": "連絡",
+      "reading": "れんらく"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "kakunin shite kara renraku shimasu.",
+    "translation": {
+     "vi": "Tôi kiểm tra rồi liên lạc lại.",
+     "en": "I will check and get back to you."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1523150",
+  "surface": "本番",
+  "reading": "ほんばん",
+  "romaji": "honban",
+  "segments": [
+   {
+    "surface": "本",
+    "reading": "ほん"
+   },
+   {
+    "surface": "番",
+    "reading": "ばん"
+   }
+  ],
+  "hanViet": "BẢN PHIÊN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "môi trường chính thức (production)",
+   "en": "performance (as opposed to practice); going before an audience or on-air; take"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "本番に反映しました。",
+    "segments": [
+     {
+      "surface": "本番",
+      "reading": "ほんばん"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "反映",
+      "reading": "はんえい"
+     },
+     {
+      "surface": "しました。"
+     }
+    ],
+    "romaji": "honban ni han'ei shimashita.",
+    "translation": {
+     "vi": "Đã đưa lên production.",
+     "en": "It is now live in production."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1213280",
+  "surface": "環境",
+  "reading": "かんきょう",
+  "romaji": "kankyou",
+  "segments": [
+   {
+    "surface": "環",
+    "reading": "かん"
+   },
+   {
+    "surface": "境",
+    "reading": "きょう"
+   }
+  ],
+  "hanViet": "HOÀN CẢNH",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "môi trường",
+   "en": "environment; surroundings; circumstances"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "テスト環境で確認します。",
+    "segments": [
+     {
+      "surface": "テスト"
+     },
+     {
+      "surface": "環境",
+      "reading": "かんきょう"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "確認",
+      "reading": "かくにん"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "tesuto kankyou de kakunin shimasu.",
+    "translation": {
+     "vi": "Kiểm tra trên môi trường test.",
+     "en": "Check it in the test environment."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1081190",
+  "surface": "データ",
+  "reading": "データ",
+  "romaji": "deeta",
+  "segments": [
+   {
+    "surface": "データ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "dữ liệu",
+   "en": "data; datum"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "データを保存します。",
+    "segments": [
+     {
+      "surface": "データを"
+     },
+     {
+      "surface": "保存",
+      "reading": "ほぞん"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "deeta o hozon shimasu.",
+    "translation": {
+     "vi": "Lưu dữ liệu.",
+     "en": "Save the data."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1054970",
+  "surface": "サーバー",
+  "reading": "サーバー",
+  "romaji": "saabaa",
+  "segments": [
+   {
+    "surface": "サーバー"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "máy chủ",
+   "en": "server"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "サーバーが重いです。",
+    "segments": [
+     {
+      "surface": "サーバーが"
+     },
+     {
+      "surface": "重",
+      "reading": "おも"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "saabaa ga omoi desu.",
+    "translation": {
+     "vi": "Máy chủ đang chậm.",
+     "en": "The server is slow."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1101520",
+  "surface": "パスワード",
+  "reading": "パスワード",
+  "romaji": "pasuwaado",
+  "segments": [
+   {
+    "surface": "パスワード"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "mật khẩu",
+   "en": "password"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "パスワードを変えてください。",
+    "segments": [
+     {
+      "surface": "パスワードを"
+     },
+     {
+      "surface": "変",
+      "reading": "か"
+     },
+     {
+      "surface": "えてください。"
+     }
+    ],
+    "romaji": "pasuwaado o kaete kudasai.",
+    "translation": {
+     "vi": "Hãy đổi mật khẩu.",
+     "en": "Please change your password."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1466850",
+  "surface": "入力",
+  "reading": "にゅうりょく",
+  "romaji": "nyuuryoku",
+  "segments": [
+   {
+    "surface": "入",
+    "reading": "にゅう"
+   },
+   {
+    "surface": "力",
+    "reading": "りょく"
+   }
+  ],
+  "hanViet": "NHẬP LỰC",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "nhập (dữ liệu)",
+   "en": "input; (data) entry; typing"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "名前を入力してください。",
+    "segments": [
+     {
+      "surface": "名前",
+      "reading": "なまえ"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "入力",
+      "reading": "にゅうりょく"
+     },
+     {
+      "surface": "してください。"
+     }
+    ],
+    "romaji": "namae o nyuuryoku shite kudasai.",
+    "translation": {
+     "vi": "Hãy nhập tên.",
+     "en": "Please enter your name."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1513940",
+  "surface": "保存",
+  "reading": "ほぞん",
+  "romaji": "hozon",
+  "segments": [
+   {
+    "surface": "保",
+    "reading": "ほ"
+   },
+   {
+    "surface": "存",
+    "reading": "ぞん"
+   }
+  ],
+  "hanViet": "BẢO TỒN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "lưu",
+   "en": "preservation; conservation; storage"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "ファイルを保存しました。",
+    "segments": [
+     {
+      "surface": "ファイルを"
+     },
+     {
+      "surface": "保存",
+      "reading": "ほぞん"
+     },
+     {
+      "surface": "しました。"
+     }
+    ],
+    "romaji": "fuairu o hozon shimashita.",
+    "translation": {
+     "vi": "Đã lưu tệp.",
+     "en": "I saved the file."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1298120",
+  "surface": "削除",
+  "reading": "さくじょ",
+  "romaji": "sakujo",
+  "segments": [
+   {
+    "surface": "削",
+    "reading": "さく"
+   },
+   {
+    "surface": "除",
+    "reading": "じょ"
+   }
+  ],
+  "hanViet": "TƯỚC TRỪ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "xóa",
+   "en": "deletion; elimination; erasure"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "このデータを削除してもいいですか。",
+    "segments": [
+     {
+      "surface": "このデータを"
+     },
+     {
+      "surface": "削除",
+      "reading": "さくじょ"
+     },
+     {
+      "surface": "してもいいですか。"
+     }
+    ],
+    "romaji": "kono deeta o sakujo shite mo ii desu ka.",
+    "translation": {
+     "vi": "Xóa dữ liệu này được không?",
+     "en": "May I delete this data?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1511040",
+  "surface": "変更",
+  "reading": "へんこう",
+  "romaji": "henkou",
+  "segments": [
+   {
+    "surface": "変",
+    "reading": "へん"
+   },
+   {
+    "surface": "更",
+    "reading": "こう"
+   }
+  ],
+  "hanViet": "BIẾN CANH",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "thay đổi",
+   "en": "change; modification; alteration"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "仕様が変更になりました。",
+    "segments": [
+     {
+      "surface": "仕様",
+      "reading": "しよう"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "変更",
+      "reading": "へんこう"
+     },
+     {
+      "surface": "になりました。"
+     }
+    ],
+    "romaji": "shiyou ga henkou ni narimashita.",
+    "translation": {
+     "vi": "Đặc tả đã thay đổi.",
+     "en": "The specification has changed."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1432460",
+  "surface": "追加",
+  "reading": "ついか",
+  "romaji": "tsuika",
+  "segments": [
+   {
+    "surface": "追",
+    "reading": "つい"
+   },
+   {
+    "surface": "加",
+    "reading": "か"
+   }
+  ],
+  "hanViet": "TRUY GIA",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt",
+   "adj-no"
+  ],
+  "meanings": {
+   "vi": "thêm",
+   "en": "addition; supplement; appending"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "ボタンを追加します。",
+    "segments": [
+     {
+      "surface": "ボタンを"
+     },
+     {
+      "surface": "追加",
+      "reading": "ついか"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "botan o tsuika shimasu.",
+    "translation": {
+     "vi": "Thêm nút.",
+     "en": "Add a button."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1279370",
+  "surface": "更新",
+  "reading": "こうしん",
+  "romaji": "koushin",
+  "segments": [
+   {
+    "surface": "更",
+    "reading": "こう"
+   },
+   {
+    "surface": "新",
+    "reading": "しん"
+   }
+  ],
+  "hanViet": "CANH TÂN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "cập nhật",
+   "en": "renewal; update; replacement"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "画面を更新してください。",
+    "segments": [
+     {
+      "surface": "画面",
+      "reading": "がめん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "更新",
+      "reading": "こうしん"
+     },
+     {
+      "surface": "してください。"
+     }
+    ],
+    "romaji": "gamen o koushin shite kudasai.",
+    "translation": {
+     "vi": "Hãy tải lại màn hình.",
+     "en": "Please refresh the screen."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1386060",
+  "surface": "設定",
+  "reading": "せってい",
+  "romaji": "settei",
+  "segments": [
+   {
+    "surface": "設",
+    "reading": "せっ"
+   },
+   {
+    "surface": "定",
+    "reading": "てい"
+   }
+  ],
+  "hanViet": "THIẾT ĐỊNH",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "cài đặt, thiết lập",
+   "en": "establishment; creation; posing (a problem)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "設定を変えました。",
+    "segments": [
+     {
+      "surface": "設定",
+      "reading": "せってい"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "変",
+      "reading": "か"
+     },
+     {
+      "surface": "えました。"
+     }
+    ],
+    "romaji": "settei o kaemashita.",
+    "translation": {
+     "vi": "Tôi đã đổi cài đặt.",
+     "en": "I changed the settings."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1515670",
+  "surface": "報告",
+  "reading": "ほうこく",
+  "romaji": "houkoku",
+  "segments": [
+   {
+    "surface": "報",
+    "reading": "ほう"
+   },
+   {
+    "surface": "告",
+    "reading": "こく"
+   }
+  ],
+  "hanViet": "BÁO CÁO",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "báo cáo",
+   "en": "report; information"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "毎日上司に報告します。",
+    "segments": [
+     {
+      "surface": "毎日",
+      "reading": "まいにち"
+     },
+     {
+      "surface": "上司",
+      "reading": "じょうし"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "報告",
+      "reading": "ほうこく"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "mainichi joushi ni houkoku shimasu.",
+    "translation": {
+     "vi": "Mỗi ngày tôi báo cáo cấp trên.",
+     "en": "I report to my boss every day."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1559900",
+  "surface": "連絡",
+  "reading": "れんらく",
+  "romaji": "renraku",
+  "segments": [
+   {
+    "surface": "連",
+    "reading": "れん"
+   },
+   {
+    "surface": "絡",
+    "reading": "らく"
+   }
+  ],
+  "hanViet": "LIÊN LẠC",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "liên lạc",
+   "en": "contacting; (making) contact; getting in touch"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "遅れる時は連絡してください。",
+    "segments": [
+     {
+      "surface": "遅",
+      "reading": "おく"
+     },
+     {
+      "surface": "れる"
+     },
+     {
+      "surface": "時",
+      "reading": "とき"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "連絡",
+      "reading": "れんらく"
+     },
+     {
+      "surface": "してください。"
+     }
+    ],
+    "romaji": "okureru toki wa renraku shite kudasai.",
+    "translation": {
+     "vi": "Khi đến muộn hãy liên lạc.",
+     "en": "Please let us know if you will be late."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1401210",
+  "surface": "相談",
+  "reading": "そうだん",
+  "romaji": "soudan",
+  "segments": [
+   {
+    "surface": "相",
+    "reading": "そう"
+   },
+   {
+    "surface": "談",
+    "reading": "だん"
+   }
+  ],
+  "hanViet": "TƯƠNG ĐÀM",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "trao đổi, bàn bạc",
+   "en": "consultation; discussion; discussing"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "ちょっと相談があります。",
+    "segments": [
+     {
+      "surface": "ちょっと"
+     },
+     {
+      "surface": "相談",
+      "reading": "そうだん"
+     },
+     {
+      "surface": "があります。"
+     }
+    ],
+    "romaji": "chotto soudan ga arimasu.",
+    "translation": {
+     "vi": "Tôi có chuyện muốn trao đổi.",
+     "en": "I have something to discuss."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1312820",
+  "surface": "資料",
+  "reading": "しりょう",
+  "romaji": "shiryou",
+  "segments": [
+   {
+    "surface": "資",
+    "reading": "し"
+   },
+   {
+    "surface": "料",
+    "reading": "りょう"
+   }
+  ],
+  "hanViet": "TƯ LIÊU",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "tài liệu",
+   "en": "material; materials; data"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "会議の資料を送ります。",
+    "segments": [
+     {
+      "surface": "会議",
+      "reading": "かいぎ"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "資料",
+      "reading": "しりょう"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "送",
+      "reading": "おく"
+     },
+     {
+      "surface": "ります。"
+     }
+    ],
+    "romaji": "kaigi no shiryou o okurimasu.",
+    "translation": {
+     "vi": "Tôi gửi tài liệu họp.",
+     "en": "I will send the meeting materials."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
+ },
+ {
+  "id": "jmdict-1604590",
+  "surface": "見積もり",
+  "reading": "みつもり",
+  "romaji": "mitsumori",
+  "segments": [
+   {
+    "surface": "見",
+    "reading": "み"
+   },
+   {
+    "surface": "積",
+    "reading": "つ"
+   },
+   {
+    "surface": "もり"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "báo giá, ước tính",
+   "en": "estimate; estimation; valuation"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "見積もりを作ります。",
+    "segments": [
+     {
+      "surface": "見積",
+      "reading": "みつ"
+     },
+     {
+      "surface": "もりを"
+     },
+     {
+      "surface": "作",
+      "reading": "つく"
+     },
+     {
+      "surface": "ります。"
+     }
+    ],
+    "romaji": "mitsumori o tsukurimasu.",
+    "translation": {
+     "vi": "Làm báo giá.",
+     "en": "I prepare an estimate."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:it"
+  ]
  }
 ]
