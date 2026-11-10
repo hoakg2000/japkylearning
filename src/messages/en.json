@@ -261,7 +261,12 @@
     "twoFactorError": "That did not work. Check the password or code.",
     "reminder": "Reminder email",
     "reminderOff": "Off",
-    "reminderHint": "At most one email a day at the hour you choose, only if today's goal is not met yet. Every email has an unsubscribe link."
+    "reminderHint": "At most one email a day at the hour you choose, only if today's goal is not met yet. Every email has an unsubscribe link.",
+    "shareMake": "Make a streak share image",
+    "shareDownload": "Download image",
+    "shareDays": "{n}-day study streak",
+    "shareLongest": "Longest: {n} days",
+    "shareAlt": "Streak image, {n} days"
   },
   "Learn": {
     "title": "Learn",

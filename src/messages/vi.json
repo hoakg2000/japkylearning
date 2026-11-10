@@ -261,7 +261,12 @@
     "twoFactorError": "Không thành công. Kiểm tra mật khẩu hoặc mã.",
     "reminder": "Email nhắc học",
     "reminderOff": "Tắt",
-    "reminderHint": "Gửi tối đa 1 email mỗi ngày vào giờ bạn chọn, chỉ khi hôm nay chưa đạt mục tiêu. Có link hủy trong mỗi email."
+    "reminderHint": "Gửi tối đa 1 email mỗi ngày vào giờ bạn chọn, chỉ khi hôm nay chưa đạt mục tiêu. Có link hủy trong mỗi email.",
+    "shareMake": "Tạo ảnh chia sẻ streak",
+    "shareDownload": "Tải ảnh",
+    "shareDays": "{n} ngày học liên tiếp",
+    "shareLongest": "Dài nhất: {n} ngày",
+    "shareAlt": "Ảnh streak {n} ngày"
   },
   "Learn": {
     "title": "Học",

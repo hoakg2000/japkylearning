@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { Suspense } from 'react';
 import { AccountActions, ConsentList, ReminderSelect, SettingsForm, TimezoneSelect, TwoFactorSection, VoiceSelect } from '@/components/me-controls';
+import { ShareStreak } from '@/components/share-streak';
 import { StreakCalendar } from '@/components/streak-calendar';
 import { Link } from '@/i18n/navigation';
 import { getSession } from '@/lib/auth/session';
@@ -51,6 +52,7 @@ async function MeContent() {
           🔥 {t('streak', { current: streak.current, longest: streak.longest })} · {t('freezes', { count: streak.freezes })}
         </p>
         <StreakCalendar streak={streak} today={studyDate(new Date(), settings.timezone)} />
+        {streak.current > 0 && <ShareStreak current={streak.current} longest={streak.longest} />}
       </section>
       <SettingsForm
         initial={{
