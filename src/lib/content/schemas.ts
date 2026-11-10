@@ -81,6 +81,17 @@ export const Lesson = z.object({
   dialogue: z.array(DialogueLine).min(2),
 });
 
+/** Sector vocabulary pack (F3). Words resolve against N5 words plus content/packs/words.json. */
+export const Pack = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  order: z.number().int().positive(),
+  title: Bilingual,
+  description: Bilingual,
+  wordIds: z.array(z.string()).min(1),
+  kanji: z.array(z.string().length(1)),
+});
+
+export type Pack = z.infer<typeof Pack>;
 export type Kana = z.infer<typeof Kana>;
 export type Strokes = z.infer<typeof Strokes>;
 export type Segment = z.infer<typeof Segment>;

@@ -273,6 +273,10 @@
     "kanji": {
       "title": "N5 kanji",
       "desc": "With Sino-Vietnamese readings and stroke order"
+    },
+    "packs": {
+      "title": "Vocabulary by sector",
+      "desc": "Kaigo and other Tokutei Ginou sectors"
     }
   },
   "Privacy": {
@@ -342,7 +346,8 @@
       "ctr": "counter",
       "suf": "suffix",
       "pref": "prefix"
-    }
+    },
+    "inPack": "In the pack"
   },
   "Path": {
     "title": "N5 path",
@@ -431,7 +436,8 @@
     "lesson": "Lesson",
     "words": "Words with this kanji",
     "attribution": "Kanji data: KANJIDIC2 (EDRDG, CC BY-SA 4.0); stroke order: KanjiVG (Ulrich Apel, CC BY-SA 3.0). Sino-Vietnamese readings: Japky, checked against Unihan.",
-    "embed": "Embed on your site"
+    "embed": "Embed on your site",
+    "pack": "Pack"
   },
   "Tests": {
     "title": "Tests",
@@ -505,5 +511,17 @@
     "saving": "Grading…",
     "saveError": "Could not send your answers.",
     "retry": "Send again"
+  },
+  "Packs": {
+    "title": "Vocabulary by sector",
+    "description": "Word packs for real jobs. Add a whole pack to review with one button.",
+    "counts": "{words} words · {kanji} kanji",
+    "kanji": "Kanji ({count})",
+    "vocab": "Vocabulary ({count})",
+    "addAll": "Add all to review",
+    "adding": "Adding…",
+    "added": "Added {n} cards to review.",
+    "alreadyAdded": "All words are already in review.",
+    "error": "Could not add them. Please try again."
   }
 }

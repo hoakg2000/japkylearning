@@ -42,3 +42,15 @@ export type LessonSource = {
 };
 
 export type KanjiSource = { char: string; hanViet: string[]; vi: string };
+
+/** Sector vocabulary pack (F3). Words already in N5 keep their N5 entry; new ones get `jlpt: null`. */
+export type PackSource = {
+  id: string;
+  order: number;
+  title: { vi: string; en: string };
+  description: { vi: string; en: string };
+  /** Kanji shown on the pack page, in order. Those not in N5 must be listed in `newKanji`. */
+  kanji: string[];
+  newKanji: KanjiSource[];
+  words: WordSource[];
+};

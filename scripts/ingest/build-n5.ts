@@ -3,12 +3,14 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { toHiragana, toRomaji } from 'wanakana';
 import { n5Kanji } from '../../content/source/n5/kanji';
-import type { LessonSource, Sentence } from '../../content/source/types';
-import { GrammarPoint, Kanji, Lesson, Word, type Segment } from '../../src/lib/content/schemas';
+import type { KanjiSource, LessonSource, PackSource, Sentence, WordSource } from '../../content/source/types';
+import { GrammarPoint, Kanji, Lesson, Pack, Word, type Segment } from '../../src/lib/content/schemas';
 import { assertMarkup, parseMarkup } from '../../src/lib/japanese/markup';
 
 const SRC = '.data/sources';
 const OUT = 'content/levels/n5';
+const PACK_SRC = 'content/source/packs';
+const PACK_OUT = 'content/packs';
 const warnings: string[] = [];
 const errors: string[] = [];
 
@@ -136,6 +138,62 @@ const example = ([ja, vi, en]: Sentence) => {
   return { ja: p.ja, segments: p.segments, romaji: p.romaji, translation: { vi, en }, source: 'japky' };
 };
 
+/** Word entry for an authored word, or undefined (error recorded). `tag` is the lesson or pack id. */
+function buildWord(w: WordSource, tag: string, jlpt: 'n5' | null): Word | undefined {
+  const { entry, suffix } = lookup(w.surface, w.reading);
+  if (!entry && !w.en) {
+    errors.push(`${tag}: ${w.surface} (${w.reading}) not in JMdict; add "en"`);
+    return;
+  }
+  const segments = segmentsFor(w.surface, w.reading, suffix);
+  if (!segments) {
+    errors.push(`${tag}: no furigana for ${w.surface} (${w.reading})`);
+    return;
+  }
+  const id = entry ? `jmdict-${entry.id}${suffix ? `-${toRomaji(suffix)}` : ''}` : `japky-${toRomaji(w.reading)}`;
+  const sense = entry?.sense[0];
+  const word = {
+    id,
+    surface: w.surface,
+    reading: w.reading,
+    romaji: toRomaji(w.reading),
+    segments,
+    ...(w.hanViet ? { jukujikun: false, hanViet: w.hanViet, hanVietSource: 'manual' as const } : hanVietForWord(segments)),
+    pos: suffix === 'する' ? ['vs'] : (sense?.partOfSpeech ?? []),
+    meanings: { vi: w.vi, en: w.en ?? sense!.gloss.slice(0, 3).map((g) => g.text).join('; ') },
+    meaningsViReviewed: false,
+    examples: [example(w.example)],
+    jlpt,
+    tags: [tag],
+  };
+  const parsed = Word.safeParse(word);
+  if (!parsed.success) errors.push(`${tag}: ${w.surface}: ${parsed.error.message}`);
+  return parsed.data;
+}
+
+/** Hán-Việt cross-check against KANJIDIC2/Unihan (warning only) and the Kanji entry. */
+function buildKanji(k: KanjiSource, jlpt: 'n5' | null, lessonId: string | null, sectors: string[]) {
+  const kd = kanjidic.get(k.char);
+  if (!kd) errors.push(`kanji ${k.char} missing in KANJIDIC2`);
+  const sources = [...readings(kd, 'vietnam'), ...(unihanVi.get(k.char) ?? unihanVi.get(oldVariant.get(k.char) ?? '') ?? [])].map((r) => r.toUpperCase().normalize('NFC'));
+  if (sources.length && !k.hanViet.some((h) => sources.includes(h.normalize('NFC')))) warnings.push(`Hán-Việt ${k.char}: authored ${k.hanViet.join('/')} vs datasets ${[...new Set(sources)].join('/')}`);
+  const item = {
+    char: k.char,
+    on: readings(kd, 'ja_on'),
+    kun: readings(kd, 'ja_kun'),
+    hanViet: k.hanViet,
+    hanVietReviewed: false,
+    meanings: { vi: k.vi, en: meaningsEn(kd).slice(0, 3).join('; ') },
+    strokeCount: kd?.misc.strokeCounts[0] ?? 0,
+    jlpt,
+    lessonId,
+    sectors,
+  };
+  const parsed = Kanji.safeParse(item);
+  if (!parsed.success) errors.push(`kanji ${k.char}: ${parsed.error.message}`);
+  return parsed.data;
+}
+
 // ---------- build ----------
 async function main() {
   const lessons: LessonSource[] = [];
@@ -143,7 +201,7 @@ async function main() {
     lessons.push((await import(`../../content/source/n5/lesson-${String(i).padStart(2, '0')}.ts`)).default);
   }
 
-  const words = new Map<string, unknown>();
+  const words = new Map<string, Word>();
   const kanjiLesson = new Map<string, string>();
   const grammar: unknown[] = [];
   const lessonOut: unknown[] = [];
@@ -151,36 +209,10 @@ async function main() {
   for (const lesson of lessons) {
     const wordIds: string[] = [];
     for (const w of lesson.words) {
-      const { entry, suffix } = lookup(w.surface, w.reading);
-      if (!entry && !w.en) {
-        errors.push(`${lesson.id}: ${w.surface} (${w.reading}) not in JMdict; add "en"`);
-        continue;
-      }
-      const segments = segmentsFor(w.surface, w.reading, suffix);
-      if (!segments) {
-        errors.push(`${lesson.id}: no furigana for ${w.surface} (${w.reading})`);
-        continue;
-      }
-      const id = entry ? `jmdict-${entry.id}${suffix ? `-${toRomaji(suffix)}` : ''}` : `japky-${toRomaji(w.reading)}`;
-      const sense = entry?.sense[0];
-      const word = {
-        id,
-        surface: w.surface,
-        reading: w.reading,
-        romaji: toRomaji(w.reading),
-        segments,
-        ...(w.hanViet ? { jukujikun: false, hanViet: w.hanViet, hanVietSource: 'manual' as const } : hanVietForWord(segments)),
-        pos: suffix === 'する' ? ['vs'] : (sense?.partOfSpeech ?? []),
-        meanings: { vi: w.vi, en: w.en ?? sense!.gloss.slice(0, 3).map((g) => g.text).join('; ') },
-        meaningsViReviewed: false,
-        examples: [example(w.example)],
-        jlpt: 'n5' as const,
-        tags: [lesson.id],
-      };
-      const parsed = Word.safeParse(word);
-      if (!parsed.success) errors.push(`${lesson.id}: ${w.surface}: ${parsed.error.message}`);
-      else if (!words.has(id)) words.set(id, parsed.data);
-      wordIds.push(id);
+      const word = buildWord(w, lesson.id, 'n5');
+      if (!word) continue;
+      if (!words.has(word.id)) words.set(word.id, word);
+      wordIds.push(word.id);
     }
 
     for (const k of lesson.kanji) if (!kanjiLesson.has(k)) kanjiLesson.set(k, lesson.id);
@@ -223,28 +255,42 @@ async function main() {
     else lessonOut.push(parsed.data);
   }
 
-  const kanji = n5Kanji.map((k) => {
-    const kd = kanjidic.get(k.char);
-    if (!kd) errors.push(`kanji ${k.char} missing in KANJIDIC2`);
-    const sources = [...readings(kd, 'vietnam').map((r) => r.toUpperCase()), ...(unihanVi.get(k.char) ?? unihanVi.get(oldVariant.get(k.char) ?? '') ?? []).map((r) => r.toUpperCase())];
-    if (sources.length && !k.hanViet.some((h) => sources.includes(h))) warnings.push(`Hán-Việt ${k.char}: authored ${k.hanViet.join('/')} vs datasets ${[...new Set(sources)].join('/')}`);
-    const item = {
-      char: k.char,
-      on: readings(kd, 'ja_on'),
-      kun: readings(kd, 'ja_kun'),
-      hanViet: k.hanViet,
-      hanVietReviewed: false,
-      meanings: { vi: k.vi, en: meaningsEn(kd).slice(0, 3).join('; ') },
-      strokeCount: kd?.misc.strokeCounts[0] ?? 0,
-      jlpt: 'n5' as const,
-      lessonId: kanjiLesson.get(k.char) ?? null,
-      sectors: [],
-    };
-    const parsed = Kanji.safeParse(item);
-    if (!parsed.success) errors.push(`kanji ${k.char}: ${parsed.error.message}`);
-    return parsed.data;
-  });
+  const kanji = n5Kanji.map((k) => buildKanji(k, 'n5', kanjiLesson.get(k.char) ?? null, []));
   for (const k of kanjiLesson.keys()) if (!manualHanViet.has(k)) errors.push(`lesson kanji ${k} is not in content/source/n5/kanji.ts`);
+
+  // Packs (F3): N5 words are referenced by id; other words and kanji go to content/packs/{words,kanji}.json.
+  const packs: PackSource[] = [];
+  for (const f of existsSync(PACK_SRC) ? readdirSync(PACK_SRC).filter((n) => n.endsWith('.ts')).sort() : []) {
+    packs.push((await import(`../../${PACK_SRC}/${f}`)).default);
+  }
+  const packWords = new Map<string, Word>();
+  const packKanji = new Map<string, NonNullable<ReturnType<typeof buildKanji>>>();
+  const packOut: unknown[] = [];
+  for (const pack of packs.toSorted((a, b) => a.order - b.order)) {
+    const wordIds: string[] = [];
+    for (const w of pack.words) {
+      const word = buildWord(w, `pack:${pack.id}`, null);
+      if (!word) continue;
+      const known = packWords.get(word.id);
+      if (known) known.tags = [...new Set([...known.tags, `pack:${pack.id}`])];
+      else if (!words.has(word.id)) packWords.set(word.id, word);
+      wordIds.push(word.id);
+    }
+    for (const k of pack.newKanji) {
+      if (manualHanViet.has(k.char)) errors.push(`pack ${pack.id}: ${k.char} is N5; list it in "kanji" only`);
+      const known = packKanji.get(k.char);
+      if (known) known.sectors = [...new Set([...known.sectors, pack.id])];
+      else {
+        const item = buildKanji(k, null, null, [pack.id]);
+        if (item) packKanji.set(k.char, item);
+      }
+    }
+    for (const c of pack.kanji) if (!manualHanViet.has(c) && !pack.newKanji.some((k) => k.char === c)) errors.push(`pack ${pack.id}: kanji ${c} needs a newKanji entry`);
+    const out = { id: pack.id, order: pack.order, title: pack.title, description: pack.description, wordIds: [...new Set(wordIds)], kanji: pack.kanji };
+    const parsed = Pack.safeParse(out);
+    if (!parsed.success) errors.push(`pack ${pack.id}: ${parsed.error.message}`);
+    else packOut.push(parsed.data);
+  }
 
   if (warnings.length) console.warn(`${warnings.length} warnings:\n  ${warnings.join('\n  ')}`);
   if (errors.length) {
@@ -259,7 +305,13 @@ async function main() {
   write('grammar', grammar);
   write('lessons', lessonOut);
   write('meta', { sources: JSON.parse(readFileSync(`${SRC}/versions.json`, 'utf8')), builtAt: new Date().toISOString().slice(0, 10) });
+  mkdirSync(PACK_OUT, { recursive: true });
+  const writePack = (name: string, data: unknown) => writeFileSync(`${PACK_OUT}/${name}.json`, JSON.stringify(data, null, 1) + '\n');
+  writePack('packs', packOut);
+  writePack('words', [...packWords.values()]);
+  writePack('kanji', [...packKanji.values()]);
   console.log(`words ${words.size}, kanji ${kanji.length}, grammar ${grammar.length}, lessons ${lessonOut.length}`);
+  console.log(`packs ${packOut.length}, pack-only words ${packWords.size}, pack-only kanji ${packKanji.size}`);
 }
 
 main();

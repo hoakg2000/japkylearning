@@ -1,0 +1,558 @@
+[
+ {
+  "char": "介",
+  "on": [
+   "カイ"
+  ],
+  "kun": [],
+  "hanViet": [
+   "GIỚI"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "ở giữa; giới thiệu",
+   "en": "jammed in; shellfish; mediate"
+  },
+  "strokeCount": 4,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "護",
+  "on": [
+   "ゴ"
+  ],
+  "kun": [
+   "まも.る"
+  ],
+  "hanViet": [
+   "HỘ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "bảo vệ; che chở",
+   "en": "safeguard; protect"
+  },
+  "strokeCount": 20,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "施",
+  "on": [
+   "シ",
+   "セ"
+  ],
+  "kun": [
+   "ほどこ.す"
+  ],
+  "hanViet": [
+   "THI"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "thi hành; ban cho",
+   "en": "give; bestow; perform"
+  },
+  "strokeCount": 9,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "設",
+  "on": [
+   "セツ"
+  ],
+  "kun": [
+   "もう.ける"
+  ],
+  "hanViet": [
+   "THIẾT"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "thiết lập",
+   "en": "establishment; provision; prepare"
+  },
+  "strokeCount": 11,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "利",
+  "on": [
+   "リ"
+  ],
+  "kun": [
+   "き.く"
+  ],
+  "hanViet": [
+   "LỢI"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "lợi ích",
+   "en": "profit; advantage; benefit"
+  },
+  "strokeCount": 7,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "用",
+  "on": [
+   "ヨウ"
+  ],
+  "kun": [
+   "もち.いる"
+  ],
+  "hanViet": [
+   "DỤNG"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "dùng; việc",
+   "en": "utilize; business; service"
+  },
+  "strokeCount": 5,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "者",
+  "on": [
+   "シャ"
+  ],
+  "kun": [
+   "もの"
+  ],
+  "hanViet": [
+   "GIẢ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "người",
+   "en": "someone; person"
+  },
+  "strokeCount": 8,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "事",
+  "on": [
+   "ジ",
+   "ズ"
+  ],
+  "kun": [
+   "こと",
+   "つか.う",
+   "つか.える"
+  ],
+  "hanViet": [
+   "SỰ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "việc",
+   "en": "matter; thing; fact"
+  },
+  "strokeCount": 8,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "浴",
+  "on": [
+   "ヨク"
+  ],
+  "kun": [
+   "あ.びる",
+   "あ.びせる"
+  ],
+  "hanViet": [
+   "DỤC"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "tắm",
+   "en": "bathe; be favored with; bask in"
+  },
+  "strokeCount": 10,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "体",
+  "on": [
+   "タイ",
+   "テイ"
+  ],
+  "kun": [
+   "からだ",
+   "かたち"
+  ],
+  "hanViet": [
+   "THỂ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "cơ thể",
+   "en": "body; substance; object"
+  },
+  "strokeCount": 7,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "温",
+  "on": [
+   "オン"
+  ],
+  "kun": [
+   "あたた.か",
+   "あたた.かい",
+   "あたた.まる",
+   "あたた.める",
+   "ぬく"
+  ],
+  "hanViet": [
+   "ÔN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "ấm",
+   "en": "warm"
+  },
+  "strokeCount": 12,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "血",
+  "on": [
+   "ケツ"
+  ],
+  "kun": [
+   "ち"
+  ],
+  "hanViet": [
+   "HUYẾT"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "máu",
+   "en": "blood"
+  },
+  "strokeCount": 6,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "圧",
+  "on": [
+   "アツ",
+   "エン",
+   "オウ"
+  ],
+  "kun": [
+   "お.す",
+   "へ.す",
+   "おさ.える",
+   "お.さえる"
+  ],
+  "hanViet": [
+   "ÁP"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "áp lực; ép",
+   "en": "pressure; push; overwhelm"
+  },
+  "strokeCount": 5,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "熱",
+  "on": [
+   "ネツ"
+  ],
+  "kun": [
+   "あつ.い"
+  ],
+  "hanViet": [
+   "NHIỆT"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "nóng; sốt",
+   "en": "heat; temperature; fever"
+  },
+  "strokeCount": 15,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "薬",
+  "on": [
+   "ヤク"
+  ],
+  "kun": [
+   "くすり"
+  ],
+  "hanViet": [
+   "DƯỢC"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "thuốc",
+   "en": "medicine; chemical; enamel"
+  },
+  "strokeCount": 16,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "痛",
+  "on": [
+   "ツウ"
+  ],
+  "kun": [
+   "いた.い",
+   "いた.む",
+   "いた.ましい",
+   "いた.める"
+  ],
+  "hanViet": [
+   "THỐNG"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "đau",
+   "en": "pain; hurt; damage"
+  },
+  "strokeCount": 12,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "着",
+  "on": [
+   "チャク",
+   "ジャク"
+  ],
+  "kun": [
+   "き.る",
+   "き.せる",
+   "つ.く",
+   "つ.ける"
+  ],
+  "hanViet": [
+   "TRƯỚC"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "mặc; đến nơi",
+   "en": "don; arrive; wear"
+  },
+  "strokeCount": 12,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "記",
+  "on": [
+   "キ"
+  ],
+  "kun": [
+   "しる.す"
+  ],
+  "hanViet": [
+   "KÝ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "ghi chép",
+   "en": "scribe; account; narrative"
+  },
+  "strokeCount": 10,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "録",
+  "on": [
+   "ロク"
+  ],
+  "kun": [
+   "しる.す",
+   "と.る"
+  ],
+  "hanViet": [
+   "LỤC"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "ghi lại",
+   "en": "record"
+  },
+  "strokeCount": 16,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "夜",
+  "on": [
+   "ヤ"
+  ],
+  "kun": [
+   "よ",
+   "よる"
+  ],
+  "hanViet": [
+   "DẠ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "đêm",
+   "en": "night; evening"
+  },
+  "strokeCount": 8,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "勤",
+  "on": [
+   "キン",
+   "ゴン"
+  ],
+  "kun": [
+   "つと.める",
+   "-づと.め",
+   "つと.まる",
+   "いそ.しむ"
+  ],
+  "hanViet": [
+   "CẦN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "làm việc; chăm chỉ",
+   "en": "diligence; become employed; serve"
+  },
+  "strokeCount": 12,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "看",
+  "on": [
+   "カン"
+  ],
+  "kun": [
+   "み.る"
+  ],
+  "hanViet": [
+   "KHÁN"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "trông nom; nhìn",
+   "en": "watch over; see"
+  },
+  "strokeCount": 9,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ },
+ {
+  "char": "師",
+  "on": [
+   "シ"
+  ],
+  "kun": [
+   "いくさ"
+  ],
+  "hanViet": [
+   "SƯ"
+  ],
+  "hanVietReviewed": false,
+  "meanings": {
+   "vi": "thầy; người chuyên môn",
+   "en": "expert; teacher; master"
+  },
+  "strokeCount": 10,
+  "jlpt": null,
+  "lessonId": null,
+  "sectors": [
+   "kaigo"
+  ]
+ }
+]

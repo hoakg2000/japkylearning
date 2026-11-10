@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Fragment } from 'react';
 import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locale as rootLocale } from 'next/root-params';
@@ -9,12 +10,12 @@ import { WordCard } from '@/components/word/word-card';
 import { wordLabels } from '@/components/word/labels';
 import { EmbedCode } from '@/components/embed-code';
 import { Link } from '@/i18n/navigation';
-import { getKanji, getLesson, kanjiList, wordsWithKanji } from '@/lib/content/n5';
+import { allKanji, getKanji, getLesson, packsWithKanji, wordsWithKanji } from '@/lib/content/n5';
 import { getStrokes } from '@/lib/content/strokes';
 import { alternates } from '@/lib/seo';
 
 export function generateStaticParams() {
-  return kanjiList.map((k) => ({ char: k.char }));
+  return allKanji.map((k) => ({ char: k.char }));
 }
 
 async function load(params: Promise<{ char: string }>) {
@@ -43,7 +44,7 @@ export default async function KanjiPage({ params }: PageProps<'/[locale]/kanji/[
   const lesson = k.lessonId ? getLesson(k.lessonId) : undefined;
   return (
     <article className="space-y-8">
-      <JsonLd data={{ '@context': 'https://schema.org', '@type': 'DefinedTerm', name: k.char, description: k.meanings[locale], inDefinedTermSet: 'JLPT N5 kanji' }} />
+      <JsonLd data={{ '@context': 'https://schema.org', '@type': 'DefinedTerm', name: k.char, description: k.meanings[locale], inDefinedTermSet: k.jlpt ? `JLPT ${k.jlpt.toUpperCase()} kanji` : 'Japky kanji' }} />
       <header className="flex flex-wrap items-start gap-6">
         <StrokeOrder char={k.char} strokes={strokes} size={180} />
         <div className="space-y-2">
@@ -58,7 +59,13 @@ export default async function KanjiPage({ params }: PageProps<'/[locale]/kanji/[
             <dt className="text-muted">{t('strokesLabel')}</dt>
             <dd>{k.strokeCount}</dd>
             <dt className="text-muted">JLPT</dt>
-            <dd>N5</dd>
+            <dd>{k.jlpt?.toUpperCase() ?? '—'}</dd>
+            {packsWithKanji(k.char).map((p) => (
+              <Fragment key={p.id}>
+                <dt className="text-muted">{t('pack')}</dt>
+                <dd><Link href={`/packs/${p.id}`} className="underline">{p.title[locale]}</Link></dd>
+              </Fragment>
+            ))}
             {lesson && (
               <>
                 <dt className="text-muted">{t('lesson')}</dt>

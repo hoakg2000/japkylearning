@@ -1,12 +1,12 @@
 import { notFound } from 'next/navigation';
 import { StrokeSvg } from '@/components/stroke-svg';
-import { getKanji, kanjiList } from '@/lib/content/n5';
+import { allKanji, getKanji } from '@/lib/content/n5';
 import { getStrokes } from '@/lib/content/strokes';
 
 // Static and cookie-free so other sites can embed it (ADR 0013 frame-ancestors * on /embed).
 
 export function generateStaticParams() {
-  return kanjiList.map((k) => ({ char: k.char }));
+  return allKanji.map((k) => ({ char: k.char }));
 }
 
 export default async function KanjiEmbed({ params }: { params: Promise<{ char: string }> }) {

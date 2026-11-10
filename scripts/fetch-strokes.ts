@@ -8,7 +8,7 @@ const OUT = 'public/strokes';
 
 function charsFor(kind: string): string[] {
   if (kind === 'kanji') {
-    const kanji: { char: string }[] = JSON.parse(readFileSync('content/levels/n5/kanji.json', 'utf8'));
+    const kanji: { char: string }[] = ['content/levels/n5/kanji.json', 'content/packs/kanji.json'].flatMap((f) => JSON.parse(readFileSync(f, 'utf8')));
     return kanji.map((k) => k.char);
   }
   const kana = [

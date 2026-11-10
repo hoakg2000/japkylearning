@@ -1,0 +1,2203 @@
+[
+ {
+  "id": "jmdict-1198060",
+  "surface": "介護",
+  "reading": "かいご",
+  "romaji": "kaigo",
+  "segments": [
+   {
+    "surface": "介",
+    "reading": "かい"
+   },
+   {
+    "surface": "護",
+    "reading": "ご"
+   }
+  ],
+  "hanViet": "GIỚI HỘ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "chăm sóc, điều dưỡng (người già, người khuyết tật)",
+   "en": "nursing care; caregiving"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "祖母の介護をしています。",
+    "segments": [
+     {
+      "surface": "祖母",
+      "reading": "そぼ"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "介護",
+      "reading": "かいご"
+     },
+     {
+      "surface": "をしています。"
+     }
+    ],
+    "romaji": "sobo no kaigo o shite imasu.",
+    "translation": {
+     "vi": "Tôi đang chăm sóc bà.",
+     "en": "I am caring for my grandmother."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "japky-kaigoshi",
+  "surface": "介護士",
+  "reading": "かいごし",
+  "romaji": "kaigoshi",
+  "segments": [
+   {
+    "surface": "介",
+    "reading": "かい"
+   },
+   {
+    "surface": "護",
+    "reading": "ご"
+   },
+   {
+    "surface": "士",
+    "reading": "し"
+   }
+  ],
+  "hanViet": "GIỚI HỘ SĨ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [],
+  "meanings": {
+   "vi": "nhân viên điều dưỡng (kaigo)",
+   "en": "care worker"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "私は介護士になりたいです。",
+    "segments": [
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "介護士",
+      "reading": "かいごし"
+     },
+     {
+      "surface": "になりたいです。"
+     }
+    ],
+    "romaji": "watashi wa kaigoshi ni naritai desu.",
+    "translation": {
+     "vi": "Tôi muốn trở thành nhân viên điều dưỡng.",
+     "en": "I want to become a care worker."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1928100",
+  "surface": "看護師",
+  "reading": "かんごし",
+  "romaji": "kangoshi",
+  "segments": [
+   {
+    "surface": "看",
+    "reading": "かん"
+   },
+   {
+    "surface": "護",
+    "reading": "ご"
+   },
+   {
+    "surface": "師",
+    "reading": "し"
+   }
+  ],
+  "hanViet": "KHÁN HỘ SƯ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "y tá",
+   "en": "nurse"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "熱があるときは看護師に言ってください。",
+    "segments": [
+     {
+      "surface": "熱",
+      "reading": "ねつ"
+     },
+     {
+      "surface": "があるときは"
+     },
+     {
+      "surface": "看護師",
+      "reading": "かんごし"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "言",
+      "reading": "い"
+     },
+     {
+      "surface": "ってください。"
+     }
+    ],
+    "romaji": "netsu ga aru toki wa kangoshi ni itte kudasai.",
+    "translation": {
+     "vi": "Khi bị sốt hãy báo cho y tá.",
+     "en": "Tell the nurse when there is a fever."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1549670",
+  "surface": "利用者",
+  "reading": "りようしゃ",
+  "romaji": "riyousha",
+  "segments": [
+   {
+    "surface": "利",
+    "reading": "り"
+   },
+   {
+    "surface": "用",
+    "reading": "よう"
+   },
+   {
+    "surface": "者",
+    "reading": "しゃ"
+   }
+  ],
+  "hanViet": "LỢI DỤNG GIẢ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "người sử dụng dịch vụ (người được chăm sóc)",
+   "en": "service user (person receiving care)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "利用者さんと話します。",
+    "segments": [
+     {
+      "surface": "利用者",
+      "reading": "りようしゃ"
+     },
+     {
+      "surface": "さんと"
+     },
+     {
+      "surface": "話",
+      "reading": "はな"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "riyousha san to hanashimasu.",
+    "translation": {
+     "vi": "Tôi nói chuyện với người được chăm sóc.",
+     "en": "I talk with the service user."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1310410",
+  "surface": "施設",
+  "reading": "しせつ",
+  "romaji": "shisetsu",
+  "segments": [
+   {
+    "surface": "施",
+    "reading": "し"
+   },
+   {
+    "surface": "設",
+    "reading": "せつ"
+   }
+  ],
+  "hanViet": "THI THIẾT",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "cơ sở (viện dưỡng lão)",
+   "en": "facility; care home"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "この施設には五十人います。",
+    "segments": [
+     {
+      "surface": "この"
+     },
+     {
+      "surface": "施設",
+      "reading": "しせつ"
+     },
+     {
+      "surface": "には"
+     },
+     {
+      "surface": "五十人",
+      "reading": "ごじゅうにん"
+     },
+     {
+      "surface": "います。"
+     }
+    ],
+    "romaji": "kono shisetsu ni wa gojuunin imasu.",
+    "translation": {
+     "vi": "Cơ sở này có năm mươi người.",
+     "en": "There are fifty people in this facility."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1536650",
+  "surface": "夜勤",
+  "reading": "やきん",
+  "romaji": "yakin",
+  "segments": [
+   {
+    "surface": "夜",
+    "reading": "や"
+   },
+   {
+    "surface": "勤",
+    "reading": "きん"
+   }
+  ],
+  "hanViet": "DẠ CẦN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "ca đêm",
+   "en": "night shift"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "今日は夜勤です。",
+    "segments": [
+     {
+      "surface": "今日",
+      "reading": "きょう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "夜勤",
+      "reading": "やきん"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "kyou wa yakin desu.",
+    "translation": {
+     "vi": "Hôm nay tôi làm ca đêm.",
+     "en": "I am on the night shift today."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1223440",
+  "surface": "記録",
+  "reading": "きろく",
+  "romaji": "kiroku",
+  "segments": [
+   {
+    "surface": "記",
+    "reading": "き"
+   },
+   {
+    "surface": "録",
+    "reading": "ろく"
+   }
+  ],
+  "hanViet": "KÍ LỤC",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "ghi chép, hồ sơ",
+   "en": "record; log"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "食事の量を記録します。",
+    "segments": [
+     {
+      "surface": "食事",
+      "reading": "しょくじ"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "量",
+      "reading": "りょう"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "記録",
+      "reading": "きろく"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "shokuji no ryou o kiroku shimasu.",
+    "translation": {
+     "vi": "Tôi ghi lại lượng ăn.",
+     "en": "I record how much was eaten."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "japky-moushiokuri",
+  "surface": "申し送り",
+  "reading": "もうしおくり",
+  "romaji": "moushiokuri",
+  "segments": [
+   {
+    "surface": "申",
+    "reading": "もう"
+   },
+   {
+    "surface": "し"
+   },
+   {
+    "surface": "送",
+    "reading": "おく"
+   },
+   {
+    "surface": "り"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [],
+  "meanings": {
+   "vi": "bàn giao ca",
+   "en": "shift handover"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "朝九時に申し送りがあります。",
+    "segments": [
+     {
+      "surface": "朝",
+      "reading": "あさ"
+     },
+     {
+      "surface": "九時",
+      "reading": "くじ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "申",
+      "reading": "もう"
+     },
+     {
+      "surface": "し"
+     },
+     {
+      "surface": "送",
+      "reading": "おく"
+     },
+     {
+      "surface": "りがあります。"
+     }
+    ],
+    "romaji": "asa kuji ni moushiokuri ga arimasu.",
+    "translation": {
+     "vi": "Chín giờ sáng có bàn giao ca.",
+     "en": "There is a handover at nine in the morning."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1153930",
+  "surface": "安全",
+  "reading": "あんぜん",
+  "romaji": "anzen",
+  "segments": [
+   {
+    "surface": "安",
+    "reading": "あん"
+   },
+   {
+    "surface": "全",
+    "reading": "ぜん"
+   }
+  ],
+  "hanViet": "AN TOÀN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "adj-na"
+  ],
+  "meanings": {
+   "vi": "an toàn",
+   "en": "safety; safe"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "安全に気をつけてください。",
+    "segments": [
+     {
+      "surface": "安全",
+      "reading": "あんぜん"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "気",
+      "reading": "き"
+     },
+     {
+      "surface": "をつけてください。"
+     }
+    ],
+    "romaji": "anzen ni kiwo tsukete kudasai.",
+    "translation": {
+     "vi": "Hãy chú ý an toàn.",
+     "en": "Please be careful about safety."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1426530",
+  "surface": "注意",
+  "reading": "ちゅうい",
+  "romaji": "chuui",
+  "segments": [
+   {
+    "surface": "注",
+    "reading": "ちゅう"
+   },
+   {
+    "surface": "意",
+    "reading": "い"
+   }
+  ],
+  "hanViet": "CHÚ Ý",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "chú ý, cẩn thận",
+   "en": "caution; care"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "床が滑るので注意してください。",
+    "segments": [
+     {
+      "surface": "床",
+      "reading": "ゆか"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "滑",
+      "reading": "すべ"
+     },
+     {
+      "surface": "るので"
+     },
+     {
+      "surface": "注意",
+      "reading": "ちゅうい"
+     },
+     {
+      "surface": "してください。"
+     }
+    ],
+    "romaji": "yuka ga suberu node chuui shite kudasai.",
+    "translation": {
+     "vi": "Sàn trơn nên hãy cẩn thận.",
+     "en": "The floor is slippery, so please be careful."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1358490",
+  "surface": "食事",
+  "reading": "しょくじ",
+  "romaji": "shokuji",
+  "segments": [
+   {
+    "surface": "食",
+    "reading": "しょく"
+   },
+   {
+    "surface": "事",
+    "reading": "じ"
+   }
+  ],
+  "hanViet": "THỰC SỰ",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "bữa ăn",
+   "en": "meal"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "食事の時間ですよ。",
+    "segments": [
+     {
+      "surface": "食事",
+      "reading": "しょくじ"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "時間",
+      "reading": "じかん"
+     },
+     {
+      "surface": "ですよ。"
+     }
+    ],
+    "romaji": "shokuji no jikan desu yo.",
+    "translation": {
+     "vi": "Đến giờ ăn rồi ạ.",
+     "en": "It is mealtime."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1358660",
+  "surface": "食欲",
+  "reading": "しょくよく",
+  "romaji": "shokuyoku",
+  "segments": [
+   {
+    "surface": "食",
+    "reading": "しょく"
+   },
+   {
+    "surface": "欲",
+    "reading": "よく"
+   }
+  ],
+  "hanViet": "THỰC DỤC",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "cảm giác thèm ăn",
+   "en": "appetite"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "今日は食欲がありません。",
+    "segments": [
+     {
+      "surface": "今日",
+      "reading": "きょう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "食欲",
+      "reading": "しょくよく"
+     },
+     {
+      "surface": "がありません。"
+     }
+    ],
+    "romaji": "kyou wa shokuyoku ga arimasen.",
+    "translation": {
+     "vi": "Hôm nay không muốn ăn.",
+     "en": "There is no appetite today."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1372010",
+  "surface": "水分",
+  "reading": "すいぶん",
+  "romaji": "suibun",
+  "segments": [
+   {
+    "surface": "水",
+    "reading": "すい"
+   },
+   {
+    "surface": "分",
+    "reading": "ぶん"
+   }
+  ],
+  "hanViet": "THỦY PHÂN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "nước (lượng nước uống vào)",
+   "en": "fluids; water intake"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "水分をとりましょう。",
+    "segments": [
+     {
+      "surface": "水分",
+      "reading": "すいぶん"
+     },
+     {
+      "surface": "をとりましょう。"
+     }
+    ],
+    "romaji": "suibun o torimashou.",
+    "translation": {
+     "vi": "Hãy uống nước nhé.",
+     "en": "Let us have some fluids."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "japky-oyu",
+  "surface": "お湯",
+  "reading": "おゆ",
+  "romaji": "oyu",
+  "segments": [
+   {
+    "surface": "お"
+   },
+   {
+    "surface": "湯",
+    "reading": "ゆ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [],
+  "meanings": {
+   "vi": "nước nóng",
+   "en": "hot water"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "お湯の温度はどうですか。",
+    "segments": [
+     {
+      "surface": "お"
+     },
+     {
+      "surface": "湯",
+      "reading": "ゆ"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "温度",
+      "reading": "おんど"
+     },
+     {
+      "surface": "はどうですか。"
+     }
+    ],
+    "romaji": "oyu no ondo wa dou desuka.",
+    "translation": {
+     "vi": "Nhiệt độ nước có ổn không ạ?",
+     "en": "How is the water temperature?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1029760",
+  "surface": "エプロン",
+  "reading": "エプロン",
+  "romaji": "epuron",
+  "segments": [
+   {
+    "surface": "エプロン"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "tạp dề, yếm ăn",
+   "en": "apron; bib"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "食事のまえにエプロンをつけます。",
+    "segments": [
+     {
+      "surface": "食事",
+      "reading": "しょくじ"
+     },
+     {
+      "surface": "のまえにエプロンをつけます。"
+     }
+    ],
+    "romaji": "shokuji no mae ni epuron o tsukemasu.",
+    "translation": {
+     "vi": "Đeo yếm trước khi ăn.",
+     "en": "We put on a bib before the meal."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1466820",
+  "surface": "入浴",
+  "reading": "にゅうよく",
+  "romaji": "nyuuyoku",
+  "segments": [
+   {
+    "surface": "入",
+    "reading": "にゅう"
+   },
+   {
+    "surface": "浴",
+    "reading": "よく"
+   }
+  ],
+  "hanViet": "NHẬP DỤC",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "tắm (bồn)",
+   "en": "bathing"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "入浴は午後二時からです。",
+    "segments": [
+     {
+      "surface": "入浴",
+      "reading": "にゅうよく"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "午後",
+      "reading": "ごご"
+     },
+     {
+      "surface": "二時",
+      "reading": "にじ"
+     },
+     {
+      "surface": "からです。"
+     }
+    ],
+    "romaji": "nyuuyoku wa gogo niji kara desu.",
+    "translation": {
+     "vi": "Giờ tắm bắt đầu từ hai giờ chiều.",
+     "en": "Bathing starts at two in the afternoon."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "japky-haisetsu",
+  "surface": "排泄",
+  "reading": "はいせつ",
+  "romaji": "haisetsu",
+  "segments": [
+   {
+    "surface": "排",
+    "reading": "はい"
+   },
+   {
+    "surface": "泄",
+    "reading": "せつ"
+   }
+  ],
+  "hanViet": "BÀI TIẾT",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [],
+  "meanings": {
+   "vi": "bài tiết (đi vệ sinh)",
+   "en": "excretion; toileting"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "排泄の介助をします。",
+    "segments": [
+     {
+      "surface": "排泄",
+      "reading": "はいせつ"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "介助",
+      "reading": "かいじょ"
+     },
+     {
+      "surface": "をします。"
+     }
+    ],
+    "romaji": "haisetsu no kaijo o shimasu.",
+    "translation": {
+     "vi": "Tôi hỗ trợ đi vệ sinh.",
+     "en": "I help with toileting."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1270830",
+  "surface": "おむつ",
+  "reading": "おむつ",
+  "romaji": "omutsu",
+  "segments": [
+   {
+    "surface": "おむつ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "tã, bỉm",
+   "en": "diaper"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "おむつを替えますね。",
+    "segments": [
+     {
+      "surface": "おむつを"
+     },
+     {
+      "surface": "替",
+      "reading": "か"
+     },
+     {
+      "surface": "えますね。"
+     }
+    ],
+    "romaji": "omutsu o kaemasu ne.",
+    "translation": {
+     "vi": "Cháu thay tã cho bác nhé.",
+     "en": "I will change your diaper."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1423160",
+  "surface": "着替え",
+  "reading": "きがえ",
+  "romaji": "kigae",
+  "segments": [
+   {
+    "surface": "着",
+    "reading": "き"
+   },
+   {
+    "surface": "替",
+    "reading": "が"
+   },
+   {
+    "surface": "え"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "thay quần áo; quần áo để thay",
+   "en": "changing clothes; change of clothes"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "着替えを手伝います。",
+    "segments": [
+     {
+      "surface": "着替",
+      "reading": "きが"
+     },
+     {
+      "surface": "えを"
+     },
+     {
+      "surface": "手伝",
+      "reading": "てつだ"
+     },
+     {
+      "surface": "います。"
+     }
+    ],
+    "romaji": "kigae o tetsudaimasu.",
+    "translation": {
+     "vi": "Tôi giúp thay quần áo.",
+     "en": "I help with changing clothes."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1601040",
+  "surface": "歯磨き",
+  "reading": "はみがき",
+  "romaji": "hamigaki",
+  "segments": [
+   {
+    "surface": "歯",
+    "reading": "は"
+   },
+   {
+    "surface": "磨",
+    "reading": "みが"
+   },
+   {
+    "surface": "き"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "đánh răng",
+   "en": "brushing teeth"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "食事のあとで歯磨きをします。",
+    "segments": [
+     {
+      "surface": "食事",
+      "reading": "しょくじ"
+     },
+     {
+      "surface": "のあとで"
+     },
+     {
+      "surface": "歯磨",
+      "reading": "はみが"
+     },
+     {
+      "surface": "きをします。"
+     }
+    ],
+    "romaji": "shokuji no ato de hamigaki o shimasu.",
+    "translation": {
+     "vi": "Sau bữa ăn thì đánh răng.",
+     "en": "We brush our teeth after the meal."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1076170",
+  "surface": "タオル",
+  "reading": "タオル",
+  "romaji": "taoru",
+  "segments": [
+   {
+    "surface": "タオル"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "khăn",
+   "en": "towel"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "タオルで体を拭きます。",
+    "segments": [
+     {
+      "surface": "タオルで"
+     },
+     {
+      "surface": "体",
+      "reading": "からだ"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "拭",
+      "reading": "ふ"
+     },
+     {
+      "surface": "きます。"
+     }
+    ],
+    "romaji": "taoru de karada o fukimasu.",
+    "translation": {
+     "vi": "Lau người bằng khăn.",
+     "en": "I dry the body with a towel."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1357240",
+  "surface": "拭く",
+  "reading": "ふく",
+  "romaji": "fuku",
+  "segments": [
+   {
+    "surface": "拭",
+    "reading": "ふ"
+   },
+   {
+    "surface": "く"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "v5k",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "lau",
+   "en": "to wipe; to dry"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "テーブルを拭きます。",
+    "segments": [
+     {
+      "surface": "テーブルを"
+     },
+     {
+      "surface": "拭",
+      "reading": "ふ"
+     },
+     {
+      "surface": "きます。"
+     }
+    ],
+    "romaji": "teeburu o fukimasu.",
+    "translation": {
+     "vi": "Tôi lau bàn.",
+     "en": "I wipe the table."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1323090",
+  "surface": "車椅子",
+  "reading": "くるまいす",
+  "romaji": "kurumaisu",
+  "segments": [
+   {
+    "surface": "車",
+    "reading": "くるま"
+   },
+   {
+    "surface": "椅",
+    "reading": "い"
+   },
+   {
+    "surface": "子",
+    "reading": "す"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "xe lăn",
+   "en": "wheelchair"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "車椅子で散歩に行きましょう。",
+    "segments": [
+     {
+      "surface": "車椅子",
+      "reading": "くるまいす"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "散歩",
+      "reading": "さんぽ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "行",
+      "reading": "い"
+     },
+     {
+      "surface": "きましょう。"
+     }
+    ],
+    "romaji": "kurumaisu de sanpo ni ikimashou.",
+    "translation": {
+     "vi": "Mình đi dạo bằng xe lăn nhé.",
+     "en": "Let us go for a walk in the wheelchair."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1119650",
+  "surface": "ベッド",
+  "reading": "ベッド",
+  "romaji": "beddo",
+  "segments": [
+   {
+    "surface": "ベッド"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "giường",
+   "en": "bed"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "ベッドから起きましょう。",
+    "segments": [
+     {
+      "surface": "ベッドから"
+     },
+     {
+      "surface": "起",
+      "reading": "お"
+     },
+     {
+      "surface": "きましょう。"
+     }
+    ],
+    "romaji": "beddo kara okimashou.",
+    "translation": {
+     "vi": "Mình dậy khỏi giường nhé.",
+     "en": "Let us get up from the bed."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1598320",
+  "surface": "手すり",
+  "reading": "てすり",
+  "romaji": "tesuri",
+  "segments": [
+   {
+    "surface": "手",
+    "reading": "て"
+   },
+   {
+    "surface": "すり"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "tay vịn",
+   "en": "handrail"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "手すりを持ってください。",
+    "segments": [
+     {
+      "surface": "手",
+      "reading": "て"
+     },
+     {
+      "surface": "すりを"
+     },
+     {
+      "surface": "持",
+      "reading": "も"
+     },
+     {
+      "surface": "ってください。"
+     }
+    ],
+    "romaji": "tesuri o motte kudasai.",
+    "translation": {
+     "vi": "Bác hãy vịn vào tay vịn.",
+     "en": "Please hold the handrail."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1158400",
+  "surface": "移動",
+  "reading": "いどう",
+  "romaji": "idou",
+  "segments": [
+   {
+    "surface": "移",
+    "reading": "い"
+   },
+   {
+    "surface": "動",
+    "reading": "どう"
+   }
+  ],
+  "hanViet": "DI ĐỘNG",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vt",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "di chuyển",
+   "en": "moving; transfer"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "食堂へ移動します。",
+    "segments": [
+     {
+      "surface": "食堂",
+      "reading": "しょくどう"
+     },
+     {
+      "surface": "へ"
+     },
+     {
+      "surface": "移動",
+      "reading": "いどう"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "shokudou e idou shimasu.",
+    "translation": {
+     "vi": "Mình di chuyển đến phòng ăn.",
+     "en": "We move to the dining room."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1619700",
+  "surface": "転倒",
+  "reading": "てんとう",
+  "romaji": "tentou",
+  "segments": [
+   {
+    "surface": "転",
+    "reading": "てん"
+   },
+   {
+    "surface": "倒",
+    "reading": "とう"
+   }
+  ],
+  "hanViet": "CHUYỂN ĐẢO",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n",
+   "vs",
+   "vi"
+  ],
+  "meanings": {
+   "vi": "ngã, té",
+   "en": "fall; tumble"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "転倒に注意してください。",
+    "segments": [
+     {
+      "surface": "転倒",
+      "reading": "てんとう"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "注意",
+      "reading": "ちゅうい"
+     },
+     {
+      "surface": "してください。"
+     }
+    ],
+    "romaji": "tentou ni chuui shite kudasai.",
+    "translation": {
+     "vi": "Hãy cẩn thận kẻo ngã.",
+     "en": "Be careful not to fall."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1328190",
+  "surface": "手伝う",
+  "reading": "てつだう",
+  "romaji": "tetsudau",
+  "segments": [
+   {
+    "surface": "手伝",
+    "reading": "てつだ"
+   },
+   {
+    "surface": "う"
+   }
+  ],
+  "jukujikun": true,
+  "pos": [
+   "v5u",
+   "vt"
+  ],
+  "meanings": {
+   "vi": "giúp đỡ",
+   "en": "to help; to assist; to aid"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "何か手伝いましょうか。",
+    "segments": [
+     {
+      "surface": "何",
+      "reading": "なに"
+     },
+     {
+      "surface": "か"
+     },
+     {
+      "surface": "手伝",
+      "reading": "てつだ"
+     },
+     {
+      "surface": "いましょうか。"
+     }
+    ],
+    "romaji": "nani ka tetsudaimashou ka.",
+    "translation": {
+     "vi": "Cháu giúp gì được không ạ?",
+     "en": "Can I help with anything?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1258950",
+  "surface": "肩",
+  "reading": "かた",
+  "romaji": "kata",
+  "segments": [
+   {
+    "surface": "肩",
+    "reading": "かた"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "vai",
+   "en": "shoulder"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "肩をもみましょうか。",
+    "segments": [
+     {
+      "surface": "肩",
+      "reading": "かた"
+     },
+     {
+      "surface": "をもみましょうか。"
+     }
+    ],
+    "romaji": "kata o momimashou ka.",
+    "translation": {
+     "vi": "Cháu bóp vai cho bác nhé?",
+     "en": "Shall I massage your shoulders?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1472800",
+  "surface": "背中",
+  "reading": "せなか",
+  "romaji": "senaka",
+  "segments": [
+   {
+    "surface": "背",
+    "reading": "せ"
+   },
+   {
+    "surface": "中",
+    "reading": "なか"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "lưng",
+   "en": "back (of the body)"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "背中を洗います。",
+    "segments": [
+     {
+      "surface": "背中",
+      "reading": "せなか"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "洗",
+      "reading": "あら"
+     },
+     {
+      "surface": "います。"
+     }
+    ],
+    "romaji": "senaka o araimasu.",
+    "translation": {
+     "vi": "Cháu rửa lưng cho bác.",
+     "en": "I will wash your back."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1288340",
+  "surface": "腰",
+  "reading": "こし",
+  "romaji": "koshi",
+  "segments": [
+   {
+    "surface": "腰",
+    "reading": "こし"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "thắt lưng, hông",
+   "en": "lower back; hips"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "腰が痛いです。",
+    "segments": [
+     {
+      "surface": "腰",
+      "reading": "こし"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "痛",
+      "reading": "いた"
+     },
+     {
+      "surface": "いです。"
+     }
+    ],
+    "romaji": "koshi ga itai desu.",
+    "translation": {
+     "vi": "Tôi đau lưng (thắt lưng).",
+     "en": "My lower back hurts."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1409250",
+  "surface": "体温",
+  "reading": "たいおん",
+  "romaji": "taion",
+  "segments": [
+   {
+    "surface": "体",
+    "reading": "たい"
+   },
+   {
+    "surface": "温",
+    "reading": "おん"
+   }
+  ],
+  "hanViet": "THỂ ÔN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "thân nhiệt",
+   "en": "body temperature"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "朝体温を測ります。",
+    "segments": [
+     {
+      "surface": "朝",
+      "reading": "あさ"
+     },
+     {
+      "surface": "体温",
+      "reading": "たいおん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "測",
+      "reading": "はか"
+     },
+     {
+      "surface": "ります。"
+     }
+    ],
+    "romaji": "asa taion o hakarimasu.",
+    "translation": {
+     "vi": "Buổi sáng đo thân nhiệt.",
+     "en": "We take the temperature in the morning."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1255110",
+  "surface": "血圧",
+  "reading": "けつあつ",
+  "romaji": "ketsuatsu",
+  "segments": [
+   {
+    "surface": "血",
+    "reading": "けつ"
+   },
+   {
+    "surface": "圧",
+    "reading": "あつ"
+   }
+  ],
+  "hanViet": "HUYẾT ÁP",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "huyết áp",
+   "en": "blood pressure"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "血圧を測りましょう。",
+    "segments": [
+     {
+      "surface": "血圧",
+      "reading": "けつあつ"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "測",
+      "reading": "はか"
+     },
+     {
+      "surface": "りましょう。"
+     }
+    ],
+    "romaji": "ketsuatsu o hakarimashou.",
+    "translation": {
+     "vi": "Mình đo huyết áp nhé.",
+     "en": "Let us measure your blood pressure."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1467710",
+  "surface": "熱",
+  "reading": "ねつ",
+  "romaji": "netsu",
+  "segments": [
+   {
+    "surface": "熱",
+    "reading": "ねつ"
+   }
+  ],
+  "hanViet": "NHIỆT",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "sốt; nhiệt",
+   "en": "fever; heat"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "少し熱があります。",
+    "segments": [
+     {
+      "surface": "少",
+      "reading": "すこ"
+     },
+     {
+      "surface": "し"
+     },
+     {
+      "surface": "熱",
+      "reading": "ねつ"
+     },
+     {
+      "surface": "があります。"
+     }
+    ],
+    "romaji": "sukoshi netsu ga arimasu.",
+    "translation": {
+     "vi": "Bác hơi sốt.",
+     "en": "You have a slight fever."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1222590",
+  "surface": "気分",
+  "reading": "きぶん",
+  "romaji": "kibun",
+  "segments": [
+   {
+    "surface": "気",
+    "reading": "き"
+   },
+   {
+    "surface": "分",
+    "reading": "ぶん"
+   }
+  ],
+  "hanViet": "KHÍ PHÂN",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "cảm giác trong người, tâm trạng",
+   "en": "feeling; mood"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "気分はどうですか。",
+    "segments": [
+     {
+      "surface": "気分",
+      "reading": "きぶん"
+     },
+     {
+      "surface": "はどうですか。"
+     }
+    ],
+    "romaji": "kibun wa dou desuka.",
+    "translation": {
+     "vi": "Bác thấy trong người thế nào ạ?",
+     "en": "How are you feeling?"
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-2083580",
+  "surface": "認知症",
+  "reading": "にんちしょう",
+  "romaji": "ninchishou",
+  "segments": [
+   {
+    "surface": "認",
+    "reading": "にん"
+   },
+   {
+    "surface": "知",
+    "reading": "ち"
+   },
+   {
+    "surface": "症",
+    "reading": "しょう"
+   }
+  ],
+  "hanViet": "NHẬN TRI CHỨNG",
+  "hanVietSource": "onyomi-join",
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "chứng sa sút trí tuệ",
+   "en": "dementia"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "認知症の方にはゆっくり話します。",
+    "segments": [
+     {
+      "surface": "認知症",
+      "reading": "にんちしょう"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "方",
+      "reading": "かた"
+     },
+     {
+      "surface": "にはゆっくり"
+     },
+     {
+      "surface": "話",
+      "reading": "はな"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "ninchishou no kata ni wa yukkuri hanashimasu.",
+    "translation": {
+     "vi": "Với người bị sa sút trí tuệ thì nói chậm rãi.",
+     "en": "Speak slowly with people who have dementia."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1380440",
+  "surface": "声",
+  "reading": "こえ",
+  "romaji": "koe",
+  "segments": [
+   {
+    "surface": "声",
+    "reading": "こえ"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "n"
+  ],
+  "meanings": {
+   "vi": "giọng, tiếng nói",
+   "en": "voice"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "大きい声で話してください。",
+    "segments": [
+     {
+      "surface": "大",
+      "reading": "おお"
+     },
+     {
+      "surface": "きい"
+     },
+     {
+      "surface": "声",
+      "reading": "こえ"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "話",
+      "reading": "はな"
+     },
+     {
+      "surface": "してください。"
+     }
+    ],
+    "romaji": "ookii koe de hanashite kudasai.",
+    "translation": {
+     "vi": "Hãy nói to lên.",
+     "en": "Please speak loudly."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ },
+ {
+  "id": "jmdict-1013050",
+  "surface": "ゆっくり",
+  "reading": "ゆっくり",
+  "romaji": "yukkuri",
+  "segments": [
+   {
+    "surface": "ゆっくり"
+   }
+  ],
+  "jukujikun": false,
+  "pos": [
+   "adv",
+   "adv-to",
+   "vs"
+  ],
+  "meanings": {
+   "vi": "chậm rãi, thong thả",
+   "en": "slowly"
+  },
+  "meaningsViReviewed": false,
+  "examples": [
+   {
+    "ja": "ゆっくり食べてください。",
+    "segments": [
+     {
+      "surface": "ゆっくり"
+     },
+     {
+      "surface": "食",
+      "reading": "た"
+     },
+     {
+      "surface": "べてください。"
+     }
+    ],
+    "romaji": "yukkuri tabete kudasai.",
+    "translation": {
+     "vi": "Bác ăn từ từ thôi ạ.",
+     "en": "Please eat slowly."
+    },
+    "source": "japky"
+   }
+  ],
+  "jlpt": null,
+  "tags": [
+   "pack:kaigo"
+  ]
+ }
+]
