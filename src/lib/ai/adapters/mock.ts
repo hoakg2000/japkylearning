@@ -1,5 +1,5 @@
 import type { z } from 'zod';
-import { AiUnavailableError, type AiProvider, type AiResult, type ObjectInput, type TextInput } from '../types';
+import { AiUnavailableError, type AiProvider, type AiResult, type AiUsage, type ObjectInput, type TextInput } from '../types';
 
 /**
  * Deterministic provider for dev, tests, CI and previews (ADR 0010, never calls the network).
@@ -19,6 +19,21 @@ export class MockProvider implements AiProvider {
     const fixture = mockFixtures[input.name];
     if (!fixture) throw new AiUnavailableError('MOCK');
     return this.result(fixture as z.infer<T>);
+  }
+
+  /** Canned demo answer in small chunks, so the streaming path is exercised without a model. */
+  async *streamText(input: TextInput & { signal?: AbortSignal }): AsyncGenerator<string, AiUsage> {
+    const vi = input.messages[0]?.content.includes('Vietnamese');
+    const text = vi
+      ? 'Đây là câu trả lời mẫu (demo), chưa phải gia sư thật. Ví dụ mẫu câu 〜は〜です: {私|わたし} は {学生|がくせい} です。 = Tôi là học sinh.'
+      : 'This is a demo answer, not a real tutor yet. Example of 〜は〜です: {私|わたし} は {学生|がくせい} です。 = I am a student.';
+    const chars = Array.from(text);
+    for (let i = 0; i < chars.length; i += 12) {
+      const chunk = chars.slice(i, i + 12).join('');
+      if (input.signal?.aborted) break;
+      yield chunk;
+    }
+    return { tokensIn: 0, tokensOut: 0, costUsd: 0 };
   }
 
   private result<V>(value: V): AiResult<V> {

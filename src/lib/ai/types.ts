@@ -9,7 +9,8 @@ export type ChatMessage = { role: 'system' | 'user' | 'assistant'; content: stri
 export type TextInput = { mode: AiMode; messages: ChatMessage[]; maxOutputTokens?: number };
 export type ObjectInput<T extends z.ZodType> = { mode: AiMode; messages: ChatMessage[]; schema: T; name: string; maxOutputTokens?: number };
 
-export type AiResult<T> = { value: T; provider: string; model: string; tokensIn: number; tokensOut: number; costUsd: number };
+export type AiUsage = { tokensIn: number; tokensOut: number; costUsd: number };
+export type AiResult<T> = { value: T; provider: string; model: string } & AiUsage;
 
 /**
  * Provider-agnostic interface (ADR 0010). Feature code only talks to this.
@@ -20,6 +21,8 @@ export interface AiProvider {
   readonly model: string;
   generateText(input: TextInput): Promise<AiResult<string>>;
   generateObject<T extends z.ZodType>(input: ObjectInput<T>): Promise<AiResult<z.infer<T>>>;
+  /** Text chunks as they arrive; the generator's return value is the usage. Used by the chat tutor (F8). */
+  streamText(input: TextInput & { signal?: AbortSignal }): AsyncGenerator<string, AiUsage>;
 }
 
 export class AiUnavailableError extends Error {

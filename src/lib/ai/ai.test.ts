@@ -110,6 +110,7 @@ describe('generateQuiz retry policy', () => {
       id: 'fake',
       model: 'm',
       generateText: async () => { throw new Error('unused'); },
+      streamText: async function* () { throw new Error('unused'); },
       generateObject: async <T extends z.ZodType>(input: { schema: T }) => {
         const r = responses[Math.min(i++, responses.length - 1)]();
         if (r instanceof Error) throw r;

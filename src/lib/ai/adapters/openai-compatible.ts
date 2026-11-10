@@ -1,5 +1,5 @@
 import type { z } from 'zod';
-import { AiInvalidOutputError, AiUnavailableError, type AiProvider, type AiResult, type ObjectInput, type TextInput } from '../types';
+import { AiInvalidOutputError, AiUnavailableError, type AiProvider, type AiResult, type AiUsage, type ObjectInput, type TextInput } from '../types';
 
 /** Presets: only the base URL and env var name. Keys are read from env, never stored in the DB (ADR 0010). */
 export const PRESETS = {
@@ -61,6 +61,38 @@ export class OpenAiCompatibleProvider implements AiProvider {
     };
   }
 
+  async *streamText(input: TextInput & { signal?: AbortSignal }): AsyncGenerator<string, AiUsage> {
+    const res = await this.fetchImpl(`${PRESETS[this.preset].baseUrl}/chat/completions`, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json', authorization: `Bearer ${this.key()}` },
+      body: JSON.stringify({
+        model: this.model,
+        messages: input.messages,
+        max_tokens: input.maxOutputTokens ?? 500,
+        temperature: 0.4,
+        stream: true,
+        stream_options: { include_usage: true },
+      }),
+      signal: input.signal ? AbortSignal.any([input.signal, AbortSignal.timeout(60_000)]) : AbortSignal.timeout(60_000),
+    });
+    if (!res.ok || !res.body) throw new AiUnavailableError(`HTTP_${res.status}`);
+    const usage: AiUsage = { tokensIn: 0, tokensOut: 0, costUsd: 0 };
+    let buffer = '';
+    const decoder = new TextDecoder();
+    for await (const bytes of res.body as unknown as AsyncIterable<Uint8Array>) {
+      buffer += decoder.decode(bytes, { stream: true });
+      const { events, rest } = splitSse(buffer);
+      buffer = rest;
+      for (const data of events) {
+        if (data === '[DONE]') return usage;
+        const chunk = parseChunk(data);
+        if (chunk.usage) Object.assign(usage, chunk.usage);
+        if (chunk.text) yield chunk.text;
+      }
+    }
+    return usage;
+  }
+
   generateText(input: TextInput): Promise<AiResult<string>> {
     return this.chat(input.messages, input.maxOutputTokens ?? 400, false);
   }
@@ -76,5 +108,33 @@ export class OpenAiCompatibleProvider implements AiProvider {
     const checked = input.schema.safeParse(parsed);
     if (!checked.success) throw new AiInvalidOutputError('SCHEMA');
     return { ...r, value: checked.data };
+  }
+}
+
+/** Splits a Server-Sent Events buffer into complete `data:` payloads and the unfinished rest. */
+export function splitSse(buffer: string): { events: string[]; rest: string } {
+  const blocks = buffer.replace(/\r\n/g, '\n').split('\n\n');
+  const rest = blocks.pop() ?? '';
+  const events = blocks.flatMap((b) =>
+    b
+      .split('\n')
+      .filter((l) => l.startsWith('data:'))
+      .map((l) => l.slice(5).trim()),
+  );
+  return { events, rest };
+}
+
+type StreamChunk = { choices?: { delta?: { content?: string } }[]; usage?: { prompt_tokens: number; completion_tokens: number } };
+
+/** Text delta and usage from one Chat Completions stream chunk; malformed chunks are ignored. */
+export function parseChunk(data: string): { text?: string; usage?: Pick<AiUsage, 'tokensIn' | 'tokensOut'> } {
+  try {
+    const c = JSON.parse(data) as StreamChunk;
+    return {
+      text: c.choices?.[0]?.delta?.content || undefined,
+      usage: c.usage ? { tokensIn: c.usage.prompt_tokens, tokensOut: c.usage.completion_tokens } : undefined,
+    };
+  } catch {
+    return {};
   }
 }

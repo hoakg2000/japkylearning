@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, useTransition } from 'react';
-import { saveAiSettings, setKillSwitch, setVoiceEnabled } from '@/app/[locale]/admin/actions';
+import { saveAiSettings, setChatEnabled, setKillSwitch, setVoiceEnabled } from '@/app/[locale]/admin/actions';
 import type { AiMode } from '@/lib/ai/types';
 
 type Choice = { adapter: 'mock' | 'openai-compatible' | 'gateway'; preset?: string; model?: string };
@@ -13,11 +13,13 @@ export function AdminControls(props: {
   presets: Preset[];
   keys: Record<string, boolean>;
   killSwitch: boolean;
+  chatEnabled: boolean;
   voices: { id: string; label: string; enabled: boolean }[];
 }) {
   const t = useTranslations('Admin');
   const [rows, setRows] = useState(props.modes);
   const [kill, setKill] = useState(props.killSwitch);
+  const [chat, setChat] = useState(props.chatEnabled);
   const [msg, setMsg] = useState<string | null>(null);
   const [pending, start] = useTransition();
 
@@ -41,6 +43,10 @@ export function AdminControls(props: {
         <label className="flex items-center gap-2 text-sm">
           <input type="checkbox" checked={kill} onChange={(e) => { setKill(e.target.checked); run(() => setKillSwitch(e.target.checked), t('saved')); }} />
           {t('killSwitch')}
+        </label>
+        <label className="flex items-center gap-2 text-sm">
+          <input type="checkbox" checked={chat} onChange={(e) => { setChat(e.target.checked); run(() => setChatEnabled(e.target.checked), t('saved')); }} />
+          {t('chatEnabled')}
         </label>
         <table className="w-full text-sm">
           <thead className="text-left text-muted"><tr><th>{t('mode')}</th><th>{t('adapter')}</th><th>{t('preset')}</th><th>{t('model')}</th></tr></thead>

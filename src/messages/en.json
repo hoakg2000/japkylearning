@@ -493,7 +493,8 @@
     "usageToday": "AI usage today",
     "requests": "Requests",
     "none": "None yet",
-    "audit": "Change log (latest 30)"
+    "audit": "Change log (latest 30)",
+    "chatEnabled": "Turn on AI chat (beta) for signed-in users"
   },
   "Content": {
     "unreviewed": "The Vietnamese meanings and Hán-Việt readings here have not been checked by a person yet. Please tell Japky if something looks wrong."
@@ -523,5 +524,36 @@
     "added": "Added {n} cards to review.",
     "alreadyAdded": "All words are already in review.",
     "error": "Could not add them. Please try again."
+  },
+  "Chat": {
+    "title": "Ask the AI tutor",
+    "scope": "Only questions about Japanese grammar, vocabulary, translation and explanations. Up to 20 messages a day.",
+    "signIn": "Sign in (16 or older) to use the AI tutor.",
+    "signInLink": "Sign in",
+    "consentText": "Your questions are sent to an AI provider to create the answer. No name, email or personal data is sent. You can withdraw consent on the Me page.",
+    "consentAgree": "I agree to AI processing",
+    "threads": "Conversations",
+    "newThread": "New conversation",
+    "untitled": "Untitled",
+    "deleteThread": "Delete conversation",
+    "historyNote": "History is kept in this tab only and is lost when you close the browser.",
+    "demo": "Demo mode: answers are samples, not a real AI tutor yet.",
+    "you": "You",
+    "tutor": "Tutor",
+    "hint": "For example: “What is the difference between は and が?”",
+    "label": "Question",
+    "placeholder": "Ask about Japanese…",
+    "send": "Send",
+    "stop": "Stop",
+    "remaining": "{n} messages left today",
+    "errors": {
+      "QUOTA": "You have used all 20 messages today. Come back tomorrow!",
+      "CONSENT": "Please agree to AI processing first.",
+      "AGE": "The AI tutor is for people aged 16 or older.",
+      "UNAUTHORIZED": "Sign in to use the AI tutor.",
+      "AI_UNAVAILABLE": "AI is taking a break. Please try again later.",
+      "NOT_FOUND": "This feature is not open yet.",
+      "ERROR": "Something went wrong. Please try again."
+    }
   }
 }

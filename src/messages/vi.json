@@ -493,7 +493,8 @@
     "usageToday": "Sử dụng AI hôm nay",
     "requests": "Yêu cầu",
     "none": "Chưa có",
-    "audit": "Nhật ký thay đổi (30 gần nhất)"
+    "audit": "Nhật ký thay đổi (30 gần nhất)",
+    "chatEnabled": "Bật AI chat (beta) cho người dùng đã đăng nhập"
   },
   "Content": {
     "unreviewed": "Nghĩa tiếng Việt và âm Hán-Việt ở đây chưa được người kiểm duyệt. Nếu thấy chỗ sai, hãy báo cho Japky."
@@ -523,5 +524,36 @@
     "added": "Đã thêm {n} thẻ vào ôn tập.",
     "alreadyAdded": "Tất cả từ đã có trong ôn tập.",
     "error": "Chưa thêm được, hãy thử lại."
+  },
+  "Chat": {
+    "title": "Hỏi gia sư AI",
+    "scope": "Chỉ hỏi về ngữ pháp, từ vựng, dịch và giải thích câu tiếng Nhật. Tối đa 20 tin mỗi ngày.",
+    "signIn": "Hãy đăng nhập (tài khoản 16 tuổi trở lên) để dùng gia sư AI.",
+    "signInLink": "Đăng nhập",
+    "consentText": "Câu hỏi của bạn sẽ được gửi tới nhà cung cấp AI để tạo câu trả lời. Không gửi tên, email hay thông tin cá nhân. Bạn có thể rút lại đồng ý trong trang Tôi.",
+    "consentAgree": "Tôi đồng ý xử lý bằng AI",
+    "threads": "Các cuộc trò chuyện",
+    "newThread": "Cuộc trò chuyện mới",
+    "untitled": "Chưa đặt tên",
+    "deleteThread": "Xóa cuộc trò chuyện",
+    "historyNote": "Lịch sử chỉ lưu trong tab này và mất khi đóng trình duyệt.",
+    "demo": "Đang ở chế độ demo: câu trả lời là mẫu, chưa phải gia sư AI thật.",
+    "you": "Bạn",
+    "tutor": "Gia sư",
+    "hint": "Ví dụ: “Khác nhau giữa は và が là gì?”",
+    "label": "Câu hỏi",
+    "placeholder": "Nhập câu hỏi về tiếng Nhật…",
+    "send": "Gửi",
+    "stop": "Dừng",
+    "remaining": "Còn {n} tin hôm nay",
+    "errors": {
+      "QUOTA": "Bạn đã dùng hết 20 tin hôm nay. Mai quay lại nhé!",
+      "CONSENT": "Cần đồng ý xử lý bằng AI trước khi hỏi.",
+      "AGE": "Gia sư AI dành cho người từ 16 tuổi.",
+      "UNAUTHORIZED": "Hãy đăng nhập để dùng gia sư AI.",
+      "AI_UNAVAILABLE": "AI đang tạm nghỉ. Hãy thử lại sau.",
+      "NOT_FOUND": "Tính năng này chưa mở.",
+      "ERROR": "Có lỗi xảy ra, hãy thử lại."
+    }
   }
 }

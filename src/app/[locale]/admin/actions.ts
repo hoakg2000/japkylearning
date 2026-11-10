@@ -57,6 +57,21 @@ export async function setKillSwitch(on: boolean) {
   revalidatePath('/[locale]/admin', 'page');
 }
 
+/** F8 chat tutor beta switch (stored with the AI settings). */
+export async function setChatEnabled(on: boolean) {
+  const admin = await requireAdmin();
+  const enabled = z.boolean().parse(on);
+  const before = await getAiSettings();
+  const next = { ...before, chatEnabled: enabled };
+  const db = await getDb();
+  await db
+    .insert(appSettings)
+    .values({ key: 'ai', value: next, updatedBy: admin.id })
+    .onConflictDoUpdate({ target: appSettings.key, set: { value: next, updatedBy: admin.id, updatedAt: new Date() } });
+  await audit(admin.id, 'ai.chat.toggle', 'ai', { chatEnabled: !!before.chatEnabled }, { chatEnabled: enabled });
+  revalidatePath('/[locale]/admin', 'page');
+}
+
 export async function setVoiceEnabled(id: string, enabled: boolean) {
   const admin = await requireAdmin();
   const voiceId = z.string().min(1).max(40).parse(id);

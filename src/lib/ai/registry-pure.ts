@@ -7,6 +7,8 @@ export type ModeChoice = { adapter: 'mock' | 'openai-compatible' | 'gateway'; pr
 export type AiSettings = {
   modes: Partial<Record<AiMode, ModeChoice>>;
   killSwitch: boolean;
+  /** F8 chat tutor beta: off until an admin turns it on (P5 decision D5). */
+  chatEnabled?: boolean;
 };
 
 /** Env defaults: `AI_PROVIDER`, `AI_PRESET`, `AI_MODEL`. Anything unknown means mock. */

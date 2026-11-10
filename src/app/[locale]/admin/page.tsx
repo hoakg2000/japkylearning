@@ -46,6 +46,7 @@ async function AdminContent() {
         presets={Object.keys(PRESETS) as (keyof typeof PRESETS)[]}
         keys={keys}
         killSwitch={settings.killSwitch}
+        chatEnabled={!!settings.chatEnabled}
         voices={voices.map((v) => ({ id: v.id, label: v.label, enabled: v.enabled }))}
       />
       <section aria-labelledby="usage">
