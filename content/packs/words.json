@@ -1590,62 +1590,6 @@
   ]
  },
  {
-  "id": "jmdict-1328190",
-  "surface": "手伝う",
-  "reading": "てつだう",
-  "romaji": "tetsudau",
-  "segments": [
-   {
-    "surface": "手伝",
-    "reading": "てつだ"
-   },
-   {
-    "surface": "う"
-   }
-  ],
-  "jukujikun": true,
-  "pos": [
-   "v5u",
-   "vt"
-  ],
-  "meanings": {
-   "vi": "giúp đỡ",
-   "en": "to help; to assist; to aid"
-  },
-  "meaningsViReviewed": false,
-  "examples": [
-   {
-    "ja": "何か手伝いましょうか。",
-    "segments": [
-     {
-      "surface": "何",
-      "reading": "なに"
-     },
-     {
-      "surface": "か"
-     },
-     {
-      "surface": "手伝",
-      "reading": "てつだ"
-     },
-     {
-      "surface": "いましょうか。"
-     }
-    ],
-    "romaji": "nani ka tetsudaimashou ka.",
-    "translation": {
-     "vi": "Cháu giúp gì được không ạ?",
-     "en": "Can I help with anything?"
-    },
-    "source": "japky"
-   }
-  ],
-  "jlpt": null,
-  "tags": [
-   "pack:kaigo"
-  ]
- },
- {
   "id": "jmdict-1258950",
   "surface": "肩",
   "reading": "かた",

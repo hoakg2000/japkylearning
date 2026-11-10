@@ -4828,5 +4828,961 @@
    }
   ],
   "jlpt": "n5"
+ },
+ {
+  "id": "n5-counters",
+  "pattern": "N を (số + trợ số từ) V",
+  "meaning": {
+   "vi": "đếm bằng trợ số từ: 本・枚・台・匹・冊・杯・回",
+   "en": "counting with counters: 本・枚・台・匹・冊・杯・回"
+  },
+  "explanation": {
+   "vi": "Tiếng Nhật đếm bằng số + trợ số từ hợp với loại đồ vật: 本 vật dài, 枚 vật mỏng phẳng, 台 máy và xe, 匹 con vật nhỏ, 冊 sách vở, 杯 cốc bát, 回 số lần. Cụm số lượng thường đứng sau trợ từ và ngay trước động từ: りんご を 三つ 買います. Một số âm đổi khi đếm: いっぽん, さんぼん, ろっぽん; いっぴき, さんびき. Hỏi: 何本, 何枚, 何台…",
+   "en": "Japanese counts with number + a counter that fits the kind of thing: 本 long objects, 枚 flat thin things, 台 machines and vehicles, 匹 small animals, 冊 books, 杯 cups and bowls, 回 times. The quantity usually comes after the particle, right before the verb: りんご を 三つ 買います. Some sounds change: いっぽん, さんぼん, ろっぽん; いっぴき, さんびき. Ask with 何本, 何枚, 何台…"
+  },
+  "examples": [
+   {
+    "ja": "切手を五枚ください。",
+    "segments": [
+     {
+      "surface": "切手",
+      "reading": "きって"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "五枚",
+      "reading": "ごまい"
+     },
+     {
+      "surface": "ください。"
+     }
+    ],
+    "romaji": "kitte o gomai kudasai.",
+    "translation": {
+     "vi": "Cho tôi năm con tem.",
+     "en": "Five stamps, please."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "犬が三匹います。",
+    "segments": [
+     {
+      "surface": "犬",
+      "reading": "いぬ"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "三匹",
+      "reading": "さんびき"
+     },
+     {
+      "surface": "います。"
+     }
+    ],
+    "romaji": "inu ga sanbiki imasu.",
+    "translation": {
+     "vi": "Có ba con chó.",
+     "en": "There are three dogs."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "ビールを二杯飲みました。",
+    "blank": "二杯",
+    "translation": {
+     "vi": "Tôi đã uống hai cốc bia.",
+     "en": "I drank two glasses of beer."
+    }
+   },
+   {
+    "ja": "雑誌を三冊借りました。",
+    "blank": "三冊",
+    "translation": {
+     "vi": "Tôi đã mượn ba cuốn tạp chí.",
+     "en": "I borrowed three magazines."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-gurai",
+  "pattern": "(số lượng / thời gian) ぐらい",
+  "meaning": {
+   "vi": "khoảng, chừng (ước lượng)",
+   "en": "about, around (estimate)"
+  },
+  "explanation": {
+   "vi": "ぐらい (くらい) đặt sau con số để nói ước chừng: 一時間 ぐらい, 三人 ぐらい. Với giờ cụ thể (mấy giờ) thì dùng ごろ: 三時 ごろ. Câu hỏi: どの ぐらい / どれ ぐらい (khoảng bao lâu, bao nhiêu).",
+   "en": "ぐらい (くらい) after a number makes it approximate: 一時間 ぐらい, 三人 ぐらい. For a point in time use ごろ instead: 三時 ごろ. To ask: どの ぐらい / どれ ぐらい (about how long / how much)."
+  },
+  "examples": [
+   {
+    "ja": "毎日二時間ぐらい勉強します。",
+    "segments": [
+     {
+      "surface": "毎日",
+      "reading": "まいにち"
+     },
+     {
+      "surface": "二時間",
+      "reading": "にじかん"
+     },
+     {
+      "surface": "ぐらい"
+     },
+     {
+      "surface": "勉強",
+      "reading": "べんきょう"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "mainichi nijikan gurai benkyou shimasu.",
+    "translation": {
+     "vi": "Mỗi ngày tôi học khoảng hai tiếng.",
+     "en": "I study for about two hours every day."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "家から会社までどのぐらいかかりますか。",
+    "segments": [
+     {
+      "surface": "家",
+      "reading": "いえ"
+     },
+     {
+      "surface": "から"
+     },
+     {
+      "surface": "会社",
+      "reading": "かいしゃ"
+     },
+     {
+      "surface": "までどのぐらいかかりますか。"
+     }
+    ],
+    "romaji": "ie kara kaisha made dono gurai kakarimasu ka.",
+    "translation": {
+     "vi": "Từ nhà đến công ty mất khoảng bao lâu?",
+     "en": "About how long does it take from your home to the office?"
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "パーティーに二十人ぐらい来ました。",
+    "blank": "ぐらい",
+    "translation": {
+     "vi": "Khoảng hai mươi người đã đến bữa tiệc.",
+     "en": "About twenty people came to the party."
+    }
+   },
+   {
+    "ja": "一週間に三回ぐらい泳ぎます。",
+    "blank": "三回",
+    "translation": {
+     "vi": "Một tuần tôi bơi khoảng ba lần.",
+     "en": "I swim about three times a week."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-ageru-morau",
+  "pattern": "A は B に N を あげます / B は A に (から) N を もらいます",
+  "meaning": {
+   "vi": "A cho B cái N / B nhận N từ A",
+   "en": "A gives N to B / B receives N from A"
+  },
+  "explanation": {
+   "vi": "あげます: người cho là chủ ngữ, người nhận đi với に. もらいます: người nhận là chủ ngữ, người cho đi với に hoặc から (từ tổ chức thì dùng から). Không dùng あげます khi người nhận là “tôi”.",
+   "en": "あげます: the giver is the subject and the receiver takes に. もらいます: the receiver is the subject and the giver takes に or から (use から for organisations). Do not use あげます when the receiver is “me”."
+  },
+  "examples": [
+   {
+    "ja": "私は妹に花をあげました。",
+    "segments": [
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "妹",
+      "reading": "いもうと"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "花",
+      "reading": "はな"
+     },
+     {
+      "surface": "をあげました。"
+     }
+    ],
+    "romaji": "watashi wa imouto ni hana o agemashita.",
+    "translation": {
+     "vi": "Tôi đã tặng hoa cho em gái.",
+     "en": "I gave my younger sister flowers."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "私は会社からボーナスをもらいました。",
+    "segments": [
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "会社",
+      "reading": "かいしゃ"
+     },
+     {
+      "surface": "からボーナスをもらいました。"
+     }
+    ],
+    "romaji": "watashi wa kaisha kara boonasu o moraimashita.",
+    "translation": {
+     "vi": "Tôi nhận tiền thưởng từ công ty.",
+     "en": "I got a bonus from the company."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "ハイさんは友達にお土産をあげました。",
+    "blank": "あげました",
+    "translation": {
+     "vi": "Anh Hải đã tặng quà cho bạn.",
+     "en": "Hai gave his friend a souvenir."
+    }
+   },
+   {
+    "ja": "私は先生に手紙をもらいました。",
+    "blank": "もらいました",
+    "translation": {
+     "vi": "Tôi đã nhận thư từ cô giáo.",
+     "en": "I received a letter from my teacher."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-kureru",
+  "pattern": "A は (私 に) N を くれます",
+  "meaning": {
+   "vi": "A cho tôi (người nhà tôi) cái N",
+   "en": "A gives N to me (or my family)"
+  },
+  "explanation": {
+   "vi": "くれます dùng khi người nhận là “tôi” hoặc người phía tôi (gia đình, nhóm của tôi). Người cho là chủ ngữ; 私 に thường được lược bỏ. So sánh: 友達が 私に 本を くれました = 私は 友達に 本を もらいました.",
+   "en": "くれます is used when the receiver is “me” or someone on my side (family, my group). The giver is the subject; 私 に is usually left out. Compare: 友達が 私に 本を くれました = 私は 友達に 本を もらいました."
+  },
+  "examples": [
+   {
+    "ja": "祖母がこの時計をくれました。",
+    "segments": [
+     {
+      "surface": "祖母",
+      "reading": "そぼ"
+     },
+     {
+      "surface": "がこの"
+     },
+     {
+      "surface": "時計",
+      "reading": "とけい"
+     },
+     {
+      "surface": "をくれました。"
+     }
+    ],
+    "romaji": "sobo ga kono tokei o kuremashita.",
+    "translation": {
+     "vi": "Bà đã cho tôi cái đồng hồ này.",
+     "en": "My grandmother gave me this watch."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "友達が弟にゲームをくれました。",
+    "segments": [
+     {
+      "surface": "友達",
+      "reading": "ともだち"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "弟",
+      "reading": "おとうと"
+     },
+     {
+      "surface": "にゲームをくれました。"
+     }
+    ],
+    "romaji": "tomodachi ga otouto ni geemu o kuremashita.",
+    "translation": {
+     "vi": "Bạn tôi đã cho em trai tôi trò chơi.",
+     "en": "My friend gave my younger brother a game."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "田中さんが私に傘をくれました。",
+    "blank": "くれました",
+    "translation": {
+     "vi": "Anh Tanaka đã cho tôi cái ô.",
+     "en": "Mr Tanaka gave me an umbrella."
+    }
+   },
+   {
+    "ja": "兄がネクタイをくれました。",
+    "blank": "が",
+    "translation": {
+     "vi": "Anh trai đã cho tôi cà vạt.",
+     "en": "My brother gave me a tie."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-kute-de",
+  "pattern": "A い → A くて / A な・N → で、～",
+  "meaning": {
+   "vi": "～ và ～ (nối tính từ, danh từ)",
+   "en": "～ and ～ (joining adjectives and nouns)"
+  },
+  "explanation": {
+   "vi": "Tính từ い đổi い → くて (いい → よくて), tính từ な và danh từ thêm で để nối với vế sau: 安くて おいしい, 静かで きれい, 学生で 二十歳. Hai vế nên cùng chiều (cùng tốt hoặc cùng xấu); trái chiều thì dùng が.",
+   "en": "An い-adjective changes い → くて (いい → よくて); な-adjectives and nouns add で to link to what follows: 安くて おいしい, 静かで きれい, 学生で 二十歳. Both parts should point the same way (both good or both bad); for a contrast use が."
+  },
+  "examples": [
+   {
+    "ja": "この店は安くて、美味しいです。",
+    "segments": [
+     {
+      "surface": "この"
+     },
+     {
+      "surface": "店",
+      "reading": "みせ"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "安",
+      "reading": "やす"
+     },
+     {
+      "surface": "くて、"
+     },
+     {
+      "surface": "美味",
+      "reading": "おい"
+     },
+     {
+      "surface": "しいです。"
+     }
+    ],
+    "romaji": "kono mise wa yasukute,oishii desu.",
+    "translation": {
+     "vi": "Quán này rẻ và ngon.",
+     "en": "This restaurant is cheap and tasty."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "田中さんは親切で、面白い人です。",
+    "segments": [
+     {
+      "surface": "田中",
+      "reading": "たなか"
+     },
+     {
+      "surface": "さんは"
+     },
+     {
+      "surface": "親切",
+      "reading": "しんせつ"
+     },
+     {
+      "surface": "で、"
+     },
+     {
+      "surface": "面白",
+      "reading": "おもしろ"
+     },
+     {
+      "surface": "い"
+     },
+     {
+      "surface": "人",
+      "reading": "ひと"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "tanakasan wa shinsetsu de,omoshiroi hito desu.",
+    "translation": {
+     "vi": "Anh Tanaka là người tử tế và thú vị.",
+     "en": "Mr Tanaka is kind and fun."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "兄は背が高くて、髪が短いです。",
+    "blank": "高くて",
+    "translation": {
+     "vi": "Anh tôi cao và tóc ngắn.",
+     "en": "My brother is tall and has short hair."
+    }
+   },
+   {
+    "ja": "この町は静かで、綺麗です。",
+    "blank": "で",
+    "translation": {
+     "vi": "Thị trấn này yên tĩnh và sạch đẹp.",
+     "en": "This town is quiet and clean."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-naru",
+  "pattern": "A い → A く なります / A な・N → に なります",
+  "meaning": {
+   "vi": "trở nên ～, trở thành ～",
+   "en": "become ～"
+  },
+  "explanation": {
+   "vi": "Diễn tả sự thay đổi trạng thái: tính từ い đổi い → く + なります (寒く なります), tính từ な và danh từ + に なります (元気に なります, 医者に なります). Quá khứ なりました cho thay đổi đã xảy ra.",
+   "en": "Expresses a change of state: an い-adjective changes い → く + なります (寒く なります); な-adjectives and nouns take に なります (元気に なります, 医者に なります). Use なりました for a change that has happened."
+  },
+  "examples": [
+   {
+    "ja": "冬になりました。寒くなりましたね。",
+    "segments": [
+     {
+      "surface": "冬",
+      "reading": "ふゆ"
+     },
+     {
+      "surface": "になりました。"
+     },
+     {
+      "surface": "寒",
+      "reading": "さむ"
+     },
+     {
+      "surface": "くなりましたね。"
+     }
+    ],
+    "romaji": "fuyu ni narimashita. samuku narimashita ne.",
+    "translation": {
+     "vi": "Đã sang đông rồi. Trời lạnh rồi nhỉ.",
+     "en": "Winter has come. It’s got cold, hasn’t it?"
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "薬を飲んで、元気になりました。",
+    "segments": [
+     {
+      "surface": "薬",
+      "reading": "くすり"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "飲",
+      "reading": "の"
+     },
+     {
+      "surface": "んで、"
+     },
+     {
+      "surface": "元気",
+      "reading": "げんき"
+     },
+     {
+      "surface": "になりました。"
+     }
+    ],
+    "romaji": "kusuri o nonde,genki ni narimashita.",
+    "translation": {
+     "vi": "Uống thuốc xong tôi khỏe lại rồi.",
+     "en": "I took the medicine and got better."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "部屋が明るくなりました。",
+    "blank": "明るく",
+    "translation": {
+     "vi": "Căn phòng đã sáng hơn.",
+     "en": "The room has become brighter."
+    }
+   },
+   {
+    "ja": "弟は来年大学生になります。",
+    "blank": "に",
+    "translation": {
+     "vi": "Năm sau em trai tôi thành sinh viên.",
+     "en": "My younger brother will become a university student next year."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-mae-ni",
+  "pattern": "V (từ điển) 前に / N の 前に / (thời gian) 前に",
+  "meaning": {
+   "vi": "trước khi ～; trước ～",
+   "en": "before ～"
+  },
+  "explanation": {
+   "vi": "Động từ trước 前に luôn ở thể từ điển, kể cả khi cả câu ở quá khứ: 寝る 前に 歯を 磨きました. Danh từ thêm の: 食事の 前に. Thời lượng thì không cần の: 三年 前に (ba năm trước).",
+   "en": "The verb before 前に is always in the dictionary form, even in a past sentence: 寝る 前に 歯を 磨きました. Nouns take の: 食事の 前に. A length of time needs no の: 三年 前に (three years ago)."
+  },
+  "examples": [
+   {
+    "ja": "寝る前に電気を消します。",
+    "segments": [
+     {
+      "surface": "寝",
+      "reading": "ね"
+     },
+     {
+      "surface": "る"
+     },
+     {
+      "surface": "前",
+      "reading": "まえ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "電気",
+      "reading": "でんき"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "消",
+      "reading": "け"
+     },
+     {
+      "surface": "します。"
+     }
+    ],
+    "romaji": "neru mae ni denki o keshimasu.",
+    "translation": {
+     "vi": "Tôi tắt đèn trước khi ngủ.",
+     "en": "I turn off the light before I go to bed."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "食事の前に手を洗いましょう。",
+    "segments": [
+     {
+      "surface": "食事",
+      "reading": "しょくじ"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "前",
+      "reading": "まえ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "手",
+      "reading": "て"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "洗",
+      "reading": "あら"
+     },
+     {
+      "surface": "いましょう。"
+     }
+    ],
+    "romaji": "shokuji no mae ni te o araimashou.",
+    "translation": {
+     "vi": "Hãy rửa tay trước bữa ăn.",
+     "en": "Let’s wash our hands before the meal."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "出かける前に鍵をかけました。",
+    "blank": "前に",
+    "translation": {
+     "vi": "Tôi đã khóa cửa trước khi ra ngoài.",
+     "en": "I locked the door before I went out."
+    }
+   },
+   {
+    "ja": "会議の前に資料を読みます。",
+    "blank": "の",
+    "translation": {
+     "vi": "Tôi đọc tài liệu trước cuộc họp.",
+     "en": "I read the documents before the meeting."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-ato-de",
+  "pattern": "V-た 後で / N の 後で",
+  "meaning": {
+   "vi": "sau khi ～; sau ～",
+   "en": "after ～"
+  },
+  "explanation": {
+   "vi": "Động từ trước 後で ở thể た (kể cả với việc tương lai): 宿題を した 後で 遊びます. Danh từ thêm の: 授業の 後で. ～てから (bài 21) nhấn thứ tự liền nhau, còn 後で chỉ nói việc sau xảy ra sau, có thể cách một khoảng.",
+   "en": "The verb before 後で is in the た-form (even for future actions): 宿題を した 後で 遊びます. Nouns take の: 授業の 後で. ～てから (lesson 21) stresses one action right after the other; 後で just says the second happens later, possibly with a gap."
+  },
+  "examples": [
+   {
+    "ja": "仕事が終わった後で、飲みに行きます。",
+    "segments": [
+     {
+      "surface": "仕事",
+      "reading": "しごと"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "終",
+      "reading": "お"
+     },
+     {
+      "surface": "わった"
+     },
+     {
+      "surface": "後",
+      "reading": "あと"
+     },
+     {
+      "surface": "で、"
+     },
+     {
+      "surface": "飲",
+      "reading": "の"
+     },
+     {
+      "surface": "みに"
+     },
+     {
+      "surface": "行",
+      "reading": "い"
+     },
+     {
+      "surface": "きます。"
+     }
+    ],
+    "romaji": "shigoto ga owatta ato de,nomi ni ikimasu.",
+    "translation": {
+     "vi": "Sau khi xong việc tôi đi uống.",
+     "en": "I go for a drink after work is over."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "映画の後で、ご飯を食べましょう。",
+    "segments": [
+     {
+      "surface": "映画",
+      "reading": "えいが"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "後",
+      "reading": "あと"
+     },
+     {
+      "surface": "で、ご"
+     },
+     {
+      "surface": "飯",
+      "reading": "はん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "食",
+      "reading": "た"
+     },
+     {
+      "surface": "べましょう。"
+     }
+    ],
+    "romaji": "eiga no ato de,gohan o tabemashou.",
+    "translation": {
+     "vi": "Sau khi xem phim mình đi ăn nhé.",
+     "en": "Let’s eat after the film."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "晩ご飯を食べた後で、散歩します。",
+    "blank": "食べた",
+    "translation": {
+     "vi": "Ăn tối xong tôi đi dạo.",
+     "en": "I take a walk after eating dinner."
+    }
+   },
+   {
+    "ja": "授業の後で、先生に質問しました。",
+    "blank": "後で",
+    "translation": {
+     "vi": "Sau giờ học tôi đã hỏi thầy.",
+     "en": "After class I asked the teacher a question."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-tsumori",
+  "pattern": "V (từ điển) / V-ない つもり です",
+  "meaning": {
+   "vi": "định làm / định không làm ～",
+   "en": "intend to do / not to do ～"
+  },
+  "explanation": {
+   "vi": "Nói ý định đã suy nghĩ của mình: thể từ điển + つもり です; định không làm: thể ない + つもり です. Dùng cho dự định của bản thân; hỏi người khác thì nên lịch sự: ～つもり です か.",
+   "en": "States a plan you have thought about: dictionary form + つもり です; to intend not to: ない-form + つもり です. Use it for your own plans; asking others ～つもり です か is fine among equals."
+  },
+  "examples": [
+   {
+    "ja": "来年、日本へ留学するつもりです。",
+    "segments": [
+     {
+      "surface": "来年",
+      "reading": "らいねん"
+     },
+     {
+      "surface": "、"
+     },
+     {
+      "surface": "日本",
+      "reading": "にほん"
+     },
+     {
+      "surface": "へ"
+     },
+     {
+      "surface": "留学",
+      "reading": "りゅうがく"
+     },
+     {
+      "surface": "するつもりです。"
+     }
+    ],
+    "romaji": "rainen,nihon e ryuugaku suru tsumori desu.",
+    "translation": {
+     "vi": "Năm sau tôi định du học Nhật.",
+     "en": "I plan to study in Japan next year."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "今年は旅行しないつもりです。",
+    "segments": [
+     {
+      "surface": "今年",
+      "reading": "ことし"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "旅行",
+      "reading": "りょこう"
+     },
+     {
+      "surface": "しないつもりです。"
+     }
+    ],
+    "romaji": "kotoshi wa ryokou shinai tsumori desu.",
+    "translation": {
+     "vi": "Năm nay tôi định không đi du lịch.",
+     "en": "I don’t intend to travel this year."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "夏休みに国へ帰るつもりです。",
+    "blank": "つもり",
+    "translation": {
+     "vi": "Kỳ nghỉ hè tôi định về nước.",
+     "en": "I plan to go back home in the summer holidays."
+    }
+   },
+   {
+    "ja": "卒業したら、結婚するつもりです。",
+    "blank": "する",
+    "translation": {
+     "vi": "Tốt nghiệp xong tôi định kết hôn.",
+     "en": "I plan to get married after I graduate."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-mashouka",
+  "pattern": "V-ましょう か",
+  "meaning": {
+   "vi": "để tôi làm ～ nhé? (đề nghị giúp)",
+   "en": "shall I ～? (offering help)"
+  },
+  "explanation": {
+   "vi": "V-ましょう か dùng để đề nghị làm giúp người nghe. Trả lời đồng ý: ええ、お願いします; từ chối lịch sự: いいえ、大丈夫です. Khác với V-ませんか (rủ cùng làm, bài 8).",
+   "en": "V-ましょう か offers to do something for the listener. Accept with ええ、お願いします; decline politely with いいえ、大丈夫です. Different from V-ませんか (inviting someone to do something together, lesson 8)."
+  },
+  "examples": [
+   {
+    "ja": "荷物を持ちましょうか。—ありがとうございます。お願いします。",
+    "segments": [
+     {
+      "surface": "荷物",
+      "reading": "にもつ"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "持",
+      "reading": "も"
+     },
+     {
+      "surface": "ちましょうか。—ありがとうございます。お"
+     },
+     {
+      "surface": "願",
+      "reading": "ねが"
+     },
+     {
+      "surface": "いします。"
+     }
+    ],
+    "romaji": "nimotsu o mochimashou ka. — arigatou gozaimasu. onegaishimasu.",
+    "translation": {
+     "vi": "Để tôi xách đồ cho nhé? — Cảm ơn, nhờ bạn.",
+     "en": "Shall I carry your bags? — Thank you, please."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "窓を閉めましょうか。—いいえ、大丈夫です。",
+    "segments": [
+     {
+      "surface": "窓",
+      "reading": "まど"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "閉",
+      "reading": "し"
+     },
+     {
+      "surface": "めましょうか。—いいえ、"
+     },
+     {
+      "surface": "大丈夫",
+      "reading": "だいじょうぶ"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "romaji": "mado o shimemashou ka. — iie,daijoubu desu.",
+    "translation": {
+     "vi": "Tôi đóng cửa sổ nhé? — Không sao đâu.",
+     "en": "Shall I close the window? — No, it’s fine."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "タクシーを呼びましょうか。",
+    "blank": "ましょう",
+    "translation": {
+     "vi": "Tôi gọi taxi nhé?",
+     "en": "Shall I call a taxi?"
+    }
+   },
+   {
+    "ja": "写真を撮りましょうか。",
+    "blank": "か",
+    "translation": {
+     "vi": "Tôi chụp ảnh giúp nhé?",
+     "en": "Shall I take a photo for you?"
+    }
+   }
+  ],
+  "jlpt": "n5"
  }
 ]

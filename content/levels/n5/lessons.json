@@ -4278,5 +4278,940 @@
     }
    }
   ]
+ },
+ {
+  "id": "n5-26",
+  "level": "n5",
+  "order": 26,
+  "title": {
+   "vi": "Đếm đồ vật",
+   "en": "Counting things"
+  },
+  "goals": [
+   {
+    "vi": "Dùng các trợ số từ thường gặp: 本, 枚, 台, 匹, 冊, 杯, 回",
+    "en": "Use common counters: 本, 枚, 台, 匹, 冊, 杯, 回"
+   },
+   {
+    "vi": "Nói khoảng bao nhiêu bằng ぐらい, mấy cái bằng 何～",
+    "en": "Say “about” with ぐらい and ask “how many” with 何～"
+   }
+  ],
+  "wordIds": [
+   "jmdict-1166600",
+   "jmdict-1166060",
+   "jmdict-1164610",
+   "jmdict-1162680",
+   "jmdict-1165670",
+   "jmdict-1161310",
+   "jmdict-1166710",
+   "jmdict-1188650",
+   "jmdict-1154340",
+   "jmdict-1430250",
+   "jmdict-1585650",
+   "jmdict-1123590",
+   "jmdict-1050390",
+   "jmdict-1299680",
+   "jmdict-1101570"
+  ],
+  "kanji": [],
+  "grammarIds": [
+   "n5-counters",
+   "n5-gurai"
+  ],
+  "dialogue": [
+   {
+    "speaker": "{店員|てんいん}",
+    "ja": "いらっしゃいませ。",
+    "segments": [
+     {
+      "surface": "いらっしゃいませ。"
+     }
+    ],
+    "translation": {
+     "vi": "Xin mời quý khách.",
+     "en": "Welcome."
+    }
+   },
+   {
+    "speaker": "ミン",
+    "ja": "すみません、このボールペンを五本と、ノートを三冊ください。",
+    "segments": [
+     {
+      "surface": "すみません、このボールペンを"
+     },
+     {
+      "surface": "五本",
+      "reading": "ごほん"
+     },
+     {
+      "surface": "と、ノートを"
+     },
+     {
+      "surface": "三冊",
+      "reading": "さんさつ"
+     },
+     {
+      "surface": "ください。"
+     }
+    ],
+    "translation": {
+     "vi": "Cho tôi năm cây bút bi này và ba cuốn vở.",
+     "en": "Five of these ballpoint pens and three notebooks, please."
+    }
+   },
+   {
+    "speaker": "{店員|てんいん}",
+    "ja": "はい。全部で千二百円です。袋は一枚でいいですか。",
+    "segments": [
+     {
+      "surface": "はい。"
+     },
+     {
+      "surface": "全部",
+      "reading": "ぜんぶ"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "千二百円",
+      "reading": "せんにひゃくえん"
+     },
+     {
+      "surface": "です。"
+     },
+     {
+      "surface": "袋",
+      "reading": "ふくろ"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "一枚",
+      "reading": "いちまい"
+     },
+     {
+      "surface": "でいいですか。"
+     }
+    ],
+    "translation": {
+     "vi": "Vâng. Tất cả là 1.200 yên. Một túi được không ạ?",
+     "en": "Sure. That’s 1,200 yen altogether. Is one bag enough?"
+    }
+   },
+   {
+    "speaker": "ミン",
+    "ja": "はい、一枚でいいです。",
+    "segments": [
+     {
+      "surface": "はい、"
+     },
+     {
+      "surface": "一枚",
+      "reading": "いちまい"
+     },
+     {
+      "surface": "でいいです。"
+     }
+    ],
+    "translation": {
+     "vi": "Vâng, một túi là được.",
+     "en": "Yes, one is fine."
+    }
+   }
+  ]
+ },
+ {
+  "id": "n5-27",
+  "level": "n5",
+  "order": 27,
+  "title": {
+   "vi": "Cho và nhận",
+   "en": "Giving and receiving"
+  },
+  "goals": [
+   {
+    "vi": "Nói cho và nhận đồ vật: あげます, もらいます, くれます",
+    "en": "Talk about giving and receiving things: あげます, もらいます, くれます"
+   },
+   {
+    "vi": "Mượn, cho mượn, trả lại",
+    "en": "Borrow, lend and return"
+   }
+  ],
+  "wordIds": [
+   "jmdict-1352320",
+   "jmdict-1535910",
+   "jmdict-1269130",
+   "jmdict-1116840",
+   "jmdict-1002500",
+   "jmdict-1327720",
+   "jmdict-1546590",
+   "jmdict-1402730",
+   "jmdict-1195430",
+   "jmdict-1411160",
+   "jmdict-1323560",
+   "jmdict-1512130",
+   "jmdict-1092820",
+   "jmdict-1194870"
+  ],
+  "kanji": [],
+  "grammarIds": [
+   "n5-ageru-morau",
+   "n5-kureru"
+  ],
+  "dialogue": [
+   {
+    "speaker": "{山田|やまだ}",
+    "ja": "そのネクタイ、すてきですね。",
+    "segments": [
+     {
+      "surface": "そのネクタイ、すてきですね。"
+     }
+    ],
+    "translation": {
+     "vi": "Cà vạt đó đẹp nhỉ.",
+     "en": "That tie is nice."
+    }
+   },
+   {
+    "speaker": "ミン",
+    "ja": "ありがとうございます。誕生日に妻がくれました。",
+    "segments": [
+     {
+      "surface": "ありがとうございます。"
+     },
+     {
+      "surface": "誕生日",
+      "reading": "たんじょうび"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "妻",
+      "reading": "つま"
+     },
+     {
+      "surface": "がくれました。"
+     }
+    ],
+    "translation": {
+     "vi": "Cảm ơn chị. Vợ tôi tặng hôm sinh nhật.",
+     "en": "Thank you. My wife gave it to me for my birthday."
+    }
+   },
+   {
+    "speaker": "{山田|やまだ}",
+    "ja": "いいですね。私は去年、夫に時計をあげました。",
+    "segments": [
+     {
+      "surface": "いいですね。"
+     },
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "去年",
+      "reading": "きょねん"
+     },
+     {
+      "surface": "、"
+     },
+     {
+      "surface": "夫",
+      "reading": "おっと"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "時計",
+      "reading": "とけい"
+     },
+     {
+      "surface": "をあげました。"
+     }
+    ],
+    "translation": {
+     "vi": "Hay quá. Năm ngoái tôi tặng chồng đồng hồ.",
+     "en": "Lovely. Last year I gave my husband a watch."
+    }
+   },
+   {
+    "speaker": "ミン",
+    "ja": "そうですか。私も来月、妻に何かあげたいです。",
+    "segments": [
+     {
+      "surface": "そうですか。"
+     },
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "も"
+     },
+     {
+      "surface": "来月",
+      "reading": "らいげつ"
+     },
+     {
+      "surface": "、"
+     },
+     {
+      "surface": "妻",
+      "reading": "つま"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "何",
+      "reading": "なに"
+     },
+     {
+      "surface": "かあげたいです。"
+     }
+    ],
+    "translation": {
+     "vi": "Thế à. Tháng sau tôi cũng muốn tặng vợ gì đó.",
+     "en": "I see. I want to give my wife something next month too."
+    }
+   }
+  ]
+ },
+ {
+  "id": "n5-28",
+  "level": "n5",
+  "order": 28,
+  "title": {
+   "vi": "Miêu tả người và sự thay đổi",
+   "en": "Describing people and changes"
+  },
+  "goals": [
+   {
+    "vi": "Nối hai tính từ hoặc danh từ: ～くて, ～で",
+    "en": "Join adjectives and nouns: ～くて, ～で"
+   },
+   {
+    "vi": "Nói sự thay đổi: ～く なります, ～に なります",
+    "en": "Talk about change: ～く なります, ～に なります"
+   }
+  ],
+  "wordIds": [
+   "jmdict-1375610",
+   "jmdict-2147990",
+   "jmdict-1477950",
+   "jmdict-1434180",
+   "jmdict-1408180",
+   "jmdict-1295510",
+   "jmdict-1275320",
+   "jmdict-1475480",
+   "jmdict-1604230",
+   "jmdict-1539040",
+   "jmdict-1577200",
+   "jmdict-1218380",
+   "jmdict-1178940",
+   "jmdict-1414170",
+   "jmdict-1378690"
+  ],
+  "kanji": [],
+  "grammarIds": [
+   "n5-kute-de",
+   "n5-naru"
+  ],
+  "dialogue": [
+   {
+    "speaker": "ユン",
+    "ja": "これ、子供の時の写真です。",
+    "segments": [
+     {
+      "surface": "これ、"
+     },
+     {
+      "surface": "子供",
+      "reading": "こども"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "時",
+      "reading": "とき"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "写真",
+      "reading": "しゃしん"
+     },
+     {
+      "surface": "です。"
+     }
+    ],
+    "translation": {
+     "vi": "Đây là ảnh hồi nhỏ của mình.",
+     "en": "This is a photo of me as a child."
+    }
+   },
+   {
+    "speaker": "ハイ",
+    "ja": "わあ、かわいい！今より髪が短くて、丸い顔ですね。",
+    "segments": [
+     {
+      "surface": "わあ、かわいい！"
+     },
+     {
+      "surface": "今",
+      "reading": "いま"
+     },
+     {
+      "surface": "より"
+     },
+     {
+      "surface": "髪",
+      "reading": "かみ"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "短",
+      "reading": "みじか"
+     },
+     {
+      "surface": "くて、"
+     },
+     {
+      "surface": "丸",
+      "reading": "まる"
+     },
+     {
+      "surface": "い"
+     },
+     {
+      "surface": "顔",
+      "reading": "かお"
+     },
+     {
+      "surface": "ですね。"
+     }
+    ],
+    "translation": {
+     "vi": "Ôi, dễ thương quá! Tóc ngắn hơn bây giờ, mặt tròn nhỉ.",
+     "en": "Wow, so cute! Your hair is shorter than now and your face is round."
+    }
+   },
+   {
+    "speaker": "ユン",
+    "ja": "ええ。中学生の時、急に背が高くなりました。",
+    "segments": [
+     {
+      "surface": "ええ。"
+     },
+     {
+      "surface": "中学生",
+      "reading": "ちゅうがくせい"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "時",
+      "reading": "とき"
+     },
+     {
+      "surface": "、"
+     },
+     {
+      "surface": "急",
+      "reading": "きゅう"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "背",
+      "reading": "せ"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "高",
+      "reading": "たか"
+     },
+     {
+      "surface": "くなりました。"
+     }
+    ],
+    "translation": {
+     "vi": "Ừ. Hồi cấp hai mình đột nhiên cao lên.",
+     "en": "Yes. I suddenly got taller in junior high."
+    }
+   },
+   {
+    "speaker": "ハイ",
+    "ja": "そうですか。私はずっと背が低いですよ。",
+    "segments": [
+     {
+      "surface": "そうですか。"
+     },
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "はずっと"
+     },
+     {
+      "surface": "背",
+      "reading": "せ"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "低",
+      "reading": "ひく"
+     },
+     {
+      "surface": "いですよ。"
+     }
+    ],
+    "translation": {
+     "vi": "Thế à. Mình thì lúc nào cũng thấp.",
+     "en": "I see. I’ve always been short."
+    }
+   }
+  ]
+ },
+ {
+  "id": "n5-29",
+  "level": "n5",
+  "order": 29,
+  "title": {
+   "vi": "Trước và sau",
+   "en": "Before and after"
+  },
+  "goals": [
+   {
+    "vi": "Nói “trước khi …” bằng V-る 前に / N の 前に",
+    "en": "Say “before …” with V-る 前に / N の 前に"
+   },
+   {
+    "vi": "Nói “sau khi …” bằng V-た 後で / N の 後で",
+    "en": "Say “after …” with V-た 後で / N の 後で"
+   }
+  ],
+  "wordIds": [
+   "jmdict-1269320",
+   "jmdict-1443840",
+   "jmdict-1207610",
+   "jmdict-1443000",
+   "jmdict-1433680",
+   "jmdict-1350110",
+   "jmdict-1401400",
+   "jmdict-1087820",
+   "jmdict-1260490",
+   "jmdict-1421850",
+   "jmdict-1326980",
+   "jmdict-1607260",
+   "jmdict-1416400",
+   "jmdict-1221250"
+  ],
+  "kanji": [],
+  "grammarIds": [
+   "n5-mae-ni",
+   "n5-ato-de"
+  ],
+  "dialogue": [
+   {
+    "speaker": "{大家|おおや}",
+    "ja": "部屋に入る前に、靴を脱いでください。",
+    "segments": [
+     {
+      "surface": "部屋",
+      "reading": "へや"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "入",
+      "reading": "はい"
+     },
+     {
+      "surface": "る"
+     },
+     {
+      "surface": "前",
+      "reading": "まえ"
+     },
+     {
+      "surface": "に、"
+     },
+     {
+      "surface": "靴",
+      "reading": "くつ"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "脱",
+      "reading": "ぬ"
+     },
+     {
+      "surface": "いでください。"
+     }
+    ],
+    "translation": {
+     "vi": "Trước khi vào phòng hãy cởi giày.",
+     "en": "Please take off your shoes before you enter the room."
+    }
+   },
+   {
+    "speaker": "ミン",
+    "ja": "はい、分かりました。鍵はどこに置きますか。",
+    "segments": [
+     {
+      "surface": "はい、"
+     },
+     {
+      "surface": "分",
+      "reading": "わ"
+     },
+     {
+      "surface": "かりました。"
+     },
+     {
+      "surface": "鍵",
+      "reading": "かぎ"
+     },
+     {
+      "surface": "はどこに"
+     },
+     {
+      "surface": "置",
+      "reading": "お"
+     },
+     {
+      "surface": "きますか。"
+     }
+    ],
+    "translation": {
+     "vi": "Vâng. Chìa khóa để ở đâu ạ?",
+     "en": "Sure. Where do I put the key?"
+    }
+   },
+   {
+    "speaker": "{大家|おおや}",
+    "ja": "ドアの近くの箱に置いてください。出かける前に、電気を消してくださいね。",
+    "segments": [
+     {
+      "surface": "ドアの"
+     },
+     {
+      "surface": "近",
+      "reading": "ちか"
+     },
+     {
+      "surface": "くの"
+     },
+     {
+      "surface": "箱",
+      "reading": "はこ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "置",
+      "reading": "お"
+     },
+     {
+      "surface": "いてください。"
+     },
+     {
+      "surface": "出",
+      "reading": "で"
+     },
+     {
+      "surface": "かける"
+     },
+     {
+      "surface": "前",
+      "reading": "まえ"
+     },
+     {
+      "surface": "に、"
+     },
+     {
+      "surface": "電気",
+      "reading": "でんき"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "消",
+      "reading": "け"
+     },
+     {
+      "surface": "してくださいね。"
+     }
+    ],
+    "translation": {
+     "vi": "Để vào hộp gần cửa. Trước khi ra ngoài nhớ tắt đèn nhé.",
+     "en": "Put it in the box near the door. And turn off the lights before you go out."
+    }
+   },
+   {
+    "speaker": "ミン",
+    "ja": "はい。荷物を置いた後で、買い物に行きます。",
+    "segments": [
+     {
+      "surface": "はい。"
+     },
+     {
+      "surface": "荷物",
+      "reading": "にもつ"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "置",
+      "reading": "お"
+     },
+     {
+      "surface": "いた"
+     },
+     {
+      "surface": "後",
+      "reading": "あと"
+     },
+     {
+      "surface": "で、"
+     },
+     {
+      "surface": "買",
+      "reading": "か"
+     },
+     {
+      "surface": "い"
+     },
+     {
+      "surface": "物",
+      "reading": "もの"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "行",
+      "reading": "い"
+     },
+     {
+      "surface": "きます。"
+     }
+    ],
+    "translation": {
+     "vi": "Vâng. Để hành lý xong tôi sẽ đi mua đồ.",
+     "en": "OK. I’ll go shopping after I put down my luggage."
+    }
+   }
+  ]
+ },
+ {
+  "id": "n5-30",
+  "level": "n5",
+  "order": 30,
+  "title": {
+   "vi": "Ôn tập: dự định và đề nghị giúp",
+   "en": "Review: plans and offers"
+  },
+  "goals": [
+   {
+    "vi": "Nói dự định bằng V (từ điển) つもりです",
+    "en": "Talk about plans with V (dictionary) つもりです"
+   },
+   {
+    "vi": "Đề nghị giúp người khác bằng V-ましょうか",
+    "en": "Offer help with V-ましょうか"
+   }
+  ],
+  "wordIds": [
+   "jmdict-1254790",
+   "jmdict-1552740",
+   "jmdict-1405890",
+   "jmdict-1245570",
+   "jmdict-1385170",
+   "jmdict-1420900",
+   "jmdict-1253190",
+   "jmdict-1259210",
+   "jmdict-1266440",
+   "jmdict-1228650",
+   "jmdict-1310670",
+   "jmdict-1328190",
+   "jmdict-1543240",
+   "jmdict-1347710"
+  ],
+  "kanji": [],
+  "grammarIds": [
+   "n5-tsumori",
+   "n5-mashouka"
+  ],
+  "dialogue": [
+   {
+    "speaker": "{先生|せんせい}",
+    "ja": "ミンさん、卒業した後で、何をするつもりですか。",
+    "segments": [
+     {
+      "surface": "ミンさん、"
+     },
+     {
+      "surface": "卒業",
+      "reading": "そつぎょう"
+     },
+     {
+      "surface": "した"
+     },
+     {
+      "surface": "後",
+      "reading": "あと"
+     },
+     {
+      "surface": "で、"
+     },
+     {
+      "surface": "何",
+      "reading": "なに"
+     },
+     {
+      "surface": "をするつもりですか。"
+     }
+    ],
+    "translation": {
+     "vi": "Minh, tốt nghiệp xong em định làm gì?",
+     "en": "Minh, what do you plan to do after you graduate?"
+    }
+   },
+   {
+    "speaker": "ミン",
+    "ja": "日本の会社で働くつもりです。将来は国で会社を作りたいです。",
+    "segments": [
+     {
+      "surface": "日本",
+      "reading": "にほん"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "会社",
+      "reading": "かいしゃ"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "働",
+      "reading": "はたら"
+     },
+     {
+      "surface": "くつもりです。"
+     },
+     {
+      "surface": "将来",
+      "reading": "しょうらい"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "国",
+      "reading": "くに"
+     },
+     {
+      "surface": "で"
+     },
+     {
+      "surface": "会社",
+      "reading": "かいしゃ"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "作",
+      "reading": "つく"
+     },
+     {
+      "surface": "りたいです。"
+     }
+    ],
+    "translation": {
+     "vi": "Em định làm ở công ty Nhật. Tương lai em muốn mở công ty ở nước mình.",
+     "en": "I plan to work at a Japanese company. In the future I want to start a company back home."
+    }
+   },
+   {
+    "speaker": "{先生|せんせい}",
+    "ja": "いいですね。履歴書、見ましょうか。",
+    "segments": [
+     {
+      "surface": "いいですね。"
+     },
+     {
+      "surface": "履歴書",
+      "reading": "りれきしょ"
+     },
+     {
+      "surface": "、"
+     },
+     {
+      "surface": "見",
+      "reading": "み"
+     },
+     {
+      "surface": "ましょうか。"
+     }
+    ],
+    "translation": {
+     "vi": "Hay đấy. Để cô xem giúp sơ yếu lý lịch nhé?",
+     "en": "Great. Shall I look over your CV?"
+    }
+   },
+   {
+    "speaker": "ミン",
+    "ja": "ありがとうございます。お願いします。",
+    "segments": [
+     {
+      "surface": "ありがとうございます。お"
+     },
+     {
+      "surface": "願",
+      "reading": "ねが"
+     },
+     {
+      "surface": "いします。"
+     }
+    ],
+    "translation": {
+     "vi": "Em cảm ơn cô. Nhờ cô ạ.",
+     "en": "Thank you very much. Yes, please."
+    }
+   }
+  ]
  }
 ]
