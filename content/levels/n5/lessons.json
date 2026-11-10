@@ -3323,5 +3323,960 @@
     }
    }
   ]
+ },
+ {
+  "id": "n5-21",
+  "level": "n5",
+  "order": 21,
+  "title": {
+   "vi": "Một ngày của tôi",
+   "en": "My day, step by step"
+  },
+  "goals": [
+   {
+    "vi": "Kể nhiều việc theo thứ tự bằng thể て",
+    "en": "Tell several actions in order with the て-form"
+   },
+   {
+    "vi": "Nói “sau khi làm A thì làm B” bằng ～てから",
+    "en": "Say “after doing A, do B” with ～てから"
+   }
+  ],
+  "wordIds": [
+   "jmdict-1428280",
+   "jmdict-1536350",
+   "jmdict-1061820",
+   "jmdict-1547450",
+   "jmdict-1523940",
+   "jmdict-1598550",
+   "jmdict-1355120",
+   "jmdict-1589500",
+   "jmdict-1422970",
+   "jmdict-1307500",
+   "jmdict-1589600",
+   "jmdict-1330290",
+   "jmdict-1304970",
+   "jmdict-1006980",
+   "jmdict-1316380"
+  ],
+  "kanji": [],
+  "grammarIds": [
+   "n5-te-sequence",
+   "n5-te-kara"
+  ],
+  "dialogue": [
+   {
+    "speaker": "ミン",
+    "ja": "毎朝、何時に会社に着きますか。",
+    "segments": [
+     {
+      "surface": "毎朝",
+      "reading": "まいあさ"
+     },
+     {
+      "surface": "、"
+     },
+     {
+      "surface": "何時",
+      "reading": "なんじ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "会社",
+      "reading": "かいしゃ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "着",
+      "reading": "つ"
+     },
+     {
+      "surface": "きますか。"
+     }
+    ],
+    "translation": {
+     "vi": "Mỗi sáng mấy giờ bạn đến công ty?",
+     "en": "What time do you get to the office every morning?"
+    }
+   },
+   {
+    "speaker": "{田中|たなか}",
+    "ja": "八時半です。七時に起きて、シャワーを浴びて、電車に乗ります。",
+    "segments": [
+     {
+      "surface": "八時半",
+      "reading": "はちじはん"
+     },
+     {
+      "surface": "です。"
+     },
+     {
+      "surface": "七時",
+      "reading": "しちじ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "起",
+      "reading": "お"
+     },
+     {
+      "surface": "きて、シャワーを"
+     },
+     {
+      "surface": "浴",
+      "reading": "あ"
+     },
+     {
+      "surface": "びて、"
+     },
+     {
+      "surface": "電車",
+      "reading": "でんしゃ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "乗",
+      "reading": "の"
+     },
+     {
+      "surface": "ります。"
+     }
+    ],
+    "translation": {
+     "vi": "Tám rưỡi. Tôi dậy lúc bảy giờ, tắm rồi lên tàu.",
+     "en": "Eight thirty. I get up at seven, take a shower and get on the train."
+    }
+   },
+   {
+    "speaker": "ミン",
+    "ja": "朝ご飯は？",
+    "segments": [
+     {
+      "surface": "朝",
+      "reading": "あさ"
+     },
+     {
+      "surface": "ご"
+     },
+     {
+      "surface": "飯",
+      "reading": "はん"
+     },
+     {
+      "surface": "は？"
+     }
+    ],
+    "translation": {
+     "vi": "Còn bữa sáng thì sao?",
+     "en": "What about breakfast?"
+    }
+   },
+   {
+    "speaker": "{田中|たなか}",
+    "ja": "会社に着いてから、コーヒーとパンを食べます。",
+    "segments": [
+     {
+      "surface": "会社",
+      "reading": "かいしゃ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "着",
+      "reading": "つ"
+     },
+     {
+      "surface": "いてから、コーヒーとパンを"
+     },
+     {
+      "surface": "食",
+      "reading": "た"
+     },
+     {
+      "surface": "べます。"
+     }
+    ],
+    "translation": {
+     "vi": "Đến công ty rồi tôi mới ăn bánh mì với cà phê.",
+     "en": "I have coffee and bread after I get to the office."
+    }
+   }
+  ]
+ },
+ {
+  "id": "n5-22",
+  "level": "n5",
+  "order": 22,
+  "title": {
+   "vi": "Nói chuyện thân mật",
+   "en": "Casual talk with friends"
+  },
+  "goals": [
+   {
+    "vi": "Dùng thể thông thường (thể từ điển, thể ない) khi nói với bạn bè",
+    "en": "Use plain forms (dictionary and ない forms) with friends"
+   },
+   {
+    "vi": "Nói về thói quen, sở thích: いつも, 時々, 好き, 嫌い",
+    "en": "Talk about habits and likes: いつも, 時々, 好き, 嫌い"
+   }
+  ],
+  "wordIds": [
+   "jmdict-1579110",
+   "jmdict-1579100",
+   "jmdict-1289470",
+   "jmdict-1542790",
+   "jmdict-1524700",
+   "jmdict-1524730",
+   "jmdict-1188890",
+   "jmdict-1598680",
+   "jmdict-1547320",
+   "jmdict-1414580",
+   "jmdict-1277450",
+   "jmdict-1413660",
+   "jmdict-1257240",
+   "jmdict-1523060",
+   "jmdict-1001090"
+  ],
+  "kanji": [],
+  "grammarIds": [
+   "n5-plain-verb",
+   "n5-plain-adj-noun"
+  ],
+  "dialogue": [
+   {
+    "speaker": "ハイ",
+    "ja": "今晩、暇？一緒にご飯食べない？",
+    "segments": [
+     {
+      "surface": "今晩",
+      "reading": "こんばん"
+     },
+     {
+      "surface": "、"
+     },
+     {
+      "surface": "暇",
+      "reading": "ひま"
+     },
+     {
+      "surface": "？"
+     },
+     {
+      "surface": "一緒",
+      "reading": "いっしょ"
+     },
+     {
+      "surface": "にご"
+     },
+     {
+      "surface": "飯",
+      "reading": "はん"
+     },
+     {
+      "surface": "食",
+      "reading": "た"
+     },
+     {
+      "surface": "べない？"
+     }
+    ],
+    "translation": {
+     "vi": "Tối nay rảnh không? Đi ăn cùng không?",
+     "en": "Free tonight? Want to have dinner together?"
+    }
+   },
+   {
+    "speaker": "ユン",
+    "ja": "うん、いいよ。何食べる？",
+    "segments": [
+     {
+      "surface": "うん、いいよ。"
+     },
+     {
+      "surface": "何",
+      "reading": "なに"
+     },
+     {
+      "surface": "食",
+      "reading": "た"
+     },
+     {
+      "surface": "べる？"
+     }
+    ],
+    "translation": {
+     "vi": "Ừ, được. Ăn gì đây?",
+     "en": "Sure. What shall we eat?"
+    }
+   },
+   {
+    "speaker": "ハイ",
+    "ja": "ラーメンは？駅の近くの店、本当に美味しいよ。",
+    "segments": [
+     {
+      "surface": "ラーメンは？"
+     },
+     {
+      "surface": "駅",
+      "reading": "えき"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "近",
+      "reading": "ちか"
+     },
+     {
+      "surface": "くの"
+     },
+     {
+      "surface": "店",
+      "reading": "みせ"
+     },
+     {
+      "surface": "、"
+     },
+     {
+      "surface": "本当",
+      "reading": "ほんとう"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "美味",
+      "reading": "おい"
+     },
+     {
+      "surface": "しいよ。"
+     }
+    ],
+    "translation": {
+     "vi": "Ramen thì sao? Quán gần ga ngon lắm đấy.",
+     "en": "How about ramen? The place near the station is really good."
+    }
+   },
+   {
+    "speaker": "ユン",
+    "ja": "いいね。私、ラーメン大好き。",
+    "segments": [
+     {
+      "surface": "いいね。"
+     },
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "、ラーメン"
+     },
+     {
+      "surface": "大好",
+      "reading": "だいす"
+     },
+     {
+      "surface": "き。"
+     }
+    ],
+    "translation": {
+     "vi": "Được đấy. Tớ mê ramen.",
+     "en": "Great. I love ramen."
+    }
+   }
+  ]
+ },
+ {
+  "id": "n5-23",
+  "level": "n5",
+  "order": 23,
+  "title": {
+   "vi": "Kinh nghiệm và sở thích",
+   "en": "Experiences and hobbies"
+  },
+  "goals": [
+   {
+    "vi": "Kể mình đã từng làm gì bằng ～たことがあります",
+    "en": "Say what you have done before with ～たことがあります"
+   },
+   {
+    "vi": "Liệt kê vài việc tiêu biểu bằng ～たり～たりします",
+    "en": "Give examples of activities with ～たり～たりします"
+   }
+  ],
+  "wordIds": [
+   "jmdict-1576250",
+   "jmdict-1496800",
+   "jmdict-1352570",
+   "japky-otera",
+   "jmdict-1364670",
+   "jmdict-1423240",
+   "jmdict-1193180",
+   "jmdict-1588120",
+   "jmdict-1183720",
+   "jmdict-1042820",
+   "jmdict-1419370",
+   "jmdict-1202270",
+   "jmdict-1451470",
+   "jmdict-1451490",
+   "jmdict-1329000"
+  ],
+  "kanji": [],
+  "grammarIds": [
+   "n5-ta-koto-ga-aru",
+   "n5-tari-tari"
+  ],
+  "dialogue": [
+   {
+    "speaker": "{山田|やまだ}",
+    "ja": "ミンさん、富士山に登ったことがありますか。",
+    "segments": [
+     {
+      "surface": "ミンさん、"
+     },
+     {
+      "surface": "富士山",
+      "reading": "ふじさん"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "登",
+      "reading": "のぼ"
+     },
+     {
+      "surface": "ったことがありますか。"
+     }
+    ],
+    "translation": {
+     "vi": "Anh Minh đã từng leo núi Phú Sĩ chưa?",
+     "en": "Minh, have you ever climbed Mount Fuji?"
+    }
+   },
+   {
+    "speaker": "ミン",
+    "ja": "いいえ、まだありません。山田さんは？",
+    "segments": [
+     {
+      "surface": "いいえ、まだありません。"
+     },
+     {
+      "surface": "山田",
+      "reading": "やまだ"
+     },
+     {
+      "surface": "さんは？"
+     }
+    ],
+    "translation": {
+     "vi": "Chưa, tôi chưa từng. Còn chị Yamada?",
+     "en": "No, not yet. How about you, Ms Yamada?"
+    }
+   },
+   {
+    "speaker": "{山田|やまだ}",
+    "ja": "去年一度登りました。写真を撮ったり、山の上でご飯を食べたりしました。",
+    "segments": [
+     {
+      "surface": "去年",
+      "reading": "きょねん"
+     },
+     {
+      "surface": "一度",
+      "reading": "いちど"
+     },
+     {
+      "surface": "登",
+      "reading": "のぼ"
+     },
+     {
+      "surface": "りました。"
+     },
+     {
+      "surface": "写真",
+      "reading": "しゃしん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "撮",
+      "reading": "と"
+     },
+     {
+      "surface": "ったり、"
+     },
+     {
+      "surface": "山",
+      "reading": "やま"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "上",
+      "reading": "うえ"
+     },
+     {
+      "surface": "でご"
+     },
+     {
+      "surface": "飯",
+      "reading": "はん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "食",
+      "reading": "た"
+     },
+     {
+      "surface": "べたりしました。"
+     }
+    ],
+    "translation": {
+     "vi": "Năm ngoái tôi đã leo một lần. Tôi chụp ảnh, ăn cơm trên đỉnh núi…",
+     "en": "I climbed it once last year. I took photos, ate on top of the mountain and so on."
+    }
+   },
+   {
+    "speaker": "ミン",
+    "ja": "いいですね。私も一度登りたいです。",
+    "segments": [
+     {
+      "surface": "いいですね。"
+     },
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "も"
+     },
+     {
+      "surface": "一度",
+      "reading": "いちど"
+     },
+     {
+      "surface": "登",
+      "reading": "のぼ"
+     },
+     {
+      "surface": "りたいです。"
+     }
+    ],
+    "translation": {
+     "vi": "Thích quá. Tôi cũng muốn leo một lần.",
+     "en": "Sounds great. I want to climb it once too."
+    }
+   }
+  ]
+ },
+ {
+  "id": "n5-24",
+  "level": "n5",
+  "order": 24,
+  "title": {
+   "vi": "Ý kiến và lời nói",
+   "en": "Opinions and quotes"
+  },
+  "goals": [
+   {
+    "vi": "Nêu ý kiến của mình bằng ～と思います",
+    "en": "Give your opinion with ～と思います"
+   },
+   {
+    "vi": "Thuật lại lời người khác bằng ～と言いました",
+    "en": "Report what someone said with ～と言いました"
+   }
+  ],
+  "wordIds": [
+   "jmdict-1589350",
+   "jmdict-1281020",
+   "jmdict-1091500",
+   "jmdict-1312350",
+   "jmdict-1079760",
+   "jmdict-1536010",
+   "jmdict-1414340",
+   "jmdict-1415000",
+   "jmdict-1407980",
+   "jmdict-1003430",
+   "jmdict-1202170",
+   "jmdict-1202150",
+   "jmdict-1198360",
+   "jmdict-1322920",
+   "jmdict-1156530"
+  ],
+  "kanji": [],
+  "grammarIds": [
+   "n5-to-omoimasu",
+   "n5-to-iimashita"
+  ],
+  "dialogue": [
+   {
+    "speaker": "{課長|かちょう}",
+    "ja": "皆さん、新しい会議室についてどう思いますか。",
+    "segments": [
+     {
+      "surface": "皆",
+      "reading": "みな"
+     },
+     {
+      "surface": "さん、"
+     },
+     {
+      "surface": "新",
+      "reading": "あたら"
+     },
+     {
+      "surface": "しい"
+     },
+     {
+      "surface": "会議室",
+      "reading": "かいぎしつ"
+     },
+     {
+      "surface": "についてどう"
+     },
+     {
+      "surface": "思",
+      "reading": "おも"
+     },
+     {
+      "surface": "いますか。"
+     }
+    ],
+    "translation": {
+     "vi": "Mọi người nghĩ sao về phòng họp mới?",
+     "en": "Everyone, what do you think of the new meeting room?"
+    }
+   },
+   {
+    "speaker": "ミン",
+    "ja": "広くて、明るくて、いいと思います。",
+    "segments": [
+     {
+      "surface": "広",
+      "reading": "ひろ"
+     },
+     {
+      "surface": "くて、"
+     },
+     {
+      "surface": "明",
+      "reading": "あか"
+     },
+     {
+      "surface": "るくて、いいと"
+     },
+     {
+      "surface": "思",
+      "reading": "おも"
+     },
+     {
+      "surface": "います。"
+     }
+    ],
+    "translation": {
+     "vi": "Tôi nghĩ nó rộng, sáng, tốt lắm.",
+     "en": "I think it’s spacious, bright and good."
+    }
+   },
+   {
+    "speaker": "{鈴木|すずき}",
+    "ja": "でも、駅から少し遠いと思います。",
+    "segments": [
+     {
+      "surface": "でも、"
+     },
+     {
+      "surface": "駅",
+      "reading": "えき"
+     },
+     {
+      "surface": "から"
+     },
+     {
+      "surface": "少",
+      "reading": "すこ"
+     },
+     {
+      "surface": "し"
+     },
+     {
+      "surface": "遠",
+      "reading": "とお"
+     },
+     {
+      "surface": "いと"
+     },
+     {
+      "surface": "思",
+      "reading": "おも"
+     },
+     {
+      "surface": "います。"
+     }
+    ],
+    "translation": {
+     "vi": "Nhưng tôi nghĩ hơi xa ga.",
+     "en": "But I think it’s a bit far from the station."
+    }
+   },
+   {
+    "speaker": "{課長|かちょう}",
+    "ja": "社長も「少し遠い」と言いました。もう一度考えましょう。",
+    "segments": [
+     {
+      "surface": "社長",
+      "reading": "しゃちょう"
+     },
+     {
+      "surface": "も「"
+     },
+     {
+      "surface": "少",
+      "reading": "すこ"
+     },
+     {
+      "surface": "し"
+     },
+     {
+      "surface": "遠",
+      "reading": "とお"
+     },
+     {
+      "surface": "い」と"
+     },
+     {
+      "surface": "言",
+      "reading": "い"
+     },
+     {
+      "surface": "いました。もう"
+     },
+     {
+      "surface": "一度",
+      "reading": "いちど"
+     },
+     {
+      "surface": "考",
+      "reading": "かんが"
+     },
+     {
+      "surface": "えましょう。"
+     }
+    ],
+    "translation": {
+     "vi": "Giám đốc cũng nói “hơi xa”. Mình suy nghĩ lại nhé.",
+     "en": "The president also said “a bit far”. Let’s think about it again."
+    }
+   }
+  ]
+ },
+ {
+  "id": "n5-25",
+  "level": "n5",
+  "order": 25,
+  "title": {
+   "vi": "Thời tiết ngày mai",
+   "en": "Tomorrow’s weather"
+  },
+  "goals": [
+   {
+    "vi": "Phỏng đoán bằng ～でしょう (dự báo thời tiết)",
+    "en": "Make guesses with ～でしょう (weather forecasts)"
+   },
+   {
+    "vi": "Nói “đã … rồi” và “vẫn chưa …” bằng もう / まだ",
+    "en": "Say “already” and “not yet” with もう / まだ"
+   }
+  ],
+  "wordIds": [
+   "jmdict-1376460",
+   "jmdict-1376470",
+   "jmdict-1592340",
+   "jmdict-1386500",
+   "jmdict-1499720",
+   "jmdict-1370760",
+   "jmdict-1554370",
+   "jmdict-1586420",
+   "jmdict-1438770",
+   "jmdict-1532350",
+   "jmdict-1154330",
+   "jmdict-1012480",
+   "jmdict-1527110",
+   "jmdict-1269070"
+  ],
+  "kanji": [],
+  "grammarIds": [
+   "n5-deshou",
+   "n5-mou-mada"
+  ],
+  "dialogue": [
+   {
+    "speaker": "ユン",
+    "ja": "明日の天気予報、もう見ましたか。",
+    "segments": [
+     {
+      "surface": "明日",
+      "reading": "あした"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "天気予報",
+      "reading": "てんきよほう"
+     },
+     {
+      "surface": "、もう"
+     },
+     {
+      "surface": "見",
+      "reading": "み"
+     },
+     {
+      "surface": "ましたか。"
+     }
+    ],
+    "translation": {
+     "vi": "Bạn đã xem dự báo thời tiết ngày mai chưa?",
+     "en": "Have you seen tomorrow’s forecast yet?"
+    }
+   },
+   {
+    "speaker": "ハイ",
+    "ja": "ええ。午前中は雨ですが、午後は晴れるでしょう。",
+    "segments": [
+     {
+      "surface": "ええ。"
+     },
+     {
+      "surface": "午前中",
+      "reading": "ごぜんちゅう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "雨",
+      "reading": "あめ"
+     },
+     {
+      "surface": "ですが、"
+     },
+     {
+      "surface": "午後",
+      "reading": "ごご"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "晴",
+      "reading": "は"
+     },
+     {
+      "surface": "れるでしょう。"
+     }
+    ],
+    "translation": {
+     "vi": "Rồi. Buổi sáng mưa nhưng chiều chắc là nắng.",
+     "en": "Yes. It’ll rain in the morning, but it should clear up in the afternoon."
+    }
+   },
+   {
+    "speaker": "ユン",
+    "ja": "じゃ、午後公園へ行きませんか。",
+    "segments": [
+     {
+      "surface": "じゃ、"
+     },
+     {
+      "surface": "午後",
+      "reading": "ごご"
+     },
+     {
+      "surface": "公園",
+      "reading": "こうえん"
+     },
+     {
+      "surface": "へ"
+     },
+     {
+      "surface": "行",
+      "reading": "い"
+     },
+     {
+      "surface": "きませんか。"
+     }
+    ],
+    "translation": {
+     "vi": "Vậy chiều mình đi công viên không?",
+     "en": "Then shall we go to the park in the afternoon?"
+    }
+   },
+   {
+    "speaker": "ハイ",
+    "ja": "いいですね。でも風が強いでしょうから、暖かい服を着てください。",
+    "segments": [
+     {
+      "surface": "いいですね。でも"
+     },
+     {
+      "surface": "風",
+      "reading": "かぜ"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "強",
+      "reading": "つよ"
+     },
+     {
+      "surface": "いでしょうから、"
+     },
+     {
+      "surface": "暖",
+      "reading": "あたた"
+     },
+     {
+      "surface": "かい"
+     },
+     {
+      "surface": "服",
+      "reading": "ふく"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "着",
+      "reading": "き"
+     },
+     {
+      "surface": "てください。"
+     }
+    ],
+    "translation": {
+     "vi": "Được đấy. Nhưng chắc gió mạnh nên mặc áo ấm nhé.",
+     "en": "Sounds good. But it’ll probably be windy, so wear warm clothes."
+    }
+   }
+  ]
  }
 ]

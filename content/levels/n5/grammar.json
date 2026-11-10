@@ -3799,5 +3799,1034 @@
    }
   ],
   "jlpt": "n5"
+ },
+ {
+  "id": "n5-te-sequence",
+  "pattern": "V1 て、V2 て、V3 ます",
+  "meaning": {
+   "vi": "làm V1, rồi V2, rồi V3 (liệt kê theo thứ tự)",
+   "en": "do V1, then V2, then V3 (actions in order)"
+  },
+  "explanation": {
+   "vi": "Nối nhiều động từ bằng thể て để kể các việc theo đúng thứ tự xảy ra. Chỉ động từ cuối câu mang thì (ます / ました), nên cả câu là hiện tại hay quá khứ tùy động từ cuối.",
+   "en": "Join several verbs with the て-form to list actions in the order they happen. Only the last verb carries the tense (ます / ました), so it sets the tense of the whole sentence."
+  },
+  "examples": [
+   {
+    "ja": "朝起きて、シャワーを浴びて、会社へ行きます。",
+    "segments": [
+     {
+      "surface": "朝",
+      "reading": "あさ"
+     },
+     {
+      "surface": "起",
+      "reading": "お"
+     },
+     {
+      "surface": "きて、シャワーを"
+     },
+     {
+      "surface": "浴",
+      "reading": "あ"
+     },
+     {
+      "surface": "びて、"
+     },
+     {
+      "surface": "会社",
+      "reading": "かいしゃ"
+     },
+     {
+      "surface": "へ"
+     },
+     {
+      "surface": "行",
+      "reading": "い"
+     },
+     {
+      "surface": "きます。"
+     }
+    ],
+    "romaji": "asa okite,shawaa o abite,kaisha e ikimasu.",
+    "translation": {
+     "vi": "Buổi sáng tôi dậy, tắm, rồi đi làm.",
+     "en": "In the morning I get up, take a shower and go to work."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "昨日は友達に会って、映画を見て、帰りました。",
+    "segments": [
+     {
+      "surface": "昨日",
+      "reading": "きのう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "友達",
+      "reading": "ともだち"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "会",
+      "reading": "あ"
+     },
+     {
+      "surface": "って、"
+     },
+     {
+      "surface": "映画",
+      "reading": "えいが"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "見",
+      "reading": "み"
+     },
+     {
+      "surface": "て、"
+     },
+     {
+      "surface": "帰",
+      "reading": "かえ"
+     },
+     {
+      "surface": "りました。"
+     }
+    ],
+    "romaji": "kinou wa tomodachi ni atte,eiga o mite,kaerimashita.",
+    "translation": {
+     "vi": "Hôm qua tôi gặp bạn, xem phim rồi về.",
+     "en": "Yesterday I met a friend, watched a film and went home."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "駅で電車に乗って、東京で降ります。",
+    "blank": "乗って",
+    "translation": {
+     "vi": "Tôi lên tàu ở ga rồi xuống ở Tokyo.",
+     "en": "I get on the train at the station and get off in Tokyo."
+    }
+   },
+   {
+    "ja": "家に帰って、晩ご飯を食べました。",
+    "blank": "帰って",
+    "translation": {
+     "vi": "Tôi về nhà rồi ăn tối.",
+     "en": "I went home and ate dinner."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-te-kara",
+  "pattern": "V1 て から、V2",
+  "meaning": {
+   "vi": "sau khi V1 thì V2",
+   "en": "after V1, V2"
+  },
+  "explanation": {
+   "vi": "～てから nhấn mạnh V1 phải xong rồi mới đến V2. Khác với chuỗi て thông thường, ～てから thường chỉ nối hai việc và làm rõ thứ tự trước – sau.",
+   "en": "～てから stresses that V1 finishes before V2 starts. Unlike a plain て-chain, it usually links just two actions and makes the order explicit."
+  },
+  "examples": [
+   {
+    "ja": "仕事が終わってから、飲みに行きましょう。",
+    "segments": [
+     {
+      "surface": "仕事",
+      "reading": "しごと"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "終",
+      "reading": "お"
+     },
+     {
+      "surface": "わってから、"
+     },
+     {
+      "surface": "飲",
+      "reading": "の"
+     },
+     {
+      "surface": "みに"
+     },
+     {
+      "surface": "行",
+      "reading": "い"
+     },
+     {
+      "surface": "きましょう。"
+     }
+    ],
+    "romaji": "shigoto ga owatte kara,nomi ni ikimashou.",
+    "translation": {
+     "vi": "Sau khi xong việc mình đi uống nhé.",
+     "en": "Let’s go for a drink after work."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "手を洗ってから、ご飯を食べてください。",
+    "segments": [
+     {
+      "surface": "手",
+      "reading": "て"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "洗",
+      "reading": "あら"
+     },
+     {
+      "surface": "ってから、ご"
+     },
+     {
+      "surface": "飯",
+      "reading": "はん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "食",
+      "reading": "た"
+     },
+     {
+      "surface": "べてください。"
+     }
+    ],
+    "romaji": "te o aratte kara,gohan o tabete kudasai.",
+    "translation": {
+     "vi": "Hãy rửa tay rồi mới ăn cơm.",
+     "en": "Please wash your hands before you eat."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "歯を磨いてから、寝ます。",
+    "blank": "から",
+    "translation": {
+     "vi": "Tôi đánh răng xong rồi mới ngủ.",
+     "en": "I brush my teeth and then go to bed."
+    }
+   },
+   {
+    "ja": "授業が始まってから、先生が来ました。",
+    "blank": "始まって",
+    "translation": {
+     "vi": "Sau khi giờ học bắt đầu thì thầy mới đến.",
+     "en": "The teacher came after class had started."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-plain-verb",
+  "pattern": "V (thể từ điển) / V-ない (thể thông thường)",
+  "meaning": {
+   "vi": "thể thông thường của động từ: làm / không làm",
+   "en": "plain verb forms: do / don’t"
+  },
+  "explanation": {
+   "vi": "Với bạn bè, gia đình, người nhỏ tuổi hơn, ta dùng thể thông thường thay cho ～ます. Khẳng định là thể từ điển (食べる, 行く), phủ định là thể ない (食べない, 行かない). Nhóm 1 đổi âm cuối sang hàng あ + ない (行く → 行かない; riêng う → わ: 買う → 買わない), nhóm 2 bỏ る + ない, する → しない, 来る → 来ない (こない). ある → ない. Câu hỏi thân mật chỉ cần lên giọng: 行く？",
+   "en": "With friends, family and younger people, use plain forms instead of ～ます. Positive is the dictionary form (食べる, 行く); negative is the ない-form (食べない, 行かない). Group 1 verbs change the last sound to the あ-row + ない (行く → 行かない; う becomes わ: 買う → 買わない), group 2 drop る + ない, する → しない, 来る → 来ない (こない). ある → ない. A casual question just uses rising intonation: 行く？"
+  },
+  "examples": [
+   {
+    "ja": "明日、学校へ行く？—ううん、行かない。",
+    "segments": [
+     {
+      "surface": "明日",
+      "reading": "あした"
+     },
+     {
+      "surface": "、"
+     },
+     {
+      "surface": "学校",
+      "reading": "がっこう"
+     },
+     {
+      "surface": "へ"
+     },
+     {
+      "surface": "行",
+      "reading": "い"
+     },
+     {
+      "surface": "く？—ううん、"
+     },
+     {
+      "surface": "行",
+      "reading": "い"
+     },
+     {
+      "surface": "かない。"
+     }
+    ],
+    "romaji": "ashita,gakkou e iku? — uun,ikanai.",
+    "translation": {
+     "vi": "Mai cậu có đến trường không? — Không, tớ không đi.",
+     "en": "Are you going to school tomorrow? — No, I’m not."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "私は肉を食べない。",
+    "segments": [
+     {
+      "surface": "私",
+      "reading": "わたし"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "肉",
+      "reading": "にく"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "食",
+      "reading": "た"
+     },
+     {
+      "surface": "べない。"
+     }
+    ],
+    "romaji": "watashi wa niku o tabenai.",
+    "translation": {
+     "vi": "Tớ không ăn thịt.",
+     "en": "I don’t eat meat."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "毎朝コーヒーを飲む。",
+    "blank": "飲む",
+    "translation": {
+     "vi": "Sáng nào tớ cũng uống cà phê.",
+     "en": "I drink coffee every morning."
+    }
+   },
+   {
+    "ja": "今日はテレビを見ない。",
+    "blank": "見ない",
+    "translation": {
+     "vi": "Hôm nay tớ không xem TV.",
+     "en": "I’m not watching TV today."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-plain-adj-noun",
+  "pattern": "A い / A な だ / N だ (thể thông thường)",
+  "meaning": {
+   "vi": "tính từ và danh từ ở thể thông thường",
+   "en": "plain forms of adjectives and nouns"
+  },
+  "explanation": {
+   "vi": "Trong câu thân mật bỏ です. Tính từ い đứng một mình (暑い), phủ định ～くない. Tính từ な và danh từ dùng だ (静かだ, 学生だ), phủ định じゃない. Khi nói chuyện, だ thường được lược bỏ hoặc thay bằng よ/ね: 好き！ 学生だよ.",
+   "en": "Casual sentences drop です. An い-adjective stands alone (暑い), negative ～くない. な-adjectives and nouns take だ (静かだ, 学生だ), negative じゃない. In speech だ is often dropped or followed by よ/ね: 好き！ 学生だよ."
+  },
+  "examples": [
+   {
+    "ja": "このケーキ、美味しいね。",
+    "segments": [
+     {
+      "surface": "このケーキ、"
+     },
+     {
+      "surface": "美味",
+      "reading": "おい"
+     },
+     {
+      "surface": "しいね。"
+     }
+    ],
+    "romaji": "kono keeki,oishii ne.",
+    "translation": {
+     "vi": "Bánh này ngon nhỉ.",
+     "en": "This cake is tasty, isn’t it?"
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "今日は日曜日だから、学校は休みだよ。",
+    "segments": [
+     {
+      "surface": "今日",
+      "reading": "きょう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "日曜日",
+      "reading": "にちようび"
+     },
+     {
+      "surface": "だから、"
+     },
+     {
+      "surface": "学校",
+      "reading": "がっこう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "休",
+      "reading": "やす"
+     },
+     {
+      "surface": "みだよ。"
+     }
+    ],
+    "romaji": "kyou wa nichiyoubi da kara,gakkou wa yasumi da yo.",
+    "translation": {
+     "vi": "Hôm nay là chủ nhật nên trường nghỉ đấy.",
+     "en": "It’s Sunday today, so there’s no school."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "この部屋は静かだ。",
+    "blank": "だ",
+    "translation": {
+     "vi": "Căn phòng này yên tĩnh.",
+     "en": "This room is quiet."
+    }
+   },
+   {
+    "ja": "今日は寒くない。",
+    "blank": "寒くない",
+    "translation": {
+     "vi": "Hôm nay không lạnh.",
+     "en": "It’s not cold today."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-ta-koto-ga-aru",
+  "pattern": "V-た こと が あります",
+  "meaning": {
+   "vi": "đã từng làm V",
+   "en": "have done V before (experience)"
+  },
+  "explanation": {
+   "vi": "Thể た (thể quá khứ thông thường) làm như thể て nhưng đổi て → た, で → だ: 行って → 行った, 飲んで → 飲んだ. V-た + こと が あります nói về kinh nghiệm đã từng có. Phủ định: ～た こと が ありません (chưa từng). Không dùng cho việc vừa làm hôm qua.",
+   "en": "The た-form (plain past) is made like the て-form with て → た, で → だ: 行って → 行った, 飲んで → 飲んだ. V-た + こと が あります talks about an experience you have had. Negative: ～た こと が ありません (never). It is not used for something you simply did yesterday."
+  },
+  "examples": [
+   {
+    "ja": "富士山に登ったことがあります。",
+    "segments": [
+     {
+      "surface": "富士山",
+      "reading": "ふじさん"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "登",
+      "reading": "のぼ"
+     },
+     {
+      "surface": "ったことがあります。"
+     }
+    ],
+    "romaji": "fujisan ni nobotta koto ga arimasu.",
+    "translation": {
+     "vi": "Tôi đã từng leo núi Phú Sĩ.",
+     "en": "I have climbed Mount Fuji."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "着物を着たことがありません。",
+    "segments": [
+     {
+      "surface": "着物",
+      "reading": "きもの"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "着",
+      "reading": "き"
+     },
+     {
+      "surface": "たことがありません。"
+     }
+    ],
+    "romaji": "kimono o kita koto ga arimasen.",
+    "translation": {
+     "vi": "Tôi chưa từng mặc kimono.",
+     "en": "I have never worn a kimono."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "日本のお寺を見たことがありますか。",
+    "blank": "こと",
+    "translation": {
+     "vi": "Bạn đã từng xem chùa Nhật chưa?",
+     "en": "Have you ever seen a Japanese temple?"
+    }
+   },
+   {
+    "ja": "納豆を食べたことがありません。",
+    "blank": "食べた",
+    "translation": {
+     "vi": "Tôi chưa từng ăn natto.",
+     "en": "I have never eaten natto."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-tari-tari",
+  "pattern": "V1-たり V2-たり します",
+  "meaning": {
+   "vi": "lúc thì V1, lúc thì V2; nào là V1, nào là V2",
+   "en": "do things like V1 and V2"
+  },
+  "explanation": {
+   "vi": "Dùng thể た + り để nêu vài hoạt động tiêu biểu, ngụ ý còn việc khác nữa. Cuối mẫu luôn có します (hoặc しました cho quá khứ).",
+   "en": "Use the た-form + り to give a few typical activities, implying there are others. The pattern always ends with します (or しました for the past)."
+  },
+  "examples": [
+   {
+    "ja": "週末は本を読んだり、音楽を聞いたりします。",
+    "segments": [
+     {
+      "surface": "週末",
+      "reading": "しゅうまつ"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "本",
+      "reading": "ほん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "読",
+      "reading": "よ"
+     },
+     {
+      "surface": "んだり、"
+     },
+     {
+      "surface": "音楽",
+      "reading": "おんがく"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "聞",
+      "reading": "き"
+     },
+     {
+      "surface": "いたりします。"
+     }
+    ],
+    "romaji": "shuumatsu wa hon o yondari,ongaku o kiitari shimasu.",
+    "translation": {
+     "vi": "Cuối tuần tôi lúc thì đọc sách, lúc thì nghe nhạc.",
+     "en": "At weekends I do things like reading and listening to music."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "京都でお寺を見たり、写真を撮ったりしました。",
+    "segments": [
+     {
+      "surface": "京都",
+      "reading": "きょうと"
+     },
+     {
+      "surface": "でお"
+     },
+     {
+      "surface": "寺",
+      "reading": "てら"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "見",
+      "reading": "み"
+     },
+     {
+      "surface": "たり、"
+     },
+     {
+      "surface": "写真",
+      "reading": "しゃしん"
+     },
+     {
+      "surface": "を"
+     },
+     {
+      "surface": "撮",
+      "reading": "と"
+     },
+     {
+      "surface": "ったりしました。"
+     }
+    ],
+    "romaji": "kyouto de otera o mitari,shashin o tottari shimashita.",
+    "translation": {
+     "vi": "Ở Kyoto tôi đã ngắm chùa, chụp ảnh…",
+     "en": "In Kyoto I saw temples, took photos and so on."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "休みの日は歌を歌ったり、ギターを弾いたりします。",
+    "blank": "弾いたり",
+    "translation": {
+     "vi": "Ngày nghỉ tôi lúc thì hát, lúc thì chơi ghi-ta.",
+     "en": "On days off I sing, play the guitar and so on."
+    }
+   },
+   {
+    "ja": "公園で散歩したり、絵を描いたりしました。",
+    "blank": "したり",
+    "translation": {
+     "vi": "Tôi đã đi dạo, vẽ tranh ở công viên.",
+     "en": "I walked, drew pictures and so on in the park."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-to-omoimasu",
+  "pattern": "(thể thông thường) と 思います",
+  "meaning": {
+   "vi": "tôi nghĩ rằng ～",
+   "en": "I think that ～"
+  },
+  "explanation": {
+   "vi": "Đặt câu ở thể thông thường trước と 思います để nêu ý kiến hay phỏng đoán. Với tính từ な và danh từ, giữ だ: 便利だ と 思います. Hỏi ý kiến người khác: ～に ついて どう 思います か.",
+   "en": "Put a plain-form clause before と 思います to give an opinion or a guess. With な-adjectives and nouns keep だ: 便利だ と 思います. To ask someone’s opinion: ～に ついて どう 思います か."
+  },
+  "examples": [
+   {
+    "ja": "明日は晴れると思います。",
+    "segments": [
+     {
+      "surface": "明日",
+      "reading": "あした"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "晴",
+      "reading": "は"
+     },
+     {
+      "surface": "れると"
+     },
+     {
+      "surface": "思",
+      "reading": "おも"
+     },
+     {
+      "surface": "います。"
+     }
+    ],
+    "romaji": "ashita wa hareru to omoimasu.",
+    "translation": {
+     "vi": "Tôi nghĩ mai trời nắng.",
+     "en": "I think it will be sunny tomorrow."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "この町は便利だと思います。",
+    "segments": [
+     {
+      "surface": "この"
+     },
+     {
+      "surface": "町",
+      "reading": "まち"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "便利",
+      "reading": "べんり"
+     },
+     {
+      "surface": "だと"
+     },
+     {
+      "surface": "思",
+      "reading": "おも"
+     },
+     {
+      "surface": "います。"
+     }
+    ],
+    "romaji": "kono machi wa benri da to omoimasu.",
+    "translation": {
+     "vi": "Tôi nghĩ thị trấn này tiện lợi.",
+     "en": "I think this town is convenient."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "田中さんはもう帰ったと思います。",
+    "blank": "と",
+    "translation": {
+     "vi": "Tôi nghĩ anh Tanaka đã về rồi.",
+     "en": "I think Mr Tanaka has already gone home."
+    }
+   },
+   {
+    "ja": "試験は難しくないと思います。",
+    "blank": "思います",
+    "translation": {
+     "vi": "Tôi nghĩ bài thi không khó.",
+     "en": "I don’t think the exam will be hard."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-to-iimashita",
+  "pattern": "「câu nói」 と 言いました / (thể thông thường) と 言いました",
+  "meaning": {
+   "vi": "(ai đó) đã nói rằng ～",
+   "en": "(someone) said ～"
+  },
+  "explanation": {
+   "vi": "Trích nguyên văn đặt trong 「」 + と 言いました. Thuật lại gián tiếp dùng thể thông thường + と 言いました. Người nói được đánh dấu bằng は hoặc が.",
+   "en": "For a direct quote put the words in 「」 + と 言いました. For indirect speech use a plain-form clause + と 言いました. Mark the speaker with は or が."
+  },
+  "examples": [
+   {
+    "ja": "先生は「明日試験があります」と言いました。",
+    "segments": [
+     {
+      "surface": "先生",
+      "reading": "せんせい"
+     },
+     {
+      "surface": "は「"
+     },
+     {
+      "surface": "明日",
+      "reading": "あした"
+     },
+     {
+      "surface": "試験",
+      "reading": "しけん"
+     },
+     {
+      "surface": "があります」と"
+     },
+     {
+      "surface": "言",
+      "reading": "い"
+     },
+     {
+      "surface": "いました。"
+     }
+    ],
+    "romaji": "sensei wa ‘ashita shiken ga arimasu’ to iimashita.",
+    "translation": {
+     "vi": "Thầy nói: “Mai có bài thi.”",
+     "en": "The teacher said, “There is an exam tomorrow.”"
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "社長は会議に行かないと言いました。",
+    "segments": [
+     {
+      "surface": "社長",
+      "reading": "しゃちょう"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "会議",
+      "reading": "かいぎ"
+     },
+     {
+      "surface": "に"
+     },
+     {
+      "surface": "行",
+      "reading": "い"
+     },
+     {
+      "surface": "かないと"
+     },
+     {
+      "surface": "言",
+      "reading": "い"
+     },
+     {
+      "surface": "いました。"
+     }
+    ],
+    "romaji": "shachou wa kaigi ni ikanai to iimashita.",
+    "translation": {
+     "vi": "Giám đốc nói sẽ không đi họp.",
+     "en": "The president said he would not go to the meeting."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "友達は明日来ると言いました。",
+    "blank": "言いました",
+    "translation": {
+     "vi": "Bạn tôi nói mai sẽ đến.",
+     "en": "My friend said they would come tomorrow."
+    }
+   },
+   {
+    "ja": "母は「早く寝なさい」と言いました。",
+    "blank": "と",
+    "translation": {
+     "vi": "Mẹ tôi nói: “Ngủ sớm đi.”",
+     "en": "My mother said, “Go to bed early.”"
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-deshou",
+  "pattern": "(thể thông thường) でしょう",
+  "meaning": {
+   "vi": "có lẽ ～, chắc là ～",
+   "en": "probably ～"
+  },
+  "explanation": {
+   "vi": "でしょう đặt sau thể thông thường để phỏng đoán, hay gặp trong dự báo thời tiết. Với tính từ な và danh từ bỏ だ: 晴れ でしょう, 静か でしょう. Lên giọng でしょう？ thì thành câu hỏi xác nhận “đúng không?”.",
+   "en": "でしょう after a plain-form clause makes a guess and is typical of weather forecasts. With な-adjectives and nouns drop だ: 晴れ でしょう, 静か でしょう. Said with rising intonation, でしょう？ asks for agreement (“right?”)."
+  },
+  "examples": [
+   {
+    "ja": "明日は雪が降るでしょう。",
+    "segments": [
+     {
+      "surface": "明日",
+      "reading": "あした"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "雪",
+      "reading": "ゆき"
+     },
+     {
+      "surface": "が"
+     },
+     {
+      "surface": "降",
+      "reading": "ふ"
+     },
+     {
+      "surface": "るでしょう。"
+     }
+    ],
+    "romaji": "ashita wa yuki ga furu deshou.",
+    "translation": {
+     "vi": "Mai có lẽ tuyết rơi.",
+     "en": "It will probably snow tomorrow."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "山の上は寒いでしょう。",
+    "segments": [
+     {
+      "surface": "山",
+      "reading": "やま"
+     },
+     {
+      "surface": "の"
+     },
+     {
+      "surface": "上",
+      "reading": "うえ"
+     },
+     {
+      "surface": "は"
+     },
+     {
+      "surface": "寒",
+      "reading": "さむ"
+     },
+     {
+      "surface": "いでしょう。"
+     }
+    ],
+    "romaji": "yama no ue wa samui deshou.",
+    "translation": {
+     "vi": "Trên núi chắc là lạnh.",
+     "en": "It’s probably cold at the top of the mountain."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "午後は晴れるでしょう。",
+    "blank": "でしょう",
+    "translation": {
+     "vi": "Buổi chiều có lẽ trời quang.",
+     "en": "It will probably clear up in the afternoon."
+    }
+   },
+   {
+    "ja": "明日は曇りでしょう。",
+    "blank": "曇り",
+    "translation": {
+     "vi": "Mai có lẽ trời nhiều mây.",
+     "en": "It will probably be cloudy tomorrow."
+    }
+   }
+  ],
+  "jlpt": "n5"
+ },
+ {
+  "id": "n5-mou-mada",
+  "pattern": "もう V-ました / まだ V-て いません",
+  "meaning": {
+   "vi": "đã V rồi / vẫn chưa V",
+   "en": "have already V-ed / have not V-ed yet"
+  },
+  "explanation": {
+   "vi": "もう + V-ました: việc đã xong. Trả lời phủ định dùng まだ + V-て いません (vẫn chưa), không dùng ～ませんでした. まだ + khẳng định nghĩa là “vẫn còn”: まだ 雨が 降って います.",
+   "en": "もう + V-ました: the action is done. The negative answer is まだ + V-て いません (not yet), not ～ませんでした. まだ with a positive verb means “still”: まだ 雨が 降って います."
+  },
+  "examples": [
+   {
+    "ja": "もう宿題をしましたか。—いいえ、まだしていません。",
+    "segments": [
+     {
+      "surface": "もう"
+     },
+     {
+      "surface": "宿題",
+      "reading": "しゅくだい"
+     },
+     {
+      "surface": "をしましたか。—いいえ、まだしていません。"
+     }
+    ],
+    "romaji": "mou shukudai o shimashita ka. — iie,mada shite imasen.",
+    "translation": {
+     "vi": "Bạn làm bài tập chưa? — Chưa, mình vẫn chưa làm.",
+     "en": "Have you done your homework yet? — No, not yet."
+    },
+    "source": "japky"
+   },
+   {
+    "ja": "雨はもう止みました。",
+    "segments": [
+     {
+      "surface": "雨",
+      "reading": "あめ"
+     },
+     {
+      "surface": "はもう"
+     },
+     {
+      "surface": "止",
+      "reading": "や"
+     },
+     {
+      "surface": "みました。"
+     }
+    ],
+    "romaji": "ame wa mou yamimashita.",
+    "translation": {
+     "vi": "Mưa đã tạnh rồi.",
+     "en": "The rain has already stopped."
+    },
+    "source": "japky"
+   }
+  ],
+  "cloze": [
+   {
+    "ja": "天気予報はまだ見ていません。",
+    "blank": "まだ",
+    "translation": {
+     "vi": "Tôi vẫn chưa xem dự báo thời tiết.",
+     "en": "I haven’t seen the weather forecast yet."
+    }
+   },
+   {
+    "ja": "もう晩ご飯を食べました。",
+    "blank": "もう",
+    "translation": {
+     "vi": "Tôi đã ăn tối rồi.",
+     "en": "I have already eaten dinner."
+    }
+   }
+  ],
+  "jlpt": "n5"
  }
 ]
